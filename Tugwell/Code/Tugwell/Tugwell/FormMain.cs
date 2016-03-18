@@ -35,34 +35,6 @@ namespace Tugwell
             this.createNewDbaseToolStripMenuItem.Enabled = isAdminVersion;
 
             loadStartup();
-
-            #region remove later
-            //            #region ReportsTable creator string
-
-//            // This is the query which will create a new table in our database file. An auto increment column called "ID", and many NVARCHAR type columns
-//            string createTableQueryReports = @"CREATE TABLE IF NOT EXISTS [ReportsTable] (
-//[ID] INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-//[TableName] NVARCHAR(512)  NULL,
-//[Name] NVARCHAR(512)  NULL,
-//[Columns] VARCHAR(512)  NULL
-//                          )";
-
-//            #endregion
-
-
-//            ///////System.Data.SQLite.SQLiteConnection.CreateFile(getDbasePathName());        // Create the file which will be hosting our database
-            
-//            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
-//            {
-//                using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
-//                {
-//                    con.Open();                             // Open the connection to the database
-
-//                    com.CommandText = createTableQueryReports;// Set CommandText to our query that will create a table
-//                    com.ExecuteNonQuery();                  // Execute the query
-//                }
-            //            }
-            #endregion
         }
 
         #region Debug - import Companies & Parts .... remove later
