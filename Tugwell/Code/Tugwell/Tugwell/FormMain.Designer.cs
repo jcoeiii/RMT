@@ -64,6 +64,8 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.pathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBoxDbasePath = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.cleanDatabaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -404,6 +406,7 @@
             this.tabPageQuotes = new System.Windows.Forms.TabPage();
             this.tabControlQuotesSub = new System.Windows.Forms.TabControl();
             this.tabPageQuoteGeneral = new System.Windows.Forms.TabPage();
+            this.comboBoxFreightSelect = new System.Windows.Forms.TextBox();
             this.label77 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
@@ -629,9 +632,6 @@
             this.comboBoxYearControl = new System.Windows.Forms.ComboBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.textBoxRecordOf = new System.Windows.Forms.TextBox();
-            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.cleanDatabaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comboBoxFreightSelect = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControlMainOrdersQuotes.SuspendLayout();
@@ -1116,6 +1116,18 @@
             this.toolStripTextBoxDbasePath.Size = new System.Drawing.Size(100, 23);
             this.toolStripTextBoxDbasePath.Text = "Z:\\Tugwell\\";
             // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(197, 6);
+            // 
+            // cleanDatabaseToolStripMenuItem
+            // 
+            this.cleanDatabaseToolStripMenuItem.Name = "cleanDatabaseToolStripMenuItem";
+            this.cleanDatabaseToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.cleanDatabaseToolStripMenuItem.Text = "Clean Database";
+            this.cleanDatabaseToolStripMenuItem.Click += new System.EventHandler(this.cleanDatabaseToolStripMenuItem_Click);
+            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1302,7 +1314,8 @@
             "Customer P/U",
             "RMT Truck",
             "Fedex Freight",
-            "FedEx Ground"});
+            "FedEx Ground",
+            "Vendor Vehicle"});
             this.comboBoxCarrier.Location = new System.Drawing.Point(69, 20);
             this.comboBoxCarrier.Name = "comboBoxCarrier";
             this.comboBoxCarrier.Size = new System.Drawing.Size(120, 21);
@@ -6224,6 +6237,17 @@
             this.tabPageQuoteGeneral.Text = "General";
             this.tabPageQuoteGeneral.UseVisualStyleBackColor = true;
             // 
+            // comboBoxFreightSelect
+            // 
+            this.comboBoxFreightSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxFreightSelect.Location = new System.Drawing.Point(432, 139);
+            this.comboBoxFreightSelect.Name = "comboBoxFreightSelect";
+            this.comboBoxFreightSelect.Size = new System.Drawing.Size(521, 21);
+            this.comboBoxFreightSelect.TabIndex = 95;
+            this.comboBoxFreightSelect.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
+            this.comboBoxFreightSelect.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
+            this.comboBoxFreightSelect.Leave += new System.EventHandler(this.textBox_Leave);
+            // 
             // label77
             // 
             this.label77.AutoSize = true;
@@ -9882,29 +9906,6 @@
             this.textBoxRecordOf.Size = new System.Drawing.Size(52, 20);
             this.textBoxRecordOf.TabIndex = 36;
             this.textBoxRecordOf.Text = "of 1";
-            // 
-            // toolStripSeparator8
-            // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(197, 6);
-            // 
-            // cleanDatabaseToolStripMenuItem
-            // 
-            this.cleanDatabaseToolStripMenuItem.Name = "cleanDatabaseToolStripMenuItem";
-            this.cleanDatabaseToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
-            this.cleanDatabaseToolStripMenuItem.Text = "Clean Database";
-            this.cleanDatabaseToolStripMenuItem.Click += new System.EventHandler(this.cleanDatabaseToolStripMenuItem_Click);
-            // 
-            // comboBoxFreightSelect
-            // 
-            this.comboBoxFreightSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxFreightSelect.Location = new System.Drawing.Point(432, 139);
-            this.comboBoxFreightSelect.Name = "comboBoxFreightSelect";
-            this.comboBoxFreightSelect.Size = new System.Drawing.Size(521, 21);
-            this.comboBoxFreightSelect.TabIndex = 95;
-            this.comboBoxFreightSelect.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
-            this.comboBoxFreightSelect.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
-            this.comboBoxFreightSelect.Leave += new System.EventHandler(this.textBox_Leave);
             // 
             // FormMain
             // 

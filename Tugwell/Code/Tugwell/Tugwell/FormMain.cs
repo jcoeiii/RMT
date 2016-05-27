@@ -22,7 +22,7 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V3.3 2016_03_17";
+            this.Text = "Tugwell V3.5 2016_05_27";
             
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\";
             this.comboBoxYearControl.Text = "2016";
@@ -1237,6 +1237,39 @@ namespace Tugwell
             if (!this.checkBoxQManual.Checked)
             {
                 this.numericUpDownQQuotePrice.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQTotalCost.Value);
+                this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
+            }
+            else if (this.checkBoxPManual.Checked) // sum total of Marked up costs because it (right) is manual mode
+            {
+                decimal m1 = numericUpDownQMCost1.Value;
+                decimal m2 = numericUpDownQMCost2.Value;
+                decimal m3 = numericUpDownQMCost3.Value;
+                decimal m4 = numericUpDownQMCost4.Value;
+                decimal m5 = numericUpDownQMCost5.Value;
+                decimal m6 = numericUpDownQMCost6.Value;
+                decimal m7 = numericUpDownQMCost7.Value;
+                decimal m8 = numericUpDownQMCost8.Value;
+                decimal m9 = numericUpDownQMCost9.Value;
+                decimal m10 = numericUpDownQMCost10.Value;
+                decimal m11 = numericUpDownQMCost11.Value;
+                decimal m12 = numericUpDownQMCost12.Value;
+                decimal m13 = numericUpDownQMCost13.Value;
+                decimal m14 = numericUpDownQMCost14.Value;
+                decimal m15 = numericUpDownQMCost15.Value;
+                decimal m16 = numericUpDownQMCost16.Value;
+                decimal m17 = numericUpDownQMCost17.Value;
+                decimal m18 = numericUpDownQMCost18.Value;
+                decimal m19 = numericUpDownQMCost19.Value;
+                decimal m20 = numericUpDownQMCost20.Value;
+                decimal m21 = numericUpDownQMCost21.Value;
+                decimal m22 = numericUpDownQMCost22.Value;
+                decimal m23 = numericUpDownQMCost23.Value;
+
+                this.numericUpDownQQuotePrice.Value = m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 + m9 + m10 + m11 + m12 + m13 + m14 + m15 + m16 + m17 + m18 + m19 + m20 + m21 + m22 + m23;
+                this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
+            }
+            else // complete manual mode
+            {
                 this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
             }
 
