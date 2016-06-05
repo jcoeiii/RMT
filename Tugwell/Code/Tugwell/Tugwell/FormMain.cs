@@ -22,7 +22,7 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V3.5 2016_05_27";
+            this.Text = "Tugwell V4.0 2016_06_05";
             
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\";
             this.comboBoxYearControl.Text = "2016";
@@ -1239,7 +1239,7 @@ namespace Tugwell
                 this.numericUpDownQQuotePrice.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQTotalCost.Value);
                 this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
             }
-            else if (this.checkBoxPManual.Checked) // sum total of Marked up costs because it (right) is manual mode
+            /*else if (this.checkBoxPManual.Checked) // sum total of Marked up costs because it (right) is manual mode
             {
                 decimal m1 = numericUpDownQMCost1.Value;
                 decimal m2 = numericUpDownQMCost2.Value;
@@ -1267,7 +1267,7 @@ namespace Tugwell
 
                 this.numericUpDownQQuotePrice.Value = m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 + m9 + m10 + m11 + m12 + m13 + m14 + m15 + m16 + m17 + m18 + m19 + m20 + m21 + m22 + m23;
                 this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
-            }
+            }*/
             else // complete manual mode
             {
                 this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
@@ -2160,7 +2160,7 @@ namespace Tugwell
 
 
             tiTopLeft.Textstyle = Print2Pdf.TextStyle.Regular;
-            p.AddText(tiTopLeft, this.textBoxShipTo.Text, 40 + 80, pos, p.Width, 18);
+            p.AddText(tiTopLeft, this.textBoxShipTo.Text, 40 + 50, pos, p.Width, 18);
             string streets = this.textBoxShipToStreet1.Text + "\n" + this.textBoxShipToStreet2.Text;
             p.AddText(tiTopLeft, streets.Trim() + "\n" + this.textBoxShipToCity.Text + ", " + this.comboBoxShipToState.Text + " " + this.textBoxShipToZip.Text + "\n");
 
@@ -2198,7 +2198,7 @@ namespace Tugwell
             tiDescr.Size = 9.0;
             p.AddText(tiDescr, "Description:", 40, pos + 110, p.Width, 18);
             tiDescr.Textstyle = Print2Pdf.TextStyle.Regular;
-            p.AddText(tiDescr, this.textBoxDescription.Text, 40 + 80, pos + 110, p.Width, 18);
+            p.AddText(tiDescr, this.textBoxDescription.Text, 40 + 50, pos + 110, p.Width, 18);
 
             int rowCount = 13;
 
@@ -3904,7 +3904,7 @@ namespace Tugwell
 
         private int getRowCountsFromOrders()
         {
-            _log.append("getRowCountsFromOrders start");
+            //_log.append("getRowCountsFromOrders start");
 
             int? count = 0;
 
@@ -3927,7 +3927,7 @@ namespace Tugwell
                 }
             }
 
-            _log.append("getRowCountsFromOrders end");
+            //_log.append("getRowCountsFromOrders end");
 
             return (count == null) ? 0 : count.Value;
         }
@@ -3969,15 +3969,41 @@ namespace Tugwell
                     try
                     {
                         con.Open();
-                        using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
+
+                        using (SQLiteDataAdapter DB = new SQLiteDataAdapter(com))
+                        //using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
                         {
-                            _log.append("getPOsFromOrders while start");
-                            while (reader.Read())
+                            DataSet DS = new DataSet();
+
+                            DB.Fill(DS, "OrderTable");
+
+                            if (DS.Tables["OrderTable"].Rows.Count != 0)
                             {
-                                POs.Add(reader["PO"] as string);
+                                _log.append("getPOsFromOrders while start");
+
+                                DataRow rrr;
+                                int max = getRowCountsFromOrders();
+                                for (int i = 0; i < max; i++)
+                                {
+                                    #region reads as strings
+                                    rrr = DS.Tables["OrderTable"].Rows[i];
+                                    POs.Add(rrr["PO"] as string);
+                                    #endregion
+                                }
+
+                                _log.append("getPOsFromOrders while end");
                             }
-                            _log.append("getPOsFromOrders while end");
                         }
+
+                        //using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
+                        //{
+                        //    _log.append("getPOsFromOrders while start");
+                        //    while (reader.Read())
+                        //    {
+                        //        POs.Add(reader["PO"] as string);
+                        //    }
+                        //    _log.append("getPOsFromOrders while end");
+                        //}
                     }
                     catch (SqlException ex)
                     {
@@ -4062,262 +4088,261 @@ namespace Tugwell
                     try
                     {
                         con.Open();
-                        using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
-                        {
-                            int rows = 0;
-                            while (reader.Read())
-                            {
-                                if (rowCount > 0)
-                                {
-                                    rows++;
 
-                                    if (rowCount > rows)
-                                        continue;
-                                }
+                        using (SQLiteDataAdapter DB = new SQLiteDataAdapter(com))
+                        //using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
+                        {
+                            DataSet DS = new DataSet();
+
+                            DB.Fill(DS, "OrderTable");
+
+                            if (DS.Tables["OrderTable"].Rows.Count != 0)
+                            {
+                                DataRow rrr = DS.Tables["OrderTable"].Rows[rowCount];
 
                                 #region reads as strings
 
-                                thePO = reader["PO"] as string;
+                                thePO = rrr["PO"] as string;
 
-                                Date = reader["Date"] as string;
-                                EndUser = reader["EndUser"] as string;
+                                Date = rrr["Date"] as string;
+                                EndUser = rrr["EndUser"] as string;
 
-                                Equipment = reader["Equipment"] as string;
-                                VendorName = reader["VendorName"] as string;
-                                JobNumber = reader["JobNumber"] as string;
-                                CustomerPO = reader["CustomerPO"] as string;
-                                VendorNumber = reader["VendorNumber"] as string;
-                                SalesAss = reader["SalesAss"] as string;
-                                SoldTo = reader["SoldTo"] as string;
-                                Street1 = reader["Street1"] as string;
-                                Street2 = reader["Street2"] as string;
-                                City = reader["City"] as string;
-                                State = reader["State"] as string;
-                                Zip = reader["Zip"] as string;
-                                ShipTo = reader["ShipTo"] as string;
-                                ShipStreet1 = reader["ShipStreet1"] as string;
-                                ShipStreet2 = reader["ShipStreet2"] as string;
-                                ShipCity = reader["ShipCity"] as string;
-                                ShipState = reader["ShipState"] as string;
-                                ShipZip = reader["ShipZip"] as string;
-                                Carrier = reader["Carrier"] as string;
-                                ShipDate = reader["ShipDate"] as string;
-                                IsComOrder = reader["IsComOrder"] as string;
-                                IsComPaid = reader["IsComPaid"] as string;
-                                Grinder = reader["Grinder"] as string;
-                                SerialNo = reader["SerialNo"] as string;
-                                PumpStk = reader["PumpStk"] as string;
-                                ReqDate = reader["ReqDate"] as string;
-                                SchedShip = reader["SchedShip"] as string;
-                                PODate = reader["PODate"] as string;
-                                POShipVia = reader["POShipVia"] as string;
+                                Equipment = rrr["Equipment"] as string;
+                                VendorName = rrr["VendorName"] as string;
+                                JobNumber = rrr["JobNumber"] as string;
+                                CustomerPO = rrr["CustomerPO"] as string;
+                                VendorNumber = rrr["VendorNumber"] as string;
+                                SalesAss = rrr["SalesAss"] as string;
+                                SoldTo = rrr["SoldTo"] as string;
+                                Street1 = rrr["Street1"] as string;
+                                Street2 = rrr["Street2"] as string;
+                                City = rrr["City"] as string;
+                                State = rrr["State"] as string;
+                                Zip = rrr["Zip"] as string;
+                                ShipTo = rrr["ShipTo"] as string;
+                                ShipStreet1 = rrr["ShipStreet1"] as string;
+                                ShipStreet2 = rrr["ShipStreet2"] as string;
+                                ShipCity = rrr["ShipCity"] as string;
+                                ShipState = rrr["ShipState"] as string;
+                                ShipZip = rrr["ShipZip"] as string;
+                                Carrier = rrr["Carrier"] as string;
+                                ShipDate = rrr["ShipDate"] as string;
+                                IsComOrder = rrr["IsComOrder"] as string;
+                                IsComPaid = rrr["IsComPaid"] as string;
+                                Grinder = rrr["Grinder"] as string;
+                                SerialNo = rrr["SerialNo"] as string;
+                                PumpStk = rrr["PumpStk"] as string;
+                                ReqDate = rrr["ReqDate"] as string;
+                                SchedShip = rrr["SchedShip"] as string;
+                                PODate = rrr["PODate"] as string;
+                                POShipVia = rrr["POShipVia"] as string;
 
-                                TrackDate1 = reader["TrackDate1"] as string;
-                                TrackBy1 = reader["TrackBy1"] as string;
-                                TrackSource1 = reader["TrackSource1"] as string;
-                                TrackNote1 = reader["TrackNote1"] as string;
-                                TrackDate2 = reader["TrackDate2"] as string;
-                                TrackBy2 = reader["TrackBy2"] as string;
-                                TrackSource2 = reader["TrackSource2"] as string;
-                                TrackNote2 = reader["TrackNote2"] as string;
-                                TrackDate3 = reader["TrackDate3"] as string;
-                                TrackBy3 = reader["TrackBy3"] as string;
-                                TrackSource3 = reader["TrackSource3"] as string;
-                                TrackNote3 = reader["TrackNote3"] as string;
-                                TrackDate4 = reader["TrackDate4"] as string;
-                                TrackBy4 = reader["TrackBy4"] as string;
-                                TrackSource4 = reader["TrackSource4"] as string;
-                                TrackNote4 = reader["TrackNote4"] as string;
-                                TrackDate5 = reader["TrackDate5"] as string;
-                                TrackBy5 = reader["TrackBy5"] as string;
-                                TrackSource5 = reader["TrackSource5"] as string;
-                                TrackNote5 = reader["TrackNote5"] as string;
-                                TrackDate6 = reader["TrackDate6"] as string;
-                                TrackBy6 = reader["TrackBy6"] as string;
-                                TrackSource6 = reader["TrackSource6"] as string;
-                                TrackNote6 = reader["TrackNote6"] as string;
-                                TrackDate7 = reader["TrackDate7"] as string;
-                                TrackBy7 = reader["TrackBy7"] as string;
-                                TrackSource7 = reader["TrackSource7"] as string;
-                                TrackNote7 = reader["TrackNote7"] as string;
-                                TrackDate8 = reader["TrackDate8"] as string;
-                                TrackBy8 = reader["TrackBy8"] as string;
-                                TrackSource8 = reader["TrackSource8"] as string;
-                                TrackNote8 = reader["TrackNote8"] as string;
-                                TrackDate9 = reader["TrackDate9"] as string;
-                                TrackBy9 = reader["TrackBy9"] as string;
-                                TrackSource9 = reader["TrackSource9"] as string;
-                                TrackNote9 = reader["TrackNote9"] as string;
-                                TrackDate10 = reader["TrackDate10"] as string;
-                                TrackBy10 = reader["TrackBy10"] as string;
-                                TrackSource10 = reader["TrackSource10"] as string;
-                                TrackNote10 = reader["TrackNote10"] as string;
-                                TrackDate11 = reader["TrackDate11"] as string;
-                                TrackBy11 = reader["TrackBy11"] as string;
-                                TrackSource11 = reader["TrackSource11"] as string;
-                                TrackNote11 = reader["TrackNote11"] as string;
-                                TrackDate12 = reader["TrackDate12"] as string;
-                                TrackBy12 = reader["TrackBy12"] as string;
-                                TrackSource12 = reader["TrackSource12"] as string;
-                                TrackNote12 = reader["TrackNote12"] as string;
-                                TrackDate13 = reader["TrackDate13"] as string;
-                                TrackBy13 = reader["TrackBy13"] as string;
-                                TrackSource13 = reader["TrackSource13"] as string;
-                                TrackNote13 = reader["TrackNote13"] as string;
-                                TrackDate14 = reader["TrackDate14"] as string;
-                                TrackBy14 = reader["TrackBy14"] as string;
-                                TrackSource14 = reader["TrackSource14"] as string;
-                                TrackNote14 = reader["TrackNote14"] as string;
-                                TrackDate15 = reader["TrackDate15"] as string;
-                                TrackBy15 = reader["TrackBy15"] as string;
-                                TrackSource15 = reader["TrackSource15"] as string;
-                                TrackNote15 = reader["TrackNote15"] as string;
-                                TrackDate16 = reader["TrackDate16"] as string;
-                                TrackBy16 = reader["TrackBy16"] as string;
-                                TrackSource16 = reader["TrackSource16"] as string;
-                                TrackNote16 = reader["TrackNote16"] as string;
-                                TrackDate17 = reader["TrackDate17"] as string;
-                                TrackBy17 = reader["TrackBy17"] as string;
-                                TrackSource17 = reader["TrackSource17"] as string;
-                                TrackNote17 = reader["TrackNote17"] as string;
-                                TrackDate18 = reader["TrackDate18"] as string;
-                                TrackBy18 = reader["TrackBy18"] as string;
-                                TrackSource18 = reader["TrackSource18"] as string;
-                                TrackNote18 = reader["TrackNote18"] as string;
-                                QuotePrice = reader["QuotePrice"] as string;
-                                Credit = reader["Credit"] as string;
-                                Freight = reader["Freight"] as string;
-                                ShopTime = reader["ShopTime"] as string;
-                                TotalCost = reader["TotalCost"] as string;
-                                GrossProfit = reader["GrossProfit"] as string;
-                                Profit = reader["Profit"] as string;
-                                Description = reader["Description"] as string;
+                                TrackDate1 = rrr["TrackDate1"] as string;
+                                TrackBy1 = rrr["TrackBy1"] as string;
+                                TrackSource1 = rrr["TrackSource1"] as string;
+                                TrackNote1 = rrr["TrackNote1"] as string;
+                                TrackDate2 = rrr["TrackDate2"] as string;
+                                TrackBy2 = rrr["TrackBy2"] as string;
+                                TrackSource2 = rrr["TrackSource2"] as string;
+                                TrackNote2 = rrr["TrackNote2"] as string;
+                                TrackDate3 = rrr["TrackDate3"] as string;
+                                TrackBy3 = rrr["TrackBy3"] as string;
+                                TrackSource3 = rrr["TrackSource3"] as string;
+                                TrackNote3 = rrr["TrackNote3"] as string;
+                                TrackDate4 = rrr["TrackDate4"] as string;
+                                TrackBy4 = rrr["TrackBy4"] as string;
+                                TrackSource4 = rrr["TrackSource4"] as string;
+                                TrackNote4 = rrr["TrackNote4"] as string;
+                                TrackDate5 = rrr["TrackDate5"] as string;
+                                TrackBy5 = rrr["TrackBy5"] as string;
+                                TrackSource5 = rrr["TrackSource5"] as string;
+                                TrackNote5 = rrr["TrackNote5"] as string;
+                                TrackDate6 = rrr["TrackDate6"] as string;
+                                TrackBy6 = rrr["TrackBy6"] as string;
+                                TrackSource6 = rrr["TrackSource6"] as string;
+                                TrackNote6 = rrr["TrackNote6"] as string;
+                                TrackDate7 = rrr["TrackDate7"] as string;
+                                TrackBy7 = rrr["TrackBy7"] as string;
+                                TrackSource7 = rrr["TrackSource7"] as string;
+                                TrackNote7 = rrr["TrackNote7"] as string;
+                                TrackDate8 = rrr["TrackDate8"] as string;
+                                TrackBy8 = rrr["TrackBy8"] as string;
+                                TrackSource8 = rrr["TrackSource8"] as string;
+                                TrackNote8 = rrr["TrackNote8"] as string;
+                                TrackDate9 = rrr["TrackDate9"] as string;
+                                TrackBy9 = rrr["TrackBy9"] as string;
+                                TrackSource9 = rrr["TrackSource9"] as string;
+                                TrackNote9 = rrr["TrackNote9"] as string;
+                                TrackDate10 = rrr["TrackDate10"] as string;
+                                TrackBy10 = rrr["TrackBy10"] as string;
+                                TrackSource10 = rrr["TrackSource10"] as string;
+                                TrackNote10 = rrr["TrackNote10"] as string;
+                                TrackDate11 = rrr["TrackDate11"] as string;
+                                TrackBy11 = rrr["TrackBy11"] as string;
+                                TrackSource11 = rrr["TrackSource11"] as string;
+                                TrackNote11 = rrr["TrackNote11"] as string;
+                                TrackDate12 = rrr["TrackDate12"] as string;
+                                TrackBy12 = rrr["TrackBy12"] as string;
+                                TrackSource12 = rrr["TrackSource12"] as string;
+                                TrackNote12 = rrr["TrackNote12"] as string;
+                                TrackDate13 = rrr["TrackDate13"] as string;
+                                TrackBy13 = rrr["TrackBy13"] as string;
+                                TrackSource13 = rrr["TrackSource13"] as string;
+                                TrackNote13 = rrr["TrackNote13"] as string;
+                                TrackDate14 = rrr["TrackDate14"] as string;
+                                TrackBy14 = rrr["TrackBy14"] as string;
+                                TrackSource14 = rrr["TrackSource14"] as string;
+                                TrackNote14 = rrr["TrackNote14"] as string;
+                                TrackDate15 = rrr["TrackDate15"] as string;
+                                TrackBy15 = rrr["TrackBy15"] as string;
+                                TrackSource15 = rrr["TrackSource15"] as string;
+                                TrackNote15 = rrr["TrackNote15"] as string;
+                                TrackDate16 = rrr["TrackDate16"] as string;
+                                TrackBy16 = rrr["TrackBy16"] as string;
+                                TrackSource16 = rrr["TrackSource16"] as string;
+                                TrackNote16 = rrr["TrackNote16"] as string;
+                                TrackDate17 = rrr["TrackDate17"] as string;
+                                TrackBy17 = rrr["TrackBy17"] as string;
+                                TrackSource17 = rrr["TrackSource17"] as string;
+                                TrackNote17 = rrr["TrackNote17"] as string;
+                                TrackDate18 = rrr["TrackDate18"] as string;
+                                TrackBy18 = rrr["TrackBy18"] as string;
+                                TrackSource18 = rrr["TrackSource18"] as string;
+                                TrackNote18 = rrr["TrackNote18"] as string;
+                                QuotePrice = rrr["QuotePrice"] as string;
+                                Credit = rrr["Credit"] as string;
+                                Freight = rrr["Freight"] as string;
+                                ShopTime = rrr["ShopTime"] as string;
+                                TotalCost = rrr["TotalCost"] as string;
+                                GrossProfit = rrr["GrossProfit"] as string;
+                                Profit = rrr["Profit"] as string;
+                                Description = rrr["Description"] as string;
 
-                                Quant1 = reader["Quant1"] as string;
-                                Descr1 = reader["Descr1"] as string;
-                                Costs1 = reader["Costs1"] as string;
-                                ECost1 = reader["ECost1"] as string;
-                                Quant2 = reader["Quant2"] as string;
-                                Descr2 = reader["Descr2"] as string;
-                                Costs2 = reader["Costs2"] as string;
-                                ECost2 = reader["ECost2"] as string;
-                                Quant3 = reader["Quant3"] as string;
-                                Descr3 = reader["Descr3"] as string;
-                                Costs3 = reader["Costs3"] as string;
-                                ECost3 = reader["ECost3"] as string;
-                                Quant4 = reader["Quant4"] as string;
-                                Descr4 = reader["Descr4"] as string;
-                                Costs4 = reader["Costs4"] as string;
-                                ECost4 = reader["ECost4"] as string;
-                                Quant5 = reader["Quant5"] as string;
-                                Descr5 = reader["Descr5"] as string;
-                                Costs5 = reader["Costs5"] as string;
-                                ECost5 = reader["ECost5"] as string;
-                                Quant6 = reader["Quant6"] as string;
-                                Descr6 = reader["Descr6"] as string;
-                                Costs6 = reader["Costs6"] as string;
-                                ECost6 = reader["ECost6"] as string;
-                                Quant7 = reader["Quant7"] as string;
-                                Descr7 = reader["Descr7"] as string;
-                                Costs7 = reader["Costs7"] as string;
-                                ECost7 = reader["ECost7"] as string;
-                                Quant8 = reader["Quant8"] as string;
-                                Descr8 = reader["Descr8"] as string;
-                                Costs8 = reader["Costs8"] as string;
-                                ECost8 = reader["ECost8"] as string;
-                                Quant9 = reader["Quant9"] as string;
-                                Descr9 = reader["Descr9"] as string;
-                                Costs9 = reader["Costs9"] as string;
-                                ECost9 = reader["ECost9"] as string;
-                                Quant10 = reader["Quant10"] as string;
-                                Descr10 = reader["Descr10"] as string;
-                                Costs10 = reader["Costs10"] as string;
-                                ECost10 = reader["ECost10"] as string;
-                                Quant11 = reader["Quant11"] as string;
-                                Descr11 = reader["Descr11"] as string;
-                                Costs11 = reader["Costs11"] as string;
-                                ECost11 = reader["ECost11"] as string;
-                                Quant12 = reader["Quant12"] as string;
-                                Descr12 = reader["Descr12"] as string;
-                                Costs12 = reader["Costs12"] as string;
-                                ECost12 = reader["ECost12"] as string;
-                                Quant13 = reader["Quant13"] as string;
-                                Descr13 = reader["Descr13"] as string;
-                                Costs13 = reader["Costs13"] as string;
-                                ECost13 = reader["ECost13"] as string;
-                                Quant14 = reader["Quant14"] as string;
-                                Descr14 = reader["Descr14"] as string;
-                                Costs14 = reader["Costs14"] as string;
-                                ECost14 = reader["ECost14"] as string;
-                                Quant15 = reader["Quant15"] as string;
-                                Descr15 = reader["Descr15"] as string;
-                                Costs15 = reader["Costs15"] as string;
-                                ECost15 = reader["ECost15"] as string;
-                                Quant16 = reader["Quant16"] as string;
-                                Descr16 = reader["Descr16"] as string;
-                                Costs16 = reader["Costs16"] as string;
-                                ECost16 = reader["ECost16"] as string;
-                                Quant17 = reader["Quant17"] as string;
-                                Descr17 = reader["Descr17"] as string;
-                                Costs17 = reader["Costs17"] as string;
-                                ECost17 = reader["ECost17"] as string;
-                                Quant18 = reader["Quant18"] as string;
-                                Descr18 = reader["Descr18"] as string;
-                                Costs18 = reader["Costs18"] as string;
-                                ECost18 = reader["ECost18"] as string;
-                                Quant19 = reader["Quant19"] as string;
-                                Descr19 = reader["Descr19"] as string;
-                                Costs19 = reader["Costs19"] as string;
-                                ECost19 = reader["ECost19"] as string;
-                                Quant20 = reader["Quant20"] as string;
-                                Descr20 = reader["Descr20"] as string;
-                                Costs20 = reader["Costs20"] as string;
-                                ECost20 = reader["ECost20"] as string;
-                                Quant21 = reader["Quant21"] as string;
-                                Descr21 = reader["Descr21"] as string;
-                                Costs21 = reader["Costs21"] as string;
-                                ECost21 = reader["ECost21"] as string;
-                                Quant22 = reader["Quant22"] as string;
-                                Descr22 = reader["Descr22"] as string;
-                                Costs22 = reader["Costs22"] as string;
-                                ECost22 = reader["ECost22"] as string;
-                                Quant23 = reader["Quant23"] as string;
-                                Descr23 = reader["Descr23"] as string;
-                                Costs23 = reader["Costs23"] as string;
-                                ECost23 = reader["ECost23"] as string;
+                                Quant1 = rrr["Quant1"] as string;
+                                Descr1 = rrr["Descr1"] as string;
+                                Costs1 = rrr["Costs1"] as string;
+                                ECost1 = rrr["ECost1"] as string;
+                                Quant2 = rrr["Quant2"] as string;
+                                Descr2 = rrr["Descr2"] as string;
+                                Costs2 = rrr["Costs2"] as string;
+                                ECost2 = rrr["ECost2"] as string;
+                                Quant3 = rrr["Quant3"] as string;
+                                Descr3 = rrr["Descr3"] as string;
+                                Costs3 = rrr["Costs3"] as string;
+                                ECost3 = rrr["ECost3"] as string;
+                                Quant4 = rrr["Quant4"] as string;
+                                Descr4 = rrr["Descr4"] as string;
+                                Costs4 = rrr["Costs4"] as string;
+                                ECost4 = rrr["ECost4"] as string;
+                                Quant5 = rrr["Quant5"] as string;
+                                Descr5 = rrr["Descr5"] as string;
+                                Costs5 = rrr["Costs5"] as string;
+                                ECost5 = rrr["ECost5"] as string;
+                                Quant6 = rrr["Quant6"] as string;
+                                Descr6 = rrr["Descr6"] as string;
+                                Costs6 = rrr["Costs6"] as string;
+                                ECost6 = rrr["ECost6"] as string;
+                                Quant7 = rrr["Quant7"] as string;
+                                Descr7 = rrr["Descr7"] as string;
+                                Costs7 = rrr["Costs7"] as string;
+                                ECost7 = rrr["ECost7"] as string;
+                                Quant8 = rrr["Quant8"] as string;
+                                Descr8 = rrr["Descr8"] as string;
+                                Costs8 = rrr["Costs8"] as string;
+                                ECost8 = rrr["ECost8"] as string;
+                                Quant9 = rrr["Quant9"] as string;
+                                Descr9 = rrr["Descr9"] as string;
+                                Costs9 = rrr["Costs9"] as string;
+                                ECost9 = rrr["ECost9"] as string;
+                                Quant10 = rrr["Quant10"] as string;
+                                Descr10 = rrr["Descr10"] as string;
+                                Costs10 = rrr["Costs10"] as string;
+                                ECost10 = rrr["ECost10"] as string;
+                                Quant11 = rrr["Quant11"] as string;
+                                Descr11 = rrr["Descr11"] as string;
+                                Costs11 = rrr["Costs11"] as string;
+                                ECost11 = rrr["ECost11"] as string;
+                                Quant12 = rrr["Quant12"] as string;
+                                Descr12 = rrr["Descr12"] as string;
+                                Costs12 = rrr["Costs12"] as string;
+                                ECost12 = rrr["ECost12"] as string;
+                                Quant13 = rrr["Quant13"] as string;
+                                Descr13 = rrr["Descr13"] as string;
+                                Costs13 = rrr["Costs13"] as string;
+                                ECost13 = rrr["ECost13"] as string;
+                                Quant14 = rrr["Quant14"] as string;
+                                Descr14 = rrr["Descr14"] as string;
+                                Costs14 = rrr["Costs14"] as string;
+                                ECost14 = rrr["ECost14"] as string;
+                                Quant15 = rrr["Quant15"] as string;
+                                Descr15 = rrr["Descr15"] as string;
+                                Costs15 = rrr["Costs15"] as string;
+                                ECost15 = rrr["ECost15"] as string;
+                                Quant16 = rrr["Quant16"] as string;
+                                Descr16 = rrr["Descr16"] as string;
+                                Costs16 = rrr["Costs16"] as string;
+                                ECost16 = rrr["ECost16"] as string;
+                                Quant17 = rrr["Quant17"] as string;
+                                Descr17 = rrr["Descr17"] as string;
+                                Costs17 = rrr["Costs17"] as string;
+                                ECost17 = rrr["ECost17"] as string;
+                                Quant18 = rrr["Quant18"] as string;
+                                Descr18 = rrr["Descr18"] as string;
+                                Costs18 = rrr["Costs18"] as string;
+                                ECost18 = rrr["ECost18"] as string;
+                                Quant19 = rrr["Quant19"] as string;
+                                Descr19 = rrr["Descr19"] as string;
+                                Costs19 = rrr["Costs19"] as string;
+                                ECost19 = rrr["ECost19"] as string;
+                                Quant20 = rrr["Quant20"] as string;
+                                Descr20 = rrr["Descr20"] as string;
+                                Costs20 = rrr["Costs20"] as string;
+                                ECost20 = rrr["ECost20"] as string;
+                                Quant21 = rrr["Quant21"] as string;
+                                Descr21 = rrr["Descr21"] as string;
+                                Costs21 = rrr["Costs21"] as string;
+                                ECost21 = rrr["ECost21"] as string;
+                                Quant22 = rrr["Quant22"] as string;
+                                Descr22 = rrr["Descr22"] as string;
+                                Costs22 = rrr["Costs22"] as string;
+                                ECost22 = rrr["ECost22"] as string;
+                                Quant23 = rrr["Quant23"] as string;
+                                Descr23 = rrr["Descr23"] as string;
+                                Costs23 = rrr["Costs23"] as string;
+                                ECost23 = rrr["ECost23"] as string;
 
-                                InvInstructions = reader["InvInstructions"] as string;
-                                InvNotes = reader["InvNotes"] as string;
-                                VendorNotes = reader["VendorNotes"] as string;
-                                AccNotes = reader["Spare1"] as string;
-                                CrMemo = reader["CrMemo"] as string;
-                                InvNumber = reader["InvNumber"] as string;
-                                InvDate = reader["InvDate"] as string;
-                                Status = reader["Status"] as string;
-                                CheckNumbers = reader["CheckNumbers"] as string;
-                                CheckDates = reader["CheckDates"] as string;
+                                InvInstructions = rrr["InvInstructions"] as string;
+                                InvNotes = rrr["InvNotes"] as string;
+                                VendorNotes = rrr["VendorNotes"] as string;
+                                AccNotes = rrr["Spare1"] as string;
+                                CrMemo = rrr["CrMemo"] as string;
+                                InvNumber = rrr["InvNumber"] as string;
+                                InvDate = rrr["InvDate"] as string;
+                                Status = rrr["Status"] as string;
+                                CheckNumbers = rrr["CheckNumbers"] as string;
+                                CheckDates = rrr["CheckDates"] as string;
 
-                                ComDate1 = reader["ComDate1"] as string;
-                                ComCheckNumber1 = reader["ComCheckNumber1"] as string;
-                                ComPaid1 = reader["ComPaid1"] as string;
-                                ComDate2 = reader["ComDate2"] as string;
-                                ComCheckNumber2 = reader["ComCheckNumber2"] as string;
-                                ComPaid2 = reader["ComPaid2"] as string;
-                                ComDate3 = reader["ComDate3"] as string;
-                                ComCheckNumber3 = reader["ComCheckNumber3"] as string;
-                                ComPaid3 = reader["ComPaid3"] as string;
-                                ComDate4 = reader["ComDate4"] as string;
-                                ComCheckNumber4 = reader["ComCheckNumber4"] as string;
-                                ComPaid4 = reader["ComPaid4"] as string;
-                                ComDate5 = reader["ComDate5"] as string;
-                                ComCheckNumber5 = reader["ComCheckNumber5"] as string;
-                                ComPaid5 = reader["ComPaid5"] as string;
+                                ComDate1 = rrr["ComDate1"] as string;
+                                ComCheckNumber1 = rrr["ComCheckNumber1"] as string;
+                                ComPaid1 = rrr["ComPaid1"] as string;
+                                ComDate2 = rrr["ComDate2"] as string;
+                                ComCheckNumber2 = rrr["ComCheckNumber2"] as string;
+                                ComPaid2 = rrr["ComPaid2"] as string;
+                                ComDate3 = rrr["ComDate3"] as string;
+                                ComCheckNumber3 = rrr["ComCheckNumber3"] as string;
+                                ComPaid3 = rrr["ComPaid3"] as string;
+                                ComDate4 = rrr["ComDate4"] as string;
+                                ComCheckNumber4 = rrr["ComCheckNumber4"] as string;
+                                ComPaid4 = rrr["ComPaid4"] as string;
+                                ComDate5 = rrr["ComDate5"] as string;
+                                ComCheckNumber5 = rrr["ComCheckNumber5"] as string;
+                                ComPaid5 = rrr["ComPaid5"] as string;
 
-                                ComAmount = reader["ComAmount"] as string;
-                                ComBalance = reader["ComBalance"] as string;
-                                DeliveryNotes = reader["DeliveryNotes"] as string;
-                                PONotes = reader["PONotes"] as string;
-                                IsOk = reader["Spare2"] as string;
+                                ComAmount = rrr["ComAmount"] as string;
+                                ComBalance = rrr["ComBalance"] as string;
+                                DeliveryNotes = rrr["DeliveryNotes"] as string;
+                                PONotes = rrr["PONotes"] as string;
+                                IsOk = rrr["Spare2"] as string;
 
                                 #endregion
 
@@ -6264,13 +6289,35 @@ namespace Tugwell
                     try
                     {
                         con.Open();
-                        using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
+
+                        using (SQLiteDataAdapter DB = new SQLiteDataAdapter(com))
+                        //using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
                         {
-                            while (reader.Read())
+                            DataSet DS = new DataSet();
+
+                            DB.Fill(DS, "QuoteTable");
+
+                            if (DS.Tables["QuoteTable"].Rows.Count != 0)
                             {
-                                POs.Add(reader["PO"] as string);
+
+                                DataRow rrr;
+                                int max = getRowCountsFromQuotes();
+                                for (int i = 0; i < max; i++)
+                                {
+                                    #region reads as strings
+                                    rrr = DS.Tables["QuoteTable"].Rows[i];
+                                    POs.Add(rrr["PO"] as string);
+                                    #endregion
+                                }
                             }
                         }
+                        //using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
+                        //{
+                         //   while (reader.Read())
+                         //   {
+                         //       POs.Add(reader["PO"] as string);
+                         //   }
+                       // }
                     }
                     catch (SqlException ex)
                     {
@@ -6325,178 +6372,180 @@ namespace Tugwell
                     try
                     {
                         con.Open();
-                        using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
-                        {
-                            int rows = 0;
-                            while (reader.Read())
-                            {
-                                if (rowCount > 0)
-                                {
-                                    rows++;
 
-                                    if (rowCount > rows)
-                                        continue;
-                                }
+                        using (SQLiteDataAdapter DB = new SQLiteDataAdapter(com))
+                        //using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
+                        {
+                            DataSet DS = new DataSet();
+
+                            DB.Fill(DS, "QuoteTable");
+
+                            if (DS.Tables["QuoteTable"].Rows.Count != 0)
+                            {
+
+                                DataRow rrr = DS.Tables["QuoteTable"].Rows[rowCount - 1];
+
 
                                 #region reads as strings
 
-                                theQPO = reader["PO"] as string;
+                                theQPO = rrr["PO"] as string;
 
-                                Date = reader["Date"] as string;
-                                Status = reader["Status"] as string;
+                                Date = rrr["Date"] as string;
+                                Status = rrr["Status"] as string;
 
-                                Company = reader["Company"] as string;
-                                VendorName = reader["VendorName"] as string;
-                                JobName = reader["JobName"] as string;
-                                CustomerPO = reader["CustomerPO"] as string;
-                                VendorNumber = reader["VendorNumber"] as string;
-                                SalesAss = reader["SalesAss"] as string;
-                                SoldTo = reader["SoldTo"] as string;
-                                Street1 = reader["Street1"] as string;
-                                Street2 = reader["Street2"] as string;
-                                City = reader["City"] as string;
-                                State = reader["State"] as string;
-                                Zip = reader["Zip"] as string;
-                                Delivery = reader["Delivery"] as string;
-                                Terms = reader["Terms"] as string;
-                                FreightSelect = reader["FreightSelect"] as string;
-                                IsQManual = reader["IsQManual"] as string;
-                                IsPManual = reader["IsPManual"] as string;
-                                Location = reader["Location"] as string;
-                                Equipment = reader["Equipment"] as string;
-                                EquipCategory = reader["EquipCategory"] as string;
+                                Company = rrr["Company"] as string;
+                                VendorName = rrr["VendorName"] as string;
+                                JobName = rrr["JobName"] as string;
+                                CustomerPO = rrr["CustomerPO"] as string;
+                                VendorNumber = rrr["VendorNumber"] as string;
+                                SalesAss = rrr["SalesAss"] as string;
+                                SoldTo = rrr["SoldTo"] as string;
+                                Street1 = rrr["Street1"] as string;
+                                Street2 = rrr["Street2"] as string;
+                                City = rrr["City"] as string;
+                                State = rrr["State"] as string;
+                                Zip = rrr["Zip"] as string;
+                                Delivery = rrr["Delivery"] as string;
+                                Terms = rrr["Terms"] as string;
+                                FreightSelect = rrr["FreightSelect"] as string;
+                                IsQManual = rrr["IsQManual"] as string;
+                                IsPManual = rrr["IsPManual"] as string;
+                                Location = rrr["Location"] as string;
+                                Equipment = rrr["Equipment"] as string;
+                                EquipCategory = rrr["EquipCategory"] as string;
 
-                                QuotePrice = reader["QuotePrice"] as string;
-                                Credit = reader["Credit"] as string;
-                                Freight = reader["Freight"] as string;
-                                ShopTime = reader["ShopTime"] as string;
-                                TotalCost = reader["TotalCost"] as string;
-                                GrossProfit = reader["GrossProfit"] as string;
-                                Profit = reader["Profit"] as string;
-                                MarkUp = reader["MarkUp"] as string;
-                                Description = reader["Description"] as string;
+                                QuotePrice = rrr["QuotePrice"] as string;
+                                Credit = rrr["Credit"] as string;
+                                Freight = rrr["Freight"] as string;
+                                ShopTime = rrr["ShopTime"] as string;
+                                TotalCost = rrr["TotalCost"] as string;
+                                GrossProfit = rrr["GrossProfit"] as string;
+                                Profit = rrr["Profit"] as string;
+                                MarkUp = rrr["MarkUp"] as string;
+                                Description = rrr["Description"] as string;
 
-                                Quant1 = reader["Quant1"] as string;
-                                Descr1 = reader["Descr1"] as string;
-                                Costs1 = reader["Costs1"] as string;
-                                ECost1 = reader["ECost1"] as string;
-                                Price1 = reader["Price1"] as string;
-                                Quant2 = reader["Quant2"] as string;
-                                Descr2 = reader["Descr2"] as string;
-                                Costs2 = reader["Costs2"] as string;
-                                Price2 = reader["Price2"] as string;
-                                ECost2 = reader["ECost2"] as string;
-                                Quant3 = reader["Quant3"] as string;
-                                Descr3 = reader["Descr3"] as string;
-                                Costs3 = reader["Costs3"] as string;
-                                ECost3 = reader["ECost3"] as string;
-                                Price3 = reader["Price3"] as string;
-                                Quant4 = reader["Quant4"] as string;
-                                Descr4 = reader["Descr4"] as string;
-                                Costs4 = reader["Costs4"] as string;
-                                ECost4 = reader["ECost4"] as string;
-                                Price4 = reader["Price4"] as string;
-                                Quant5 = reader["Quant5"] as string;
-                                Descr5 = reader["Descr5"] as string;
-                                Costs5 = reader["Costs5"] as string;
-                                ECost5 = reader["ECost5"] as string;
-                                Price5 = reader["Price5"] as string;
-                                Quant6 = reader["Quant6"] as string;
-                                Descr6 = reader["Descr6"] as string;
-                                Costs6 = reader["Costs6"] as string;
-                                ECost6 = reader["ECost6"] as string;
-                                Price6 = reader["Price6"] as string;
-                                Quant7 = reader["Quant7"] as string;
-                                Descr7 = reader["Descr7"] as string;
-                                Costs7 = reader["Costs7"] as string;
-                                ECost7 = reader["ECost7"] as string;
-                                Price7 = reader["Price7"] as string;
-                                Quant8 = reader["Quant8"] as string;
-                                Descr8 = reader["Descr8"] as string;
-                                Costs8 = reader["Costs8"] as string;
-                                ECost8 = reader["ECost8"] as string;
-                                Price8 = reader["Price8"] as string;
-                                Quant9 = reader["Quant9"] as string;
-                                Descr9 = reader["Descr9"] as string;
-                                Costs9 = reader["Costs9"] as string;
-                                ECost9 = reader["ECost9"] as string;
-                                Price9 = reader["Price9"] as string;
-                                Quant10 = reader["Quant10"] as string;
-                                Descr10 = reader["Descr10"] as string;
-                                Costs10 = reader["Costs10"] as string;
-                                ECost10 = reader["ECost10"] as string;
-                                Price10 = reader["Price10"] as string;
-                                Quant11 = reader["Quant11"] as string;
-                                Descr11 = reader["Descr11"] as string;
-                                Costs11 = reader["Costs11"] as string;
-                                ECost11 = reader["ECost11"] as string;
-                                Price11 = reader["Price11"] as string;
-                                Quant12 = reader["Quant12"] as string;
-                                Descr12 = reader["Descr12"] as string;
-                                Costs12 = reader["Costs12"] as string;
-                                ECost12 = reader["ECost12"] as string;
-                                Price12 = reader["Price12"] as string;
-                                Quant13 = reader["Quant13"] as string;
-                                Descr13 = reader["Descr13"] as string;
-                                Costs13 = reader["Costs13"] as string;
-                                ECost13 = reader["ECost13"] as string;
-                                Price13 = reader["Price13"] as string;
-                                Quant14 = reader["Quant14"] as string;
-                                Descr14 = reader["Descr14"] as string;
-                                Costs14 = reader["Costs14"] as string;
-                                ECost14 = reader["ECost14"] as string;
-                                Price14 = reader["Price14"] as string;
-                                Quant15 = reader["Quant15"] as string;
-                                Descr15 = reader["Descr15"] as string;
-                                Costs15 = reader["Costs15"] as string;
-                                ECost15 = reader["ECost15"] as string;
-                                Price15 = reader["Price15"] as string;
-                                Quant16 = reader["Quant16"] as string;
-                                Descr16 = reader["Descr16"] as string;
-                                Costs16 = reader["Costs16"] as string;
-                                ECost16 = reader["ECost16"] as string;
-                                Price16 = reader["Price16"] as string;
-                                Quant17 = reader["Quant17"] as string;
-                                Descr17 = reader["Descr17"] as string;
-                                Costs17 = reader["Costs17"] as string;
-                                ECost17 = reader["ECost17"] as string;
-                                Price17 = reader["Price17"] as string;
-                                Quant18 = reader["Quant18"] as string;
-                                Descr18 = reader["Descr18"] as string;
-                                Costs18 = reader["Costs18"] as string;
-                                ECost18 = reader["ECost18"] as string;
-                                Price18 = reader["Price18"] as string;
-                                Quant19 = reader["Quant19"] as string;
-                                Descr19 = reader["Descr19"] as string;
-                                Costs19 = reader["Costs19"] as string;
-                                ECost19 = reader["ECost19"] as string;
-                                Price19 = reader["Price19"] as string;
-                                Quant20 = reader["Quant20"] as string;
-                                Descr20 = reader["Descr20"] as string;
-                                Costs20 = reader["Costs20"] as string;
-                                ECost20 = reader["ECost20"] as string;
-                                Price20 = reader["Price20"] as string;
-                                Quant21 = reader["Quant21"] as string;
-                                Descr21 = reader["Descr21"] as string;
-                                Costs21 = reader["Costs21"] as string;
-                                ECost21 = reader["ECost21"] as string;
-                                Price21 = reader["Price21"] as string;
-                                Quant22 = reader["Quant22"] as string;
-                                Descr22 = reader["Descr22"] as string;
-                                Costs22 = reader["Costs22"] as string;
-                                ECost22 = reader["ECost22"] as string;
-                                Price22 = reader["Price22"] as string;
-                                Quant23 = reader["Quant23"] as string;
-                                Descr23 = reader["Descr23"] as string;
-                                Costs23 = reader["Costs23"] as string;
-                                ECost23 = reader["ECost23"] as string;
-                                Price23 = reader["Price23"] as string;
+                                Quant1 = rrr["Quant1"] as string;
+                                Descr1 = rrr["Descr1"] as string;
+                                Costs1 = rrr["Costs1"] as string;
+                                ECost1 = rrr["ECost1"] as string;
+                                Price1 = rrr["Price1"] as string;
+                                Quant2 = rrr["Quant2"] as string;
+                                Descr2 = rrr["Descr2"] as string;
+                                Costs2 = rrr["Costs2"] as string;
+                                Price2 = rrr["Price2"] as string;
+                                ECost2 = rrr["ECost2"] as string;
+                                Quant3 = rrr["Quant3"] as string;
+                                Descr3 = rrr["Descr3"] as string;
+                                Costs3 = rrr["Costs3"] as string;
+                                ECost3 = rrr["ECost3"] as string;
+                                Price3 = rrr["Price3"] as string;
+                                Quant4 = rrr["Quant4"] as string;
+                                Descr4 = rrr["Descr4"] as string;
+                                Costs4 = rrr["Costs4"] as string;
+                                ECost4 = rrr["ECost4"] as string;
+                                Price4 = rrr["Price4"] as string;
+                                Quant5 = rrr["Quant5"] as string;
+                                Descr5 = rrr["Descr5"] as string;
+                                Costs5 = rrr["Costs5"] as string;
+                                ECost5 = rrr["ECost5"] as string;
+                                Price5 = rrr["Price5"] as string;
+                                Quant6 = rrr["Quant6"] as string;
+                                Descr6 = rrr["Descr6"] as string;
+                                Costs6 = rrr["Costs6"] as string;
+                                ECost6 = rrr["ECost6"] as string;
+                                Price6 = rrr["Price6"] as string;
+                                Quant7 = rrr["Quant7"] as string;
+                                Descr7 = rrr["Descr7"] as string;
+                                Costs7 = rrr["Costs7"] as string;
+                                ECost7 = rrr["ECost7"] as string;
+                                Price7 = rrr["Price7"] as string;
+                                Quant8 = rrr["Quant8"] as string;
+                                Descr8 = rrr["Descr8"] as string;
+                                Costs8 = rrr["Costs8"] as string;
+                                ECost8 = rrr["ECost8"] as string;
+                                Price8 = rrr["Price8"] as string;
+                                Quant9 = rrr["Quant9"] as string;
+                                Descr9 = rrr["Descr9"] as string;
+                                Costs9 = rrr["Costs9"] as string;
+                                ECost9 = rrr["ECost9"] as string;
+                                Price9 = rrr["Price9"] as string;
+                                Quant10 = rrr["Quant10"] as string;
+                                Descr10 = rrr["Descr10"] as string;
+                                Costs10 = rrr["Costs10"] as string;
+                                ECost10 = rrr["ECost10"] as string;
+                                Price10 = rrr["Price10"] as string;
+                                Quant11 = rrr["Quant11"] as string;
+                                Descr11 = rrr["Descr11"] as string;
+                                Costs11 = rrr["Costs11"] as string;
+                                ECost11 = rrr["ECost11"] as string;
+                                Price11 = rrr["Price11"] as string;
+                                Quant12 = rrr["Quant12"] as string;
+                                Descr12 = rrr["Descr12"] as string;
+                                Costs12 = rrr["Costs12"] as string;
+                                ECost12 = rrr["ECost12"] as string;
+                                Price12 = rrr["Price12"] as string;
+                                Quant13 = rrr["Quant13"] as string;
+                                Descr13 = rrr["Descr13"] as string;
+                                Costs13 = rrr["Costs13"] as string;
+                                ECost13 = rrr["ECost13"] as string;
+                                Price13 = rrr["Price13"] as string;
+                                Quant14 = rrr["Quant14"] as string;
+                                Descr14 = rrr["Descr14"] as string;
+                                Costs14 = rrr["Costs14"] as string;
+                                ECost14 = rrr["ECost14"] as string;
+                                Price14 = rrr["Price14"] as string;
+                                Quant15 = rrr["Quant15"] as string;
+                                Descr15 = rrr["Descr15"] as string;
+                                Costs15 = rrr["Costs15"] as string;
+                                ECost15 = rrr["ECost15"] as string;
+                                Price15 = rrr["Price15"] as string;
+                                Quant16 = rrr["Quant16"] as string;
+                                Descr16 = rrr["Descr16"] as string;
+                                Costs16 = rrr["Costs16"] as string;
+                                ECost16 = rrr["ECost16"] as string;
+                                Price16 = rrr["Price16"] as string;
+                                Quant17 = rrr["Quant17"] as string;
+                                Descr17 = rrr["Descr17"] as string;
+                                Costs17 = rrr["Costs17"] as string;
+                                ECost17 = rrr["ECost17"] as string;
+                                Price17 = rrr["Price17"] as string;
+                                Quant18 = rrr["Quant18"] as string;
+                                Descr18 = rrr["Descr18"] as string;
+                                Costs18 = rrr["Costs18"] as string;
+                                ECost18 = rrr["ECost18"] as string;
+                                Price18 = rrr["Price18"] as string;
+                                Quant19 = rrr["Quant19"] as string;
+                                Descr19 = rrr["Descr19"] as string;
+                                Costs19 = rrr["Costs19"] as string;
+                                ECost19 = rrr["ECost19"] as string;
+                                Price19 = rrr["Price19"] as string;
+                                Quant20 = rrr["Quant20"] as string;
+                                Descr20 = rrr["Descr20"] as string;
+                                Costs20 = rrr["Costs20"] as string;
+                                ECost20 = rrr["ECost20"] as string;
+                                Price20 = rrr["Price20"] as string;
+                                Quant21 = rrr["Quant21"] as string;
+                                Descr21 = rrr["Descr21"] as string;
+                                Costs21 = rrr["Costs21"] as string;
+                                ECost21 = rrr["ECost21"] as string;
+                                Price21 = rrr["Price21"] as string;
+                                Quant22 = rrr["Quant22"] as string;
+                                Descr22 = rrr["Descr22"] as string;
+                                Costs22 = rrr["Costs22"] as string;
+                                ECost22 = rrr["ECost22"] as string;
+                                Price22 = rrr["Price22"] as string;
+                                Quant23 = rrr["Quant23"] as string;
+                                Descr23 = rrr["Descr23"] as string;
+                                Costs23 = rrr["Costs23"] as string;
+                                ECost23 = rrr["ECost23"] as string;
+                                Price23 = rrr["Price23"] as string;
 
-                                InvNotes = reader["InvNotes"] as string;
-                                DeliveryNotes = reader["DeliveryNotes"] as string;
-                                QuoteNotes = reader["QuoteNotes"] as string;
+                                InvNotes = rrr["InvNotes"] as string;
+                                DeliveryNotes = rrr["DeliveryNotes"] as string;
+                                QuoteNotes = rrr["QuoteNotes"] as string;
 
                                 #endregion
+
 
                                 con.Close();
                                 return true;
@@ -7745,7 +7794,8 @@ namespace Tugwell
 
         private string getDbasePathName()
         {
-            return this.toolStripTextBoxDbasePath.Text.Trim() + this._DBASENAME;
+            return this.toolStripTextBoxDbasePath.Text.Trim() + this._DBASENAME
+                + "; New=true; Version=3; PRAGMA cache_size=20000; PRAGMA page_size=32768; PRAGMA synchronous=off";
         }
 
         private bool isStringTrue(string value)
