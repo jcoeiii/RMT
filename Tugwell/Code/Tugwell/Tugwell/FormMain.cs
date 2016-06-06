@@ -22,9 +22,10 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V4.0 2016_06_05";
+            this.Text = "Tugwell V4.1 2016_06_07";
             
-            this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\";
+            // make sure dbase file is the only one in this folder
+            this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
             this.comboBoxYearControl.Text = "2016";
 
             this.toolStripComboBoxSignature.SelectedIndex = 0; // no signature
@@ -168,6 +169,12 @@ namespace Tugwell
         }
 
         #endregion
+
+        //Random _MyRandom = new Random(Guid.NewGuid().GetHashCode());
+        //private int getRandom()
+        //{
+        //    return _MyRandom.Next(100);
+        //}
 
 
         #region Loading Startup...
@@ -2986,6 +2993,7 @@ namespace Tugwell
             string nextPO = generateNextOrderPO();
 
             helperCreateNewOrderRow(nextPO, false);
+            _OrderTotal++;
         }
 
         // new stock order T
@@ -2997,6 +3005,7 @@ namespace Tugwell
             string nextPO = generateNextOrderPO() + "T";
 
             helperCreateNewOrderRow(nextPO, false);
+            _OrderTotal++;
         }
 
         // new warranty order W
@@ -3008,6 +3017,7 @@ namespace Tugwell
             string nextPO = generateNextOrderPO() + "W";
 
             helperCreateNewOrderRow(nextPO, false);
+            _OrderTotal++;
         }
 
         // new quotes
@@ -3157,6 +3167,7 @@ namespace Tugwell
             insertNewDataRowOrders(nextPO);
 
             readOrderAndUpdateGUI(nextPO, 0);
+            _OrderTotal++;
 
             //int count = getRowCountsFromOrders();
             //this._currentRowOrders = count;
@@ -3329,6 +3340,8 @@ namespace Tugwell
         {
             if (askImportantQuestion("DANGEROUS! This will delete the entire database. Are you sure?") == System.Windows.Forms.DialogResult.No)
                 return;
+
+            _OrderTotal = 0;
 
             #region OrderTable creator string
 
@@ -3823,6 +3836,7 @@ namespace Tugwell
                     return;
 
                 deletePOFromOrders(this.textBoxPO.Text);
+                _OrderTotal--;
 
                 count--;
 
@@ -3864,6 +3878,7 @@ namespace Tugwell
         private void cleanDatabaseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             vacuumDatabase();
+            _OrderTotal = 0;
 
             MessageBox.Show(this, "Clean Done!");
         }
@@ -3894,29 +3909,38 @@ namespace Tugwell
                         con.Open();
                         com.ExecuteNonQuery();
                     }
-                    catch //(Exception ex)
+                    catch (Exception ex)
                     {
-                        //MessageBox.Show(this, "Database error: " + ex.Message);
+                        MessageBox.Show(this, "Database error: " + ex.Message);
                     }
                 }
             }
         }
 
+        private int _OrderTotal = 0;
+
         private int getRowCountsFromOrders()
         {
-            //_log.append("getRowCountsFromOrders start");
+            _log.append("getRowCountsFromOrders start");
+
+            //if (_OrderTotal != 0)
+            //{
+            //    if (getRandom() > 20)
+            //        return _OrderTotal;
+            //}
 
             int? count = 0;
 
             using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
             {
-                using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
+                using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand("SET ARITHABORT ON", con))
                 {
-                    com.CommandText = "Select COUNT(PO) From OrderTable";      // Select all rows from our database table
+                    
 
                     try
                     {
                         con.Open();
+                        com.CommandText = "Select COUNT(PO) From OrderTable";      // Select all rows from our database table
                         object o = com.ExecuteScalar();
                         count = Convert.ToInt32(o);
                     }
@@ -3927,7 +3951,10 @@ namespace Tugwell
                 }
             }
 
-            //_log.append("getRowCountsFromOrders end");
+            _log.append("getRowCountsFromOrders end");
+
+            if (count.HasValue)
+                _OrderTotal = count.Value;
 
             return (count == null) ? 0 : count.Value;
         }
@@ -3936,13 +3963,14 @@ namespace Tugwell
         {
             using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
             {
-                using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
+                using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand("SET ARITHABORT ON", con))
                 {
-                    com.CommandText = "DELETE From OrderTable Where PO = '" + PO + "'";
+                    
 
                     try
                     {
                         con.Open();
+                        com.CommandText = "DELETE From OrderTable Where PO = '" + PO + "'";
                         com.ExecuteNonQuery();
                     }
                     catch (SqlException ex)
@@ -3961,14 +3989,16 @@ namespace Tugwell
 
             using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
             {
-                using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
+                using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand("SET ARITHABORT ON", con))
                 {
                     // Open the connection to the database
-                    com.CommandText = "Select PO FROM OrderTable";
+                    //com.CommandText = "Select PO FROM OrderTable";
 
                     try
                     {
                         con.Open();
+
+                        com.CommandText = "Select PO FROM OrderTable";
 
                         using (SQLiteDataAdapter DB = new SQLiteDataAdapter(com))
                         //using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
@@ -4078,7 +4108,7 @@ namespace Tugwell
 
             using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
             {
-                using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
+                using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand("SET ARITHABORT ON", con))
                 {
                     if (PO == "")
                         com.CommandText = "Select * FROM OrderTable";
@@ -4087,7 +4117,10 @@ namespace Tugwell
 
                     try
                     {
+
                         con.Open();
+
+                        _log.append("readRowOrders conn opened");
 
                         using (SQLiteDataAdapter DB = new SQLiteDataAdapter(com))
                         //using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
@@ -4096,10 +4129,14 @@ namespace Tugwell
 
                             DB.Fill(DS, "OrderTable");
 
+                            _log.append("readRowOrders DB filled");
+
                             if (DS.Tables["OrderTable"].Rows.Count != 0)
                             {
                                 DataRow rrr = DS.Tables["OrderTable"].Rows[rowCount];
 
+
+                                //_log.append("readRowOrders reads start");
                                 #region reads as strings
 
                                 thePO = rrr["PO"] as string;
@@ -4345,6 +4382,7 @@ namespace Tugwell
                                 IsOk = rrr["Spare2"] as string;
 
                                 #endregion
+                                //_log.append("readRowOrders reads end");
 
                                 con.Close();
 
@@ -7794,8 +7832,8 @@ namespace Tugwell
 
         private string getDbasePathName()
         {
-            return this.toolStripTextBoxDbasePath.Text.Trim() + this._DBASENAME
-                + "; New=true; Version=3; PRAGMA cache_size=20000; PRAGMA page_size=32768; PRAGMA synchronous=off";
+            return this.toolStripTextBoxDbasePath.Text.Trim() + this._DBASENAME;
+                //+ "; New=true; Version=3; PRAGMA cache_size=20000; PRAGMA page_size=32768; PRAGMA synchronous=off";
         }
 
         private bool isStringTrue(string value)
@@ -7818,8 +7856,11 @@ namespace Tugwell
 
         private string generatePDFileName(string type, string ID)
         {
-            string docs = this.toolStripTextBoxDbasePath.Text;//Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string docs = this.toolStripTextBoxDbasePath.Text + @"PDF\";//Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             string date = DateTime.Now.ToString(@"_hhmm_");
+
+            if (!Directory.Exists(docs))
+                Directory.CreateDirectory(docs);
 
             string filename;
             int count = 1;
