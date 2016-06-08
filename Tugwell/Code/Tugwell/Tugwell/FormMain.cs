@@ -22,7 +22,7 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V4.1 2016_06_07";
+            this.Text = "Tugwell V4.2 2016_06_08";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
@@ -223,6 +223,8 @@ namespace Tugwell
             //int num = r.Next(100);
             //if (num > 90)
             //    vacuumDatabase();
+
+            Killconnection();
         }
 
         #endregion
@@ -3898,6 +3900,8 @@ namespace Tugwell
 
         private void vacuumDatabase()
         {
+            Killconnection();
+            
             using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
@@ -3930,16 +3934,14 @@ namespace Tugwell
             //}
 
             int? count = 0;
-
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
+            SQLiteConnection con = GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand("SET ARITHABORT ON", con))
                 {
-                    
-
                     try
                     {
-                        con.Open();
+                        //con.Open();
                         com.CommandText = "Select COUNT(PO) From OrderTable";      // Select all rows from our database table
                         object o = com.ExecuteScalar();
                         count = Convert.ToInt32(o);
@@ -3961,15 +3963,14 @@ namespace Tugwell
 
         private void deletePOFromOrders(string PO)
         {
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
+            SQLiteConnection con = GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand("SET ARITHABORT ON", con))
                 {
-                    
-
                     try
                     {
-                        con.Open();
+                       // con.Open();
                         com.CommandText = "DELETE From OrderTable Where PO = '" + PO + "'";
                         com.ExecuteNonQuery();
                     }
@@ -3986,8 +3987,8 @@ namespace Tugwell
             _log.append("getPOsFromOrders start");
 
             List<string> POs = new List<string>();
-
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
+            SQLiteConnection con = GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand("SET ARITHABORT ON", con))
                 {
@@ -3996,7 +3997,7 @@ namespace Tugwell
 
                     try
                     {
-                        con.Open();
+                        //con.Open();
 
                         com.CommandText = "Select PO FROM OrderTable";
 
@@ -4106,7 +4107,8 @@ namespace Tugwell
         {
             _log.append("readRowOrders start");
 
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
+            SQLiteConnection con = GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand("SET ARITHABORT ON", con))
                 {
@@ -4118,7 +4120,7 @@ namespace Tugwell
                     try
                     {
 
-                        con.Open();
+                        //con.Open();
 
                         _log.append("readRowOrders conn opened");
 
@@ -4384,7 +4386,7 @@ namespace Tugwell
                                 #endregion
                                 //_log.append("readRowOrders reads end");
 
-                                con.Close();
+                                //con.Close();
 
                                 _log.append("readRowOrders end1");
 
@@ -4710,8 +4712,8 @@ namespace Tugwell
             string ComAmount, string ComBalance, string DeliveryNotes, string PONotes, string IsOk)
         {
             _log.append("updateRowOrders start");
-
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
+            SQLiteConnection con = GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
@@ -5042,7 +5044,7 @@ namespace Tugwell
 
                     try
                     {
-                        con.Open();
+                        //con.Open();
 
 
                         int t = com.ExecuteNonQuery();      // Execute the query
@@ -5119,7 +5121,8 @@ namespace Tugwell
             string ComDate5, string ComCheckNumber5, string ComPaid5,
             string ComAmount, string ComBalance, string DeliveryNotes, string PONotes, string IsOk)
         {
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
+            SQLiteConnection con = GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
@@ -5506,7 +5509,7 @@ namespace Tugwell
 
                     try
                     {
-                        con.Open();
+                        //con.Open();
                         return com.ExecuteNonQuery();      // Execute the query
                     }
                     catch (SqlException ex)
@@ -6271,8 +6274,8 @@ namespace Tugwell
         private int getRowCountsFromQuotes()
         {
             int? count = 0;
-
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
+            SQLiteConnection con = GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
@@ -6280,7 +6283,7 @@ namespace Tugwell
 
                     try
                     {
-                        con.Open();
+                        //con.Open();
                         object o = com.ExecuteScalar();
                         count = Convert.ToInt32(o);
                     }
@@ -6296,14 +6299,15 @@ namespace Tugwell
 
         private void deletePOFromQuotes(string QPO)
         {
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
+            SQLiteConnection con = GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
                     com.CommandText = "DELETE From QuoteTable Where PO = '" + QPO + "'";
                     try
                     {
-                        con.Open();
+                        //con.Open();
                         com.ExecuteNonQuery();
                     }
                     catch (SqlException ex)
@@ -6318,7 +6322,8 @@ namespace Tugwell
         {
             List<string> POs = new List<string>();
 
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
+            SQLiteConnection con = GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
@@ -6326,7 +6331,7 @@ namespace Tugwell
 
                     try
                     {
-                        con.Open();
+                        //con.Open();
 
                         using (SQLiteDataAdapter DB = new SQLiteDataAdapter(com))
                         //using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
@@ -6398,7 +6403,8 @@ namespace Tugwell
             out string Quant23, out string Descr23, out string Costs23, out string ECost23, out string Price23,
             out string InvNotes, out string DeliveryNotes, out string QuoteNotes)
         {
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
+            SQLiteConnection con = GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
@@ -6409,7 +6415,7 @@ namespace Tugwell
 
                     try
                     {
-                        con.Open();
+                        //con.Open();
 
                         using (SQLiteDataAdapter DB = new SQLiteDataAdapter(com))
                         //using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
@@ -6585,7 +6591,7 @@ namespace Tugwell
                                 #endregion
 
 
-                                con.Close();
+                                //con.Close();
                                 return true;
                             }
                         }
@@ -6790,7 +6796,8 @@ namespace Tugwell
              string Quant23, string Descr23, string Costs23, string ECost23, string Price23,
              string InvNotes, string DeliveryNotes, string QuoteNotes)
         {
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
+            SQLiteConnection con = GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
@@ -6990,7 +6997,7 @@ namespace Tugwell
 
                     try
                     {
-                        con.Open();                         // Open the connection to the database
+                        //con.Open();                         // Open the connection to the database
                         return com.ExecuteNonQuery();       // Execute the query
                     }
                     catch (SqlException ex)
@@ -7032,8 +7039,10 @@ namespace Tugwell
              string Quant23, string Descr23, string Costs23, string ECost23, string Price23,
              string InvNotes, string DeliveryNotes, string QuoteNotes)
         {
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
+            SQLiteConnection con = GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName()))
             {
+                
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
                     #region insert string for QuoteTable
@@ -7262,7 +7271,7 @@ namespace Tugwell
                     
                     try
                     {
-                        con.Open();                         // Open the connection to the database
+                        //con.Open();                         // Open the connection to the database
                         return com.ExecuteNonQuery();       // Execute the query
                     }
                     catch (SqlException ex)
@@ -7813,8 +7822,34 @@ namespace Tugwell
 
         #endregion
 
+        private SQLiteConnection __con = null;
 
         #region General Helpers
+
+        private SQLiteConnection GetConnection()
+        {
+            if (__con == null)
+            {
+                __con = new System.Data.SQLite.SQLiteConnection("data source=" + getDbasePathName());
+
+                try
+                {
+                    __con.Open();
+                }
+                catch { }
+            }
+
+            return __con;
+        }
+
+        private void Killconnection()
+        {
+            if (__con != null)
+            {
+                __con.Close();
+                __con = null;
+            }
+        }
 
         private static Random random = new Random((int)DateTime.Now.Ticks);
         private string RandomString(int Size)
