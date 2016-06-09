@@ -14,8 +14,9 @@ namespace Tugwell
 {
     public partial class FormParts : Form
     {
-        public FormParts(string dbasePath)
+        public FormParts(FormMain main, string dbasePath)
         {
+            this._main = main;
             _dbasePath = dbasePath;
 
             InitializeComponent();
@@ -29,6 +30,7 @@ namespace Tugwell
             catch { }
         }
 
+        private FormMain _main;
         private string _dbasePath;
 
         private bool _stopComboEvent = false;
@@ -239,7 +241,8 @@ namespace Tugwell
 
         private void deletePart(string Category, string Description)
         {
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
+            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
@@ -247,7 +250,7 @@ namespace Tugwell
 
                     try
                     {
-                        con.Open();
+                        //con.Open();
                         com.ExecuteNonQuery();
                     }
                     catch (SqlException ex)
@@ -262,7 +265,8 @@ namespace Tugwell
         {
             List<string> parts = new List<string>();
 
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
+            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
@@ -270,7 +274,7 @@ namespace Tugwell
 
                     try
                     {
-                        con.Open();
+                        //con.Open();
                         using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
                         {
                             while (reader.Read())
@@ -293,7 +297,8 @@ namespace Tugwell
 
         private int updatePartRow(string Category, string Description, string Price)
         {
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
+            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
@@ -316,7 +321,7 @@ namespace Tugwell
                     
                     try
                     {
-                        con.Open();                         // Open the connection to the database
+                        //con.Open();                         // Open the connection to the database
                         return com.ExecuteNonQuery();       // Execute the query
                     }
                     catch (SqlException ex)
@@ -330,7 +335,8 @@ namespace Tugwell
 
         private int insertPartRow(string Category, string Description, string Price)
         {
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
+            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
@@ -350,7 +356,7 @@ namespace Tugwell
 
                     try
                     {
-                        con.Open();                         // Open the connection to the database
+                        //con.Open();                         // Open the connection to the database
                         return com.ExecuteNonQuery();       // Execute the query
                     }
                     catch (SqlException ex)

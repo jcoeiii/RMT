@@ -14,8 +14,9 @@ namespace Tugwell
 {
     public partial class FormCompany : Form
     {
-        public FormCompany(string dbasePath)
+        public FormCompany(FormMain main, string dbasePath)
         {
+            this._main = main;
             _dbasePath = dbasePath;
 
             InitializeComponent();
@@ -23,6 +24,7 @@ namespace Tugwell
             buildListView();
         }
 
+        private FormMain _main;
         private string _dbasePath;
 
         public bool IsSelected = false;
@@ -262,7 +264,8 @@ namespace Tugwell
 
         private void deleteCompany(string Company)
         {
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
+            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
@@ -270,7 +273,7 @@ namespace Tugwell
 
                     try
                     {
-                        con.Open();
+                        //con.Open();
                         com.ExecuteNonQuery();
                     }
                     catch (SqlException ex)
@@ -285,7 +288,8 @@ namespace Tugwell
         {
             List<string> COs = new List<string>();
 
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
+            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
@@ -293,7 +297,7 @@ namespace Tugwell
 
                     try
                     {
-                        con.Open();
+                        //con.Open();
                         using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
                         {
                             while (reader.Read())
@@ -316,7 +320,8 @@ namespace Tugwell
 
         private int updateCompanyRow(string Company, string Street1, string Street2, string City, string State, string Zip, string Phone, string Fax)
         {
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
+            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
@@ -344,7 +349,7 @@ namespace Tugwell
 
                     try
                     {
-                        con.Open();                         // Open the connection to the database
+                        //con.Open();                         // Open the connection to the database
                         return com.ExecuteNonQuery();       // Execute the query
                     }
                     catch (SqlException ex)
@@ -358,7 +363,8 @@ namespace Tugwell
 
         private int insertRowCompany(string Company, string Street1, string Street2, string City, string State, string Zip, string Phone, string Fax)
         {
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
+            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
@@ -385,7 +391,7 @@ namespace Tugwell
 
                     try
                     {
-                        con.Open();                         // Open the connection to the database
+                        //con.Open();                         // Open the connection to the database
                         return com.ExecuteNonQuery();       // Execute the query
                     }
                     catch (SqlException ex)

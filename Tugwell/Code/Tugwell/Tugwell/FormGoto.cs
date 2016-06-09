@@ -15,10 +15,11 @@ namespace Tugwell
 {
     public partial class FormGoto : Form
     {
-        public FormGoto(string dbasePath, bool isOrderTable)
+        public FormGoto(FormMain main, string dbasePath, bool isOrderTable)
         {
             InitializeComponent();
 
+            this._main = main;
             this._dbasePath = dbasePath;
             this._isOrderTable = isOrderTable;
 
@@ -29,6 +30,8 @@ namespace Tugwell
 
             load();
         }
+
+        private FormMain _main;
 
         private string _dbasePath;
         private bool _isOrderTable;
@@ -655,7 +658,8 @@ namespace Tugwell
         {
             List<string> POs = new List<string>();
 
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + this._dbasePath))
+            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + this._dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
@@ -663,7 +667,7 @@ namespace Tugwell
 
                     try
                     {
-                        con.Open();
+                        //con.Open();
                         using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
                         {
                             while (reader.Read())
@@ -686,7 +690,8 @@ namespace Tugwell
         {
             List<string> COs = new List<string>();
 
-            using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
+            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
                 {
@@ -694,7 +699,7 @@ namespace Tugwell
 
                     try
                     {
-                        con.Open();
+                        //con.Open();
                         using (System.Data.SQLite.SQLiteDataReader reader = com.ExecuteReader())
                         {
                             int row = 0;

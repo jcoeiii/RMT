@@ -22,7 +22,7 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V4.2 2016_06_08";
+            this.Text = "Tugwell V4.4 2016_06_10";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
@@ -58,7 +58,7 @@ namespace Tugwell
                 return;
             string[] lines = File.ReadAllLines(openFileDialog1.FileName);
 
-            FormParts fp = new FormParts(getDbasePathName());
+            FormParts fp = new FormParts(this, getDbasePathName());
 
             foreach (string line in lines)
             {
@@ -88,7 +88,7 @@ namespace Tugwell
                 return;
             string[] lines = File.ReadAllLines(openFileDialog1.FileName);
 
-            FormCompany fc = new FormCompany(getDbasePathName());
+            FormCompany fc = new FormCompany(this, getDbasePathName());
 
             foreach (string line in lines)
             {
@@ -608,7 +608,7 @@ namespace Tugwell
 
         private void buttonSelectCompany_Click(object sender, EventArgs e)
         {
-            FormCompany fc = new FormCompany(getDbasePathName());
+            FormCompany fc = new FormCompany(this, getDbasePathName());
 
             fc.ShowDialog(this);
 
@@ -639,7 +639,7 @@ namespace Tugwell
 
         private void buttonSelectQCompany_Click(object sender, EventArgs e)
         {
-            FormCompany fc = new FormCompany(getDbasePathName());
+            FormCompany fc = new FormCompany(this, getDbasePathName());
 
             fc.ShowDialog(this);
 
@@ -656,7 +656,7 @@ namespace Tugwell
       
         private void buttonLine1_Click(object sender, EventArgs e)
         {
-            FormParts fp = new FormParts(getDbasePathName());
+            FormParts fp = new FormParts(this, getDbasePathName());
 
             fp.ShowDialog(this);
 
@@ -697,7 +697,7 @@ namespace Tugwell
 
         private void buttonQLine1_Click(object sender, EventArgs e)
         {
-            FormParts fp = new FormParts(getDbasePathName());
+            FormParts fp = new FormParts(this, getDbasePathName());
 
             fp.ShowDialog(this);
 
@@ -1363,7 +1363,7 @@ namespace Tugwell
         // reports for orders only at this time
         private void futureToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormReport fr = new FormReport(getDbasePathName(), true);
+            FormReport fr = new FormReport(this, getDbasePathName(), true);
 
             fr.ShowDialog(this);
         }
@@ -1371,7 +1371,7 @@ namespace Tugwell
         // goto for orders
         private void gotoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            FormGoto go = new FormGoto(getDbasePathName(), true);
+            FormGoto go = new FormGoto(this, getDbasePathName(), true);
             go.ShowDialog(this);
 
             if (go.IsSelected && go._Row >= 0)
@@ -1404,7 +1404,7 @@ namespace Tugwell
         // goto for quotes
         private void gotoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormGoto go = new FormGoto(getDbasePathName(), false);
+            FormGoto go = new FormGoto(this, getDbasePathName(), false);
             go.ShowDialog(this);
 
             if (go.IsSelected && go._Row >= 0)
@@ -1811,7 +1811,7 @@ namespace Tugwell
             p.AddText(tiTopLeft, "PO#:");
             p.AddText(tiTopLeft, "Project:");
             tiTopLeft.Textstyle = Print2Pdf.TextStyle.Regular;
-            p.AddText(tiTopLeft, this.textBoxDate.Text, 40 + 80, pos, p.Width, 18);
+            p.AddText(tiTopLeft, this.textBoxDate.Text, 40 + 55, pos, p.Width, 18);
             p.AddText(tiTopLeft, this.textBoxSoldTo.Text);
             p.AddText(tiTopLeft, this.textBoxCustomerPO.Text);
             p.AddText(tiTopLeft, this.textBoxJobName.Text);
@@ -1820,12 +1820,12 @@ namespace Tugwell
             Print2Pdf.TextInfo tiTopRight = p.CreateTextInfo();
             tiTopRight.Textstyle = Print2Pdf.TextStyle.Bold;
             tiTopRight.Size = 12.0;
-            p.AddText(tiTopRight, "RMT #:", p.Width / 2, pos, p.Width, 18);
+            p.AddText(tiTopRight, "RMT #:", p.Width / 2 + 10, pos, p.Width, 18);
             p.AddText(tiTopRight, "Salesman:");
             p.AddText(tiTopRight, "Vendor Name:");
             p.AddText(tiTopRight, "Selling Price:");
             //p.AddText(tiTopRight, "Address:");
-            p.AddText(tiTopRight, this.textBoxPO.Text, p.Width / 2 + 80, pos, p.Width, 18);
+            p.AddText(tiTopRight, this.textBoxPO.Text, p.Width / 2 + 10 + 80, pos, p.Width, 18);
             tiTopRight.Textstyle = Print2Pdf.TextStyle.Regular;
             p.AddText(tiTopRight, this.comboBoxSalesAss.Text);
             p.AddText(tiTopRight, this.textBoxVendorName.Text);
@@ -6427,7 +6427,7 @@ namespace Tugwell
                             if (DS.Tables["QuoteTable"].Rows.Count != 0)
                             {
 
-                                DataRow rrr = DS.Tables["QuoteTable"].Rows[rowCount - 1];
+                                DataRow rrr = DS.Tables["QuoteTable"].Rows[rowCount == 0 ? 0 : rowCount - 1];
 
 
                                 #region reads as strings
@@ -7826,7 +7826,7 @@ namespace Tugwell
 
         #region General Helpers
 
-        private SQLiteConnection GetConnection()
+        public SQLiteConnection GetConnection()
         {
             if (__con == null)
             {
