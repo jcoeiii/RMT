@@ -22,7 +22,7 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V4.4 2016_06_10";
+            this.Text = "Tugwell V4.5 2016_07_06";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
@@ -1911,187 +1911,187 @@ namespace Tugwell
 
             #region insert table text 1 to 23 rows
 
-            if (this.numericUpDownOrderCount1.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount1.Text, 1, 0);
+            if (this.numericUpDownOrderCount1.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount1.Text, 1, 0);
             p.AddTableText(table1, this.textBoxOrderDescr1.Text, 1, 1);
             table1.Textpos = Print2Pdf.TextPos.TopRight;
-            if (this.numericUpDownOrderCost1.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost1.Value), 1, 2);
-            if (this.numericUpDownOrderECost1.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost1.Value), 1, 3);
+            if (this.numericUpDownOrderCost1.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost1.Value), 1, 2);
+            if (this.numericUpDownOrderECost1.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost1.Value), 1, 3);
             table1.Textpos = Print2Pdf.TextPos.TopLeft;
 
-            if (this.numericUpDownOrderCount2.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount2.Text, 2, 0);
+            if (this.numericUpDownOrderCount2.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount2.Text, 2, 0);
             p.AddTableText(table1, this.textBoxOrderDescr2.Text, 2, 1);
             table1.Textpos = Print2Pdf.TextPos.TopRight;
-            if (this.numericUpDownOrderCost2.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost2.Value), 2, 2);
-            if (this.numericUpDownOrderECost2.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost2.Value), 2, 3);
+            if (this.numericUpDownOrderCost2.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost2.Value), 2, 2);
+            if (this.numericUpDownOrderECost2.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost2.Value), 2, 3);
             table1.Textpos = Print2Pdf.TextPos.TopLeft;
 
-            if (this.numericUpDownOrderCount3.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount3.Text, 3, 0);
+            if (this.numericUpDownOrderCount3.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount3.Text, 3, 0);
             p.AddTableText(table1, this.textBoxOrderDescr3.Text, 3, 1);
             table1.Textpos = Print2Pdf.TextPos.TopRight;
-            if (this.numericUpDownOrderCost3.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost3.Value), 3, 2);
-            if (this.numericUpDownOrderECost3.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost3.Value), 3, 3);
+            if (this.numericUpDownOrderCost3.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost3.Value), 3, 2);
+            if (this.numericUpDownOrderECost3.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost3.Value), 3, 3);
             table1.Textpos = Print2Pdf.TextPos.TopLeft;
 
-            if (this.numericUpDownOrderCount4.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount4.Text, 4, 0);
+            if (this.numericUpDownOrderCount4.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount4.Text, 4, 0);
             p.AddTableText(table1, this.textBoxOrderDescr4.Text, 4, 1);
             table1.Textpos = Print2Pdf.TextPos.TopRight;
-            if (this.numericUpDownOrderCost4.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost4.Value), 4, 2);
-            if (this.numericUpDownOrderECost4.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost4.Value), 4, 3);
+            if (this.numericUpDownOrderCost4.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost4.Value), 4, 2);
+            if (this.numericUpDownOrderECost4.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost4.Value), 4, 3);
             table1.Textpos = Print2Pdf.TextPos.TopLeft;
 
-            if (this.numericUpDownOrderCount5.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount5.Text, 5, 0);
+            if (this.numericUpDownOrderCount5.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount5.Text, 5, 0);
             p.AddTableText(table1, this.textBoxOrderDescr5.Text, 5, 1);
             table1.Textpos = Print2Pdf.TextPos.TopRight;
-            if (this.numericUpDownOrderCost5.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost5.Value), 5, 2);
-            if (this.numericUpDownOrderECost5.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost5.Value), 5, 3);
+            if (this.numericUpDownOrderCost5.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost5.Value), 5, 2);
+            if (this.numericUpDownOrderECost5.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost5.Value), 5, 3);
             table1.Textpos = Print2Pdf.TextPos.TopLeft;
 
-            if (this.numericUpDownOrderCount6.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount6.Text, 6, 0);
+            if (this.numericUpDownOrderCount6.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount6.Text, 6, 0);
             p.AddTableText(table1, this.textBoxOrderDescr6.Text, 6, 1);
             table1.Textpos = Print2Pdf.TextPos.TopRight;
-            if (this.numericUpDownOrderCost6.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost6.Value), 6, 2);
-            if (this.numericUpDownOrderECost6.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost6.Value), 6, 3);
+            if (this.numericUpDownOrderCost6.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost6.Value), 6, 2);
+            if (this.numericUpDownOrderECost6.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost6.Value), 6, 3);
             table1.Textpos = Print2Pdf.TextPos.TopLeft;
 
-            if (this.numericUpDownOrderCount7.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount7.Text, 7, 0);
+            if (this.numericUpDownOrderCount7.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount7.Text, 7, 0);
             p.AddTableText(table1, this.textBoxOrderDescr7.Text, 7, 1);
             table1.Textpos = Print2Pdf.TextPos.TopRight;
-            if (this.numericUpDownOrderCost7.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost7.Value), 7, 2);
-            if (this.numericUpDownOrderECost7.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost7.Value), 7, 3);
+            if (this.numericUpDownOrderCost7.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost7.Value), 7, 2);
+            if (this.numericUpDownOrderECost7.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost7.Value), 7, 3);
             table1.Textpos = Print2Pdf.TextPos.TopLeft;
 
-            if (this.numericUpDownOrderCount8.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount8.Text, 8, 0);
+            if (this.numericUpDownOrderCount8.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount8.Text, 8, 0);
             p.AddTableText(table1, this.textBoxOrderDescr8.Text, 8, 1);
             table1.Textpos = Print2Pdf.TextPos.TopRight;
-            if (this.numericUpDownOrderCost8.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost8.Value), 8, 2);
-            if (this.numericUpDownOrderECost8.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost8.Value), 8, 3);
+            if (this.numericUpDownOrderCost8.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost8.Value), 8, 2);
+            if (this.numericUpDownOrderECost8.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost8.Value), 8, 3);
             table1.Textpos = Print2Pdf.TextPos.TopLeft;
 
-            if (this.numericUpDownOrderCount9.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount9.Text, 9, 0);
+            if (this.numericUpDownOrderCount9.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount9.Text, 9, 0);
             p.AddTableText(table1, this.textBoxOrderDescr9.Text, 9, 1);
             table1.Textpos = Print2Pdf.TextPos.TopRight;
-            if (this.numericUpDownOrderCost9.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost9.Value), 9, 2);
-            if (this.numericUpDownOrderECost9.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost9.Value), 9, 3);
+            if (this.numericUpDownOrderCost9.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost9.Value), 9, 2);
+            if (this.numericUpDownOrderECost9.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost9.Value), 9, 3);
             table1.Textpos = Print2Pdf.TextPos.TopLeft;
 
-            if (this.numericUpDownOrderCount10.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount10.Text, 10, 0);
+            if (this.numericUpDownOrderCount10.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount10.Text, 10, 0);
             p.AddTableText(table1, this.textBoxOrderDescr10.Text, 10, 1);
             table1.Textpos = Print2Pdf.TextPos.TopRight;
-            if (this.numericUpDownOrderCost10.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost10.Value), 10, 2);
-            if (this.numericUpDownOrderECost10.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost10.Value), 10, 3);
+            if (this.numericUpDownOrderCost10.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost10.Value), 10, 2);
+            if (this.numericUpDownOrderECost10.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost10.Value), 10, 3);
             table1.Textpos = Print2Pdf.TextPos.TopLeft;
 
-            if (this.numericUpDownOrderCount11.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount11.Text, 11, 0);
+            if (this.numericUpDownOrderCount11.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount11.Text, 11, 0);
             p.AddTableText(table1, this.textBoxOrderDescr11.Text, 11, 1);
             table1.Textpos = Print2Pdf.TextPos.TopRight;
-            if (this.numericUpDownOrderCost11.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost11.Value), 11, 2);
-            if (this.numericUpDownOrderECost11.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost11.Value), 11, 3);
+            if (this.numericUpDownOrderCost11.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost11.Value), 11, 2);
+            if (this.numericUpDownOrderECost11.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost11.Value), 11, 3);
             table1.Textpos = Print2Pdf.TextPos.TopLeft;
 
-            if (this.numericUpDownOrderCount12.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount12.Text, 12, 0);
+            if (this.numericUpDownOrderCount12.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount12.Text, 12, 0);
             p.AddTableText(table1, this.textBoxOrderDescr12.Text, 12, 1);
             table1.Textpos = Print2Pdf.TextPos.TopRight;
-            if (this.numericUpDownOrderCost12.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost12.Value), 12, 2);
-            if (this.numericUpDownOrderECost12.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost12.Value), 12, 3);
+            if (this.numericUpDownOrderCost12.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost12.Value), 12, 2);
+            if (this.numericUpDownOrderECost12.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost12.Value), 12, 3);
             table1.Textpos = Print2Pdf.TextPos.TopLeft;
 
             if (rowCount > 13)
             {
-                if (this.numericUpDownOrderCount13.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount13.Text, 13, 0);
+                if (this.numericUpDownOrderCount13.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount13.Text, 13, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr13.Text, 13, 1);
                 table1.Textpos = Print2Pdf.TextPos.TopRight;
-                if (this.numericUpDownOrderCost13.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost13.Value), 13, 2);
-                if (this.numericUpDownOrderECost13.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost13.Value), 13, 3);
+                if (this.numericUpDownOrderCost13.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost13.Value), 13, 2);
+                if (this.numericUpDownOrderECost13.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost13.Value), 13, 3);
                 table1.Textpos = Print2Pdf.TextPos.TopLeft;
             }
             if (rowCount > 14)
             {
-                if (this.numericUpDownOrderCount14.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount14.Text, 14, 0);
+                if (this.numericUpDownOrderCount14.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount14.Text, 14, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr14.Text, 14, 1);
                 table1.Textpos = Print2Pdf.TextPos.TopRight;
-                if (this.numericUpDownOrderCost14.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost14.Value), 14, 2);
-                if (this.numericUpDownOrderECost14.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost14.Value), 14, 3);
+                if (this.numericUpDownOrderCost14.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost14.Value), 14, 2);
+                if (this.numericUpDownOrderECost14.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost14.Value), 14, 3);
                 table1.Textpos = Print2Pdf.TextPos.TopLeft;
             }
             if (rowCount > 15)
             {
-                if (this.numericUpDownOrderCount15.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount15.Text, 15, 0);
+                if (this.numericUpDownOrderCount15.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount15.Text, 15, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr15.Text, 15, 1);
                 table1.Textpos = Print2Pdf.TextPos.TopRight;
-                if (this.numericUpDownOrderCost15.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost15.Value), 15, 2);
-                if (this.numericUpDownOrderECost15.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost15.Value), 15, 3);
+                if (this.numericUpDownOrderCost15.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost15.Value), 15, 2);
+                if (this.numericUpDownOrderECost15.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost15.Value), 15, 3);
                 table1.Textpos = Print2Pdf.TextPos.TopLeft;
             }
             if (rowCount > 16)
             {
-                if (this.numericUpDownOrderCount16.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount16.Text, 16, 0);
+                if (this.numericUpDownOrderCount16.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount16.Text, 16, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr16.Text, 16, 1);
                 table1.Textpos = Print2Pdf.TextPos.TopRight;
-                if (this.numericUpDownOrderCost16.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost16.Value), 16, 2);
-                if (this.numericUpDownOrderECost16.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost16.Value), 16, 3);
+                if (this.numericUpDownOrderCost16.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost16.Value), 16, 2);
+                if (this.numericUpDownOrderECost16.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost16.Value), 16, 3);
                 table1.Textpos = Print2Pdf.TextPos.TopLeft;
             }
             if (rowCount > 17)
             {
-                if (this.numericUpDownOrderCount17.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount17.Text, 17, 0);
+                if (this.numericUpDownOrderCount17.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount17.Text, 17, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr17.Text, 17, 1);
                 table1.Textpos = Print2Pdf.TextPos.TopRight;
-                if (this.numericUpDownOrderCost17.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost17.Value), 17, 2);
-                if (this.numericUpDownOrderECost17.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost17.Value), 17, 3);
+                if (this.numericUpDownOrderCost17.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost17.Value), 17, 2);
+                if (this.numericUpDownOrderECost17.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost17.Value), 17, 3);
                 table1.Textpos = Print2Pdf.TextPos.TopLeft;
             }
             if (rowCount > 18)
             {
-                if (this.numericUpDownOrderCount18.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount18.Text, 18, 0);
+                if (this.numericUpDownOrderCount18.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount18.Text, 18, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr18.Text, 18, 1);
                 table1.Textpos = Print2Pdf.TextPos.TopRight;
-                if (this.numericUpDownOrderCost18.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost18.Value), 18, 2);
-                if (this.numericUpDownOrderECost18.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost18.Value), 18, 3);
+                if (this.numericUpDownOrderCost18.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost18.Value), 18, 2);
+                if (this.numericUpDownOrderECost18.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost18.Value), 18, 3);
                 table1.Textpos = Print2Pdf.TextPos.TopLeft;
             }
             if (rowCount > 19)
             {
-                if (this.numericUpDownOrderCount19.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount19.Text, 19, 0);
+                if (this.numericUpDownOrderCount19.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount19.Text, 19, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr19.Text, 19, 1);
                 table1.Textpos = Print2Pdf.TextPos.TopRight;
-                if (this.numericUpDownOrderCost19.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost19.Value), 19, 2);
-                if (this.numericUpDownOrderECost19.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost19.Value), 19, 3);
+                if (this.numericUpDownOrderCost19.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost19.Value), 19, 2);
+                if (this.numericUpDownOrderECost19.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost19.Value), 19, 3);
                 table1.Textpos = Print2Pdf.TextPos.TopLeft;
             }
             if (rowCount > 20)
             {
-                if (this.numericUpDownOrderCount20.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount20.Text, 20, 0);
+                if (this.numericUpDownOrderCount20.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount20.Text, 20, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr20.Text, 20, 1);
                 table1.Textpos = Print2Pdf.TextPos.TopRight;
-                if (this.numericUpDownOrderCost20.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost20.Value), 20, 2);
-                if (this.numericUpDownOrderECost20.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost20.Value), 20, 3);
+                if (this.numericUpDownOrderCost20.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost20.Value), 20, 2);
+                if (this.numericUpDownOrderECost20.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost20.Value), 20, 3);
                 table1.Textpos = Print2Pdf.TextPos.TopLeft;
             }
             if (rowCount > 21)
             {
-                if (this.numericUpDownOrderCount21.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount21.Text, 21, 0);
+                if (this.numericUpDownOrderCount21.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount21.Text, 21, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr21.Text, 21, 1);
                 table1.Textpos = Print2Pdf.TextPos.TopRight;
-                if (this.numericUpDownOrderCost21.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost21.Value), 21, 2);
-                if (this.numericUpDownOrderECost21.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost21.Value), 21, 3);
+                if (this.numericUpDownOrderCost21.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost21.Value), 21, 2);
+                if (this.numericUpDownOrderECost21.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost21.Value), 21, 3);
                 table1.Textpos = Print2Pdf.TextPos.TopLeft;
             }
             if (rowCount > 22)
             {
-                if (this.numericUpDownOrderCount22.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount22.Text, 22, 0);
+                if (this.numericUpDownOrderCount22.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount22.Text, 22, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr22.Text, 22, 1);
                 table1.Textpos = Print2Pdf.TextPos.TopRight;
-                if (this.numericUpDownOrderCost22.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost22.Value), 22, 2);
-                if (this.numericUpDownOrderECost22.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost22.Value), 22, 3);
+                if (this.numericUpDownOrderCost22.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost22.Value), 22, 2);
+                if (this.numericUpDownOrderECost22.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost22.Value), 22, 3);
                 table1.Textpos = Print2Pdf.TextPos.TopLeft;
             }
             if (rowCount > 23)
             {
-                if (this.numericUpDownOrderCount23.Value > 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount23.Text, 23, 0);
+                if (this.numericUpDownOrderCount23.Value != 0) p.AddTableText(table1, "    " + this.numericUpDownOrderCount23.Text, 23, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr23.Text, 23, 1);
                 table1.Textpos = Print2Pdf.TextPos.TopRight;
-                if (this.numericUpDownOrderCost23.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost23.Value), 23, 2);
-                if (this.numericUpDownOrderECost23.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost23.Value), 23, 3);
+                if (this.numericUpDownOrderCost23.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost23.Value), 23, 2);
+                if (this.numericUpDownOrderECost23.Value != 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost23.Value), 23, 3);
                 table1.Textpos = Print2Pdf.TextPos.TopLeft;
             }
 
@@ -2279,7 +2279,7 @@ namespace Tugwell
 
             #region insert table text 1 to 23 rows
 
-            if (this.numericUpDownOrderCount1.Value > 0)
+            if (this.numericUpDownOrderCount1.Value != 0)
             {
                 p.AddTableText(table1, "    " + this.numericUpDownOrderCount1.Text, 1, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr1.Text, 1, 1);
@@ -2287,7 +2287,7 @@ namespace Tugwell
             //if (this.numericUpDownOrderCost1.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost1.Text, 1, 2);
             //if (this.numericUpDownOrderECost1.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost1.Text, 1, 3);
 
-            if (this.numericUpDownOrderCount2.Value > 0)
+            if (this.numericUpDownOrderCount2.Value != 0)
             {
                 p.AddTableText(table1, "    " + this.numericUpDownOrderCount2.Text, 2, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr2.Text, 2, 1);
@@ -2295,7 +2295,7 @@ namespace Tugwell
             //if (this.numericUpDownOrderCost2.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost2.Text, 2, 2);
             //if (this.numericUpDownOrderECost2.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost2.Text, 2, 3);
 
-            if (this.numericUpDownOrderCount3.Value > 0)
+            if (this.numericUpDownOrderCount3.Value != 0)
             {
                 p.AddTableText(table1, "    " + this.numericUpDownOrderCount3.Text, 3, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr3.Text, 3, 1);
@@ -2303,7 +2303,7 @@ namespace Tugwell
             //if (this.numericUpDownOrderCost3.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost3.Text, 3, 2);
             //if (this.numericUpDownOrderECost3.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost3.Text, 3, 3);
 
-            if (this.numericUpDownOrderCount4.Value > 0)
+            if (this.numericUpDownOrderCount4.Value != 0)
             {
                 p.AddTableText(table1, "    " + this.numericUpDownOrderCount4.Text, 4, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr4.Text, 4, 1);
@@ -2311,7 +2311,7 @@ namespace Tugwell
             //if (this.numericUpDownOrderCost4.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost4.Text, 4, 2);
             //if (this.numericUpDownOrderECost4.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost4.Text, 4, 3);
 
-            if (this.numericUpDownOrderCount5.Value > 0)
+            if (this.numericUpDownOrderCount5.Value != 0)
             {
                 p.AddTableText(table1, "    " + this.numericUpDownOrderCount5.Text, 5, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr5.Text, 5, 1);
@@ -2319,7 +2319,7 @@ namespace Tugwell
             //if (this.numericUpDownOrderCost5.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost5.Text, 5, 2);
             //if (this.numericUpDownOrderECost5.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost5.Text, 5, 3);
 
-            if (this.numericUpDownOrderCount6.Value > 0)
+            if (this.numericUpDownOrderCount6.Value != 0)
             {
                 p.AddTableText(table1, "    " + this.numericUpDownOrderCount6.Text, 6, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr6.Text, 6, 1);
@@ -2327,7 +2327,7 @@ namespace Tugwell
             //if (this.numericUpDownOrderCost6.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost6.Text, 6, 2);
             //if (this.numericUpDownOrderECost6.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost6.Text, 6, 3);
 
-            if (this.numericUpDownOrderCount7.Value > 0)
+            if (this.numericUpDownOrderCount7.Value != 0)
             {
                 p.AddTableText(table1, "    " + this.numericUpDownOrderCount7.Text, 7, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr7.Text, 7, 1);
@@ -2335,7 +2335,7 @@ namespace Tugwell
             //if (this.numericUpDownOrderCost7.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost7.Text, 7, 2);
             //if (this.numericUpDownOrderECost7.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost7.Text, 7, 3);
 
-            if (this.numericUpDownOrderCount8.Value > 0)
+            if (this.numericUpDownOrderCount8.Value != 0)
             {
                 p.AddTableText(table1, "    " + this.numericUpDownOrderCount8.Text, 8, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr8.Text, 8, 1);
@@ -2343,7 +2343,7 @@ namespace Tugwell
             //if (this.numericUpDownOrderCost8.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost8.Text, 8, 2);
             //if (this.numericUpDownOrderECost8.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost8.Text, 8, 3);
 
-            if (this.numericUpDownOrderCount9.Value > 0)
+            if (this.numericUpDownOrderCount9.Value != 0)
             {
                 p.AddTableText(table1, "    " + this.numericUpDownOrderCount9.Text, 9, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr9.Text, 9, 1);
@@ -2351,7 +2351,7 @@ namespace Tugwell
             //if (this.numericUpDownOrderCost9.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost9.Text, 9, 2);
             //if (this.numericUpDownOrderECost9.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost9.Text, 9, 3);
 
-            if (this.numericUpDownOrderCount10.Value > 0)
+            if (this.numericUpDownOrderCount10.Value != 0)
             {
                 p.AddTableText(table1, "    " + this.numericUpDownOrderCount10.Text, 10, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr10.Text, 10, 1);
@@ -2359,7 +2359,7 @@ namespace Tugwell
             //if (this.numericUpDownOrderCost10.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost10.Text, 10, 2);
             //if (this.numericUpDownOrderECost10.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost10.Text, 10, 3);
 
-            if (this.numericUpDownOrderCount11.Value > 0)
+            if (this.numericUpDownOrderCount11.Value != 0)
             {
                 p.AddTableText(table1, "    " + this.numericUpDownOrderCount11.Text, 11, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr11.Text, 11, 1);
@@ -2367,7 +2367,7 @@ namespace Tugwell
             //if (this.numericUpDownOrderCost11.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderCost11.Text, 11, 2);
             //if (this.numericUpDownOrderECost11.Value > 0) p.AddTableText(table1, toCurrency(this.numericUpDownOrderECost11.Text, 11, 3);
 
-            if (this.numericUpDownOrderCount12.Value > 0)
+            if (this.numericUpDownOrderCount12.Value != 0)
             {
                 p.AddTableText(table1, "    " + this.numericUpDownOrderCount12.Text, 12, 0);
                 p.AddTableText(table1, this.textBoxOrderDescr12.Text, 12, 1);
@@ -2377,7 +2377,7 @@ namespace Tugwell
 
             if (rowCount > 13)
             {
-                if (this.numericUpDownOrderCount13.Value > 0)
+                if (this.numericUpDownOrderCount13.Value != 0)
                 {
                     p.AddTableText(table1, "    " + this.numericUpDownOrderCount13.Text, 13, 0);
                     p.AddTableText(table1, this.textBoxOrderDescr13.Text, 13, 1);
@@ -2387,7 +2387,7 @@ namespace Tugwell
             }
             if (rowCount > 14)
             {
-                if (this.numericUpDownOrderCount14.Value > 0)
+                if (this.numericUpDownOrderCount14.Value != 0)
                 {
                     p.AddTableText(table1, "    " + this.numericUpDownOrderCount14.Text, 14, 0);
                     p.AddTableText(table1, this.textBoxOrderDescr14.Text, 14, 1);
@@ -2397,7 +2397,7 @@ namespace Tugwell
             }
             if (rowCount > 15)
             {
-                if (this.numericUpDownOrderCount15.Value > 0)
+                if (this.numericUpDownOrderCount15.Value != 0)
                 {
                     p.AddTableText(table1, "    " + this.numericUpDownOrderCount15.Text, 15, 0);
                     p.AddTableText(table1, this.textBoxOrderDescr15.Text, 15, 1);
@@ -2407,7 +2407,7 @@ namespace Tugwell
             }
             if (rowCount > 16)
             {
-                if (this.numericUpDownOrderCount16.Value > 0)
+                if (this.numericUpDownOrderCount16.Value != 0)
                 {
                     p.AddTableText(table1, "    " + this.numericUpDownOrderCount16.Text, 16, 0);
                     p.AddTableText(table1, this.textBoxOrderDescr16.Text, 16, 1);
@@ -2417,7 +2417,7 @@ namespace Tugwell
             }
             if (rowCount > 17)
             {
-                if (this.numericUpDownOrderCount17.Value > 0)
+                if (this.numericUpDownOrderCount17.Value != 0)
                 {
                     p.AddTableText(table1, "    " + this.numericUpDownOrderCount17.Text, 17, 0);
                     p.AddTableText(table1, this.textBoxOrderDescr17.Text, 17, 1);
@@ -2427,7 +2427,7 @@ namespace Tugwell
             }
             if (rowCount > 18)
             {
-                if (this.numericUpDownOrderCount18.Value > 0)
+                if (this.numericUpDownOrderCount18.Value != 0)
                 {
                     p.AddTableText(table1, "    " + this.numericUpDownOrderCount18.Text, 18, 0);
                     p.AddTableText(table1, this.textBoxOrderDescr18.Text, 18, 1);
@@ -2437,7 +2437,7 @@ namespace Tugwell
             }
             if (rowCount > 19)
             {
-                if (this.numericUpDownOrderCount19.Value > 0)
+                if (this.numericUpDownOrderCount19.Value != 0)
                 {
                     p.AddTableText(table1, "    " + this.numericUpDownOrderCount19.Text, 19, 0);
                     p.AddTableText(table1, this.textBoxOrderDescr19.Text, 19, 1);
@@ -2447,7 +2447,7 @@ namespace Tugwell
             }
             if (rowCount > 20)
             {
-                if (this.numericUpDownOrderCount20.Value > 0)
+                if (this.numericUpDownOrderCount20.Value != 0)
                 {
                     p.AddTableText(table1, "    " + this.numericUpDownOrderCount20.Text, 20, 0);
                     p.AddTableText(table1, this.textBoxOrderDescr20.Text, 20, 1);
@@ -2457,7 +2457,7 @@ namespace Tugwell
             }
             if (rowCount > 21)
             {
-                if (this.numericUpDownOrderCount21.Value > 0)
+                if (this.numericUpDownOrderCount21.Value != 0)
                 {
                     p.AddTableText(table1, "    " + this.numericUpDownOrderCount21.Text, 21, 0);
                     p.AddTableText(table1, this.textBoxOrderDescr21.Text, 21, 1);
@@ -2467,7 +2467,7 @@ namespace Tugwell
             }
             if (rowCount > 22)
             {
-                if (this.numericUpDownOrderCount22.Value > 0)
+                if (this.numericUpDownOrderCount22.Value != 0)
                 {
                     p.AddTableText(table1, "    " + this.numericUpDownOrderCount22.Text, 22, 0);
                     p.AddTableText(table1, this.textBoxOrderDescr22.Text, 22, 1);
@@ -2477,7 +2477,7 @@ namespace Tugwell
             }
             if (rowCount > 23)
             {
-                if (this.numericUpDownOrderCount23.Value > 0)
+                if (this.numericUpDownOrderCount23.Value != 0)
                 {
                     p.AddTableText(table1, "    " + this.numericUpDownOrderCount23.Text, 23, 0);
                     p.AddTableText(table1, this.textBoxOrderDescr23.Text, 23, 1);
