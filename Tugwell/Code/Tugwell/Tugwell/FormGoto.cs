@@ -61,8 +61,7 @@ namespace Tugwell
                 "VendorNumber",
                 "CheckNumbers",
                 "Date",
-                "InvoiceNumber",
-                "CheckNumber"});
+                "InvNumber"});
 
                 //    //"Any Field",
                 //"PO",
