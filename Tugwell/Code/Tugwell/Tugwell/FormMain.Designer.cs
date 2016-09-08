@@ -632,6 +632,7 @@
             this.comboBoxYearControl = new System.Windows.Forms.ComboBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.textBoxRecordOf = new System.Windows.Forms.TextBox();
+            this.numericUpDownQCheat = new System.Windows.Forms.NumericUpDown();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControlMainOrdersQuotes.SuspendLayout();
@@ -838,6 +839,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQCheat)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -1149,7 +1151,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 24);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1054, 516);
+            this.groupBox1.Size = new System.Drawing.Size(1054, 526);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Main Control";
@@ -1162,7 +1164,7 @@
             this.tabControlMainOrdersQuotes.Location = new System.Drawing.Point(3, 16);
             this.tabControlMainOrdersQuotes.Name = "tabControlMainOrdersQuotes";
             this.tabControlMainOrdersQuotes.SelectedIndex = 0;
-            this.tabControlMainOrdersQuotes.Size = new System.Drawing.Size(1048, 497);
+            this.tabControlMainOrdersQuotes.Size = new System.Drawing.Size(1048, 507);
             this.tabControlMainOrdersQuotes.TabIndex = 0;
             this.tabControlMainOrdersQuotes.SelectedIndexChanged += new System.EventHandler(this.tabControlMainOrdersQuotes_SelectedIndexChanged);
             // 
@@ -1173,7 +1175,7 @@
             this.tabPageOrders.Location = new System.Drawing.Point(4, 22);
             this.tabPageOrders.Name = "tabPageOrders";
             this.tabPageOrders.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageOrders.Size = new System.Drawing.Size(1040, 471);
+            this.tabPageOrders.Size = new System.Drawing.Size(1040, 481);
             this.tabPageOrders.TabIndex = 0;
             this.tabPageOrders.Text = "Orders";
             this.tabPageOrders.UseVisualStyleBackColor = true;
@@ -1190,7 +1192,7 @@
             this.tabControlOrdersSub.Location = new System.Drawing.Point(3, 131);
             this.tabControlOrdersSub.Name = "tabControlOrdersSub";
             this.tabControlOrdersSub.SelectedIndex = 0;
-            this.tabControlOrdersSub.Size = new System.Drawing.Size(1034, 337);
+            this.tabControlOrdersSub.Size = new System.Drawing.Size(1034, 347);
             this.tabControlOrdersSub.TabIndex = 0;
             // 
             // tabPageGeneral
@@ -1232,7 +1234,7 @@
             this.tabPageGeneral.Location = new System.Drawing.Point(4, 22);
             this.tabPageGeneral.Name = "tabPageGeneral";
             this.tabPageGeneral.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGeneral.Size = new System.Drawing.Size(1026, 311);
+            this.tabPageGeneral.Size = new System.Drawing.Size(1026, 321);
             this.tabPageGeneral.TabIndex = 0;
             this.tabPageGeneral.Text = "General";
             this.tabPageGeneral.UseVisualStyleBackColor = true;
@@ -1829,7 +1831,7 @@
             this.tabPageTracking.Controls.Add(this.comboBoxTrkBy1);
             this.tabPageTracking.Location = new System.Drawing.Point(4, 22);
             this.tabPageTracking.Name = "tabPageTracking";
-            this.tabPageTracking.Size = new System.Drawing.Size(1026, 311);
+            this.tabPageTracking.Size = new System.Drawing.Size(1026, 321);
             this.tabPageTracking.TabIndex = 1;
             this.tabPageTracking.Text = "Tracking";
             this.tabPageTracking.UseVisualStyleBackColor = true;
@@ -3088,7 +3090,7 @@
             this.tabPageWorksheet.Controls.Add(this.buttonLine1);
             this.tabPageWorksheet.Location = new System.Drawing.Point(4, 22);
             this.tabPageWorksheet.Name = "tabPageWorksheet";
-            this.tabPageWorksheet.Size = new System.Drawing.Size(1026, 311);
+            this.tabPageWorksheet.Size = new System.Drawing.Size(1026, 321);
             this.tabPageWorksheet.TabIndex = 2;
             this.tabPageWorksheet.Text = "Worksheet";
             this.tabPageWorksheet.UseVisualStyleBackColor = true;
@@ -5331,6 +5333,7 @@
             this.richTextBoxAccNotes.TabIndex = 58;
             this.richTextBoxAccNotes.Text = "";
             this.richTextBoxAccNotes.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
+            this.richTextBoxAccNotes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter3Tab_KeyDown);
             // 
             // label91
             // 
@@ -5351,6 +5354,7 @@
             this.richTextBoxVendorNotes.TabIndex = 56;
             this.richTextBoxVendorNotes.Text = "";
             this.richTextBoxVendorNotes.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
+            this.richTextBoxVendorNotes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter3Tab_KeyDown);
             // 
             // textBoxCheckDates
             // 
@@ -5497,6 +5501,7 @@
             this.richTextBoxInvoiceNotes.TabIndex = 7;
             this.richTextBoxInvoiceNotes.Text = "";
             this.richTextBoxInvoiceNotes.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
+            this.richTextBoxInvoiceNotes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter3Tab_KeyDown);
             // 
             // label44
             // 
@@ -5517,6 +5522,7 @@
             this.richTextBoxInvoiceInstructions.TabIndex = 6;
             this.richTextBoxInvoiceInstructions.Text = "";
             this.richTextBoxInvoiceInstructions.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
+            this.richTextBoxInvoiceInstructions.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter3Tab_KeyDown);
             // 
             // tabPageMarley
             // 
@@ -5863,7 +5869,7 @@
             this.tabPageNotes.Controls.Add(this.richTextBoxDeliveryNotes);
             this.tabPageNotes.Location = new System.Drawing.Point(4, 22);
             this.tabPageNotes.Name = "tabPageNotes";
-            this.tabPageNotes.Size = new System.Drawing.Size(1026, 311);
+            this.tabPageNotes.Size = new System.Drawing.Size(1026, 321);
             this.tabPageNotes.TabIndex = 6;
             this.tabPageNotes.Text = "Notes";
             this.tabPageNotes.UseVisualStyleBackColor = true;
@@ -5887,6 +5893,7 @@
             this.richTextBoxPONotes.TabIndex = 35;
             this.richTextBoxPONotes.Text = "";
             this.richTextBoxPONotes.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
+            this.richTextBoxPONotes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter3Tab_KeyDown);
             // 
             // label59
             // 
@@ -5907,6 +5914,7 @@
             this.richTextBoxDeliveryNotes.TabIndex = 33;
             this.richTextBoxDeliveryNotes.Text = "";
             this.richTextBoxDeliveryNotes.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
+            this.richTextBoxDeliveryNotes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter3Tab_KeyDown);
             // 
             // groupBoxOrders
             // 
@@ -6179,7 +6187,7 @@
             this.tabPageQuotes.Controls.Add(this.groupBoxQuotes);
             this.tabPageQuotes.Location = new System.Drawing.Point(4, 22);
             this.tabPageQuotes.Name = "tabPageQuotes";
-            this.tabPageQuotes.Size = new System.Drawing.Size(1040, 471);
+            this.tabPageQuotes.Size = new System.Drawing.Size(1040, 481);
             this.tabPageQuotes.TabIndex = 1;
             this.tabPageQuotes.Text = "Quotes";
             this.tabPageQuotes.UseVisualStyleBackColor = true;
@@ -6193,7 +6201,7 @@
             this.tabControlQuotesSub.Location = new System.Drawing.Point(0, 128);
             this.tabControlQuotesSub.Name = "tabControlQuotesSub";
             this.tabControlQuotesSub.SelectedIndex = 0;
-            this.tabControlQuotesSub.Size = new System.Drawing.Size(1040, 343);
+            this.tabControlQuotesSub.Size = new System.Drawing.Size(1040, 353);
             this.tabControlQuotesSub.TabIndex = 58;
             // 
             // tabPageQuoteGeneral
@@ -6232,7 +6240,7 @@
             this.tabPageQuoteGeneral.Location = new System.Drawing.Point(4, 22);
             this.tabPageQuoteGeneral.Name = "tabPageQuoteGeneral";
             this.tabPageQuoteGeneral.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageQuoteGeneral.Size = new System.Drawing.Size(1032, 317);
+            this.tabPageQuoteGeneral.Size = new System.Drawing.Size(1032, 327);
             this.tabPageQuoteGeneral.TabIndex = 0;
             this.tabPageQuoteGeneral.Text = "General";
             this.tabPageQuoteGeneral.UseVisualStyleBackColor = true;
@@ -6620,6 +6628,7 @@
             // 
             // tabPageQuoteWorksheet
             // 
+            this.tabPageQuoteWorksheet.Controls.Add(this.numericUpDownQCheat);
             this.tabPageQuoteWorksheet.Controls.Add(this.checkBoxPManual);
             this.tabPageQuoteWorksheet.Controls.Add(this.checkBoxQManual);
             this.tabPageQuoteWorksheet.Controls.Add(this.label94);
@@ -6780,7 +6789,7 @@
             this.tabPageQuoteWorksheet.Location = new System.Drawing.Point(4, 22);
             this.tabPageQuoteWorksheet.Name = "tabPageQuoteWorksheet";
             this.tabPageQuoteWorksheet.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageQuoteWorksheet.Size = new System.Drawing.Size(1032, 317);
+            this.tabPageQuoteWorksheet.Size = new System.Drawing.Size(1032, 327);
             this.tabPageQuoteWorksheet.TabIndex = 1;
             this.tabPageQuoteWorksheet.Text = "Worksheet";
             this.tabPageQuoteWorksheet.UseVisualStyleBackColor = true;
@@ -6810,7 +6819,7 @@
             // label94
             // 
             this.label94.AutoSize = true;
-            this.label94.Location = new System.Drawing.Point(155, 12);
+            this.label94.Location = new System.Drawing.Point(177, 12);
             this.label94.Name = "label94";
             this.label94.Size = new System.Drawing.Size(15, 13);
             this.label94.TabIndex = 398;
@@ -6819,7 +6828,7 @@
             // numericUpDownQMarkUp
             // 
             this.numericUpDownQMarkUp.DecimalPlaces = 2;
-            this.numericUpDownQMarkUp.Location = new System.Drawing.Point(172, 8);
+            this.numericUpDownQMarkUp.Location = new System.Drawing.Point(195, 8);
             this.numericUpDownQMarkUp.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -6857,6 +6866,7 @@
             this.numericUpDownQMCost23.TabIndex = 395;
             this.numericUpDownQMCost23.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost23.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost23.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost22
             // 
@@ -6878,6 +6888,7 @@
             this.numericUpDownQMCost22.TabIndex = 394;
             this.numericUpDownQMCost22.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost22.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost22.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost21
             // 
@@ -6899,6 +6910,7 @@
             this.numericUpDownQMCost21.TabIndex = 393;
             this.numericUpDownQMCost21.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost21.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost21.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost20
             // 
@@ -6920,6 +6932,7 @@
             this.numericUpDownQMCost20.TabIndex = 392;
             this.numericUpDownQMCost20.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost20.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost20.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost19
             // 
@@ -6941,6 +6954,7 @@
             this.numericUpDownQMCost19.TabIndex = 391;
             this.numericUpDownQMCost19.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost19.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost19.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost18
             // 
@@ -6962,6 +6976,7 @@
             this.numericUpDownQMCost18.TabIndex = 390;
             this.numericUpDownQMCost18.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost18.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost18.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost17
             // 
@@ -6983,6 +6998,7 @@
             this.numericUpDownQMCost17.TabIndex = 389;
             this.numericUpDownQMCost17.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost17.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost17.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost16
             // 
@@ -7004,6 +7020,7 @@
             this.numericUpDownQMCost16.TabIndex = 388;
             this.numericUpDownQMCost16.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost16.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost16.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost15
             // 
@@ -7025,6 +7042,7 @@
             this.numericUpDownQMCost15.TabIndex = 387;
             this.numericUpDownQMCost15.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost15.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost15.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost14
             // 
@@ -7046,6 +7064,7 @@
             this.numericUpDownQMCost14.TabIndex = 386;
             this.numericUpDownQMCost14.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost14.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost14.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost13
             // 
@@ -7067,6 +7086,7 @@
             this.numericUpDownQMCost13.TabIndex = 385;
             this.numericUpDownQMCost13.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost13.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost13.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost12
             // 
@@ -7088,6 +7108,7 @@
             this.numericUpDownQMCost12.TabIndex = 384;
             this.numericUpDownQMCost12.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost12.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost12.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost11
             // 
@@ -7109,6 +7130,7 @@
             this.numericUpDownQMCost11.TabIndex = 383;
             this.numericUpDownQMCost11.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost11.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost11.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost10
             // 
@@ -7130,6 +7152,7 @@
             this.numericUpDownQMCost10.TabIndex = 382;
             this.numericUpDownQMCost10.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost10.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost10.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost9
             // 
@@ -7151,6 +7174,7 @@
             this.numericUpDownQMCost9.TabIndex = 381;
             this.numericUpDownQMCost9.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost9.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost9.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost8
             // 
@@ -7172,6 +7196,7 @@
             this.numericUpDownQMCost8.TabIndex = 380;
             this.numericUpDownQMCost8.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost8.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost8.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost7
             // 
@@ -7193,6 +7218,7 @@
             this.numericUpDownQMCost7.TabIndex = 379;
             this.numericUpDownQMCost7.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost7.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost7.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost6
             // 
@@ -7214,6 +7240,7 @@
             this.numericUpDownQMCost6.TabIndex = 378;
             this.numericUpDownQMCost6.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost6.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost5
             // 
@@ -7235,6 +7262,7 @@
             this.numericUpDownQMCost5.TabIndex = 377;
             this.numericUpDownQMCost5.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost5.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost4
             // 
@@ -7256,6 +7284,7 @@
             this.numericUpDownQMCost4.TabIndex = 376;
             this.numericUpDownQMCost4.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost4.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost3
             // 
@@ -7277,6 +7306,7 @@
             this.numericUpDownQMCost3.TabIndex = 375;
             this.numericUpDownQMCost3.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost3.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost2
             // 
@@ -7298,6 +7328,7 @@
             this.numericUpDownQMCost2.TabIndex = 374;
             this.numericUpDownQMCost2.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost2.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQMCost1
             // 
@@ -7319,11 +7350,12 @@
             this.numericUpDownQMCost1.TabIndex = 373;
             this.numericUpDownQMCost1.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost1.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.numericUpDownQMCost1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             // 
             // numericUpDownQQuotePrice
             // 
             this.numericUpDownQQuotePrice.DecimalPlaces = 2;
-            this.numericUpDownQQuotePrice.Location = new System.Drawing.Point(79, 9);
+            this.numericUpDownQQuotePrice.Location = new System.Drawing.Point(104, 9);
             this.numericUpDownQQuotePrice.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -7345,7 +7377,7 @@
             // numericUpDownQShopTime
             // 
             this.numericUpDownQShopTime.DecimalPlaces = 2;
-            this.numericUpDownQShopTime.Location = new System.Drawing.Point(679, 8);
+            this.numericUpDownQShopTime.Location = new System.Drawing.Point(690, 8);
             this.numericUpDownQShopTime.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -7366,7 +7398,7 @@
             // numericUpDownQFreight
             // 
             this.numericUpDownQFreight.DecimalPlaces = 2;
-            this.numericUpDownQFreight.Location = new System.Drawing.Point(535, 8);
+            this.numericUpDownQFreight.Location = new System.Drawing.Point(550, 8);
             this.numericUpDownQFreight.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -7387,7 +7419,7 @@
             // numericUpDownQCredit
             // 
             this.numericUpDownQCredit.DecimalPlaces = 2;
-            this.numericUpDownQCredit.Location = new System.Drawing.Point(407, 9);
+            this.numericUpDownQCredit.Location = new System.Drawing.Point(429, 8);
             this.numericUpDownQCredit.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -7408,7 +7440,7 @@
             // numericUpDownQTotalCost
             // 
             this.numericUpDownQTotalCost.DecimalPlaces = 2;
-            this.numericUpDownQTotalCost.Location = new System.Drawing.Point(283, 8);
+            this.numericUpDownQTotalCost.Location = new System.Drawing.Point(311, 8);
             this.numericUpDownQTotalCost.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -7427,7 +7459,7 @@
             // numericUpDownQGrossProfit
             // 
             this.numericUpDownQGrossProfit.DecimalPlaces = 2;
-            this.numericUpDownQGrossProfit.Location = new System.Drawing.Point(833, 9);
+            this.numericUpDownQGrossProfit.Location = new System.Drawing.Point(837, 9);
             this.numericUpDownQGrossProfit.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -9202,7 +9234,7 @@
             // label70
             // 
             this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(761, 11);
+            this.label70.Location = new System.Drawing.Point(763, 11);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(75, 13);
             this.label70.TabIndex = 263;
@@ -9211,7 +9243,7 @@
             // label71
             // 
             this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(612, 11);
+            this.label71.Location = new System.Drawing.Point(625, 11);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(61, 13);
             this.label71.TabIndex = 261;
@@ -9220,7 +9252,7 @@
             // label72
             // 
             this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(487, 11);
+            this.label72.Location = new System.Drawing.Point(505, 11);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(42, 13);
             this.label72.TabIndex = 260;
@@ -9229,7 +9261,7 @@
             // label73
             // 
             this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(364, 11);
+            this.label73.Location = new System.Drawing.Point(387, 11);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(37, 13);
             this.label73.TabIndex = 258;
@@ -9238,7 +9270,7 @@
             // label74
             // 
             this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(910, 11);
+            this.label74.Location = new System.Drawing.Point(914, 11);
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(34, 13);
             this.label74.TabIndex = 256;
@@ -9247,7 +9279,7 @@
             // label75
             // 
             this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(222, 11);
+            this.label75.Location = new System.Drawing.Point(248, 11);
             this.label75.Name = "label75";
             this.label75.Size = new System.Drawing.Size(58, 13);
             this.label75.TabIndex = 255;
@@ -9256,11 +9288,11 @@
             // label76
             // 
             this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(7, 12);
+            this.label76.Location = new System.Drawing.Point(76, 12);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(66, 13);
+            this.label76.Size = new System.Drawing.Size(28, 13);
             this.label76.TabIndex = 253;
-            this.label76.Text = "Quote Price:";
+            this.label76.Text = "QPr:";
             // 
             // buttonQLine23
             // 
@@ -9548,6 +9580,7 @@
             this.richTextBoxQDeliveryNotes.TabIndex = 41;
             this.richTextBoxQDeliveryNotes.Text = "";
             this.richTextBoxQDeliveryNotes.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
+            this.richTextBoxQDeliveryNotes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter3Tab_KeyDown);
             // 
             // label67
             // 
@@ -9568,6 +9601,7 @@
             this.richTextBoxQQuoteNotes.TabIndex = 39;
             this.richTextBoxQQuoteNotes.Text = "";
             this.richTextBoxQQuoteNotes.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
+            this.richTextBoxQQuoteNotes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter3Tab_KeyDown);
             // 
             // label68
             // 
@@ -9588,6 +9622,7 @@
             this.richTextBoxQInvoicingNotes.TabIndex = 37;
             this.richTextBoxQInvoicingNotes.Text = "";
             this.richTextBoxQInvoicingNotes.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
+            this.richTextBoxQInvoicingNotes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter3Tab_KeyDown);
             // 
             // groupBoxQuotes
             // 
@@ -9729,6 +9764,7 @@
             this.textBoxQCustomerPO.Size = new System.Drawing.Size(221, 21);
             this.textBoxQCustomerPO.TabIndex = 4;
             this.textBoxQCustomerPO.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
+            this.textBoxQCustomerPO.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             this.textBoxQCustomerPO.Leave += new System.EventHandler(this.textBox_Leave);
             // 
             // comboBoxQSalesAss
@@ -9766,6 +9802,7 @@
             this.textBoxQDate.TabIndex = 53;
             this.textBoxQDate.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDate.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
+            this.textBoxQDate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             this.textBoxQDate.Leave += new System.EventHandler(this.textBoxDate_Leave);
             // 
             // textBoxQJobName
@@ -9776,6 +9813,7 @@
             this.textBoxQJobName.Size = new System.Drawing.Size(221, 21);
             this.textBoxQJobName.TabIndex = 6;
             this.textBoxQJobName.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
+            this.textBoxQJobName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
             this.textBoxQJobName.Leave += new System.EventHandler(this.textBox_Leave);
             // 
             // label63
@@ -9792,7 +9830,7 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 540);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 550);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1054, 22);
             this.statusStrip1.TabIndex = 2;
@@ -9907,11 +9945,31 @@
             this.textBoxRecordOf.TabIndex = 36;
             this.textBoxRecordOf.Text = "of 1";
             // 
+            // numericUpDownQCheat
+            // 
+            this.numericUpDownQCheat.BackColor = System.Drawing.Color.GreenYellow;
+            this.numericUpDownQCheat.DecimalPlaces = 2;
+            this.numericUpDownQCheat.Location = new System.Drawing.Point(3, 9);
+            this.numericUpDownQCheat.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
+            this.numericUpDownQCheat.Minimum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownQCheat.Name = "numericUpDownQCheat";
+            this.numericUpDownQCheat.ReadOnly = true;
+            this.numericUpDownQCheat.Size = new System.Drawing.Size(68, 20);
+            this.numericUpDownQCheat.TabIndex = 401;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1054, 562);
+            this.ClientSize = new System.Drawing.Size(1054, 572);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
@@ -10142,6 +10200,7 @@
             this.statusStrip1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQCheat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -10752,6 +10811,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripMenuItem cleanDatabaseToolStripMenuItem;
         private System.Windows.Forms.TextBox comboBoxFreightSelect;
+        private System.Windows.Forms.NumericUpDown numericUpDownQCheat;
     }
 }
 

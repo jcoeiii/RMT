@@ -22,7 +22,7 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V4.6 2016_08_10";
+            this.Text = "Tugwell V5.2 2016_09_08";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
@@ -619,6 +619,7 @@ namespace Tugwell
                 if ((string)b.Tag == "0")
                 {
                     this.textBoxSoldTo.Text = fc._company;
+                    this.textBoxSoldTo.Text = fc._company; // prevent reload from clearing this
                     this.textBoxStreet1.Text = fc._street1;
                     this.textBoxStreet2.Text = fc._street2;
                     this.textBoxCity.Text = fc._city;
@@ -628,6 +629,7 @@ namespace Tugwell
                 else
                 {
                     this.textBoxShipTo.Text = fc._company;
+                    this.textBoxShipTo.Text = fc._company; // prevent reload from clearing this
                     this.textBoxShipToStreet1.Text = fc._street1;
                     this.textBoxShipToStreet2.Text = fc._street2;
                     this.textBoxShipToCity.Text = fc._city;
@@ -646,6 +648,7 @@ namespace Tugwell
             if (fc.IsSelected)
             {
                 this.textBoxQCompany.Text = fc._company;
+                this.textBoxQCompany.Text = fc._company; // prevent reload from clearing this
                 this.textBoxQStreet1.Text = fc._street1;
                 this.textBoxQStreet2.Text = fc._street2;
                 this.textBoxQCity.Text = fc._city;
@@ -668,29 +671,29 @@ namespace Tugwell
                 switch (line)
                 {
                     default: break;
-                    case 1: this.textBoxOrderDescr1.Text = fp._description; this.numericUpDownOrderCost1.Text = fp._price; break;
-                    case 2: this.textBoxOrderDescr2.Text = fp._description; this.numericUpDownOrderCost2.Text = fp._price; break;
-                    case 3: this.textBoxOrderDescr3.Text = fp._description; this.numericUpDownOrderCost3.Text = fp._price; break;
-                    case 4: this.textBoxOrderDescr4.Text = fp._description; this.numericUpDownOrderCost4.Text = fp._price; break;
-                    case 5: this.textBoxOrderDescr5.Text = fp._description; this.numericUpDownOrderCost5.Text = fp._price; break;
-                    case 6: this.textBoxOrderDescr6.Text = fp._description; this.numericUpDownOrderCost6.Text = fp._price; break;
-                    case 7: this.textBoxOrderDescr7.Text = fp._description; this.numericUpDownOrderCost7.Text = fp._price; break;
-                    case 8: this.textBoxOrderDescr8.Text = fp._description; this.numericUpDownOrderCost8.Text = fp._price; break;
-                    case 9: this.textBoxOrderDescr9.Text = fp._description; this.numericUpDownOrderCost9.Text = fp._price; break;
-                    case 10: this.textBoxOrderDescr10.Text = fp._description; this.numericUpDownOrderCost10.Text = fp._price; break;
-                    case 11: this.textBoxOrderDescr11.Text = fp._description; this.numericUpDownOrderCost11.Text = fp._price; break;
-                    case 12: this.textBoxOrderDescr12.Text = fp._description; this.numericUpDownOrderCost12.Text = fp._price; break;
-                    case 13: this.textBoxOrderDescr13.Text = fp._description; this.numericUpDownOrderCost13.Text = fp._price; break;
-                    case 14: this.textBoxOrderDescr14.Text = fp._description; this.numericUpDownOrderCost14.Text = fp._price; break;
-                    case 15: this.textBoxOrderDescr15.Text = fp._description; this.numericUpDownOrderCost15.Text = fp._price; break;
-                    case 16: this.textBoxOrderDescr16.Text = fp._description; this.numericUpDownOrderCost16.Text = fp._price; break;
-                    case 17: this.textBoxOrderDescr17.Text = fp._description; this.numericUpDownOrderCost17.Text = fp._price; break;
-                    case 18: this.textBoxOrderDescr18.Text = fp._description; this.numericUpDownOrderCost18.Text = fp._price; break;
-                    case 19: this.textBoxOrderDescr19.Text = fp._description; this.numericUpDownOrderCost19.Text = fp._price; break;
-                    case 20: this.textBoxOrderDescr20.Text = fp._description; this.numericUpDownOrderCost20.Text = fp._price; break;
-                    case 21: this.textBoxOrderDescr21.Text = fp._description; this.numericUpDownOrderCost21.Text = fp._price; break;
-                    case 22: this.textBoxOrderDescr22.Text = fp._description; this.numericUpDownOrderCost22.Text = fp._price; break;
-                    case 23: this.textBoxOrderDescr23.Text = fp._description; this.numericUpDownOrderCost23.Text = fp._price; break;
+                    case 1: this.textBoxOrderDescr1.Text = fp._description; this.textBoxOrderDescr1.Text = fp._description; this.numericUpDownOrderCost1.Text = fp._price; break;
+                    case 2: this.textBoxOrderDescr2.Text = fp._description; this.textBoxOrderDescr2.Text = fp._description; this.numericUpDownOrderCost2.Text = fp._price; break;
+                    case 3: this.textBoxOrderDescr3.Text = fp._description; this.textBoxOrderDescr3.Text = fp._description; this.numericUpDownOrderCost3.Text = fp._price; break;
+                    case 4: this.textBoxOrderDescr4.Text = fp._description; this.textBoxOrderDescr4.Text = fp._description; this.numericUpDownOrderCost4.Text = fp._price; break;
+                    case 5: this.textBoxOrderDescr5.Text = fp._description; this.textBoxOrderDescr5.Text = fp._description; this.numericUpDownOrderCost5.Text = fp._price; break;
+                    case 6: this.textBoxOrderDescr6.Text = fp._description; this.textBoxOrderDescr6.Text = fp._description; this.numericUpDownOrderCost6.Text = fp._price; break;
+                    case 7: this.textBoxOrderDescr7.Text = fp._description; this.textBoxOrderDescr7.Text = fp._description; this.numericUpDownOrderCost7.Text = fp._price; break;
+                    case 8: this.textBoxOrderDescr8.Text = fp._description; this.textBoxOrderDescr8.Text = fp._description; this.numericUpDownOrderCost8.Text = fp._price; break;
+                    case 9: this.textBoxOrderDescr9.Text = fp._description; this.textBoxOrderDescr9.Text = fp._description; this.numericUpDownOrderCost9.Text = fp._price; break;
+                    case 10: this.textBoxOrderDescr10.Text = fp._description; this.textBoxOrderDescr10.Text = fp._description; this.numericUpDownOrderCost10.Text = fp._price; break;
+                    case 11: this.textBoxOrderDescr11.Text = fp._description; this.textBoxOrderDescr11.Text = fp._description; this.numericUpDownOrderCost11.Text = fp._price; break;
+                    case 12: this.textBoxOrderDescr12.Text = fp._description; this.textBoxOrderDescr12.Text = fp._description; this.numericUpDownOrderCost12.Text = fp._price; break;
+                    case 13: this.textBoxOrderDescr13.Text = fp._description; this.textBoxOrderDescr13.Text = fp._description; this.numericUpDownOrderCost13.Text = fp._price; break;
+                    case 14: this.textBoxOrderDescr14.Text = fp._description; this.textBoxOrderDescr14.Text = fp._description; this.numericUpDownOrderCost14.Text = fp._price; break;
+                    case 15: this.textBoxOrderDescr15.Text = fp._description; this.textBoxOrderDescr15.Text = fp._description; this.numericUpDownOrderCost15.Text = fp._price; break;
+                    case 16: this.textBoxOrderDescr16.Text = fp._description; this.textBoxOrderDescr16.Text = fp._description; this.numericUpDownOrderCost16.Text = fp._price; break;
+                    case 17: this.textBoxOrderDescr17.Text = fp._description; this.textBoxOrderDescr17.Text = fp._description; this.numericUpDownOrderCost17.Text = fp._price; break;
+                    case 18: this.textBoxOrderDescr18.Text = fp._description; this.textBoxOrderDescr18.Text = fp._description; this.numericUpDownOrderCost18.Text = fp._price; break;
+                    case 19: this.textBoxOrderDescr19.Text = fp._description; this.textBoxOrderDescr19.Text = fp._description; this.numericUpDownOrderCost19.Text = fp._price; break;
+                    case 20: this.textBoxOrderDescr20.Text = fp._description; this.textBoxOrderDescr20.Text = fp._description; this.numericUpDownOrderCost20.Text = fp._price; break;
+                    case 21: this.textBoxOrderDescr21.Text = fp._description; this.textBoxOrderDescr21.Text = fp._description; this.numericUpDownOrderCost21.Text = fp._price; break;
+                    case 22: this.textBoxOrderDescr22.Text = fp._description; this.textBoxOrderDescr22.Text = fp._description; this.numericUpDownOrderCost22.Text = fp._price; break;
+                    case 23: this.textBoxOrderDescr23.Text = fp._description; this.textBoxOrderDescr23.Text = fp._description; this.numericUpDownOrderCost23.Text = fp._price; break;
                 }
             }
         }
@@ -709,29 +712,29 @@ namespace Tugwell
                 switch (line)
                 {
                     default: break;
-                    case 1: this.textBoxQDescription1.Text = fp._description; this.numericUpDownQCost1.Text = fp._price; break;
-                    case 2: this.textBoxQDescription2.Text = fp._description; this.numericUpDownQCost2.Text = fp._price; break;
-                    case 3: this.textBoxQDescription3.Text = fp._description; this.numericUpDownQCost3.Text = fp._price; break;
-                    case 4: this.textBoxQDescription4.Text = fp._description; this.numericUpDownQCost4.Text = fp._price; break;
-                    case 5: this.textBoxQDescription5.Text = fp._description; this.numericUpDownQCost5.Text = fp._price; break;
-                    case 6: this.textBoxQDescription6.Text = fp._description; this.numericUpDownQCost6.Text = fp._price; break;
-                    case 7: this.textBoxQDescription7.Text = fp._description; this.numericUpDownQCost7.Text = fp._price; break;
-                    case 8: this.textBoxQDescription8.Text = fp._description; this.numericUpDownQCost8.Text = fp._price; break;
-                    case 9: this.textBoxQDescription9.Text = fp._description; this.numericUpDownQCost9.Text = fp._price; break;
-                    case 10: this.textBoxQDescription10.Text = fp._description; this.numericUpDownQCost10.Text = fp._price; break;
-                    case 11: this.textBoxQDescription11.Text = fp._description; this.numericUpDownQCost11.Text = fp._price; break;
-                    case 12: this.textBoxQDescription12.Text = fp._description; this.numericUpDownQCost12.Text = fp._price; break;
-                    case 13: this.textBoxQDescription13.Text = fp._description; this.numericUpDownQCost13.Text = fp._price; break;
-                    case 14: this.textBoxQDescription14.Text = fp._description; this.numericUpDownQCost14.Text = fp._price; break;
-                    case 15: this.textBoxQDescription15.Text = fp._description; this.numericUpDownQCost15.Text = fp._price; break;
-                    case 16: this.textBoxQDescription16.Text = fp._description; this.numericUpDownQCost16.Text = fp._price; break;
-                    case 17: this.textBoxQDescription17.Text = fp._description; this.numericUpDownQCost17.Text = fp._price; break;
-                    case 18: this.textBoxQDescription18.Text = fp._description; this.numericUpDownQCost18.Text = fp._price; break;
-                    case 19: this.textBoxQDescription19.Text = fp._description; this.numericUpDownQCost19.Text = fp._price; break;
-                    case 20: this.textBoxQDescription20.Text = fp._description; this.numericUpDownQCost20.Text = fp._price; break;
-                    case 21: this.textBoxQDescription21.Text = fp._description; this.numericUpDownQCost21.Text = fp._price; break;
-                    case 22: this.textBoxQDescription22.Text = fp._description; this.numericUpDownQCost22.Text = fp._price; break;
-                    case 23: this.textBoxQDescription23.Text = fp._description; this.numericUpDownQCost23.Text = fp._price; break;
+                    case 1: this.textBoxQDescription1.Text = fp._description; this.textBoxQDescription1.Text = fp._description; this.numericUpDownQCost1.Text = fp._price; break;
+                    case 2: this.textBoxQDescription2.Text = fp._description; this.textBoxQDescription2.Text = fp._description; this.numericUpDownQCost2.Text = fp._price; break;
+                    case 3: this.textBoxQDescription3.Text = fp._description; this.textBoxQDescription3.Text = fp._description; this.numericUpDownQCost3.Text = fp._price; break;
+                    case 4: this.textBoxQDescription4.Text = fp._description; this.textBoxQDescription4.Text = fp._description; this.numericUpDownQCost4.Text = fp._price; break;
+                    case 5: this.textBoxQDescription5.Text = fp._description; this.textBoxQDescription5.Text = fp._description; this.numericUpDownQCost5.Text = fp._price; break;
+                    case 6: this.textBoxQDescription6.Text = fp._description; this.textBoxQDescription6.Text = fp._description; this.numericUpDownQCost6.Text = fp._price; break;
+                    case 7: this.textBoxQDescription7.Text = fp._description; this.textBoxQDescription7.Text = fp._description; this.numericUpDownQCost7.Text = fp._price; break;
+                    case 8: this.textBoxQDescription8.Text = fp._description; this.textBoxQDescription8.Text = fp._description; this.numericUpDownQCost8.Text = fp._price; break;
+                    case 9: this.textBoxQDescription9.Text = fp._description; this.textBoxQDescription9.Text = fp._description; this.numericUpDownQCost9.Text = fp._price; break;
+                    case 10: this.textBoxQDescription10.Text = fp._description; this.textBoxQDescription10.Text = fp._description; this.numericUpDownQCost10.Text = fp._price; break;
+                    case 11: this.textBoxQDescription11.Text = fp._description; this.textBoxQDescription11.Text = fp._description; this.numericUpDownQCost11.Text = fp._price; break;
+                    case 12: this.textBoxQDescription12.Text = fp._description; this.textBoxQDescription12.Text = fp._description; this.numericUpDownQCost12.Text = fp._price; break;
+                    case 13: this.textBoxQDescription13.Text = fp._description; this.textBoxQDescription13.Text = fp._description; this.numericUpDownQCost13.Text = fp._price; break;
+                    case 14: this.textBoxQDescription14.Text = fp._description; this.textBoxQDescription14.Text = fp._description; this.numericUpDownQCost14.Text = fp._price; break;
+                    case 15: this.textBoxQDescription15.Text = fp._description; this.textBoxQDescription15.Text = fp._description; this.numericUpDownQCost15.Text = fp._price; break;
+                    case 16: this.textBoxQDescription16.Text = fp._description; this.textBoxQDescription16.Text = fp._description; this.numericUpDownQCost16.Text = fp._price; break;
+                    case 17: this.textBoxQDescription17.Text = fp._description; this.textBoxQDescription17.Text = fp._description; this.numericUpDownQCost17.Text = fp._price; break;
+                    case 18: this.textBoxQDescription18.Text = fp._description; this.textBoxQDescription18.Text = fp._description; this.numericUpDownQCost18.Text = fp._price; break;
+                    case 19: this.textBoxQDescription19.Text = fp._description; this.textBoxQDescription19.Text = fp._description; this.numericUpDownQCost19.Text = fp._price; break;
+                    case 20: this.textBoxQDescription20.Text = fp._description; this.textBoxQDescription20.Text = fp._description; this.numericUpDownQCost20.Text = fp._price; break;
+                    case 21: this.textBoxQDescription21.Text = fp._description; this.textBoxQDescription21.Text = fp._description; this.numericUpDownQCost21.Text = fp._price; break;
+                    case 22: this.textBoxQDescription22.Text = fp._description; this.textBoxQDescription22.Text = fp._description; this.numericUpDownQCost22.Text = fp._price; break;
+                    case 23: this.textBoxQDescription23.Text = fp._description; this.textBoxQDescription23.Text = fp._description; this.numericUpDownQCost23.Text = fp._price; break;
                 }
             }
         }
@@ -739,6 +742,7 @@ namespace Tugwell
         private void buttonOrdersGeneralCopy_Click(object sender, EventArgs e)
         {
             this.textBoxShipTo.Text = this.textBoxSoldTo.Text;
+            this.textBoxShipTo.Text = this.textBoxSoldTo.Text; // prevent reload from cleaning this
             this.textBoxShipToStreet1.Text = this.textBoxStreet1.Text;
             this.textBoxShipToStreet2.Text = this.textBoxStreet2.Text;
             this.textBoxShipToCity.Text = this.textBoxCity.Text;
@@ -850,7 +854,7 @@ namespace Tugwell
 
         #endregion
 
-        #region Auto enter into tab for text boxes
+        #region Auto enter into tab for text boxes -- and auto re-load in case data is stale
 
         private string _data = "";
         private void textBoxEnter2Tab_KeyDown(object sender, KeyEventArgs e)
@@ -859,6 +863,7 @@ namespace Tugwell
             {
                 e.SuppressKeyPress = true;
                 SelectNextControl(ActiveControl, true, true, true, true);
+                return; // don't make dirty below
             }
             else if (e.KeyCode==Keys.C && e.Control)
             {
@@ -887,7 +892,46 @@ namespace Tugwell
                 }
                 catch { }
             }
+
+            textBoxEnter3Tab_KeyDown(null, null);
         }
+
+        private void textBoxEnter3Tab_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (_isOrdersSelected)
+            {
+                // if order was clean, reload to be safe
+                if (!this.isDataDirtyOrders)
+                {
+                    if (refreshRecordIndicatorOrders() > 0)
+                    {
+                        List<SortableRow> sorted = buildSortedRows();
+
+                        // load the first record & load GUI for Orders
+                        readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0);
+                    }
+
+                    placeLockOrder();
+                    this.isDataDirtyOrders = true; // safety
+                }
+            }
+            else
+            {
+                // if quote was clean, reload to be safe
+                if (!this.isDataDirtyQuotes)
+                {
+                    if (refreshRecordIndicatorQuotes() > 0)
+                    {
+                        // load the first record & load GUI for Quotes
+                        readQuoteAndUpdateGUI("", this._currentRowQuotes);
+                    }
+
+                    placeLockQuote();
+                    this.isDataDirtyQuotes = true;
+                }
+            }
+        }
+
 
         #endregion
 
@@ -920,9 +964,27 @@ namespace Tugwell
             dbaseControlChangedEvent();
         }
 
+        private bool killOrderComboEvent = false;
         private void comboBoxSalesAss_SelectedIndexChanged(object sender, EventArgs e)
         {
-            dbaseControlChangedEvent();
+            if (killOrderComboEvent)
+                return;
+
+            // if this is the first combo box change save index, and put back
+            int index = ((ComboBox)sender).SelectedIndex;
+            killOrderComboEvent = true;
+
+            if (!this.isDataDirtyOrders)
+            {
+                dbaseControlChangedEvent();
+                ((ComboBox)sender).SelectedIndex = index;
+            }
+            else
+            {
+                dbaseControlChangedEvent();
+            }
+
+            killOrderComboEvent = false;
         }
 
         private void numericUpDownComAmount_ValueChanged(object sender, EventArgs e)
@@ -930,9 +992,27 @@ namespace Tugwell
             dbaseControlChangedEvent();
         }
 
+        private bool killOrderCheckEvent = false;
         private void checkBoxComOrder_CheckedChanged(object sender, EventArgs e)
         {
-            dbaseControlChangedEvent();
+            if (killOrderCheckEvent)
+                return;
+
+            // if this is the first combo box change save index, and put back
+            bool state = ((CheckBox)sender).Checked;
+            killOrderCheckEvent = true;
+
+            if (!this.isDataDirtyOrders)
+            {
+                dbaseControlChangedEvent();
+                ((CheckBox)sender).Checked = state;
+            }
+            else
+            {
+                dbaseControlChangedEvent();
+            }
+
+            killOrderCheckEvent = false;
         }
 
         private void dbaseControlChangedEvent()
@@ -957,10 +1037,21 @@ namespace Tugwell
                 // just in case!
                 this.textBoxSoldToReadOnly.Text = this.textBoxSoldTo.Text;
 
-                this.isDataDirtyOrders = true;
+                if (!this.isDataDirtyOrders)
+                {
+                    if (refreshRecordIndicatorOrders() > 0)
+                    {
+                        List<SortableRow> sorted = buildSortedRows();
 
-                // create the lock file
-                placeLockOrder();
+                        // load the first record & load GUI for Orders
+                        readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0);
+                    }
+
+                    // create the lock file one time!
+                    placeLockOrder();
+                }
+
+                this.isDataDirtyOrders = true;
             }
 
             if (this.isDataDirtyOrders)
@@ -982,9 +1073,27 @@ namespace Tugwell
             dbaseControlChangedEvent2();
         }
 
+        private bool killQuoteComboEvent = false;
         private void comboBoxQuote_SelectedIndexChanged(object sender, EventArgs e)
         {
-            dbaseControlChangedEvent2();
+            if (killQuoteComboEvent)
+                return;
+
+            // if this is the first combo box change save index, and put back
+            int index = ((ComboBox)sender).SelectedIndex;
+            killQuoteComboEvent = true;
+
+            if (!this.isDataDirtyOrders)
+            {
+                dbaseControlChangedEvent2();
+                ((ComboBox)sender).SelectedIndex = index;
+            }
+            else
+            {
+                dbaseControlChangedEvent2();
+            }
+
+            killQuoteComboEvent = false;
         }
 
         private void numericUpDownQuote_ValueChanged(object sender, EventArgs e)
@@ -992,9 +1101,27 @@ namespace Tugwell
             dbaseControlChangedEvent2();
         }
 
+        private bool killQuoterCheckEvent = false;
         private void checkBoxQuote_CheckedChanged(object sender, EventArgs e)
         {
-            dbaseControlChangedEvent2();
+            if (killQuoterCheckEvent)
+                return;
+
+            // if this is the first combo box change save index, and put back
+            bool state = ((CheckBox)sender).Checked;
+            killQuoterCheckEvent = true;
+
+            if (!this.isDataDirtyOrders)
+            {
+                dbaseControlChangedEvent2();
+                ((CheckBox)sender).Checked = state;
+            }
+            else
+            {
+                dbaseControlChangedEvent2();
+            }
+
+            killQuoterCheckEvent = false;
         }
 
         private void dbaseControlChangedEvent2()
@@ -1018,10 +1145,19 @@ namespace Tugwell
                 this.textBoxQCompanyReadOnly.Text = this.textBoxQCompany.Text;
                 this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text;
 
-                this.isDataDirtyQuotes = true;
+                if (!this.isDataDirtyQuotes)
+                {
+                    if (refreshRecordIndicatorQuotes() > 0)
+                    {
+                        // load the first record & load GUI for Quotes
+                        readQuoteAndUpdateGUI("", this._currentRowQuotes);
+                    }
 
-                // create the lock file
-                placeLockQuote();
+                    // create the lock file one time!
+                    placeLockQuote();
+                }
+
+                this.isDataDirtyQuotes = true;
             }
 
             if (this.isDataDirtyQuotes)
@@ -1074,6 +1210,7 @@ namespace Tugwell
             if (dp.IsConfirmed)
             {
                 box.Text = dp.Date;
+                box.Text = dp.Date; // prevent reload from clearing this action
             }
         }
 
@@ -1248,7 +1385,12 @@ namespace Tugwell
                 this.numericUpDownQQuotePrice.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQTotalCost.Value);
                 this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
             }
-            /*else if (this.checkBoxPManual.Checked) // sum total of Marked up costs because it (right) is manual mode
+            //else if (this.checkBoxPManual.Checked) // sum total of Marked up costs because it (right) is manual mode
+            else // complete manual mode
+            {
+                this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
+            }
+
             {
                 decimal m1 = numericUpDownQMCost1.Value;
                 decimal m2 = numericUpDownQMCost2.Value;
@@ -1274,12 +1416,8 @@ namespace Tugwell
                 decimal m22 = numericUpDownQMCost22.Value;
                 decimal m23 = numericUpDownQMCost23.Value;
 
-                this.numericUpDownQQuotePrice.Value = m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 + m9 + m10 + m11 + m12 + m13 + m14 + m15 + m16 + m17 + m18 + m19 + m20 + m21 + m22 + m23;
-                this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
-            }*/
-            else // complete manual mode
-            {
-                this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
+                this.numericUpDownQCheat.Value = m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 + m9 + m10 + m11 + m12 + m13 + m14 + m15 + m16 + m17 + m18 + m19 + m20 + m21 + m22 + m23;
+                //this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
             }
 
             this.numericUpDownQProfit.Value = this.numericUpDownQQuotePrice.Value - this.numericUpDownQTotalCost.Value - this.numericUpDownQCredit.Value - this.numericUpDownQFreight.Value - this.numericUpDownQShopTime.Value;
