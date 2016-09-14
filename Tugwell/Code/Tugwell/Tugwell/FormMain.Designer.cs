@@ -3100,12 +3100,12 @@
             this.numericUpDownQuotePrice.DecimalPlaces = 2;
             this.numericUpDownQuotePrice.Location = new System.Drawing.Point(84, 8);
             this.numericUpDownQuotePrice.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQuotePrice.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3121,12 +3121,12 @@
             this.numericUpDownShopTime.DecimalPlaces = 2;
             this.numericUpDownShopTime.Location = new System.Drawing.Point(631, 8);
             this.numericUpDownShopTime.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownShopTime.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3142,12 +3142,12 @@
             this.numericUpDownFreight.DecimalPlaces = 2;
             this.numericUpDownFreight.Location = new System.Drawing.Point(487, 8);
             this.numericUpDownFreight.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownFreight.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3163,12 +3163,12 @@
             this.numericUpDownCredit.DecimalPlaces = 2;
             this.numericUpDownCredit.Location = new System.Drawing.Point(359, 9);
             this.numericUpDownCredit.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownCredit.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3184,12 +3184,12 @@
             this.numericUpDownTotalCost.DecimalPlaces = 2;
             this.numericUpDownTotalCost.Location = new System.Drawing.Point(235, 8);
             this.numericUpDownTotalCost.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownTotalCost.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3203,12 +3203,12 @@
             this.numericUpDownGrossProfit.DecimalPlaces = 2;
             this.numericUpDownGrossProfit.Location = new System.Drawing.Point(785, 9);
             this.numericUpDownGrossProfit.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownGrossProfit.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3222,12 +3222,12 @@
             this.numericUpDownProfit.DecimalPlaces = 2;
             this.numericUpDownProfit.Location = new System.Drawing.Point(902, 9);
             this.numericUpDownProfit.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownProfit.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3252,12 +3252,12 @@
             this.numericUpDownOrderECost23.DecimalPlaces = 2;
             this.numericUpDownOrderECost23.Location = new System.Drawing.Point(868, 520);
             this.numericUpDownOrderECost23.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost23.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3272,12 +3272,12 @@
             this.numericUpDownOrderCost23.DecimalPlaces = 2;
             this.numericUpDownOrderCost23.Location = new System.Drawing.Point(784, 520);
             this.numericUpDownOrderCost23.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost23.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3293,12 +3293,12 @@
             this.numericUpDownOrderCount23.DecimalPlaces = 2;
             this.numericUpDownOrderCount23.Location = new System.Drawing.Point(32, 521);
             this.numericUpDownOrderCount23.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount23.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3314,12 +3314,12 @@
             this.numericUpDownOrderECost22.DecimalPlaces = 2;
             this.numericUpDownOrderECost22.Location = new System.Drawing.Point(868, 499);
             this.numericUpDownOrderECost22.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost22.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3334,12 +3334,12 @@
             this.numericUpDownOrderCost22.DecimalPlaces = 2;
             this.numericUpDownOrderCost22.Location = new System.Drawing.Point(784, 499);
             this.numericUpDownOrderCost22.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost22.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3355,12 +3355,12 @@
             this.numericUpDownOrderECost21.DecimalPlaces = 2;
             this.numericUpDownOrderECost21.Location = new System.Drawing.Point(868, 478);
             this.numericUpDownOrderECost21.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost21.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3375,12 +3375,12 @@
             this.numericUpDownOrderCost21.DecimalPlaces = 2;
             this.numericUpDownOrderCost21.Location = new System.Drawing.Point(784, 478);
             this.numericUpDownOrderCost21.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost21.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3396,12 +3396,12 @@
             this.numericUpDownOrderECost20.DecimalPlaces = 2;
             this.numericUpDownOrderECost20.Location = new System.Drawing.Point(868, 457);
             this.numericUpDownOrderECost20.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost20.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3416,12 +3416,12 @@
             this.numericUpDownOrderCost20.DecimalPlaces = 2;
             this.numericUpDownOrderCost20.Location = new System.Drawing.Point(784, 457);
             this.numericUpDownOrderCost20.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost20.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3437,12 +3437,12 @@
             this.numericUpDownOrderECost19.DecimalPlaces = 2;
             this.numericUpDownOrderECost19.Location = new System.Drawing.Point(868, 436);
             this.numericUpDownOrderECost19.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost19.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3457,12 +3457,12 @@
             this.numericUpDownOrderCost19.DecimalPlaces = 2;
             this.numericUpDownOrderCost19.Location = new System.Drawing.Point(784, 436);
             this.numericUpDownOrderCost19.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost19.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3478,12 +3478,12 @@
             this.numericUpDownOrderECost18.DecimalPlaces = 2;
             this.numericUpDownOrderECost18.Location = new System.Drawing.Point(868, 415);
             this.numericUpDownOrderECost18.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost18.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3498,12 +3498,12 @@
             this.numericUpDownOrderCost18.DecimalPlaces = 2;
             this.numericUpDownOrderCost18.Location = new System.Drawing.Point(784, 415);
             this.numericUpDownOrderCost18.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost18.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3519,12 +3519,12 @@
             this.numericUpDownOrderECost17.DecimalPlaces = 2;
             this.numericUpDownOrderECost17.Location = new System.Drawing.Point(868, 394);
             this.numericUpDownOrderECost17.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost17.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3539,12 +3539,12 @@
             this.numericUpDownOrderCost17.DecimalPlaces = 2;
             this.numericUpDownOrderCost17.Location = new System.Drawing.Point(784, 394);
             this.numericUpDownOrderCost17.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost17.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3560,12 +3560,12 @@
             this.numericUpDownOrderECost16.DecimalPlaces = 2;
             this.numericUpDownOrderECost16.Location = new System.Drawing.Point(868, 373);
             this.numericUpDownOrderECost16.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost16.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3580,12 +3580,12 @@
             this.numericUpDownOrderCost16.DecimalPlaces = 2;
             this.numericUpDownOrderCost16.Location = new System.Drawing.Point(784, 373);
             this.numericUpDownOrderCost16.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost16.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3601,12 +3601,12 @@
             this.numericUpDownOrderECost15.DecimalPlaces = 2;
             this.numericUpDownOrderECost15.Location = new System.Drawing.Point(868, 352);
             this.numericUpDownOrderECost15.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost15.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3621,12 +3621,12 @@
             this.numericUpDownOrderCost15.DecimalPlaces = 2;
             this.numericUpDownOrderCost15.Location = new System.Drawing.Point(784, 352);
             this.numericUpDownOrderCost15.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost15.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3642,12 +3642,12 @@
             this.numericUpDownOrderECost14.DecimalPlaces = 2;
             this.numericUpDownOrderECost14.Location = new System.Drawing.Point(868, 331);
             this.numericUpDownOrderECost14.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost14.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3662,12 +3662,12 @@
             this.numericUpDownOrderCost14.DecimalPlaces = 2;
             this.numericUpDownOrderCost14.Location = new System.Drawing.Point(784, 331);
             this.numericUpDownOrderCost14.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost14.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3683,12 +3683,12 @@
             this.numericUpDownOrderECost13.DecimalPlaces = 2;
             this.numericUpDownOrderECost13.Location = new System.Drawing.Point(868, 310);
             this.numericUpDownOrderECost13.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost13.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3703,12 +3703,12 @@
             this.numericUpDownOrderCost13.DecimalPlaces = 2;
             this.numericUpDownOrderCost13.Location = new System.Drawing.Point(784, 310);
             this.numericUpDownOrderCost13.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost13.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3724,12 +3724,12 @@
             this.numericUpDownOrderECost12.DecimalPlaces = 2;
             this.numericUpDownOrderECost12.Location = new System.Drawing.Point(868, 289);
             this.numericUpDownOrderECost12.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost12.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3744,12 +3744,12 @@
             this.numericUpDownOrderCost12.DecimalPlaces = 2;
             this.numericUpDownOrderCost12.Location = new System.Drawing.Point(784, 289);
             this.numericUpDownOrderCost12.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost12.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3765,12 +3765,12 @@
             this.numericUpDownOrderCount22.DecimalPlaces = 2;
             this.numericUpDownOrderCount22.Location = new System.Drawing.Point(32, 500);
             this.numericUpDownOrderCount22.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount22.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3786,12 +3786,12 @@
             this.numericUpDownOrderCount21.DecimalPlaces = 2;
             this.numericUpDownOrderCount21.Location = new System.Drawing.Point(32, 479);
             this.numericUpDownOrderCount21.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount21.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3807,12 +3807,12 @@
             this.numericUpDownOrderCount20.DecimalPlaces = 2;
             this.numericUpDownOrderCount20.Location = new System.Drawing.Point(32, 458);
             this.numericUpDownOrderCount20.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount20.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3828,12 +3828,12 @@
             this.numericUpDownOrderCount19.DecimalPlaces = 2;
             this.numericUpDownOrderCount19.Location = new System.Drawing.Point(32, 437);
             this.numericUpDownOrderCount19.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount19.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3849,12 +3849,12 @@
             this.numericUpDownOrderCount18.DecimalPlaces = 2;
             this.numericUpDownOrderCount18.Location = new System.Drawing.Point(32, 416);
             this.numericUpDownOrderCount18.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount18.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3870,12 +3870,12 @@
             this.numericUpDownOrderCount17.DecimalPlaces = 2;
             this.numericUpDownOrderCount17.Location = new System.Drawing.Point(32, 395);
             this.numericUpDownOrderCount17.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount17.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3891,12 +3891,12 @@
             this.numericUpDownOrderCount16.DecimalPlaces = 2;
             this.numericUpDownOrderCount16.Location = new System.Drawing.Point(32, 374);
             this.numericUpDownOrderCount16.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount16.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3912,12 +3912,12 @@
             this.numericUpDownOrderCount15.DecimalPlaces = 2;
             this.numericUpDownOrderCount15.Location = new System.Drawing.Point(32, 353);
             this.numericUpDownOrderCount15.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount15.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3933,12 +3933,12 @@
             this.numericUpDownOrderCount14.DecimalPlaces = 2;
             this.numericUpDownOrderCount14.Location = new System.Drawing.Point(32, 332);
             this.numericUpDownOrderCount14.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount14.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3954,12 +3954,12 @@
             this.numericUpDownOrderCount13.DecimalPlaces = 2;
             this.numericUpDownOrderCount13.Location = new System.Drawing.Point(32, 311);
             this.numericUpDownOrderCount13.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount13.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3975,12 +3975,12 @@
             this.numericUpDownOrderCount12.DecimalPlaces = 2;
             this.numericUpDownOrderCount12.Location = new System.Drawing.Point(32, 290);
             this.numericUpDownOrderCount12.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount12.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -3996,12 +3996,12 @@
             this.numericUpDownOrderCount11.DecimalPlaces = 2;
             this.numericUpDownOrderCount11.Location = new System.Drawing.Point(32, 269);
             this.numericUpDownOrderCount11.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount11.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4017,12 +4017,12 @@
             this.numericUpDownOrderECost11.DecimalPlaces = 2;
             this.numericUpDownOrderECost11.Location = new System.Drawing.Point(868, 268);
             this.numericUpDownOrderECost11.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost11.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4037,12 +4037,12 @@
             this.numericUpDownOrderCost11.DecimalPlaces = 2;
             this.numericUpDownOrderCost11.Location = new System.Drawing.Point(784, 268);
             this.numericUpDownOrderCost11.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost11.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4058,12 +4058,12 @@
             this.numericUpDownOrderCount10.DecimalPlaces = 2;
             this.numericUpDownOrderCount10.Location = new System.Drawing.Point(32, 248);
             this.numericUpDownOrderCount10.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount10.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4079,12 +4079,12 @@
             this.numericUpDownOrderECost10.DecimalPlaces = 2;
             this.numericUpDownOrderECost10.Location = new System.Drawing.Point(868, 247);
             this.numericUpDownOrderECost10.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost10.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4099,12 +4099,12 @@
             this.numericUpDownOrderCost10.DecimalPlaces = 2;
             this.numericUpDownOrderCost10.Location = new System.Drawing.Point(784, 247);
             this.numericUpDownOrderCost10.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost10.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4120,12 +4120,12 @@
             this.numericUpDownOrderCount9.DecimalPlaces = 2;
             this.numericUpDownOrderCount9.Location = new System.Drawing.Point(32, 227);
             this.numericUpDownOrderCount9.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount9.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4141,12 +4141,12 @@
             this.numericUpDownOrderECost9.DecimalPlaces = 2;
             this.numericUpDownOrderECost9.Location = new System.Drawing.Point(868, 226);
             this.numericUpDownOrderECost9.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost9.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4161,12 +4161,12 @@
             this.numericUpDownOrderCost9.DecimalPlaces = 2;
             this.numericUpDownOrderCost9.Location = new System.Drawing.Point(784, 226);
             this.numericUpDownOrderCost9.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost9.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4182,12 +4182,12 @@
             this.numericUpDownOrderCount8.DecimalPlaces = 2;
             this.numericUpDownOrderCount8.Location = new System.Drawing.Point(32, 206);
             this.numericUpDownOrderCount8.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount8.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4203,12 +4203,12 @@
             this.numericUpDownOrderECost8.DecimalPlaces = 2;
             this.numericUpDownOrderECost8.Location = new System.Drawing.Point(868, 205);
             this.numericUpDownOrderECost8.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost8.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4223,12 +4223,12 @@
             this.numericUpDownOrderCost8.DecimalPlaces = 2;
             this.numericUpDownOrderCost8.Location = new System.Drawing.Point(784, 205);
             this.numericUpDownOrderCost8.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost8.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4244,12 +4244,12 @@
             this.numericUpDownOrderCount7.DecimalPlaces = 2;
             this.numericUpDownOrderCount7.Location = new System.Drawing.Point(32, 185);
             this.numericUpDownOrderCount7.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount7.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4265,12 +4265,12 @@
             this.numericUpDownOrderECost7.DecimalPlaces = 2;
             this.numericUpDownOrderECost7.Location = new System.Drawing.Point(868, 184);
             this.numericUpDownOrderECost7.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost7.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4285,12 +4285,12 @@
             this.numericUpDownOrderCost7.DecimalPlaces = 2;
             this.numericUpDownOrderCost7.Location = new System.Drawing.Point(784, 184);
             this.numericUpDownOrderCost7.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost7.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4306,12 +4306,12 @@
             this.numericUpDownOrderCount6.DecimalPlaces = 2;
             this.numericUpDownOrderCount6.Location = new System.Drawing.Point(32, 164);
             this.numericUpDownOrderCount6.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount6.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4327,12 +4327,12 @@
             this.numericUpDownOrderECost6.DecimalPlaces = 2;
             this.numericUpDownOrderECost6.Location = new System.Drawing.Point(868, 163);
             this.numericUpDownOrderECost6.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost6.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4347,12 +4347,12 @@
             this.numericUpDownOrderCost6.DecimalPlaces = 2;
             this.numericUpDownOrderCost6.Location = new System.Drawing.Point(784, 163);
             this.numericUpDownOrderCost6.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost6.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4368,12 +4368,12 @@
             this.numericUpDownOrderCount5.DecimalPlaces = 2;
             this.numericUpDownOrderCount5.Location = new System.Drawing.Point(32, 143);
             this.numericUpDownOrderCount5.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount5.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4389,12 +4389,12 @@
             this.numericUpDownOrderECost5.DecimalPlaces = 2;
             this.numericUpDownOrderECost5.Location = new System.Drawing.Point(868, 142);
             this.numericUpDownOrderECost5.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost5.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4409,12 +4409,12 @@
             this.numericUpDownOrderCost5.DecimalPlaces = 2;
             this.numericUpDownOrderCost5.Location = new System.Drawing.Point(784, 142);
             this.numericUpDownOrderCost5.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost5.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4430,12 +4430,12 @@
             this.numericUpDownOrderCount4.DecimalPlaces = 2;
             this.numericUpDownOrderCount4.Location = new System.Drawing.Point(32, 122);
             this.numericUpDownOrderCount4.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount4.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4451,12 +4451,12 @@
             this.numericUpDownOrderECost4.DecimalPlaces = 2;
             this.numericUpDownOrderECost4.Location = new System.Drawing.Point(868, 121);
             this.numericUpDownOrderECost4.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost4.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4471,12 +4471,12 @@
             this.numericUpDownOrderCost4.DecimalPlaces = 2;
             this.numericUpDownOrderCost4.Location = new System.Drawing.Point(784, 121);
             this.numericUpDownOrderCost4.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost4.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4492,12 +4492,12 @@
             this.numericUpDownOrderCount3.DecimalPlaces = 2;
             this.numericUpDownOrderCount3.Location = new System.Drawing.Point(32, 101);
             this.numericUpDownOrderCount3.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount3.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4513,12 +4513,12 @@
             this.numericUpDownOrderECost3.DecimalPlaces = 2;
             this.numericUpDownOrderECost3.Location = new System.Drawing.Point(868, 100);
             this.numericUpDownOrderECost3.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost3.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4533,12 +4533,12 @@
             this.numericUpDownOrderCost3.DecimalPlaces = 2;
             this.numericUpDownOrderCost3.Location = new System.Drawing.Point(784, 100);
             this.numericUpDownOrderCost3.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost3.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4554,12 +4554,12 @@
             this.numericUpDownOrderCount2.DecimalPlaces = 2;
             this.numericUpDownOrderCount2.Location = new System.Drawing.Point(32, 80);
             this.numericUpDownOrderCount2.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount2.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4575,12 +4575,12 @@
             this.numericUpDownOrderECost2.DecimalPlaces = 2;
             this.numericUpDownOrderECost2.Location = new System.Drawing.Point(868, 79);
             this.numericUpDownOrderECost2.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost2.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4595,12 +4595,12 @@
             this.numericUpDownOrderCost2.DecimalPlaces = 2;
             this.numericUpDownOrderCost2.Location = new System.Drawing.Point(784, 79);
             this.numericUpDownOrderCost2.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost2.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4616,12 +4616,12 @@
             this.numericUpDownOrderCount1.DecimalPlaces = 2;
             this.numericUpDownOrderCount1.Location = new System.Drawing.Point(32, 59);
             this.numericUpDownOrderCount1.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCount1.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4637,12 +4637,12 @@
             this.numericUpDownOrderECost1.DecimalPlaces = 2;
             this.numericUpDownOrderECost1.Location = new System.Drawing.Point(868, 58);
             this.numericUpDownOrderECost1.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderECost1.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -4657,12 +4657,12 @@
             this.numericUpDownOrderCost1.DecimalPlaces = 2;
             this.numericUpDownOrderCost1.Location = new System.Drawing.Point(784, 58);
             this.numericUpDownOrderCost1.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownOrderCost1.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -5560,12 +5560,12 @@
             this.numericUpDownComBalance.DecimalPlaces = 2;
             this.numericUpDownComBalance.Location = new System.Drawing.Point(228, 45);
             this.numericUpDownComBalance.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownComBalance.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -5580,12 +5580,12 @@
             this.numericUpDownComAmount.DecimalPlaces = 2;
             this.numericUpDownComAmount.Location = new System.Drawing.Point(228, 19);
             this.numericUpDownComAmount.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownComAmount.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -5601,12 +5601,12 @@
             this.numericUpDownPaid5.DecimalPlaces = 2;
             this.numericUpDownPaid5.Location = new System.Drawing.Point(318, 204);
             this.numericUpDownPaid5.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownPaid5.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -5622,12 +5622,12 @@
             this.numericUpDownPaid4.DecimalPlaces = 2;
             this.numericUpDownPaid4.Location = new System.Drawing.Point(318, 178);
             this.numericUpDownPaid4.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownPaid4.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -5643,12 +5643,12 @@
             this.numericUpDownPaid3.DecimalPlaces = 2;
             this.numericUpDownPaid3.Location = new System.Drawing.Point(318, 152);
             this.numericUpDownPaid3.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownPaid3.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -5664,12 +5664,12 @@
             this.numericUpDownPaid2.DecimalPlaces = 2;
             this.numericUpDownPaid2.Location = new System.Drawing.Point(318, 127);
             this.numericUpDownPaid2.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownPaid2.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -5685,12 +5685,12 @@
             this.numericUpDownPaid1.DecimalPlaces = 2;
             this.numericUpDownPaid1.Location = new System.Drawing.Point(318, 100);
             this.numericUpDownPaid1.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownPaid1.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -6830,12 +6830,12 @@
             this.numericUpDownQMarkUp.DecimalPlaces = 2;
             this.numericUpDownQMarkUp.Location = new System.Drawing.Point(195, 8);
             this.numericUpDownQMarkUp.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMarkUp.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -6851,12 +6851,12 @@
             this.numericUpDownQMCost23.DecimalPlaces = 2;
             this.numericUpDownQMCost23.Location = new System.Drawing.Point(948, 521);
             this.numericUpDownQMCost23.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost23.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -6873,12 +6873,12 @@
             this.numericUpDownQMCost22.DecimalPlaces = 2;
             this.numericUpDownQMCost22.Location = new System.Drawing.Point(948, 500);
             this.numericUpDownQMCost22.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost22.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -6895,12 +6895,12 @@
             this.numericUpDownQMCost21.DecimalPlaces = 2;
             this.numericUpDownQMCost21.Location = new System.Drawing.Point(948, 479);
             this.numericUpDownQMCost21.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost21.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -6917,12 +6917,12 @@
             this.numericUpDownQMCost20.DecimalPlaces = 2;
             this.numericUpDownQMCost20.Location = new System.Drawing.Point(948, 458);
             this.numericUpDownQMCost20.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost20.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -6939,12 +6939,12 @@
             this.numericUpDownQMCost19.DecimalPlaces = 2;
             this.numericUpDownQMCost19.Location = new System.Drawing.Point(948, 437);
             this.numericUpDownQMCost19.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost19.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -6961,12 +6961,12 @@
             this.numericUpDownQMCost18.DecimalPlaces = 2;
             this.numericUpDownQMCost18.Location = new System.Drawing.Point(948, 416);
             this.numericUpDownQMCost18.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost18.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -6983,12 +6983,12 @@
             this.numericUpDownQMCost17.DecimalPlaces = 2;
             this.numericUpDownQMCost17.Location = new System.Drawing.Point(948, 395);
             this.numericUpDownQMCost17.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost17.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7005,12 +7005,12 @@
             this.numericUpDownQMCost16.DecimalPlaces = 2;
             this.numericUpDownQMCost16.Location = new System.Drawing.Point(948, 374);
             this.numericUpDownQMCost16.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost16.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7027,12 +7027,12 @@
             this.numericUpDownQMCost15.DecimalPlaces = 2;
             this.numericUpDownQMCost15.Location = new System.Drawing.Point(948, 353);
             this.numericUpDownQMCost15.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost15.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7049,12 +7049,12 @@
             this.numericUpDownQMCost14.DecimalPlaces = 2;
             this.numericUpDownQMCost14.Location = new System.Drawing.Point(948, 332);
             this.numericUpDownQMCost14.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost14.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7071,12 +7071,12 @@
             this.numericUpDownQMCost13.DecimalPlaces = 2;
             this.numericUpDownQMCost13.Location = new System.Drawing.Point(948, 311);
             this.numericUpDownQMCost13.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost13.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7093,12 +7093,12 @@
             this.numericUpDownQMCost12.DecimalPlaces = 2;
             this.numericUpDownQMCost12.Location = new System.Drawing.Point(948, 290);
             this.numericUpDownQMCost12.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost12.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7115,12 +7115,12 @@
             this.numericUpDownQMCost11.DecimalPlaces = 2;
             this.numericUpDownQMCost11.Location = new System.Drawing.Point(948, 269);
             this.numericUpDownQMCost11.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost11.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7137,12 +7137,12 @@
             this.numericUpDownQMCost10.DecimalPlaces = 2;
             this.numericUpDownQMCost10.Location = new System.Drawing.Point(948, 248);
             this.numericUpDownQMCost10.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost10.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7159,12 +7159,12 @@
             this.numericUpDownQMCost9.DecimalPlaces = 2;
             this.numericUpDownQMCost9.Location = new System.Drawing.Point(948, 227);
             this.numericUpDownQMCost9.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost9.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7181,12 +7181,12 @@
             this.numericUpDownQMCost8.DecimalPlaces = 2;
             this.numericUpDownQMCost8.Location = new System.Drawing.Point(948, 206);
             this.numericUpDownQMCost8.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost8.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7203,12 +7203,12 @@
             this.numericUpDownQMCost7.DecimalPlaces = 2;
             this.numericUpDownQMCost7.Location = new System.Drawing.Point(948, 185);
             this.numericUpDownQMCost7.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost7.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7225,12 +7225,12 @@
             this.numericUpDownQMCost6.DecimalPlaces = 2;
             this.numericUpDownQMCost6.Location = new System.Drawing.Point(948, 164);
             this.numericUpDownQMCost6.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost6.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7247,12 +7247,12 @@
             this.numericUpDownQMCost5.DecimalPlaces = 2;
             this.numericUpDownQMCost5.Location = new System.Drawing.Point(948, 143);
             this.numericUpDownQMCost5.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost5.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7269,12 +7269,12 @@
             this.numericUpDownQMCost4.DecimalPlaces = 2;
             this.numericUpDownQMCost4.Location = new System.Drawing.Point(948, 122);
             this.numericUpDownQMCost4.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost4.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7291,12 +7291,12 @@
             this.numericUpDownQMCost3.DecimalPlaces = 2;
             this.numericUpDownQMCost3.Location = new System.Drawing.Point(948, 101);
             this.numericUpDownQMCost3.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost3.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7313,12 +7313,12 @@
             this.numericUpDownQMCost2.DecimalPlaces = 2;
             this.numericUpDownQMCost2.Location = new System.Drawing.Point(948, 80);
             this.numericUpDownQMCost2.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost2.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7335,12 +7335,12 @@
             this.numericUpDownQMCost1.DecimalPlaces = 2;
             this.numericUpDownQMCost1.Location = new System.Drawing.Point(948, 59);
             this.numericUpDownQMCost1.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQMCost1.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7357,12 +7357,12 @@
             this.numericUpDownQQuotePrice.DecimalPlaces = 2;
             this.numericUpDownQQuotePrice.Location = new System.Drawing.Point(104, 9);
             this.numericUpDownQQuotePrice.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuotePrice.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7379,12 +7379,12 @@
             this.numericUpDownQShopTime.DecimalPlaces = 2;
             this.numericUpDownQShopTime.Location = new System.Drawing.Point(690, 8);
             this.numericUpDownQShopTime.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQShopTime.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7400,12 +7400,12 @@
             this.numericUpDownQFreight.DecimalPlaces = 2;
             this.numericUpDownQFreight.Location = new System.Drawing.Point(550, 8);
             this.numericUpDownQFreight.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQFreight.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7421,12 +7421,12 @@
             this.numericUpDownQCredit.DecimalPlaces = 2;
             this.numericUpDownQCredit.Location = new System.Drawing.Point(429, 8);
             this.numericUpDownQCredit.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCredit.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7442,12 +7442,12 @@
             this.numericUpDownQTotalCost.DecimalPlaces = 2;
             this.numericUpDownQTotalCost.Location = new System.Drawing.Point(311, 8);
             this.numericUpDownQTotalCost.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQTotalCost.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7461,12 +7461,12 @@
             this.numericUpDownQGrossProfit.DecimalPlaces = 2;
             this.numericUpDownQGrossProfit.Location = new System.Drawing.Point(837, 9);
             this.numericUpDownQGrossProfit.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQGrossProfit.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7480,12 +7480,12 @@
             this.numericUpDownQProfit.DecimalPlaces = 2;
             this.numericUpDownQProfit.Location = new System.Drawing.Point(950, 9);
             this.numericUpDownQProfit.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQProfit.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7499,12 +7499,12 @@
             this.numericUpDownQECost23.DecimalPlaces = 2;
             this.numericUpDownQECost23.Location = new System.Drawing.Point(867, 521);
             this.numericUpDownQECost23.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost23.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7520,12 +7520,12 @@
             this.numericUpDownQCost23.DecimalPlaces = 2;
             this.numericUpDownQCost23.Location = new System.Drawing.Point(783, 521);
             this.numericUpDownQCost23.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost23.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7541,12 +7541,12 @@
             this.numericUpDownQQuan23.DecimalPlaces = 2;
             this.numericUpDownQQuan23.Location = new System.Drawing.Point(31, 522);
             this.numericUpDownQQuan23.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan23.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7562,12 +7562,12 @@
             this.numericUpDownQECost22.DecimalPlaces = 2;
             this.numericUpDownQECost22.Location = new System.Drawing.Point(867, 500);
             this.numericUpDownQECost22.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost22.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7583,12 +7583,12 @@
             this.numericUpDownQCost22.DecimalPlaces = 2;
             this.numericUpDownQCost22.Location = new System.Drawing.Point(783, 500);
             this.numericUpDownQCost22.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost22.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7604,12 +7604,12 @@
             this.numericUpDownQECost21.DecimalPlaces = 2;
             this.numericUpDownQECost21.Location = new System.Drawing.Point(867, 479);
             this.numericUpDownQECost21.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost21.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7625,12 +7625,12 @@
             this.numericUpDownQCost21.DecimalPlaces = 2;
             this.numericUpDownQCost21.Location = new System.Drawing.Point(783, 479);
             this.numericUpDownQCost21.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost21.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7646,12 +7646,12 @@
             this.numericUpDownQECost20.DecimalPlaces = 2;
             this.numericUpDownQECost20.Location = new System.Drawing.Point(867, 458);
             this.numericUpDownQECost20.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost20.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7667,12 +7667,12 @@
             this.numericUpDownQCost20.DecimalPlaces = 2;
             this.numericUpDownQCost20.Location = new System.Drawing.Point(783, 458);
             this.numericUpDownQCost20.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost20.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7688,12 +7688,12 @@
             this.numericUpDownQECost19.DecimalPlaces = 2;
             this.numericUpDownQECost19.Location = new System.Drawing.Point(867, 437);
             this.numericUpDownQECost19.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost19.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7709,12 +7709,12 @@
             this.numericUpDownQCost19.DecimalPlaces = 2;
             this.numericUpDownQCost19.Location = new System.Drawing.Point(783, 437);
             this.numericUpDownQCost19.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost19.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7730,12 +7730,12 @@
             this.numericUpDownQECost18.DecimalPlaces = 2;
             this.numericUpDownQECost18.Location = new System.Drawing.Point(867, 416);
             this.numericUpDownQECost18.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost18.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7751,12 +7751,12 @@
             this.numericUpDownQCost18.DecimalPlaces = 2;
             this.numericUpDownQCost18.Location = new System.Drawing.Point(783, 416);
             this.numericUpDownQCost18.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost18.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7772,12 +7772,12 @@
             this.numericUpDownQECost17.DecimalPlaces = 2;
             this.numericUpDownQECost17.Location = new System.Drawing.Point(867, 395);
             this.numericUpDownQECost17.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost17.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7793,12 +7793,12 @@
             this.numericUpDownQCost17.DecimalPlaces = 2;
             this.numericUpDownQCost17.Location = new System.Drawing.Point(783, 395);
             this.numericUpDownQCost17.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost17.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7814,12 +7814,12 @@
             this.numericUpDownQECost16.DecimalPlaces = 2;
             this.numericUpDownQECost16.Location = new System.Drawing.Point(867, 374);
             this.numericUpDownQECost16.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost16.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7835,12 +7835,12 @@
             this.numericUpDownQCost16.DecimalPlaces = 2;
             this.numericUpDownQCost16.Location = new System.Drawing.Point(783, 374);
             this.numericUpDownQCost16.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost16.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7856,12 +7856,12 @@
             this.numericUpDownQECost15.DecimalPlaces = 2;
             this.numericUpDownQECost15.Location = new System.Drawing.Point(867, 353);
             this.numericUpDownQECost15.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost15.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7877,12 +7877,12 @@
             this.numericUpDownQCost15.DecimalPlaces = 2;
             this.numericUpDownQCost15.Location = new System.Drawing.Point(783, 353);
             this.numericUpDownQCost15.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost15.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7898,12 +7898,12 @@
             this.numericUpDownQECost14.DecimalPlaces = 2;
             this.numericUpDownQECost14.Location = new System.Drawing.Point(867, 332);
             this.numericUpDownQECost14.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost14.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7919,12 +7919,12 @@
             this.numericUpDownQCost14.DecimalPlaces = 2;
             this.numericUpDownQCost14.Location = new System.Drawing.Point(783, 332);
             this.numericUpDownQCost14.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost14.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7940,12 +7940,12 @@
             this.numericUpDownQECost13.DecimalPlaces = 2;
             this.numericUpDownQECost13.Location = new System.Drawing.Point(867, 311);
             this.numericUpDownQECost13.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost13.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7961,12 +7961,12 @@
             this.numericUpDownQCost13.DecimalPlaces = 2;
             this.numericUpDownQCost13.Location = new System.Drawing.Point(783, 311);
             this.numericUpDownQCost13.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost13.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -7982,12 +7982,12 @@
             this.numericUpDownQECost12.DecimalPlaces = 2;
             this.numericUpDownQECost12.Location = new System.Drawing.Point(867, 290);
             this.numericUpDownQECost12.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost12.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8003,12 +8003,12 @@
             this.numericUpDownQCost12.DecimalPlaces = 2;
             this.numericUpDownQCost12.Location = new System.Drawing.Point(783, 290);
             this.numericUpDownQCost12.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost12.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8024,12 +8024,12 @@
             this.numericUpDownQQuan22.DecimalPlaces = 2;
             this.numericUpDownQQuan22.Location = new System.Drawing.Point(31, 501);
             this.numericUpDownQQuan22.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan22.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8045,12 +8045,12 @@
             this.numericUpDownQQuan21.DecimalPlaces = 2;
             this.numericUpDownQQuan21.Location = new System.Drawing.Point(31, 480);
             this.numericUpDownQQuan21.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan21.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8066,12 +8066,12 @@
             this.numericUpDownQQuan20.DecimalPlaces = 2;
             this.numericUpDownQQuan20.Location = new System.Drawing.Point(31, 459);
             this.numericUpDownQQuan20.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan20.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8087,12 +8087,12 @@
             this.numericUpDownQQuan19.DecimalPlaces = 2;
             this.numericUpDownQQuan19.Location = new System.Drawing.Point(31, 438);
             this.numericUpDownQQuan19.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan19.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8108,12 +8108,12 @@
             this.numericUpDownQQuan18.DecimalPlaces = 2;
             this.numericUpDownQQuan18.Location = new System.Drawing.Point(31, 417);
             this.numericUpDownQQuan18.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan18.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8129,12 +8129,12 @@
             this.numericUpDownQQuan17.DecimalPlaces = 2;
             this.numericUpDownQQuan17.Location = new System.Drawing.Point(31, 396);
             this.numericUpDownQQuan17.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan17.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8150,12 +8150,12 @@
             this.numericUpDownQQuan16.DecimalPlaces = 2;
             this.numericUpDownQQuan16.Location = new System.Drawing.Point(31, 375);
             this.numericUpDownQQuan16.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan16.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8171,12 +8171,12 @@
             this.numericUpDownQQuan15.DecimalPlaces = 2;
             this.numericUpDownQQuan15.Location = new System.Drawing.Point(31, 354);
             this.numericUpDownQQuan15.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan15.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8192,12 +8192,12 @@
             this.numericUpDownQQuan14.DecimalPlaces = 2;
             this.numericUpDownQQuan14.Location = new System.Drawing.Point(31, 333);
             this.numericUpDownQQuan14.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan14.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8213,12 +8213,12 @@
             this.numericUpDownQQuan13.DecimalPlaces = 2;
             this.numericUpDownQQuan13.Location = new System.Drawing.Point(31, 312);
             this.numericUpDownQQuan13.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan13.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8234,12 +8234,12 @@
             this.numericUpDownQQuan12.DecimalPlaces = 2;
             this.numericUpDownQQuan12.Location = new System.Drawing.Point(31, 291);
             this.numericUpDownQQuan12.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan12.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8255,12 +8255,12 @@
             this.numericUpDownQQuan11.DecimalPlaces = 2;
             this.numericUpDownQQuan11.Location = new System.Drawing.Point(31, 270);
             this.numericUpDownQQuan11.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan11.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8276,12 +8276,12 @@
             this.numericUpDownQECost11.DecimalPlaces = 2;
             this.numericUpDownQECost11.Location = new System.Drawing.Point(867, 269);
             this.numericUpDownQECost11.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost11.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8297,12 +8297,12 @@
             this.numericUpDownQCost11.DecimalPlaces = 2;
             this.numericUpDownQCost11.Location = new System.Drawing.Point(783, 269);
             this.numericUpDownQCost11.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost11.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8318,12 +8318,12 @@
             this.numericUpDownQQuan10.DecimalPlaces = 2;
             this.numericUpDownQQuan10.Location = new System.Drawing.Point(31, 249);
             this.numericUpDownQQuan10.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan10.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8339,12 +8339,12 @@
             this.numericUpDownQECost10.DecimalPlaces = 2;
             this.numericUpDownQECost10.Location = new System.Drawing.Point(867, 248);
             this.numericUpDownQECost10.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost10.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8360,12 +8360,12 @@
             this.numericUpDownQCost10.DecimalPlaces = 2;
             this.numericUpDownQCost10.Location = new System.Drawing.Point(783, 248);
             this.numericUpDownQCost10.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost10.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8381,12 +8381,12 @@
             this.numericUpDownQQuan9.DecimalPlaces = 2;
             this.numericUpDownQQuan9.Location = new System.Drawing.Point(31, 228);
             this.numericUpDownQQuan9.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan9.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8402,12 +8402,12 @@
             this.numericUpDownQECost9.DecimalPlaces = 2;
             this.numericUpDownQECost9.Location = new System.Drawing.Point(867, 227);
             this.numericUpDownQECost9.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost9.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8423,12 +8423,12 @@
             this.numericUpDownQCost9.DecimalPlaces = 2;
             this.numericUpDownQCost9.Location = new System.Drawing.Point(783, 227);
             this.numericUpDownQCost9.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost9.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8444,12 +8444,12 @@
             this.numericUpDownQQuan8.DecimalPlaces = 2;
             this.numericUpDownQQuan8.Location = new System.Drawing.Point(31, 207);
             this.numericUpDownQQuan8.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan8.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8465,12 +8465,12 @@
             this.numericUpDownQECost8.DecimalPlaces = 2;
             this.numericUpDownQECost8.Location = new System.Drawing.Point(867, 206);
             this.numericUpDownQECost8.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost8.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8486,12 +8486,12 @@
             this.numericUpDownQCost8.DecimalPlaces = 2;
             this.numericUpDownQCost8.Location = new System.Drawing.Point(783, 206);
             this.numericUpDownQCost8.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost8.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8507,12 +8507,12 @@
             this.numericUpDownQQuan7.DecimalPlaces = 2;
             this.numericUpDownQQuan7.Location = new System.Drawing.Point(31, 186);
             this.numericUpDownQQuan7.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan7.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8528,12 +8528,12 @@
             this.numericUpDownQECost7.DecimalPlaces = 2;
             this.numericUpDownQECost7.Location = new System.Drawing.Point(867, 185);
             this.numericUpDownQECost7.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost7.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8549,12 +8549,12 @@
             this.numericUpDownQCost7.DecimalPlaces = 2;
             this.numericUpDownQCost7.Location = new System.Drawing.Point(783, 185);
             this.numericUpDownQCost7.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost7.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8570,12 +8570,12 @@
             this.numericUpDownQQuan6.DecimalPlaces = 2;
             this.numericUpDownQQuan6.Location = new System.Drawing.Point(31, 165);
             this.numericUpDownQQuan6.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan6.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8591,12 +8591,12 @@
             this.numericUpDownQECost6.DecimalPlaces = 2;
             this.numericUpDownQECost6.Location = new System.Drawing.Point(867, 164);
             this.numericUpDownQECost6.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost6.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8612,12 +8612,12 @@
             this.numericUpDownQCost6.DecimalPlaces = 2;
             this.numericUpDownQCost6.Location = new System.Drawing.Point(783, 164);
             this.numericUpDownQCost6.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost6.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8633,12 +8633,12 @@
             this.numericUpDownQQuan5.DecimalPlaces = 2;
             this.numericUpDownQQuan5.Location = new System.Drawing.Point(31, 144);
             this.numericUpDownQQuan5.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan5.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8654,12 +8654,12 @@
             this.numericUpDownQECost5.DecimalPlaces = 2;
             this.numericUpDownQECost5.Location = new System.Drawing.Point(867, 143);
             this.numericUpDownQECost5.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost5.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8675,12 +8675,12 @@
             this.numericUpDownQCost5.DecimalPlaces = 2;
             this.numericUpDownQCost5.Location = new System.Drawing.Point(783, 143);
             this.numericUpDownQCost5.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost5.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8696,12 +8696,12 @@
             this.numericUpDownQQuan4.DecimalPlaces = 2;
             this.numericUpDownQQuan4.Location = new System.Drawing.Point(31, 123);
             this.numericUpDownQQuan4.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan4.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8717,12 +8717,12 @@
             this.numericUpDownQECost4.DecimalPlaces = 2;
             this.numericUpDownQECost4.Location = new System.Drawing.Point(867, 122);
             this.numericUpDownQECost4.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost4.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8738,12 +8738,12 @@
             this.numericUpDownQCost4.DecimalPlaces = 2;
             this.numericUpDownQCost4.Location = new System.Drawing.Point(783, 122);
             this.numericUpDownQCost4.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost4.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8759,12 +8759,12 @@
             this.numericUpDownQQuan3.DecimalPlaces = 2;
             this.numericUpDownQQuan3.Location = new System.Drawing.Point(31, 102);
             this.numericUpDownQQuan3.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan3.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8780,12 +8780,12 @@
             this.numericUpDownQECost3.DecimalPlaces = 2;
             this.numericUpDownQECost3.Location = new System.Drawing.Point(867, 101);
             this.numericUpDownQECost3.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost3.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8801,12 +8801,12 @@
             this.numericUpDownQCost3.DecimalPlaces = 2;
             this.numericUpDownQCost3.Location = new System.Drawing.Point(783, 101);
             this.numericUpDownQCost3.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost3.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8822,12 +8822,12 @@
             this.numericUpDownQQuan2.DecimalPlaces = 2;
             this.numericUpDownQQuan2.Location = new System.Drawing.Point(31, 81);
             this.numericUpDownQQuan2.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan2.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8843,12 +8843,12 @@
             this.numericUpDownQECost2.DecimalPlaces = 2;
             this.numericUpDownQECost2.Location = new System.Drawing.Point(867, 80);
             this.numericUpDownQECost2.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost2.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8864,12 +8864,12 @@
             this.numericUpDownQCost2.DecimalPlaces = 2;
             this.numericUpDownQCost2.Location = new System.Drawing.Point(783, 80);
             this.numericUpDownQCost2.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost2.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8885,12 +8885,12 @@
             this.numericUpDownQQuan1.DecimalPlaces = 2;
             this.numericUpDownQQuan1.Location = new System.Drawing.Point(31, 60);
             this.numericUpDownQQuan1.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQQuan1.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8906,12 +8906,12 @@
             this.numericUpDownQECost1.DecimalPlaces = 2;
             this.numericUpDownQECost1.Location = new System.Drawing.Point(867, 59);
             this.numericUpDownQECost1.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQECost1.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -8927,12 +8927,12 @@
             this.numericUpDownQCost1.DecimalPlaces = 2;
             this.numericUpDownQCost1.Location = new System.Drawing.Point(783, 59);
             this.numericUpDownQCost1.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCost1.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});
@@ -9951,12 +9951,12 @@
             this.numericUpDownQCheat.DecimalPlaces = 2;
             this.numericUpDownQCheat.Location = new System.Drawing.Point(3, 9);
             this.numericUpDownQCheat.Maximum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             0});
             this.numericUpDownQCheat.Minimum = new decimal(new int[] {
-            100000000,
+            1000000000,
             0,
             0,
             -2147483648});

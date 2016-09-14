@@ -22,7 +22,7 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V5.2 2016_09_08";
+            this.Text = "Tugwell V5.3 2016_09_14";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
@@ -1305,39 +1305,43 @@ namespace Tugwell
 
         private void doTheMathOrders()
         {
-            // Commission calculation
-            this.numericUpDownComBalance.Value = this.numericUpDownComAmount.Value - (this.numericUpDownPaid1.Value + this.numericUpDownPaid2.Value + this.numericUpDownPaid3.Value + this.numericUpDownPaid4.Value + this.numericUpDownPaid5.Value);
-        
-            // Order worksheet math
-            decimal w1 = this.numericUpDownOrderECost1.Value = this.numericUpDownOrderCount1.Value * this.numericUpDownOrderCost1.Value;
-            decimal w2 = this.numericUpDownOrderECost2.Value = this.numericUpDownOrderCount2.Value * this.numericUpDownOrderCost2.Value;
-            decimal w3 = this.numericUpDownOrderECost3.Value = this.numericUpDownOrderCount3.Value * this.numericUpDownOrderCost3.Value;
-            decimal w4 = this.numericUpDownOrderECost4.Value = this.numericUpDownOrderCount4.Value * this.numericUpDownOrderCost4.Value;
-            decimal w5 = this.numericUpDownOrderECost5.Value = this.numericUpDownOrderCount5.Value * this.numericUpDownOrderCost5.Value;
-            decimal w6 = this.numericUpDownOrderECost6.Value = this.numericUpDownOrderCount6.Value * this.numericUpDownOrderCost6.Value;
-            decimal w7 = this.numericUpDownOrderECost7.Value = this.numericUpDownOrderCount7.Value * this.numericUpDownOrderCost7.Value;
-            decimal w8 = this.numericUpDownOrderECost8.Value = this.numericUpDownOrderCount8.Value * this.numericUpDownOrderCost8.Value;
-            decimal w9 = this.numericUpDownOrderECost9.Value = this.numericUpDownOrderCount9.Value * this.numericUpDownOrderCost9.Value;
-            decimal w10 = this.numericUpDownOrderECost10.Value = this.numericUpDownOrderCount10.Value * this.numericUpDownOrderCost10.Value;
-            decimal w11 = this.numericUpDownOrderECost11.Value = this.numericUpDownOrderCount11.Value * this.numericUpDownOrderCost11.Value;
-            decimal w12 = this.numericUpDownOrderECost12.Value = this.numericUpDownOrderCount12.Value * this.numericUpDownOrderCost12.Value;
-            decimal w13 = this.numericUpDownOrderECost13.Value = this.numericUpDownOrderCount13.Value * this.numericUpDownOrderCost13.Value;
-            decimal w14 = this.numericUpDownOrderECost14.Value = this.numericUpDownOrderCount14.Value * this.numericUpDownOrderCost14.Value;
-            decimal w15 = this.numericUpDownOrderECost15.Value = this.numericUpDownOrderCount15.Value * this.numericUpDownOrderCost15.Value;
-            decimal w16 = this.numericUpDownOrderECost16.Value = this.numericUpDownOrderCount16.Value * this.numericUpDownOrderCost16.Value;
-            decimal w17 = this.numericUpDownOrderECost17.Value = this.numericUpDownOrderCount17.Value * this.numericUpDownOrderCost17.Value;
-            decimal w18 = this.numericUpDownOrderECost18.Value = this.numericUpDownOrderCount18.Value * this.numericUpDownOrderCost18.Value;
-            decimal w19 = this.numericUpDownOrderECost19.Value = this.numericUpDownOrderCount19.Value * this.numericUpDownOrderCost19.Value;
-            decimal w20 = this.numericUpDownOrderECost20.Value = this.numericUpDownOrderCount20.Value * this.numericUpDownOrderCost20.Value;
-            decimal w21 = this.numericUpDownOrderECost21.Value = this.numericUpDownOrderCount21.Value * this.numericUpDownOrderCost21.Value;
-            decimal w22 = this.numericUpDownOrderECost22.Value = this.numericUpDownOrderCount22.Value * this.numericUpDownOrderCost22.Value;
-            decimal w23 = this.numericUpDownOrderECost23.Value = this.numericUpDownOrderCount23.Value * this.numericUpDownOrderCost23.Value;
+            try
+            {
+                // Commission calculation
+                this.numericUpDownComBalance.Value = this.numericUpDownComAmount.Value - (this.numericUpDownPaid1.Value + this.numericUpDownPaid2.Value + this.numericUpDownPaid3.Value + this.numericUpDownPaid4.Value + this.numericUpDownPaid5.Value);
 
-            this.numericUpDownTotalCost.Value = (w1 + w2 + w3 + w4 + w5 + w6 + w7 + w8 + w9 + w10 + w11 + w12 + w13 + w14 + w15 + w16 + w17 + w18 + w19 + w20 + w21 + w22 + w23);
-            this.numericUpDownProfit.Value = this.numericUpDownQuotePrice.Value - this.numericUpDownTotalCost.Value - this.numericUpDownCredit.Value - this.numericUpDownFreight.Value - this.numericUpDownShopTime.Value;
-            this.numericUpDownGrossProfit.Value = (this.numericUpDownQuotePrice.Value == 0) ? 0 :
-                (100 * (this.numericUpDownQuotePrice.Value - this.numericUpDownTotalCost.Value - this.numericUpDownCredit.Value - this.numericUpDownFreight.Value - this.numericUpDownShopTime.Value))
-                / this.numericUpDownQuotePrice.Value;
+                // Order worksheet math
+                decimal w1 = this.numericUpDownOrderECost1.Value = this.numericUpDownOrderCount1.Value * this.numericUpDownOrderCost1.Value;
+                decimal w2 = this.numericUpDownOrderECost2.Value = this.numericUpDownOrderCount2.Value * this.numericUpDownOrderCost2.Value;
+                decimal w3 = this.numericUpDownOrderECost3.Value = this.numericUpDownOrderCount3.Value * this.numericUpDownOrderCost3.Value;
+                decimal w4 = this.numericUpDownOrderECost4.Value = this.numericUpDownOrderCount4.Value * this.numericUpDownOrderCost4.Value;
+                decimal w5 = this.numericUpDownOrderECost5.Value = this.numericUpDownOrderCount5.Value * this.numericUpDownOrderCost5.Value;
+                decimal w6 = this.numericUpDownOrderECost6.Value = this.numericUpDownOrderCount6.Value * this.numericUpDownOrderCost6.Value;
+                decimal w7 = this.numericUpDownOrderECost7.Value = this.numericUpDownOrderCount7.Value * this.numericUpDownOrderCost7.Value;
+                decimal w8 = this.numericUpDownOrderECost8.Value = this.numericUpDownOrderCount8.Value * this.numericUpDownOrderCost8.Value;
+                decimal w9 = this.numericUpDownOrderECost9.Value = this.numericUpDownOrderCount9.Value * this.numericUpDownOrderCost9.Value;
+                decimal w10 = this.numericUpDownOrderECost10.Value = this.numericUpDownOrderCount10.Value * this.numericUpDownOrderCost10.Value;
+                decimal w11 = this.numericUpDownOrderECost11.Value = this.numericUpDownOrderCount11.Value * this.numericUpDownOrderCost11.Value;
+                decimal w12 = this.numericUpDownOrderECost12.Value = this.numericUpDownOrderCount12.Value * this.numericUpDownOrderCost12.Value;
+                decimal w13 = this.numericUpDownOrderECost13.Value = this.numericUpDownOrderCount13.Value * this.numericUpDownOrderCost13.Value;
+                decimal w14 = this.numericUpDownOrderECost14.Value = this.numericUpDownOrderCount14.Value * this.numericUpDownOrderCost14.Value;
+                decimal w15 = this.numericUpDownOrderECost15.Value = this.numericUpDownOrderCount15.Value * this.numericUpDownOrderCost15.Value;
+                decimal w16 = this.numericUpDownOrderECost16.Value = this.numericUpDownOrderCount16.Value * this.numericUpDownOrderCost16.Value;
+                decimal w17 = this.numericUpDownOrderECost17.Value = this.numericUpDownOrderCount17.Value * this.numericUpDownOrderCost17.Value;
+                decimal w18 = this.numericUpDownOrderECost18.Value = this.numericUpDownOrderCount18.Value * this.numericUpDownOrderCost18.Value;
+                decimal w19 = this.numericUpDownOrderECost19.Value = this.numericUpDownOrderCount19.Value * this.numericUpDownOrderCost19.Value;
+                decimal w20 = this.numericUpDownOrderECost20.Value = this.numericUpDownOrderCount20.Value * this.numericUpDownOrderCost20.Value;
+                decimal w21 = this.numericUpDownOrderECost21.Value = this.numericUpDownOrderCount21.Value * this.numericUpDownOrderCost21.Value;
+                decimal w22 = this.numericUpDownOrderECost22.Value = this.numericUpDownOrderCount22.Value * this.numericUpDownOrderCost22.Value;
+                decimal w23 = this.numericUpDownOrderECost23.Value = this.numericUpDownOrderCount23.Value * this.numericUpDownOrderCost23.Value;
+
+                this.numericUpDownTotalCost.Value = (w1 + w2 + w3 + w4 + w5 + w6 + w7 + w8 + w9 + w10 + w11 + w12 + w13 + w14 + w15 + w16 + w17 + w18 + w19 + w20 + w21 + w22 + w23);
+                this.numericUpDownProfit.Value = this.numericUpDownQuotePrice.Value - this.numericUpDownTotalCost.Value - this.numericUpDownCredit.Value - this.numericUpDownFreight.Value - this.numericUpDownShopTime.Value;
+                this.numericUpDownGrossProfit.Value = (this.numericUpDownQuotePrice.Value == 0) ? 0 :
+                    (100 * (this.numericUpDownQuotePrice.Value - this.numericUpDownTotalCost.Value - this.numericUpDownCredit.Value - this.numericUpDownFreight.Value - this.numericUpDownShopTime.Value))
+                    / this.numericUpDownQuotePrice.Value;
+            }
+            catch { MessageBox.Show("Order Numeric out of range"); }
         }
 
         #endregion
@@ -1351,107 +1355,111 @@ namespace Tugwell
                 return;
             _running = true;
 
-            // Quote worksheet math
-            decimal w1 = this.numericUpDownQECost1.Value = this.numericUpDownQQuan1.Value * this.numericUpDownQCost1.Value;
-            decimal w2 = this.numericUpDownQECost2.Value = this.numericUpDownQQuan2.Value * this.numericUpDownQCost2.Value;
-            decimal w3 = this.numericUpDownQECost3.Value = this.numericUpDownQQuan3.Value * this.numericUpDownQCost3.Value;
-            decimal w4 = this.numericUpDownQECost4.Value = this.numericUpDownQQuan4.Value * this.numericUpDownQCost4.Value;
-            decimal w5 = this.numericUpDownQECost5.Value = this.numericUpDownQQuan5.Value * this.numericUpDownQCost5.Value;
-            decimal w6 = this.numericUpDownQECost6.Value = this.numericUpDownQQuan6.Value * this.numericUpDownQCost6.Value;
-            decimal w7 = this.numericUpDownQECost7.Value = this.numericUpDownQQuan7.Value * this.numericUpDownQCost7.Value;
-            decimal w8 = this.numericUpDownQECost8.Value = this.numericUpDownQQuan8.Value * this.numericUpDownQCost8.Value;
-            decimal w9 = this.numericUpDownQECost9.Value = this.numericUpDownQQuan9.Value * this.numericUpDownQCost9.Value;
-            decimal w10 = this.numericUpDownQECost10.Value = this.numericUpDownQQuan10.Value * this.numericUpDownQCost10.Value;
-            decimal w11 = this.numericUpDownQECost11.Value = this.numericUpDownQQuan11.Value * this.numericUpDownQCost11.Value;
-            decimal w12 = this.numericUpDownQECost12.Value = this.numericUpDownQQuan12.Value * this.numericUpDownQCost12.Value;
-            decimal w13 = this.numericUpDownQECost13.Value = this.numericUpDownQQuan13.Value * this.numericUpDownQCost13.Value;
-            decimal w14 = this.numericUpDownQECost14.Value = this.numericUpDownQQuan14.Value * this.numericUpDownQCost14.Value;
-            decimal w15 = this.numericUpDownQECost15.Value = this.numericUpDownQQuan15.Value * this.numericUpDownQCost15.Value;
-            decimal w16 = this.numericUpDownQECost16.Value = this.numericUpDownQQuan16.Value * this.numericUpDownQCost16.Value;
-            decimal w17 = this.numericUpDownQECost17.Value = this.numericUpDownQQuan17.Value * this.numericUpDownQCost17.Value;
-            decimal w18 = this.numericUpDownQECost18.Value = this.numericUpDownQQuan18.Value * this.numericUpDownQCost18.Value;
-            decimal w19 = this.numericUpDownQECost19.Value = this.numericUpDownQQuan19.Value * this.numericUpDownQCost19.Value;
-            decimal w20 = this.numericUpDownQECost20.Value = this.numericUpDownQQuan20.Value * this.numericUpDownQCost20.Value;
-            decimal w21 = this.numericUpDownQECost21.Value = this.numericUpDownQQuan21.Value * this.numericUpDownQCost21.Value;
-            decimal w22 = this.numericUpDownQECost22.Value = this.numericUpDownQQuan22.Value * this.numericUpDownQCost22.Value;
-            decimal w23 = this.numericUpDownQECost23.Value = this.numericUpDownQQuan23.Value * this.numericUpDownQCost23.Value;
+            try
+            {
+                // Quote worksheet math
+                decimal w1 = this.numericUpDownQECost1.Value = this.numericUpDownQQuan1.Value * this.numericUpDownQCost1.Value;
+                decimal w2 = this.numericUpDownQECost2.Value = this.numericUpDownQQuan2.Value * this.numericUpDownQCost2.Value;
+                decimal w3 = this.numericUpDownQECost3.Value = this.numericUpDownQQuan3.Value * this.numericUpDownQCost3.Value;
+                decimal w4 = this.numericUpDownQECost4.Value = this.numericUpDownQQuan4.Value * this.numericUpDownQCost4.Value;
+                decimal w5 = this.numericUpDownQECost5.Value = this.numericUpDownQQuan5.Value * this.numericUpDownQCost5.Value;
+                decimal w6 = this.numericUpDownQECost6.Value = this.numericUpDownQQuan6.Value * this.numericUpDownQCost6.Value;
+                decimal w7 = this.numericUpDownQECost7.Value = this.numericUpDownQQuan7.Value * this.numericUpDownQCost7.Value;
+                decimal w8 = this.numericUpDownQECost8.Value = this.numericUpDownQQuan8.Value * this.numericUpDownQCost8.Value;
+                decimal w9 = this.numericUpDownQECost9.Value = this.numericUpDownQQuan9.Value * this.numericUpDownQCost9.Value;
+                decimal w10 = this.numericUpDownQECost10.Value = this.numericUpDownQQuan10.Value * this.numericUpDownQCost10.Value;
+                decimal w11 = this.numericUpDownQECost11.Value = this.numericUpDownQQuan11.Value * this.numericUpDownQCost11.Value;
+                decimal w12 = this.numericUpDownQECost12.Value = this.numericUpDownQQuan12.Value * this.numericUpDownQCost12.Value;
+                decimal w13 = this.numericUpDownQECost13.Value = this.numericUpDownQQuan13.Value * this.numericUpDownQCost13.Value;
+                decimal w14 = this.numericUpDownQECost14.Value = this.numericUpDownQQuan14.Value * this.numericUpDownQCost14.Value;
+                decimal w15 = this.numericUpDownQECost15.Value = this.numericUpDownQQuan15.Value * this.numericUpDownQCost15.Value;
+                decimal w16 = this.numericUpDownQECost16.Value = this.numericUpDownQQuan16.Value * this.numericUpDownQCost16.Value;
+                decimal w17 = this.numericUpDownQECost17.Value = this.numericUpDownQQuan17.Value * this.numericUpDownQCost17.Value;
+                decimal w18 = this.numericUpDownQECost18.Value = this.numericUpDownQQuan18.Value * this.numericUpDownQCost18.Value;
+                decimal w19 = this.numericUpDownQECost19.Value = this.numericUpDownQQuan19.Value * this.numericUpDownQCost19.Value;
+                decimal w20 = this.numericUpDownQECost20.Value = this.numericUpDownQQuan20.Value * this.numericUpDownQCost20.Value;
+                decimal w21 = this.numericUpDownQECost21.Value = this.numericUpDownQQuan21.Value * this.numericUpDownQCost21.Value;
+                decimal w22 = this.numericUpDownQECost22.Value = this.numericUpDownQQuan22.Value * this.numericUpDownQCost22.Value;
+                decimal w23 = this.numericUpDownQECost23.Value = this.numericUpDownQQuan23.Value * this.numericUpDownQCost23.Value;
 
-            this.numericUpDownQTotalCost.Value = w1 + w2 + w3 + w4 + w5 + w6 + w7 + w8 + w9 + w10 + w11 + w12 + w13 + w14 + w15 + w16 + w17 + w18 + w19 + w20 + w21 + w22 + w23;
+                this.numericUpDownQTotalCost.Value = w1 + w2 + w3 + w4 + w5 + w6 + w7 + w8 + w9 + w10 + w11 + w12 + w13 + w14 + w15 + w16 + w17 + w18 + w19 + w20 + w21 + w22 + w23;
                 //this.numericUpDownQCredit.Value + this.numericUpDownQFreight.Value + this.numericUpDownQShopTime.Value;
 
-            // if not in manual mode, calculate it
-            if (!this.checkBoxQManual.Checked)
-            {
-                this.numericUpDownQQuotePrice.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQTotalCost.Value);
-                this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
-            }
-            //else if (this.checkBoxPManual.Checked) // sum total of Marked up costs because it (right) is manual mode
-            else // complete manual mode
-            {
-                this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
-            }
+                // if not in manual mode, calculate it
+                if (!this.checkBoxQManual.Checked)
+                {
+                    this.numericUpDownQQuotePrice.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQTotalCost.Value);
+                    this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
+                }
+                //else if (this.checkBoxPManual.Checked) // sum total of Marked up costs because it (right) is manual mode
+                else // complete manual mode
+                {
+                    this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
+                }
 
-            {
-                decimal m1 = numericUpDownQMCost1.Value;
-                decimal m2 = numericUpDownQMCost2.Value;
-                decimal m3 = numericUpDownQMCost3.Value;
-                decimal m4 = numericUpDownQMCost4.Value;
-                decimal m5 = numericUpDownQMCost5.Value;
-                decimal m6 = numericUpDownQMCost6.Value;
-                decimal m7 = numericUpDownQMCost7.Value;
-                decimal m8 = numericUpDownQMCost8.Value;
-                decimal m9 = numericUpDownQMCost9.Value;
-                decimal m10 = numericUpDownQMCost10.Value;
-                decimal m11 = numericUpDownQMCost11.Value;
-                decimal m12 = numericUpDownQMCost12.Value;
-                decimal m13 = numericUpDownQMCost13.Value;
-                decimal m14 = numericUpDownQMCost14.Value;
-                decimal m15 = numericUpDownQMCost15.Value;
-                decimal m16 = numericUpDownQMCost16.Value;
-                decimal m17 = numericUpDownQMCost17.Value;
-                decimal m18 = numericUpDownQMCost18.Value;
-                decimal m19 = numericUpDownQMCost19.Value;
-                decimal m20 = numericUpDownQMCost20.Value;
-                decimal m21 = numericUpDownQMCost21.Value;
-                decimal m22 = numericUpDownQMCost22.Value;
-                decimal m23 = numericUpDownQMCost23.Value;
+                {
+                    decimal m1 = numericUpDownQMCost1.Value;
+                    decimal m2 = numericUpDownQMCost2.Value;
+                    decimal m3 = numericUpDownQMCost3.Value;
+                    decimal m4 = numericUpDownQMCost4.Value;
+                    decimal m5 = numericUpDownQMCost5.Value;
+                    decimal m6 = numericUpDownQMCost6.Value;
+                    decimal m7 = numericUpDownQMCost7.Value;
+                    decimal m8 = numericUpDownQMCost8.Value;
+                    decimal m9 = numericUpDownQMCost9.Value;
+                    decimal m10 = numericUpDownQMCost10.Value;
+                    decimal m11 = numericUpDownQMCost11.Value;
+                    decimal m12 = numericUpDownQMCost12.Value;
+                    decimal m13 = numericUpDownQMCost13.Value;
+                    decimal m14 = numericUpDownQMCost14.Value;
+                    decimal m15 = numericUpDownQMCost15.Value;
+                    decimal m16 = numericUpDownQMCost16.Value;
+                    decimal m17 = numericUpDownQMCost17.Value;
+                    decimal m18 = numericUpDownQMCost18.Value;
+                    decimal m19 = numericUpDownQMCost19.Value;
+                    decimal m20 = numericUpDownQMCost20.Value;
+                    decimal m21 = numericUpDownQMCost21.Value;
+                    decimal m22 = numericUpDownQMCost22.Value;
+                    decimal m23 = numericUpDownQMCost23.Value;
 
-                this.numericUpDownQCheat.Value = m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 + m9 + m10 + m11 + m12 + m13 + m14 + m15 + m16 + m17 + m18 + m19 + m20 + m21 + m22 + m23;
-                //this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
+                    this.numericUpDownQCheat.Value = m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 + m9 + m10 + m11 + m12 + m13 + m14 + m15 + m16 + m17 + m18 + m19 + m20 + m21 + m22 + m23;
+                    //this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
+                }
+
+                this.numericUpDownQProfit.Value = this.numericUpDownQQuotePrice.Value - this.numericUpDownQTotalCost.Value - this.numericUpDownQCredit.Value - this.numericUpDownQFreight.Value - this.numericUpDownQShopTime.Value;
+                this.numericUpDownQGrossProfit.Value = (this.numericUpDownQQuotePrice.Value == 0) ? 0 :
+                    (100 * (this.numericUpDownQQuotePrice.Value - this.numericUpDownQTotalCost.Value - this.numericUpDownQCredit.Value - this.numericUpDownQFreight.Value - this.numericUpDownQShopTime.Value))
+                    / this.numericUpDownQQuotePrice.Value;
+
+                // if not in manual mode, calculate it
+                if (!this.checkBoxPManual.Checked)
+                {
+                    this.numericUpDownQMCost1.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost1.Value);
+                    this.numericUpDownQMCost2.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost2.Value);
+                    this.numericUpDownQMCost3.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost3.Value);
+                    this.numericUpDownQMCost4.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost4.Value);
+                    this.numericUpDownQMCost5.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost5.Value);
+                    this.numericUpDownQMCost6.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost6.Value);
+                    this.numericUpDownQMCost7.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost7.Value);
+                    this.numericUpDownQMCost8.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost8.Value);
+                    this.numericUpDownQMCost9.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost9.Value);
+                    this.numericUpDownQMCost10.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost10.Value);
+                    this.numericUpDownQMCost11.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost11.Value);
+                    this.numericUpDownQMCost12.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost12.Value);
+                    this.numericUpDownQMCost13.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost13.Value);
+                    this.numericUpDownQMCost14.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost14.Value);
+                    this.numericUpDownQMCost15.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost15.Value);
+                    this.numericUpDownQMCost16.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost16.Value);
+                    this.numericUpDownQMCost17.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost17.Value);
+                    this.numericUpDownQMCost18.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost18.Value);
+                    this.numericUpDownQMCost19.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost19.Value);
+                    this.numericUpDownQMCost20.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost20.Value);
+                    this.numericUpDownQMCost21.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost21.Value);
+                    this.numericUpDownQMCost22.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost22.Value);
+                    this.numericUpDownQMCost23.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost23.Value);
+                }
             }
-
-            this.numericUpDownQProfit.Value = this.numericUpDownQQuotePrice.Value - this.numericUpDownQTotalCost.Value - this.numericUpDownQCredit.Value - this.numericUpDownQFreight.Value - this.numericUpDownQShopTime.Value;
-            this.numericUpDownQGrossProfit.Value = (this.numericUpDownQQuotePrice.Value == 0) ? 0 :
-                (100 * (this.numericUpDownQQuotePrice.Value - this.numericUpDownQTotalCost.Value - this.numericUpDownQCredit.Value - this.numericUpDownQFreight.Value - this.numericUpDownQShopTime.Value))
-                / this.numericUpDownQQuotePrice.Value;
-
-            // if not in manual mode, calculate it
-            if (!this.checkBoxPManual.Checked)
-            {
-                this.numericUpDownQMCost1.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost1.Value);
-                this.numericUpDownQMCost2.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost2.Value);
-                this.numericUpDownQMCost3.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost3.Value);
-                this.numericUpDownQMCost4.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost4.Value);
-                this.numericUpDownQMCost5.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost5.Value);
-                this.numericUpDownQMCost6.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost6.Value);
-                this.numericUpDownQMCost7.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost7.Value);
-                this.numericUpDownQMCost8.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost8.Value);
-                this.numericUpDownQMCost9.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost9.Value);
-                this.numericUpDownQMCost10.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost10.Value);
-                this.numericUpDownQMCost11.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost11.Value);
-                this.numericUpDownQMCost12.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost12.Value);
-                this.numericUpDownQMCost13.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost13.Value);
-                this.numericUpDownQMCost14.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost14.Value);
-                this.numericUpDownQMCost15.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost15.Value);
-                this.numericUpDownQMCost16.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost16.Value);
-                this.numericUpDownQMCost17.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost17.Value);
-                this.numericUpDownQMCost18.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost18.Value);
-                this.numericUpDownQMCost19.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost19.Value);
-                this.numericUpDownQMCost20.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost20.Value);
-                this.numericUpDownQMCost21.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost21.Value);
-                this.numericUpDownQMCost22.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost22.Value);
-                this.numericUpDownQMCost23.Value = roundIt((1 + this.numericUpDownQMarkUp.Value / 100) * this.numericUpDownQECost23.Value);
-            }
+            catch { MessageBox.Show("Quote Numeric out of range"); }
 
             _running = false;
         }
