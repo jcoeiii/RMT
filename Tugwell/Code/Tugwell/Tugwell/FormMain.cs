@@ -22,7 +22,7 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V5.3 2016_09_14";
+            this.Text = "Tugwell V5.4 2016_09_19";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
@@ -1423,6 +1423,12 @@ namespace Tugwell
                     decimal m23 = numericUpDownQMCost23.Value;
 
                     this.numericUpDownQCheat.Value = m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 + m9 + m10 + m11 + m12 + m13 + m14 + m15 + m16 + m17 + m18 + m19 + m20 + m21 + m22 + m23;
+
+                    if (this.numericUpDownQCheat.Value > 0)
+                        this.numericUpDownQCheat.Visible = true;
+                    else
+                        this.numericUpDownQCheat.Visible = false;
+                    
                     //this.textBoxQQuotedPriceReadOnly.Text = this.numericUpDownQQuotePrice.Text; // mirror
                 }
 
@@ -7922,16 +7928,21 @@ namespace Tugwell
         {
             List<string> list = new List<string>();
 
-            string[] files = Directory.GetFiles(this.toolStripTextBoxDbasePath.Text, "!_O*.tmp");
-
-            foreach (string file in files)
+            try
             {
-                if (file.Contains("!_O" + this._lockName))
-                    continue;
 
-                IEnumerable<string> lines = File.ReadLines(file);
-                list.Add(lines.ElementAt(1));
+                string[] files = Directory.GetFiles(this.toolStripTextBoxDbasePath.Text, "!_O*.tmp");
+
+                foreach (string file in files)
+                {
+                    if (file.Contains("!_O" + this._lockName))
+                        continue;
+
+                    IEnumerable<string> lines = File.ReadLines(file);
+                    list.Add(lines.ElementAt(1));
+                }
             }
+            catch { }
 
             return list;
         }
@@ -7940,16 +7951,20 @@ namespace Tugwell
         {
             List<string> list = new List<string>();
 
-            string[] files = Directory.GetFiles(this.toolStripTextBoxDbasePath.Text, "!_Q*.tmp");
-
-            foreach (string file in files)
+            try
             {
-                if (file.Contains("!_Q" + this._lockName))
-                    continue;
+                string[] files = Directory.GetFiles(this.toolStripTextBoxDbasePath.Text, "!_Q*.tmp");
 
-                IEnumerable<string> lines = File.ReadLines(file);
-                list.Add(lines.ElementAt(1));
+                foreach (string file in files)
+                {
+                    if (file.Contains("!_Q" + this._lockName))
+                        continue;
+
+                    IEnumerable<string> lines = File.ReadLines(file);
+                    list.Add(lines.ElementAt(1));
+                }
             }
+            catch { }
 
             return list;
         }
