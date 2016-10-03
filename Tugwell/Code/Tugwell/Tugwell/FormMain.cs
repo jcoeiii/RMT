@@ -22,7 +22,7 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V5.4 2016_09_19";
+            this.Text = "Tugwell V5.5 2016_10_03";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
@@ -893,11 +893,6 @@ namespace Tugwell
                 catch { }
             }
 
-            textBoxEnter3Tab_KeyDown(null, null);
-        }
-
-        private void textBoxEnter3Tab_KeyDown(object sender, KeyEventArgs e)
-        {
             if (_isOrdersSelected)
             {
                 // if order was clean, reload to be safe
@@ -929,6 +924,55 @@ namespace Tugwell
                     placeLockQuote();
                     this.isDataDirtyQuotes = true;
                 }
+            }
+        }
+
+        // note: this is only for RichTextBox's only, enter does crazy stuff at times
+        private void textBoxEnter3Tab_KeyDown(object sender, KeyEventArgs e)
+        {
+            bool was_loaded = false;
+
+            RichTextBox rtb = (RichTextBox)sender;
+            int start = rtb.SelectionStart;
+
+            if (_isOrdersSelected)
+            {
+                // if order was clean, reload to be safe
+                if (!this.isDataDirtyOrders)
+                {
+                    if (refreshRecordIndicatorOrders() > 0)
+                    {
+                        List<SortableRow> sorted = buildSortedRows();
+
+                        // load the first record & load GUI for Orders
+                        readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0);
+                        was_loaded = true;
+                    }
+
+                    placeLockOrder();
+                    this.isDataDirtyOrders = true; // safety
+                }
+            }
+            else
+            {
+                // if quote was clean, reload to be safe
+                if (!this.isDataDirtyQuotes)
+                {
+                    if (refreshRecordIndicatorQuotes() > 0)
+                    {
+                        // load the first record & load GUI for Quotes
+                        readQuoteAndUpdateGUI("", this._currentRowQuotes);
+                        was_loaded = true;
+                    }
+
+                    placeLockQuote();
+                    this.isDataDirtyQuotes = true;
+                }
+            }
+
+            if (was_loaded)
+            {
+                rtb.SelectionStart = start;
             }
         }
 
