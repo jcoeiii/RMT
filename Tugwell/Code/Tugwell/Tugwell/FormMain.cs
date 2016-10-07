@@ -22,7 +22,7 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V5.5 2016_10_03";
+            this.Text = "Tugwell V5.6 2016_10_04";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
@@ -8041,7 +8041,10 @@ namespace Tugwell
                 {
                     __con.Open();
                 }
-                catch { }
+                catch //(SQLException e)
+                {
+                    Killconnection();
+                }
             }
 
             return __con;
@@ -8051,7 +8054,11 @@ namespace Tugwell
         {
             if (__con != null)
             {
-                __con.Close();
+                try
+                {
+                    __con.Close();
+                }
+                catch { }
                 __con = null;
             }
         }
