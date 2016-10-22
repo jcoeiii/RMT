@@ -380,6 +380,10 @@
             this.label59 = new System.Windows.Forms.Label();
             this.richTextBoxDeliveryNotes = new System.Windows.Forms.RichTextBox();
             this.groupBoxOrders = new System.Windows.Forms.GroupBox();
+            this.label95 = new System.Windows.Forms.Label();
+            this.comboBoxBillStatus = new System.Windows.Forms.ComboBox();
+            this.label65 = new System.Windows.Forms.Label();
+            this.comboBoxBillTo = new System.Windows.Forms.ComboBox();
             this.checkBoxOK = new System.Windows.Forms.CheckBox();
             this.comboBoxLetterControl = new System.Windows.Forms.ComboBox();
             this.label92 = new System.Windows.Forms.Label();
@@ -438,6 +442,7 @@
             this.textBoxQCity = new System.Windows.Forms.TextBox();
             this.label89 = new System.Windows.Forms.Label();
             this.tabPageQuoteWorksheet = new System.Windows.Forms.TabPage();
+            this.numericUpDownQCheat = new System.Windows.Forms.NumericUpDown();
             this.checkBoxPManual = new System.Windows.Forms.CheckBox();
             this.checkBoxQManual = new System.Windows.Forms.CheckBox();
             this.label94 = new System.Windows.Forms.Label();
@@ -632,7 +637,6 @@
             this.comboBoxYearControl = new System.Windows.Forms.ComboBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.textBoxRecordOf = new System.Windows.Forms.TextBox();
-            this.numericUpDownQCheat = new System.Windows.Forms.NumericUpDown();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControlMainOrdersQuotes.SuspendLayout();
@@ -734,6 +738,7 @@
             this.tabControlQuotesSub.SuspendLayout();
             this.tabPageQuoteGeneral.SuspendLayout();
             this.tabPageQuoteWorksheet.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQCheat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQMarkUp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQMCost23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQMCost22)).BeginInit();
@@ -839,7 +844,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQCheat)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -5289,7 +5293,9 @@
             // 
             this.tabPageAccounting.Controls.Add(this.label64);
             this.tabPageAccounting.Controls.Add(this.richTextBoxAccNotes);
+            this.tabPageAccounting.Controls.Add(this.label65);
             this.tabPageAccounting.Controls.Add(this.label91);
+            this.tabPageAccounting.Controls.Add(this.comboBoxBillTo);
             this.tabPageAccounting.Controls.Add(this.richTextBoxVendorNotes);
             this.tabPageAccounting.Controls.Add(this.textBoxCheckDates);
             this.tabPageAccounting.Controls.Add(this.label51);
@@ -5309,7 +5315,7 @@
             this.tabPageAccounting.Controls.Add(this.richTextBoxInvoiceInstructions);
             this.tabPageAccounting.Location = new System.Drawing.Point(4, 22);
             this.tabPageAccounting.Name = "tabPageAccounting";
-            this.tabPageAccounting.Size = new System.Drawing.Size(1026, 311);
+            this.tabPageAccounting.Size = new System.Drawing.Size(1026, 321);
             this.tabPageAccounting.TabIndex = 4;
             this.tabPageAccounting.Text = "Accounting";
             this.tabPageAccounting.UseVisualStyleBackColor = true;
@@ -5382,7 +5388,7 @@
             this.textBoxCheckNumbers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCheckNumbers.Location = new System.Drawing.Point(342, 218);
             this.textBoxCheckNumbers.Name = "textBoxCheckNumbers";
-            this.textBoxCheckNumbers.Size = new System.Drawing.Size(422, 21);
+            this.textBoxCheckNumbers.Size = new System.Drawing.Size(238, 21);
             this.textBoxCheckNumbers.TabIndex = 4;
             this.textBoxCheckNumbers.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxCheckNumbers.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -5550,7 +5556,7 @@
             this.tabPageMarley.Controls.Add(this.label53);
             this.tabPageMarley.Location = new System.Drawing.Point(4, 22);
             this.tabPageMarley.Name = "tabPageMarley";
-            this.tabPageMarley.Size = new System.Drawing.Size(1026, 311);
+            this.tabPageMarley.Size = new System.Drawing.Size(1026, 321);
             this.tabPageMarley.TabIndex = 5;
             this.tabPageMarley.Text = "Marley Commision";
             this.tabPageMarley.UseVisualStyleBackColor = true;
@@ -5918,6 +5924,8 @@
             // 
             // groupBoxOrders
             // 
+            this.groupBoxOrders.Controls.Add(this.label95);
+            this.groupBoxOrders.Controls.Add(this.comboBoxBillStatus);
             this.groupBoxOrders.Controls.Add(this.checkBoxOK);
             this.groupBoxOrders.Controls.Add(this.comboBoxLetterControl);
             this.groupBoxOrders.Controls.Add(this.label92);
@@ -5947,6 +5955,54 @@
             this.groupBoxOrders.Size = new System.Drawing.Size(1034, 128);
             this.groupBoxOrders.TabIndex = 56;
             this.groupBoxOrders.TabStop = false;
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Location = new System.Drawing.Point(775, 99);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(40, 13);
+            this.label95.TabIndex = 65;
+            this.label95.Text = "Status:";
+            // 
+            // comboBoxBillStatus
+            // 
+            this.comboBoxBillStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxBillStatus.FormattingEnabled = true;
+            this.comboBoxBillStatus.Items.AddRange(new object[] {
+            "",
+            "Created",
+            "In Progress",
+            "Finialized"});
+            this.comboBoxBillStatus.Location = new System.Drawing.Point(820, 95);
+            this.comboBoxBillStatus.Name = "comboBoxBillStatus";
+            this.comboBoxBillStatus.Size = new System.Drawing.Size(120, 21);
+            this.comboBoxBillStatus.TabIndex = 64;
+            this.comboBoxBillStatus.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(599, 197);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(39, 13);
+            this.label65.TabIndex = 63;
+            this.label65.Text = "Bill To:";
+            // 
+            // comboBoxBillTo
+            // 
+            this.comboBoxBillTo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxBillTo.FormattingEnabled = true;
+            this.comboBoxBillTo.Items.AddRange(new object[] {
+            "",
+            "Customer",
+            "SPX",
+            "Customer & SPX"});
+            this.comboBoxBillTo.Location = new System.Drawing.Point(644, 192);
+            this.comboBoxBillTo.Name = "comboBoxBillTo";
+            this.comboBoxBillTo.Size = new System.Drawing.Size(120, 21);
+            this.comboBoxBillTo.TabIndex = 62;
+            this.comboBoxBillTo.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // checkBoxOK
             // 
@@ -6793,6 +6849,26 @@
             this.tabPageQuoteWorksheet.TabIndex = 1;
             this.tabPageQuoteWorksheet.Text = "Worksheet";
             this.tabPageQuoteWorksheet.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownQCheat
+            // 
+            this.numericUpDownQCheat.BackColor = System.Drawing.Color.GreenYellow;
+            this.numericUpDownQCheat.DecimalPlaces = 2;
+            this.numericUpDownQCheat.Location = new System.Drawing.Point(3, 9);
+            this.numericUpDownQCheat.Maximum = new decimal(new int[] {
+            1000000000,
+            0,
+            0,
+            0});
+            this.numericUpDownQCheat.Minimum = new decimal(new int[] {
+            1000000000,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownQCheat.Name = "numericUpDownQCheat";
+            this.numericUpDownQCheat.ReadOnly = true;
+            this.numericUpDownQCheat.Size = new System.Drawing.Size(68, 20);
+            this.numericUpDownQCheat.TabIndex = 401;
             // 
             // checkBoxPManual
             // 
@@ -9556,7 +9632,7 @@
             this.tabPageQuoateNotes.Controls.Add(this.richTextBoxQInvoicingNotes);
             this.tabPageQuoateNotes.Location = new System.Drawing.Point(4, 22);
             this.tabPageQuoateNotes.Name = "tabPageQuoateNotes";
-            this.tabPageQuoateNotes.Size = new System.Drawing.Size(1032, 317);
+            this.tabPageQuoateNotes.Size = new System.Drawing.Size(1032, 327);
             this.tabPageQuoateNotes.TabIndex = 2;
             this.tabPageQuoateNotes.Text = "Notes";
             this.tabPageQuoateNotes.UseVisualStyleBackColor = true;
@@ -9945,26 +10021,6 @@
             this.textBoxRecordOf.TabIndex = 36;
             this.textBoxRecordOf.Text = "of 1";
             // 
-            // numericUpDownQCheat
-            // 
-            this.numericUpDownQCheat.BackColor = System.Drawing.Color.GreenYellow;
-            this.numericUpDownQCheat.DecimalPlaces = 2;
-            this.numericUpDownQCheat.Location = new System.Drawing.Point(3, 9);
-            this.numericUpDownQCheat.Maximum = new decimal(new int[] {
-            1000000000,
-            0,
-            0,
-            0});
-            this.numericUpDownQCheat.Minimum = new decimal(new int[] {
-            1000000000,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownQCheat.Name = "numericUpDownQCheat";
-            this.numericUpDownQCheat.ReadOnly = true;
-            this.numericUpDownQCheat.Size = new System.Drawing.Size(68, 20);
-            this.numericUpDownQCheat.TabIndex = 401;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -10091,6 +10147,7 @@
             this.tabPageQuoteGeneral.PerformLayout();
             this.tabPageQuoteWorksheet.ResumeLayout(false);
             this.tabPageQuoteWorksheet.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQCheat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQMarkUp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQMCost23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQMCost22)).EndInit();
@@ -10200,7 +10257,6 @@
             this.statusStrip1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQCheat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -10812,6 +10868,10 @@
         private System.Windows.Forms.ToolStripMenuItem cleanDatabaseToolStripMenuItem;
         private System.Windows.Forms.TextBox comboBoxFreightSelect;
         private System.Windows.Forms.NumericUpDown numericUpDownQCheat;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.ComboBox comboBoxBillStatus;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.ComboBox comboBoxBillTo;
     }
 }
 
