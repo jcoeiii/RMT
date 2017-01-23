@@ -333,7 +333,9 @@
             this.tabPageAccounting = new System.Windows.Forms.TabPage();
             this.label64 = new System.Windows.Forms.Label();
             this.richTextBoxAccNotes = new System.Windows.Forms.RichTextBox();
+            this.label65 = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
+            this.comboBoxBillTo = new System.Windows.Forms.ComboBox();
             this.richTextBoxVendorNotes = new System.Windows.Forms.RichTextBox();
             this.textBoxCheckDates = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
@@ -382,8 +384,6 @@
             this.groupBoxOrders = new System.Windows.Forms.GroupBox();
             this.label95 = new System.Windows.Forms.Label();
             this.comboBoxBillStatus = new System.Windows.Forms.ComboBox();
-            this.label65 = new System.Windows.Forms.Label();
-            this.comboBoxBillTo = new System.Windows.Forms.ComboBox();
             this.checkBoxOK = new System.Windows.Forms.CheckBox();
             this.comboBoxLetterControl = new System.Windows.Forms.ComboBox();
             this.label92 = new System.Windows.Forms.Label();
@@ -5341,6 +5341,15 @@
             this.richTextBoxAccNotes.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.richTextBoxAccNotes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter3Tab_KeyDown);
             // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(599, 197);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(39, 13);
+            this.label65.TabIndex = 63;
+            this.label65.Text = "Bill To:";
+            // 
             // label91
             // 
             this.label91.AutoSize = true;
@@ -5350,6 +5359,21 @@
             this.label91.Size = new System.Drawing.Size(88, 13);
             this.label91.TabIndex = 57;
             this.label91.Text = "Vendor Notes:";
+            // 
+            // comboBoxBillTo
+            // 
+            this.comboBoxBillTo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxBillTo.FormattingEnabled = true;
+            this.comboBoxBillTo.Items.AddRange(new object[] {
+            "",
+            "Customer",
+            "SPX",
+            "Customer & SPX"});
+            this.comboBoxBillTo.Location = new System.Drawing.Point(644, 192);
+            this.comboBoxBillTo.Name = "comboBoxBillTo";
+            this.comboBoxBillTo.Size = new System.Drawing.Size(120, 21);
+            this.comboBoxBillTo.TabIndex = 62;
+            this.comboBoxBillTo.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // richTextBoxVendorNotes
             // 
@@ -5979,30 +6003,6 @@
             this.comboBoxBillStatus.Size = new System.Drawing.Size(120, 21);
             this.comboBoxBillStatus.TabIndex = 64;
             this.comboBoxBillStatus.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(599, 197);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(39, 13);
-            this.label65.TabIndex = 63;
-            this.label65.Text = "Bill To:";
-            // 
-            // comboBoxBillTo
-            // 
-            this.comboBoxBillTo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxBillTo.FormattingEnabled = true;
-            this.comboBoxBillTo.Items.AddRange(new object[] {
-            "",
-            "Customer",
-            "SPX",
-            "Customer & SPX"});
-            this.comboBoxBillTo.Location = new System.Drawing.Point(644, 192);
-            this.comboBoxBillTo.Name = "comboBoxBillTo";
-            this.comboBoxBillTo.Size = new System.Drawing.Size(120, 21);
-            this.comboBoxBillTo.TabIndex = 62;
-            this.comboBoxBillTo.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // checkBoxOK
             // 
@@ -9995,8 +9995,8 @@
             this.comboBoxYearControl.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxYearControl.FormattingEnabled = true;
             this.comboBoxYearControl.Items.AddRange(new object[] {
-            "2015",
-            "2016"});
+            "Older",
+            "2017"});
             this.comboBoxYearControl.Location = new System.Drawing.Point(274, 15);
             this.comboBoxYearControl.Name = "comboBoxYearControl";
             this.comboBoxYearControl.Size = new System.Drawing.Size(58, 21);

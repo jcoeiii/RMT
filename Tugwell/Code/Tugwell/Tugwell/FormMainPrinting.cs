@@ -1084,9 +1084,14 @@ namespace Tugwell
             p.AddText(tiNotes, "NOTES:\n", 40, pos, p.Width, 18);
             tiNotes.Textstyle = Print2Pdf.TextStyle.Regular;
             p.AddText(tiNotes, this.richTextBoxDeliveryNotes.Text);
-            //p.AddText(tiNotes, this.richTextBoxInvoiceInstructions.Text);
 
-            p.AddText(tiNotes, "(I have examined all equipment including pump electrical cables and all is in good condition.)\n\n", 40, 590, p.Width, 18);
+            p.AddText(tiNotes, "I have examined all equipment including pump electrical cables and all is in good condition.\n\n", 40, 590, p.Width, 18);
+            
+            // added: 1/23/2017
+            Print2Pdf.TextInfo tiNotes2 = p.CreateTextInfo();
+            tiNotes2.Size = 12.0;
+            tiNotes2.Textstyle = Print2Pdf.TextStyle.Regular;
+            p.AddText(tiNotes2, "R. M. Tugwell & Associates, Inc. assumes no liability whatsoever for delays or damages caused by\ndefects or any other equipment failure.", 40, 555, p.Width, 18);
 
             tiNotes.Textstyle = Print2Pdf.TextStyle.Bold;// | Print2Pdf.TextStyle.Underline;
 
