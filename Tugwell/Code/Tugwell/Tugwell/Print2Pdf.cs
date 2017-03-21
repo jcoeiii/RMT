@@ -214,9 +214,13 @@ namespace Tugwell
                     {
                         if (line[i] == ' ')
                         {
-                            subLines.Add(line.Substring(start, i));
-                            start = i + 1;
-                            i += approxCount;
+                            int length = i - start + 1;
+                            if ((length > 0) && ((length + start) <= totalChars))
+                            {
+                                subLines.Add(line.Substring(start, length));
+                                start = i + 1;
+                                i += approxCount;
+                            }
                         }
                     }
                     try
