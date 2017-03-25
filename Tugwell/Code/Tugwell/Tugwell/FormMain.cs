@@ -18,7 +18,7 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V6.1 2017_03_21";
+            this.Text = "Tugwell V6.2 2017_03_22";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
@@ -31,9 +31,56 @@ namespace Tugwell
             this.importPartsToolStripMenuItem.Enabled = isAdminVersion;
             this.createNewDbaseToolStripMenuItem.Enabled = isAdminVersion;
 
+            // create the timeout timer and force it to run forever
+            this._timeoutTimer = new Timer();
+            this._timeoutTimer.Interval = 1000;
+            this._timeoutTimer.Tick += _timeoutTimer_Tick;
+            this._timeoutTimer.Start();
+
             loadStartup();
         }
-        
+
+        #region Auto-save timeout tick event
+
+        void _timeoutTimer_Tick(object sender, EventArgs e)
+        {
+            if (this.isDataDirtyOrders || this.isDataDirtyQuotes)
+            {
+                if (this._isAction)
+                {
+                    this._currentTimeout = this._MaxTimeout;
+                    this._isAction = false;
+                }
+                else
+                {
+                    this._currentTimeout--;
+
+                    if (this._currentTimeout <= 0)
+                    {
+                        this._currentTimeout = this._MaxTimeout;
+                        
+                        // auto-save any changes!
+                        if (refreshRecordIndicatorOrders() > 0)
+                        {
+                            if (this.isDataDirtyOrders)
+                                updateRowOrders();
+                        }
+                        if (refreshRecordIndicatorQuotes() > 0)
+                        {
+                            if (this.isDataDirtyQuotes)
+                                updateRowQuotes();
+                        }
+                    }
+                }
+            }
+            else
+            {
+                this._currentTimeout = this._MaxTimeout;
+            }
+        }
+
+        #endregion
+
         #region Vars...
 
         public static logFile _log = new logFile("log.txt");
@@ -41,8 +88,14 @@ namespace Tugwell
         private readonly string _DBASENAME = "tugMain.db3";
         private readonly int _POOrderFirst = 30100;
         private readonly int _QuoteNoFirst = 7000;
+        private readonly int _MaxTimeout = 60 * 3; // seconds
+
+        private int _currentTimeout = 60 * 3; // seconds
 
         private string _lockName;
+
+        private Timer _timeoutTimer = null;
+        private bool _isAction = false;
 
         private bool _isOrdersSelected = true;
         
@@ -921,12 +974,14 @@ namespace Tugwell
 
         private void textBoxDate_TextChanged(object sender, EventArgs e)
         {
+            this._isAction = true;
             dbaseControlChangedEvent();
         }
 
         private bool killOrderComboEvent = false;
         private void comboBoxSalesAss_SelectedIndexChanged(object sender, EventArgs e)
         {
+            this._isAction = true;
             if (killOrderComboEvent)
                 return;
 
@@ -949,12 +1004,14 @@ namespace Tugwell
 
         private void numericUpDownComAmount_ValueChanged(object sender, EventArgs e)
         {
+            this._isAction = true;
             dbaseControlChangedEvent();
         }
 
         private bool killOrderCheckEvent = false;
         private void checkBoxComOrder_CheckedChanged(object sender, EventArgs e)
         {
+            this._isAction = true;
             if (killOrderCheckEvent)
                 return;
 
@@ -977,6 +1034,7 @@ namespace Tugwell
 
         private void dbaseControlChangedEvent()
         {
+            this._isAction = true;
             //_log.append("dbaseControlChangedEvent start");
 
             // any control actually runs here when changed
@@ -1030,12 +1088,14 @@ namespace Tugwell
 
         private void textBoxQuote_TextChanged(object sender, EventArgs e)
         {
+            this._isAction = true;
             dbaseControlChangedEvent2();
         }
 
         private bool killQuoteComboEvent = false;
         private void comboBoxQuote_SelectedIndexChanged(object sender, EventArgs e)
         {
+            this._isAction = true;
             if (killQuoteComboEvent)
                 return;
 
@@ -1058,12 +1118,14 @@ namespace Tugwell
 
         private void numericUpDownQuote_ValueChanged(object sender, EventArgs e)
         {
+            this._isAction = true;
             dbaseControlChangedEvent2();
         }
 
         private bool killQuoterCheckEvent = false;
         private void checkBoxQuote_CheckedChanged(object sender, EventArgs e)
         {
+            this._isAction = true;
             if (killQuoterCheckEvent)
                 return;
 
@@ -1086,6 +1148,7 @@ namespace Tugwell
 
         private void dbaseControlChangedEvent2()
         {
+            this._isAction = true;
             // any control actually runs here when changed
             if (!isDataLoadingQuotes)
             {
@@ -1162,6 +1225,7 @@ namespace Tugwell
 
         private void textBoxDate_DoubleClick(object sender, EventArgs e)
         {
+            this._isAction = true;
             TextBox box = (TextBox)sender;
 
             FormDatePicker dp = new FormDatePicker(box.Text);
