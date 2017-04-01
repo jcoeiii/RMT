@@ -637,6 +637,7 @@
             this.comboBoxYearControl = new System.Windows.Forms.ComboBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.textBoxRecordOf = new System.Windows.Forms.TextBox();
+            this.removeRecordLockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControlMainOrdersQuotes.SuspendLayout();
@@ -1080,7 +1081,8 @@
             this.pathToolStripMenuItem,
             this.toolStripTextBoxDbasePath,
             this.toolStripSeparator8,
-            this.cleanDatabaseToolStripMenuItem});
+            this.cleanDatabaseToolStripMenuItem,
+            this.removeRecordLockToolStripMenuItem});
             this.administrationToolStripMenuItem.Name = "administrationToolStripMenuItem";
             this.administrationToolStripMenuItem.Size = new System.Drawing.Size(98, 20);
             this.administrationToolStripMenuItem.Text = "Administration";
@@ -10021,6 +10023,13 @@
             this.textBoxRecordOf.TabIndex = 36;
             this.textBoxRecordOf.Text = "of 1";
             // 
+            // removeRecordLockToolStripMenuItem
+            // 
+            this.removeRecordLockToolStripMenuItem.Name = "removeRecordLockToolStripMenuItem";
+            this.removeRecordLockToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.removeRecordLockToolStripMenuItem.Text = "Remove Record Lock";
+            this.removeRecordLockToolStripMenuItem.Click += new System.EventHandler(this.removeRecordLockToolStripMenuItem_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -10872,6 +10881,7 @@
         private System.Windows.Forms.ComboBox comboBoxBillStatus;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.ComboBox comboBoxBillTo;
+        private System.Windows.Forms.ToolStripMenuItem removeRecordLockToolStripMenuItem;
     }
 }
 

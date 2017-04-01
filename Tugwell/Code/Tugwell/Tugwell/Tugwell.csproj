@@ -148,6 +148,12 @@
     <Compile Include="FormPartsNew.Designer.cs">
       <DependentUpon>FormPartsNew.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPassword.Designer.cs">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPartsNew.resx">
       <DependentUpon>FormPartsNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPassword.resx">
+      <DependentUpon>FormPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormReport.resx">
       <DependentUpon>FormReport.cs</DependentUpon>

@@ -18,7 +18,7 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V6.2 2017_03_22";
+            this.Text = "Tugwell V6.4 2017_04_03";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
@@ -40,11 +40,13 @@ namespace Tugwell
             loadStartup();
         }
 
-        #region Auto-save timeout tick event
+        #region Auto-save timeout tick event and auto-locking check over time
+
+        private int countSeconds = 0;
 
         void _timeoutTimer_Tick(object sender, EventArgs e)
         {
-            if (this.isDataDirtyOrders || this.isDataDirtyQuotes)
+            if (this.isDataDirtyOrders && this.groupBoxOrders.Enabled)
             {
                 if (this._isAction)
                 {
@@ -65,6 +67,25 @@ namespace Tugwell
                             if (this.isDataDirtyOrders)
                                 updateRowOrders();
                         }
+                    }
+                }
+            }
+            else if (this.isDataDirtyQuotes && this.groupBoxQuotes.Enabled)
+            {
+                if (this._isAction)
+                {
+                    this._currentTimeout = this._MaxTimeout;
+                    this._isAction = false;
+                }
+                else
+                {
+                    this._currentTimeout--;
+
+                    if (this._currentTimeout <= 0)
+                    {
+                        this._currentTimeout = this._MaxTimeout;
+
+                        // auto-save any changes!
                         if (refreshRecordIndicatorQuotes() > 0)
                         {
                             if (this.isDataDirtyQuotes)
@@ -76,6 +97,48 @@ namespace Tugwell
             else
             {
                 this._currentTimeout = this._MaxTimeout;
+            }
+
+            countSeconds++;
+
+            if (countSeconds >= 13)
+            {
+                countSeconds = 0;
+
+                if (!this.isDataDirtyOrders)
+                {
+                    // check if locked?
+                    List<string> theListOfLocks = getLockListOrders();
+                    if (theListOfLocks == null || theListOfLocks.Contains(this.textBoxPO.Text))
+                    {
+                        // if order is not locked, lock it
+                        if (this.groupBoxOrders.Enabled == true)
+                            lockGUIOrders(true);
+                    }
+                    else
+                    {
+                        // if order is locked, unlock it
+                        if (this.groupBoxOrders.Enabled == false)
+                            lockGUIOrders(false);
+                    }
+                }
+                if (!this.isDataDirtyQuotes)
+                {
+                    // check if locked?
+                    List<string> theListOfLocks = getLockListQuotes();
+                    if (theListOfLocks == null || theListOfLocks.Contains(this.textBoxQPO.Text))
+                    {
+                        // if quote is not locked, lock it
+                        if (this.groupBoxQuotes.Enabled == true)
+                            lockGUIQuotes(true);
+                    }
+                    else
+                    {
+                        // if quote is locked, unlock it
+                        if (this.groupBoxQuotes.Enabled == false)
+                            lockGUIQuotes(false);
+                    }
+                }
             }
         }
 
@@ -867,16 +930,7 @@ namespace Tugwell
                 // if order was clean, reload to be safe
                 if (!this.isDataDirtyOrders)
                 {
-                    if (refreshRecordIndicatorOrders() > 0)
-                    {
-                        List<SortableRow> sorted = buildSortedRows();
-
-                        // load the first record & load GUI for Orders
-                        readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0);
-                    }
-
-                    placeLockOrder();
-                    this.isDataDirtyOrders = true; // safety
+                    loadGUI(true);
                 }
             }
             else
@@ -884,14 +938,7 @@ namespace Tugwell
                 // if quote was clean, reload to be safe
                 if (!this.isDataDirtyQuotes)
                 {
-                    if (refreshRecordIndicatorQuotes() > 0)
-                    {
-                        // load the first record & load GUI for Quotes
-                        readQuoteAndUpdateGUI("", this._currentRowQuotes);
-                    }
-
-                    placeLockQuote();
-                    this.isDataDirtyQuotes = true;
+                    loadGUI(false);
                 }
             }
         }
@@ -909,17 +956,7 @@ namespace Tugwell
                 // if order was clean, reload to be safe
                 if (!this.isDataDirtyOrders)
                 {
-                    if (refreshRecordIndicatorOrders() > 0)
-                    {
-                        List<SortableRow> sorted = buildSortedRows();
-
-                        // load the first record & load GUI for Orders
-                        readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0);
-                        was_loaded = true;
-                    }
-
-                    placeLockOrder();
-                    this.isDataDirtyOrders = true; // safety
+                    was_loaded = loadGUI(true);
                 }
             }
             else
@@ -927,15 +964,7 @@ namespace Tugwell
                 // if quote was clean, reload to be safe
                 if (!this.isDataDirtyQuotes)
                 {
-                    if (refreshRecordIndicatorQuotes() > 0)
-                    {
-                        // load the first record & load GUI for Quotes
-                        readQuoteAndUpdateGUI("", this._currentRowQuotes);
-                        was_loaded = true;
-                    }
-
-                    placeLockQuote();
-                    this.isDataDirtyQuotes = true;
+                    was_loaded = loadGUI(false);
                 }
             }
 
@@ -1042,7 +1071,7 @@ namespace Tugwell
             {
                 // user must be making changes to the order controls!
                 List<string> theListOfLocks = getLockListOrders();
-                if (theListOfLocks.Contains(this.textBoxPO.Text))
+                if (theListOfLocks == null || theListOfLocks.Contains(this.textBoxPO.Text))
                 {
                     lockGUIOrders(true);
                     return;
@@ -1057,19 +1086,8 @@ namespace Tugwell
 
                 if (!this.isDataDirtyOrders)
                 {
-                    if (refreshRecordIndicatorOrders() > 0)
-                    {
-                        List<SortableRow> sorted = buildSortedRows();
-
-                        // load the first record & load GUI for Orders
-                        readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0);
-                    }
-
-                    // create the lock file one time!
-                    placeLockOrder();
+                    loadGUI(true);
                 }
-
-                this.isDataDirtyOrders = true;
             }
 
             if (this.isDataDirtyOrders)
@@ -1170,17 +1188,8 @@ namespace Tugwell
 
                 if (!this.isDataDirtyQuotes)
                 {
-                    if (refreshRecordIndicatorQuotes() > 0)
-                    {
-                        // load the first record & load GUI for Quotes
-                        readQuoteAndUpdateGUI("", this._currentRowQuotes);
-                    }
-
-                    // create the lock file one time!
-                    placeLockQuote();
+                    loadGUI(false);
                 }
-
-                this.isDataDirtyQuotes = true;
             }
 
             if (this.isDataDirtyQuotes)
@@ -2061,6 +2070,105 @@ namespace Tugwell
                 "Programmed by: John Coe III 2015" + Environment.NewLine + Environment.NewLine +
                 "Current Version: " + this.Text, 
                 "RMT Tugwell About", MessageBoxButtons.OK);
+        }
+
+        private void removeRecordLockToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormPassword fPswd = new FormPassword();
+            fPswd.ShowDialog(this);
+
+            if (_isOrdersSelected)
+            {
+                if (!this.isDataDirtyOrders)
+                {
+                    if (fPswd.password == "2017")
+                        if (removeLockOrders(this.textBoxPO.Text))
+                            MessageBox.Show(this, "This order record is now unlocked.");
+                }
+                else if (this.groupBoxOrders.Enabled)
+                {
+                    MessageBox.Show(this, "This order record is under edit by you!  Just save and it will unlock.");
+                }
+            }
+            else
+            {
+                if (!this.isDataDirtyQuotes)
+                {
+                    if (fPswd.password == "2017")
+                        if (removeLockQuotes(this.textBoxQPO.Text))
+                            MessageBox.Show(this, "This quote record is now unlocked.");
+                }
+                else if (this.groupBoxQuotes.Enabled)
+                {
+                    MessageBox.Show(this, "This quote record is under edit by you!  Just save and it will unlock.");
+                }
+            }
+        }
+
+        #endregion
+
+        #region One stop shop to load GUI tab (orders or quotes)
+
+        private bool loadGUI(bool isOrder)
+        {
+            bool was_loaded = false;
+            if (isOrder)
+            {
+                do
+                {
+                    if (refreshRecordIndicatorOrders() > 0)
+                    {
+                        List<SortableRow> sorted = buildSortedRows();
+
+                        // load the first record & load GUI for Orders
+                        if (readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0))
+                            return false; // abort!
+
+                        was_loaded = true;
+                    }
+
+
+                    if (placeLockOrder() == true)
+                    {
+                        break;
+                    }
+
+                    if (MessageBox.Show(this, "Could not create the lock.  If you don't do this data loss could occur.  Do you want to retry?", "Lock Error", MessageBoxButtons.RetryCancel) != System.Windows.Forms.DialogResult.Retry)
+                        break;
+
+                } while (true);
+
+                this.isDataDirtyOrders = true; // safety
+
+                return was_loaded;
+            }
+            else
+            {
+                do
+                {
+                    if (refreshRecordIndicatorQuotes() > 0)
+                    {
+                        // load the first record & load GUI for Quotes
+                        if (readQuoteAndUpdateGUI("", this._currentRowQuotes))
+                            return false; // abort!
+
+                        was_loaded = true;
+                    }
+
+                    if (placeLockQuote() == true)
+                    {
+                        break;
+                    }
+
+                    if (MessageBox.Show(this, "Could not create the lock.  If you don't do this data loss could occur.  Do you want to retry?", "Lock Error", MessageBoxButtons.RetryCancel) != System.Windows.Forms.DialogResult.Retry)
+                        break;
+
+                } while (true);
+
+                this.isDataDirtyQuotes = true; // safety
+
+                return was_loaded;
+            }
         }
         #endregion
     }

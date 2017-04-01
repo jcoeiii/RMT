@@ -2161,7 +2161,7 @@ namespace Tugwell
 
         #region Orders read & Update GUI
 
-        private void readOrderAndUpdateGUI(string PO, int row)
+        private bool readOrderAndUpdateGUI(string PO, int row)
         {
             _log.append("** " + PO + " row " + row);
             _log.append("readOrderAndUpdateGUI start");
@@ -2413,18 +2413,24 @@ namespace Tugwell
             _log.append("readOrderAndUpdateGUI end~");
 
             List<string> theListOfLocks = getLockListOrders();
-            if (theListOfLocks.Contains(this.textBoxPO.Text))
+
+            bool locked = false;
+            if (theListOfLocks == null || theListOfLocks.Contains(this.textBoxPO.Text))
             {
                 lockGUIOrders(true);
+                locked = true;
             }
             else
             {
                 lockGUIOrders(false);
+                locked = false;
             }
 
             autoSelectSignature();
 
             _log.append("readOrderAndUpdateGUI end");
+
+            return locked;
         }
 
         #endregion
@@ -2669,7 +2675,10 @@ namespace Tugwell
             this.toolStripStatusLabel.Text = "Status Orders: Clean";
 
             // remove the lock
-            removeLockOrder();
+            if (removeLockOrder() == false)
+            {
+                MessageBox.Show(this, "Could not find the lock file.  Data loss could have occured on this record.", "Lock Error");
+            }
 
             //MessageBox.Show(rowsWritten.ToString());
         }
@@ -3939,7 +3948,7 @@ namespace Tugwell
 
         #region Quote read & Update GUI
 
-        private void readQuoteAndUpdateGUI(string QPO, int row)
+        private bool readQuoteAndUpdateGUI(string QPO, int row)
         {
             string theQPO; string Date; string Status; string Company; string VendorName; string JobName; string CustomerPO;
             string VendorNumber; string SalesAss; string SoldTo; string Street1; string Street2; string City; string State; string Zip;
@@ -4078,16 +4087,22 @@ namespace Tugwell
             #endregion
 
             List<string> theListOfLocks = getLockListQuotes();
-            if (theListOfLocks.Contains(this.textBoxQPO.Text))
+
+            bool locked = false;
+            if (theListOfLocks == null || theListOfLocks.Contains(this.textBoxQPO.Text))
             {
                 lockGUIQuotes(true);
+                locked = true;
             }
             else
             {
                 lockGUIQuotes(false);
+                locked = false;
             }
 
             autoSelectSignature();
+
+            return locked;
         }
 
         #endregion
@@ -4223,7 +4238,10 @@ namespace Tugwell
             this.toolStripStatusLabel2.Text = "Status Quote: Clean";
 
             // remove the lock
-            removeLockQuote();
+            if (removeLockQuote() == false)
+            {
+                MessageBox.Show(this, "Could not find the lock file.  Data loss could have occured on this record.", "Lock Error");
+            }
 
             //MessageBox.Show(rowsWritten.ToString());
         }
@@ -4375,44 +4393,108 @@ namespace Tugwell
 
         #region place & remove locks
 
-        private void placeLockOrder()
+        private bool placeLockOrder()
         {
             try
             {
                 removeLockOrder();
                 createLock(this.toolStripTextBoxDbasePath.Text + "!_O" + this._lockName + ".tmp", this.textBoxPO.Text);
+
+                return true;
             }
-            catch { }
+            catch
+            {
+                return false;
+            }
         }
 
-        private void placeLockQuote()
+        private bool placeLockQuote()
         {
             try
             {
                 removeLockQuote();
                 createLock(this.toolStripTextBoxDbasePath.Text + "!_Q" + this._lockName + ".tmp", this.textBoxQPO.Text);
+
+                return true;
             }
-            catch { }
+            catch
+            {
+                return false;
+            }
         }
 
-        private void removeLockOrder()
+        private bool removeLockOrder()
         {
             try
             {
                 if (File.Exists(this.toolStripTextBoxDbasePath.Text + "!_O" + this._lockName + ".tmp"))
+                {
                     File.Delete(this.toolStripTextBoxDbasePath.Text + "!_O" + this._lockName + ".tmp");
+                    return true;
+                }
             }
             catch { }
+
+            return false;
         }
 
-        private void removeLockQuote()
+        private bool removeLockQuote()
         {
             try
             {
                 if (File.Exists(this.toolStripTextBoxDbasePath.Text + "!_Q" + this._lockName + ".tmp"))
+                {
                     File.Delete(this.toolStripTextBoxDbasePath.Text + "!_Q" + this._lockName + ".tmp");
+                    return true;
+                }
             }
             catch { }
+            
+            return false;
+        }
+
+        private bool removeLockOrders(string po)
+        {
+            try
+            {
+                string[] files = Directory.GetFiles(this.toolStripTextBoxDbasePath.Text, "!_O*.tmp");
+
+                foreach (string file in files)
+                {
+                    IEnumerable<string> lines = File.ReadLines(file);
+
+                    if (lines.ElementAt(1) == po)
+                    {
+                        File.Delete(file);
+                        return true;
+                    }
+                }
+            }
+            catch { }
+
+            return false;
+        }
+
+        private bool removeLockQuotes(string po)
+        {
+            try
+            {
+                string[] files = Directory.GetFiles(this.toolStripTextBoxDbasePath.Text, "!_Q*.tmp");
+
+                foreach (string file in files)
+                {
+                    IEnumerable<string> lines = File.ReadLines(file);
+
+                    if (lines.ElementAt(1) == po)
+                    {
+                        File.Delete(file);
+                        return true;
+                    }
+                }
+            }
+            catch { }
+
+            return false;
         }
 
         #endregion
@@ -4442,7 +4524,10 @@ namespace Tugwell
                     list.Add(lines.ElementAt(1));
                 }
             }
-            catch { }
+            catch
+            {
+                return null;
+            }
 
             return list;
         }
@@ -4464,7 +4549,10 @@ namespace Tugwell
                     list.Add(lines.ElementAt(1));
                 }
             }
-            catch { }
+            catch
+            {
+                return null;
+            }
 
             return list;
         }
