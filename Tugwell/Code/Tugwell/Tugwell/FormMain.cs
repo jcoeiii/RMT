@@ -2035,7 +2035,7 @@ namespace Tugwell
                     return readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0);
                 }
                 else
-                    return false;
+                    return false; // empty, force unloacked and loaded
             }
             else
             {
@@ -2044,7 +2044,7 @@ namespace Tugwell
                     return readQuoteAndUpdateGUI("", this._currentRowQuotes);
                 }
                 else
-                    return false;
+                    return false; // empty, force unloacked and loaded
             }
         }
 
@@ -2079,12 +2079,16 @@ namespace Tugwell
 
         private bool LowLevelLockChecking(dbType t)
         {
+            bool locked = false;
+
             if (t == dbType.Order)
             {
                 List<string> theListOfLocks = getLockListOrders();
 
-                bool locked = false;
-                if (theListOfLocks == null || theListOfLocks.Contains(this.textBoxPO.Text))
+                if (theListOfLocks == null)
+                { // hmmmm, IO error do nothing abnormal for now
+                }
+                else if (theListOfLocks.Contains(this.textBoxPO.Text))
                 {
                     // if order is not locked, lock it
                     if (this.groupBoxOrders.Enabled == true)
@@ -2098,17 +2102,15 @@ namespace Tugwell
                         lockGUIOrders(false);
                     locked = false;
                 }
-
-                updateGUIStatusBar();
-
-                return locked;
             }
             else
             {
                 List<string> theListOfLocks = getLockListQuotes();
 
-                bool locked = false;
-                if (theListOfLocks == null || theListOfLocks.Contains(this.textBoxQPO.Text))
+                if (theListOfLocks == null)
+                { // hmmmm, IO error do nothing abnormal for now
+                }
+                else if (theListOfLocks.Contains(this.textBoxQPO.Text))
                 {
                     // if quote is not locked, lock it
                     if (this.groupBoxQuotes.Enabled == true)
@@ -2122,11 +2124,11 @@ namespace Tugwell
                         lockGUIQuotes(false);
                     locked = false;
                 }
-
-                updateGUIStatusBar();
-
-                return locked;
             }
+
+            updateGUIStatusBar();
+
+            return locked;
         }
 
         #endregion
