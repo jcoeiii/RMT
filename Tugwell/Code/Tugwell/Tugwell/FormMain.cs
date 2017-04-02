@@ -62,11 +62,7 @@ namespace Tugwell
                         this._currentTimeout = this._MaxTimeout;
                         
                         // auto-save any changes!
-                        if (refreshRecordIndicatorOrders() > 0)
-                        {
-                            if (this.isDataDirtyOrders)
-                                updateRowOrders();
-                        }
+                        save(dbType.Order);
                     }
                 }
             }
@@ -86,11 +82,7 @@ namespace Tugwell
                         this._currentTimeout = this._MaxTimeout;
 
                         // auto-save any changes!
-                        if (refreshRecordIndicatorQuotes() > 0)
-                        {
-                            if (this.isDataDirtyQuotes)
-                                updateRowQuotes();
-                        }
+                        save(dbType.Quote);
                     }
                 }
             }
@@ -107,37 +99,11 @@ namespace Tugwell
 
                 if (!this.isDataDirtyOrders)
                 {
-                    // check if locked?
-                    List<string> theListOfLocks = getLockListOrders();
-                    if (theListOfLocks == null || theListOfLocks.Contains(this.textBoxPO.Text))
-                    {
-                        // if order is not locked, lock it
-                        if (this.groupBoxOrders.Enabled == true)
-                            lockGUIOrders(true);
-                    }
-                    else
-                    {
-                        // if order is locked, unlock it
-                        if (this.groupBoxOrders.Enabled == false)
-                            lockGUIOrders(false);
-                    }
+                    LowLevelLockChecking(dbType.Order);
                 }
                 if (!this.isDataDirtyQuotes)
                 {
-                    // check if locked?
-                    List<string> theListOfLocks = getLockListQuotes();
-                    if (theListOfLocks == null || theListOfLocks.Contains(this.textBoxQPO.Text))
-                    {
-                        // if quote is not locked, lock it
-                        if (this.groupBoxQuotes.Enabled == true)
-                            lockGUIQuotes(true);
-                    }
-                    else
-                    {
-                        // if quote is locked, unlock it
-                        if (this.groupBoxQuotes.Enabled == false)
-                            lockGUIQuotes(false);
-                    }
+                    LowLevelLockChecking(dbType.Quote);
                 }
             }
         }
@@ -145,6 +111,8 @@ namespace Tugwell
         #endregion
 
         #region Vars...
+
+        public enum dbType { Order, Quote };
 
         public static logFile _log = new logFile("log.txt");
         
@@ -191,7 +159,7 @@ namespace Tugwell
                 this.printCurrentOrderToolStripMenuItem.Enabled = true;
                 this.printCurrentQuoteToolStripMenuItem.Enabled = false;
                 
-                refreshRecordIndicatorOrders();
+                refreshRecordIndicator(dbType.Order);
             }
             else
             {
@@ -200,7 +168,7 @@ namespace Tugwell
                 this.printCurrentOrderToolStripMenuItem.Enabled = false;
                 this.printCurrentQuoteToolStripMenuItem.Enabled = true;
 
-                refreshRecordIndicatorQuotes();
+                refreshRecordIndicator(dbType.Quote);
             }
 
             autoSelectSignature();
@@ -216,19 +184,8 @@ namespace Tugwell
             this._currentRowQuotes = getRowCountsFromQuotes();
             this._currentRowOrders = getRowCountsFromOrders();
 
-            if (refreshRecordIndicatorQuotes() > 0)
-            {
-                // load the first record & load GUI for Quotes
-                readQuoteAndUpdateGUI("", this._currentRowQuotes);
-            }
-
-            if (refreshRecordIndicatorOrders() > 0)
-            {
-                List<SortableRow> sorted = buildSortedRows();
-
-                // load the first record & load GUI for Orders
-                readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0);//"", this._currentRowOrders);
-            }
+            loadGUIforViewing(dbType.Quote);
+            loadGUIforViewing(dbType.Order);
 
             refreshLetterControl(getRowCountsFromOrders());
         }
@@ -239,77 +196,58 @@ namespace Tugwell
 
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (refreshRecordIndicatorOrders() > 0)
-            {
-                if (this.isDataDirtyOrders)
-                    updateRowOrders();
-            }
-            if (refreshRecordIndicatorQuotes() > 0)
-            {
-                if (this.isDataDirtyQuotes)
-                    updateRowQuotes();
-            }
-
-            // do this 'vacuum' only 10% of the time
-            //Random r = new Random(Guid.NewGuid().GetHashCode());
-            //int num = r.Next(100);
-            //if (num > 90)
-            //    vacuumDatabase();
-
+            save(dbType.Order);
+            save(dbType.Quote);
             Killconnection();
         }
 
         #endregion
 
 
-        #region Refresh Record Indicators for Orders
+        #region Refresh Record Indicator(s)
 
-        private int refreshRecordIndicatorOrders()
+        private int refreshRecordIndicator(dbType t)
         {
-            _log.append("refreshRecordIndicatorOrders start");
-
-            int count = getRowCountsFromOrders();
-
-            if (count == 0)
+            if (t == dbType.Order)
             {
-                this._currentRowOrders = 0;
+                int count = getRowCountsFromOrders();
+
+                if (count == 0)
+                {
+                    this._currentRowOrders = 0;
+                }
+                else if (this._currentRowOrders == 0)
+                {
+                    this._currentRowOrders = 1;
+                }
+
+                this.textBoxRecordNo.Text = this._currentRowOrders.ToString();
+                this.textBoxRecordOf.Text = "of " + count;
+
+                refreshLetterControl(count);
+
+                _log.append("refreshRecordIndicatorOrders end");
+
+                return count;
             }
-            else if (this._currentRowOrders == 0)
+            else
             {
-                this._currentRowOrders = 1;
+                int count = getRowCountsFromQuotes();
+
+                if (count == 0)
+                {
+                    this._currentRowQuotes = 0;
+                }
+                else if (this._currentRowQuotes == 0)
+                {
+                    this._currentRowQuotes = 1;
+                }
+
+                this.textBoxRecordNo.Text = this._currentRowQuotes.ToString();
+                this.textBoxRecordOf.Text = "of " + count;
+
+                return count;
             }
-
-            this.textBoxRecordNo.Text = this._currentRowOrders.ToString();
-            this.textBoxRecordOf.Text = "of " + count;
-
-            refreshLetterControl(count);
-
-            _log.append("refreshRecordIndicatorOrders end");
-
-            return count;
-        }
-
-        #endregion
-
-        #region Refresh Record Indicators for Quotes
-
-        private int refreshRecordIndicatorQuotes()
-        {
-            int count = getRowCountsFromQuotes();
-
-            if (count == 0)
-            {
-                this._currentRowQuotes = 0;
-            }
-            else if (this._currentRowQuotes == 0)
-            {
-                this._currentRowQuotes = 1;
-            }
-
-            this.textBoxRecordNo.Text = this._currentRowQuotes.ToString();
-            this.textBoxRecordOf.Text = "of " + count;
-
-            return count;
         }
 
         #endregion
@@ -393,16 +331,12 @@ namespace Tugwell
                             else if (value > count)
                                 return;
 
-                            if (this.isDataDirtyOrders)
+                            if (this.isDataDirtyOrders && this.groupBoxOrders.Enabled)
                                 updateRowOrders();
 
                             this._currentRowOrders = value;
 
-                            //readOrderAndUpdateGUI("", this._currentRowOrders);
-                            List<SortableRow> sorted = buildSortedRows();
-                            readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0);
-
-                            refreshRecordIndicatorOrders();
+                            loadGUIforViewing(dbType.Order);
                         }
                         catch
                         {
@@ -487,16 +421,12 @@ namespace Tugwell
                 if (count == 0)
                     return;
 
-                if (this.isDataDirtyOrders)
+                if (this.isDataDirtyOrders && this.groupBoxOrders.Enabled)
                     updateRowOrders();
 
                 this._currentRowOrders = 1;
 
-                List<SortableRow> sorted = buildSortedRows();
-                readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0);
-                //readOrderAndUpdateGUI("", 1);
-
-                refreshRecordIndicatorOrders();
+                loadGUIforViewing(dbType.Order);
             }
             else
             {
@@ -505,14 +435,12 @@ namespace Tugwell
                 if (count == 0)
                     return;
 
-                if (this.isDataDirtyQuotes)
+                if (this.isDataDirtyQuotes && this.groupBoxQuotes.Enabled)
                     updateRowQuotes();
 
                 this._currentRowQuotes = 1;
 
-                readQuoteAndUpdateGUI("", 1);
-
-                refreshRecordIndicatorQuotes();
+                loadGUIforViewing(dbType.Quote);
             }
         }
 
@@ -527,16 +455,12 @@ namespace Tugwell
                 else if (this._currentRowOrders <= 1)
                     return;
 
-                if (this.isDataDirtyOrders)
+                if (this.isDataDirtyOrders && this.groupBoxOrders.Enabled)
                     updateRowOrders();
 
                 this._currentRowOrders--;
 
-                List<SortableRow> sorted = buildSortedRows();
-                readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0);
-                //readOrderAndUpdateGUI("", this._currentRowOrders);
-
-                refreshRecordIndicatorOrders();
+                loadGUIforViewing(dbType.Order);
             }
             else
             {
@@ -547,14 +471,12 @@ namespace Tugwell
                 else if (this._currentRowQuotes <= 1)
                     return;
 
-                if (this.isDataDirtyQuotes)
+                if (this.isDataDirtyQuotes && this.groupBoxQuotes.Enabled)
                     updateRowQuotes();
 
                 this._currentRowQuotes--;
 
-                readQuoteAndUpdateGUI("", this._currentRowQuotes);
-
-                refreshRecordIndicatorQuotes();
+                loadGUIforViewing(dbType.Quote);
             }
         }
 
@@ -569,16 +491,12 @@ namespace Tugwell
                 else if (this._currentRowOrders >= count)
                     return;
 
-                if (this.isDataDirtyOrders)
+                if (this.isDataDirtyOrders && this.groupBoxOrders.Enabled)
                     updateRowOrders();
 
                 this._currentRowOrders++;
 
-                List<SortableRow> sorted = buildSortedRows();
-                readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0);
-                //readOrderAndUpdateGUI("", this._currentRowOrders);
-
-                refreshRecordIndicatorOrders();
+                loadGUIforViewing(dbType.Order);
             }
             else
             {
@@ -589,14 +507,12 @@ namespace Tugwell
                 else if (this._currentRowQuotes >= count)
                     return;
 
-                if (this.isDataDirtyQuotes)
+                if (this.isDataDirtyQuotes && this.groupBoxQuotes.Enabled)
                     updateRowQuotes();
 
                 this._currentRowQuotes++;
 
-                readQuoteAndUpdateGUI("", this._currentRowQuotes);
-
-                refreshRecordIndicatorQuotes();
+                loadGUIforViewing(dbType.Quote);
             }
         }
 
@@ -609,16 +525,12 @@ namespace Tugwell
                 if (count == 0)
                     return;
 
-                if (this.isDataDirtyOrders)
+                if (this.isDataDirtyOrders && this.groupBoxOrders.Enabled)
                     updateRowOrders();
 
                 this._currentRowOrders = count;
 
-                List<SortableRow> sorted = buildSortedRows();
-                readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0);
-                //readOrderAndUpdateGUI("", count);
-
-                refreshRecordIndicatorOrders();
+                loadGUIforViewing(dbType.Order);
             }
             else
             {
@@ -627,14 +539,12 @@ namespace Tugwell
                 if (count == 0)
                     return;
 
-                if (this.isDataDirtyQuotes)
+                if (this.isDataDirtyQuotes && this.groupBoxQuotes.Enabled)
                     updateRowQuotes();
 
                 this._currentRowQuotes = count;
 
-                readQuoteAndUpdateGUI("", count);
-
-                refreshRecordIndicatorQuotes();
+                loadGUIforViewing(dbType.Quote);
             }
         }
 
@@ -930,7 +840,7 @@ namespace Tugwell
                 // if order was clean, reload to be safe
                 if (!this.isDataDirtyOrders)
                 {
-                    loadGUI(true);
+                    loadGUIAndLock(dbType.Order);
                 }
             }
             else
@@ -938,7 +848,7 @@ namespace Tugwell
                 // if quote was clean, reload to be safe
                 if (!this.isDataDirtyQuotes)
                 {
-                    loadGUI(false);
+                    loadGUIAndLock(dbType.Quote);
                 }
             }
         }
@@ -956,7 +866,7 @@ namespace Tugwell
                 // if order was clean, reload to be safe
                 if (!this.isDataDirtyOrders)
                 {
-                    was_loaded = loadGUI(true);
+                    was_loaded = loadGUIAndLock(dbType.Order);
                 }
             }
             else
@@ -964,7 +874,7 @@ namespace Tugwell
                 // if quote was clean, reload to be safe
                 if (!this.isDataDirtyQuotes)
                 {
-                    was_loaded = loadGUI(false);
+                    was_loaded = loadGUIAndLock(dbType.Quote);
                 }
             }
 
@@ -1070,30 +980,19 @@ namespace Tugwell
             if (!isDataLoadingOrders)
             {
                 // user must be making changes to the order controls!
-                List<string> theListOfLocks = getLockListOrders();
-                if (theListOfLocks == null || theListOfLocks.Contains(this.textBoxPO.Text))
-                {
-                    lockGUIOrders(true);
+                if (LowLevelLockChecking(dbType.Order))
                     return;
-                }
-                else
-                {
-                    lockGUIOrders(false);
-                }
 
                 // just in case!
                 this.textBoxSoldToReadOnly.Text = this.textBoxSoldTo.Text;
 
                 if (!this.isDataDirtyOrders)
                 {
-                    loadGUI(true);
+                    loadGUIAndLock(dbType.Order);
                 }
             }
 
-            if (this.isDataDirtyOrders)
-                this.toolStripStatusLabel.Text = "Status Orders: Dirty";
-            else
-                this.toolStripStatusLabel.Text = "Status Orders: Clean";
+            updateGUIStatusBar();
 
             doTheMathOrders();
 
@@ -1170,17 +1069,9 @@ namespace Tugwell
             // any control actually runs here when changed
             if (!isDataLoadingQuotes)
             {
-                // user must be making changes to the order controls!
-                List<string> theListOfLocks = getLockListQuotes();
-                if (theListOfLocks.Contains(this.textBoxQPO.Text))
-                {
-                    lockGUIQuotes(true);
+                // user must be making changes to the quote controls!
+                if (LowLevelLockChecking(dbType.Quote))
                     return;
-                }
-                else
-                {
-                    lockGUIQuotes(false);
-                }
 
                 // just in case!
                 this.textBoxQCompanyReadOnly.Text = this.textBoxQCompany.Text;
@@ -1188,14 +1079,11 @@ namespace Tugwell
 
                 if (!this.isDataDirtyQuotes)
                 {
-                    loadGUI(false);
+                    loadGUIAndLock(dbType.Quote);
                 }
             }
 
-            if (this.isDataDirtyQuotes)
-                this.toolStripStatusLabel2.Text = "Status Quotes: Dirty";
-            else
-                this.toolStripStatusLabel2.Text = "Status Quotes: Clean";
+            updateGUIStatusBar();
 
             // quote price manual mode
             this.numericUpDownQQuotePrice.ReadOnly = !this.checkBoxQManual.Checked;
@@ -1269,16 +1157,12 @@ namespace Tugwell
                         else if (value > count)
                             return;
 
-                        if (this.isDataDirtyOrders)
+                        if (this.isDataDirtyOrders && this.groupBoxOrders.Enabled)
                             updateRowOrders();
 
                         this._currentRowOrders = value;
 
-                        List<SortableRow> sorted = buildSortedRows();
-                        readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0);
-                        //readOrderAndUpdateGUI("", this._currentRowOrders);
-
-                        refreshRecordIndicatorOrders();
+                        loadGUIforViewing(dbType.Order);
                     }
                     catch
                     {
@@ -1300,14 +1184,12 @@ namespace Tugwell
                         else if (value > count)
                             return;
 
-                        if (this.isDataDirtyQuotes)
+                        if (this.isDataDirtyQuotes && this.groupBoxQuotes.Enabled)
                             updateRowQuotes();
 
                         this._currentRowQuotes = value;
 
-                        readQuoteAndUpdateGUI("", this._currentRowQuotes);
-
-                        refreshRecordIndicatorQuotes();
+                        loadGUIforViewing(dbType.Quote);
                     }
                     catch
                     {
@@ -1517,29 +1399,29 @@ namespace Tugwell
         // saving
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            save();
+            save(_isOrdersSelected ? dbType.Order : dbType.Quote);
         }
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            save();
+            save(_isOrdersSelected ? dbType.Order : dbType.Quote);
         }
 
-        private void save()
+        private void save(dbType t)
         {
-            if (_isOrdersSelected)
+            if (t == dbType.Order)
             {
-                if (refreshRecordIndicatorOrders() > 0)
+                if (refreshRecordIndicator(dbType.Order) > 0)
                 {
-                    if (this.isDataDirtyOrders)
+                    if (this.isDataDirtyOrders && this.groupBoxOrders.Enabled)
                         updateRowOrders();
                 }
             }
             else
             {
-                if (refreshRecordIndicatorQuotes() > 0)
+                if (refreshRecordIndicator(dbType.Quote) > 0)
                 {
-                    if (this.isDataDirtyQuotes)
+                    if (this.isDataDirtyQuotes && this.groupBoxQuotes.Enabled)
                         updateRowQuotes();
                 }
             }
@@ -1561,10 +1443,8 @@ namespace Tugwell
 
             if (go.IsSelected && go._Row >= 0)
             {
-                if (this.isDataDirtyOrders)
+                if (this.isDataDirtyOrders && this.groupBoxOrders.Enabled)
                     updateRowOrders();
-
-                //this._currentRowOrders = go._Row;
 
                 List<SortableRow> sorted = buildSortedRows();
                 int found = 1;
@@ -1577,12 +1457,8 @@ namespace Tugwell
                     found++;
                 }
                 this._currentRowOrders = found;
-                readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0);
-                
-                
-                //readOrderAndUpdateGUI("", this._currentRowOrders);
 
-                refreshRecordIndicatorOrders();
+                loadGUIforViewing(dbType.Order);
             }
         }
 
@@ -1594,14 +1470,12 @@ namespace Tugwell
 
             if (go.IsSelected && go._Row >= 0)
             {
-                if (this.isDataDirtyQuotes)
+                if (this.isDataDirtyQuotes && this.groupBoxQuotes.Enabled)
                     updateRowQuotes();
 
                 this._currentRowQuotes = go._Row;
 
-                readQuoteAndUpdateGUI("", this._currentRowQuotes);
-
-                refreshRecordIndicatorQuotes();
+                loadGUIforViewing(dbType.Quote);
             }
         }
 
@@ -1638,7 +1512,7 @@ namespace Tugwell
         // new sales orders
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.isDataDirtyOrders)
+            if (this.isDataDirtyOrders && this.groupBoxOrders.Enabled)
                 updateRowOrders();
 
             string nextPO = generateNextOrderPO();
@@ -1650,7 +1524,7 @@ namespace Tugwell
         // new stock order T
         private void newStockOrderTToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.isDataDirtyOrders)
+            if (this.isDataDirtyOrders && this.groupBoxOrders.Enabled)
                 updateRowOrders();
 
             string nextPO = generateNextOrderPO() + "T";
@@ -1662,7 +1536,7 @@ namespace Tugwell
         // new warranty order W
         private void newWarrantyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.isDataDirtyOrders)
+            if (this.isDataDirtyOrders && this.groupBoxOrders.Enabled)
                 updateRowOrders();
 
             string nextPO = generateNextOrderPO() + "W";
@@ -1674,7 +1548,7 @@ namespace Tugwell
         // new quotes
         private void newToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            if (this.isDataDirtyQuotes)
+            if (this.isDataDirtyQuotes && this.groupBoxQuotes.Enabled)
                 updateRowQuotes();
 
             string nextQPO = generateNextQuotePO();
@@ -1823,9 +1697,6 @@ namespace Tugwell
             readOrderAndUpdateGUI(nextPO, 0);
             _OrderTotal++;
 
-            //int count = getRowCountsFromOrders();
-            //this._currentRowOrders = count;
-
             List<SortableRow> sorted = buildSortedRows();
             int found = 1;
             foreach (SortableRow sr in sorted)
@@ -1838,7 +1709,7 @@ namespace Tugwell
             }
             this._currentRowOrders = found;
                 
-            refreshRecordIndicatorOrders();
+            refreshRecordIndicator(dbType.Order);
         }
 
         private void helperCreateNewQuoteRow(string nextQPO)
@@ -1936,7 +1807,7 @@ namespace Tugwell
             int count = getRowCountsFromQuotes();
             this._currentRowQuotes = count;
 
-            refreshRecordIndicatorQuotes();
+            refreshRecordIndicator(dbType.Quote);
         }
 
         private void nextCurrentLetterToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1947,7 +1818,7 @@ namespace Tugwell
             if (POs.Count == 0)
                 return;
 
-            if (this.isDataDirtyOrders)
+            if (this.isDataDirtyOrders && this.groupBoxOrders.Enabled)
                 updateRowOrders();
 
             POs.Sort();
@@ -2004,7 +1875,7 @@ namespace Tugwell
         {
             if (_isOrdersSelected)
             {
-                if (this.isDataDirtyOrders)
+                if (this.isDataDirtyOrders && this.groupBoxOrders.Enabled)
                     updateRowOrders();
 
                 int count = getRowCountsFromOrders();
@@ -2023,15 +1894,11 @@ namespace Tugwell
                 if (this._currentRowOrders > 1)
                     this._currentRowOrders--;
 
-                List<SortableRow> sorted = buildSortedRows();
-                readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0);
-                //readOrderAndUpdateGUI("", this._currentRowOrders);
-
-                refreshRecordIndicatorOrders();
+                loadGUIforViewing(dbType.Order);
             }
             else
             {
-                if (this.isDataDirtyQuotes)
+                if (this.isDataDirtyQuotes && this.groupBoxQuotes.Enabled)
                     updateRowQuotes();
 
                 int count = getRowCountsFromQuotes();
@@ -2049,9 +1916,7 @@ namespace Tugwell
                 if (this._currentRowQuotes > 1)
                     this._currentRowQuotes--;
 
-                readQuoteAndUpdateGUI("", this._currentRowQuotes);
-
-                refreshRecordIndicatorQuotes();
+                loadGUIforViewing(dbType.Quote);
             }
         }
 
@@ -2079,7 +1944,7 @@ namespace Tugwell
 
             if (_isOrdersSelected)
             {
-                if (!this.isDataDirtyOrders)
+                if (!this.isDataDirtyOrders && this.groupBoxOrders.Enabled)
                 {
                     if (fPswd.password == "2017")
                         if (removeLockOrders(this.textBoxPO.Text))
@@ -2092,7 +1957,7 @@ namespace Tugwell
             }
             else
             {
-                if (!this.isDataDirtyQuotes)
+                if (!this.isDataDirtyQuotes && this.groupBoxQuotes.Enabled)
                 {
                     if (fPswd.password == "2017")
                         if (removeLockQuotes(this.textBoxQPO.Text))
@@ -2107,26 +1972,19 @@ namespace Tugwell
 
         #endregion
 
-        #region One stop shop to load GUI tab (orders or quotes)
+        #region Lower-Level helper functions for orders and quotes
 
-        private bool loadGUI(bool isOrder)
+        private bool loadGUIAndLock(dbType t)
         {
             bool was_loaded = false;
-            if (isOrder)
+            if (t == dbType.Order)
             {
                 do
                 {
-                    if (refreshRecordIndicatorOrders() > 0)
-                    {
-                        List<SortableRow> sorted = buildSortedRows();
+                    was_loaded = !loadGUIforViewing(dbType.Order);
 
-                        // load the first record & load GUI for Orders
-                        if (readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0))
-                            return false; // abort!
-
-                        was_loaded = true;
-                    }
-
+                    if (!was_loaded)
+                        return false; // abort
 
                     if (placeLockOrder() == true)
                     {
@@ -2146,14 +2004,10 @@ namespace Tugwell
             {
                 do
                 {
-                    if (refreshRecordIndicatorQuotes() > 0)
-                    {
-                        // load the first record & load GUI for Quotes
-                        if (readQuoteAndUpdateGUI("", this._currentRowQuotes))
-                            return false; // abort!
+                    was_loaded = !loadGUIforViewing(dbType.Quote);
 
-                        was_loaded = true;
-                    }
+                    if (!was_loaded)
+                        return false; // abort
 
                     if (placeLockQuote() == true)
                     {
@@ -2170,6 +2024,111 @@ namespace Tugwell
                 return was_loaded;
             }
         }
+
+        private bool loadGUIforViewing(dbType t)
+        {
+            if (t == dbType.Order)
+            {
+                if (refreshRecordIndicator(t) > 0)
+                {
+                    List<SortableRow> sorted = buildSortedRows();
+                    return readOrderAndUpdateGUI(sorted[this._currentRowOrders - 1].PO, 0);
+                }
+                else
+                    return false;
+            }
+            else
+            {
+                if (refreshRecordIndicator(t) > 0)
+                {
+                    return readQuoteAndUpdateGUI("", this._currentRowQuotes);
+                }
+                else
+                    return false;
+            }
+        }
+
+        private void lockGUIOrders(bool isLocked)
+        {
+            this.groupBoxOrders.Enabled = !isLocked;
+            this.tabControlOrdersSub.Enabled = !isLocked;
+        }
+
+        private void lockGUIQuotes(bool isLocked)
+        {
+            this.groupBoxQuotes.Enabled = !isLocked;
+            this.tabControlQuotesSub.Enabled = !isLocked;
+        }
+
+        private void updateGUIStatusBar()
+        {
+            if (this.groupBoxOrders.Enabled == false)
+                this.toolStripStatusLabel.Text = "Status Orders: LOCKED";
+            else if (this.isDataDirtyOrders)
+                this.toolStripStatusLabel.Text = "Status Orders: Dirty";
+            else
+                this.toolStripStatusLabel.Text = "Status Orders: Clean";
+
+            if (this.groupBoxQuotes.Enabled == false)
+                this.toolStripStatusLabel2.Text = "Status Quotes: LOCKED";
+            else if (this.isDataDirtyQuotes)
+                this.toolStripStatusLabel2.Text = "Status Quotes: Dirty";
+            else
+                this.toolStripStatusLabel2.Text = "Status Quotes: Clean";
+        }
+
+        private bool LowLevelLockChecking(dbType t)
+        {
+            if (t == dbType.Order)
+            {
+                List<string> theListOfLocks = getLockListOrders();
+
+                bool locked = false;
+                if (theListOfLocks == null || theListOfLocks.Contains(this.textBoxPO.Text))
+                {
+                    // if order is not locked, lock it
+                    if (this.groupBoxOrders.Enabled == true)
+                        lockGUIOrders(true);
+                    locked = true;
+                }
+                else
+                {
+                    // if order is locked, unlock it
+                    if (this.groupBoxOrders.Enabled == false)
+                        lockGUIOrders(false);
+                    locked = false;
+                }
+
+                updateGUIStatusBar();
+
+                return locked;
+            }
+            else
+            {
+                List<string> theListOfLocks = getLockListQuotes();
+
+                bool locked = false;
+                if (theListOfLocks == null || theListOfLocks.Contains(this.textBoxQPO.Text))
+                {
+                    // if quote is not locked, lock it
+                    if (this.groupBoxQuotes.Enabled == true)
+                        lockGUIQuotes(true);
+                    locked = true;
+                }
+                else
+                {
+                    // if quote is locked, unlock it
+                    if (this.groupBoxQuotes.Enabled == false)
+                        lockGUIQuotes(false);
+                    locked = false;
+                }
+
+                updateGUIStatusBar();
+
+                return locked;
+            }
+        }
+
         #endregion
     }
 }

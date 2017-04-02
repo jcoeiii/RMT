@@ -2412,19 +2412,7 @@ namespace Tugwell
 
             _log.append("readOrderAndUpdateGUI end~");
 
-            List<string> theListOfLocks = getLockListOrders();
-
-            bool locked = false;
-            if (theListOfLocks == null || theListOfLocks.Contains(this.textBoxPO.Text))
-            {
-                lockGUIOrders(true);
-                locked = true;
-            }
-            else
-            {
-                lockGUIOrders(false);
-                locked = false;
-            }
+            bool locked = LowLevelLockChecking(dbType.Order);
 
             autoSelectSignature();
 
@@ -4086,19 +4074,7 @@ namespace Tugwell
 
             #endregion
 
-            List<string> theListOfLocks = getLockListQuotes();
-
-            bool locked = false;
-            if (theListOfLocks == null || theListOfLocks.Contains(this.textBoxQPO.Text))
-            {
-                lockGUIQuotes(true);
-                locked = true;
-            }
-            else
-            {
-                lockGUIQuotes(false);
-                locked = false;
-            }
+            bool locked = LowLevelLockChecking(dbType.Quote);
 
             autoSelectSignature();
 
@@ -4555,18 +4531,6 @@ namespace Tugwell
             }
 
             return list;
-        }
-
-        private void lockGUIOrders(bool isLocked)
-        {
-            this.groupBoxOrders.Enabled = !isLocked;
-            this.tabControlOrdersSub.Enabled = !isLocked;
-        }
-
-        private void lockGUIQuotes(bool isLocked)
-        {
-            this.groupBoxQuotes.Enabled = !isLocked;
-            this.tabControlQuotesSub.Enabled = !isLocked;
         }
 
         #endregion
