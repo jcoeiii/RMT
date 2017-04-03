@@ -79,7 +79,7 @@
             this.textBoxShipDate = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.comboBoxCarrier = new System.Windows.Forms.ComboBox();
+            this.comboBoxCarrier = new CustomComboBox();
             this.checkBoxComPaid = new System.Windows.Forms.CheckBox();
             this.checkBoxComOrder = new System.Windows.Forms.CheckBox();
             this.buttonOrdersGeneralCopy = new System.Windows.Forms.Button();
@@ -414,14 +414,14 @@
             this.label77 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.comboBoxQEquipCategory = new System.Windows.Forms.ComboBox();
+            this.comboBoxQEquipCategory = new CustomComboBox();
             this.textBoxQCompany = new System.Windows.Forms.TextBox();
             this.label83 = new System.Windows.Forms.Label();
-            this.comboBoxQTerms = new System.Windows.Forms.ComboBox();
+            this.comboBoxQTerms = new CustomComboBox();
             this.label81 = new System.Windows.Forms.Label();
             this.buttonSelectQCompany = new System.Windows.Forms.Button();
             this.label66 = new System.Windows.Forms.Label();
-            this.comboBoxQDelivery = new System.Windows.Forms.ComboBox();
+            this.comboBoxQDelivery = new CustomComboBox();
             this.textBoxQEquipment = new System.Windows.Forms.TextBox();
             this.label78 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
@@ -1312,7 +1312,6 @@
             // 
             // comboBoxCarrier
             // 
-            this.comboBoxCarrier.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCarrier.FormattingEnabled = true;
             this.comboBoxCarrier.Items.AddRange(new object[] {
             "",
@@ -6343,7 +6342,6 @@
             // 
             // comboBoxQEquipCategory
             // 
-            this.comboBoxQEquipCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxQEquipCategory.FormattingEnabled = true;
             this.comboBoxQEquipCategory.Items.AddRange(new object[] {
             "",
@@ -6378,7 +6376,6 @@
             // 
             // comboBoxQTerms
             // 
-            this.comboBoxQTerms.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxQTerms.FormattingEnabled = true;
             this.comboBoxQTerms.Items.AddRange(new object[] {
             "",
@@ -6424,7 +6421,6 @@
             // 
             // comboBoxQDelivery
             // 
-            this.comboBoxQDelivery.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxQDelivery.FormattingEnabled = true;
             this.comboBoxQDelivery.Items.AddRange(new object[] {
             "",
@@ -10336,7 +10332,7 @@
         private System.Windows.Forms.TextBox textBoxShipDate;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.ComboBox comboBoxCarrier;
+        private CustomComboBox comboBoxCarrier;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
         private System.Windows.Forms.Label label26;
@@ -10439,13 +10435,13 @@
         private System.Windows.Forms.TabPage tabPageQuoteWorksheet;
         private System.Windows.Forms.Label label90;
         private System.Windows.Forms.TextBox textBoxQCompanyReadOnly;
-        private System.Windows.Forms.ComboBox comboBoxQEquipCategory;
+        private CustomComboBox comboBoxQEquipCategory;
         private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.ComboBox comboBoxQTerms;
+        private CustomComboBox comboBoxQTerms;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.Button buttonSelectQCompany;
         private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.ComboBox comboBoxQDelivery;
+        private CustomComboBox comboBoxQDelivery;
         private System.Windows.Forms.TextBox textBoxQEquipment;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Label label79;

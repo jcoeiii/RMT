@@ -100,6 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CSV.cs" />
+    <Compile Include="CustomComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomComboBox.Designer.cs">
+      <DependentUpon>CustomComboBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCompanyNew.cs">
       <SubType>Form</SubType>
     </Compile>
