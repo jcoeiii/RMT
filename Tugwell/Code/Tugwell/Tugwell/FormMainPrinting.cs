@@ -1128,7 +1128,7 @@ namespace Tugwell
             //p.AddText(tiFooter, "Signature:                                   _", p.Width / 3 * 2, pos + 88, p.Width, 18);
             tiFooter.Textstyle = Print2Pdf.TextStyle.Italic;
             tiFooter.Size = 8.0;
-            p.AddText(tiFooter, todaysDate(), 60, pos + 88, p.Width, 18);
+            p.AddText(tiFooter, todaysDateTime(), 60, pos + 88, p.Width, 18);
             p.AddText(tiFooter, "\nPage 1 of 1");
 
             string pdf = generatePDFileName("Delv", this.textBoxPO.Text);

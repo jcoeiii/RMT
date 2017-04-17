@@ -66,6 +66,7 @@
             this.toolStripTextBoxDbasePath = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.cleanDatabaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeRecordLockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -79,7 +80,7 @@
             this.textBoxShipDate = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.comboBoxCarrier = new CustomComboBox();
+            this.comboBoxCarrier = new Tugwell.CustomComboBox();
             this.checkBoxComPaid = new System.Windows.Forms.CheckBox();
             this.checkBoxComOrder = new System.Windows.Forms.CheckBox();
             this.buttonOrdersGeneralCopy = new System.Windows.Forms.Button();
@@ -414,14 +415,14 @@
             this.label77 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.comboBoxQEquipCategory = new CustomComboBox();
+            this.comboBoxQEquipCategory = new Tugwell.CustomComboBox();
             this.textBoxQCompany = new System.Windows.Forms.TextBox();
             this.label83 = new System.Windows.Forms.Label();
-            this.comboBoxQTerms = new CustomComboBox();
+            this.comboBoxQTerms = new Tugwell.CustomComboBox();
             this.label81 = new System.Windows.Forms.Label();
             this.buttonSelectQCompany = new System.Windows.Forms.Button();
             this.label66 = new System.Windows.Forms.Label();
-            this.comboBoxQDelivery = new CustomComboBox();
+            this.comboBoxQDelivery = new Tugwell.CustomComboBox();
             this.textBoxQEquipment = new System.Windows.Forms.TextBox();
             this.label78 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
@@ -637,7 +638,6 @@
             this.comboBoxYearControl = new System.Windows.Forms.ComboBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.textBoxRecordOf = new System.Windows.Forms.TextBox();
-            this.removeRecordLockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControlMainOrdersQuotes.SuspendLayout();
@@ -1136,6 +1136,13 @@
             this.cleanDatabaseToolStripMenuItem.Text = "Clean Database";
             this.cleanDatabaseToolStripMenuItem.Click += new System.EventHandler(this.cleanDatabaseToolStripMenuItem_Click);
             // 
+            // removeRecordLockToolStripMenuItem
+            // 
+            this.removeRecordLockToolStripMenuItem.Name = "removeRecordLockToolStripMenuItem";
+            this.removeRecordLockToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.removeRecordLockToolStripMenuItem.Text = "Remove Record Lock";
+            this.removeRecordLockToolStripMenuItem.Click += new System.EventHandler(this.removeRecordLockToolStripMenuItem_Click);
+            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1312,6 +1319,7 @@
             // 
             // comboBoxCarrier
             // 
+            this.comboBoxCarrier.BackColor = System.Drawing.SystemColors.Window;
             this.comboBoxCarrier.FormattingEnabled = true;
             this.comboBoxCarrier.Items.AddRange(new object[] {
             "",
@@ -1328,6 +1336,7 @@
             this.comboBoxCarrier.Size = new System.Drawing.Size(120, 21);
             this.comboBoxCarrier.TabIndex = 0;
             this.comboBoxCarrier.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
+            this.comboBoxCarrier.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             // 
             // checkBoxComPaid
             // 
@@ -6342,6 +6351,7 @@
             // 
             // comboBoxQEquipCategory
             // 
+            this.comboBoxQEquipCategory.BackColor = System.Drawing.SystemColors.Window;
             this.comboBoxQEquipCategory.FormattingEnabled = true;
             this.comboBoxQEquipCategory.Items.AddRange(new object[] {
             "",
@@ -6353,6 +6363,7 @@
             this.comboBoxQEquipCategory.Size = new System.Drawing.Size(233, 21);
             this.comboBoxQEquipCategory.TabIndex = 15;
             this.comboBoxQEquipCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
+            this.comboBoxQEquipCategory.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             // 
             // textBoxQCompany
             // 
@@ -6376,6 +6387,7 @@
             // 
             // comboBoxQTerms
             // 
+            this.comboBoxQTerms.BackColor = System.Drawing.SystemColors.Window;
             this.comboBoxQTerms.FormattingEnabled = true;
             this.comboBoxQTerms.Items.AddRange(new object[] {
             "",
@@ -6390,6 +6402,7 @@
             this.comboBoxQTerms.Size = new System.Drawing.Size(233, 21);
             this.comboBoxQTerms.TabIndex = 11;
             this.comboBoxQTerms.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
+            this.comboBoxQTerms.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             // 
             // label81
             // 
@@ -6421,6 +6434,7 @@
             // 
             // comboBoxQDelivery
             // 
+            this.comboBoxQDelivery.BackColor = System.Drawing.SystemColors.Window;
             this.comboBoxQDelivery.FormattingEnabled = true;
             this.comboBoxQDelivery.Items.AddRange(new object[] {
             "",
@@ -6436,6 +6450,7 @@
             this.comboBoxQDelivery.Size = new System.Drawing.Size(233, 21);
             this.comboBoxQDelivery.TabIndex = 10;
             this.comboBoxQDelivery.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
+            this.comboBoxQDelivery.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             // 
             // textBoxQEquipment
             // 
@@ -10018,13 +10033,6 @@
             this.textBoxRecordOf.Size = new System.Drawing.Size(52, 20);
             this.textBoxRecordOf.TabIndex = 36;
             this.textBoxRecordOf.Text = "of 1";
-            // 
-            // removeRecordLockToolStripMenuItem
-            // 
-            this.removeRecordLockToolStripMenuItem.Name = "removeRecordLockToolStripMenuItem";
-            this.removeRecordLockToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
-            this.removeRecordLockToolStripMenuItem.Text = "Remove Record Lock";
-            this.removeRecordLockToolStripMenuItem.Click += new System.EventHandler(this.removeRecordLockToolStripMenuItem_Click);
             // 
             // FormMain
             // 

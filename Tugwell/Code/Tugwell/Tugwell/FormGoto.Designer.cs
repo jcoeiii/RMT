@@ -43,6 +43,7 @@
             this.columnHeaderVendorName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderEquipment = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderSoldTo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderJob = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBoxMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +59,7 @@
             this.groupBoxMain.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBoxMain.Location = new System.Drawing.Point(0, 0);
             this.groupBoxMain.Name = "groupBoxMain";
-            this.groupBoxMain.Size = new System.Drawing.Size(755, 81);
+            this.groupBoxMain.Size = new System.Drawing.Size(924, 81);
             this.groupBoxMain.TabIndex = 1;
             this.groupBoxMain.TabStop = false;
             this.groupBoxMain.Text = "Controls";
@@ -135,14 +136,15 @@
             this.columnHeaderRow,
             this.columnHeaderVendorName,
             this.columnHeaderEquipment,
-            this.columnHeaderSoldTo});
+            this.columnHeaderSoldTo,
+            this.columnHeaderJob});
             this.listViewSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewSearch.FullRowSelect = true;
             this.listViewSearch.GridLines = true;
             this.listViewSearch.Location = new System.Drawing.Point(0, 81);
             this.listViewSearch.MultiSelect = false;
             this.listViewSearch.Name = "listViewSearch";
-            this.listViewSearch.Size = new System.Drawing.Size(755, 227);
+            this.listViewSearch.Size = new System.Drawing.Size(924, 227);
             this.listViewSearch.TabIndex = 2;
             this.listViewSearch.UseCompatibleStateImageBehavior = false;
             this.listViewSearch.View = System.Windows.Forms.View.Details;
@@ -178,11 +180,16 @@
             this.columnHeaderSoldTo.Text = "Sold To";
             this.columnHeaderSoldTo.Width = 200;
             // 
+            // columnHeaderJob
+            // 
+            this.columnHeaderJob.Text = "Job";
+            this.columnHeaderJob.Width = 200;
+            // 
             // FormGoto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 308);
+            this.ClientSize = new System.Drawing.Size(924, 308);
             this.Controls.Add(this.listViewSearch);
             this.Controls.Add(this.groupBoxMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
@@ -211,5 +218,6 @@
         private System.Windows.Forms.ColumnHeader columnHeaderEquipment;
         private System.Windows.Forms.ColumnHeader columnHeaderSoldTo;
         private System.Windows.Forms.Button buttonGoSearch;
+        private System.Windows.Forms.ColumnHeader columnHeaderJob;
     }
 }

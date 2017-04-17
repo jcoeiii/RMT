@@ -642,6 +642,7 @@ namespace Tugwell
                 lvi.SubItems.Add(split[3]); // Vendor Name
                 lvi.SubItems.Add(split[4]); // Equipment
                 lvi.SubItems.Add(split[5]); // Sold To
+                lvi.SubItems.Add(split[6]); // Job
 
                 this.listViewSearch.Items.Add(lvi);
             }
@@ -707,7 +708,8 @@ namespace Tugwell
                                 if (rowIndex.Contains(row))
                                 {
                                     row++;
-                                    string c = (reader["PO"] as string) + "|" + (reader["Date"] as string) + "|" + row.ToString() + "|" + (reader["VendorName"] as string) + "|" + (reader["Equipment"] as string) + "|" + (reader["SoldTo"] as string);
+                                    string c = (reader["PO"] as string) + "|" + (reader["Date"] as string) + "|" + row.ToString() + "|" + (reader["VendorName"] as string) + "|" + 
+                                        (reader["Equipment"] as string) + "|" + (reader["SoldTo"] as string) + "|" + (reader[(this._isOrderTable) ? "JobNumber" : "JobName"] as string);
 
                                     COs.Add(c);
                                     continue;

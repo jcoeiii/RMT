@@ -4604,6 +4604,11 @@ namespace Tugwell
             return DateTime.Now.ToString(@"MM/dd/yyyy");
         }
 
+        private string todaysDateTime()
+        {
+            return DateTime.Now.ToString(@"MM/dd/yyyy    HH:mm");
+        }
+
         private DialogResult askImportantQuestion(string question)
         {
             return MessageBox.Show(question, "RMT Question?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
