@@ -281,6 +281,7 @@ namespace Tugwell
             /*Carrier*/ "Carrier",
             /*ShipDate*/ "ShipDate",
 
+            /*IsOk*/ "Spare2",
             /*IsComOrder*/ "IsComOrder",
             /*IsComPaid*/ "IsComPaid",
 
@@ -497,8 +498,7 @@ namespace Tugwell
             /*ComBalance*/ "ComBalance",
             /*DeliveryNotes*/ "DeliveryNotes",
             /*PONotes*/ "PONotes",
-            /*IsOk*/ "Spare2",
-
+            
             /*BillTo*/ "Spare3",
             /*BillStatus*/ "Spare4"
             #endregion
