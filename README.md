@@ -2,7 +2,7 @@
 
 ## C# Example for SQLite which is similar to MS Access database
 ## PDF File creation programmatically from C# using PDFsharp
-
+## Better and cleaner abstraction from GUI to dbase (Sql.cs)
 
 
 

@@ -241,7 +241,7 @@ namespace Tugwell
 
         private void deletePart(string Category, string Description)
         {
-            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            System.Data.SQLite.SQLiteConnection con = Sql.GetConnection();
             //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
@@ -265,7 +265,7 @@ namespace Tugwell
         {
             List<string> parts = new List<string>();
 
-            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            System.Data.SQLite.SQLiteConnection con = Sql.GetConnection();
             //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
@@ -297,7 +297,7 @@ namespace Tugwell
 
         private int updatePartRow(string Category, string Description, string Price)
         {
-            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            System.Data.SQLite.SQLiteConnection con = Sql.GetConnection();
             //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
@@ -335,7 +335,7 @@ namespace Tugwell
 
         private int insertPartRow(string Category, string Description, string Price)
         {
-            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            System.Data.SQLite.SQLiteConnection con = Sql.GetConnection();
             //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))

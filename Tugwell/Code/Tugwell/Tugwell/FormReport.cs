@@ -556,7 +556,7 @@ namespace Tugwell
         {
             List<string> POs = new List<string>();
 
-            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            System.Data.SQLite.SQLiteConnection con = Sql.GetConnection();
             //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + this._dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
@@ -588,7 +588,7 @@ namespace Tugwell
         {
             List<List<string>> datas = new List<List<string>>();
 
-            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            System.Data.SQLite.SQLiteConnection con = Sql.GetConnection();
             //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
@@ -717,7 +717,7 @@ namespace Tugwell
 
         private void deleteReport(string Name)
         {
-            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            System.Data.SQLite.SQLiteConnection con = Sql.GetConnection();
             //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
@@ -741,7 +741,7 @@ namespace Tugwell
         {
             List<string> names = new List<string>();
 
-            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            System.Data.SQLite.SQLiteConnection con = Sql.GetConnection();
             //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
@@ -778,7 +778,7 @@ namespace Tugwell
 
         private bool getReportRowByName(string TableName, string Name, out string Columns)
         {
-            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            System.Data.SQLite.SQLiteConnection con = Sql.GetConnection();
             //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
@@ -854,7 +854,7 @@ namespace Tugwell
 
         private int insertReportRow(string TableName, string Name, string Columns)
         {
-            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            System.Data.SQLite.SQLiteConnection con = Sql.GetConnection();
             //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))

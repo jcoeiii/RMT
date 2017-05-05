@@ -173,6 +173,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quotes.cs" />
     <Compile Include="SortableRow.cs" />
+    <Compile Include="Sql.cs" />
     <EmbeddedResource Include="FormCompanyNew.resx">
       <DependentUpon>FormCompanyNew.cs</DependentUpon>
     </EmbeddedResource>

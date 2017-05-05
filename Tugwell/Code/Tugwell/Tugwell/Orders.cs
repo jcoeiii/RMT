@@ -507,10 +507,7 @@ namespace Tugwell
 
         static public List<string> Defaults
         {
-            get
-            {
-                return gui_defaults;
-            }
+            get { return gui_defaults; }
         }
 
         static public string GetTableName(int index)
@@ -525,10 +522,32 @@ namespace Tugwell
 
         static public int NameCount
         {
-            get
-            {
-                return table_names.Count;
-            }
+            get { return table_names.Count; }
+        }
+
+        #region Sql Command Text Generators
+
+        static public string GetRowCountCommandText
+        {
+            get { return "Select COUNT(PO) From OrderTable"; }
+        }
+
+        static public string DeletePOCommandText(string PO)
+        {
+            return "DELETE From OrderTable Where PO = '" + PO + "'";
+        }
+
+        static public string GetPOsCommandText
+        {
+            get { return "Select PO FROM OrderTable"; }
+        }
+
+        static public string ReadRowCommandText(string PO)
+        {
+            if (PO == "")
+                return "Select * FROM OrderTable";
+            else
+                return "Select * FROM OrderTable Where PO = '" + PO + "'";
         }
 
         static public string UpdateRowCommandText
@@ -575,5 +594,7 @@ namespace Tugwell
                 return sb.ToString();
             }
         }
+
+        #endregion
     }
 }

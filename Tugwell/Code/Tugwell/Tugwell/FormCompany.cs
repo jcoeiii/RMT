@@ -264,7 +264,7 @@ namespace Tugwell
 
         private void deleteCompany(string Company)
         {
-            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            System.Data.SQLite.SQLiteConnection con = Sql.GetConnection();
             //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
@@ -288,7 +288,7 @@ namespace Tugwell
         {
             List<string> COs = new List<string>();
 
-            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            System.Data.SQLite.SQLiteConnection con = Sql.GetConnection();
             //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
@@ -320,7 +320,7 @@ namespace Tugwell
 
         private int updateCompanyRow(string Company, string Street1, string Street2, string City, string State, string Zip, string Phone, string Fax)
         {
-            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            System.Data.SQLite.SQLiteConnection con = Sql.GetConnection();
             //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
@@ -363,7 +363,7 @@ namespace Tugwell
 
         private int insertRowCompany(string Company, string Street1, string Street2, string City, string State, string Zip, string Phone, string Fax)
         {
-            System.Data.SQLite.SQLiteConnection con = this._main.GetConnection();
+            System.Data.SQLite.SQLiteConnection con = Sql.GetConnection();
             //using (System.Data.SQLite.SQLiteConnection con = new System.Data.SQLite.SQLiteConnection("data source=" + _dbasePath))
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))

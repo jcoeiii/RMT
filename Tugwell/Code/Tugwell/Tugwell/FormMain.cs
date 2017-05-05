@@ -18,11 +18,13 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V7.1 2017_04_17";
+            this.Text = "Tugwell V7.2 2017_05_04";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
             this.comboBoxYearControl.Text = "2017";
+            const string db_version = "2";
+            Sql.dbName = getDbasePathName();
 
             this.toolStripComboBoxSignature.SelectedIndex = 0; // no signature
 
@@ -30,6 +32,23 @@ namespace Tugwell
             this.importCompaniesToolStripMenuItem.Enabled = isAdminVersion;
             this.importPartsToolStripMenuItem.Enabled = isAdminVersion;
             this.createNewDbaseToolStripMenuItem.Enabled = isAdminVersion;
+            this.displayTableToolStripMenuItem.Enabled = isAdminVersion;
+            this.addTableRowToolStripMenuItem.Enabled = isAdminVersion;
+
+            // read database version and handle in the future
+            List<string> items = Sql.ReadGenericTable("VersionTable", 0, new List<string>() { "DBVersion", "Spare1", "Spare2" });
+            if (items != null && items.Count() == 3)
+            {
+                string ver = items[0];
+                if (ver != db_version)
+                {
+                    MessageBox.Show(this, "Database version different: " + ver);
+                }
+            }
+            else
+            {
+                Sql.AppendNewTableWithDefaultRow();
+            }
 
             // create the timeout timer and force it to run forever
             this._timeoutTimer = new Timer();
@@ -181,13 +200,13 @@ namespace Tugwell
 
         private void loadStartup()
         {
-            this._currentRowQuotes = getRowCountsFromQuotes();
-            this._currentRowOrders = getRowCountsFromOrders();
+            this._currentRowQuotes = Sql.GetRowCounts(dbType.Quote);
+            this._currentRowOrders = Sql.GetRowCounts(dbType.Order);
 
             loadGUIforViewing(dbType.Quote);
             loadGUIforViewing(dbType.Order);
 
-            refreshLetterControl(getRowCountsFromOrders());
+            refreshLetterControl(Sql.GetRowCounts(dbType.Order));
         }
 
         #endregion
@@ -198,7 +217,7 @@ namespace Tugwell
         {
             save(dbType.Order);
             save(dbType.Quote);
-            Killconnection();
+            Sql.Killconnection();
         }
 
         #endregion
@@ -210,7 +229,7 @@ namespace Tugwell
         {
             if (t == dbType.Order)
             {
-                int count = getRowCountsFromOrders();
+                int count = Sql.GetRowCounts(dbType.Order);
 
                 if (count == 0)
                 {
@@ -232,7 +251,7 @@ namespace Tugwell
             }
             else
             {
-                int count = getRowCountsFromQuotes();
+                int count = Sql.GetRowCounts(dbType.Quote);
 
                 if (count == 0)
                 {
@@ -324,7 +343,7 @@ namespace Tugwell
                         {
                             int value = gotoThis;
 
-                            int count = getRowCountsFromOrders();
+                            int count = Sql.GetRowCounts(dbType.Order);
 
                             if (count == 0 || value == 0)
                                 return;
@@ -356,7 +375,7 @@ namespace Tugwell
         {
             _log.append("generateNextOrderPO start");
 
-            List<string> POs = getPOsFromOrders();
+            List<string> POs = Sql.GetPOs(dbType.Order);
 
             if (POs.Count == 0)
             {
@@ -388,7 +407,7 @@ namespace Tugwell
 
         private string generateNextQuotePO()
         {
-            List<string> QPOs = getPOsFromQuotes();
+            List<string> QPOs = Sql.GetPOs(dbType.Quote);
 
             if (QPOs.Count == 0)
             {
@@ -416,7 +435,7 @@ namespace Tugwell
         {
             if (this._isOrdersSelected)
             {
-                int count = getRowCountsFromOrders();
+                int count = Sql.GetRowCounts(dbType.Order);
 
                 if (count == 0)
                     return;
@@ -430,7 +449,7 @@ namespace Tugwell
             }
             else
             {
-                int count = getRowCountsFromQuotes();
+                int count = Sql.GetRowCounts(dbType.Quote);
 
                 if (count == 0)
                     return;
@@ -448,7 +467,7 @@ namespace Tugwell
         {
             if (this._isOrdersSelected)
             {
-                int count = getRowCountsFromOrders();
+                int count = Sql.GetRowCounts(dbType.Order);
 
                 if (count == 0)
                     return;
@@ -464,7 +483,7 @@ namespace Tugwell
             }
             else
             {
-                int count = getRowCountsFromQuotes();
+                int count = Sql.GetRowCounts(dbType.Quote);
 
                 if (count == 0)
                     return;
@@ -484,7 +503,7 @@ namespace Tugwell
         {
             if (this._isOrdersSelected)
             {
-                int count = getRowCountsFromOrders();
+                int count = Sql.GetRowCounts(dbType.Order);
 
                 if (count == 0)
                     return;
@@ -500,7 +519,7 @@ namespace Tugwell
             }
             else
             {
-                int count = getRowCountsFromQuotes();
+                int count = Sql.GetRowCounts(dbType.Quote);
 
                 if (count == 0)
                     return;
@@ -520,7 +539,7 @@ namespace Tugwell
         {
             if (this._isOrdersSelected)
             {
-                int count = getRowCountsFromOrders();
+                int count = Sql.GetRowCounts(dbType.Order);
 
                 if (count == 0)
                     return;
@@ -534,7 +553,7 @@ namespace Tugwell
             }
             else
             {
-                int count = getRowCountsFromQuotes();
+                int count = Sql.GetRowCounts(dbType.Quote);
 
                 if (count == 0)
                     return;
@@ -1150,7 +1169,7 @@ namespace Tugwell
                     {
                         int value = Convert.ToInt32(this.textBoxRecordNo.Text);
 
-                        int count = getRowCountsFromOrders();
+                        int count = Sql.GetRowCounts(dbType.Order);
 
                         if (count == 0 || value == 0)
                             return;
@@ -1177,7 +1196,7 @@ namespace Tugwell
                     {
                         int value = Convert.ToInt32(this.textBoxRecordNo.Text);
 
-                        int count = getRowCountsFromQuotes();
+                        int count = Sql.GetRowCounts(dbType.Quote);
 
                         if (count == 0 || value == 0)
                             return;
@@ -1518,7 +1537,6 @@ namespace Tugwell
             string nextPO = generateNextOrderPO();
 
             helperCreateNewOrderRow(nextPO, false);
-            _OrderTotal++;
         }
 
         // new stock order T
@@ -1530,7 +1548,6 @@ namespace Tugwell
             string nextPO = generateNextOrderPO() + "T";
 
             helperCreateNewOrderRow(nextPO, false);
-            _OrderTotal++;
         }
 
         // new warranty order W
@@ -1542,7 +1559,6 @@ namespace Tugwell
             string nextPO = generateNextOrderPO() + "W";
 
             helperCreateNewOrderRow(nextPO, false);
-            _OrderTotal++;
         }
 
         // new quotes
@@ -1695,7 +1711,6 @@ namespace Tugwell
             insertNewDataRowOrders(nextPO);
 
             readOrderAndUpdateGUI(nextPO, 0);
-            _OrderTotal++;
 
             List<SortableRow> sorted = buildSortedRows();
             int found = 1;
@@ -1804,7 +1819,7 @@ namespace Tugwell
 
             readQuoteAndUpdateGUI(nextQPO, 0);
 
-            int count = getRowCountsFromQuotes();
+            int count = Sql.GetRowCounts(dbType.Quote);
             this._currentRowQuotes = count;
 
             refreshRecordIndicator(dbType.Quote);
@@ -1813,7 +1828,7 @@ namespace Tugwell
         private void nextCurrentLetterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string currentPO = this.textBoxPO.Text;
-            List<string> POs = getPOsFromOrders();
+            List<string> POs = Sql.GetPOs(dbType.Order);
 
             if (POs.Count == 0)
                 return;
@@ -1866,8 +1881,6 @@ namespace Tugwell
             if (askImportantQuestion("DANGEROUS! This will delete the entire database. Are you sure?") == System.Windows.Forms.DialogResult.No)
                 return;
 
-            _OrderTotal = 0;
-
             createNewDbase();
         }
 
@@ -1878,7 +1891,7 @@ namespace Tugwell
                 if (this.isDataDirtyOrders && this.groupBoxOrders.Enabled)
                     updateRowOrders();
 
-                int count = getRowCountsFromOrders();
+                int count = Sql.GetRowCounts(dbType.Order);
 
                 if (count == 0)
                     return;
@@ -1886,8 +1899,7 @@ namespace Tugwell
                 if (askImportantQuestion("This will delete record " + this.textBoxPO.Text + " from the database. Are you sure?") == System.Windows.Forms.DialogResult.No)
                     return;
 
-                deletePOFromOrders(this.textBoxPO.Text);
-                _OrderTotal--;
+                Sql.DeletePO(dbType.Order, this.textBoxPO.Text);
 
                 count--;
 
@@ -1901,7 +1913,7 @@ namespace Tugwell
                 if (this.isDataDirtyQuotes && this.groupBoxQuotes.Enabled)
                     updateRowQuotes();
 
-                int count = getRowCountsFromQuotes();
+                int count = Sql.GetRowCounts(dbType.Quote);
 
                 if (count == 0)
                     return;
@@ -1909,7 +1921,7 @@ namespace Tugwell
                 if (askImportantQuestion("This will delete record " + this.textBoxQPO.Text + " from the database. Are you sure?") == System.Windows.Forms.DialogResult.No)
                     return;
 
-                deletePOFromQuotes(this.textBoxQPO.Text);
+                Sql.DeletePO(dbType.Quote, this.textBoxQPO.Text);
 
                 count--;
 
@@ -1922,9 +1934,7 @@ namespace Tugwell
 
         private void cleanDatabaseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            vacuumDatabase();
-            _OrderTotal = 0;
-
+            Sql.VacuumDatabase();
             MessageBox.Show(this, "Clean Done!");
         }
 
@@ -1968,6 +1978,35 @@ namespace Tugwell
                     MessageBox.Show(this, "This quote record is under edit by you!  Just save and it will unlock.");
                 }
             }
+        }
+
+        private void importCompaniesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void importPartsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void displayTableToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string table = "OrderTable";
+
+            List<string> list = Sql.GetTableRowNames(table);
+            StringBuilder sb = new StringBuilder();
+            sb.Append(table + ":\r\n");
+            foreach (string item in list)
+                sb.Append(item + Environment.NewLine);
+
+            MessageBox.Show(this, sb.ToString());
+        }
+
+        private void addTableRowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // add version table test
+            //Sql.AppendNewTableWithDefaultRow();
         }
 
         #endregion
