@@ -4,17 +4,19 @@
 ## PDF File creation programmatically from C# using PDFsharp
 ## Better and cleaner abstraction from GUI to dbase (Sql.cs)
 
+## Keywords: SQL, SQLite, database, PDFsharp, SQLiteConnection, VACUUM, Multiple users
 
-
-
-PDFsharp is the Open Source .NET library that easily creates and processes PDF documents on the fly from any .NET language. The same drawing routines can be used to create PDF documents, draw on the screen, or send output to any printer.
+PDFsharp is the Open Source .NET library that easily creates and processes PDF documents on the
+fly from any .NET language. The same drawing routines can be used to create PDF documents, draw
+on the screen, or send output to any printer.
 
 This is PDFsharp based on GDI+. See Project Information for details.
-A .NET library for processing PDF. This is PDFsharp based on GDI+. See Project Information for details.
+A .NET library for processing PDF.
 
 http://www.nuget.org/packages/PDFsharp
 
-Important nuts & bolts of this project:
+##Important nuts & bolts of this project
+======================================
 
 Print2Pdf.cs
 ============
@@ -38,3 +40,5 @@ functions to support reading table row counts, adding/deleting rows, and
 reading/updating/inserting rows, to and from the Sql database in one place.  Note that some
 of the sub-forms have not been updated to use this object 100% yet.
 
+
+(Note: make sure your database file [tugMain.db3] is in correct loc, line #24 in FormMain.cs)
