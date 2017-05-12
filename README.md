@@ -1,6 +1,6 @@
 # RMT
 
-## C# Example for SQLite which is similar to MS Access database
+## C# Example Database for an Inventory System in C# using SQLite which is similar to MS Access
 ## PDF File creation programmatically from C# using PDFsharp
 ## Better and cleaner abstraction from GUI to dbase (Sql.cs)
 
@@ -15,7 +15,7 @@ A .NET library for processing PDF.
 
 http://www.nuget.org/packages/PDFsharp
 
-##Important nuts & bolts of this project
+Important nuts & bolts of this project
 ======================================
 
 Print2Pdf.cs
