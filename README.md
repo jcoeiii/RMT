@@ -1,6 +1,6 @@
 # RMT
 
-## C# Example Database for an Inventory System in C# using SQLite which is similar to MS Access
+## C# Example Database for an Inventory System with Source Code using SQLite which is similar to MS Access
 ## PDF File creation programmatically from C# using PDFsharp
 ## Better and cleaner abstraction from GUI to dbase (Sql.cs)
 
