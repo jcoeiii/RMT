@@ -1091,7 +1091,11 @@ namespace Tugwell
             Print2Pdf.TextInfo tiNotes2 = p.CreateTextInfo();
             tiNotes2.Size = 12.0;
             tiNotes2.Textstyle = Print2Pdf.TextStyle.Regular;
-            p.AddText(tiNotes2, "R. M. Tugwell & Associates, Inc. assumes no liability whatsoever for delays or damages caused by\ndefects or any other equipment failure.", 40, 555, p.Width, 18);
+            if (_company == companyType.TPS)
+                p.AddText(tiNotes2, "Tugwell Pump & Supply, LLC assumes no liability whatsoever for delays or damages caused by\ndefects or any other equipment failure.", 40, 555, p.Width, 18);
+            else
+                p.AddText(tiNotes2, "R. M. Tugwell & Associates, Inc. assumes no liability whatsoever for delays or damages caused by\ndefects or any other equipment failure.", 40, 555, p.Width, 18);
+
 
             tiNotes.Textstyle = Print2Pdf.TextStyle.Bold;// | Print2Pdf.TextStyle.Underline;
 
@@ -1522,7 +1526,10 @@ namespace Tugwell
 
             tiSig.Textstyle = Print2Pdf.TextStyle.Bold;
 
-            p.AddText(tiSig, "For R.M. Tugwell & Associates, Inc.", 40, pos + 58 + 10, p.Width, 18);
+            if (_company == companyType.TPS)
+                p.AddText(tiSig, "For Tugwell Pump & Supply, LLC", 40, pos + 58 + 10, p.Width, 18);
+            else
+                p.AddText(tiSig, "For R.M. Tugwell & Associates, Inc.", 40, pos + 58 + 10, p.Width, 18);
             p.AddText(tiSig, "For: " + this.textBoxQCompany.Text, p.Width / 2 + 15, pos + 58 + 10, p.Width, 18);
             p.AddText(tiSig, "Date:", p.Width / 2 + 15 + 145, pos + 58 + 10, p.Width, 18);
 
@@ -1530,8 +1537,17 @@ namespace Tugwell
             Print2Pdf.TextInfo tiFooter = p.CreateTextInfo();
             tiFooter.Textstyle = Print2Pdf.TextStyle.Italic;
             tiFooter.Size = 8.0;
-            p.AddText(tiFooter, "Quotation good for 30 days.  Prices do not include any applicable taxes.  Payment terms are NET 30 days from date of shipment.  Past due accounts\nwill be charged interest at 1.5% per month.  Should the services of an attorney, collection agency or other legal service become necessary for\ncollection, purchaser will assume responsibilty for all expenses accrued in the collection process including fees, court cost, serving charges, lien filing,\netc.  Manufacturer's warranty applies.  R. M. Tugwell & Assoc., Inc. assumes no liability whatsoever for delays or damages caused by defects or any\nother equipment failure.",
-                60, pos + 88 + 30, p.Width, 18);
+
+            if (_company == companyType.TPS)
+            {
+                p.AddText(tiFooter, "Quotation good for 30 days.  Prices do not include any applicable taxes.  Payment terms are NET 30 days from date of shipment.  Past due accounts\nwill be charged interest at 1.5% per month.  Should the services of an attorney, collection agency or other legal service become necessary for\ncollection, purchaser will assume responsibilty for all expenses accrued in the collection process including fees, court cost, serving charges, lien filing,\netc.  Manufacturer's warranty applies.  Tugwell Pump & Supply, LLC assumes no liability whatsoever for delays or damages caused by defects or any\nother equipment failure.",
+                    60, pos + 88 + 30, p.Width, 18);
+            }
+            else
+            {
+                p.AddText(tiFooter, "Quotation good for 30 days.  Prices do not include any applicable taxes.  Payment terms are NET 30 days from date of shipment.  Past due accounts\nwill be charged interest at 1.5% per month.  Should the services of an attorney, collection agency or other legal service become necessary for\ncollection, purchaser will assume responsibilty for all expenses accrued in the collection process including fees, court cost, serving charges, lien filing,\netc.  Manufacturer's warranty applies.  R. M. Tugwell & Assoc., Inc. assumes no liability whatsoever for delays or damages caused by defects or any\nother equipment failure.",
+                    60, pos + 88 + 30, p.Width, 18);
+            }
 
             string pdf = generatePDFileName("Quote", this.textBoxQPO.Text);
             p.Save(pdf);
@@ -1545,18 +1561,26 @@ namespace Tugwell
             #region Header for all
 
             Print2Pdf.TextInfo tiBigCentered = p.CreateTextInfo();
-            tiBigCentered.Size = 22.0;
-            tiBigCentered.Textpos = Print2Pdf.TextPos.Center;
-            //tiBigCentered.Textstyle = Print2Pdf.TextStyle.Bold | Print2Pdf.TextStyle.Underline;
+            
+            if (_company == companyType.TPS)
+            {
+                p.DrawImage(Properties.Resources.TugwellPS_large, 190, 10, 500*3/7, 161*3/7);
+                tiBigCentered.Size = 18.0;
+                tiBigCentered.Textpos = Print2Pdf.TextPos.Center;
+                tiBigCentered.Textstyle = Print2Pdf.TextStyle.Bold;
+                p.AddText(tiBigCentered, title, 0, 36 + 32, p.Width, 28);
+            }
+            else
+            {
+                tiBigCentered.Size = 22.0;
+                tiBigCentered.Textpos = Print2Pdf.TextPos.Center;
+                tiBigCentered.Textstyle = Print2Pdf.TextStyle.Bold;
+                p.AddText(tiBigCentered, title, 0, 32, p.Width, 28);
 
-            //p.AddText(tiBigCentered, title, 0, 15 + 5, p.Width, 28);
+                tiBigCentered.Size = 15.0;
+                p.AddText(tiBigCentered, "R. M. Tugwell & Associates, Inc.", 0, 58 + 10, p.Width, 28);
+            }
 
-            tiBigCentered.Textstyle = Print2Pdf.TextStyle.Bold;
-            p.AddText(tiBigCentered, title, 0, 32, p.Width, 28);
-
-            tiBigCentered.Size = 15.0;
-            //tiBigCentered.Textstyle = Print2Pdf.TextStyle.Bold;
-            p.AddText(tiBigCentered, "R. M. Tugwell & Associates, Inc.", 0, 58 + 10, p.Width, 28);
             tiBigCentered.Size = 9.0;
             tiBigCentered.Textstyle = Print2Pdf.TextStyle.Regular;
 

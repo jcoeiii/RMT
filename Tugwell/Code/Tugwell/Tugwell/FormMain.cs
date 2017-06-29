@@ -18,13 +18,11 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V7.2 2017_05_04";
+            this.Text = "Tugwell V8.0 2017_06_29";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
             this.comboBoxYearControl.Text = "2017";
-            const string db_version = "2";
-            Sql.dbName = getDbasePathName();
 
             this.toolStripComboBoxSignature.SelectedIndex = 0; // no signature
 
@@ -34,21 +32,7 @@ namespace Tugwell
             this.createNewDbaseToolStripMenuItem.Enabled = isAdminVersion;
             this.displayTableToolStripMenuItem.Enabled = isAdminVersion;
             this.addTableRowToolStripMenuItem.Enabled = isAdminVersion;
-
-            // read database version and handle in the future
-            List<string> items = Sql.ReadGenericTable("VersionTable", 0, new List<string>() { "DBVersion", "Spare1", "Spare2" });
-            if (items != null && items.Count() == 3)
-            {
-                string ver = items[0];
-                if (ver != db_version)
-                {
-                    MessageBox.Show(this, "Database version different: " + ver);
-                }
-            }
-            else
-            {
-                Sql.AppendNewTableWithDefaultRow();
-            }
+            this.removeAllRecordsToolStripMenuItem.Enabled = isAdminVersion;
 
             // create the timeout timer and force it to run forever
             this._timeoutTimer = new Timer();
@@ -56,7 +40,8 @@ namespace Tugwell
             this._timeoutTimer.Tick += _timeoutTimer_Tick;
             this._timeoutTimer.Start();
 
-            loadStartup();
+            //loadStartup();
+            newTPSToolStripMenuItem_Click(null, null);
         }
 
         #region Auto-save timeout tick event and auto-locking check over time
@@ -131,13 +116,16 @@ namespace Tugwell
 
         #region Vars...
 
+        public enum companyType { TPS, RMT };
         public enum dbType { Order, Quote };
+
+        public companyType _company = companyType.TPS;
 
         public static logFile _log = new logFile("log.txt");
         
-        private readonly string _DBASENAME = "tugMain.db3";
-        private readonly int _POOrderFirst = 30100;
-        private readonly int _QuoteNoFirst = 7000;
+        private string _DBASENAME = "tugMain.db3";
+        private int _POOrderFirst = 30100;
+        private int _QuoteNoFirst = 7000;
         private readonly int _MaxTimeout = 60 * 3; // seconds
 
         private int _currentTimeout = 60 * 3; // seconds
@@ -200,6 +188,25 @@ namespace Tugwell
 
         private void loadStartup()
         {
+            const string db_version = "2";
+            Sql.dbName = getDbasePathName();
+            // read database version and handle in the future
+            List<string> items = Sql.ReadGenericTable("VersionTable", 0, new List<string>() { "DBVersion", "Spare1", "Spare2" });
+            if (items != null && items.Count() == 3)
+            {
+                string ver = items[0];
+                if (ver != db_version)
+                {
+                    MessageBox.Show(this, "Database version different: " + ver);
+                }
+            }
+            else
+            {
+                Sql.AppendNewTableWithDefaultRow();
+            }
+
+
+
             this._currentRowQuotes = Sql.GetRowCounts(dbType.Quote);
             this._currentRowOrders = Sql.GetRowCounts(dbType.Order);
 
@@ -1884,6 +1891,50 @@ namespace Tugwell
             createNewDbase();
         }
 
+        private void removeAllRecordsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (_isOrdersSelected)
+            {
+                if (this.isDataDirtyOrders && this.groupBoxOrders.Enabled)
+                    updateRowOrders();
+
+                int count = Sql.GetRowCounts(dbType.Order);
+
+                do
+                {
+                    if (count == 0)
+                        return;
+
+                    Sql.DeletePO(dbType.Order, this.textBoxPO.Text);
+
+                    count--;
+                    this._currentRowOrders--;
+
+                    loadGUIforViewing(dbType.Order);
+                } while (count > 0);
+            }
+            else
+            {
+                if (this.isDataDirtyQuotes && this.groupBoxQuotes.Enabled)
+                    updateRowQuotes();
+
+                int count = Sql.GetRowCounts(dbType.Quote);
+
+                do
+                {
+                    if (count == 0)
+                        return;
+
+                    Sql.DeletePO(dbType.Quote, this.textBoxQPO.Text);
+
+                    count--;
+                    this._currentRowQuotes--;
+
+                    loadGUIforViewing(dbType.Quote);
+                } while (count > 0);
+            }
+        }
+
         private void removeRecordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (_isOrdersSelected)
@@ -2168,6 +2219,56 @@ namespace Tugwell
             updateGUIStatusBar();
 
             return locked;
+        }
+
+
+
+        #endregion
+
+        #region Company Switch Event Clicks
+
+        private void oldRMTugwellToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _company = companyType.RMT;
+
+            this.oldRMTugwellToolStripMenuItem.Checked = true;
+            this.newTPSToolStripMenuItem.Checked = false;
+
+            this.pictureBoxLogo.BackgroundImage = global::Tugwell.Properties.Resources.tug;
+
+            save(dbType.Order);
+            save(dbType.Quote);
+            Sql.Killconnection();
+
+            _DBASENAME = "tugMain.db3";
+            _POOrderFirst = 30100;
+            _QuoteNoFirst = 7000;
+
+            ((Control)this.tabPageMarley).Enabled = true;
+
+            loadStartup();
+        }
+
+        private void newTPSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _company = companyType.TPS;
+
+            this.oldRMTugwellToolStripMenuItem.Checked = false;
+            this.newTPSToolStripMenuItem.Checked = true;
+
+            this.pictureBoxLogo.BackgroundImage = global::Tugwell.Properties.Resources.tps;
+
+            save(dbType.Order);
+            save(dbType.Quote);
+            Sql.Killconnection();
+
+            _DBASENAME = "tpsMain.db3";
+            _POOrderFirst = 60000;
+            _QuoteNoFirst = 12000;
+
+            ((Control)this.tabPageMarley).Enabled = false;
+
+            loadStartup();
         }
 
         #endregion
