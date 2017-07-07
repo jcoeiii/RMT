@@ -354,11 +354,20 @@ namespace Tugwell
                 else if (this.toolStripComboBoxSignature.SelectedIndex == 2)
                     sig = Properties.Resources.roy;
                 else if (this.toolStripComboBoxSignature.SelectedIndex == 3)
-                    sig = Properties.Resources.scott;
-                else
+                {
+                    if (_company == companyType.TPS)
+                        sig = Properties.Resources.justin; // randy
+                    else
+                        sig = Properties.Resources.scott;
+                }
+                else if (this.toolStripComboBoxSignature.SelectedIndex == 4)
                 {
                     sig = Properties.Resources.marsha2;
                     h = -15.0;
+                }
+                else  // Darin, must be
+                {
+                    sig = Properties.Resources.justin; // darin
                 }
 
                 h += 200.0 * ((double)sig.Height / (double)sig.Width);
@@ -407,7 +416,10 @@ namespace Tugwell
             Print2Pdf.TextInfo tiTopRight = p.CreateTextInfo();
             tiTopRight.Textstyle = Print2Pdf.TextStyle.Bold;
             tiTopRight.Size = 12.0;
-            p.AddText(tiTopRight, "RMT #:", p.Width / 2 + 10, pos, p.Width, 18);
+            if (_company == companyType.TPS)
+                p.AddText(tiTopRight, "TPS #:", p.Width / 2 + 10, pos, p.Width, 18);
+            else
+                p.AddText(tiTopRight, "RMT #:", p.Width / 2 + 10, pos, p.Width, 18);
             p.AddText(tiTopRight, "Salesman:");
             p.AddText(tiTopRight, "Vendor Name:");
             p.AddText(tiTopRight, "Selling Price:");
@@ -771,7 +783,10 @@ namespace Tugwell
             Print2Pdf.TextInfo tiTopRight = p.CreateTextInfo();
             tiTopRight.Textstyle = Print2Pdf.TextStyle.Bold;
             tiTopRight.Size = 12.0;
-            p.AddText(tiTopRight, "RMT #:", p.Width / 2, pos, p.Width, 18);
+            if (_company == companyType.TPS)
+                p.AddText(tiTopRight, "TPS #:", p.Width / 2, pos, p.Width, 18);
+            else
+                p.AddText(tiTopRight, "RMT #:", p.Width / 2, pos, p.Width, 18);
             p.AddText(tiTopRight, "Salesman:");
             //p.AddText(tiTopRight, "Vendor Name:");
             //p.AddText(tiTopRight, "Selling Price:");
@@ -1509,11 +1524,20 @@ namespace Tugwell
                 else if (this.toolStripComboBoxSignature.SelectedIndex == 2)
                     sig = Properties.Resources.roy;
                 else if (this.toolStripComboBoxSignature.SelectedIndex == 3)
-                    sig = Properties.Resources.scott;
-                else
+                {
+                    if (_company == companyType.TPS)
+                        sig = Properties.Resources.justin; // randy
+                    else
+                        sig = Properties.Resources.scott;
+                }
+                else if (this.toolStripComboBoxSignature.SelectedIndex == 4)
                 {
                     sig = Properties.Resources.marsha2;
                     h = -25.0;
+                }
+                else  // Darin, must be
+                {
+                    sig = Properties.Resources.justin; // darin
                 }
 
                 h += 200.0 * ((double)sig.Height / (double)sig.Width);

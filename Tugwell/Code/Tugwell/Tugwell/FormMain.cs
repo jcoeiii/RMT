@@ -18,7 +18,7 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V8.0 2017_06_29";
+            this.Text = "Tugwell V8.1 2017_07_07";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
@@ -2246,6 +2246,40 @@ namespace Tugwell
 
             ((Control)this.tabPageMarley).Enabled = true;
 
+            this.groupBox2.Text = "RMT Delivery to Customer";
+            this.comboBoxCarrier.Items.Clear(); 
+            this.comboBoxCarrier.Items.AddRange(new object[] {
+            "",
+            "UPS Ground",
+            "UPS Next Day Air",
+            "Motor Freight",
+            "Customer P/U",
+            "RMT Truck",
+            "Fedex Freight",
+            "FedEx Ground",
+            "Vendor Vehicle"});
+            this.comboBoxSalesAss.Items.Clear();
+            this.comboBoxSalesAss.Items.AddRange(new object[] {
+            "",
+            "Justin Tugwell",
+            "Roy Tugwell",
+            "Scott Snowden",
+            "Marsha Outlaw"});
+            this.comboBoxQSalesAss.Items.Clear();
+            this.comboBoxQSalesAss.Items.AddRange(new object[] {
+            "",
+            "Justin Tugwell",
+            "Roy Tugwell",
+            "Scott Snowden",
+            "Marsha Outlaw"});
+            this.toolStripComboBoxSignature.Items.Clear();
+            this.toolStripComboBoxSignature.Items.AddRange(new object[] {
+            "No Signature",
+            "Justin\'s",
+            "Roy\'s",
+            "Scott\'s",
+            "Marsha\'s"});
+
             loadStartup();
         }
 
@@ -2267,6 +2301,43 @@ namespace Tugwell
             _QuoteNoFirst = 12000;
 
             ((Control)this.tabPageMarley).Enabled = false;
+
+            this.groupBox2.Text = "TPS Delivery to Customer";
+            this.comboBoxCarrier.Items.Clear();
+            this.comboBoxCarrier.Items.AddRange(new object[] {
+            "",
+            "UPS Ground",
+            "UPS Next Day Air",
+            "Motor Freight",
+            "Customer P/U",
+            "TPS Truck",
+            "Fedex Freight",
+            "FedEx Ground",
+            "Vendor Vehicle"});
+            this.comboBoxSalesAss.Items.Clear();
+            this.comboBoxSalesAss.Items.AddRange(new object[] {
+            "",
+            "Justin Tugwell",
+            "Roy Tugwell",
+            "Randy Swindle",
+            "Marsha Outlaw",
+            "Darin Forsythe"});
+            this.comboBoxQSalesAss.Items.Clear();
+            this.comboBoxQSalesAss.Items.AddRange(new object[] {
+            "",
+            "Justin Tugwell",
+            "Roy Tugwell",
+            "Randy Swindle",
+            "Marsha Outlaw",
+            "Darin Forsythe"});
+            this.toolStripComboBoxSignature.Items.Clear();
+            this.toolStripComboBoxSignature.Items.AddRange(new object[] {
+            "No Signature",
+            "Justin\'s",
+            "Roy\'s",
+            "Randy\'s",
+            "Marsha\'s",
+            "Darin\'s"});
 
             loadStartup();
         }
