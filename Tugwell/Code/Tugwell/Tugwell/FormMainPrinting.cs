@@ -356,7 +356,7 @@ namespace Tugwell
                 else if (this.toolStripComboBoxSignature.SelectedIndex == 3)
                 {
                     if (_company == companyType.TPS)
-                        sig = Properties.Resources.justin; // randy
+                        sig = Properties.Resources.randy; // randy
                     else
                         sig = Properties.Resources.scott;
                 }
@@ -367,7 +367,8 @@ namespace Tugwell
                 }
                 else  // Darin, must be
                 {
-                    sig = Properties.Resources.justin; // darin
+                    sig = Properties.Resources.darin; // darin
+                    h = -55.0;
                 }
 
                 h += 200.0 * ((double)sig.Height / (double)sig.Width);
@@ -1526,7 +1527,7 @@ namespace Tugwell
                 else if (this.toolStripComboBoxSignature.SelectedIndex == 3)
                 {
                     if (_company == companyType.TPS)
-                        sig = Properties.Resources.justin; // randy
+                        sig = Properties.Resources.randy; // randy
                     else
                         sig = Properties.Resources.scott;
                 }
@@ -1537,7 +1538,8 @@ namespace Tugwell
                 }
                 else  // Darin, must be
                 {
-                    sig = Properties.Resources.justin; // darin
+                    sig = Properties.Resources.darin; // darin
+                    h = -55.0;
                 }
 
                 h += 200.0 * ((double)sig.Height / (double)sig.Width);
