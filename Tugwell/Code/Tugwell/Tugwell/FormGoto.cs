@@ -61,7 +61,8 @@ namespace Tugwell
                 "VendorNumber",
                 "CheckNumbers",
                 "Date",
-                "InvNumber"});
+                "InvNumber",
+                "All Descriptions"});
 
                 //    //"Any Field",
                 //"PO",
@@ -319,7 +320,8 @@ namespace Tugwell
                 "VendorName",
                 "Location",
                 "Equipment",
-                "SalesAss"});
+                "SalesAss",
+                "All Descriptions"});
                 ////"Any Field",
 
                 //"PO",
@@ -502,7 +504,7 @@ namespace Tugwell
             this.Close();
         }
 
-        private List<int> search(string searchTxt)
+        private List<int> search(string searchTxt, int temp)
         {
             if (searchTxt.Trim().Length == 0)
                 return new List<int>(); ;
@@ -510,7 +512,17 @@ namespace Tugwell
             // a cheat to make JobName/Number look like Project
             string col = (this.comboBoxField.Text != "Project") ? this.comboBoxField.Text : "JobNumber";
 
-            List<string> theList = getColFromTable(col, (this._isOrderTable) ? "OrderTable" : "QuoteTable");
+            List<string> theList = null;
+
+            if (col == "All Descriptions")
+            {
+                theList = getColFromTable("Descr"+temp, (this._isOrderTable) ? "OrderTable" : "QuoteTable");
+            }
+            else
+            {
+                theList = getColFromTable(col, (this._isOrderTable) ? "OrderTable" : "QuoteTable");
+            }
+            
             List<int> indexList = new List<int>();
 
             int index = 0;
@@ -550,15 +562,23 @@ namespace Tugwell
 
             string s = this.textBoxSearch.Text.Trim();
 
+            this.listViewSearch.Items.Clear();
 
-            List<int> indexList = search(s);
-            if (indexList.Count() > 0)
+            for (int i = 1; i <= 23; i++)
             {
-                buildListView(indexList);
-            }
-            else
-            {
-                this.listViewSearch.Items.Clear(); 
+                List<int> indexList = search(s, i);
+
+                if (indexList.Count() > 0)
+                {
+                    buildListView(indexList);
+                }
+                else if (this.comboBoxField.Text != "All Descriptions")
+                {
+                    this.listViewSearch.Items.Clear();
+                }
+
+                if (this.comboBoxField.Text != "All Descriptions")
+                    break;
             }
         }
 
@@ -571,23 +591,31 @@ namespace Tugwell
                 MessageBox.Show(this, "Please type non-spaced search string.");
             }
 
-            List<int> indexList = search(s);
+            this.listViewSearch.Items.Clear();
 
-            if (indexList.Count() > 0)
+            for (int i = 1; i <= 23; i++)
             {
-                buildListView(indexList);
+                List<int> indexList = search(s, i);
 
-                if (indexList.Count() == 1)
+                if (indexList.Count() > 0)
                 {
-                    // auto do it!
-                    this.listViewSearch.SelectedIndices.Add(0);
-                    selectAndClose();
+                    buildListView(indexList);
+
+                    if (indexList.Count() == 1 && this.comboBoxField.Text != "All Descriptions")
+                    {
+                        // auto do it!
+                        this.listViewSearch.SelectedIndices.Add(0);
+                        selectAndClose();
+                    }
                 }
-            }
-            else
-            {
-                this.listViewSearch.Items.Clear();
-                MessageBox.Show(this, "Nothing Found!");
+                else if (this.comboBoxField.Text != "All Descriptions")
+                {
+                    this.listViewSearch.Items.Clear();
+                    MessageBox.Show(this, "Nothing Found!");
+                }
+
+                if (this.comboBoxField.Text != "All Descriptions")
+                    break;
             }
         }
 
@@ -628,7 +656,7 @@ namespace Tugwell
         {
             List<string> list = getTheList(indexList, (this._isOrderTable) ? "OrderTable" : "QuoteTable");
 
-            this.listViewSearch.Items.Clear();
+            //this.listViewSearch.Items.Clear();
 
             list.Sort();
 
