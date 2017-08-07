@@ -18,10 +18,10 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V9.0 2017_07_31";
+            this.Text = "Tugwell V9.1 2017_08_01";
             
             // make sure dbase file is the only one in this folder
-            this.toolStripTextBoxDbasePath.Text = @"X:\Tugwell\DB\";
+            this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
             this.comboBoxYearControl.Text = "2017";
 
             this.toolStripComboBoxSignature.SelectedIndex = 0; // no signature
