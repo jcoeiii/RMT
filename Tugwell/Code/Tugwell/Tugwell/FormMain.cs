@@ -18,11 +18,11 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V9.1 2017_08_01";
+            this.Text = "Tugwell V9.0 2018_01_15";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
-            this.comboBoxYearControl.Text = "2017";
+            this.comboBoxYearControl.Text = "2018";
 
             this.toolStripComboBoxSignature.SelectedIndex = 0; // no signature
 
@@ -1621,7 +1621,8 @@ namespace Tugwell
             this.comboBoxCarrier.Text = "";
             this.textBoxShipDate.Text = "";
 
-            this.checkBoxOK.Checked = true; // actually when it is ok, default ok
+            this.checkBoxOK.Checked = false; // actually when it is ok, default ok
+            this.checkBoxPONeeded.Checked = true;
             this.checkBoxComOrder.Checked = false;
             this.checkBoxComPaid.Checked = false;
 
@@ -2263,21 +2264,21 @@ namespace Tugwell
             "",
             "Justin Tugwell",
             "Roy Tugwell",
-            "Scott Snowden",
+            "Warehouse",
             "Marsha Outlaw"});
             this.comboBoxQSalesAss.Items.Clear();
             this.comboBoxQSalesAss.Items.AddRange(new object[] {
             "",
             "Justin Tugwell",
             "Roy Tugwell",
-            "Scott Snowden",
+            "Warehouse",
             "Marsha Outlaw"});
             this.toolStripComboBoxSignature.Items.Clear();
             this.toolStripComboBoxSignature.Items.AddRange(new object[] {
             "No Signature",
             "Justin\'s",
             "Roy\'s",
-            "Scott\'s",
+            "Warehouse\'s",
             "Marsha\'s"});
 
             loadStartup();
@@ -2321,7 +2322,7 @@ namespace Tugwell
             "Roy Tugwell",
             "Randy Swindle",
             "Marsha Outlaw",
-            "Darin Forsythe"});
+            "Warehouse"});
             this.comboBoxQSalesAss.Items.Clear();
             this.comboBoxQSalesAss.Items.AddRange(new object[] {
             "",
@@ -2329,7 +2330,7 @@ namespace Tugwell
             "Roy Tugwell",
             "Randy Swindle",
             "Marsha Outlaw",
-            "Darin Forsythe"});
+            "Warehouse"});
             this.toolStripComboBoxSignature.Items.Clear();
             this.toolStripComboBoxSignature.Items.AddRange(new object[] {
             "No Signature",
@@ -2337,7 +2338,7 @@ namespace Tugwell
             "Roy\'s",
             "Randy\'s",
             "Marsha\'s",
-            "Darin\'s"});
+            "Warehouse\'s"});
 
             loadStartup();
         }

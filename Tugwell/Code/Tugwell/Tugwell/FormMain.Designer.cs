@@ -644,6 +644,7 @@
             this.comboBoxYearControl = new System.Windows.Forms.ComboBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.textBoxRecordOf = new System.Windows.Forms.TextBox();
+            this.checkBoxPONeeded = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControlMainOrdersQuotes.SuspendLayout();
@@ -934,7 +935,7 @@
             "No Signature",
             "Justin\'s",
             "Roy\'s",
-            "Scott\'s",
+            "Warehouse\'s",
             "Marsha\'s"});
             this.toolStripComboBoxSignature.Name = "toolStripComboBoxSignature";
             this.toolStripComboBoxSignature.Size = new System.Drawing.Size(121, 23);
@@ -1244,7 +1245,7 @@
             this.tabPageOrders.Controls.Add(this.groupBoxOrders);
             this.tabPageOrders.Location = new System.Drawing.Point(4, 22);
             this.tabPageOrders.Name = "tabPageOrders";
-            this.tabPageOrders.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPageOrders.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageOrders.Size = new System.Drawing.Size(1040, 481);
             this.tabPageOrders.TabIndex = 0;
             this.tabPageOrders.Text = "Orders";
@@ -1303,7 +1304,7 @@
             this.tabPageGeneral.Controls.Add(this.label12);
             this.tabPageGeneral.Location = new System.Drawing.Point(4, 22);
             this.tabPageGeneral.Name = "tabPageGeneral";
-            this.tabPageGeneral.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPageGeneral.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageGeneral.Size = new System.Drawing.Size(1026, 321);
             this.tabPageGeneral.TabIndex = 0;
             this.tabPageGeneral.Text = "General";
@@ -1902,7 +1903,7 @@
             this.tabPageTracking.Controls.Add(this.comboBoxTrkBy1);
             this.tabPageTracking.Location = new System.Drawing.Point(4, 22);
             this.tabPageTracking.Name = "tabPageTracking";
-            this.tabPageTracking.Size = new System.Drawing.Size(1028, 326);
+            this.tabPageTracking.Size = new System.Drawing.Size(1026, 321);
             this.tabPageTracking.TabIndex = 1;
             this.tabPageTracking.Text = "Tracking";
             this.tabPageTracking.UseVisualStyleBackColor = true;
@@ -1955,7 +1956,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy18.Location = new System.Drawing.Point(92, 507);
             this.comboBoxTrkBy18.Name = "comboBoxTrkBy18";
             this.comboBoxTrkBy18.Size = new System.Drawing.Size(53, 21);
@@ -2010,7 +2011,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy17.Location = new System.Drawing.Point(92, 483);
             this.comboBoxTrkBy17.Name = "comboBoxTrkBy17";
             this.comboBoxTrkBy17.Size = new System.Drawing.Size(53, 21);
@@ -2065,7 +2066,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy16.Location = new System.Drawing.Point(92, 459);
             this.comboBoxTrkBy16.Name = "comboBoxTrkBy16";
             this.comboBoxTrkBy16.Size = new System.Drawing.Size(53, 21);
@@ -2120,7 +2121,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy15.Location = new System.Drawing.Point(92, 435);
             this.comboBoxTrkBy15.Name = "comboBoxTrkBy15";
             this.comboBoxTrkBy15.Size = new System.Drawing.Size(53, 21);
@@ -2175,7 +2176,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy14.Location = new System.Drawing.Point(92, 411);
             this.comboBoxTrkBy14.Name = "comboBoxTrkBy14";
             this.comboBoxTrkBy14.Size = new System.Drawing.Size(53, 21);
@@ -2230,7 +2231,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy13.Location = new System.Drawing.Point(92, 387);
             this.comboBoxTrkBy13.Name = "comboBoxTrkBy13";
             this.comboBoxTrkBy13.Size = new System.Drawing.Size(53, 21);
@@ -2285,7 +2286,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy12.Location = new System.Drawing.Point(92, 363);
             this.comboBoxTrkBy12.Name = "comboBoxTrkBy12";
             this.comboBoxTrkBy12.Size = new System.Drawing.Size(53, 21);
@@ -2340,7 +2341,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy11.Location = new System.Drawing.Point(92, 339);
             this.comboBoxTrkBy11.Name = "comboBoxTrkBy11";
             this.comboBoxTrkBy11.Size = new System.Drawing.Size(53, 21);
@@ -2395,7 +2396,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy10.Location = new System.Drawing.Point(92, 315);
             this.comboBoxTrkBy10.Name = "comboBoxTrkBy10";
             this.comboBoxTrkBy10.Size = new System.Drawing.Size(53, 21);
@@ -2450,7 +2451,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy9.Location = new System.Drawing.Point(92, 291);
             this.comboBoxTrkBy9.Name = "comboBoxTrkBy9";
             this.comboBoxTrkBy9.Size = new System.Drawing.Size(53, 21);
@@ -2505,7 +2506,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy8.Location = new System.Drawing.Point(92, 267);
             this.comboBoxTrkBy8.Name = "comboBoxTrkBy8";
             this.comboBoxTrkBy8.Size = new System.Drawing.Size(53, 21);
@@ -2560,7 +2561,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy7.Location = new System.Drawing.Point(92, 243);
             this.comboBoxTrkBy7.Name = "comboBoxTrkBy7";
             this.comboBoxTrkBy7.Size = new System.Drawing.Size(53, 21);
@@ -2615,7 +2616,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy6.Location = new System.Drawing.Point(92, 219);
             this.comboBoxTrkBy6.Name = "comboBoxTrkBy6";
             this.comboBoxTrkBy6.Size = new System.Drawing.Size(53, 21);
@@ -2670,7 +2671,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy5.Location = new System.Drawing.Point(92, 195);
             this.comboBoxTrkBy5.Name = "comboBoxTrkBy5";
             this.comboBoxTrkBy5.Size = new System.Drawing.Size(53, 21);
@@ -2725,7 +2726,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy4.Location = new System.Drawing.Point(92, 171);
             this.comboBoxTrkBy4.Name = "comboBoxTrkBy4";
             this.comboBoxTrkBy4.Size = new System.Drawing.Size(53, 21);
@@ -2780,7 +2781,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy3.Location = new System.Drawing.Point(92, 147);
             this.comboBoxTrkBy3.Name = "comboBoxTrkBy3";
             this.comboBoxTrkBy3.Size = new System.Drawing.Size(53, 21);
@@ -2835,7 +2836,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy2.Location = new System.Drawing.Point(92, 123);
             this.comboBoxTrkBy2.Name = "comboBoxTrkBy2";
             this.comboBoxTrkBy2.Size = new System.Drawing.Size(53, 21);
@@ -3018,7 +3019,7 @@
             "JT",
             "RT",
             "MO",
-            "SS"});
+            "WA"});
             this.comboBoxTrkBy1.Location = new System.Drawing.Point(92, 99);
             this.comboBoxTrkBy1.Name = "comboBoxTrkBy1";
             this.comboBoxTrkBy1.Size = new System.Drawing.Size(53, 21);
@@ -3161,7 +3162,7 @@
             this.tabPageWorksheet.Controls.Add(this.buttonLine1);
             this.tabPageWorksheet.Location = new System.Drawing.Point(4, 22);
             this.tabPageWorksheet.Name = "tabPageWorksheet";
-            this.tabPageWorksheet.Size = new System.Drawing.Size(1028, 326);
+            this.tabPageWorksheet.Size = new System.Drawing.Size(1026, 321);
             this.tabPageWorksheet.TabIndex = 2;
             this.tabPageWorksheet.Text = "Worksheet";
             this.tabPageWorksheet.UseVisualStyleBackColor = true;
@@ -5382,7 +5383,7 @@
             this.tabPageAccounting.Controls.Add(this.richTextBoxInvoiceInstructions);
             this.tabPageAccounting.Location = new System.Drawing.Point(4, 22);
             this.tabPageAccounting.Name = "tabPageAccounting";
-            this.tabPageAccounting.Size = new System.Drawing.Size(1028, 326);
+            this.tabPageAccounting.Size = new System.Drawing.Size(1026, 321);
             this.tabPageAccounting.TabIndex = 4;
             this.tabPageAccounting.Text = "Accounting";
             this.tabPageAccounting.UseVisualStyleBackColor = true;
@@ -5647,7 +5648,7 @@
             this.tabPageMarley.Controls.Add(this.label53);
             this.tabPageMarley.Location = new System.Drawing.Point(4, 22);
             this.tabPageMarley.Name = "tabPageMarley";
-            this.tabPageMarley.Size = new System.Drawing.Size(1028, 326);
+            this.tabPageMarley.Size = new System.Drawing.Size(1026, 321);
             this.tabPageMarley.TabIndex = 5;
             this.tabPageMarley.Text = "Marley Commision";
             this.tabPageMarley.UseVisualStyleBackColor = true;
@@ -5966,7 +5967,7 @@
             this.tabPageNotes.Controls.Add(this.richTextBoxDeliveryNotes);
             this.tabPageNotes.Location = new System.Drawing.Point(4, 22);
             this.tabPageNotes.Name = "tabPageNotes";
-            this.tabPageNotes.Size = new System.Drawing.Size(1028, 326);
+            this.tabPageNotes.Size = new System.Drawing.Size(1026, 321);
             this.tabPageNotes.TabIndex = 6;
             this.tabPageNotes.Text = "Notes";
             this.tabPageNotes.UseVisualStyleBackColor = true;
@@ -6015,6 +6016,7 @@
             // 
             // groupBoxOrders
             // 
+            this.groupBoxOrders.Controls.Add(this.checkBoxPONeeded);
             this.groupBoxOrders.Controls.Add(this.label95);
             this.groupBoxOrders.Controls.Add(this.comboBoxBillStatus);
             this.groupBoxOrders.Controls.Add(this.checkBoxOK);
@@ -6076,9 +6078,9 @@
             this.checkBoxOK.AutoSize = true;
             this.checkBoxOK.Location = new System.Drawing.Point(385, 97);
             this.checkBoxOK.Name = "checkBoxOK";
-            this.checkBoxOK.Size = new System.Drawing.Size(105, 17);
+            this.checkBoxOK.Size = new System.Drawing.Size(103, 17);
             this.checkBoxOK.TabIndex = 53;
-            this.checkBoxOK.Text = "Is Customer OK?";
+            this.checkBoxOK.Text = "Cash Customer?";
             this.checkBoxOK.UseVisualStyleBackColor = true;
             this.checkBoxOK.CheckedChanged += new System.EventHandler(this.checkBoxComOrder_CheckedChanged);
             // 
@@ -6174,7 +6176,7 @@
             "",
             "Justin Tugwell",
             "Roy Tugwell",
-            "Scott Snowden",
+            "Warehouse",
             "Marsha Outlaw"});
             this.comboBoxSalesAss.Location = new System.Drawing.Point(106, 93);
             this.comboBoxSalesAss.Name = "comboBoxSalesAss";
@@ -6310,7 +6312,7 @@
             this.tabPageQuotes.Controls.Add(this.groupBoxQuotes);
             this.tabPageQuotes.Location = new System.Drawing.Point(4, 22);
             this.tabPageQuotes.Name = "tabPageQuotes";
-            this.tabPageQuotes.Size = new System.Drawing.Size(1040, 486);
+            this.tabPageQuotes.Size = new System.Drawing.Size(1040, 481);
             this.tabPageQuotes.TabIndex = 1;
             this.tabPageQuotes.Text = "Quotes";
             this.tabPageQuotes.UseVisualStyleBackColor = true;
@@ -6324,7 +6326,7 @@
             this.tabControlQuotesSub.Location = new System.Drawing.Point(0, 128);
             this.tabControlQuotesSub.Name = "tabControlQuotesSub";
             this.tabControlQuotesSub.SelectedIndex = 0;
-            this.tabControlQuotesSub.Size = new System.Drawing.Size(1040, 358);
+            this.tabControlQuotesSub.Size = new System.Drawing.Size(1040, 353);
             this.tabControlQuotesSub.TabIndex = 58;
             // 
             // tabPageQuoteGeneral
@@ -6362,8 +6364,8 @@
             this.tabPageQuoteGeneral.Controls.Add(this.label89);
             this.tabPageQuoteGeneral.Location = new System.Drawing.Point(4, 22);
             this.tabPageQuoteGeneral.Name = "tabPageQuoteGeneral";
-            this.tabPageQuoteGeneral.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPageQuoteGeneral.Size = new System.Drawing.Size(1032, 332);
+            this.tabPageQuoteGeneral.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageQuoteGeneral.Size = new System.Drawing.Size(1032, 327);
             this.tabPageQuoteGeneral.TabIndex = 0;
             this.tabPageQuoteGeneral.Text = "General";
             this.tabPageQuoteGeneral.UseVisualStyleBackColor = true;
@@ -6914,8 +6916,8 @@
             this.tabPageQuoteWorksheet.Controls.Add(this.buttonQLine1);
             this.tabPageQuoteWorksheet.Location = new System.Drawing.Point(4, 22);
             this.tabPageQuoteWorksheet.Name = "tabPageQuoteWorksheet";
-            this.tabPageQuoteWorksheet.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPageQuoteWorksheet.Size = new System.Drawing.Size(1034, 332);
+            this.tabPageQuoteWorksheet.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageQuoteWorksheet.Size = new System.Drawing.Size(1032, 327);
             this.tabPageQuoteWorksheet.TabIndex = 1;
             this.tabPageQuoteWorksheet.Text = "Worksheet";
             this.tabPageQuoteWorksheet.UseVisualStyleBackColor = true;
@@ -9702,7 +9704,7 @@
             this.tabPageQuoateNotes.Controls.Add(this.richTextBoxQInvoicingNotes);
             this.tabPageQuoateNotes.Location = new System.Drawing.Point(4, 22);
             this.tabPageQuoateNotes.Name = "tabPageQuoateNotes";
-            this.tabPageQuoateNotes.Size = new System.Drawing.Size(1034, 332);
+            this.tabPageQuoateNotes.Size = new System.Drawing.Size(1032, 327);
             this.tabPageQuoateNotes.TabIndex = 2;
             this.tabPageQuoateNotes.Text = "Notes";
             this.tabPageQuoateNotes.UseVisualStyleBackColor = true;
@@ -9921,7 +9923,7 @@
             "",
             "Justin Tugwell",
             "Roy Tugwell",
-            "Scott Snowden",
+            "Warehouse",
             "Marsha Outlaw"});
             this.comboBoxQSalesAss.Location = new System.Drawing.Point(106, 93);
             this.comboBoxQSalesAss.Name = "comboBoxQSalesAss";
@@ -10067,7 +10069,7 @@
             this.comboBoxYearControl.FormattingEnabled = true;
             this.comboBoxYearControl.Items.AddRange(new object[] {
             "Older",
-            "2017"});
+            "2018"});
             this.comboBoxYearControl.Location = new System.Drawing.Point(274, 15);
             this.comboBoxYearControl.Name = "comboBoxYearControl";
             this.comboBoxYearControl.Size = new System.Drawing.Size(58, 21);
@@ -10091,6 +10093,17 @@
             this.textBoxRecordOf.Size = new System.Drawing.Size(52, 20);
             this.textBoxRecordOf.TabIndex = 36;
             this.textBoxRecordOf.Text = "of 1";
+            // 
+            // checkBoxPONeeded
+            // 
+            this.checkBoxPONeeded.AutoSize = true;
+            this.checkBoxPONeeded.Location = new System.Drawing.Point(494, 96);
+            this.checkBoxPONeeded.Name = "checkBoxPONeeded";
+            this.checkBoxPONeeded.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxPONeeded.TabIndex = 66;
+            this.checkBoxPONeeded.Text = "PO Required?";
+            this.checkBoxPONeeded.UseVisualStyleBackColor = true;
+            this.checkBoxPONeeded.CheckedChanged += new System.EventHandler(this.checkBoxComOrder_CheckedChanged);
             // 
             // FormMain
             // 
@@ -10950,6 +10963,7 @@
         private System.Windows.Forms.ToolStripMenuItem oldRMTugwellToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newTPSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removeAllRecordsToolStripMenuItem;
+        private System.Windows.Forms.CheckBox checkBoxPONeeded;
     }
 }
 

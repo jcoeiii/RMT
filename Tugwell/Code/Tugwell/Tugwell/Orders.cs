@@ -38,7 +38,8 @@ namespace Tugwell
             /*Carrier*/ "comboBoxCarrier",
             /*ShipDate*/ "textBoxShipDate",
 
-            /*IsOk*/ "checkBoxOK",
+            /*IsCash*/ "checkBoxOK",
+            /*IsPORequired*/ "checkBoxPONeeded",
             /*IsComOrder*/ "checkBoxComOrder",
             /*IsComPaid*/ "checkBoxComPaid",
 
@@ -160,7 +161,8 @@ namespace Tugwell
             /*Carrier*/ "",
             /*ShipDate*/ "",
 
-            /*IsOk*/ "",
+            /*IsCash*/ "0",
+            /*IsPORequired*/ "1",
             /*IsComOrder*/ "",
             /*IsComPaid*/ "",
 
@@ -281,7 +283,8 @@ namespace Tugwell
             /*Carrier*/ "Carrier",
             /*ShipDate*/ "ShipDate",
 
-            /*IsOk*/ "Spare2",
+            /*IsCash*/ "Spare2",
+            /*IsPORequired*/ "Spare5",
             /*IsComOrder*/ "IsComOrder",
             /*IsComPaid*/ "IsComPaid",
 
