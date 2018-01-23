@@ -18,7 +18,7 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V9.0 2018_01_15";
+            this.Text = "Tugwell V9.1 2018_01_23";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
@@ -2322,7 +2322,8 @@ namespace Tugwell
             "Roy Tugwell",
             "Randy Swindle",
             "Marsha Outlaw",
-            "Warehouse"});
+            "Warehouse",
+            "Bernice Williams"});
             this.comboBoxQSalesAss.Items.Clear();
             this.comboBoxQSalesAss.Items.AddRange(new object[] {
             "",
@@ -2330,7 +2331,8 @@ namespace Tugwell
             "Roy Tugwell",
             "Randy Swindle",
             "Marsha Outlaw",
-            "Warehouse"});
+            "Warehouse",
+            "Bernice Williams"});
             this.toolStripComboBoxSignature.Items.Clear();
             this.toolStripComboBoxSignature.Items.AddRange(new object[] {
             "No Signature",
@@ -2338,7 +2340,8 @@ namespace Tugwell
             "Roy\'s",
             "Randy\'s",
             "Marsha\'s",
-            "Warehouse\'s"});
+            "Warehouse\'s",
+            "Bernice Williams\'"});
 
             loadStartup();
         }

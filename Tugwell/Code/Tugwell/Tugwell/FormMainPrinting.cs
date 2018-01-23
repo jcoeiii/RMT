@@ -362,13 +362,18 @@ namespace Tugwell
                 }
                 else if (this.toolStripComboBoxSignature.SelectedIndex == 4)
                 {
-                    sig = Properties.Resources.marsha2;
-                    h = -15.0;
+                    sig = Properties.Resources.marsha3;
+                    h = -30.0;
                 }
-                else  // Darin, must be
+                else if (this.toolStripComboBoxSignature.SelectedIndex == 5)
                 {
-                    sig = Properties.Resources.darin; // darin
+                    sig = Properties.Resources.darin; // warehouse
                     h = -55.0;
+                }
+                else // Bernice, must be
+                {
+                    sig = Properties.Resources.bernice;
+                    h = -10.0;
                 }
 
                 h += 200.0 * ((double)sig.Height / (double)sig.Width);
@@ -1533,13 +1538,18 @@ namespace Tugwell
                 }
                 else if (this.toolStripComboBoxSignature.SelectedIndex == 4)
                 {
-                    sig = Properties.Resources.marsha2;
-                    h = -25.0;
+                    sig = Properties.Resources.marsha3;
+                    h = -30.0;
                 }
-                else  // Darin, must be
+                else if (this.toolStripComboBoxSignature.SelectedIndex == 5)
                 {
-                    sig = Properties.Resources.darin; // darin
+                    sig = Properties.Resources.darin; // warehouse
                     h = -55.0;
+                }
+                else // Bernice, must be
+                {
+                    sig = Properties.Resources.bernice;
+                    h = -10.0;
                 }
 
                 h += 200.0 * ((double)sig.Height / (double)sig.Width);

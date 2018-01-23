@@ -63,6 +63,16 @@ namespace Tugwell.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bernice {
+            get {
+                object obj = ResourceManager.GetObject("bernice", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap darin {
             get {
                 object obj = ResourceManager.GetObject("darin", resourceCulture);
@@ -96,6 +106,16 @@ namespace Tugwell.Properties {
         internal static System.Drawing.Bitmap marsha2 {
             get {
                 object obj = ResourceManager.GetObject("marsha2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap marsha3 {
+            get {
+                object obj = ResourceManager.GetObject("marsha3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

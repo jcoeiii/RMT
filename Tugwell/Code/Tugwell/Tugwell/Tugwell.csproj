@@ -264,6 +264,8 @@
     <None Include="Resources\TugwellPS_large.png" />
     <None Include="Resources\darin.png" />
     <None Include="Resources\randy.png" />
+    <None Include="Resources\marsha3.png" />
+    <None Include="Resources\bernice.png" />
     <Content Include="tugIcon.ico" />
   </ItemGroup>
   <ItemGroup>
