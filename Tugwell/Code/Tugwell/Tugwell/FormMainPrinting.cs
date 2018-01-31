@@ -28,7 +28,7 @@ namespace Tugwell
             p.AddText(tiTopLeft, "Vendor:");
             p.AddText(tiTopLeft, "Req. Ship:");
             p.AddText(tiTopLeft, "Ship Via:");
-            p.AddText(tiTopLeft, "Salesman:");
+            p.AddText(tiTopLeft, "Salesperson:");
             tiTopLeft.Textstyle = Print2Pdf.TextStyle.Regular;
             p.AddText(tiTopLeft, this.textBoxPODate.Text/*textBoxDate.Text*/, 40 + 80, pos, p.Width, 18);
             p.AddText(tiTopLeft, this.textBoxVendorName.Text);
@@ -426,7 +426,7 @@ namespace Tugwell
                 p.AddText(tiTopRight, "TPS #:", p.Width / 2 + 10, pos, p.Width, 18);
             else
                 p.AddText(tiTopRight, "RMT #:", p.Width / 2 + 10, pos, p.Width, 18);
-            p.AddText(tiTopRight, "Salesman:");
+            p.AddText(tiTopRight, "Salesperson:");
             p.AddText(tiTopRight, "Vendor Name:");
             p.AddText(tiTopRight, "Selling Price:");
             //p.AddText(tiTopRight, "Address:");
@@ -793,7 +793,7 @@ namespace Tugwell
                 p.AddText(tiTopRight, "TPS #:", p.Width / 2, pos, p.Width, 18);
             else
                 p.AddText(tiTopRight, "RMT #:", p.Width / 2, pos, p.Width, 18);
-            p.AddText(tiTopRight, "Salesman:");
+            p.AddText(tiTopRight, "Salesperson:");
             //p.AddText(tiTopRight, "Vendor Name:");
             //p.AddText(tiTopRight, "Selling Price:");
             //p.AddText(tiTopRight, "Address:");
@@ -1189,10 +1189,12 @@ namespace Tugwell
             p.AddText(tiTopRight, "Date:", p.Width / 2 - 56.0, pos, p.Width, 18);
             p.AddText(tiTopRight, "Project:");
             p.AddText(tiTopRight, "Location:");
+            p.AddText(tiTopRight, "Quote No:");
             tiTopRight.Textstyle = Print2Pdf.TextStyle.Regular;
             p.AddText(tiTopRight, this.textBoxQDate.Text, p.Width / 2, pos, p.Width, 18);
             p.AddText(tiTopRight, this.textBoxQJobName.Text);
             p.AddText(tiTopRight, this.textBoxQLocation.Text);
+            p.AddText(tiTopRight, this.textBoxQPO.Text);
 
             // Quoted Equip : Terms : Delivery
             p.DrawHorizontalLineDouble(1.0, pos + 64, 40.0);

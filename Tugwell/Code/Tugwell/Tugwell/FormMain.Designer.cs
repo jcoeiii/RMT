@@ -86,7 +86,6 @@
             this.textBoxShipDate = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.comboBoxCarrier = new Tugwell.CustomComboBox();
             this.checkBoxComPaid = new System.Windows.Forms.CheckBox();
             this.checkBoxComOrder = new System.Windows.Forms.CheckBox();
             this.buttonOrdersGeneralCopy = new System.Windows.Forms.Button();
@@ -389,6 +388,7 @@
             this.label59 = new System.Windows.Forms.Label();
             this.richTextBoxDeliveryNotes = new System.Windows.Forms.RichTextBox();
             this.groupBoxOrders = new System.Windows.Forms.GroupBox();
+            this.checkBoxPONeeded = new System.Windows.Forms.CheckBox();
             this.label95 = new System.Windows.Forms.Label();
             this.comboBoxBillStatus = new System.Windows.Forms.ComboBox();
             this.checkBoxOK = new System.Windows.Forms.CheckBox();
@@ -421,14 +421,11 @@
             this.label77 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.comboBoxQEquipCategory = new Tugwell.CustomComboBox();
             this.textBoxQCompany = new System.Windows.Forms.TextBox();
             this.label83 = new System.Windows.Forms.Label();
-            this.comboBoxQTerms = new Tugwell.CustomComboBox();
             this.label81 = new System.Windows.Forms.Label();
             this.buttonSelectQCompany = new System.Windows.Forms.Button();
             this.label66 = new System.Windows.Forms.Label();
-            this.comboBoxQDelivery = new Tugwell.CustomComboBox();
             this.textBoxQEquipment = new System.Windows.Forms.TextBox();
             this.label78 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
@@ -644,7 +641,10 @@
             this.comboBoxYearControl = new System.Windows.Forms.ComboBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.textBoxRecordOf = new System.Windows.Forms.TextBox();
-            this.checkBoxPONeeded = new System.Windows.Forms.CheckBox();
+            this.comboBoxCarrier = new Tugwell.CustomComboBox();
+            this.comboBoxQEquipCategory = new Tugwell.CustomComboBox();
+            this.comboBoxQTerms = new Tugwell.CustomComboBox();
+            this.comboBoxQDelivery = new Tugwell.CustomComboBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControlMainOrdersQuotes.SuspendLayout();
@@ -1375,27 +1375,6 @@
             this.label24.TabIndex = 51;
             this.label24.Text = "Carrier:";
             // 
-            // comboBoxCarrier
-            // 
-            this.comboBoxCarrier.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBoxCarrier.FormattingEnabled = true;
-            this.comboBoxCarrier.Items.AddRange(new object[] {
-            "",
-            "UPS Ground",
-            "UPS Next Day Air",
-            "Motor Freight",
-            "Customer P/U",
-            "RMT Truck",
-            "Fedex Freight",
-            "FedEx Ground",
-            "Vendor Vehicle"});
-            this.comboBoxCarrier.Location = new System.Drawing.Point(69, 20);
-            this.comboBoxCarrier.Name = "comboBoxCarrier";
-            this.comboBoxCarrier.Size = new System.Drawing.Size(120, 21);
-            this.comboBoxCarrier.TabIndex = 0;
-            this.comboBoxCarrier.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
-            this.comboBoxCarrier.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
-            // 
             // checkBoxComPaid
             // 
             this.checkBoxComPaid.AutoSize = true;
@@ -1543,44 +1522,44 @@
             this.comboBoxShipToState.FormattingEnabled = true;
             this.comboBoxShipToState.Items.AddRange(new object[] {
             "",
-            "AL",
             "AK",
-            "AZ",
+            "AL",
             "AR",
+            "AZ",
             "CA",
             "CO",
             "CT",
-            "DE",
             "DC",
+            "DE",
             "FL",
             "GA",
             "HI",
+            "IA",
             "ID",
             "IL",
             "IN",
-            "IA",
             "KS",
             "KY",
             "LA",
+            "MA",
+            "MD",
             "ME",
+            "MI",
+            "MN",
+            "MO",
+            "MS",
             "MT",
+            "NC",
+            "ND",
             "NE",
-            "NV",
             "NH",
             "NJ",
             "NM",
+            "NV",
             "NY",
-            "NC",
-            "ND",
             "OH",
             "OK",
             "OR",
-            "MD",
-            "MA",
-            "MI",
-            "MN",
-            "MS",
-            "MO",
             "PA",
             "RI",
             "SC",
@@ -1588,11 +1567,11 @@
             "TN",
             "TX",
             "UT",
-            "VT",
             "VA",
+            "VT",
             "WA",
-            "WV",
             "WI",
+            "WV",
             "WY"});
             this.comboBoxShipToState.Location = new System.Drawing.Point(406, 136);
             this.comboBoxShipToState.Name = "comboBoxShipToState";
@@ -1706,44 +1685,44 @@
             this.comboBoxSoldToState.FormattingEnabled = true;
             this.comboBoxSoldToState.Items.AddRange(new object[] {
             "",
-            "AL",
             "AK",
-            "AZ",
+            "AL",
             "AR",
+            "AZ",
             "CA",
             "CO",
             "CT",
-            "DE",
             "DC",
+            "DE",
             "FL",
             "GA",
             "HI",
+            "IA",
             "ID",
             "IL",
             "IN",
-            "IA",
             "KS",
             "KY",
             "LA",
+            "MA",
+            "MD",
             "ME",
+            "MI",
+            "MN",
+            "MO",
+            "MS",
             "MT",
+            "NC",
+            "ND",
             "NE",
-            "NV",
             "NH",
             "NJ",
             "NM",
+            "NV",
             "NY",
-            "NC",
-            "ND",
             "OH",
             "OK",
             "OR",
-            "MD",
-            "MA",
-            "MI",
-            "MN",
-            "MS",
-            "MO",
             "PA",
             "RI",
             "SC",
@@ -1751,11 +1730,11 @@
             "TN",
             "TX",
             "UT",
-            "VT",
             "VA",
+            "VT",
             "WA",
-            "WV",
             "WI",
+            "WV",
             "WY"});
             this.comboBoxSoldToState.Location = new System.Drawing.Point(72, 136);
             this.comboBoxSoldToState.Name = "comboBoxSoldToState";
@@ -1956,7 +1935,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy18.Location = new System.Drawing.Point(92, 507);
             this.comboBoxTrkBy18.Name = "comboBoxTrkBy18";
             this.comboBoxTrkBy18.Size = new System.Drawing.Size(53, 21);
@@ -2011,7 +1991,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy17.Location = new System.Drawing.Point(92, 483);
             this.comboBoxTrkBy17.Name = "comboBoxTrkBy17";
             this.comboBoxTrkBy17.Size = new System.Drawing.Size(53, 21);
@@ -2066,7 +2047,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy16.Location = new System.Drawing.Point(92, 459);
             this.comboBoxTrkBy16.Name = "comboBoxTrkBy16";
             this.comboBoxTrkBy16.Size = new System.Drawing.Size(53, 21);
@@ -2121,7 +2103,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy15.Location = new System.Drawing.Point(92, 435);
             this.comboBoxTrkBy15.Name = "comboBoxTrkBy15";
             this.comboBoxTrkBy15.Size = new System.Drawing.Size(53, 21);
@@ -2176,7 +2159,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy14.Location = new System.Drawing.Point(92, 411);
             this.comboBoxTrkBy14.Name = "comboBoxTrkBy14";
             this.comboBoxTrkBy14.Size = new System.Drawing.Size(53, 21);
@@ -2231,7 +2215,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy13.Location = new System.Drawing.Point(92, 387);
             this.comboBoxTrkBy13.Name = "comboBoxTrkBy13";
             this.comboBoxTrkBy13.Size = new System.Drawing.Size(53, 21);
@@ -2286,7 +2271,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy12.Location = new System.Drawing.Point(92, 363);
             this.comboBoxTrkBy12.Name = "comboBoxTrkBy12";
             this.comboBoxTrkBy12.Size = new System.Drawing.Size(53, 21);
@@ -2341,7 +2327,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy11.Location = new System.Drawing.Point(92, 339);
             this.comboBoxTrkBy11.Name = "comboBoxTrkBy11";
             this.comboBoxTrkBy11.Size = new System.Drawing.Size(53, 21);
@@ -2396,7 +2383,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy10.Location = new System.Drawing.Point(92, 315);
             this.comboBoxTrkBy10.Name = "comboBoxTrkBy10";
             this.comboBoxTrkBy10.Size = new System.Drawing.Size(53, 21);
@@ -2451,7 +2439,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy9.Location = new System.Drawing.Point(92, 291);
             this.comboBoxTrkBy9.Name = "comboBoxTrkBy9";
             this.comboBoxTrkBy9.Size = new System.Drawing.Size(53, 21);
@@ -2506,7 +2495,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy8.Location = new System.Drawing.Point(92, 267);
             this.comboBoxTrkBy8.Name = "comboBoxTrkBy8";
             this.comboBoxTrkBy8.Size = new System.Drawing.Size(53, 21);
@@ -2561,7 +2551,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy7.Location = new System.Drawing.Point(92, 243);
             this.comboBoxTrkBy7.Name = "comboBoxTrkBy7";
             this.comboBoxTrkBy7.Size = new System.Drawing.Size(53, 21);
@@ -2616,7 +2607,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy6.Location = new System.Drawing.Point(92, 219);
             this.comboBoxTrkBy6.Name = "comboBoxTrkBy6";
             this.comboBoxTrkBy6.Size = new System.Drawing.Size(53, 21);
@@ -2671,7 +2663,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy5.Location = new System.Drawing.Point(92, 195);
             this.comboBoxTrkBy5.Name = "comboBoxTrkBy5";
             this.comboBoxTrkBy5.Size = new System.Drawing.Size(53, 21);
@@ -2726,7 +2719,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy4.Location = new System.Drawing.Point(92, 171);
             this.comboBoxTrkBy4.Name = "comboBoxTrkBy4";
             this.comboBoxTrkBy4.Size = new System.Drawing.Size(53, 21);
@@ -2781,7 +2775,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy3.Location = new System.Drawing.Point(92, 147);
             this.comboBoxTrkBy3.Name = "comboBoxTrkBy3";
             this.comboBoxTrkBy3.Size = new System.Drawing.Size(53, 21);
@@ -2836,7 +2831,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy2.Location = new System.Drawing.Point(92, 123);
             this.comboBoxTrkBy2.Name = "comboBoxTrkBy2";
             this.comboBoxTrkBy2.Size = new System.Drawing.Size(53, 21);
@@ -3019,7 +3015,8 @@
             "JT",
             "RT",
             "MO",
-            "WA"});
+            "WA",
+            "BW"});
             this.comboBoxTrkBy1.Location = new System.Drawing.Point(92, 99);
             this.comboBoxTrkBy1.Name = "comboBoxTrkBy1";
             this.comboBoxTrkBy1.Size = new System.Drawing.Size(53, 21);
@@ -5650,7 +5647,7 @@
             this.tabPageMarley.Name = "tabPageMarley";
             this.tabPageMarley.Size = new System.Drawing.Size(1026, 321);
             this.tabPageMarley.TabIndex = 5;
-            this.tabPageMarley.Text = "Marley Commision";
+            this.tabPageMarley.Text = "Commision";
             this.tabPageMarley.UseVisualStyleBackColor = true;
             // 
             // numericUpDownComBalance
@@ -6049,6 +6046,17 @@
             this.groupBoxOrders.TabIndex = 56;
             this.groupBoxOrders.TabStop = false;
             // 
+            // checkBoxPONeeded
+            // 
+            this.checkBoxPONeeded.AutoSize = true;
+            this.checkBoxPONeeded.Location = new System.Drawing.Point(494, 96);
+            this.checkBoxPONeeded.Name = "checkBoxPONeeded";
+            this.checkBoxPONeeded.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxPONeeded.TabIndex = 66;
+            this.checkBoxPONeeded.Text = "PO Required?";
+            this.checkBoxPONeeded.UseVisualStyleBackColor = true;
+            this.checkBoxPONeeded.CheckedChanged += new System.EventHandler(this.checkBoxComOrder_CheckedChanged);
+            // 
             // label95
             // 
             this.label95.AutoSize = true;
@@ -6408,22 +6416,6 @@
             this.label46.TabIndex = 91;
             this.label46.Text = "Company:";
             // 
-            // comboBoxQEquipCategory
-            // 
-            this.comboBoxQEquipCategory.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBoxQEquipCategory.FormattingEnabled = true;
-            this.comboBoxQEquipCategory.Items.AddRange(new object[] {
-            "",
-            "Towers",
-            "Pumps",
-            "Other"});
-            this.comboBoxQEquipCategory.Location = new System.Drawing.Point(98, 264);
-            this.comboBoxQEquipCategory.Name = "comboBoxQEquipCategory";
-            this.comboBoxQEquipCategory.Size = new System.Drawing.Size(233, 21);
-            this.comboBoxQEquipCategory.TabIndex = 15;
-            this.comboBoxQEquipCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
-            this.comboBoxQEquipCategory.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
-            // 
             // textBoxQCompany
             // 
             this.textBoxQCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -6443,25 +6435,6 @@
             this.label83.Size = new System.Drawing.Size(39, 13);
             this.label83.TabIndex = 87;
             this.label83.Text = "Terms:";
-            // 
-            // comboBoxQTerms
-            // 
-            this.comboBoxQTerms.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBoxQTerms.FormattingEnabled = true;
-            this.comboBoxQTerms.Items.AddRange(new object[] {
-            "",
-            "NET 30 Days",
-            "Cash",
-            "COD",
-            "VISA",
-            "Mastercard",
-            "Upon Delivery"});
-            this.comboBoxQTerms.Location = new System.Drawing.Point(432, 114);
-            this.comboBoxQTerms.Name = "comboBoxQTerms";
-            this.comboBoxQTerms.Size = new System.Drawing.Size(233, 21);
-            this.comboBoxQTerms.TabIndex = 11;
-            this.comboBoxQTerms.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
-            this.comboBoxQTerms.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             // 
             // label81
             // 
@@ -6490,26 +6463,6 @@
             this.label66.Size = new System.Drawing.Size(85, 13);
             this.label66.TabIndex = 78;
             this.label66.Text = "Equip. Category:";
-            // 
-            // comboBoxQDelivery
-            // 
-            this.comboBoxQDelivery.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBoxQDelivery.FormattingEnabled = true;
-            this.comboBoxQDelivery.Items.AddRange(new object[] {
-            "",
-            "2-3 Days",
-            "1 Week",
-            "1-2 Weeks",
-            "2-3 Weeks",
-            "3-4 Weeks",
-            "4-5 Weeks",
-            "5-6 Weeks"});
-            this.comboBoxQDelivery.Location = new System.Drawing.Point(432, 87);
-            this.comboBoxQDelivery.Name = "comboBoxQDelivery";
-            this.comboBoxQDelivery.Size = new System.Drawing.Size(233, 21);
-            this.comboBoxQDelivery.TabIndex = 10;
-            this.comboBoxQDelivery.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
-            this.comboBoxQDelivery.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             // 
             // textBoxQEquipment
             // 
@@ -6646,44 +6599,44 @@
             this.comboBoxQState.FormattingEnabled = true;
             this.comboBoxQState.Items.AddRange(new object[] {
             "",
-            "AL",
             "AK",
-            "AZ",
+            "AL",
             "AR",
+            "AZ",
             "CA",
             "CO",
             "CT",
-            "DE",
             "DC",
+            "DE",
             "FL",
             "GA",
             "HI",
+            "IA",
             "ID",
             "IL",
             "IN",
-            "IA",
             "KS",
             "KY",
             "LA",
+            "MA",
+            "MD",
             "ME",
+            "MI",
+            "MN",
+            "MO",
+            "MS",
             "MT",
+            "NC",
+            "ND",
             "NE",
-            "NV",
             "NH",
             "NJ",
             "NM",
+            "NV",
             "NY",
-            "NC",
-            "ND",
             "OH",
             "OK",
             "OR",
-            "MD",
-            "MA",
-            "MI",
-            "MN",
-            "MS",
-            "MO",
             "PA",
             "RI",
             "SC",
@@ -6691,11 +6644,11 @@
             "TN",
             "TX",
             "UT",
-            "VT",
             "VA",
+            "VT",
             "WA",
-            "WV",
             "WI",
+            "WV",
             "WY"});
             this.comboBoxQState.Location = new System.Drawing.Point(69, 166);
             this.comboBoxQState.Name = "comboBoxQState";
@@ -10094,16 +10047,81 @@
             this.textBoxRecordOf.TabIndex = 36;
             this.textBoxRecordOf.Text = "of 1";
             // 
-            // checkBoxPONeeded
+            // comboBoxCarrier
             // 
-            this.checkBoxPONeeded.AutoSize = true;
-            this.checkBoxPONeeded.Location = new System.Drawing.Point(494, 96);
-            this.checkBoxPONeeded.Name = "checkBoxPONeeded";
-            this.checkBoxPONeeded.Size = new System.Drawing.Size(93, 17);
-            this.checkBoxPONeeded.TabIndex = 66;
-            this.checkBoxPONeeded.Text = "PO Required?";
-            this.checkBoxPONeeded.UseVisualStyleBackColor = true;
-            this.checkBoxPONeeded.CheckedChanged += new System.EventHandler(this.checkBoxComOrder_CheckedChanged);
+            this.comboBoxCarrier.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBoxCarrier.FormattingEnabled = true;
+            this.comboBoxCarrier.Items.AddRange(new object[] {
+            "",
+            "UPS Ground",
+            "UPS Next Day Air",
+            "Motor Freight",
+            "Customer P/U",
+            "RMT Truck",
+            "Fedex Freight",
+            "FedEx Ground",
+            "Vendor Vehicle"});
+            this.comboBoxCarrier.Location = new System.Drawing.Point(69, 20);
+            this.comboBoxCarrier.Name = "comboBoxCarrier";
+            this.comboBoxCarrier.Size = new System.Drawing.Size(120, 21);
+            this.comboBoxCarrier.TabIndex = 0;
+            this.comboBoxCarrier.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
+            this.comboBoxCarrier.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
+            // 
+            // comboBoxQEquipCategory
+            // 
+            this.comboBoxQEquipCategory.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBoxQEquipCategory.FormattingEnabled = true;
+            this.comboBoxQEquipCategory.Items.AddRange(new object[] {
+            "",
+            "Towers",
+            "Pumps",
+            "Other"});
+            this.comboBoxQEquipCategory.Location = new System.Drawing.Point(98, 264);
+            this.comboBoxQEquipCategory.Name = "comboBoxQEquipCategory";
+            this.comboBoxQEquipCategory.Size = new System.Drawing.Size(233, 21);
+            this.comboBoxQEquipCategory.TabIndex = 15;
+            this.comboBoxQEquipCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
+            this.comboBoxQEquipCategory.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
+            // 
+            // comboBoxQTerms
+            // 
+            this.comboBoxQTerms.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBoxQTerms.FormattingEnabled = true;
+            this.comboBoxQTerms.Items.AddRange(new object[] {
+            "",
+            "NET 30 Days",
+            "Cash",
+            "COD",
+            "VISA",
+            "Mastercard",
+            "Upon Delivery"});
+            this.comboBoxQTerms.Location = new System.Drawing.Point(432, 114);
+            this.comboBoxQTerms.Name = "comboBoxQTerms";
+            this.comboBoxQTerms.Size = new System.Drawing.Size(233, 21);
+            this.comboBoxQTerms.TabIndex = 11;
+            this.comboBoxQTerms.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
+            this.comboBoxQTerms.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
+            // 
+            // comboBoxQDelivery
+            // 
+            this.comboBoxQDelivery.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBoxQDelivery.FormattingEnabled = true;
+            this.comboBoxQDelivery.Items.AddRange(new object[] {
+            "",
+            "2-3 Days",
+            "1 Week",
+            "1-2 Weeks",
+            "2-3 Weeks",
+            "3-4 Weeks",
+            "4-5 Weeks",
+            "5-6 Weeks"});
+            this.comboBoxQDelivery.Location = new System.Drawing.Point(432, 87);
+            this.comboBoxQDelivery.Name = "comboBoxQDelivery";
+            this.comboBoxQDelivery.Size = new System.Drawing.Size(233, 21);
+            this.comboBoxQDelivery.TabIndex = 10;
+            this.comboBoxQDelivery.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
+            this.comboBoxQDelivery.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             // 
             // FormMain
             // 

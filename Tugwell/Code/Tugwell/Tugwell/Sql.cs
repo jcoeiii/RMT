@@ -35,7 +35,7 @@ namespace Tugwell
             }
         }
 
-        static public void AppendNewTableWithDefaultRow()
+        static public void AppendNewTableWithDefaultRow(string version)
         {
             #region New Version Table creator string
 
@@ -71,7 +71,7 @@ namespace Tugwell
 
                     com.CommandText = sb.ToString();
 
-                    com.Parameters.AddWithValue("@DBVersion", "2");
+                    com.Parameters.AddWithValue("@DBVersion", version);
                     com.Parameters.AddWithValue("@Spare1", "");
                     com.Parameters.AddWithValue("@Spare2", "");
 
@@ -138,6 +138,25 @@ namespace Tugwell
                 }
             }
             return list;
+        }
+
+        static public void RemoveVersionTable()
+        {
+            SQLiteConnection con = GetConnection();
+            {
+                using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand("SET ARITHABORT ON", con))
+                {
+                    try
+                    {
+                        com.CommandText = "DROP Table VersionTable";
+                        com.ExecuteNonQuery();
+                    }
+                    catch (SqlException ex)
+                    {
+                        MessageBox.Show("Database error: " + ex.Message);
+                    }
+                }
+            }
         }
 
         static public void CreateNewDbase()

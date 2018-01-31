@@ -18,7 +18,7 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V9.1 2018_01_23";
+            this.Text = "Tugwell V9.3 2018_01_31";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
@@ -195,14 +195,32 @@ namespace Tugwell
             if (items != null && items.Count() == 3)
             {
                 string ver = items[0];
-                if (ver != db_version)
+                if (ver == "0")
+                {
+                    // we need to upgrade the database with more spare fields for Orders
+                    //Sql.AddNewTableCol("OrderTable", "Spare6");
+                    //Sql.AddNewTableCol("OrderTable", "Spare7");
+                    //Sql.AddNewTableCol("OrderTable", "Spare8");
+                    //Sql.AddNewTableCol("OrderTable", "Spare9");
+                    //Sql.AddNewTableCol("OrderTable", "Spare10");
+                    //Sql.AddNewTableCol("OrderTable", "Spare11");
+                    //Sql.AddNewTableCol("OrderTable", "Spare12");
+                    //Sql.AddNewTableCol("OrderTable", "Spare13");
+                    //Sql.AddNewTableCol("OrderTable", "Spare14");
+                    //Sql.AddNewTableCol("OrderTable", "Spare15");
+
+                    //// finialize and bring version table to next version
+                    //Sql.RemoveVersionTable();
+                    //Sql.AppendNewTableWithDefaultRow(db_version);
+                }
+                else if (ver != db_version)
                 {
                     MessageBox.Show(this, "Database version different: " + ver);
                 }
             }
             else
             {
-                Sql.AppendNewTableWithDefaultRow();
+                Sql.AppendNewTableWithDefaultRow(db_version);
             }
 
 
@@ -2245,7 +2263,7 @@ namespace Tugwell
             _POOrderFirst = 30100;
             _QuoteNoFirst = 7000;
 
-            ((Control)this.tabPageMarley).Enabled = true;
+            //((Control)this.tabPageMarley).Enabled = true;
 
             this.groupBox2.Text = "RMT Delivery to Customer";
             this.comboBoxCarrier.Items.Clear(); 
@@ -2301,7 +2319,7 @@ namespace Tugwell
             _POOrderFirst = 60000;
             _QuoteNoFirst = 12000;
 
-            ((Control)this.tabPageMarley).Enabled = false;
+            //((Control)this.tabPageMarley).Enabled = false;
 
             this.groupBox2.Text = "TPS Delivery to Customer";
             this.comboBoxCarrier.Items.Clear();

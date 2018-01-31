@@ -62,6 +62,7 @@ namespace Tugwell
                 "CheckNumbers",
                 "Date",
                 "InvNumber",
+                "SalesAss",
                 "All Descriptions"});
 
                 //    //"Any Field",
