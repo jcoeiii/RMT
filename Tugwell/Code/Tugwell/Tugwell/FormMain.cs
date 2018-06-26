@@ -18,7 +18,7 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V9.3 2018_01_31";
+            this.Text = "Tugwell V9.4 2018_06_26";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
@@ -147,6 +147,9 @@ namespace Tugwell
 
         private bool _isLetterControlEnabled = true;
         private List<int> _letterRows = new List<int>();
+
+        private bool onetime_killOrderComboEvent = false;
+        private bool onetime_killQuoteComboEvent = false;
 
         #endregion
 
@@ -801,9 +804,21 @@ namespace Tugwell
 
         private void autoSelectSignature()
         {
-            this.toolStripComboBoxSignature.SelectedIndex = (this._isOrdersSelected) ?
+            if (this.toolStripComboBoxSignature.SelectedIndex != ((this._isOrdersSelected) ?
                 this.comboBoxSalesAss.SelectedIndex :
-                this.comboBoxQSalesAss.SelectedIndex;
+                this.comboBoxQSalesAss.SelectedIndex))
+            {
+                if (this._isOrdersSelected)
+                {
+                    onetime_killOrderComboEvent = true;
+                    this.toolStripComboBoxSignature.SelectedIndex = this.comboBoxSalesAss.SelectedIndex;
+                }
+                else
+                {
+                    onetime_killQuoteComboEvent = true;
+                    this.toolStripComboBoxSignature.SelectedIndex = this.comboBoxQSalesAss.SelectedIndex;
+                }
+            }
         }
 
         private void comboBoxSalesAss_SelectionChangeCommitted(object sender, EventArgs e)
@@ -967,6 +982,11 @@ namespace Tugwell
             this._isAction = true;
             if (killOrderComboEvent)
                 return;
+            if (onetime_killOrderComboEvent)
+            {
+                onetime_killOrderComboEvent = false;
+                return;
+            }
 
             // if this is the first combo box change save index, and put back
             int index = ((ComboBox)sender).SelectedIndex;
@@ -1059,6 +1079,11 @@ namespace Tugwell
             this._isAction = true;
             if (killQuoteComboEvent)
                 return;
+            if (onetime_killQuoteComboEvent)
+            {
+                onetime_killQuoteComboEvent = false;
+                return;
+            }
 
             // if this is the first combo box change save index, and put back
             int index = ((ComboBox)sender).SelectedIndex;
@@ -2341,7 +2366,9 @@ namespace Tugwell
             "Randy Swindle",
             "Marsha Outlaw",
             "Warehouse",
-            "Bernice Williams"});
+            "Bernice Williams",
+            "Mark Gilmore",
+            "Carl Hilgenberg"});
             this.comboBoxQSalesAss.Items.Clear();
             this.comboBoxQSalesAss.Items.AddRange(new object[] {
             "",
@@ -2350,7 +2377,9 @@ namespace Tugwell
             "Randy Swindle",
             "Marsha Outlaw",
             "Warehouse",
-            "Bernice Williams"});
+            "Bernice Williams",
+            "Mark Gilmore",
+            "Carl Hilgenberg"});
             this.toolStripComboBoxSignature.Items.Clear();
             this.toolStripComboBoxSignature.Items.AddRange(new object[] {
             "No Signature",
@@ -2359,9 +2388,122 @@ namespace Tugwell
             "Randy\'s",
             "Marsha\'s",
             "Warehouse\'s",
-            "Bernice Williams\'"});
+            "Bernice Williams\'",
+            "Mark Gilmore's",
+            "Carl Hilgenberg's"});
 
             loadStartup();
+        }
+
+        #endregion
+
+        #region Quote -> Order Copy
+
+        private void duplicateCurrentQuoteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult sel = MessageBox.Show(this,
+                "The current Quote is: " + textBoxQPO.Text + Environment.NewLine +
+                "This will copy all Quote information into this Order and this action cannot be undone." + Environment.NewLine +
+                Environment.NewLine + "Continue?", "Confirm", MessageBoxButtons.YesNoCancel);
+
+            if (sel == System.Windows.Forms.DialogResult.Yes)
+            {
+                //textBoxDescription.Text = textBoxQHeader.Text;
+
+                numericUpDownOrderCount1.Text = numericUpDownQQuan1.Text;
+                textBoxOrderDescr1.Text = textBoxQDescription1.Text;
+                numericUpDownOrderCost1.Text = numericUpDownQCost1.Text;
+
+                numericUpDownOrderCount2.Text = numericUpDownQQuan2.Text;
+                textBoxOrderDescr2.Text = textBoxQDescription2.Text;
+                numericUpDownOrderCost2.Text = numericUpDownQCost2.Text;
+
+                numericUpDownOrderCount3.Text = numericUpDownQQuan3.Text;
+                textBoxOrderDescr3.Text = textBoxQDescription3.Text;
+                numericUpDownOrderCost3.Text = numericUpDownQCost3.Text;
+
+                numericUpDownOrderCount4.Text = numericUpDownQQuan4.Text;
+                textBoxOrderDescr4.Text = textBoxQDescription4.Text;
+                numericUpDownOrderCost4.Text = numericUpDownQCost4.Text;
+
+                numericUpDownOrderCount5.Text = numericUpDownQQuan5.Text;
+                textBoxOrderDescr5.Text = textBoxQDescription5.Text;
+                numericUpDownOrderCost5.Text = numericUpDownQCost5.Text;
+
+                numericUpDownOrderCount6.Text = numericUpDownQQuan6.Text;
+                textBoxOrderDescr6.Text = textBoxQDescription6.Text;
+                numericUpDownOrderCost6.Text = numericUpDownQCost6.Text;
+
+                numericUpDownOrderCount7.Text = numericUpDownQQuan7.Text;
+                textBoxOrderDescr7.Text = textBoxQDescription7.Text;
+                numericUpDownOrderCost7.Text = numericUpDownQCost7.Text;
+
+                numericUpDownOrderCount8.Text = numericUpDownQQuan8.Text;
+                textBoxOrderDescr8.Text = textBoxQDescription8.Text;
+                numericUpDownOrderCost8.Text = numericUpDownQCost8.Text;
+
+                numericUpDownOrderCount9.Text = numericUpDownQQuan9.Text;
+                textBoxOrderDescr9.Text = textBoxQDescription9.Text;
+                numericUpDownOrderCost9.Text = numericUpDownQCost9.Text;
+
+                numericUpDownOrderCount10.Text = numericUpDownQQuan10.Text;
+                textBoxOrderDescr10.Text = textBoxQDescription10.Text;
+                numericUpDownOrderCost10.Text = numericUpDownQCost10.Text;
+
+                numericUpDownOrderCount11.Text = numericUpDownQQuan11.Text;
+                textBoxOrderDescr11.Text = textBoxQDescription11.Text;
+                numericUpDownOrderCost11.Text = numericUpDownQCost11.Text;
+
+                numericUpDownOrderCount12.Text = numericUpDownQQuan12.Text;
+                textBoxOrderDescr12.Text = textBoxQDescription12.Text;
+                numericUpDownOrderCost12.Text = numericUpDownQCost12.Text;
+
+                numericUpDownOrderCount13.Text = numericUpDownQQuan13.Text;
+                textBoxOrderDescr13.Text = textBoxQDescription13.Text;
+                numericUpDownOrderCost13.Text = numericUpDownQCost13.Text;
+
+                numericUpDownOrderCount14.Text = numericUpDownQQuan14.Text;
+                textBoxOrderDescr14.Text = textBoxQDescription14.Text;
+                numericUpDownOrderCost14.Text = numericUpDownQCost14.Text;
+
+                numericUpDownOrderCount15.Text = numericUpDownQQuan15.Text;
+                textBoxOrderDescr15.Text = textBoxQDescription15.Text;
+                numericUpDownOrderCost15.Text = numericUpDownQCost15.Text;
+
+                numericUpDownOrderCount16.Text = numericUpDownQQuan16.Text;
+                textBoxOrderDescr16.Text = textBoxQDescription16.Text;
+                numericUpDownOrderCost16.Text = numericUpDownQCost16.Text;
+
+                numericUpDownOrderCount17.Text = numericUpDownQQuan17.Text;
+                textBoxOrderDescr17.Text = textBoxQDescription17.Text;
+                numericUpDownOrderCost17.Text = numericUpDownQCost17.Text;
+
+                numericUpDownOrderCount18.Text = numericUpDownQQuan18.Text;
+                textBoxOrderDescr18.Text = textBoxQDescription18.Text;
+                numericUpDownOrderCost18.Text = numericUpDownQCost18.Text;
+
+                numericUpDownOrderCount19.Text = numericUpDownQQuan19.Text;
+                textBoxOrderDescr19.Text = textBoxQDescription19.Text;
+                numericUpDownOrderCost19.Text = numericUpDownQCost19.Text;
+
+                numericUpDownOrderCount20.Text = numericUpDownQQuan20.Text;
+                textBoxOrderDescr20.Text = textBoxQDescription20.Text;
+                numericUpDownOrderCost20.Text = numericUpDownQCost20.Text;
+
+                numericUpDownOrderCount21.Text = numericUpDownQQuan21.Text;
+                textBoxOrderDescr21.Text = textBoxQDescription21.Text;
+                numericUpDownOrderCost21.Text = numericUpDownQCost21.Text;
+
+                numericUpDownOrderCount22.Text = numericUpDownQQuan22.Text;
+                textBoxOrderDescr22.Text = textBoxQDescription22.Text;
+                numericUpDownOrderCost22.Text = numericUpDownQCost22.Text;
+
+                numericUpDownOrderCount23.Text = numericUpDownQQuan23.Text;
+                textBoxOrderDescr23.Text = textBoxQDescription23.Text;
+                numericUpDownOrderCost23.Text = numericUpDownQCost23.Text;
+
+                MessageBox.Show(this, "Copy Completed.");
+            }
         }
 
         #endregion

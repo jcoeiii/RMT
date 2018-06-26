@@ -266,6 +266,8 @@
     <None Include="Resources\randy.png" />
     <None Include="Resources\marsha3.png" />
     <None Include="Resources\bernice.png" />
+    <None Include="Resources\carl.png" />
+    <None Include="Resources\mark.png" />
     <Content Include="tugIcon.ico" />
   </ItemGroup>
   <ItemGroup>

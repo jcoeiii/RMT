@@ -313,29 +313,6 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.buttonLine23 = new System.Windows.Forms.Button();
-            this.buttonLine22 = new System.Windows.Forms.Button();
-            this.buttonLine21 = new System.Windows.Forms.Button();
-            this.buttonLine20 = new System.Windows.Forms.Button();
-            this.buttonLine19 = new System.Windows.Forms.Button();
-            this.buttonLine18 = new System.Windows.Forms.Button();
-            this.buttonLine17 = new System.Windows.Forms.Button();
-            this.buttonLine16 = new System.Windows.Forms.Button();
-            this.buttonLine15 = new System.Windows.Forms.Button();
-            this.buttonLine14 = new System.Windows.Forms.Button();
-            this.buttonLine13 = new System.Windows.Forms.Button();
-            this.buttonLine12 = new System.Windows.Forms.Button();
-            this.buttonLine11 = new System.Windows.Forms.Button();
-            this.buttonLine10 = new System.Windows.Forms.Button();
-            this.buttonLine9 = new System.Windows.Forms.Button();
-            this.buttonLine8 = new System.Windows.Forms.Button();
-            this.buttonLine7 = new System.Windows.Forms.Button();
-            this.buttonLine6 = new System.Windows.Forms.Button();
-            this.buttonLine5 = new System.Windows.Forms.Button();
-            this.buttonLine4 = new System.Windows.Forms.Button();
-            this.buttonLine3 = new System.Windows.Forms.Button();
-            this.buttonLine2 = new System.Windows.Forms.Button();
-            this.buttonLine1 = new System.Windows.Forms.Button();
             this.tabPageAccounting = new System.Windows.Forms.TabPage();
             this.label64 = new System.Windows.Forms.Label();
             this.richTextBoxAccNotes = new System.Windows.Forms.RichTextBox();
@@ -397,7 +374,6 @@
             this.textBoxSoldToReadOnly = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxPO = new System.Windows.Forms.TextBox();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.textBoxEndUser = new System.Windows.Forms.TextBox();
@@ -581,6 +557,68 @@
             this.label74 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
+            this.tabPageQuoateNotes = new System.Windows.Forms.TabPage();
+            this.label69 = new System.Windows.Forms.Label();
+            this.richTextBoxQDeliveryNotes = new System.Windows.Forms.RichTextBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.richTextBoxQQuoteNotes = new System.Windows.Forms.RichTextBox();
+            this.label68 = new System.Windows.Forms.Label();
+            this.richTextBoxQInvoicingNotes = new System.Windows.Forms.RichTextBox();
+            this.groupBoxQuotes = new System.Windows.Forms.GroupBox();
+            this.textBoxQQuotedPriceReadOnly = new System.Windows.Forms.TextBox();
+            this.label93 = new System.Windows.Forms.Label();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
+            this.textBoxQCompanyReadOnly = new System.Windows.Forms.TextBox();
+            this.comboBoxQStatus = new System.Windows.Forms.ComboBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBoxQPO = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.textBoxQCustomerPO = new System.Windows.Forms.TextBox();
+            this.comboBoxQSalesAss = new System.Windows.Forms.ComboBox();
+            this.label61 = new System.Windows.Forms.Label();
+            this.textBoxQDate = new System.Windows.Forms.TextBox();
+            this.textBoxQJobName = new System.Windows.Forms.TextBox();
+            this.label63 = new System.Windows.Forms.Label();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.buttonRecordTop = new System.Windows.Forms.Button();
+            this.buttonRecordGo1Less = new System.Windows.Forms.Button();
+            this.buttonRecordGo1More = new System.Windows.Forms.Button();
+            this.buttonRecordBottom = new System.Windows.Forms.Button();
+            this.textBoxRecordNo = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.comboBoxYearControl = new System.Windows.Forms.ComboBox();
+            this.textBoxRecordOf = new System.Windows.Forms.TextBox();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.duplicateCurrentQuoteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonSave = new System.Windows.Forms.Button();
+            this.buttonLine23 = new System.Windows.Forms.Button();
+            this.buttonLine22 = new System.Windows.Forms.Button();
+            this.buttonLine21 = new System.Windows.Forms.Button();
+            this.buttonLine20 = new System.Windows.Forms.Button();
+            this.buttonLine19 = new System.Windows.Forms.Button();
+            this.buttonLine18 = new System.Windows.Forms.Button();
+            this.buttonLine17 = new System.Windows.Forms.Button();
+            this.buttonLine16 = new System.Windows.Forms.Button();
+            this.buttonLine15 = new System.Windows.Forms.Button();
+            this.buttonLine14 = new System.Windows.Forms.Button();
+            this.buttonLine13 = new System.Windows.Forms.Button();
+            this.buttonLine12 = new System.Windows.Forms.Button();
+            this.buttonLine11 = new System.Windows.Forms.Button();
+            this.buttonLine10 = new System.Windows.Forms.Button();
+            this.buttonLine9 = new System.Windows.Forms.Button();
+            this.buttonLine8 = new System.Windows.Forms.Button();
+            this.buttonLine7 = new System.Windows.Forms.Button();
+            this.buttonLine6 = new System.Windows.Forms.Button();
+            this.buttonLine5 = new System.Windows.Forms.Button();
+            this.buttonLine4 = new System.Windows.Forms.Button();
+            this.buttonLine3 = new System.Windows.Forms.Button();
+            this.buttonLine2 = new System.Windows.Forms.Button();
+            this.buttonLine1 = new System.Windows.Forms.Button();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.buttonQLine23 = new System.Windows.Forms.Button();
             this.buttonQLine22 = new System.Windows.Forms.Button();
             this.buttonQLine21 = new System.Windows.Forms.Button();
@@ -604,43 +642,7 @@
             this.buttonQLine3 = new System.Windows.Forms.Button();
             this.buttonQLine2 = new System.Windows.Forms.Button();
             this.buttonQLine1 = new System.Windows.Forms.Button();
-            this.tabPageQuoateNotes = new System.Windows.Forms.TabPage();
-            this.label69 = new System.Windows.Forms.Label();
-            this.richTextBoxQDeliveryNotes = new System.Windows.Forms.RichTextBox();
-            this.label67 = new System.Windows.Forms.Label();
-            this.richTextBoxQQuoteNotes = new System.Windows.Forms.RichTextBox();
-            this.label68 = new System.Windows.Forms.Label();
-            this.richTextBoxQInvoicingNotes = new System.Windows.Forms.RichTextBox();
-            this.groupBoxQuotes = new System.Windows.Forms.GroupBox();
-            this.textBoxQQuotedPriceReadOnly = new System.Windows.Forms.TextBox();
-            this.label93 = new System.Windows.Forms.Label();
-            this.label90 = new System.Windows.Forms.Label();
-            this.label84 = new System.Windows.Forms.Label();
-            this.textBoxQCompanyReadOnly = new System.Windows.Forms.TextBox();
-            this.comboBoxQStatus = new System.Windows.Forms.ComboBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.textBoxQPO = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.textBoxQCustomerPO = new System.Windows.Forms.TextBox();
-            this.comboBoxQSalesAss = new System.Windows.Forms.ComboBox();
-            this.label61 = new System.Windows.Forms.Label();
-            this.textBoxQDate = new System.Windows.Forms.TextBox();
-            this.textBoxQJobName = new System.Windows.Forms.TextBox();
-            this.label63 = new System.Windows.Forms.Label();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.buttonRecordTop = new System.Windows.Forms.Button();
-            this.buttonRecordGo1Less = new System.Windows.Forms.Button();
-            this.buttonRecordGo1More = new System.Windows.Forms.Button();
-            this.buttonRecordBottom = new System.Windows.Forms.Button();
-            this.textBoxRecordNo = new System.Windows.Forms.TextBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.comboBoxYearControl = new System.Windows.Forms.ComboBox();
-            this.buttonSave = new System.Windows.Forms.Button();
-            this.textBoxRecordOf = new System.Windows.Forms.TextBox();
             this.comboBoxCarrier = new Tugwell.CustomComboBox();
             this.comboBoxQEquipCategory = new Tugwell.CustomComboBox();
             this.comboBoxQTerms = new Tugwell.CustomComboBox();
@@ -741,7 +743,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPaid1)).BeginInit();
             this.tabPageNotes.SuspendLayout();
             this.groupBoxOrders.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.tabPageQuotes.SuspendLayout();
             this.tabControlQuotesSub.SuspendLayout();
             this.tabPageQuoteGeneral.SuspendLayout();
@@ -849,9 +850,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQCost1)).BeginInit();
             this.tabPageQuoateNotes.SuspendLayout();
             this.groupBoxQuotes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -936,7 +938,10 @@
             "Justin\'s",
             "Roy\'s",
             "Warehouse\'s",
-            "Marsha\'s"});
+            "Marsha\'s",
+            "Bernice\'s",
+            "Mark\'s",
+            "Carl\'s"});
             this.toolStripComboBoxSignature.Name = "toolStripComboBoxSignature";
             this.toolStripComboBoxSignature.Size = new System.Drawing.Size(121, 23);
             // 
@@ -1001,7 +1006,9 @@
             this.toolStripSeparator1,
             this.nextCurrentLetterToolStripMenuItem,
             this.toolStripSeparator6,
-            this.gotoToolStripMenuItem1});
+            this.gotoToolStripMenuItem1,
+            this.toolStripSeparator9,
+            this.duplicateCurrentQuoteToolStripMenuItem});
             this.pONumberToolStripMenuItem.Name = "pONumberToolStripMenuItem";
             this.pONumberToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.pONumberToolStripMenuItem.Text = "PO Order #";
@@ -1009,45 +1016,45 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.newToolStripMenuItem.Text = "New Sales Order";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // newStockOrderTToolStripMenuItem
             // 
             this.newStockOrderTToolStripMenuItem.Name = "newStockOrderTToolStripMenuItem";
-            this.newStockOrderTToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.newStockOrderTToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.newStockOrderTToolStripMenuItem.Text = "New Stock Order(T)";
             this.newStockOrderTToolStripMenuItem.Click += new System.EventHandler(this.newStockOrderTToolStripMenuItem_Click);
             // 
             // newWarrantyToolStripMenuItem
             // 
             this.newWarrantyToolStripMenuItem.Name = "newWarrantyToolStripMenuItem";
-            this.newWarrantyToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.newWarrantyToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.newWarrantyToolStripMenuItem.Text = "New Warranty Order(W)";
             this.newWarrantyToolStripMenuItem.Click += new System.EventHandler(this.newWarrantyToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(198, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(200, 6);
             // 
             // nextCurrentLetterToolStripMenuItem
             // 
             this.nextCurrentLetterToolStripMenuItem.Name = "nextCurrentLetterToolStripMenuItem";
-            this.nextCurrentLetterToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.nextCurrentLetterToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.nextCurrentLetterToolStripMenuItem.Text = "Next Current Letter";
             this.nextCurrentLetterToolStripMenuItem.Click += new System.EventHandler(this.nextCurrentLetterToolStripMenuItem_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(198, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(200, 6);
             // 
             // gotoToolStripMenuItem1
             // 
             this.gotoToolStripMenuItem1.Name = "gotoToolStripMenuItem1";
-            this.gotoToolStripMenuItem1.Size = new System.Drawing.Size(201, 22);
+            this.gotoToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
             this.gotoToolStripMenuItem1.Text = "Goto";
             this.gotoToolStripMenuItem1.Click += new System.EventHandler(this.gotoToolStripMenuItem1_Click);
             // 
@@ -5102,258 +5109,6 @@
             this.label36.TabIndex = 33;
             this.label36.Text = "Quote Price:";
             // 
-            // buttonLine23
-            // 
-            this.buttonLine23.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine23.Image")));
-            this.buttonLine23.Location = new System.Drawing.Point(6, 521);
-            this.buttonLine23.Name = "buttonLine23";
-            this.buttonLine23.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine23.TabIndex = 92;
-            this.buttonLine23.Tag = "23";
-            this.buttonLine23.UseVisualStyleBackColor = true;
-            this.buttonLine23.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine22
-            // 
-            this.buttonLine22.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine22.Image")));
-            this.buttonLine22.Location = new System.Drawing.Point(6, 500);
-            this.buttonLine22.Name = "buttonLine22";
-            this.buttonLine22.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine22.TabIndex = 91;
-            this.buttonLine22.Tag = "22";
-            this.buttonLine22.UseVisualStyleBackColor = true;
-            this.buttonLine22.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine21
-            // 
-            this.buttonLine21.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine21.Image")));
-            this.buttonLine21.Location = new System.Drawing.Point(6, 479);
-            this.buttonLine21.Name = "buttonLine21";
-            this.buttonLine21.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine21.TabIndex = 90;
-            this.buttonLine21.UseVisualStyleBackColor = true;
-            this.buttonLine21.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine20
-            // 
-            this.buttonLine20.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine20.Image")));
-            this.buttonLine20.Location = new System.Drawing.Point(6, 458);
-            this.buttonLine20.Name = "buttonLine20";
-            this.buttonLine20.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine20.TabIndex = 89;
-            this.buttonLine20.Tag = "20";
-            this.buttonLine20.UseVisualStyleBackColor = true;
-            this.buttonLine20.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine19
-            // 
-            this.buttonLine19.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine19.Image")));
-            this.buttonLine19.Location = new System.Drawing.Point(6, 437);
-            this.buttonLine19.Name = "buttonLine19";
-            this.buttonLine19.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine19.TabIndex = 88;
-            this.buttonLine19.Tag = "19";
-            this.buttonLine19.UseVisualStyleBackColor = true;
-            this.buttonLine19.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine18
-            // 
-            this.buttonLine18.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine18.Image")));
-            this.buttonLine18.Location = new System.Drawing.Point(6, 416);
-            this.buttonLine18.Name = "buttonLine18";
-            this.buttonLine18.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine18.TabIndex = 87;
-            this.buttonLine18.Tag = "18";
-            this.buttonLine18.UseVisualStyleBackColor = true;
-            this.buttonLine18.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine17
-            // 
-            this.buttonLine17.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine17.Image")));
-            this.buttonLine17.Location = new System.Drawing.Point(6, 395);
-            this.buttonLine17.Name = "buttonLine17";
-            this.buttonLine17.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine17.TabIndex = 86;
-            this.buttonLine17.Tag = "17";
-            this.buttonLine17.UseVisualStyleBackColor = true;
-            this.buttonLine17.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine16
-            // 
-            this.buttonLine16.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine16.Image")));
-            this.buttonLine16.Location = new System.Drawing.Point(6, 374);
-            this.buttonLine16.Name = "buttonLine16";
-            this.buttonLine16.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine16.TabIndex = 85;
-            this.buttonLine16.Tag = "16";
-            this.buttonLine16.UseVisualStyleBackColor = true;
-            this.buttonLine16.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine15
-            // 
-            this.buttonLine15.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine15.Image")));
-            this.buttonLine15.Location = new System.Drawing.Point(6, 353);
-            this.buttonLine15.Name = "buttonLine15";
-            this.buttonLine15.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine15.TabIndex = 84;
-            this.buttonLine15.Tag = "15";
-            this.buttonLine15.UseVisualStyleBackColor = true;
-            this.buttonLine15.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine14
-            // 
-            this.buttonLine14.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine14.Image")));
-            this.buttonLine14.Location = new System.Drawing.Point(6, 332);
-            this.buttonLine14.Name = "buttonLine14";
-            this.buttonLine14.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine14.TabIndex = 83;
-            this.buttonLine14.Tag = "14";
-            this.buttonLine14.UseVisualStyleBackColor = true;
-            this.buttonLine14.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine13
-            // 
-            this.buttonLine13.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine13.Image")));
-            this.buttonLine13.Location = new System.Drawing.Point(6, 311);
-            this.buttonLine13.Name = "buttonLine13";
-            this.buttonLine13.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine13.TabIndex = 82;
-            this.buttonLine13.Tag = "13";
-            this.buttonLine13.UseVisualStyleBackColor = true;
-            this.buttonLine13.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine12
-            // 
-            this.buttonLine12.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine12.Image")));
-            this.buttonLine12.Location = new System.Drawing.Point(6, 290);
-            this.buttonLine12.Name = "buttonLine12";
-            this.buttonLine12.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine12.TabIndex = 81;
-            this.buttonLine12.Tag = "12";
-            this.buttonLine12.UseVisualStyleBackColor = true;
-            this.buttonLine12.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine11
-            // 
-            this.buttonLine11.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine11.Image")));
-            this.buttonLine11.Location = new System.Drawing.Point(6, 269);
-            this.buttonLine11.Name = "buttonLine11";
-            this.buttonLine11.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine11.TabIndex = 80;
-            this.buttonLine11.Tag = "11";
-            this.buttonLine11.UseVisualStyleBackColor = true;
-            this.buttonLine11.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine10
-            // 
-            this.buttonLine10.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine10.Image")));
-            this.buttonLine10.Location = new System.Drawing.Point(6, 248);
-            this.buttonLine10.Name = "buttonLine10";
-            this.buttonLine10.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine10.TabIndex = 79;
-            this.buttonLine10.Tag = "10";
-            this.buttonLine10.UseVisualStyleBackColor = true;
-            this.buttonLine10.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine9
-            // 
-            this.buttonLine9.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine9.Image")));
-            this.buttonLine9.Location = new System.Drawing.Point(6, 227);
-            this.buttonLine9.Name = "buttonLine9";
-            this.buttonLine9.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine9.TabIndex = 78;
-            this.buttonLine9.Tag = "9";
-            this.buttonLine9.UseVisualStyleBackColor = true;
-            this.buttonLine9.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine8
-            // 
-            this.buttonLine8.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine8.Image")));
-            this.buttonLine8.Location = new System.Drawing.Point(6, 206);
-            this.buttonLine8.Name = "buttonLine8";
-            this.buttonLine8.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine8.TabIndex = 77;
-            this.buttonLine8.Tag = "8";
-            this.buttonLine8.UseVisualStyleBackColor = true;
-            this.buttonLine8.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine7
-            // 
-            this.buttonLine7.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine7.Image")));
-            this.buttonLine7.Location = new System.Drawing.Point(6, 185);
-            this.buttonLine7.Name = "buttonLine7";
-            this.buttonLine7.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine7.TabIndex = 76;
-            this.buttonLine7.Tag = "7";
-            this.buttonLine7.UseVisualStyleBackColor = true;
-            this.buttonLine7.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine6
-            // 
-            this.buttonLine6.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine6.Image")));
-            this.buttonLine6.Location = new System.Drawing.Point(6, 164);
-            this.buttonLine6.Name = "buttonLine6";
-            this.buttonLine6.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine6.TabIndex = 75;
-            this.buttonLine6.Tag = "6";
-            this.buttonLine6.UseVisualStyleBackColor = true;
-            this.buttonLine6.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine5
-            // 
-            this.buttonLine5.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine5.Image")));
-            this.buttonLine5.Location = new System.Drawing.Point(6, 143);
-            this.buttonLine5.Name = "buttonLine5";
-            this.buttonLine5.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine5.TabIndex = 74;
-            this.buttonLine5.Tag = "5";
-            this.buttonLine5.UseVisualStyleBackColor = true;
-            this.buttonLine5.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine4
-            // 
-            this.buttonLine4.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine4.Image")));
-            this.buttonLine4.Location = new System.Drawing.Point(6, 122);
-            this.buttonLine4.Name = "buttonLine4";
-            this.buttonLine4.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine4.TabIndex = 73;
-            this.buttonLine4.Tag = "4";
-            this.buttonLine4.UseVisualStyleBackColor = true;
-            this.buttonLine4.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine3
-            // 
-            this.buttonLine3.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine3.Image")));
-            this.buttonLine3.Location = new System.Drawing.Point(6, 101);
-            this.buttonLine3.Name = "buttonLine3";
-            this.buttonLine3.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine3.TabIndex = 72;
-            this.buttonLine3.Tag = "3";
-            this.buttonLine3.UseVisualStyleBackColor = true;
-            this.buttonLine3.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine2
-            // 
-            this.buttonLine2.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine2.Image")));
-            this.buttonLine2.Location = new System.Drawing.Point(6, 80);
-            this.buttonLine2.Name = "buttonLine2";
-            this.buttonLine2.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine2.TabIndex = 71;
-            this.buttonLine2.Tag = "2";
-            this.buttonLine2.UseVisualStyleBackColor = true;
-            this.buttonLine2.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
-            // buttonLine1
-            // 
-            this.buttonLine1.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine1.Image")));
-            this.buttonLine1.Location = new System.Drawing.Point(6, 59);
-            this.buttonLine1.Name = "buttonLine1";
-            this.buttonLine1.Size = new System.Drawing.Size(24, 20);
-            this.buttonLine1.TabIndex = 70;
-            this.buttonLine1.Tag = "1";
-            this.buttonLine1.UseVisualStyleBackColor = true;
-            this.buttonLine1.Click += new System.EventHandler(this.buttonLine1_Click);
-            // 
             // tabPageAccounting
             // 
             this.tabPageAccounting.Controls.Add(this.label64);
@@ -6138,15 +5893,6 @@
             this.textBoxPO.Size = new System.Drawing.Size(101, 21);
             this.textBoxPO.TabIndex = 2;
             // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.BackgroundImage = global::Tugwell.Properties.Resources.tps;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(953, 42);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(79, 50);
-            this.pictureBoxLogo.TabIndex = 55;
-            this.pictureBoxLogo.TabStop = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -6185,7 +5931,10 @@
             "Justin Tugwell",
             "Roy Tugwell",
             "Warehouse",
-            "Marsha Outlaw"});
+            "Marsha Outlaw",
+            "Bernice Williams",
+            "Mark Gilmore",
+            "Carl Hilgenberg"});
             this.comboBoxSalesAss.Location = new System.Drawing.Point(106, 93);
             this.comboBoxSalesAss.Name = "comboBoxSalesAss";
             this.comboBoxSalesAss.Size = new System.Drawing.Size(120, 21);
@@ -9395,6 +9144,673 @@
             this.label76.TabIndex = 253;
             this.label76.Text = "QPr:";
             // 
+            // tabPageQuoateNotes
+            // 
+            this.tabPageQuoateNotes.Controls.Add(this.label69);
+            this.tabPageQuoateNotes.Controls.Add(this.richTextBoxQDeliveryNotes);
+            this.tabPageQuoateNotes.Controls.Add(this.label67);
+            this.tabPageQuoateNotes.Controls.Add(this.richTextBoxQQuoteNotes);
+            this.tabPageQuoateNotes.Controls.Add(this.label68);
+            this.tabPageQuoateNotes.Controls.Add(this.richTextBoxQInvoicingNotes);
+            this.tabPageQuoateNotes.Location = new System.Drawing.Point(4, 22);
+            this.tabPageQuoateNotes.Name = "tabPageQuoateNotes";
+            this.tabPageQuoateNotes.Size = new System.Drawing.Size(1032, 327);
+            this.tabPageQuoateNotes.TabIndex = 2;
+            this.tabPageQuoateNotes.Text = "Notes";
+            this.tabPageQuoateNotes.UseVisualStyleBackColor = true;
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.Location = new System.Drawing.Point(381, 17);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(94, 13);
+            this.label69.TabIndex = 42;
+            this.label69.Text = "Delivery Notes:";
+            // 
+            // richTextBoxQDeliveryNotes
+            // 
+            this.richTextBoxQDeliveryNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxQDeliveryNotes.Location = new System.Drawing.Point(384, 43);
+            this.richTextBoxQDeliveryNotes.Name = "richTextBoxQDeliveryNotes";
+            this.richTextBoxQDeliveryNotes.Size = new System.Drawing.Size(364, 96);
+            this.richTextBoxQDeliveryNotes.TabIndex = 41;
+            this.richTextBoxQDeliveryNotes.Text = "";
+            this.richTextBoxQDeliveryNotes.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
+            this.richTextBoxQDeliveryNotes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter3Tab_KeyDown);
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(11, 157);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(82, 13);
+            this.label67.TabIndex = 40;
+            this.label67.Text = "Quote Notes:";
+            // 
+            // richTextBoxQQuoteNotes
+            // 
+            this.richTextBoxQQuoteNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxQQuoteNotes.Location = new System.Drawing.Point(14, 183);
+            this.richTextBoxQQuoteNotes.Name = "richTextBoxQQuoteNotes";
+            this.richTextBoxQQuoteNotes.Size = new System.Drawing.Size(736, 96);
+            this.richTextBoxQQuoteNotes.TabIndex = 39;
+            this.richTextBoxQQuoteNotes.Text = "";
+            this.richTextBoxQQuoteNotes.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
+            this.richTextBoxQQuoteNotes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter3Tab_KeyDown);
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Location = new System.Drawing.Point(11, 17);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(100, 13);
+            this.label68.TabIndex = 38;
+            this.label68.Text = "Invoicing Notes:";
+            // 
+            // richTextBoxQInvoicingNotes
+            // 
+            this.richTextBoxQInvoicingNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxQInvoicingNotes.Location = new System.Drawing.Point(14, 43);
+            this.richTextBoxQInvoicingNotes.Name = "richTextBoxQInvoicingNotes";
+            this.richTextBoxQInvoicingNotes.Size = new System.Drawing.Size(364, 96);
+            this.richTextBoxQInvoicingNotes.TabIndex = 37;
+            this.richTextBoxQInvoicingNotes.Text = "";
+            this.richTextBoxQInvoicingNotes.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
+            this.richTextBoxQInvoicingNotes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter3Tab_KeyDown);
+            // 
+            // groupBoxQuotes
+            // 
+            this.groupBoxQuotes.Controls.Add(this.textBoxQQuotedPriceReadOnly);
+            this.groupBoxQuotes.Controls.Add(this.label93);
+            this.groupBoxQuotes.Controls.Add(this.label90);
+            this.groupBoxQuotes.Controls.Add(this.label84);
+            this.groupBoxQuotes.Controls.Add(this.textBoxQCompanyReadOnly);
+            this.groupBoxQuotes.Controls.Add(this.comboBoxQStatus);
+            this.groupBoxQuotes.Controls.Add(this.label21);
+            this.groupBoxQuotes.Controls.Add(this.textBoxQPO);
+            this.groupBoxQuotes.Controls.Add(this.pictureBox2);
+            this.groupBoxQuotes.Controls.Add(this.label23);
+            this.groupBoxQuotes.Controls.Add(this.label60);
+            this.groupBoxQuotes.Controls.Add(this.textBoxQCustomerPO);
+            this.groupBoxQuotes.Controls.Add(this.comboBoxQSalesAss);
+            this.groupBoxQuotes.Controls.Add(this.label61);
+            this.groupBoxQuotes.Controls.Add(this.textBoxQDate);
+            this.groupBoxQuotes.Controls.Add(this.textBoxQJobName);
+            this.groupBoxQuotes.Controls.Add(this.label63);
+            this.groupBoxQuotes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBoxQuotes.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxQuotes.Name = "groupBoxQuotes";
+            this.groupBoxQuotes.Size = new System.Drawing.Size(1040, 128);
+            this.groupBoxQuotes.TabIndex = 57;
+            this.groupBoxQuotes.TabStop = false;
+            // 
+            // textBoxQQuotedPriceReadOnly
+            // 
+            this.textBoxQQuotedPriceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxQQuotedPriceReadOnly.Location = new System.Drawing.Point(374, 65);
+            this.textBoxQQuotedPriceReadOnly.Name = "textBoxQQuotedPriceReadOnly";
+            this.textBoxQQuotedPriceReadOnly.ReadOnly = true;
+            this.textBoxQQuotedPriceReadOnly.Size = new System.Drawing.Size(121, 21);
+            this.textBoxQQuotedPriceReadOnly.TabIndex = 92;
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Location = new System.Drawing.Point(302, 68);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(72, 13);
+            this.label93.TabIndex = 91;
+            this.label93.Text = "Quoted Price:";
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Location = new System.Drawing.Point(314, 42);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(54, 13);
+            this.label90.TabIndex = 89;
+            this.label90.Text = "Company:";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(397, 17);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(40, 13);
+            this.label84.TabIndex = 57;
+            this.label84.Text = "Status:";
+            // 
+            // textBoxQCompanyReadOnly
+            // 
+            this.textBoxQCompanyReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxQCompanyReadOnly.Location = new System.Drawing.Point(374, 39);
+            this.textBoxQCompanyReadOnly.Name = "textBoxQCompanyReadOnly";
+            this.textBoxQCompanyReadOnly.ReadOnly = true;
+            this.textBoxQCompanyReadOnly.Size = new System.Drawing.Size(260, 21);
+            this.textBoxQCompanyReadOnly.TabIndex = 90;
+            // 
+            // comboBoxQStatus
+            // 
+            this.comboBoxQStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxQStatus.FormattingEnabled = true;
+            this.comboBoxQStatus.Items.AddRange(new object[] {
+            "",
+            "Quote",
+            "Submittal",
+            "Order",
+            "Invoice"});
+            this.comboBoxQStatus.Location = new System.Drawing.Point(439, 12);
+            this.comboBoxQStatus.Name = "comboBoxQStatus";
+            this.comboBoxQStatus.Size = new System.Drawing.Size(120, 21);
+            this.comboBoxQStatus.TabIndex = 56;
+            this.comboBoxQStatus.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(15, 16);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(49, 13);
+            this.label21.TabIndex = 1;
+            this.label21.Text = "Quote #:";
+            // 
+            // textBoxQPO
+            // 
+            this.textBoxQPO.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxQPO.Location = new System.Drawing.Point(75, 13);
+            this.textBoxQPO.Name = "textBoxQPO";
+            this.textBoxQPO.ReadOnly = true;
+            this.textBoxQPO.Size = new System.Drawing.Size(120, 21);
+            this.textBoxQPO.TabIndex = 2;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(15, 42);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(59, 13);
+            this.label23.TabIndex = 3;
+            this.label23.Text = "Cust. PO#:";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(15, 97);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(85, 13);
+            this.label60.TabIndex = 54;
+            this.label60.Text = "Sales Associate:";
+            // 
+            // textBoxQCustomerPO
+            // 
+            this.textBoxQCustomerPO.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxQCustomerPO.Location = new System.Drawing.Point(75, 39);
+            this.textBoxQCustomerPO.Name = "textBoxQCustomerPO";
+            this.textBoxQCustomerPO.Size = new System.Drawing.Size(221, 21);
+            this.textBoxQCustomerPO.TabIndex = 4;
+            this.textBoxQCustomerPO.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
+            this.textBoxQCustomerPO.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
+            this.textBoxQCustomerPO.Leave += new System.EventHandler(this.textBox_Leave);
+            // 
+            // comboBoxQSalesAss
+            // 
+            this.comboBoxQSalesAss.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxQSalesAss.FormattingEnabled = true;
+            this.comboBoxQSalesAss.Items.AddRange(new object[] {
+            "",
+            "Justin Tugwell",
+            "Roy Tugwell",
+            "Warehouse",
+            "Marsha Outlaw",
+            "Bernice Williams",
+            "Mark Gilmore",
+            "Carl Hilgenberg"});
+            this.comboBoxQSalesAss.Location = new System.Drawing.Point(106, 93);
+            this.comboBoxQSalesAss.Name = "comboBoxQSalesAss";
+            this.comboBoxQSalesAss.Size = new System.Drawing.Size(120, 21);
+            this.comboBoxQSalesAss.TabIndex = 53;
+            this.comboBoxQSalesAss.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
+            this.comboBoxQSalesAss.SelectionChangeCommitted += new System.EventHandler(this.comboBoxSalesAss_SelectionChangeCommitted);
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(15, 68);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(43, 13);
+            this.label61.TabIndex = 5;
+            this.label61.Text = "Project:";
+            // 
+            // textBoxQDate
+            // 
+            this.textBoxQDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxQDate.Location = new System.Drawing.Point(262, 13);
+            this.textBoxQDate.Name = "textBoxQDate";
+            this.textBoxQDate.Size = new System.Drawing.Size(112, 21);
+            this.textBoxQDate.TabIndex = 53;
+            this.textBoxQDate.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
+            this.textBoxQDate.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
+            this.textBoxQDate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
+            this.textBoxQDate.Leave += new System.EventHandler(this.textBoxDate_Leave);
+            // 
+            // textBoxQJobName
+            // 
+            this.textBoxQJobName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxQJobName.Location = new System.Drawing.Point(75, 65);
+            this.textBoxQJobName.Name = "textBoxQJobName";
+            this.textBoxQJobName.Size = new System.Drawing.Size(221, 21);
+            this.textBoxQJobName.TabIndex = 6;
+            this.textBoxQJobName.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
+            this.textBoxQJobName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
+            this.textBoxQJobName.Leave += new System.EventHandler(this.textBox_Leave);
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(223, 16);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(33, 13);
+            this.label63.TabIndex = 15;
+            this.label63.Text = "Date:";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel,
+            this.toolStripStatusLabel2});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 550);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1054, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel
+            // 
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
+            this.toolStripStatusLabel.Text = "Status:";
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(42, 17);
+            this.toolStripStatusLabel2.Text = "Status:";
+            // 
+            // buttonRecordTop
+            // 
+            this.buttonRecordTop.Location = new System.Drawing.Point(4, 13);
+            this.buttonRecordTop.Name = "buttonRecordTop";
+            this.buttonRecordTop.Size = new System.Drawing.Size(31, 23);
+            this.buttonRecordTop.TabIndex = 3;
+            this.buttonRecordTop.Text = "<<";
+            this.buttonRecordTop.UseVisualStyleBackColor = true;
+            this.buttonRecordTop.Click += new System.EventHandler(this.buttonRecordTop_Click);
+            // 
+            // buttonRecordGo1Less
+            // 
+            this.buttonRecordGo1Less.Location = new System.Drawing.Point(37, 13);
+            this.buttonRecordGo1Less.Name = "buttonRecordGo1Less";
+            this.buttonRecordGo1Less.Size = new System.Drawing.Size(31, 23);
+            this.buttonRecordGo1Less.TabIndex = 4;
+            this.buttonRecordGo1Less.Text = "<";
+            this.buttonRecordGo1Less.UseVisualStyleBackColor = true;
+            this.buttonRecordGo1Less.Click += new System.EventHandler(this.buttonRecordGo1Less_Click);
+            // 
+            // buttonRecordGo1More
+            // 
+            this.buttonRecordGo1More.Location = new System.Drawing.Point(165, 14);
+            this.buttonRecordGo1More.Name = "buttonRecordGo1More";
+            this.buttonRecordGo1More.Size = new System.Drawing.Size(31, 23);
+            this.buttonRecordGo1More.TabIndex = 5;
+            this.buttonRecordGo1More.Text = ">";
+            this.buttonRecordGo1More.UseVisualStyleBackColor = true;
+            this.buttonRecordGo1More.Click += new System.EventHandler(this.buttonRecordGo1More_Click);
+            // 
+            // buttonRecordBottom
+            // 
+            this.buttonRecordBottom.Location = new System.Drawing.Point(199, 14);
+            this.buttonRecordBottom.Name = "buttonRecordBottom";
+            this.buttonRecordBottom.Size = new System.Drawing.Size(31, 23);
+            this.buttonRecordBottom.TabIndex = 6;
+            this.buttonRecordBottom.Text = ">>";
+            this.buttonRecordBottom.UseVisualStyleBackColor = true;
+            this.buttonRecordBottom.Click += new System.EventHandler(this.buttonRecordBottom_Click);
+            // 
+            // textBoxRecordNo
+            // 
+            this.textBoxRecordNo.Location = new System.Drawing.Point(69, 16);
+            this.textBoxRecordNo.Name = "textBoxRecordNo";
+            this.textBoxRecordNo.Size = new System.Drawing.Size(38, 20);
+            this.textBoxRecordNo.TabIndex = 35;
+            this.textBoxRecordNo.Text = "1";
+            this.textBoxRecordNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxRecordNo_KeyPress);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.comboBoxYearControl);
+            this.groupBox3.Controls.Add(this.buttonSave);
+            this.groupBox3.Controls.Add(this.textBoxRecordOf);
+            this.groupBox3.Controls.Add(this.textBoxRecordNo);
+            this.groupBox3.Controls.Add(this.buttonRecordTop);
+            this.groupBox3.Controls.Add(this.buttonRecordBottom);
+            this.groupBox3.Controls.Add(this.buttonRecordGo1Less);
+            this.groupBox3.Controls.Add(this.buttonRecordGo1More);
+            this.groupBox3.Location = new System.Drawing.Point(526, 0);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(338, 41);
+            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Record Control";
+            // 
+            // comboBoxYearControl
+            // 
+            this.comboBoxYearControl.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxYearControl.FormattingEnabled = true;
+            this.comboBoxYearControl.Items.AddRange(new object[] {
+            "Older",
+            "2018"});
+            this.comboBoxYearControl.Location = new System.Drawing.Point(274, 15);
+            this.comboBoxYearControl.Name = "comboBoxYearControl";
+            this.comboBoxYearControl.Size = new System.Drawing.Size(58, 21);
+            this.comboBoxYearControl.TabIndex = 38;
+            // 
+            // textBoxRecordOf
+            // 
+            this.textBoxRecordOf.Location = new System.Drawing.Point(109, 16);
+            this.textBoxRecordOf.Name = "textBoxRecordOf";
+            this.textBoxRecordOf.ReadOnly = true;
+            this.textBoxRecordOf.Size = new System.Drawing.Size(52, 20);
+            this.textBoxRecordOf.TabIndex = 36;
+            this.textBoxRecordOf.Text = "of 1";
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(200, 6);
+            // 
+            // duplicateCurrentQuoteToolStripMenuItem
+            // 
+            this.duplicateCurrentQuoteToolStripMenuItem.Name = "duplicateCurrentQuoteToolStripMenuItem";
+            this.duplicateCurrentQuoteToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.duplicateCurrentQuoteToolStripMenuItem.Text = "Duplicate Current Quote";
+            this.duplicateCurrentQuoteToolStripMenuItem.Click += new System.EventHandler(this.duplicateCurrentQuoteToolStripMenuItem_Click);
+            // 
+            // buttonSave
+            // 
+            this.buttonSave.Image = global::Tugwell.Properties.Resources.save;
+            this.buttonSave.Location = new System.Drawing.Point(236, 14);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(31, 23);
+            this.buttonSave.TabIndex = 37;
+            this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            // 
+            // buttonLine23
+            // 
+            this.buttonLine23.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine23.Image")));
+            this.buttonLine23.Location = new System.Drawing.Point(6, 521);
+            this.buttonLine23.Name = "buttonLine23";
+            this.buttonLine23.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine23.TabIndex = 92;
+            this.buttonLine23.Tag = "23";
+            this.buttonLine23.UseVisualStyleBackColor = true;
+            this.buttonLine23.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine22
+            // 
+            this.buttonLine22.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine22.Image")));
+            this.buttonLine22.Location = new System.Drawing.Point(6, 500);
+            this.buttonLine22.Name = "buttonLine22";
+            this.buttonLine22.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine22.TabIndex = 91;
+            this.buttonLine22.Tag = "22";
+            this.buttonLine22.UseVisualStyleBackColor = true;
+            this.buttonLine22.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine21
+            // 
+            this.buttonLine21.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine21.Image")));
+            this.buttonLine21.Location = new System.Drawing.Point(6, 479);
+            this.buttonLine21.Name = "buttonLine21";
+            this.buttonLine21.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine21.TabIndex = 90;
+            this.buttonLine21.UseVisualStyleBackColor = true;
+            this.buttonLine21.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine20
+            // 
+            this.buttonLine20.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine20.Image")));
+            this.buttonLine20.Location = new System.Drawing.Point(6, 458);
+            this.buttonLine20.Name = "buttonLine20";
+            this.buttonLine20.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine20.TabIndex = 89;
+            this.buttonLine20.Tag = "20";
+            this.buttonLine20.UseVisualStyleBackColor = true;
+            this.buttonLine20.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine19
+            // 
+            this.buttonLine19.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine19.Image")));
+            this.buttonLine19.Location = new System.Drawing.Point(6, 437);
+            this.buttonLine19.Name = "buttonLine19";
+            this.buttonLine19.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine19.TabIndex = 88;
+            this.buttonLine19.Tag = "19";
+            this.buttonLine19.UseVisualStyleBackColor = true;
+            this.buttonLine19.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine18
+            // 
+            this.buttonLine18.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine18.Image")));
+            this.buttonLine18.Location = new System.Drawing.Point(6, 416);
+            this.buttonLine18.Name = "buttonLine18";
+            this.buttonLine18.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine18.TabIndex = 87;
+            this.buttonLine18.Tag = "18";
+            this.buttonLine18.UseVisualStyleBackColor = true;
+            this.buttonLine18.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine17
+            // 
+            this.buttonLine17.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine17.Image")));
+            this.buttonLine17.Location = new System.Drawing.Point(6, 395);
+            this.buttonLine17.Name = "buttonLine17";
+            this.buttonLine17.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine17.TabIndex = 86;
+            this.buttonLine17.Tag = "17";
+            this.buttonLine17.UseVisualStyleBackColor = true;
+            this.buttonLine17.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine16
+            // 
+            this.buttonLine16.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine16.Image")));
+            this.buttonLine16.Location = new System.Drawing.Point(6, 374);
+            this.buttonLine16.Name = "buttonLine16";
+            this.buttonLine16.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine16.TabIndex = 85;
+            this.buttonLine16.Tag = "16";
+            this.buttonLine16.UseVisualStyleBackColor = true;
+            this.buttonLine16.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine15
+            // 
+            this.buttonLine15.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine15.Image")));
+            this.buttonLine15.Location = new System.Drawing.Point(6, 353);
+            this.buttonLine15.Name = "buttonLine15";
+            this.buttonLine15.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine15.TabIndex = 84;
+            this.buttonLine15.Tag = "15";
+            this.buttonLine15.UseVisualStyleBackColor = true;
+            this.buttonLine15.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine14
+            // 
+            this.buttonLine14.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine14.Image")));
+            this.buttonLine14.Location = new System.Drawing.Point(6, 332);
+            this.buttonLine14.Name = "buttonLine14";
+            this.buttonLine14.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine14.TabIndex = 83;
+            this.buttonLine14.Tag = "14";
+            this.buttonLine14.UseVisualStyleBackColor = true;
+            this.buttonLine14.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine13
+            // 
+            this.buttonLine13.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine13.Image")));
+            this.buttonLine13.Location = new System.Drawing.Point(6, 311);
+            this.buttonLine13.Name = "buttonLine13";
+            this.buttonLine13.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine13.TabIndex = 82;
+            this.buttonLine13.Tag = "13";
+            this.buttonLine13.UseVisualStyleBackColor = true;
+            this.buttonLine13.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine12
+            // 
+            this.buttonLine12.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine12.Image")));
+            this.buttonLine12.Location = new System.Drawing.Point(6, 290);
+            this.buttonLine12.Name = "buttonLine12";
+            this.buttonLine12.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine12.TabIndex = 81;
+            this.buttonLine12.Tag = "12";
+            this.buttonLine12.UseVisualStyleBackColor = true;
+            this.buttonLine12.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine11
+            // 
+            this.buttonLine11.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine11.Image")));
+            this.buttonLine11.Location = new System.Drawing.Point(6, 269);
+            this.buttonLine11.Name = "buttonLine11";
+            this.buttonLine11.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine11.TabIndex = 80;
+            this.buttonLine11.Tag = "11";
+            this.buttonLine11.UseVisualStyleBackColor = true;
+            this.buttonLine11.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine10
+            // 
+            this.buttonLine10.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine10.Image")));
+            this.buttonLine10.Location = new System.Drawing.Point(6, 248);
+            this.buttonLine10.Name = "buttonLine10";
+            this.buttonLine10.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine10.TabIndex = 79;
+            this.buttonLine10.Tag = "10";
+            this.buttonLine10.UseVisualStyleBackColor = true;
+            this.buttonLine10.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine9
+            // 
+            this.buttonLine9.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine9.Image")));
+            this.buttonLine9.Location = new System.Drawing.Point(6, 227);
+            this.buttonLine9.Name = "buttonLine9";
+            this.buttonLine9.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine9.TabIndex = 78;
+            this.buttonLine9.Tag = "9";
+            this.buttonLine9.UseVisualStyleBackColor = true;
+            this.buttonLine9.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine8
+            // 
+            this.buttonLine8.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine8.Image")));
+            this.buttonLine8.Location = new System.Drawing.Point(6, 206);
+            this.buttonLine8.Name = "buttonLine8";
+            this.buttonLine8.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine8.TabIndex = 77;
+            this.buttonLine8.Tag = "8";
+            this.buttonLine8.UseVisualStyleBackColor = true;
+            this.buttonLine8.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine7
+            // 
+            this.buttonLine7.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine7.Image")));
+            this.buttonLine7.Location = new System.Drawing.Point(6, 185);
+            this.buttonLine7.Name = "buttonLine7";
+            this.buttonLine7.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine7.TabIndex = 76;
+            this.buttonLine7.Tag = "7";
+            this.buttonLine7.UseVisualStyleBackColor = true;
+            this.buttonLine7.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine6
+            // 
+            this.buttonLine6.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine6.Image")));
+            this.buttonLine6.Location = new System.Drawing.Point(6, 164);
+            this.buttonLine6.Name = "buttonLine6";
+            this.buttonLine6.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine6.TabIndex = 75;
+            this.buttonLine6.Tag = "6";
+            this.buttonLine6.UseVisualStyleBackColor = true;
+            this.buttonLine6.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine5
+            // 
+            this.buttonLine5.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine5.Image")));
+            this.buttonLine5.Location = new System.Drawing.Point(6, 143);
+            this.buttonLine5.Name = "buttonLine5";
+            this.buttonLine5.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine5.TabIndex = 74;
+            this.buttonLine5.Tag = "5";
+            this.buttonLine5.UseVisualStyleBackColor = true;
+            this.buttonLine5.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine4
+            // 
+            this.buttonLine4.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine4.Image")));
+            this.buttonLine4.Location = new System.Drawing.Point(6, 122);
+            this.buttonLine4.Name = "buttonLine4";
+            this.buttonLine4.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine4.TabIndex = 73;
+            this.buttonLine4.Tag = "4";
+            this.buttonLine4.UseVisualStyleBackColor = true;
+            this.buttonLine4.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine3
+            // 
+            this.buttonLine3.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine3.Image")));
+            this.buttonLine3.Location = new System.Drawing.Point(6, 101);
+            this.buttonLine3.Name = "buttonLine3";
+            this.buttonLine3.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine3.TabIndex = 72;
+            this.buttonLine3.Tag = "3";
+            this.buttonLine3.UseVisualStyleBackColor = true;
+            this.buttonLine3.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine2
+            // 
+            this.buttonLine2.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine2.Image")));
+            this.buttonLine2.Location = new System.Drawing.Point(6, 80);
+            this.buttonLine2.Name = "buttonLine2";
+            this.buttonLine2.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine2.TabIndex = 71;
+            this.buttonLine2.Tag = "2";
+            this.buttonLine2.UseVisualStyleBackColor = true;
+            this.buttonLine2.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // buttonLine1
+            // 
+            this.buttonLine1.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine1.Image")));
+            this.buttonLine1.Location = new System.Drawing.Point(6, 59);
+            this.buttonLine1.Name = "buttonLine1";
+            this.buttonLine1.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine1.TabIndex = 70;
+            this.buttonLine1.Tag = "1";
+            this.buttonLine1.UseVisualStyleBackColor = true;
+            this.buttonLine1.Click += new System.EventHandler(this.buttonLine1_Click);
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.BackgroundImage = global::Tugwell.Properties.Resources.tps;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(953, 42);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(79, 50);
+            this.pictureBoxLogo.TabIndex = 55;
+            this.pictureBoxLogo.TabStop = false;
+            // 
             // buttonQLine23
             // 
             this.buttonQLine23.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine23.Image")));
@@ -9647,189 +10063,6 @@
             this.buttonQLine1.UseVisualStyleBackColor = true;
             this.buttonQLine1.Click += new System.EventHandler(this.buttonQLine1_Click);
             // 
-            // tabPageQuoateNotes
-            // 
-            this.tabPageQuoateNotes.Controls.Add(this.label69);
-            this.tabPageQuoateNotes.Controls.Add(this.richTextBoxQDeliveryNotes);
-            this.tabPageQuoateNotes.Controls.Add(this.label67);
-            this.tabPageQuoateNotes.Controls.Add(this.richTextBoxQQuoteNotes);
-            this.tabPageQuoateNotes.Controls.Add(this.label68);
-            this.tabPageQuoateNotes.Controls.Add(this.richTextBoxQInvoicingNotes);
-            this.tabPageQuoateNotes.Location = new System.Drawing.Point(4, 22);
-            this.tabPageQuoateNotes.Name = "tabPageQuoateNotes";
-            this.tabPageQuoateNotes.Size = new System.Drawing.Size(1032, 327);
-            this.tabPageQuoateNotes.TabIndex = 2;
-            this.tabPageQuoateNotes.Text = "Notes";
-            this.tabPageQuoateNotes.UseVisualStyleBackColor = true;
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(381, 17);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(94, 13);
-            this.label69.TabIndex = 42;
-            this.label69.Text = "Delivery Notes:";
-            // 
-            // richTextBoxQDeliveryNotes
-            // 
-            this.richTextBoxQDeliveryNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxQDeliveryNotes.Location = new System.Drawing.Point(384, 43);
-            this.richTextBoxQDeliveryNotes.Name = "richTextBoxQDeliveryNotes";
-            this.richTextBoxQDeliveryNotes.Size = new System.Drawing.Size(364, 96);
-            this.richTextBoxQDeliveryNotes.TabIndex = 41;
-            this.richTextBoxQDeliveryNotes.Text = "";
-            this.richTextBoxQDeliveryNotes.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
-            this.richTextBoxQDeliveryNotes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter3Tab_KeyDown);
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(11, 157);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(82, 13);
-            this.label67.TabIndex = 40;
-            this.label67.Text = "Quote Notes:";
-            // 
-            // richTextBoxQQuoteNotes
-            // 
-            this.richTextBoxQQuoteNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxQQuoteNotes.Location = new System.Drawing.Point(14, 183);
-            this.richTextBoxQQuoteNotes.Name = "richTextBoxQQuoteNotes";
-            this.richTextBoxQQuoteNotes.Size = new System.Drawing.Size(736, 96);
-            this.richTextBoxQQuoteNotes.TabIndex = 39;
-            this.richTextBoxQQuoteNotes.Text = "";
-            this.richTextBoxQQuoteNotes.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
-            this.richTextBoxQQuoteNotes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter3Tab_KeyDown);
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(11, 17);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(100, 13);
-            this.label68.TabIndex = 38;
-            this.label68.Text = "Invoicing Notes:";
-            // 
-            // richTextBoxQInvoicingNotes
-            // 
-            this.richTextBoxQInvoicingNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxQInvoicingNotes.Location = new System.Drawing.Point(14, 43);
-            this.richTextBoxQInvoicingNotes.Name = "richTextBoxQInvoicingNotes";
-            this.richTextBoxQInvoicingNotes.Size = new System.Drawing.Size(364, 96);
-            this.richTextBoxQInvoicingNotes.TabIndex = 37;
-            this.richTextBoxQInvoicingNotes.Text = "";
-            this.richTextBoxQInvoicingNotes.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
-            this.richTextBoxQInvoicingNotes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter3Tab_KeyDown);
-            // 
-            // groupBoxQuotes
-            // 
-            this.groupBoxQuotes.Controls.Add(this.textBoxQQuotedPriceReadOnly);
-            this.groupBoxQuotes.Controls.Add(this.label93);
-            this.groupBoxQuotes.Controls.Add(this.label90);
-            this.groupBoxQuotes.Controls.Add(this.label84);
-            this.groupBoxQuotes.Controls.Add(this.textBoxQCompanyReadOnly);
-            this.groupBoxQuotes.Controls.Add(this.comboBoxQStatus);
-            this.groupBoxQuotes.Controls.Add(this.label21);
-            this.groupBoxQuotes.Controls.Add(this.textBoxQPO);
-            this.groupBoxQuotes.Controls.Add(this.pictureBox2);
-            this.groupBoxQuotes.Controls.Add(this.label23);
-            this.groupBoxQuotes.Controls.Add(this.label60);
-            this.groupBoxQuotes.Controls.Add(this.textBoxQCustomerPO);
-            this.groupBoxQuotes.Controls.Add(this.comboBoxQSalesAss);
-            this.groupBoxQuotes.Controls.Add(this.label61);
-            this.groupBoxQuotes.Controls.Add(this.textBoxQDate);
-            this.groupBoxQuotes.Controls.Add(this.textBoxQJobName);
-            this.groupBoxQuotes.Controls.Add(this.label63);
-            this.groupBoxQuotes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBoxQuotes.Location = new System.Drawing.Point(0, 0);
-            this.groupBoxQuotes.Name = "groupBoxQuotes";
-            this.groupBoxQuotes.Size = new System.Drawing.Size(1040, 128);
-            this.groupBoxQuotes.TabIndex = 57;
-            this.groupBoxQuotes.TabStop = false;
-            // 
-            // textBoxQQuotedPriceReadOnly
-            // 
-            this.textBoxQQuotedPriceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQQuotedPriceReadOnly.Location = new System.Drawing.Point(374, 65);
-            this.textBoxQQuotedPriceReadOnly.Name = "textBoxQQuotedPriceReadOnly";
-            this.textBoxQQuotedPriceReadOnly.ReadOnly = true;
-            this.textBoxQQuotedPriceReadOnly.Size = new System.Drawing.Size(121, 21);
-            this.textBoxQQuotedPriceReadOnly.TabIndex = 92;
-            // 
-            // label93
-            // 
-            this.label93.AutoSize = true;
-            this.label93.Location = new System.Drawing.Point(302, 68);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(72, 13);
-            this.label93.TabIndex = 91;
-            this.label93.Text = "Quoted Price:";
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Location = new System.Drawing.Point(314, 42);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(54, 13);
-            this.label90.TabIndex = 89;
-            this.label90.Text = "Company:";
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(397, 17);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(40, 13);
-            this.label84.TabIndex = 57;
-            this.label84.Text = "Status:";
-            // 
-            // textBoxQCompanyReadOnly
-            // 
-            this.textBoxQCompanyReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQCompanyReadOnly.Location = new System.Drawing.Point(374, 39);
-            this.textBoxQCompanyReadOnly.Name = "textBoxQCompanyReadOnly";
-            this.textBoxQCompanyReadOnly.ReadOnly = true;
-            this.textBoxQCompanyReadOnly.Size = new System.Drawing.Size(260, 21);
-            this.textBoxQCompanyReadOnly.TabIndex = 90;
-            // 
-            // comboBoxQStatus
-            // 
-            this.comboBoxQStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxQStatus.FormattingEnabled = true;
-            this.comboBoxQStatus.Items.AddRange(new object[] {
-            "",
-            "Quote",
-            "Submittal",
-            "Order",
-            "Invoice"});
-            this.comboBoxQStatus.Location = new System.Drawing.Point(439, 12);
-            this.comboBoxQStatus.Name = "comboBoxQStatus";
-            this.comboBoxQStatus.Size = new System.Drawing.Size(120, 21);
-            this.comboBoxQStatus.TabIndex = 56;
-            this.comboBoxQStatus.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(15, 16);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(49, 13);
-            this.label21.TabIndex = 1;
-            this.label21.Text = "Quote #:";
-            // 
-            // textBoxQPO
-            // 
-            this.textBoxQPO.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQPO.Location = new System.Drawing.Point(75, 13);
-            this.textBoxQPO.Name = "textBoxQPO";
-            this.textBoxQPO.ReadOnly = true;
-            this.textBoxQPO.Size = new System.Drawing.Size(120, 21);
-            this.textBoxQPO.TabIndex = 2;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::Tugwell.Properties.Resources.tug;
@@ -9838,214 +10071,6 @@
             this.pictureBox2.Size = new System.Drawing.Size(79, 50);
             this.pictureBox2.TabIndex = 55;
             this.pictureBox2.TabStop = false;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(15, 42);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(59, 13);
-            this.label23.TabIndex = 3;
-            this.label23.Text = "Cust. PO#:";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(15, 97);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(85, 13);
-            this.label60.TabIndex = 54;
-            this.label60.Text = "Sales Associate:";
-            // 
-            // textBoxQCustomerPO
-            // 
-            this.textBoxQCustomerPO.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQCustomerPO.Location = new System.Drawing.Point(75, 39);
-            this.textBoxQCustomerPO.Name = "textBoxQCustomerPO";
-            this.textBoxQCustomerPO.Size = new System.Drawing.Size(221, 21);
-            this.textBoxQCustomerPO.TabIndex = 4;
-            this.textBoxQCustomerPO.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
-            this.textBoxQCustomerPO.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
-            this.textBoxQCustomerPO.Leave += new System.EventHandler(this.textBox_Leave);
-            // 
-            // comboBoxQSalesAss
-            // 
-            this.comboBoxQSalesAss.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxQSalesAss.FormattingEnabled = true;
-            this.comboBoxQSalesAss.Items.AddRange(new object[] {
-            "",
-            "Justin Tugwell",
-            "Roy Tugwell",
-            "Warehouse",
-            "Marsha Outlaw"});
-            this.comboBoxQSalesAss.Location = new System.Drawing.Point(106, 93);
-            this.comboBoxQSalesAss.Name = "comboBoxQSalesAss";
-            this.comboBoxQSalesAss.Size = new System.Drawing.Size(120, 21);
-            this.comboBoxQSalesAss.TabIndex = 53;
-            this.comboBoxQSalesAss.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
-            this.comboBoxQSalesAss.SelectionChangeCommitted += new System.EventHandler(this.comboBoxSalesAss_SelectionChangeCommitted);
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(15, 68);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(43, 13);
-            this.label61.TabIndex = 5;
-            this.label61.Text = "Project:";
-            // 
-            // textBoxQDate
-            // 
-            this.textBoxQDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDate.Location = new System.Drawing.Point(262, 13);
-            this.textBoxQDate.Name = "textBoxQDate";
-            this.textBoxQDate.Size = new System.Drawing.Size(112, 21);
-            this.textBoxQDate.TabIndex = 53;
-            this.textBoxQDate.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
-            this.textBoxQDate.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
-            this.textBoxQDate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
-            this.textBoxQDate.Leave += new System.EventHandler(this.textBoxDate_Leave);
-            // 
-            // textBoxQJobName
-            // 
-            this.textBoxQJobName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQJobName.Location = new System.Drawing.Point(75, 65);
-            this.textBoxQJobName.Name = "textBoxQJobName";
-            this.textBoxQJobName.Size = new System.Drawing.Size(221, 21);
-            this.textBoxQJobName.TabIndex = 6;
-            this.textBoxQJobName.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
-            this.textBoxQJobName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
-            this.textBoxQJobName.Leave += new System.EventHandler(this.textBox_Leave);
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(223, 16);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(33, 13);
-            this.label63.TabIndex = 15;
-            this.label63.Text = "Date:";
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel,
-            this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 550);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1054, 22);
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel
-            // 
-            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
-            this.toolStripStatusLabel.Text = "Status:";
-            // 
-            // toolStripStatusLabel2
-            // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(42, 17);
-            this.toolStripStatusLabel2.Text = "Status:";
-            // 
-            // buttonRecordTop
-            // 
-            this.buttonRecordTop.Location = new System.Drawing.Point(4, 13);
-            this.buttonRecordTop.Name = "buttonRecordTop";
-            this.buttonRecordTop.Size = new System.Drawing.Size(31, 23);
-            this.buttonRecordTop.TabIndex = 3;
-            this.buttonRecordTop.Text = "<<";
-            this.buttonRecordTop.UseVisualStyleBackColor = true;
-            this.buttonRecordTop.Click += new System.EventHandler(this.buttonRecordTop_Click);
-            // 
-            // buttonRecordGo1Less
-            // 
-            this.buttonRecordGo1Less.Location = new System.Drawing.Point(37, 13);
-            this.buttonRecordGo1Less.Name = "buttonRecordGo1Less";
-            this.buttonRecordGo1Less.Size = new System.Drawing.Size(31, 23);
-            this.buttonRecordGo1Less.TabIndex = 4;
-            this.buttonRecordGo1Less.Text = "<";
-            this.buttonRecordGo1Less.UseVisualStyleBackColor = true;
-            this.buttonRecordGo1Less.Click += new System.EventHandler(this.buttonRecordGo1Less_Click);
-            // 
-            // buttonRecordGo1More
-            // 
-            this.buttonRecordGo1More.Location = new System.Drawing.Point(165, 14);
-            this.buttonRecordGo1More.Name = "buttonRecordGo1More";
-            this.buttonRecordGo1More.Size = new System.Drawing.Size(31, 23);
-            this.buttonRecordGo1More.TabIndex = 5;
-            this.buttonRecordGo1More.Text = ">";
-            this.buttonRecordGo1More.UseVisualStyleBackColor = true;
-            this.buttonRecordGo1More.Click += new System.EventHandler(this.buttonRecordGo1More_Click);
-            // 
-            // buttonRecordBottom
-            // 
-            this.buttonRecordBottom.Location = new System.Drawing.Point(199, 14);
-            this.buttonRecordBottom.Name = "buttonRecordBottom";
-            this.buttonRecordBottom.Size = new System.Drawing.Size(31, 23);
-            this.buttonRecordBottom.TabIndex = 6;
-            this.buttonRecordBottom.Text = ">>";
-            this.buttonRecordBottom.UseVisualStyleBackColor = true;
-            this.buttonRecordBottom.Click += new System.EventHandler(this.buttonRecordBottom_Click);
-            // 
-            // textBoxRecordNo
-            // 
-            this.textBoxRecordNo.Location = new System.Drawing.Point(69, 16);
-            this.textBoxRecordNo.Name = "textBoxRecordNo";
-            this.textBoxRecordNo.Size = new System.Drawing.Size(38, 20);
-            this.textBoxRecordNo.TabIndex = 35;
-            this.textBoxRecordNo.Text = "1";
-            this.textBoxRecordNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxRecordNo_KeyPress);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.comboBoxYearControl);
-            this.groupBox3.Controls.Add(this.buttonSave);
-            this.groupBox3.Controls.Add(this.textBoxRecordOf);
-            this.groupBox3.Controls.Add(this.textBoxRecordNo);
-            this.groupBox3.Controls.Add(this.buttonRecordTop);
-            this.groupBox3.Controls.Add(this.buttonRecordBottom);
-            this.groupBox3.Controls.Add(this.buttonRecordGo1Less);
-            this.groupBox3.Controls.Add(this.buttonRecordGo1More);
-            this.groupBox3.Location = new System.Drawing.Point(526, 0);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(338, 41);
-            this.groupBox3.TabIndex = 1;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Record Control";
-            // 
-            // comboBoxYearControl
-            // 
-            this.comboBoxYearControl.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxYearControl.FormattingEnabled = true;
-            this.comboBoxYearControl.Items.AddRange(new object[] {
-            "Older",
-            "2018"});
-            this.comboBoxYearControl.Location = new System.Drawing.Point(274, 15);
-            this.comboBoxYearControl.Name = "comboBoxYearControl";
-            this.comboBoxYearControl.Size = new System.Drawing.Size(58, 21);
-            this.comboBoxYearControl.TabIndex = 38;
-            // 
-            // buttonSave
-            // 
-            this.buttonSave.Image = global::Tugwell.Properties.Resources.save;
-            this.buttonSave.Location = new System.Drawing.Point(236, 14);
-            this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(31, 23);
-            this.buttonSave.TabIndex = 37;
-            this.buttonSave.UseVisualStyleBackColor = true;
-            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
-            // 
-            // textBoxRecordOf
-            // 
-            this.textBoxRecordOf.Location = new System.Drawing.Point(109, 16);
-            this.textBoxRecordOf.Name = "textBoxRecordOf";
-            this.textBoxRecordOf.ReadOnly = true;
-            this.textBoxRecordOf.Size = new System.Drawing.Size(52, 20);
-            this.textBoxRecordOf.TabIndex = 36;
-            this.textBoxRecordOf.Text = "of 1";
             // 
             // comboBoxCarrier
             // 
@@ -10242,7 +10267,6 @@
             this.tabPageNotes.PerformLayout();
             this.groupBoxOrders.ResumeLayout(false);
             this.groupBoxOrders.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.tabPageQuotes.ResumeLayout(false);
             this.tabControlQuotesSub.ResumeLayout(false);
             this.tabPageQuoteGeneral.ResumeLayout(false);
@@ -10354,11 +10378,12 @@
             this.tabPageQuoateNotes.PerformLayout();
             this.groupBoxQuotes.ResumeLayout(false);
             this.groupBoxQuotes.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -10982,6 +11007,8 @@
         private System.Windows.Forms.ToolStripMenuItem newTPSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removeAllRecordsToolStripMenuItem;
         private System.Windows.Forms.CheckBox checkBoxPONeeded;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+        private System.Windows.Forms.ToolStripMenuItem duplicateCurrentQuoteToolStripMenuItem;
     }
 }
 

@@ -370,10 +370,20 @@ namespace Tugwell
                     sig = Properties.Resources.darin; // warehouse
                     h = -55.0;
                 }
-                else // Bernice, must be
+                else if (this.toolStripComboBoxSignature.SelectedIndex == 6)
                 {
                     sig = Properties.Resources.bernice;
                     h = -10.0;
+                }
+                else if (this.toolStripComboBoxSignature.SelectedIndex == 7)
+                {
+                    sig = Properties.Resources.mark;
+                    h = -12.0;
+                }
+                else //if (this.toolStripComboBoxSignature.SelectedIndex == 8)
+                {
+                    sig = Properties.Resources.carl;
+                    h = -7.0;
                 }
 
                 h += 200.0 * ((double)sig.Height / (double)sig.Width);
@@ -1186,12 +1196,12 @@ namespace Tugwell
             Print2Pdf.TextInfo tiTopRight = p.CreateTextInfo();
             tiTopRight.Textstyle = Print2Pdf.TextStyle.Bold;
             tiTopRight.Size = 12.0;
-            p.AddText(tiTopRight, "Date:", p.Width / 2 - 56.0, pos, p.Width, 18);
+            p.AddText(tiTopRight, "Date:", p.Width / 2 - 56.0 + 36, pos, p.Width, 18);
             p.AddText(tiTopRight, "Project:");
             p.AddText(tiTopRight, "Location:");
             p.AddText(tiTopRight, "Quote No:");
             tiTopRight.Textstyle = Print2Pdf.TextStyle.Regular;
-            p.AddText(tiTopRight, this.textBoxQDate.Text, p.Width / 2, pos, p.Width, 18);
+            p.AddText(tiTopRight, this.textBoxQDate.Text, p.Width / 2 + 36, pos, p.Width, 18);
             p.AddText(tiTopRight, this.textBoxQJobName.Text);
             p.AddText(tiTopRight, this.textBoxQLocation.Text);
             p.AddText(tiTopRight, this.textBoxQPO.Text);
@@ -1548,10 +1558,20 @@ namespace Tugwell
                     sig = Properties.Resources.darin; // warehouse
                     h = -55.0;
                 }
-                else // Bernice, must be
+                else if (this.toolStripComboBoxSignature.SelectedIndex == 6)
                 {
                     sig = Properties.Resources.bernice;
                     h = -10.0;
+                }
+                else if (this.toolStripComboBoxSignature.SelectedIndex == 7)
+                {
+                    sig = Properties.Resources.mark;
+                    h = -12.0;
+                }
+                else //if (this.toolStripComboBoxSignature.SelectedIndex == 8)
+                {
+                    sig = Properties.Resources.carl;
+                    h = -7.0;
                 }
 
                 h += 200.0 * ((double)sig.Height / (double)sig.Width);
@@ -1570,6 +1590,22 @@ namespace Tugwell
                 p.AddText(tiSig, "For R.M. Tugwell & Associates, Inc.", 40, pos + 58 + 10, p.Width, 18);
             p.AddText(tiSig, "For: " + this.textBoxQCompany.Text, p.Width / 2 + 15, pos + 58 + 10, p.Width, 18);
             p.AddText(tiSig, "Date:", p.Width / 2 + 15 + 145, pos + 58 + 10, p.Width, 18);
+
+
+
+            if (this.toolStripComboBoxSignature.SelectedIndex == 6) // bernice
+            {
+                p.AddText(tiSig, "Phone:\t\t251-656-9030", 40, pos + 58 + 10 + 10, p.Width, 18);
+                p.AddText(tiSig, "Email:\t\tBernice@tugwellpump.com");
+            }
+            else if (this.toolStripComboBoxSignature.SelectedIndex == 8) // carl
+            {
+                p.AddText(tiSig, "Phone:\t\t850-860-8900", 40, pos + 58 + 10 + 10, p.Width, 18);
+                p.AddText(tiSig, "Email:\t\tCarl@tugwellpump.com");
+            }
+
+
+
 
             // footer
             Print2Pdf.TextInfo tiFooter = p.CreateTextInfo();
