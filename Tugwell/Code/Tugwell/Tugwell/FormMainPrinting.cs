@@ -344,43 +344,44 @@ namespace Tugwell
             // footer
 
             // signature?
-            if (this.toolStripComboBoxSignature.SelectedIndex != 0)
+            int select = this.comboBoxSalesAss.SelectedIndex;
+            if (select != 0)
             {
                 Image sig = Properties.Resources.justin;
                 double h = 0.0;
 
-                if (this.toolStripComboBoxSignature.SelectedIndex == 1)
+                if (select == 1)
                     sig = Properties.Resources.justin;
-                else if (this.toolStripComboBoxSignature.SelectedIndex == 2)
+                else if (select == 2)
                     sig = Properties.Resources.roy;
-                else if (this.toolStripComboBoxSignature.SelectedIndex == 3)
+                else if (select == 3)
                 {
                     if (_company == companyType.TPS)
                         sig = Properties.Resources.randy; // randy
                     else
                         sig = Properties.Resources.scott;
                 }
-                else if (this.toolStripComboBoxSignature.SelectedIndex == 4)
+                else if (select == 4)
                 {
                     sig = Properties.Resources.marsha3;
                     h = -30.0;
                 }
-                else if (this.toolStripComboBoxSignature.SelectedIndex == 5)
+                else if (select == 5)
                 {
                     sig = Properties.Resources.darin; // warehouse
                     h = -55.0;
                 }
-                else if (this.toolStripComboBoxSignature.SelectedIndex == 6)
+                else if (select == 6)
                 {
                     sig = Properties.Resources.bernice;
                     h = -10.0;
                 }
-                else if (this.toolStripComboBoxSignature.SelectedIndex == 7)
+                else if (select == 7)
                 {
                     sig = Properties.Resources.mark;
                     h = -12.0;
                 }
-                else //if (this.toolStripComboBoxSignature.SelectedIndex == 8)
+                else //if (select == 8)
                 {
                     sig = Properties.Resources.carl;
                     h = -7.0;
@@ -1532,43 +1533,44 @@ namespace Tugwell
             //p.DrawHorizontalLine(0.5, pos + 55, 20.0);
 
             // signature?
-            if (this.toolStripComboBoxSignature.SelectedIndex != 0)
+            int select = this.comboBoxQSalesAss.SelectedIndex;
+            if (select != 0)
             {
                 Image sig = Properties.Resources.justin;
                 double h = 0.0;
 
-                if (this.toolStripComboBoxSignature.SelectedIndex == 1)
+                if (select == 1)
                     sig = Properties.Resources.justin;
-                else if (this.toolStripComboBoxSignature.SelectedIndex == 2)
+                else if (select == 2)
                     sig = Properties.Resources.roy;
-                else if (this.toolStripComboBoxSignature.SelectedIndex == 3)
+                else if (select == 3)
                 {
                     if (_company == companyType.TPS)
                         sig = Properties.Resources.randy; // randy
                     else
                         sig = Properties.Resources.scott;
                 }
-                else if (this.toolStripComboBoxSignature.SelectedIndex == 4)
+                else if (select == 4)
                 {
                     sig = Properties.Resources.marsha3;
                     h = -30.0;
                 }
-                else if (this.toolStripComboBoxSignature.SelectedIndex == 5)
+                else if (select == 5)
                 {
                     sig = Properties.Resources.darin; // warehouse
                     h = -55.0;
                 }
-                else if (this.toolStripComboBoxSignature.SelectedIndex == 6)
+                else if (select == 6)
                 {
                     sig = Properties.Resources.bernice;
                     h = -10.0;
                 }
-                else if (this.toolStripComboBoxSignature.SelectedIndex == 7)
+                else if (select == 7)
                 {
                     sig = Properties.Resources.mark;
                     h = -12.0;
                 }
-                else //if (this.toolStripComboBoxSignature.SelectedIndex == 8)
+                else //if (select == 8)
                 {
                     sig = Properties.Resources.carl;
                     h = -7.0;
@@ -1592,13 +1594,13 @@ namespace Tugwell
             p.AddText(tiSig, "Date:", p.Width / 2 + 15 + 145, pos + 58 + 10, p.Width, 18);
 
 
-
-            if (this.toolStripComboBoxSignature.SelectedIndex == 6) // bernice
+            //int select = this.comboBoxSalesAss.SelectedIndex;
+            if (select == 6) // bernice
             {
                 p.AddText(tiSig, "Phone:\t\t251-656-9030", 40, pos + 58 + 10 + 10, p.Width, 18);
                 p.AddText(tiSig, "Email:\t\tBernice@tugwellpump.com");
             }
-            else if (this.toolStripComboBoxSignature.SelectedIndex == 8) // carl
+            else if (select == 8) // carl
             {
                 p.AddText(tiSig, "Phone:\t\t850-860-8900", 40, pos + 58 + 10 + 10, p.Width, 18);
                 p.AddText(tiSig, "Email:\t\tCarl@tugwellpump.com");

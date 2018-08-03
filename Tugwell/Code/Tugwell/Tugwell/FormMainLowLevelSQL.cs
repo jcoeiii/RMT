@@ -59,7 +59,7 @@ namespace Tugwell
 
             bool locked = LowLevelLockChecking(dbType.Order);
 
-            autoSelectSignature();
+            //autoSelectSignature();
 
             _log.append("readOrderAndUpdateGUI end");
 
@@ -131,7 +131,7 @@ namespace Tugwell
 
             bool locked = LowLevelLockChecking(dbType.Quote);
 
-            autoSelectSignature();
+            //autoSelectSignature();
 
             return locked;
         }

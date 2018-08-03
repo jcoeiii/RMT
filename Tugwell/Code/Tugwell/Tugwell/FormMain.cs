@@ -18,13 +18,13 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V9.4 2018_06_26";
+            this.Text = "Tugwell V9.5 2018_08_02";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
             this.comboBoxYearControl.Text = "2018";
 
-            this.toolStripComboBoxSignature.SelectedIndex = 0; // no signature
+            //this.toolStripComboBoxSignature.SelectedIndex = 0; // no signature
 
             bool isAdminVersion = false;
             this.importCompaniesToolStripMenuItem.Enabled = isAdminVersion;
@@ -181,7 +181,7 @@ namespace Tugwell
                 refreshRecordIndicator(dbType.Quote);
             }
 
-            autoSelectSignature();
+            //autoSelectSignature();
         }
 
         #endregion
@@ -796,34 +796,6 @@ namespace Tugwell
             this.numericUpDownOrderECost22.Visible = !this.checkBoxHide.Checked;
             this.numericUpDownOrderCost23.Visible = !this.checkBoxHide.Checked;
             this.numericUpDownOrderECost23.Visible = !this.checkBoxHide.Checked;
-        }
-
-        #endregion
-
-        #region Signature Auto Selection
-
-        private void autoSelectSignature()
-        {
-            if (this.toolStripComboBoxSignature.SelectedIndex != ((this._isOrdersSelected) ?
-                this.comboBoxSalesAss.SelectedIndex :
-                this.comboBoxQSalesAss.SelectedIndex))
-            {
-                if (this._isOrdersSelected)
-                {
-                    onetime_killOrderComboEvent = true;
-                    this.toolStripComboBoxSignature.SelectedIndex = this.comboBoxSalesAss.SelectedIndex;
-                }
-                else
-                {
-                    onetime_killQuoteComboEvent = true;
-                    this.toolStripComboBoxSignature.SelectedIndex = this.comboBoxQSalesAss.SelectedIndex;
-                }
-            }
-        }
-
-        private void comboBoxSalesAss_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            autoSelectSignature();
         }
 
         #endregion
@@ -2316,13 +2288,13 @@ namespace Tugwell
             "Roy Tugwell",
             "Warehouse",
             "Marsha Outlaw"});
-            this.toolStripComboBoxSignature.Items.Clear();
-            this.toolStripComboBoxSignature.Items.AddRange(new object[] {
-            "No Signature",
-            "Justin\'s",
-            "Roy\'s",
-            "Warehouse\'s",
-            "Marsha\'s"});
+            //this.toolStripComboBoxSignature.Items.Clear();
+            //this.toolStripComboBoxSignature.Items.AddRange(new object[] {
+            //"No Signature",
+            //"Justin\'s",
+            //"Roy\'s",
+            //"Warehouse\'s",
+            //"Marsha\'s"});
 
             loadStartup();
         }
@@ -2380,17 +2352,17 @@ namespace Tugwell
             "Bernice Williams",
             "Mark Gilmore",
             "Carl Hilgenberg"});
-            this.toolStripComboBoxSignature.Items.Clear();
-            this.toolStripComboBoxSignature.Items.AddRange(new object[] {
-            "No Signature",
-            "Justin\'s",
-            "Roy\'s",
-            "Randy\'s",
-            "Marsha\'s",
-            "Warehouse\'s",
-            "Bernice Williams\'",
-            "Mark Gilmore's",
-            "Carl Hilgenberg's"});
+            //this.toolStripComboBoxSignature.Items.Clear();
+            //this.toolStripComboBoxSignature.Items.AddRange(new object[] {
+            //"No Signature",
+            //"Justin\'s",
+            //"Roy\'s",
+            //"Randy\'s",
+            //"Marsha\'s",
+            //"Warehouse\'s",
+            //"Bernice Williams\'",
+            //"Mark Gilmore's",
+            //"Carl Hilgenberg's"});
 
             loadStartup();
         }
@@ -2411,6 +2383,7 @@ namespace Tugwell
                 //textBoxDescription.Text = textBoxQHeader.Text;
 
                 numericUpDownOrderCount1.Text = numericUpDownQQuan1.Text;
+                numericUpDownOrderCount1.Text = numericUpDownQQuan1.Text;// is this a bug? side-effect
                 textBoxOrderDescr1.Text = textBoxQDescription1.Text;
                 numericUpDownOrderCost1.Text = numericUpDownQCost1.Text;
 
