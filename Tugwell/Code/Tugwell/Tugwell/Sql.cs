@@ -859,6 +859,7 @@ namespace Tugwell
 
         static public int UpdateRow(FormMain.dbType type, List<string> guis)
         {
+            Killconnection();
             SQLiteConnection con = GetConnection();
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))
@@ -895,6 +896,7 @@ namespace Tugwell
 
         static public int InsertRow(FormMain.dbType type, List<string> guis)
         {
+            Killconnection();
             SQLiteConnection con = GetConnection();
             {
                 using (System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(con))

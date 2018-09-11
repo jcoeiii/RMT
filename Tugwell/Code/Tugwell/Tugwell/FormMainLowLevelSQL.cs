@@ -309,6 +309,15 @@ namespace Tugwell
                         continue;
 
                     IEnumerable<string> lines = File.ReadLines(file);
+
+                    string timestamp = lines.ElementAt(0);
+                    long ticks = Convert.ToInt64(timestamp);
+                    long delta = DateTime.Now.Ticks - ticks;
+                    double t = TimeSpan.FromTicks(delta).TotalMinutes;
+                    //MessageBox.Show(t.ToString());
+                    if (t >= 0.5*60.0)
+                        continue;
+
                     list.Add(lines.ElementAt(1));
                 }
             }
@@ -334,6 +343,15 @@ namespace Tugwell
                         continue;
 
                     IEnumerable<string> lines = File.ReadLines(file);
+
+                    string timestamp = lines.ElementAt(0);
+                    long ticks = Convert.ToInt64(timestamp);
+                    long delta = DateTime.Now.Ticks - ticks;
+                    double t = TimeSpan.FromTicks(delta).TotalMinutes;
+                    //MessageBox.Show(t.ToString());
+                    if (t >= 0.5 * 60.0)
+                        continue;
+
                     list.Add(lines.ElementAt(1));
                 }
             }

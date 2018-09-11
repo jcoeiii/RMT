@@ -18,7 +18,7 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V9.5 2018_08_02";
+            this.Text = "Tugwell V9.6 2018_08_16";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
