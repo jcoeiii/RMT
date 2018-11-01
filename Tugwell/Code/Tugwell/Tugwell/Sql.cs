@@ -966,6 +966,7 @@ namespace Tugwell
                 try
                 {
                     __con.Close();
+                    __con.Dispose();
                 }
                 catch { }
                 __con = null;
