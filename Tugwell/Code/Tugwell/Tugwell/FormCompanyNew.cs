@@ -16,10 +16,17 @@ namespace Tugwell
         {
             InitializeComponent();
 
+            this.comboBoxState.Items.Clear();
+            this.comboBoxState.Items.AddRange(Tugwell.CStates.StateList);
+
             this.textBoxSoldTo.Text = company;
             this.textBoxStreet1.Text = street1;
             this.textBoxStreet2.Text = street2;
             this.textBoxCity.Text = city;
+            // safety
+            if (!this.comboBoxState.Items.Contains(state))
+                this.comboBoxState.Items.Add(state);
+
             this.comboBoxState.Text = state;
             this.textBoxZip.Text = zip;
             this.textBoxPhone.Text = phone;

@@ -58,10 +58,10 @@
     <ApplicationIcon>tugIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>96F1D06BCC143A434FCD27C41AC0DD6F25F9C5E0</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>E9447E1DB4A54B5A3E1E1526F7A99AA028AC5D66</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>Tugwell_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>Tugwell_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -202,7 +202,7 @@
       <DependentUpon>FormReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -222,6 +222,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Tugwell_1_TemporaryKey.pfx" />
     <None Include="Tugwell_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -268,6 +269,7 @@
     <None Include="Resources\bernice.png" />
     <None Include="Resources\carl.png" />
     <None Include="Resources\mark.png" />
+    <None Include="Resources\taffe.png" />
     <Content Include="tugIcon.ico" />
   </ItemGroup>
   <ItemGroup>

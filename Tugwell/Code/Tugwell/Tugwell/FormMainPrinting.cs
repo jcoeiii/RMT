@@ -381,9 +381,14 @@ namespace Tugwell
                     sig = Properties.Resources.mark;
                     h = -12.0;
                 }
-                else //if (select == 8)
+                else if (select == 8)
                 {
                     sig = Properties.Resources.carl;
+                    h = -7.0;
+                }
+                else //if (select == 9)
+                {
+                    sig = Properties.Resources.taffe;
                     h = -7.0;
                 }
 
@@ -1570,10 +1575,15 @@ namespace Tugwell
                     sig = Properties.Resources.mark;
                     h = -12.0;
                 }
-                else //if (select == 8)
+                else if (select == 8)
                 {
                     sig = Properties.Resources.carl;
                     h = -7.0;
+                }
+                else //if (select == 9)
+                {
+                    sig = Properties.Resources.taffe;
+                    h = -36.0;
                 }
 
                 h += 200.0 * ((double)sig.Height / (double)sig.Width);

@@ -18,11 +18,11 @@ namespace Tugwell
 
             generateLockName();
 
-            this.Text = "Tugwell V9.7 2018_10_23";
+            this.Text = "Tugwell V9.8 2019_2_11";
             
             // make sure dbase file is the only one in this folder
             this.toolStripTextBoxDbasePath.Text = @"Z:\Tugwell\DB\";
-            this.comboBoxYearControl.Text = "2018";
+            this.comboBoxYearControl.Text = "2019";
 
             //this.toolStripComboBoxSignature.SelectedIndex = 0; // no signature
 
@@ -2340,7 +2340,8 @@ namespace Tugwell
             "Warehouse",
             "Bernice Williams",
             "Mark Gilmore",
-            "Carl Hilgenberg"});
+            "Carl Hilgenberg",
+            "William Taffe"});
             this.comboBoxQSalesAss.Items.Clear();
             this.comboBoxQSalesAss.Items.AddRange(new object[] {
             "",
@@ -2351,7 +2352,8 @@ namespace Tugwell
             "Warehouse",
             "Bernice Williams",
             "Mark Gilmore",
-            "Carl Hilgenberg"});
+            "Carl Hilgenberg",
+            "William Taffe"});
             //this.toolStripComboBoxSignature.Items.Clear();
             //this.toolStripComboBoxSignature.Items.AddRange(new object[] {
             //"No Signature",
@@ -2479,6 +2481,157 @@ namespace Tugwell
             }
         }
 
+        #endregion
+
+        #region State List picker event
+        private void allStatesListedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.allStatesListedToolStripMenuItem.Checked = !this.allStatesListedToolStripMenuItem.Checked;
+
+            if (this.allStatesListedToolStripMenuItem.Checked)
+            {
+                Tugwell.CStates.StateList =
+                            new object[] {
+            "",
+            "AK",
+            "AL",
+            "AR",
+            "AZ",
+            "CA",
+            "CO",
+            "CT",
+            "DC",
+            "DE",
+            "FL",
+            "GA",
+            "HI",
+            "IA",
+            "ID",
+            "IL",
+            "IN",
+            "KS",
+            "KY",
+            "LA",
+            "MA",
+            "MD",
+            "ME",
+            "MI",
+            "MN",
+            "MO",
+            "MS",
+            "MT",
+            "NC",
+            "ND",
+            "NE",
+            "NH",
+            "NJ",
+            "NM",
+            "NV",
+            "NY",
+            "OH",
+            "OK",
+            "OR",
+            "PA",
+            "RI",
+            "SC",
+            "SD",
+            "TN",
+            "TX",
+            "UT",
+            "VA",
+            "VT",
+            "WA",
+            "WI",
+            "WV",
+            "WY"
+            };
+            }
+            else
+            {
+                Tugwell.CStates.StateList =
+            new object[] {
+            "",
+            //"AK",
+            "AL",
+            //"AR",
+            //"AZ",
+            //"CA",
+            //"CO",
+            //"CT",
+            //"DC",
+            //"DE",
+            "FL",
+            "GA",
+            //"HI",
+            //"IA",
+            //"ID",
+            //"IL",
+            //"IN",
+            //"KS",
+            "KY",
+            "LA",
+            //"MA",
+            //"MD",
+            //"ME",
+            //"MI",
+            //"MN",
+            //"MO",
+            "MS",
+            //"MT",
+            "NC",
+            //"ND",
+            //"NE",
+            //"NH",
+            //"NJ",
+            //"NM",
+            //"NV",
+            //"NY",
+            //"OH",
+            //"OK",
+            //"OR",
+            //"PA",
+            //"RI",
+            //"SC",
+            //"SD",
+            "TN",
+            //"TX",
+            //"UT",
+            //"VA",
+            //"VT",
+            //"WA",
+            //"WI",
+            //"WV",
+            //"WY"
+            };
+            }
+
+            killOrderComboEvent = true;
+            killQuoteComboEvent = true;
+
+            string state = this.comboBoxSoldToState.Text;
+            this.comboBoxSoldToState.Items.Clear();
+            this.comboBoxSoldToState.Items.AddRange(Tugwell.CStates.StateList);
+            if (!this.comboBoxSoldToState.Items.Contains(state))
+                this.comboBoxSoldToState.Items.Add(state);
+            this.comboBoxSoldToState.Text = state;
+
+            state = this.comboBoxShipToState.Text;
+            this.comboBoxShipToState.Items.Clear();
+            this.comboBoxShipToState.Items.AddRange(Tugwell.CStates.StateList);
+            if (!this.comboBoxShipToState.Items.Contains(state))
+                this.comboBoxShipToState.Items.Add(state);
+            this.comboBoxShipToState.Text = state;
+
+            state = this.comboBoxQState.Text;
+            this.comboBoxQState.Items.Clear();
+            this.comboBoxQState.Items.AddRange(Tugwell.CStates.StateList);
+            if (!this.comboBoxQState.Items.Contains(state))
+                this.comboBoxQState.Items.Add(state);
+            this.comboBoxQState.Text = state;
+
+            killOrderComboEvent = false;
+            killQuoteComboEvent = false;
+        }
         #endregion
     }
 }

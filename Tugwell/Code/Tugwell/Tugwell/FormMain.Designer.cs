@@ -646,6 +646,9 @@
             this.comboBoxYearControl = new System.Windows.Forms.ComboBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.textBoxRecordOf = new System.Windows.Forms.TextBox();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+            this.allStatesListedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControlMainOrdersQuotes.SuspendLayout();
@@ -868,7 +871,8 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1054, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1405, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -886,7 +890,7 @@
             this.saveToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // printCurrentOrderToolStripMenuItem
@@ -896,27 +900,27 @@
             this.priceToolStripMenuItem,
             this.deliveryTicketToolStripMenuItem});
             this.printCurrentOrderToolStripMenuItem.Name = "printCurrentOrderToolStripMenuItem";
-            this.printCurrentOrderToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.printCurrentOrderToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.printCurrentOrderToolStripMenuItem.Text = "Print Current Order";
             // 
             // purchaseOrderToolStripMenuItem
             // 
             this.purchaseOrderToolStripMenuItem.Name = "purchaseOrderToolStripMenuItem";
-            this.purchaseOrderToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.purchaseOrderToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.purchaseOrderToolStripMenuItem.Text = "Purchase Order";
             this.purchaseOrderToolStripMenuItem.Click += new System.EventHandler(this.purchaseOrderToolStripMenuItem_Click);
             // 
             // priceToolStripMenuItem
             // 
             this.priceToolStripMenuItem.Name = "priceToolStripMenuItem";
-            this.priceToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.priceToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.priceToolStripMenuItem.Text = "Price";
             this.priceToolStripMenuItem.Click += new System.EventHandler(this.priceToolStripMenuItem_Click);
             // 
             // deliveryTicketToolStripMenuItem
             // 
             this.deliveryTicketToolStripMenuItem.Name = "deliveryTicketToolStripMenuItem";
-            this.deliveryTicketToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.deliveryTicketToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.deliveryTicketToolStripMenuItem.Text = "Delivery Ticket";
             this.deliveryTicketToolStripMenuItem.Click += new System.EventHandler(this.deliveryTicketToolStripMenuItem_Click);
             // 
@@ -924,59 +928,59 @@
             // 
             this.printCurrentQuoteToolStripMenuItem.Enabled = false;
             this.printCurrentQuoteToolStripMenuItem.Name = "printCurrentQuoteToolStripMenuItem";
-            this.printCurrentQuoteToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.printCurrentQuoteToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.printCurrentQuoteToolStripMenuItem.Text = "Print Current Quote";
             this.printCurrentQuoteToolStripMenuItem.Click += new System.EventHandler(this.printCurrentQuoteToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(175, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(208, 6);
             // 
             // importCompaniesToolStripMenuItem
             // 
             this.importCompaniesToolStripMenuItem.Name = "importCompaniesToolStripMenuItem";
-            this.importCompaniesToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.importCompaniesToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.importCompaniesToolStripMenuItem.Text = "Import Companies";
             this.importCompaniesToolStripMenuItem.Click += new System.EventHandler(this.importCompaniesToolStripMenuItem_Click);
             // 
             // importPartsToolStripMenuItem
             // 
             this.importPartsToolStripMenuItem.Name = "importPartsToolStripMenuItem";
-            this.importPartsToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.importPartsToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.importPartsToolStripMenuItem.Text = "Import Parts";
             this.importPartsToolStripMenuItem.Click += new System.EventHandler(this.importPartsToolStripMenuItem_Click);
             // 
             // displayTableToolStripMenuItem
             // 
             this.displayTableToolStripMenuItem.Name = "displayTableToolStripMenuItem";
-            this.displayTableToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.displayTableToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.displayTableToolStripMenuItem.Text = "Display Table";
             this.displayTableToolStripMenuItem.Click += new System.EventHandler(this.displayTableToolStripMenuItem_Click);
             // 
             // addTableRowToolStripMenuItem
             // 
             this.addTableRowToolStripMenuItem.Name = "addTableRowToolStripMenuItem";
-            this.addTableRowToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.addTableRowToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.addTableRowToolStripMenuItem.Text = "Add Table";
             this.addTableRowToolStripMenuItem.Click += new System.EventHandler(this.addTableRowToolStripMenuItem_Click);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(175, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(208, 6);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -993,63 +997,63 @@
             this.toolStripSeparator9,
             this.duplicateCurrentQuoteToolStripMenuItem});
             this.pONumberToolStripMenuItem.Name = "pONumberToolStripMenuItem";
-            this.pONumberToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
+            this.pONumberToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
             this.pONumberToolStripMenuItem.Text = "PO Order #";
             // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
             this.newToolStripMenuItem.Text = "New Sales Order";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // newStockOrderTToolStripMenuItem
             // 
             this.newStockOrderTToolStripMenuItem.Name = "newStockOrderTToolStripMenuItem";
-            this.newStockOrderTToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.newStockOrderTToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
             this.newStockOrderTToolStripMenuItem.Text = "New Stock Order(T)";
             this.newStockOrderTToolStripMenuItem.Click += new System.EventHandler(this.newStockOrderTToolStripMenuItem_Click);
             // 
             // newWarrantyToolStripMenuItem
             // 
             this.newWarrantyToolStripMenuItem.Name = "newWarrantyToolStripMenuItem";
-            this.newWarrantyToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.newWarrantyToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
             this.newWarrantyToolStripMenuItem.Text = "New Warranty Order(W)";
             this.newWarrantyToolStripMenuItem.Click += new System.EventHandler(this.newWarrantyToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(200, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(242, 6);
             // 
             // nextCurrentLetterToolStripMenuItem
             // 
             this.nextCurrentLetterToolStripMenuItem.Name = "nextCurrentLetterToolStripMenuItem";
-            this.nextCurrentLetterToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.nextCurrentLetterToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
             this.nextCurrentLetterToolStripMenuItem.Text = "Next Current Letter";
             this.nextCurrentLetterToolStripMenuItem.Click += new System.EventHandler(this.nextCurrentLetterToolStripMenuItem_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(200, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(242, 6);
             // 
             // gotoToolStripMenuItem1
             // 
             this.gotoToolStripMenuItem1.Name = "gotoToolStripMenuItem1";
-            this.gotoToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
+            this.gotoToolStripMenuItem1.Size = new System.Drawing.Size(245, 26);
             this.gotoToolStripMenuItem1.Text = "Goto";
             this.gotoToolStripMenuItem1.Click += new System.EventHandler(this.gotoToolStripMenuItem1_Click);
             // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(200, 6);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(242, 6);
             // 
             // duplicateCurrentQuoteToolStripMenuItem
             // 
             this.duplicateCurrentQuoteToolStripMenuItem.Name = "duplicateCurrentQuoteToolStripMenuItem";
-            this.duplicateCurrentQuoteToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.duplicateCurrentQuoteToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
             this.duplicateCurrentQuoteToolStripMenuItem.Text = "Duplicate Current Quote";
             this.duplicateCurrentQuoteToolStripMenuItem.Click += new System.EventHandler(this.duplicateCurrentQuoteToolStripMenuItem_Click);
             // 
@@ -1061,25 +1065,25 @@
             this.gotoToolStripMenuItem});
             this.quoteNumberToolStripMenuItem.Enabled = false;
             this.quoteNumberToolStripMenuItem.Name = "quoteNumberToolStripMenuItem";
-            this.quoteNumberToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.quoteNumberToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
             this.quoteNumberToolStripMenuItem.Text = "Quote #";
             // 
             // newToolStripMenuItem1
             // 
             this.newToolStripMenuItem1.Name = "newToolStripMenuItem1";
-            this.newToolStripMenuItem1.Size = new System.Drawing.Size(134, 22);
+            this.newToolStripMenuItem1.Size = new System.Drawing.Size(159, 26);
             this.newToolStripMenuItem1.Text = "New Quote";
             this.newToolStripMenuItem1.Click += new System.EventHandler(this.newToolStripMenuItem1_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(131, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(156, 6);
             // 
             // gotoToolStripMenuItem
             // 
             this.gotoToolStripMenuItem.Name = "gotoToolStripMenuItem";
-            this.gotoToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.gotoToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
             this.gotoToolStripMenuItem.Text = "Goto";
             this.gotoToolStripMenuItem.Click += new System.EventHandler(this.gotoToolStripMenuItem_Click);
             // 
@@ -1088,13 +1092,13 @@
             this.queryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.futureToolStripMenuItem});
             this.queryToolStripMenuItem.Name = "queryToolStripMenuItem";
-            this.queryToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.queryToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
             this.queryToolStripMenuItem.Text = "Reports";
             // 
             // futureToolStripMenuItem
             // 
             this.futureToolStripMenuItem.Name = "futureToolStripMenuItem";
-            this.futureToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.futureToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.futureToolStripMenuItem.Text = "Orders";
             this.futureToolStripMenuItem.Click += new System.EventHandler(this.futureToolStripMenuItem_Click);
             // 
@@ -1110,71 +1114,74 @@
             this.toolStripTextBoxDbasePath,
             this.toolStripSeparator8,
             this.cleanDatabaseToolStripMenuItem,
-            this.removeRecordLockToolStripMenuItem});
+            this.removeRecordLockToolStripMenuItem,
+            this.toolStripSeparator10,
+            this.toolStripSeparator11,
+            this.allStatesListedToolStripMenuItem});
             this.administrationToolStripMenuItem.Name = "administrationToolStripMenuItem";
-            this.administrationToolStripMenuItem.Size = new System.Drawing.Size(98, 20);
+            this.administrationToolStripMenuItem.Size = new System.Drawing.Size(119, 24);
             this.administrationToolStripMenuItem.Text = "Administration";
             // 
             // removeRecordToolStripMenuItem
             // 
             this.removeRecordToolStripMenuItem.Name = "removeRecordToolStripMenuItem";
-            this.removeRecordToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.removeRecordToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.removeRecordToolStripMenuItem.Text = "Remove Current Record";
             this.removeRecordToolStripMenuItem.Click += new System.EventHandler(this.removeRecordToolStripMenuItem_Click);
             // 
             // removeAllRecordsToolStripMenuItem
             // 
             this.removeAllRecordsToolStripMenuItem.Name = "removeAllRecordsToolStripMenuItem";
-            this.removeAllRecordsToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.removeAllRecordsToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.removeAllRecordsToolStripMenuItem.Text = "Remove All Records";
             this.removeAllRecordsToolStripMenuItem.Click += new System.EventHandler(this.removeAllRecordsToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(197, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(238, 6);
             // 
             // createNewDbaseToolStripMenuItem
             // 
             this.createNewDbaseToolStripMenuItem.Name = "createNewDbaseToolStripMenuItem";
-            this.createNewDbaseToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.createNewDbaseToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.createNewDbaseToolStripMenuItem.Text = "Create New Dbase";
             this.createNewDbaseToolStripMenuItem.Click += new System.EventHandler(this.createNewDbaseToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(197, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(238, 6);
             // 
             // pathToolStripMenuItem
             // 
             this.pathToolStripMenuItem.Enabled = false;
             this.pathToolStripMenuItem.Name = "pathToolStripMenuItem";
-            this.pathToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.pathToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.pathToolStripMenuItem.Text = "Path \\/";
             // 
             // toolStripTextBoxDbasePath
             // 
             this.toolStripTextBoxDbasePath.Name = "toolStripTextBoxDbasePath";
-            this.toolStripTextBoxDbasePath.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBoxDbasePath.Size = new System.Drawing.Size(100, 27);
             this.toolStripTextBoxDbasePath.Text = "Z:\\Tugwell\\";
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(197, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(238, 6);
             // 
             // cleanDatabaseToolStripMenuItem
             // 
             this.cleanDatabaseToolStripMenuItem.Name = "cleanDatabaseToolStripMenuItem";
-            this.cleanDatabaseToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.cleanDatabaseToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.cleanDatabaseToolStripMenuItem.Text = "Clean Database";
             this.cleanDatabaseToolStripMenuItem.Click += new System.EventHandler(this.cleanDatabaseToolStripMenuItem_Click);
             // 
             // removeRecordLockToolStripMenuItem
             // 
             this.removeRecordLockToolStripMenuItem.Name = "removeRecordLockToolStripMenuItem";
-            this.removeRecordLockToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.removeRecordLockToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.removeRecordLockToolStripMenuItem.Text = "Remove Record Lock";
             this.removeRecordLockToolStripMenuItem.Click += new System.EventHandler(this.removeRecordLockToolStripMenuItem_Click);
             // 
@@ -1184,13 +1191,13 @@
             this.oldRMTugwellToolStripMenuItem,
             this.newTPSToolStripMenuItem});
             this.companyToolStripMenuItem.Name = "companyToolStripMenuItem";
-            this.companyToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.companyToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
             this.companyToolStripMenuItem.Text = "Company";
             // 
             // oldRMTugwellToolStripMenuItem
             // 
             this.oldRMTugwellToolStripMenuItem.Name = "oldRMTugwellToolStripMenuItem";
-            this.oldRMTugwellToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.oldRMTugwellToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
             this.oldRMTugwellToolStripMenuItem.Text = "Old RMTugwell";
             this.oldRMTugwellToolStripMenuItem.Click += new System.EventHandler(this.oldRMTugwellToolStripMenuItem_Click);
             // 
@@ -1199,7 +1206,7 @@
             this.newTPSToolStripMenuItem.Checked = true;
             this.newTPSToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.newTPSToolStripMenuItem.Name = "newTPSToolStripMenuItem";
-            this.newTPSToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.newTPSToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
             this.newTPSToolStripMenuItem.Text = "New TPS";
             this.newTPSToolStripMenuItem.Click += new System.EventHandler(this.newTPSToolStripMenuItem_Click);
             // 
@@ -1208,13 +1215,13 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -1222,9 +1229,11 @@
             // 
             this.groupBox1.Controls.Add(this.tabControlMainOrdersQuotes);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(0, 24);
+            this.groupBox1.Location = new System.Drawing.Point(0, 28);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1054, 526);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(1405, 651);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Main Control";
@@ -1234,10 +1243,11 @@
             this.tabControlMainOrdersQuotes.Controls.Add(this.tabPageOrders);
             this.tabControlMainOrdersQuotes.Controls.Add(this.tabPageQuotes);
             this.tabControlMainOrdersQuotes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControlMainOrdersQuotes.Location = new System.Drawing.Point(3, 16);
+            this.tabControlMainOrdersQuotes.Location = new System.Drawing.Point(4, 19);
+            this.tabControlMainOrdersQuotes.Margin = new System.Windows.Forms.Padding(4);
             this.tabControlMainOrdersQuotes.Name = "tabControlMainOrdersQuotes";
             this.tabControlMainOrdersQuotes.SelectedIndex = 0;
-            this.tabControlMainOrdersQuotes.Size = new System.Drawing.Size(1048, 507);
+            this.tabControlMainOrdersQuotes.Size = new System.Drawing.Size(1397, 628);
             this.tabControlMainOrdersQuotes.TabIndex = 0;
             this.tabControlMainOrdersQuotes.SelectedIndexChanged += new System.EventHandler(this.tabControlMainOrdersQuotes_SelectedIndexChanged);
             // 
@@ -1245,10 +1255,11 @@
             // 
             this.tabPageOrders.Controls.Add(this.tabControlOrdersSub);
             this.tabPageOrders.Controls.Add(this.groupBoxOrders);
-            this.tabPageOrders.Location = new System.Drawing.Point(4, 22);
+            this.tabPageOrders.Location = new System.Drawing.Point(4, 25);
+            this.tabPageOrders.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageOrders.Name = "tabPageOrders";
-            this.tabPageOrders.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageOrders.Size = new System.Drawing.Size(1040, 481);
+            this.tabPageOrders.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPageOrders.Size = new System.Drawing.Size(1389, 599);
             this.tabPageOrders.TabIndex = 0;
             this.tabPageOrders.Text = "Orders";
             this.tabPageOrders.UseVisualStyleBackColor = true;
@@ -1262,10 +1273,11 @@
             this.tabControlOrdersSub.Controls.Add(this.tabPageMarley);
             this.tabControlOrdersSub.Controls.Add(this.tabPageNotes);
             this.tabControlOrdersSub.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControlOrdersSub.Location = new System.Drawing.Point(3, 131);
+            this.tabControlOrdersSub.Location = new System.Drawing.Point(4, 162);
+            this.tabControlOrdersSub.Margin = new System.Windows.Forms.Padding(4);
             this.tabControlOrdersSub.Name = "tabControlOrdersSub";
             this.tabControlOrdersSub.SelectedIndex = 0;
-            this.tabControlOrdersSub.Size = new System.Drawing.Size(1034, 347);
+            this.tabControlOrdersSub.Size = new System.Drawing.Size(1381, 433);
             this.tabControlOrdersSub.TabIndex = 0;
             // 
             // tabPageGeneral
@@ -1304,19 +1316,21 @@
             this.tabPageGeneral.Controls.Add(this.textBoxStreet2);
             this.tabPageGeneral.Controls.Add(this.textBoxCity);
             this.tabPageGeneral.Controls.Add(this.label12);
-            this.tabPageGeneral.Location = new System.Drawing.Point(4, 22);
+            this.tabPageGeneral.Location = new System.Drawing.Point(4, 25);
+            this.tabPageGeneral.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageGeneral.Name = "tabPageGeneral";
-            this.tabPageGeneral.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGeneral.Size = new System.Drawing.Size(1026, 321);
+            this.tabPageGeneral.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPageGeneral.Size = new System.Drawing.Size(1373, 404);
             this.tabPageGeneral.TabIndex = 0;
             this.tabPageGeneral.Text = "General";
             this.tabPageGeneral.UseVisualStyleBackColor = true;
             // 
             // buttonSelectCompanyShipTo
             // 
-            this.buttonSelectCompanyShipTo.Location = new System.Drawing.Point(406, 3);
+            this.buttonSelectCompanyShipTo.Location = new System.Drawing.Point(541, 4);
+            this.buttonSelectCompanyShipTo.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSelectCompanyShipTo.Name = "buttonSelectCompanyShipTo";
-            this.buttonSelectCompanyShipTo.Size = new System.Drawing.Size(100, 23);
+            this.buttonSelectCompanyShipTo.Size = new System.Drawing.Size(133, 28);
             this.buttonSelectCompanyShipTo.TabIndex = 52;
             this.buttonSelectCompanyShipTo.Tag = "1";
             this.buttonSelectCompanyShipTo.Text = "Select Company";
@@ -1325,9 +1339,10 @@
             // 
             // buttonSelectCompany
             // 
-            this.buttonSelectCompany.Location = new System.Drawing.Point(72, 2);
+            this.buttonSelectCompany.Location = new System.Drawing.Point(96, 2);
+            this.buttonSelectCompany.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSelectCompany.Name = "buttonSelectCompany";
-            this.buttonSelectCompany.Size = new System.Drawing.Size(100, 23);
+            this.buttonSelectCompany.Size = new System.Drawing.Size(133, 28);
             this.buttonSelectCompany.TabIndex = 51;
             this.buttonSelectCompany.Tag = "0";
             this.buttonSelectCompany.Text = "Select Company";
@@ -1340,9 +1355,11 @@
             this.groupBox2.Controls.Add(this.label25);
             this.groupBox2.Controls.Add(this.label24);
             this.groupBox2.Controls.Add(this.comboBoxCarrier);
-            this.groupBox2.Location = new System.Drawing.Point(688, 31);
+            this.groupBox2.Location = new System.Drawing.Point(917, 38);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(205, 100);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(273, 123);
             this.groupBox2.TabIndex = 50;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "RMT Delivery to Customer";
@@ -1350,9 +1367,10 @@
             // textBoxShipDate
             // 
             this.textBoxShipDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxShipDate.Location = new System.Drawing.Point(69, 58);
+            this.textBoxShipDate.Location = new System.Drawing.Point(92, 71);
+            this.textBoxShipDate.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxShipDate.Name = "textBoxShipDate";
-            this.textBoxShipDate.Size = new System.Drawing.Size(120, 21);
+            this.textBoxShipDate.Size = new System.Drawing.Size(159, 24);
             this.textBoxShipDate.TabIndex = 1;
             this.textBoxShipDate.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxShipDate.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -1362,18 +1380,20 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(6, 61);
+            this.label25.Location = new System.Drawing.Point(8, 75);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(57, 13);
+            this.label25.Size = new System.Drawing.Size(74, 17);
             this.label25.TabIndex = 52;
             this.label25.Text = "Ship Date:";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(6, 24);
+            this.label24.Location = new System.Drawing.Point(8, 30);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(40, 13);
+            this.label24.Size = new System.Drawing.Size(55, 17);
             this.label24.TabIndex = 51;
             this.label24.Text = "Carrier:";
             // 
@@ -1391,9 +1411,10 @@
             "Fedex Freight",
             "FedEx Ground",
             "Vendor Vehicle"});
-            this.comboBoxCarrier.Location = new System.Drawing.Point(69, 20);
+            this.comboBoxCarrier.Location = new System.Drawing.Point(92, 25);
+            this.comboBoxCarrier.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxCarrier.Name = "comboBoxCarrier";
-            this.comboBoxCarrier.Size = new System.Drawing.Size(120, 21);
+            this.comboBoxCarrier.Size = new System.Drawing.Size(159, 24);
             this.comboBoxCarrier.TabIndex = 0;
             this.comboBoxCarrier.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             this.comboBoxCarrier.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
@@ -1401,9 +1422,10 @@
             // checkBoxComPaid
             // 
             this.checkBoxComPaid.AutoSize = true;
-            this.checkBoxComPaid.Location = new System.Drawing.Point(688, 169);
+            this.checkBoxComPaid.Location = new System.Drawing.Point(917, 208);
+            this.checkBoxComPaid.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxComPaid.Name = "checkBoxComPaid";
-            this.checkBoxComPaid.Size = new System.Drawing.Size(100, 17);
+            this.checkBoxComPaid.Size = new System.Drawing.Size(130, 21);
             this.checkBoxComPaid.TabIndex = 16;
             this.checkBoxComPaid.Text = "Commision Paid";
             this.checkBoxComPaid.UseVisualStyleBackColor = true;
@@ -1412,9 +1434,10 @@
             // checkBoxComOrder
             // 
             this.checkBoxComOrder.AutoSize = true;
-            this.checkBoxComOrder.Location = new System.Drawing.Point(688, 140);
+            this.checkBoxComOrder.Location = new System.Drawing.Point(917, 172);
+            this.checkBoxComOrder.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxComOrder.Name = "checkBoxComOrder";
-            this.checkBoxComOrder.Size = new System.Drawing.Size(105, 17);
+            this.checkBoxComOrder.Size = new System.Drawing.Size(139, 21);
             this.checkBoxComOrder.TabIndex = 15;
             this.checkBoxComOrder.Text = "Commision Order";
             this.checkBoxComOrder.UseVisualStyleBackColor = true;
@@ -1422,9 +1445,10 @@
             // 
             // buttonOrdersGeneralCopy
             // 
-            this.buttonOrdersGeneralCopy.Location = new System.Drawing.Point(351, 83);
+            this.buttonOrdersGeneralCopy.Location = new System.Drawing.Point(468, 102);
+            this.buttonOrdersGeneralCopy.Margin = new System.Windows.Forms.Padding(4);
             this.buttonOrdersGeneralCopy.Name = "buttonOrdersGeneralCopy";
-            this.buttonOrdersGeneralCopy.Size = new System.Drawing.Size(35, 23);
+            this.buttonOrdersGeneralCopy.Size = new System.Drawing.Size(47, 28);
             this.buttonOrdersGeneralCopy.TabIndex = 45;
             this.buttonOrdersGeneralCopy.Text = ">>>>";
             this.buttonOrdersGeneralCopy.UseVisualStyleBackColor = true;
@@ -1433,9 +1457,10 @@
             // textBoxPumpStk
             // 
             this.textBoxPumpStk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPumpStk.Location = new System.Drawing.Point(72, 234);
+            this.textBoxPumpStk.Location = new System.Drawing.Point(96, 288);
+            this.textBoxPumpStk.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPumpStk.Name = "textBoxPumpStk";
-            this.textBoxPumpStk.Size = new System.Drawing.Size(596, 21);
+            this.textBoxPumpStk.Size = new System.Drawing.Size(793, 24);
             this.textBoxPumpStk.TabIndex = 14;
             this.textBoxPumpStk.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxPumpStk.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -1444,18 +1469,20 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(14, 237);
+            this.label22.Location = new System.Drawing.Point(19, 292);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(56, 13);
+            this.label22.Size = new System.Drawing.Size(72, 17);
             this.label22.TabIndex = 39;
             this.label22.Text = "Pump Stk:";
             // 
             // textBoxSerialNumber
             // 
             this.textBoxSerialNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSerialNumber.Location = new System.Drawing.Point(72, 202);
+            this.textBoxSerialNumber.Location = new System.Drawing.Point(96, 249);
+            this.textBoxSerialNumber.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSerialNumber.Name = "textBoxSerialNumber";
-            this.textBoxSerialNumber.Size = new System.Drawing.Size(596, 21);
+            this.textBoxSerialNumber.Size = new System.Drawing.Size(793, 24);
             this.textBoxSerialNumber.TabIndex = 13;
             this.textBoxSerialNumber.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxSerialNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -1464,27 +1491,30 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(348, 34);
+            this.label11.Location = new System.Drawing.Point(464, 42);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(47, 13);
+            this.label11.Size = new System.Drawing.Size(61, 17);
             this.label11.TabIndex = 28;
             this.label11.Text = "Ship To:";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(14, 205);
+            this.label19.Location = new System.Drawing.Point(19, 252);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(46, 13);
+            this.label19.Size = new System.Drawing.Size(60, 17);
             this.label19.TabIndex = 31;
             this.label19.Text = "Serial #:";
             // 
             // textBoxShipToZip
             // 
             this.textBoxShipToZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxShipToZip.Location = new System.Drawing.Point(510, 137);
+            this.textBoxShipToZip.Location = new System.Drawing.Point(680, 169);
+            this.textBoxShipToZip.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxShipToZip.Name = "textBoxShipToZip";
-            this.textBoxShipToZip.Size = new System.Drawing.Size(158, 21);
+            this.textBoxShipToZip.Size = new System.Drawing.Size(209, 24);
             this.textBoxShipToZip.TabIndex = 11;
             this.textBoxShipToZip.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxShipToZip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -1493,9 +1523,10 @@
             // textBoxGrinder
             // 
             this.textBoxGrinder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxGrinder.Location = new System.Drawing.Point(72, 176);
+            this.textBoxGrinder.Location = new System.Drawing.Point(96, 217);
+            this.textBoxGrinder.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxGrinder.Name = "textBoxGrinder";
-            this.textBoxGrinder.Size = new System.Drawing.Size(596, 21);
+            this.textBoxGrinder.Size = new System.Drawing.Size(793, 24);
             this.textBoxGrinder.TabIndex = 12;
             this.textBoxGrinder.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxGrinder.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -1504,18 +1535,20 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(14, 179);
+            this.label20.Location = new System.Drawing.Point(19, 220);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(49, 13);
+            this.label20.Size = new System.Drawing.Size(62, 17);
             this.label20.TabIndex = 29;
             this.label20.Text = "Model #:";
             // 
             // textBoxShipTo
             // 
             this.textBoxShipTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxShipTo.Location = new System.Drawing.Point(406, 31);
+            this.textBoxShipTo.Location = new System.Drawing.Point(541, 38);
+            this.textBoxShipTo.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxShipTo.Name = "textBoxShipTo";
-            this.textBoxShipTo.Size = new System.Drawing.Size(262, 21);
+            this.textBoxShipTo.Size = new System.Drawing.Size(348, 24);
             this.textBoxShipTo.TabIndex = 6;
             this.textBoxShipTo.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxShipTo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -1524,18 +1557,20 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(479, 139);
+            this.label15.Location = new System.Drawing.Point(639, 171);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(25, 13);
+            this.label15.Size = new System.Drawing.Size(32, 17);
             this.label15.TabIndex = 37;
             this.label15.Text = "Zip:";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(348, 60);
+            this.label16.Location = new System.Drawing.Point(464, 74);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(38, 13);
+            this.label16.Size = new System.Drawing.Size(50, 17);
             this.label16.TabIndex = 30;
             this.label16.Text = "Street:";
             // 
@@ -1545,70 +1580,28 @@
             this.comboBoxShipToState.FormattingEnabled = true;
             this.comboBoxShipToState.Items.AddRange(new object[] {
             "",
-            //"AK",
             "AL",
-            //"AR",
-            //"AZ",
-            //"CA",
-            //"CO",
-            //"CT",
-            //"DC",
-            //"DE",
             "FL",
             "GA",
-            //"HI",
-            //"IA",
-            //"ID",
-            //"IL",
-            //"IN",
-            //"KS",
             "KY",
             "LA",
-            //"MA",
-            //"MD",
-            //"ME",
-            //"MI",
-            //"MN",
-            //"MO",
             "MS",
-            //"MT",
             "NC",
-            //"ND",
-            //"NE",
-            //"NH",
-            //"NJ",
-            //"NM",
-            //"NV",
-            //"NY",
-            //"OH",
-            //"OK",
-            //"OR",
-            //"PA",
-            //"RI",
-            //"SC",
-            //"SD",
-            "TN",
-            //"TX",
-            //"UT",
-            //"VA",
-            //"VT",
-            //"WA",
-            //"WI",
-            //"WV",
-            //"WY"
-            });
-            this.comboBoxShipToState.Location = new System.Drawing.Point(406, 136);
+            "TN"});
+            this.comboBoxShipToState.Location = new System.Drawing.Point(541, 167);
+            this.comboBoxShipToState.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxShipToState.Name = "comboBoxShipToState";
-            this.comboBoxShipToState.Size = new System.Drawing.Size(59, 21);
+            this.comboBoxShipToState.Size = new System.Drawing.Size(77, 24);
             this.comboBoxShipToState.TabIndex = 10;
             this.comboBoxShipToState.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxShipToStreet1
             // 
             this.textBoxShipToStreet1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxShipToStreet1.Location = new System.Drawing.Point(406, 57);
+            this.textBoxShipToStreet1.Location = new System.Drawing.Point(541, 70);
+            this.textBoxShipToStreet1.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxShipToStreet1.Name = "textBoxShipToStreet1";
-            this.textBoxShipToStreet1.Size = new System.Drawing.Size(262, 21);
+            this.textBoxShipToStreet1.Size = new System.Drawing.Size(348, 24);
             this.textBoxShipToStreet1.TabIndex = 7;
             this.textBoxShipToStreet1.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxShipToStreet1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -1617,18 +1610,20 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(348, 138);
+            this.label17.Location = new System.Drawing.Point(464, 170);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(35, 13);
+            this.label17.Size = new System.Drawing.Size(45, 17);
             this.label17.TabIndex = 35;
             this.label17.Text = "State:";
             // 
             // textBoxShipToStreet2
             // 
             this.textBoxShipToStreet2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxShipToStreet2.Location = new System.Drawing.Point(406, 83);
+            this.textBoxShipToStreet2.Location = new System.Drawing.Point(541, 102);
+            this.textBoxShipToStreet2.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxShipToStreet2.Name = "textBoxShipToStreet2";
-            this.textBoxShipToStreet2.Size = new System.Drawing.Size(262, 21);
+            this.textBoxShipToStreet2.Size = new System.Drawing.Size(348, 24);
             this.textBoxShipToStreet2.TabIndex = 8;
             this.textBoxShipToStreet2.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxShipToStreet2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -1637,9 +1632,10 @@
             // textBoxShipToCity
             // 
             this.textBoxShipToCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxShipToCity.Location = new System.Drawing.Point(406, 109);
+            this.textBoxShipToCity.Location = new System.Drawing.Point(541, 134);
+            this.textBoxShipToCity.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxShipToCity.Name = "textBoxShipToCity";
-            this.textBoxShipToCity.Size = new System.Drawing.Size(262, 21);
+            this.textBoxShipToCity.Size = new System.Drawing.Size(348, 24);
             this.textBoxShipToCity.TabIndex = 9;
             this.textBoxShipToCity.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxShipToCity.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -1648,27 +1644,30 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(348, 112);
+            this.label18.Location = new System.Drawing.Point(464, 138);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(27, 13);
+            this.label18.Size = new System.Drawing.Size(35, 17);
             this.label18.TabIndex = 33;
             this.label18.Text = "City:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(14, 34);
+            this.label9.Location = new System.Drawing.Point(19, 42);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(47, 13);
+            this.label9.Size = new System.Drawing.Size(61, 17);
             this.label9.TabIndex = 16;
             this.label9.Text = "Sold To:";
             // 
             // textBoxZip
             // 
             this.textBoxZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxZip.Location = new System.Drawing.Point(176, 137);
+            this.textBoxZip.Location = new System.Drawing.Point(235, 169);
+            this.textBoxZip.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxZip.Name = "textBoxZip";
-            this.textBoxZip.Size = new System.Drawing.Size(158, 21);
+            this.textBoxZip.Size = new System.Drawing.Size(209, 24);
             this.textBoxZip.TabIndex = 5;
             this.textBoxZip.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxZip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -1677,9 +1676,10 @@
             // textBoxSoldTo
             // 
             this.textBoxSoldTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSoldTo.Location = new System.Drawing.Point(72, 31);
+            this.textBoxSoldTo.Location = new System.Drawing.Point(96, 38);
+            this.textBoxSoldTo.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSoldTo.Name = "textBoxSoldTo";
-            this.textBoxSoldTo.Size = new System.Drawing.Size(262, 21);
+            this.textBoxSoldTo.Size = new System.Drawing.Size(348, 24);
             this.textBoxSoldTo.TabIndex = 0;
             this.textBoxSoldTo.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxSoldTo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -1688,18 +1688,20 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(145, 139);
+            this.label14.Location = new System.Drawing.Point(193, 171);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(25, 13);
+            this.label14.Size = new System.Drawing.Size(32, 17);
             this.label14.TabIndex = 26;
             this.label14.Text = "Zip:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(14, 60);
+            this.label10.Location = new System.Drawing.Point(19, 74);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(38, 13);
+            this.label10.Size = new System.Drawing.Size(50, 17);
             this.label10.TabIndex = 18;
             this.label10.Text = "Street:";
             // 
@@ -1709,70 +1711,28 @@
             this.comboBoxSoldToState.FormattingEnabled = true;
             this.comboBoxSoldToState.Items.AddRange(new object[] {
             "",
-            //"AK",
             "AL",
-            //"AR",
-            //"AZ",
-            //"CA",
-            //"CO",
-            //"CT",
-            //"DC",
-            //"DE",
             "FL",
             "GA",
-            //"HI",
-            //"IA",
-            //"ID",
-            //"IL",
-            //"IN",
-            //"KS",
             "KY",
             "LA",
-            //"MA",
-            //"MD",
-            //"ME",
-            //"MI",
-            //"MN",
-            //"MO",
             "MS",
-            //"MT",
             "NC",
-            //"ND",
-            //"NE",
-            //"NH",
-            //"NJ",
-            //"NM",
-            //"NV",
-            //"NY",
-            //"OH",
-            //"OK",
-            //"OR",
-            //"PA",
-            //"RI",
-            //"SC",
-            //"SD",
-            "TN",
-            //"TX",
-            //"UT",
-            //"VA",
-            //"VT",
-            //"WA",
-            //"WI",
-            //"WV",
-            //"WY"
-            });
-            this.comboBoxSoldToState.Location = new System.Drawing.Point(72, 136);
+            "TN"});
+            this.comboBoxSoldToState.Location = new System.Drawing.Point(96, 167);
+            this.comboBoxSoldToState.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxSoldToState.Name = "comboBoxSoldToState";
-            this.comboBoxSoldToState.Size = new System.Drawing.Size(59, 21);
+            this.comboBoxSoldToState.Size = new System.Drawing.Size(77, 24);
             this.comboBoxSoldToState.TabIndex = 4;
             this.comboBoxSoldToState.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxStreet1
             // 
             this.textBoxStreet1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxStreet1.Location = new System.Drawing.Point(72, 57);
+            this.textBoxStreet1.Location = new System.Drawing.Point(96, 70);
+            this.textBoxStreet1.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxStreet1.Name = "textBoxStreet1";
-            this.textBoxStreet1.Size = new System.Drawing.Size(262, 21);
+            this.textBoxStreet1.Size = new System.Drawing.Size(348, 24);
             this.textBoxStreet1.TabIndex = 1;
             this.textBoxStreet1.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxStreet1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -1781,18 +1741,20 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(14, 138);
+            this.label13.Location = new System.Drawing.Point(19, 170);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(35, 13);
+            this.label13.Size = new System.Drawing.Size(45, 17);
             this.label13.TabIndex = 24;
             this.label13.Text = "State:";
             // 
             // textBoxStreet2
             // 
             this.textBoxStreet2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxStreet2.Location = new System.Drawing.Point(72, 83);
+            this.textBoxStreet2.Location = new System.Drawing.Point(96, 102);
+            this.textBoxStreet2.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxStreet2.Name = "textBoxStreet2";
-            this.textBoxStreet2.Size = new System.Drawing.Size(262, 21);
+            this.textBoxStreet2.Size = new System.Drawing.Size(348, 24);
             this.textBoxStreet2.TabIndex = 2;
             this.textBoxStreet2.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxStreet2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -1801,9 +1763,10 @@
             // textBoxCity
             // 
             this.textBoxCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCity.Location = new System.Drawing.Point(72, 109);
+            this.textBoxCity.Location = new System.Drawing.Point(96, 134);
+            this.textBoxCity.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCity.Name = "textBoxCity";
-            this.textBoxCity.Size = new System.Drawing.Size(262, 21);
+            this.textBoxCity.Size = new System.Drawing.Size(348, 24);
             this.textBoxCity.TabIndex = 3;
             this.textBoxCity.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxCity.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -1812,9 +1775,10 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(14, 112);
+            this.label12.Location = new System.Drawing.Point(19, 138);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(27, 13);
+            this.label12.Size = new System.Drawing.Size(35, 17);
             this.label12.TabIndex = 22;
             this.label12.Text = "City:";
             // 
@@ -1905,9 +1869,10 @@
             this.tabPageTracking.Controls.Add(this.textBoxTrkNotes1);
             this.tabPageTracking.Controls.Add(this.label27);
             this.tabPageTracking.Controls.Add(this.comboBoxTrkBy1);
-            this.tabPageTracking.Location = new System.Drawing.Point(4, 22);
+            this.tabPageTracking.Location = new System.Drawing.Point(4, 25);
+            this.tabPageTracking.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageTracking.Name = "tabPageTracking";
-            this.tabPageTracking.Size = new System.Drawing.Size(1026, 321);
+            this.tabPageTracking.Size = new System.Drawing.Size(1373, 404);
             this.tabPageTracking.TabIndex = 1;
             this.tabPageTracking.Text = "Tracking";
             this.tabPageTracking.UseVisualStyleBackColor = true;
@@ -1922,18 +1887,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource18.Location = new System.Drawing.Point(151, 507);
+            this.comboBoxTrkSource18.Location = new System.Drawing.Point(201, 624);
+            this.comboBoxTrkSource18.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource18.Name = "comboBoxTrkSource18";
-            this.comboBoxTrkSource18.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource18.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource18.TabIndex = 70;
             this.comboBoxTrkSource18.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate18
             // 
             this.textBoxTrkDate18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate18.Location = new System.Drawing.Point(15, 508);
+            this.textBoxTrkDate18.Location = new System.Drawing.Point(20, 625);
+            this.textBoxTrkDate18.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate18.Name = "textBoxTrkDate18";
-            this.textBoxTrkDate18.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate18.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate18.TabIndex = 68;
             this.textBoxTrkDate18.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate18.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -1943,9 +1910,10 @@
             // textBoxTrkNotes18
             // 
             this.textBoxTrkNotes18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes18.Location = new System.Drawing.Point(275, 508);
+            this.textBoxTrkNotes18.Location = new System.Drawing.Point(367, 625);
+            this.textBoxTrkNotes18.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes18.Name = "textBoxTrkNotes18";
-            this.textBoxTrkNotes18.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes18.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes18.TabIndex = 71;
             this.textBoxTrkNotes18.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes18.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -1962,9 +1930,10 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy18.Location = new System.Drawing.Point(92, 507);
+            this.comboBoxTrkBy18.Location = new System.Drawing.Point(123, 624);
+            this.comboBoxTrkBy18.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy18.Name = "comboBoxTrkBy18";
-            this.comboBoxTrkBy18.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy18.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy18.TabIndex = 69;
             this.comboBoxTrkBy18.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
@@ -1978,18 +1947,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource17.Location = new System.Drawing.Point(151, 483);
+            this.comboBoxTrkSource17.Location = new System.Drawing.Point(201, 594);
+            this.comboBoxTrkSource17.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource17.Name = "comboBoxTrkSource17";
-            this.comboBoxTrkSource17.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource17.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource17.TabIndex = 66;
             this.comboBoxTrkSource17.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate17
             // 
             this.textBoxTrkDate17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate17.Location = new System.Drawing.Point(15, 484);
+            this.textBoxTrkDate17.Location = new System.Drawing.Point(20, 596);
+            this.textBoxTrkDate17.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate17.Name = "textBoxTrkDate17";
-            this.textBoxTrkDate17.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate17.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate17.TabIndex = 64;
             this.textBoxTrkDate17.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate17.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -1999,9 +1970,10 @@
             // textBoxTrkNotes17
             // 
             this.textBoxTrkNotes17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes17.Location = new System.Drawing.Point(275, 484);
+            this.textBoxTrkNotes17.Location = new System.Drawing.Point(367, 596);
+            this.textBoxTrkNotes17.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes17.Name = "textBoxTrkNotes17";
-            this.textBoxTrkNotes17.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes17.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes17.TabIndex = 67;
             this.textBoxTrkNotes17.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes17.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -2018,9 +1990,10 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy17.Location = new System.Drawing.Point(92, 483);
+            this.comboBoxTrkBy17.Location = new System.Drawing.Point(123, 594);
+            this.comboBoxTrkBy17.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy17.Name = "comboBoxTrkBy17";
-            this.comboBoxTrkBy17.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy17.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy17.TabIndex = 65;
             this.comboBoxTrkBy17.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
@@ -2034,18 +2007,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource16.Location = new System.Drawing.Point(151, 459);
+            this.comboBoxTrkSource16.Location = new System.Drawing.Point(201, 565);
+            this.comboBoxTrkSource16.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource16.Name = "comboBoxTrkSource16";
-            this.comboBoxTrkSource16.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource16.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource16.TabIndex = 62;
             this.comboBoxTrkSource16.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate16
             // 
             this.textBoxTrkDate16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate16.Location = new System.Drawing.Point(15, 460);
+            this.textBoxTrkDate16.Location = new System.Drawing.Point(20, 566);
+            this.textBoxTrkDate16.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate16.Name = "textBoxTrkDate16";
-            this.textBoxTrkDate16.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate16.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate16.TabIndex = 60;
             this.textBoxTrkDate16.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate16.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2055,9 +2030,10 @@
             // textBoxTrkNotes16
             // 
             this.textBoxTrkNotes16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes16.Location = new System.Drawing.Point(275, 460);
+            this.textBoxTrkNotes16.Location = new System.Drawing.Point(367, 566);
+            this.textBoxTrkNotes16.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes16.Name = "textBoxTrkNotes16";
-            this.textBoxTrkNotes16.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes16.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes16.TabIndex = 63;
             this.textBoxTrkNotes16.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes16.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -2074,9 +2050,10 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy16.Location = new System.Drawing.Point(92, 459);
+            this.comboBoxTrkBy16.Location = new System.Drawing.Point(123, 565);
+            this.comboBoxTrkBy16.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy16.Name = "comboBoxTrkBy16";
-            this.comboBoxTrkBy16.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy16.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy16.TabIndex = 61;
             this.comboBoxTrkBy16.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
@@ -2090,18 +2067,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource15.Location = new System.Drawing.Point(151, 435);
+            this.comboBoxTrkSource15.Location = new System.Drawing.Point(201, 535);
+            this.comboBoxTrkSource15.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource15.Name = "comboBoxTrkSource15";
-            this.comboBoxTrkSource15.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource15.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource15.TabIndex = 58;
             this.comboBoxTrkSource15.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate15
             // 
             this.textBoxTrkDate15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate15.Location = new System.Drawing.Point(15, 436);
+            this.textBoxTrkDate15.Location = new System.Drawing.Point(20, 537);
+            this.textBoxTrkDate15.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate15.Name = "textBoxTrkDate15";
-            this.textBoxTrkDate15.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate15.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate15.TabIndex = 56;
             this.textBoxTrkDate15.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate15.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2111,9 +2090,10 @@
             // textBoxTrkNotes15
             // 
             this.textBoxTrkNotes15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes15.Location = new System.Drawing.Point(275, 436);
+            this.textBoxTrkNotes15.Location = new System.Drawing.Point(367, 537);
+            this.textBoxTrkNotes15.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes15.Name = "textBoxTrkNotes15";
-            this.textBoxTrkNotes15.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes15.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes15.TabIndex = 59;
             this.textBoxTrkNotes15.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes15.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -2130,9 +2110,10 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy15.Location = new System.Drawing.Point(92, 435);
+            this.comboBoxTrkBy15.Location = new System.Drawing.Point(123, 535);
+            this.comboBoxTrkBy15.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy15.Name = "comboBoxTrkBy15";
-            this.comboBoxTrkBy15.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy15.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy15.TabIndex = 57;
             this.comboBoxTrkBy15.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
@@ -2146,18 +2127,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource14.Location = new System.Drawing.Point(151, 411);
+            this.comboBoxTrkSource14.Location = new System.Drawing.Point(201, 506);
+            this.comboBoxTrkSource14.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource14.Name = "comboBoxTrkSource14";
-            this.comboBoxTrkSource14.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource14.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource14.TabIndex = 54;
             this.comboBoxTrkSource14.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate14
             // 
             this.textBoxTrkDate14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate14.Location = new System.Drawing.Point(15, 412);
+            this.textBoxTrkDate14.Location = new System.Drawing.Point(20, 507);
+            this.textBoxTrkDate14.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate14.Name = "textBoxTrkDate14";
-            this.textBoxTrkDate14.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate14.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate14.TabIndex = 52;
             this.textBoxTrkDate14.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate14.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2167,9 +2150,10 @@
             // textBoxTrkNotes14
             // 
             this.textBoxTrkNotes14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes14.Location = new System.Drawing.Point(275, 412);
+            this.textBoxTrkNotes14.Location = new System.Drawing.Point(367, 507);
+            this.textBoxTrkNotes14.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes14.Name = "textBoxTrkNotes14";
-            this.textBoxTrkNotes14.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes14.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes14.TabIndex = 55;
             this.textBoxTrkNotes14.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes14.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -2186,9 +2170,10 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy14.Location = new System.Drawing.Point(92, 411);
+            this.comboBoxTrkBy14.Location = new System.Drawing.Point(123, 506);
+            this.comboBoxTrkBy14.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy14.Name = "comboBoxTrkBy14";
-            this.comboBoxTrkBy14.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy14.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy14.TabIndex = 53;
             this.comboBoxTrkBy14.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
@@ -2202,18 +2187,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource13.Location = new System.Drawing.Point(151, 387);
+            this.comboBoxTrkSource13.Location = new System.Drawing.Point(201, 476);
+            this.comboBoxTrkSource13.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource13.Name = "comboBoxTrkSource13";
-            this.comboBoxTrkSource13.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource13.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource13.TabIndex = 50;
             this.comboBoxTrkSource13.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate13
             // 
             this.textBoxTrkDate13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate13.Location = new System.Drawing.Point(15, 388);
+            this.textBoxTrkDate13.Location = new System.Drawing.Point(20, 478);
+            this.textBoxTrkDate13.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate13.Name = "textBoxTrkDate13";
-            this.textBoxTrkDate13.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate13.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate13.TabIndex = 48;
             this.textBoxTrkDate13.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate13.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2223,9 +2210,10 @@
             // textBoxTrkNotes13
             // 
             this.textBoxTrkNotes13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes13.Location = new System.Drawing.Point(275, 388);
+            this.textBoxTrkNotes13.Location = new System.Drawing.Point(367, 478);
+            this.textBoxTrkNotes13.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes13.Name = "textBoxTrkNotes13";
-            this.textBoxTrkNotes13.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes13.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes13.TabIndex = 51;
             this.textBoxTrkNotes13.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes13.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -2242,9 +2230,10 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy13.Location = new System.Drawing.Point(92, 387);
+            this.comboBoxTrkBy13.Location = new System.Drawing.Point(123, 476);
+            this.comboBoxTrkBy13.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy13.Name = "comboBoxTrkBy13";
-            this.comboBoxTrkBy13.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy13.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy13.TabIndex = 49;
             this.comboBoxTrkBy13.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
@@ -2258,18 +2247,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource12.Location = new System.Drawing.Point(151, 363);
+            this.comboBoxTrkSource12.Location = new System.Drawing.Point(201, 447);
+            this.comboBoxTrkSource12.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource12.Name = "comboBoxTrkSource12";
-            this.comboBoxTrkSource12.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource12.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource12.TabIndex = 46;
             this.comboBoxTrkSource12.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate12
             // 
             this.textBoxTrkDate12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate12.Location = new System.Drawing.Point(15, 364);
+            this.textBoxTrkDate12.Location = new System.Drawing.Point(20, 448);
+            this.textBoxTrkDate12.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate12.Name = "textBoxTrkDate12";
-            this.textBoxTrkDate12.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate12.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate12.TabIndex = 44;
             this.textBoxTrkDate12.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate12.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2279,9 +2270,10 @@
             // textBoxTrkNotes12
             // 
             this.textBoxTrkNotes12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes12.Location = new System.Drawing.Point(275, 364);
+            this.textBoxTrkNotes12.Location = new System.Drawing.Point(367, 448);
+            this.textBoxTrkNotes12.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes12.Name = "textBoxTrkNotes12";
-            this.textBoxTrkNotes12.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes12.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes12.TabIndex = 47;
             this.textBoxTrkNotes12.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes12.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -2298,9 +2290,10 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy12.Location = new System.Drawing.Point(92, 363);
+            this.comboBoxTrkBy12.Location = new System.Drawing.Point(123, 447);
+            this.comboBoxTrkBy12.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy12.Name = "comboBoxTrkBy12";
-            this.comboBoxTrkBy12.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy12.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy12.TabIndex = 45;
             this.comboBoxTrkBy12.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
@@ -2314,18 +2307,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource11.Location = new System.Drawing.Point(151, 339);
+            this.comboBoxTrkSource11.Location = new System.Drawing.Point(201, 417);
+            this.comboBoxTrkSource11.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource11.Name = "comboBoxTrkSource11";
-            this.comboBoxTrkSource11.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource11.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource11.TabIndex = 42;
             this.comboBoxTrkSource11.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate11
             // 
             this.textBoxTrkDate11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate11.Location = new System.Drawing.Point(15, 340);
+            this.textBoxTrkDate11.Location = new System.Drawing.Point(20, 418);
+            this.textBoxTrkDate11.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate11.Name = "textBoxTrkDate11";
-            this.textBoxTrkDate11.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate11.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate11.TabIndex = 40;
             this.textBoxTrkDate11.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate11.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2335,9 +2330,10 @@
             // textBoxTrkNotes11
             // 
             this.textBoxTrkNotes11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes11.Location = new System.Drawing.Point(275, 340);
+            this.textBoxTrkNotes11.Location = new System.Drawing.Point(367, 418);
+            this.textBoxTrkNotes11.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes11.Name = "textBoxTrkNotes11";
-            this.textBoxTrkNotes11.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes11.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes11.TabIndex = 43;
             this.textBoxTrkNotes11.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes11.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -2354,9 +2350,10 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy11.Location = new System.Drawing.Point(92, 339);
+            this.comboBoxTrkBy11.Location = new System.Drawing.Point(123, 417);
+            this.comboBoxTrkBy11.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy11.Name = "comboBoxTrkBy11";
-            this.comboBoxTrkBy11.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy11.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy11.TabIndex = 41;
             this.comboBoxTrkBy11.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
@@ -2370,18 +2367,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource10.Location = new System.Drawing.Point(151, 315);
+            this.comboBoxTrkSource10.Location = new System.Drawing.Point(201, 388);
+            this.comboBoxTrkSource10.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource10.Name = "comboBoxTrkSource10";
-            this.comboBoxTrkSource10.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource10.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource10.TabIndex = 38;
             this.comboBoxTrkSource10.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate10
             // 
             this.textBoxTrkDate10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate10.Location = new System.Drawing.Point(15, 316);
+            this.textBoxTrkDate10.Location = new System.Drawing.Point(20, 389);
+            this.textBoxTrkDate10.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate10.Name = "textBoxTrkDate10";
-            this.textBoxTrkDate10.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate10.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate10.TabIndex = 36;
             this.textBoxTrkDate10.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate10.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2391,9 +2390,10 @@
             // textBoxTrkNotes10
             // 
             this.textBoxTrkNotes10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes10.Location = new System.Drawing.Point(275, 316);
+            this.textBoxTrkNotes10.Location = new System.Drawing.Point(367, 389);
+            this.textBoxTrkNotes10.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes10.Name = "textBoxTrkNotes10";
-            this.textBoxTrkNotes10.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes10.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes10.TabIndex = 39;
             this.textBoxTrkNotes10.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes10.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -2410,9 +2410,10 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy10.Location = new System.Drawing.Point(92, 315);
+            this.comboBoxTrkBy10.Location = new System.Drawing.Point(123, 388);
+            this.comboBoxTrkBy10.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy10.Name = "comboBoxTrkBy10";
-            this.comboBoxTrkBy10.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy10.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy10.TabIndex = 37;
             this.comboBoxTrkBy10.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
@@ -2426,18 +2427,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource9.Location = new System.Drawing.Point(151, 291);
+            this.comboBoxTrkSource9.Location = new System.Drawing.Point(201, 358);
+            this.comboBoxTrkSource9.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource9.Name = "comboBoxTrkSource9";
-            this.comboBoxTrkSource9.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource9.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource9.TabIndex = 34;
             this.comboBoxTrkSource9.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate9
             // 
             this.textBoxTrkDate9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate9.Location = new System.Drawing.Point(15, 292);
+            this.textBoxTrkDate9.Location = new System.Drawing.Point(20, 359);
+            this.textBoxTrkDate9.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate9.Name = "textBoxTrkDate9";
-            this.textBoxTrkDate9.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate9.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate9.TabIndex = 32;
             this.textBoxTrkDate9.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate9.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2447,9 +2450,10 @@
             // textBoxTrkNotes9
             // 
             this.textBoxTrkNotes9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes9.Location = new System.Drawing.Point(275, 292);
+            this.textBoxTrkNotes9.Location = new System.Drawing.Point(367, 359);
+            this.textBoxTrkNotes9.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes9.Name = "textBoxTrkNotes9";
-            this.textBoxTrkNotes9.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes9.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes9.TabIndex = 35;
             this.textBoxTrkNotes9.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes9.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -2466,9 +2470,10 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy9.Location = new System.Drawing.Point(92, 291);
+            this.comboBoxTrkBy9.Location = new System.Drawing.Point(123, 358);
+            this.comboBoxTrkBy9.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy9.Name = "comboBoxTrkBy9";
-            this.comboBoxTrkBy9.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy9.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy9.TabIndex = 33;
             this.comboBoxTrkBy9.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
@@ -2482,18 +2487,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource8.Location = new System.Drawing.Point(151, 267);
+            this.comboBoxTrkSource8.Location = new System.Drawing.Point(201, 329);
+            this.comboBoxTrkSource8.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource8.Name = "comboBoxTrkSource8";
-            this.comboBoxTrkSource8.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource8.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource8.TabIndex = 30;
             this.comboBoxTrkSource8.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate8
             // 
             this.textBoxTrkDate8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate8.Location = new System.Drawing.Point(15, 268);
+            this.textBoxTrkDate8.Location = new System.Drawing.Point(20, 330);
+            this.textBoxTrkDate8.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate8.Name = "textBoxTrkDate8";
-            this.textBoxTrkDate8.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate8.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate8.TabIndex = 28;
             this.textBoxTrkDate8.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate8.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2503,9 +2510,10 @@
             // textBoxTrkNotes8
             // 
             this.textBoxTrkNotes8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes8.Location = new System.Drawing.Point(275, 268);
+            this.textBoxTrkNotes8.Location = new System.Drawing.Point(367, 330);
+            this.textBoxTrkNotes8.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes8.Name = "textBoxTrkNotes8";
-            this.textBoxTrkNotes8.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes8.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes8.TabIndex = 31;
             this.textBoxTrkNotes8.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes8.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -2522,9 +2530,10 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy8.Location = new System.Drawing.Point(92, 267);
+            this.comboBoxTrkBy8.Location = new System.Drawing.Point(123, 329);
+            this.comboBoxTrkBy8.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy8.Name = "comboBoxTrkBy8";
-            this.comboBoxTrkBy8.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy8.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy8.TabIndex = 29;
             this.comboBoxTrkBy8.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
@@ -2538,18 +2547,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource7.Location = new System.Drawing.Point(151, 243);
+            this.comboBoxTrkSource7.Location = new System.Drawing.Point(201, 299);
+            this.comboBoxTrkSource7.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource7.Name = "comboBoxTrkSource7";
-            this.comboBoxTrkSource7.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource7.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource7.TabIndex = 26;
             this.comboBoxTrkSource7.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate7
             // 
             this.textBoxTrkDate7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate7.Location = new System.Drawing.Point(15, 244);
+            this.textBoxTrkDate7.Location = new System.Drawing.Point(20, 300);
+            this.textBoxTrkDate7.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate7.Name = "textBoxTrkDate7";
-            this.textBoxTrkDate7.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate7.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate7.TabIndex = 24;
             this.textBoxTrkDate7.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate7.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2559,9 +2570,10 @@
             // textBoxTrkNotes7
             // 
             this.textBoxTrkNotes7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes7.Location = new System.Drawing.Point(275, 244);
+            this.textBoxTrkNotes7.Location = new System.Drawing.Point(367, 300);
+            this.textBoxTrkNotes7.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes7.Name = "textBoxTrkNotes7";
-            this.textBoxTrkNotes7.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes7.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes7.TabIndex = 27;
             this.textBoxTrkNotes7.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes7.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -2578,9 +2590,10 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy7.Location = new System.Drawing.Point(92, 243);
+            this.comboBoxTrkBy7.Location = new System.Drawing.Point(123, 299);
+            this.comboBoxTrkBy7.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy7.Name = "comboBoxTrkBy7";
-            this.comboBoxTrkBy7.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy7.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy7.TabIndex = 25;
             this.comboBoxTrkBy7.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
@@ -2594,18 +2607,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource6.Location = new System.Drawing.Point(151, 219);
+            this.comboBoxTrkSource6.Location = new System.Drawing.Point(201, 270);
+            this.comboBoxTrkSource6.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource6.Name = "comboBoxTrkSource6";
-            this.comboBoxTrkSource6.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource6.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource6.TabIndex = 22;
             this.comboBoxTrkSource6.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate6
             // 
             this.textBoxTrkDate6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate6.Location = new System.Drawing.Point(15, 220);
+            this.textBoxTrkDate6.Location = new System.Drawing.Point(20, 271);
+            this.textBoxTrkDate6.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate6.Name = "textBoxTrkDate6";
-            this.textBoxTrkDate6.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate6.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate6.TabIndex = 20;
             this.textBoxTrkDate6.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate6.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2615,9 +2630,10 @@
             // textBoxTrkNotes6
             // 
             this.textBoxTrkNotes6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes6.Location = new System.Drawing.Point(275, 220);
+            this.textBoxTrkNotes6.Location = new System.Drawing.Point(367, 271);
+            this.textBoxTrkNotes6.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes6.Name = "textBoxTrkNotes6";
-            this.textBoxTrkNotes6.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes6.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes6.TabIndex = 23;
             this.textBoxTrkNotes6.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -2634,9 +2650,10 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy6.Location = new System.Drawing.Point(92, 219);
+            this.comboBoxTrkBy6.Location = new System.Drawing.Point(123, 270);
+            this.comboBoxTrkBy6.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy6.Name = "comboBoxTrkBy6";
-            this.comboBoxTrkBy6.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy6.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy6.TabIndex = 21;
             this.comboBoxTrkBy6.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
@@ -2650,18 +2667,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource5.Location = new System.Drawing.Point(151, 195);
+            this.comboBoxTrkSource5.Location = new System.Drawing.Point(201, 240);
+            this.comboBoxTrkSource5.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource5.Name = "comboBoxTrkSource5";
-            this.comboBoxTrkSource5.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource5.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource5.TabIndex = 18;
             this.comboBoxTrkSource5.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate5
             // 
             this.textBoxTrkDate5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate5.Location = new System.Drawing.Point(15, 196);
+            this.textBoxTrkDate5.Location = new System.Drawing.Point(20, 241);
+            this.textBoxTrkDate5.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate5.Name = "textBoxTrkDate5";
-            this.textBoxTrkDate5.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate5.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate5.TabIndex = 16;
             this.textBoxTrkDate5.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate5.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2671,9 +2690,10 @@
             // textBoxTrkNotes5
             // 
             this.textBoxTrkNotes5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes5.Location = new System.Drawing.Point(275, 196);
+            this.textBoxTrkNotes5.Location = new System.Drawing.Point(367, 241);
+            this.textBoxTrkNotes5.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes5.Name = "textBoxTrkNotes5";
-            this.textBoxTrkNotes5.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes5.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes5.TabIndex = 19;
             this.textBoxTrkNotes5.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -2690,9 +2710,10 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy5.Location = new System.Drawing.Point(92, 195);
+            this.comboBoxTrkBy5.Location = new System.Drawing.Point(123, 240);
+            this.comboBoxTrkBy5.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy5.Name = "comboBoxTrkBy5";
-            this.comboBoxTrkBy5.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy5.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy5.TabIndex = 17;
             this.comboBoxTrkBy5.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
@@ -2706,18 +2727,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource4.Location = new System.Drawing.Point(151, 171);
+            this.comboBoxTrkSource4.Location = new System.Drawing.Point(201, 210);
+            this.comboBoxTrkSource4.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource4.Name = "comboBoxTrkSource4";
-            this.comboBoxTrkSource4.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource4.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource4.TabIndex = 14;
             this.comboBoxTrkSource4.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate4
             // 
             this.textBoxTrkDate4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate4.Location = new System.Drawing.Point(15, 172);
+            this.textBoxTrkDate4.Location = new System.Drawing.Point(20, 212);
+            this.textBoxTrkDate4.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate4.Name = "textBoxTrkDate4";
-            this.textBoxTrkDate4.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate4.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate4.TabIndex = 12;
             this.textBoxTrkDate4.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate4.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2727,9 +2750,10 @@
             // textBoxTrkNotes4
             // 
             this.textBoxTrkNotes4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes4.Location = new System.Drawing.Point(275, 172);
+            this.textBoxTrkNotes4.Location = new System.Drawing.Point(367, 212);
+            this.textBoxTrkNotes4.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes4.Name = "textBoxTrkNotes4";
-            this.textBoxTrkNotes4.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes4.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes4.TabIndex = 15;
             this.textBoxTrkNotes4.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -2746,9 +2770,10 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy4.Location = new System.Drawing.Point(92, 171);
+            this.comboBoxTrkBy4.Location = new System.Drawing.Point(123, 210);
+            this.comboBoxTrkBy4.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy4.Name = "comboBoxTrkBy4";
-            this.comboBoxTrkBy4.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy4.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy4.TabIndex = 13;
             this.comboBoxTrkBy4.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
@@ -2762,18 +2787,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource3.Location = new System.Drawing.Point(151, 147);
+            this.comboBoxTrkSource3.Location = new System.Drawing.Point(201, 181);
+            this.comboBoxTrkSource3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource3.Name = "comboBoxTrkSource3";
-            this.comboBoxTrkSource3.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource3.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource3.TabIndex = 10;
             this.comboBoxTrkSource3.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate3
             // 
             this.textBoxTrkDate3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate3.Location = new System.Drawing.Point(15, 148);
+            this.textBoxTrkDate3.Location = new System.Drawing.Point(20, 182);
+            this.textBoxTrkDate3.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate3.Name = "textBoxTrkDate3";
-            this.textBoxTrkDate3.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate3.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate3.TabIndex = 8;
             this.textBoxTrkDate3.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate3.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2783,9 +2810,10 @@
             // textBoxTrkNotes3
             // 
             this.textBoxTrkNotes3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes3.Location = new System.Drawing.Point(275, 148);
+            this.textBoxTrkNotes3.Location = new System.Drawing.Point(367, 182);
+            this.textBoxTrkNotes3.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes3.Name = "textBoxTrkNotes3";
-            this.textBoxTrkNotes3.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes3.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes3.TabIndex = 11;
             this.textBoxTrkNotes3.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -2802,9 +2830,10 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy3.Location = new System.Drawing.Point(92, 147);
+            this.comboBoxTrkBy3.Location = new System.Drawing.Point(123, 181);
+            this.comboBoxTrkBy3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy3.Name = "comboBoxTrkBy3";
-            this.comboBoxTrkBy3.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy3.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy3.TabIndex = 9;
             this.comboBoxTrkBy3.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
@@ -2818,18 +2847,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource2.Location = new System.Drawing.Point(151, 123);
+            this.comboBoxTrkSource2.Location = new System.Drawing.Point(201, 151);
+            this.comboBoxTrkSource2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource2.Name = "comboBoxTrkSource2";
-            this.comboBoxTrkSource2.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource2.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource2.TabIndex = 6;
             this.comboBoxTrkSource2.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate2
             // 
             this.textBoxTrkDate2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate2.Location = new System.Drawing.Point(15, 124);
+            this.textBoxTrkDate2.Location = new System.Drawing.Point(20, 153);
+            this.textBoxTrkDate2.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate2.Name = "textBoxTrkDate2";
-            this.textBoxTrkDate2.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate2.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate2.TabIndex = 4;
             this.textBoxTrkDate2.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate2.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2839,9 +2870,10 @@
             // textBoxTrkNotes2
             // 
             this.textBoxTrkNotes2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes2.Location = new System.Drawing.Point(275, 124);
+            this.textBoxTrkNotes2.Location = new System.Drawing.Point(367, 153);
+            this.textBoxTrkNotes2.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes2.Name = "textBoxTrkNotes2";
-            this.textBoxTrkNotes2.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes2.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes2.TabIndex = 7;
             this.textBoxTrkNotes2.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -2858,18 +2890,20 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy2.Location = new System.Drawing.Point(92, 123);
+            this.comboBoxTrkBy2.Location = new System.Drawing.Point(123, 151);
+            this.comboBoxTrkBy2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy2.Name = "comboBoxTrkBy2";
-            this.comboBoxTrkBy2.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy2.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy2.TabIndex = 5;
             this.comboBoxTrkBy2.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxPOShipVia
             // 
             this.textBoxPOShipVia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPOShipVia.Location = new System.Drawing.Point(528, 20);
+            this.textBoxPOShipVia.Location = new System.Drawing.Point(704, 25);
+            this.textBoxPOShipVia.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPOShipVia.Name = "textBoxPOShipVia";
-            this.textBoxPOShipVia.Size = new System.Drawing.Size(189, 21);
+            this.textBoxPOShipVia.Size = new System.Drawing.Size(251, 24);
             this.textBoxPOShipVia.TabIndex = 75;
             this.textBoxPOShipVia.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxPOShipVia.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -2877,18 +2911,20 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(455, 23);
+            this.label35.Location = new System.Drawing.Point(607, 28);
+            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(67, 13);
+            this.label35.Size = new System.Drawing.Size(88, 17);
             this.label35.TabIndex = 43;
             this.label35.Text = "PO Ship Via:";
             // 
             // textBoxPODate
             // 
             this.textBoxPODate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPODate.Location = new System.Drawing.Point(372, 20);
+            this.textBoxPODate.Location = new System.Drawing.Point(496, 25);
+            this.textBoxPODate.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPODate.Name = "textBoxPODate";
-            this.textBoxPODate.Size = new System.Drawing.Size(71, 21);
+            this.textBoxPODate.Size = new System.Drawing.Size(93, 24);
             this.textBoxPODate.TabIndex = 74;
             this.textBoxPODate.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxPODate.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2898,18 +2934,20 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(315, 23);
+            this.label34.Location = new System.Drawing.Point(420, 28);
+            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(51, 13);
+            this.label34.Size = new System.Drawing.Size(66, 17);
             this.label34.TabIndex = 41;
             this.label34.Text = "PO Date:";
             // 
             // textBoxSchedShip
             // 
             this.textBoxSchedShip.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSchedShip.Location = new System.Drawing.Point(230, 20);
+            this.textBoxSchedShip.Location = new System.Drawing.Point(307, 25);
+            this.textBoxSchedShip.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSchedShip.Name = "textBoxSchedShip";
-            this.textBoxSchedShip.Size = new System.Drawing.Size(71, 21);
+            this.textBoxSchedShip.Size = new System.Drawing.Size(93, 24);
             this.textBoxSchedShip.TabIndex = 73;
             this.textBoxSchedShip.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxSchedShip.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2919,36 +2957,40 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(156, 23);
+            this.label33.Location = new System.Drawing.Point(208, 28);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(68, 13);
+            this.label33.Size = new System.Drawing.Size(88, 17);
             this.label33.TabIndex = 39;
             this.label33.Text = "Sched. Ship:";
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(272, 83);
+            this.label32.Location = new System.Drawing.Point(363, 102);
+            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(38, 13);
+            this.label32.Size = new System.Drawing.Size(49, 17);
             this.label32.TabIndex = 38;
             this.label32.Text = "Notes:";
             // 
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(152, 83);
+            this.label31.Location = new System.Drawing.Point(203, 102);
+            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(44, 13);
+            this.label31.Size = new System.Drawing.Size(57, 17);
             this.label31.TabIndex = 37;
             this.label31.Text = "Source:";
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(89, 83);
+            this.label30.Location = new System.Drawing.Point(119, 102);
+            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(22, 13);
+            this.label30.Size = new System.Drawing.Size(28, 17);
             this.label30.TabIndex = 36;
             this.label30.Text = "By:";
             // 
@@ -2962,18 +3004,20 @@
             "Phone",
             "E-Mail",
             "Fax"});
-            this.comboBoxTrkSource1.Location = new System.Drawing.Point(151, 99);
+            this.comboBoxTrkSource1.Location = new System.Drawing.Point(201, 122);
+            this.comboBoxTrkSource1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkSource1.Name = "comboBoxTrkSource1";
-            this.comboBoxTrkSource1.Size = new System.Drawing.Size(118, 21);
+            this.comboBoxTrkSource1.Size = new System.Drawing.Size(156, 24);
             this.comboBoxTrkSource1.TabIndex = 2;
             this.comboBoxTrkSource1.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // textBoxTrkDate1
             // 
             this.textBoxTrkDate1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkDate1.Location = new System.Drawing.Point(15, 100);
+            this.textBoxTrkDate1.Location = new System.Drawing.Point(20, 123);
+            this.textBoxTrkDate1.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkDate1.Name = "textBoxTrkDate1";
-            this.textBoxTrkDate1.Size = new System.Drawing.Size(71, 21);
+            this.textBoxTrkDate1.Size = new System.Drawing.Size(93, 24);
             this.textBoxTrkDate1.TabIndex = 0;
             this.textBoxTrkDate1.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkDate1.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -2983,18 +3027,20 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(12, 84);
+            this.label29.Location = new System.Drawing.Point(16, 103);
+            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(33, 13);
+            this.label29.Size = new System.Drawing.Size(42, 17);
             this.label29.TabIndex = 33;
             this.label29.Text = "Date:";
             // 
             // textBoxReqDate
             // 
             this.textBoxReqDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxReqDate.Location = new System.Drawing.Point(74, 20);
+            this.textBoxReqDate.Location = new System.Drawing.Point(99, 25);
+            this.textBoxReqDate.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxReqDate.Name = "textBoxReqDate";
-            this.textBoxReqDate.Size = new System.Drawing.Size(71, 21);
+            this.textBoxReqDate.Size = new System.Drawing.Size(93, 24);
             this.textBoxReqDate.TabIndex = 72;
             this.textBoxReqDate.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxReqDate.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -3004,18 +3050,20 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(12, 23);
+            this.label28.Location = new System.Drawing.Point(16, 28);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(59, 13);
+            this.label28.Size = new System.Drawing.Size(76, 17);
             this.label28.TabIndex = 31;
             this.label28.Text = "Req. Date:";
             // 
             // textBoxTrkNotes1
             // 
             this.textBoxTrkNotes1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrkNotes1.Location = new System.Drawing.Point(275, 100);
+            this.textBoxTrkNotes1.Location = new System.Drawing.Point(367, 123);
+            this.textBoxTrkNotes1.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrkNotes1.Name = "textBoxTrkNotes1";
-            this.textBoxTrkNotes1.Size = new System.Drawing.Size(686, 21);
+            this.textBoxTrkNotes1.Size = new System.Drawing.Size(913, 24);
             this.textBoxTrkNotes1.TabIndex = 3;
             this.textBoxTrkNotes1.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxTrkNotes1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -3025,9 +3073,10 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(12, 61);
+            this.label27.Location = new System.Drawing.Point(16, 75);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(175, 13);
+            this.label27.Size = new System.Drawing.Size(219, 17);
             this.label27.TabIndex = 29;
             this.label27.Text = "Tracking Information / Notes:";
             // 
@@ -3042,9 +3091,10 @@
             "MO",
             "WA",
             "BW"});
-            this.comboBoxTrkBy1.Location = new System.Drawing.Point(92, 99);
+            this.comboBoxTrkBy1.Location = new System.Drawing.Point(123, 122);
+            this.comboBoxTrkBy1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTrkBy1.Name = "comboBoxTrkBy1";
-            this.comboBoxTrkBy1.Size = new System.Drawing.Size(53, 21);
+            this.comboBoxTrkBy1.Size = new System.Drawing.Size(69, 24);
             this.comboBoxTrkBy1.TabIndex = 1;
             this.comboBoxTrkBy1.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
@@ -3182,9 +3232,10 @@
             this.tabPageWorksheet.Controls.Add(this.buttonLine3);
             this.tabPageWorksheet.Controls.Add(this.buttonLine2);
             this.tabPageWorksheet.Controls.Add(this.buttonLine1);
-            this.tabPageWorksheet.Location = new System.Drawing.Point(4, 22);
+            this.tabPageWorksheet.Location = new System.Drawing.Point(4, 25);
+            this.tabPageWorksheet.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageWorksheet.Name = "tabPageWorksheet";
-            this.tabPageWorksheet.Size = new System.Drawing.Size(1026, 321);
+            this.tabPageWorksheet.Size = new System.Drawing.Size(1373, 404);
             this.tabPageWorksheet.TabIndex = 2;
             this.tabPageWorksheet.Text = "Worksheet";
             this.tabPageWorksheet.UseVisualStyleBackColor = true;
@@ -3192,7 +3243,8 @@
             // numericUpDownQuotePrice
             // 
             this.numericUpDownQuotePrice.DecimalPlaces = 2;
-            this.numericUpDownQuotePrice.Location = new System.Drawing.Point(84, 8);
+            this.numericUpDownQuotePrice.Location = new System.Drawing.Point(112, 10);
+            this.numericUpDownQuotePrice.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQuotePrice.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3204,7 +3256,7 @@
             0,
             -2147483648});
             this.numericUpDownQuotePrice.Name = "numericUpDownQuotePrice";
-            this.numericUpDownQuotePrice.Size = new System.Drawing.Size(71, 20);
+            this.numericUpDownQuotePrice.Size = new System.Drawing.Size(95, 22);
             this.numericUpDownQuotePrice.TabIndex = 240;
             this.numericUpDownQuotePrice.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownQuotePrice.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3213,7 +3265,8 @@
             // numericUpDownShopTime
             // 
             this.numericUpDownShopTime.DecimalPlaces = 2;
-            this.numericUpDownShopTime.Location = new System.Drawing.Point(631, 8);
+            this.numericUpDownShopTime.Location = new System.Drawing.Point(841, 10);
+            this.numericUpDownShopTime.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownShopTime.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3225,7 +3278,7 @@
             0,
             -2147483648});
             this.numericUpDownShopTime.Name = "numericUpDownShopTime";
-            this.numericUpDownShopTime.Size = new System.Drawing.Size(71, 20);
+            this.numericUpDownShopTime.Size = new System.Drawing.Size(95, 22);
             this.numericUpDownShopTime.TabIndex = 239;
             this.numericUpDownShopTime.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownShopTime.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3234,7 +3287,8 @@
             // numericUpDownFreight
             // 
             this.numericUpDownFreight.DecimalPlaces = 2;
-            this.numericUpDownFreight.Location = new System.Drawing.Point(487, 8);
+            this.numericUpDownFreight.Location = new System.Drawing.Point(649, 10);
+            this.numericUpDownFreight.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownFreight.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3246,7 +3300,7 @@
             0,
             -2147483648});
             this.numericUpDownFreight.Name = "numericUpDownFreight";
-            this.numericUpDownFreight.Size = new System.Drawing.Size(71, 20);
+            this.numericUpDownFreight.Size = new System.Drawing.Size(95, 22);
             this.numericUpDownFreight.TabIndex = 238;
             this.numericUpDownFreight.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownFreight.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3255,7 +3309,8 @@
             // numericUpDownCredit
             // 
             this.numericUpDownCredit.DecimalPlaces = 2;
-            this.numericUpDownCredit.Location = new System.Drawing.Point(359, 9);
+            this.numericUpDownCredit.Location = new System.Drawing.Point(479, 11);
+            this.numericUpDownCredit.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownCredit.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3267,7 +3322,7 @@
             0,
             -2147483648});
             this.numericUpDownCredit.Name = "numericUpDownCredit";
-            this.numericUpDownCredit.Size = new System.Drawing.Size(71, 20);
+            this.numericUpDownCredit.Size = new System.Drawing.Size(95, 22);
             this.numericUpDownCredit.TabIndex = 237;
             this.numericUpDownCredit.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownCredit.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3276,7 +3331,8 @@
             // numericUpDownTotalCost
             // 
             this.numericUpDownTotalCost.DecimalPlaces = 2;
-            this.numericUpDownTotalCost.Location = new System.Drawing.Point(235, 8);
+            this.numericUpDownTotalCost.Location = new System.Drawing.Point(313, 10);
+            this.numericUpDownTotalCost.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownTotalCost.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3289,13 +3345,14 @@
             -2147483648});
             this.numericUpDownTotalCost.Name = "numericUpDownTotalCost";
             this.numericUpDownTotalCost.ReadOnly = true;
-            this.numericUpDownTotalCost.Size = new System.Drawing.Size(71, 20);
+            this.numericUpDownTotalCost.Size = new System.Drawing.Size(95, 22);
             this.numericUpDownTotalCost.TabIndex = 236;
             // 
             // numericUpDownGrossProfit
             // 
             this.numericUpDownGrossProfit.DecimalPlaces = 2;
-            this.numericUpDownGrossProfit.Location = new System.Drawing.Point(785, 9);
+            this.numericUpDownGrossProfit.Location = new System.Drawing.Point(1047, 11);
+            this.numericUpDownGrossProfit.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownGrossProfit.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3308,13 +3365,14 @@
             -2147483648});
             this.numericUpDownGrossProfit.Name = "numericUpDownGrossProfit";
             this.numericUpDownGrossProfit.ReadOnly = true;
-            this.numericUpDownGrossProfit.Size = new System.Drawing.Size(71, 20);
+            this.numericUpDownGrossProfit.Size = new System.Drawing.Size(95, 22);
             this.numericUpDownGrossProfit.TabIndex = 235;
             // 
             // numericUpDownProfit
             // 
             this.numericUpDownProfit.DecimalPlaces = 2;
-            this.numericUpDownProfit.Location = new System.Drawing.Point(902, 9);
+            this.numericUpDownProfit.Location = new System.Drawing.Point(1203, 11);
+            this.numericUpDownProfit.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownProfit.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3327,15 +3385,16 @@
             -2147483648});
             this.numericUpDownProfit.Name = "numericUpDownProfit";
             this.numericUpDownProfit.ReadOnly = true;
-            this.numericUpDownProfit.Size = new System.Drawing.Size(71, 20);
+            this.numericUpDownProfit.Size = new System.Drawing.Size(95, 22);
             this.numericUpDownProfit.TabIndex = 234;
             // 
             // checkBoxHide
             // 
             this.checkBoxHide.AutoSize = true;
-            this.checkBoxHide.Location = new System.Drawing.Point(784, 36);
+            this.checkBoxHide.Location = new System.Drawing.Point(1045, 44);
+            this.checkBoxHide.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxHide.Name = "checkBoxHide";
-            this.checkBoxHide.Size = new System.Drawing.Size(54, 17);
+            this.checkBoxHide.Size = new System.Drawing.Size(67, 21);
             this.checkBoxHide.TabIndex = 233;
             this.checkBoxHide.Text = "Hide?";
             this.checkBoxHide.UseVisualStyleBackColor = true;
@@ -3344,7 +3403,8 @@
             // numericUpDownOrderECost23
             // 
             this.numericUpDownOrderECost23.DecimalPlaces = 2;
-            this.numericUpDownOrderECost23.Location = new System.Drawing.Point(868, 520);
+            this.numericUpDownOrderECost23.Location = new System.Drawing.Point(1157, 640);
+            this.numericUpDownOrderECost23.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost23.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3357,14 +3417,15 @@
             -2147483648});
             this.numericUpDownOrderECost23.Name = "numericUpDownOrderECost23";
             this.numericUpDownOrderECost23.ReadOnly = true;
-            this.numericUpDownOrderECost23.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost23.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost23.TabIndex = 232;
             this.numericUpDownOrderECost23.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost23
             // 
             this.numericUpDownOrderCost23.DecimalPlaces = 2;
-            this.numericUpDownOrderCost23.Location = new System.Drawing.Point(784, 520);
+            this.numericUpDownOrderCost23.Location = new System.Drawing.Point(1045, 640);
+            this.numericUpDownOrderCost23.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost23.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3376,7 +3437,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost23.Name = "numericUpDownOrderCost23";
-            this.numericUpDownOrderCost23.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost23.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost23.TabIndex = 69;
             this.numericUpDownOrderCost23.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost23.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3385,7 +3446,8 @@
             // numericUpDownOrderCount23
             // 
             this.numericUpDownOrderCount23.DecimalPlaces = 2;
-            this.numericUpDownOrderCount23.Location = new System.Drawing.Point(32, 521);
+            this.numericUpDownOrderCount23.Location = new System.Drawing.Point(43, 641);
+            this.numericUpDownOrderCount23.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount23.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3397,7 +3459,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount23.Name = "numericUpDownOrderCount23";
-            this.numericUpDownOrderCount23.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount23.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount23.TabIndex = 67;
             this.numericUpDownOrderCount23.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount23.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3406,7 +3468,8 @@
             // numericUpDownOrderECost22
             // 
             this.numericUpDownOrderECost22.DecimalPlaces = 2;
-            this.numericUpDownOrderECost22.Location = new System.Drawing.Point(868, 499);
+            this.numericUpDownOrderECost22.Location = new System.Drawing.Point(1157, 614);
+            this.numericUpDownOrderECost22.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost22.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3419,14 +3482,15 @@
             -2147483648});
             this.numericUpDownOrderECost22.Name = "numericUpDownOrderECost22";
             this.numericUpDownOrderECost22.ReadOnly = true;
-            this.numericUpDownOrderECost22.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost22.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost22.TabIndex = 229;
             this.numericUpDownOrderECost22.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost22
             // 
             this.numericUpDownOrderCost22.DecimalPlaces = 2;
-            this.numericUpDownOrderCost22.Location = new System.Drawing.Point(784, 499);
+            this.numericUpDownOrderCost22.Location = new System.Drawing.Point(1045, 614);
+            this.numericUpDownOrderCost22.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost22.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3438,7 +3502,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost22.Name = "numericUpDownOrderCost22";
-            this.numericUpDownOrderCost22.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost22.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost22.TabIndex = 66;
             this.numericUpDownOrderCost22.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost22.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3447,7 +3511,8 @@
             // numericUpDownOrderECost21
             // 
             this.numericUpDownOrderECost21.DecimalPlaces = 2;
-            this.numericUpDownOrderECost21.Location = new System.Drawing.Point(868, 478);
+            this.numericUpDownOrderECost21.Location = new System.Drawing.Point(1157, 588);
+            this.numericUpDownOrderECost21.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost21.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3460,14 +3525,15 @@
             -2147483648});
             this.numericUpDownOrderECost21.Name = "numericUpDownOrderECost21";
             this.numericUpDownOrderECost21.ReadOnly = true;
-            this.numericUpDownOrderECost21.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost21.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost21.TabIndex = 227;
             this.numericUpDownOrderECost21.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost21
             // 
             this.numericUpDownOrderCost21.DecimalPlaces = 2;
-            this.numericUpDownOrderCost21.Location = new System.Drawing.Point(784, 478);
+            this.numericUpDownOrderCost21.Location = new System.Drawing.Point(1045, 588);
+            this.numericUpDownOrderCost21.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost21.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3479,7 +3545,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost21.Name = "numericUpDownOrderCost21";
-            this.numericUpDownOrderCost21.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost21.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost21.TabIndex = 63;
             this.numericUpDownOrderCost21.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost21.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3488,7 +3554,8 @@
             // numericUpDownOrderECost20
             // 
             this.numericUpDownOrderECost20.DecimalPlaces = 2;
-            this.numericUpDownOrderECost20.Location = new System.Drawing.Point(868, 457);
+            this.numericUpDownOrderECost20.Location = new System.Drawing.Point(1157, 562);
+            this.numericUpDownOrderECost20.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost20.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3501,14 +3568,15 @@
             -2147483648});
             this.numericUpDownOrderECost20.Name = "numericUpDownOrderECost20";
             this.numericUpDownOrderECost20.ReadOnly = true;
-            this.numericUpDownOrderECost20.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost20.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost20.TabIndex = 225;
             this.numericUpDownOrderECost20.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost20
             // 
             this.numericUpDownOrderCost20.DecimalPlaces = 2;
-            this.numericUpDownOrderCost20.Location = new System.Drawing.Point(784, 457);
+            this.numericUpDownOrderCost20.Location = new System.Drawing.Point(1045, 562);
+            this.numericUpDownOrderCost20.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost20.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3520,7 +3588,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost20.Name = "numericUpDownOrderCost20";
-            this.numericUpDownOrderCost20.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost20.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost20.TabIndex = 60;
             this.numericUpDownOrderCost20.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost20.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3529,7 +3597,8 @@
             // numericUpDownOrderECost19
             // 
             this.numericUpDownOrderECost19.DecimalPlaces = 2;
-            this.numericUpDownOrderECost19.Location = new System.Drawing.Point(868, 436);
+            this.numericUpDownOrderECost19.Location = new System.Drawing.Point(1157, 537);
+            this.numericUpDownOrderECost19.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost19.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3542,14 +3611,15 @@
             -2147483648});
             this.numericUpDownOrderECost19.Name = "numericUpDownOrderECost19";
             this.numericUpDownOrderECost19.ReadOnly = true;
-            this.numericUpDownOrderECost19.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost19.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost19.TabIndex = 223;
             this.numericUpDownOrderECost19.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost19
             // 
             this.numericUpDownOrderCost19.DecimalPlaces = 2;
-            this.numericUpDownOrderCost19.Location = new System.Drawing.Point(784, 436);
+            this.numericUpDownOrderCost19.Location = new System.Drawing.Point(1045, 537);
+            this.numericUpDownOrderCost19.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost19.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3561,7 +3631,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost19.Name = "numericUpDownOrderCost19";
-            this.numericUpDownOrderCost19.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost19.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost19.TabIndex = 57;
             this.numericUpDownOrderCost19.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost19.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3570,7 +3640,8 @@
             // numericUpDownOrderECost18
             // 
             this.numericUpDownOrderECost18.DecimalPlaces = 2;
-            this.numericUpDownOrderECost18.Location = new System.Drawing.Point(868, 415);
+            this.numericUpDownOrderECost18.Location = new System.Drawing.Point(1157, 511);
+            this.numericUpDownOrderECost18.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost18.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3583,14 +3654,15 @@
             -2147483648});
             this.numericUpDownOrderECost18.Name = "numericUpDownOrderECost18";
             this.numericUpDownOrderECost18.ReadOnly = true;
-            this.numericUpDownOrderECost18.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost18.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost18.TabIndex = 221;
             this.numericUpDownOrderECost18.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost18
             // 
             this.numericUpDownOrderCost18.DecimalPlaces = 2;
-            this.numericUpDownOrderCost18.Location = new System.Drawing.Point(784, 415);
+            this.numericUpDownOrderCost18.Location = new System.Drawing.Point(1045, 511);
+            this.numericUpDownOrderCost18.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost18.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3602,7 +3674,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost18.Name = "numericUpDownOrderCost18";
-            this.numericUpDownOrderCost18.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost18.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost18.TabIndex = 54;
             this.numericUpDownOrderCost18.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost18.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3611,7 +3683,8 @@
             // numericUpDownOrderECost17
             // 
             this.numericUpDownOrderECost17.DecimalPlaces = 2;
-            this.numericUpDownOrderECost17.Location = new System.Drawing.Point(868, 394);
+            this.numericUpDownOrderECost17.Location = new System.Drawing.Point(1157, 485);
+            this.numericUpDownOrderECost17.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost17.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3624,14 +3697,15 @@
             -2147483648});
             this.numericUpDownOrderECost17.Name = "numericUpDownOrderECost17";
             this.numericUpDownOrderECost17.ReadOnly = true;
-            this.numericUpDownOrderECost17.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost17.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost17.TabIndex = 219;
             this.numericUpDownOrderECost17.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost17
             // 
             this.numericUpDownOrderCost17.DecimalPlaces = 2;
-            this.numericUpDownOrderCost17.Location = new System.Drawing.Point(784, 394);
+            this.numericUpDownOrderCost17.Location = new System.Drawing.Point(1045, 485);
+            this.numericUpDownOrderCost17.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost17.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3643,7 +3717,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost17.Name = "numericUpDownOrderCost17";
-            this.numericUpDownOrderCost17.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost17.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost17.TabIndex = 51;
             this.numericUpDownOrderCost17.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost17.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3652,7 +3726,8 @@
             // numericUpDownOrderECost16
             // 
             this.numericUpDownOrderECost16.DecimalPlaces = 2;
-            this.numericUpDownOrderECost16.Location = new System.Drawing.Point(868, 373);
+            this.numericUpDownOrderECost16.Location = new System.Drawing.Point(1157, 459);
+            this.numericUpDownOrderECost16.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost16.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3665,14 +3740,15 @@
             -2147483648});
             this.numericUpDownOrderECost16.Name = "numericUpDownOrderECost16";
             this.numericUpDownOrderECost16.ReadOnly = true;
-            this.numericUpDownOrderECost16.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost16.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost16.TabIndex = 217;
             this.numericUpDownOrderECost16.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost16
             // 
             this.numericUpDownOrderCost16.DecimalPlaces = 2;
-            this.numericUpDownOrderCost16.Location = new System.Drawing.Point(784, 373);
+            this.numericUpDownOrderCost16.Location = new System.Drawing.Point(1045, 459);
+            this.numericUpDownOrderCost16.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost16.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3684,7 +3760,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost16.Name = "numericUpDownOrderCost16";
-            this.numericUpDownOrderCost16.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost16.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost16.TabIndex = 48;
             this.numericUpDownOrderCost16.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost16.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3693,7 +3769,8 @@
             // numericUpDownOrderECost15
             // 
             this.numericUpDownOrderECost15.DecimalPlaces = 2;
-            this.numericUpDownOrderECost15.Location = new System.Drawing.Point(868, 352);
+            this.numericUpDownOrderECost15.Location = new System.Drawing.Point(1157, 433);
+            this.numericUpDownOrderECost15.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost15.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3706,14 +3783,15 @@
             -2147483648});
             this.numericUpDownOrderECost15.Name = "numericUpDownOrderECost15";
             this.numericUpDownOrderECost15.ReadOnly = true;
-            this.numericUpDownOrderECost15.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost15.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost15.TabIndex = 215;
             this.numericUpDownOrderECost15.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost15
             // 
             this.numericUpDownOrderCost15.DecimalPlaces = 2;
-            this.numericUpDownOrderCost15.Location = new System.Drawing.Point(784, 352);
+            this.numericUpDownOrderCost15.Location = new System.Drawing.Point(1045, 433);
+            this.numericUpDownOrderCost15.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost15.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3725,7 +3803,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost15.Name = "numericUpDownOrderCost15";
-            this.numericUpDownOrderCost15.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost15.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost15.TabIndex = 45;
             this.numericUpDownOrderCost15.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost15.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3734,7 +3812,8 @@
             // numericUpDownOrderECost14
             // 
             this.numericUpDownOrderECost14.DecimalPlaces = 2;
-            this.numericUpDownOrderECost14.Location = new System.Drawing.Point(868, 331);
+            this.numericUpDownOrderECost14.Location = new System.Drawing.Point(1157, 407);
+            this.numericUpDownOrderECost14.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost14.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3747,14 +3826,15 @@
             -2147483648});
             this.numericUpDownOrderECost14.Name = "numericUpDownOrderECost14";
             this.numericUpDownOrderECost14.ReadOnly = true;
-            this.numericUpDownOrderECost14.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost14.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost14.TabIndex = 213;
             this.numericUpDownOrderECost14.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost14
             // 
             this.numericUpDownOrderCost14.DecimalPlaces = 2;
-            this.numericUpDownOrderCost14.Location = new System.Drawing.Point(784, 331);
+            this.numericUpDownOrderCost14.Location = new System.Drawing.Point(1045, 407);
+            this.numericUpDownOrderCost14.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost14.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3766,7 +3846,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost14.Name = "numericUpDownOrderCost14";
-            this.numericUpDownOrderCost14.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost14.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost14.TabIndex = 42;
             this.numericUpDownOrderCost14.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost14.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3775,7 +3855,8 @@
             // numericUpDownOrderECost13
             // 
             this.numericUpDownOrderECost13.DecimalPlaces = 2;
-            this.numericUpDownOrderECost13.Location = new System.Drawing.Point(868, 310);
+            this.numericUpDownOrderECost13.Location = new System.Drawing.Point(1157, 382);
+            this.numericUpDownOrderECost13.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost13.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3788,14 +3869,15 @@
             -2147483648});
             this.numericUpDownOrderECost13.Name = "numericUpDownOrderECost13";
             this.numericUpDownOrderECost13.ReadOnly = true;
-            this.numericUpDownOrderECost13.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost13.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost13.TabIndex = 211;
             this.numericUpDownOrderECost13.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost13
             // 
             this.numericUpDownOrderCost13.DecimalPlaces = 2;
-            this.numericUpDownOrderCost13.Location = new System.Drawing.Point(784, 310);
+            this.numericUpDownOrderCost13.Location = new System.Drawing.Point(1045, 382);
+            this.numericUpDownOrderCost13.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost13.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3807,7 +3889,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost13.Name = "numericUpDownOrderCost13";
-            this.numericUpDownOrderCost13.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost13.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost13.TabIndex = 39;
             this.numericUpDownOrderCost13.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost13.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3816,7 +3898,8 @@
             // numericUpDownOrderECost12
             // 
             this.numericUpDownOrderECost12.DecimalPlaces = 2;
-            this.numericUpDownOrderECost12.Location = new System.Drawing.Point(868, 289);
+            this.numericUpDownOrderECost12.Location = new System.Drawing.Point(1157, 356);
+            this.numericUpDownOrderECost12.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost12.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3829,14 +3912,15 @@
             -2147483648});
             this.numericUpDownOrderECost12.Name = "numericUpDownOrderECost12";
             this.numericUpDownOrderECost12.ReadOnly = true;
-            this.numericUpDownOrderECost12.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost12.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost12.TabIndex = 209;
             this.numericUpDownOrderECost12.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost12
             // 
             this.numericUpDownOrderCost12.DecimalPlaces = 2;
-            this.numericUpDownOrderCost12.Location = new System.Drawing.Point(784, 289);
+            this.numericUpDownOrderCost12.Location = new System.Drawing.Point(1045, 356);
+            this.numericUpDownOrderCost12.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost12.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3848,7 +3932,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost12.Name = "numericUpDownOrderCost12";
-            this.numericUpDownOrderCost12.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost12.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost12.TabIndex = 36;
             this.numericUpDownOrderCost12.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost12.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3857,7 +3941,8 @@
             // numericUpDownOrderCount22
             // 
             this.numericUpDownOrderCount22.DecimalPlaces = 2;
-            this.numericUpDownOrderCount22.Location = new System.Drawing.Point(32, 500);
+            this.numericUpDownOrderCount22.Location = new System.Drawing.Point(43, 615);
+            this.numericUpDownOrderCount22.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount22.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3869,7 +3954,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount22.Name = "numericUpDownOrderCount22";
-            this.numericUpDownOrderCount22.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount22.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount22.TabIndex = 64;
             this.numericUpDownOrderCount22.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount22.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3878,7 +3963,8 @@
             // numericUpDownOrderCount21
             // 
             this.numericUpDownOrderCount21.DecimalPlaces = 2;
-            this.numericUpDownOrderCount21.Location = new System.Drawing.Point(32, 479);
+            this.numericUpDownOrderCount21.Location = new System.Drawing.Point(43, 590);
+            this.numericUpDownOrderCount21.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount21.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3890,7 +3976,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount21.Name = "numericUpDownOrderCount21";
-            this.numericUpDownOrderCount21.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount21.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount21.TabIndex = 61;
             this.numericUpDownOrderCount21.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount21.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3899,7 +3985,8 @@
             // numericUpDownOrderCount20
             // 
             this.numericUpDownOrderCount20.DecimalPlaces = 2;
-            this.numericUpDownOrderCount20.Location = new System.Drawing.Point(32, 458);
+            this.numericUpDownOrderCount20.Location = new System.Drawing.Point(43, 564);
+            this.numericUpDownOrderCount20.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount20.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3911,7 +3998,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount20.Name = "numericUpDownOrderCount20";
-            this.numericUpDownOrderCount20.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount20.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount20.TabIndex = 58;
             this.numericUpDownOrderCount20.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount20.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3920,7 +4007,8 @@
             // numericUpDownOrderCount19
             // 
             this.numericUpDownOrderCount19.DecimalPlaces = 2;
-            this.numericUpDownOrderCount19.Location = new System.Drawing.Point(32, 437);
+            this.numericUpDownOrderCount19.Location = new System.Drawing.Point(43, 538);
+            this.numericUpDownOrderCount19.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount19.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3932,7 +4020,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount19.Name = "numericUpDownOrderCount19";
-            this.numericUpDownOrderCount19.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount19.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount19.TabIndex = 55;
             this.numericUpDownOrderCount19.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount19.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3941,7 +4029,8 @@
             // numericUpDownOrderCount18
             // 
             this.numericUpDownOrderCount18.DecimalPlaces = 2;
-            this.numericUpDownOrderCount18.Location = new System.Drawing.Point(32, 416);
+            this.numericUpDownOrderCount18.Location = new System.Drawing.Point(43, 512);
+            this.numericUpDownOrderCount18.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount18.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3953,7 +4042,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount18.Name = "numericUpDownOrderCount18";
-            this.numericUpDownOrderCount18.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount18.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount18.TabIndex = 52;
             this.numericUpDownOrderCount18.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount18.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3962,7 +4051,8 @@
             // numericUpDownOrderCount17
             // 
             this.numericUpDownOrderCount17.DecimalPlaces = 2;
-            this.numericUpDownOrderCount17.Location = new System.Drawing.Point(32, 395);
+            this.numericUpDownOrderCount17.Location = new System.Drawing.Point(43, 486);
+            this.numericUpDownOrderCount17.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount17.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3974,7 +4064,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount17.Name = "numericUpDownOrderCount17";
-            this.numericUpDownOrderCount17.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount17.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount17.TabIndex = 49;
             this.numericUpDownOrderCount17.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount17.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -3983,7 +4073,8 @@
             // numericUpDownOrderCount16
             // 
             this.numericUpDownOrderCount16.DecimalPlaces = 2;
-            this.numericUpDownOrderCount16.Location = new System.Drawing.Point(32, 374);
+            this.numericUpDownOrderCount16.Location = new System.Drawing.Point(43, 460);
+            this.numericUpDownOrderCount16.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount16.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3995,7 +4086,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount16.Name = "numericUpDownOrderCount16";
-            this.numericUpDownOrderCount16.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount16.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount16.TabIndex = 46;
             this.numericUpDownOrderCount16.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount16.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4004,7 +4095,8 @@
             // numericUpDownOrderCount15
             // 
             this.numericUpDownOrderCount15.DecimalPlaces = 2;
-            this.numericUpDownOrderCount15.Location = new System.Drawing.Point(32, 353);
+            this.numericUpDownOrderCount15.Location = new System.Drawing.Point(43, 434);
+            this.numericUpDownOrderCount15.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount15.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4016,7 +4108,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount15.Name = "numericUpDownOrderCount15";
-            this.numericUpDownOrderCount15.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount15.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount15.TabIndex = 43;
             this.numericUpDownOrderCount15.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount15.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4025,7 +4117,8 @@
             // numericUpDownOrderCount14
             // 
             this.numericUpDownOrderCount14.DecimalPlaces = 2;
-            this.numericUpDownOrderCount14.Location = new System.Drawing.Point(32, 332);
+            this.numericUpDownOrderCount14.Location = new System.Drawing.Point(43, 409);
+            this.numericUpDownOrderCount14.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount14.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4037,7 +4130,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount14.Name = "numericUpDownOrderCount14";
-            this.numericUpDownOrderCount14.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount14.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount14.TabIndex = 40;
             this.numericUpDownOrderCount14.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount14.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4046,7 +4139,8 @@
             // numericUpDownOrderCount13
             // 
             this.numericUpDownOrderCount13.DecimalPlaces = 2;
-            this.numericUpDownOrderCount13.Location = new System.Drawing.Point(32, 311);
+            this.numericUpDownOrderCount13.Location = new System.Drawing.Point(43, 383);
+            this.numericUpDownOrderCount13.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount13.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4058,7 +4152,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount13.Name = "numericUpDownOrderCount13";
-            this.numericUpDownOrderCount13.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount13.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount13.TabIndex = 37;
             this.numericUpDownOrderCount13.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount13.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4067,7 +4161,8 @@
             // numericUpDownOrderCount12
             // 
             this.numericUpDownOrderCount12.DecimalPlaces = 2;
-            this.numericUpDownOrderCount12.Location = new System.Drawing.Point(32, 290);
+            this.numericUpDownOrderCount12.Location = new System.Drawing.Point(43, 357);
+            this.numericUpDownOrderCount12.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount12.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4079,7 +4174,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount12.Name = "numericUpDownOrderCount12";
-            this.numericUpDownOrderCount12.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount12.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount12.TabIndex = 34;
             this.numericUpDownOrderCount12.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount12.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4088,7 +4183,8 @@
             // numericUpDownOrderCount11
             // 
             this.numericUpDownOrderCount11.DecimalPlaces = 2;
-            this.numericUpDownOrderCount11.Location = new System.Drawing.Point(32, 269);
+            this.numericUpDownOrderCount11.Location = new System.Drawing.Point(43, 331);
+            this.numericUpDownOrderCount11.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount11.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4100,7 +4196,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount11.Name = "numericUpDownOrderCount11";
-            this.numericUpDownOrderCount11.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount11.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount11.TabIndex = 31;
             this.numericUpDownOrderCount11.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount11.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4109,7 +4205,8 @@
             // numericUpDownOrderECost11
             // 
             this.numericUpDownOrderECost11.DecimalPlaces = 2;
-            this.numericUpDownOrderECost11.Location = new System.Drawing.Point(868, 268);
+            this.numericUpDownOrderECost11.Location = new System.Drawing.Point(1157, 330);
+            this.numericUpDownOrderECost11.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost11.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4122,14 +4219,15 @@
             -2147483648});
             this.numericUpDownOrderECost11.Name = "numericUpDownOrderECost11";
             this.numericUpDownOrderECost11.ReadOnly = true;
-            this.numericUpDownOrderECost11.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost11.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost11.TabIndex = 195;
             this.numericUpDownOrderECost11.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost11
             // 
             this.numericUpDownOrderCost11.DecimalPlaces = 2;
-            this.numericUpDownOrderCost11.Location = new System.Drawing.Point(784, 268);
+            this.numericUpDownOrderCost11.Location = new System.Drawing.Point(1045, 330);
+            this.numericUpDownOrderCost11.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost11.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4141,7 +4239,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost11.Name = "numericUpDownOrderCost11";
-            this.numericUpDownOrderCost11.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost11.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost11.TabIndex = 33;
             this.numericUpDownOrderCost11.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost11.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4150,7 +4248,8 @@
             // numericUpDownOrderCount10
             // 
             this.numericUpDownOrderCount10.DecimalPlaces = 2;
-            this.numericUpDownOrderCount10.Location = new System.Drawing.Point(32, 248);
+            this.numericUpDownOrderCount10.Location = new System.Drawing.Point(43, 305);
+            this.numericUpDownOrderCount10.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount10.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4162,7 +4261,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount10.Name = "numericUpDownOrderCount10";
-            this.numericUpDownOrderCount10.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount10.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount10.TabIndex = 28;
             this.numericUpDownOrderCount10.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount10.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4171,7 +4270,8 @@
             // numericUpDownOrderECost10
             // 
             this.numericUpDownOrderECost10.DecimalPlaces = 2;
-            this.numericUpDownOrderECost10.Location = new System.Drawing.Point(868, 247);
+            this.numericUpDownOrderECost10.Location = new System.Drawing.Point(1157, 304);
+            this.numericUpDownOrderECost10.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost10.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4184,14 +4284,15 @@
             -2147483648});
             this.numericUpDownOrderECost10.Name = "numericUpDownOrderECost10";
             this.numericUpDownOrderECost10.ReadOnly = true;
-            this.numericUpDownOrderECost10.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost10.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost10.TabIndex = 192;
             this.numericUpDownOrderECost10.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost10
             // 
             this.numericUpDownOrderCost10.DecimalPlaces = 2;
-            this.numericUpDownOrderCost10.Location = new System.Drawing.Point(784, 247);
+            this.numericUpDownOrderCost10.Location = new System.Drawing.Point(1045, 304);
+            this.numericUpDownOrderCost10.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost10.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4203,7 +4304,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost10.Name = "numericUpDownOrderCost10";
-            this.numericUpDownOrderCost10.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost10.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost10.TabIndex = 30;
             this.numericUpDownOrderCost10.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost10.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4212,7 +4313,8 @@
             // numericUpDownOrderCount9
             // 
             this.numericUpDownOrderCount9.DecimalPlaces = 2;
-            this.numericUpDownOrderCount9.Location = new System.Drawing.Point(32, 227);
+            this.numericUpDownOrderCount9.Location = new System.Drawing.Point(43, 279);
+            this.numericUpDownOrderCount9.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount9.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4224,7 +4326,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount9.Name = "numericUpDownOrderCount9";
-            this.numericUpDownOrderCount9.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount9.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount9.TabIndex = 25;
             this.numericUpDownOrderCount9.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount9.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4233,7 +4335,8 @@
             // numericUpDownOrderECost9
             // 
             this.numericUpDownOrderECost9.DecimalPlaces = 2;
-            this.numericUpDownOrderECost9.Location = new System.Drawing.Point(868, 226);
+            this.numericUpDownOrderECost9.Location = new System.Drawing.Point(1157, 278);
+            this.numericUpDownOrderECost9.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost9.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4246,14 +4349,15 @@
             -2147483648});
             this.numericUpDownOrderECost9.Name = "numericUpDownOrderECost9";
             this.numericUpDownOrderECost9.ReadOnly = true;
-            this.numericUpDownOrderECost9.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost9.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost9.TabIndex = 189;
             this.numericUpDownOrderECost9.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost9
             // 
             this.numericUpDownOrderCost9.DecimalPlaces = 2;
-            this.numericUpDownOrderCost9.Location = new System.Drawing.Point(784, 226);
+            this.numericUpDownOrderCost9.Location = new System.Drawing.Point(1045, 278);
+            this.numericUpDownOrderCost9.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost9.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4265,7 +4369,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost9.Name = "numericUpDownOrderCost9";
-            this.numericUpDownOrderCost9.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost9.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost9.TabIndex = 27;
             this.numericUpDownOrderCost9.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost9.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4274,7 +4378,8 @@
             // numericUpDownOrderCount8
             // 
             this.numericUpDownOrderCount8.DecimalPlaces = 2;
-            this.numericUpDownOrderCount8.Location = new System.Drawing.Point(32, 206);
+            this.numericUpDownOrderCount8.Location = new System.Drawing.Point(43, 254);
+            this.numericUpDownOrderCount8.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount8.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4286,7 +4391,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount8.Name = "numericUpDownOrderCount8";
-            this.numericUpDownOrderCount8.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount8.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount8.TabIndex = 22;
             this.numericUpDownOrderCount8.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount8.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4295,7 +4400,8 @@
             // numericUpDownOrderECost8
             // 
             this.numericUpDownOrderECost8.DecimalPlaces = 2;
-            this.numericUpDownOrderECost8.Location = new System.Drawing.Point(868, 205);
+            this.numericUpDownOrderECost8.Location = new System.Drawing.Point(1157, 252);
+            this.numericUpDownOrderECost8.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost8.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4308,14 +4414,15 @@
             -2147483648});
             this.numericUpDownOrderECost8.Name = "numericUpDownOrderECost8";
             this.numericUpDownOrderECost8.ReadOnly = true;
-            this.numericUpDownOrderECost8.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost8.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost8.TabIndex = 186;
             this.numericUpDownOrderECost8.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost8
             // 
             this.numericUpDownOrderCost8.DecimalPlaces = 2;
-            this.numericUpDownOrderCost8.Location = new System.Drawing.Point(784, 205);
+            this.numericUpDownOrderCost8.Location = new System.Drawing.Point(1045, 252);
+            this.numericUpDownOrderCost8.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost8.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4327,7 +4434,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost8.Name = "numericUpDownOrderCost8";
-            this.numericUpDownOrderCost8.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost8.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost8.TabIndex = 24;
             this.numericUpDownOrderCost8.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost8.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4336,7 +4443,8 @@
             // numericUpDownOrderCount7
             // 
             this.numericUpDownOrderCount7.DecimalPlaces = 2;
-            this.numericUpDownOrderCount7.Location = new System.Drawing.Point(32, 185);
+            this.numericUpDownOrderCount7.Location = new System.Drawing.Point(43, 228);
+            this.numericUpDownOrderCount7.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount7.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4348,7 +4456,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount7.Name = "numericUpDownOrderCount7";
-            this.numericUpDownOrderCount7.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount7.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount7.TabIndex = 19;
             this.numericUpDownOrderCount7.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount7.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4357,7 +4465,8 @@
             // numericUpDownOrderECost7
             // 
             this.numericUpDownOrderECost7.DecimalPlaces = 2;
-            this.numericUpDownOrderECost7.Location = new System.Drawing.Point(868, 184);
+            this.numericUpDownOrderECost7.Location = new System.Drawing.Point(1157, 226);
+            this.numericUpDownOrderECost7.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost7.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4370,14 +4479,15 @@
             -2147483648});
             this.numericUpDownOrderECost7.Name = "numericUpDownOrderECost7";
             this.numericUpDownOrderECost7.ReadOnly = true;
-            this.numericUpDownOrderECost7.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost7.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost7.TabIndex = 183;
             this.numericUpDownOrderECost7.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost7
             // 
             this.numericUpDownOrderCost7.DecimalPlaces = 2;
-            this.numericUpDownOrderCost7.Location = new System.Drawing.Point(784, 184);
+            this.numericUpDownOrderCost7.Location = new System.Drawing.Point(1045, 226);
+            this.numericUpDownOrderCost7.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost7.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4389,7 +4499,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost7.Name = "numericUpDownOrderCost7";
-            this.numericUpDownOrderCost7.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost7.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost7.TabIndex = 21;
             this.numericUpDownOrderCost7.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost7.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4398,7 +4508,8 @@
             // numericUpDownOrderCount6
             // 
             this.numericUpDownOrderCount6.DecimalPlaces = 2;
-            this.numericUpDownOrderCount6.Location = new System.Drawing.Point(32, 164);
+            this.numericUpDownOrderCount6.Location = new System.Drawing.Point(43, 202);
+            this.numericUpDownOrderCount6.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount6.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4410,7 +4521,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount6.Name = "numericUpDownOrderCount6";
-            this.numericUpDownOrderCount6.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount6.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount6.TabIndex = 16;
             this.numericUpDownOrderCount6.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount6.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4419,7 +4530,8 @@
             // numericUpDownOrderECost6
             // 
             this.numericUpDownOrderECost6.DecimalPlaces = 2;
-            this.numericUpDownOrderECost6.Location = new System.Drawing.Point(868, 163);
+            this.numericUpDownOrderECost6.Location = new System.Drawing.Point(1157, 201);
+            this.numericUpDownOrderECost6.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost6.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4432,14 +4544,15 @@
             -2147483648});
             this.numericUpDownOrderECost6.Name = "numericUpDownOrderECost6";
             this.numericUpDownOrderECost6.ReadOnly = true;
-            this.numericUpDownOrderECost6.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost6.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost6.TabIndex = 180;
             this.numericUpDownOrderECost6.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost6
             // 
             this.numericUpDownOrderCost6.DecimalPlaces = 2;
-            this.numericUpDownOrderCost6.Location = new System.Drawing.Point(784, 163);
+            this.numericUpDownOrderCost6.Location = new System.Drawing.Point(1045, 201);
+            this.numericUpDownOrderCost6.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost6.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4451,7 +4564,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost6.Name = "numericUpDownOrderCost6";
-            this.numericUpDownOrderCost6.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost6.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost6.TabIndex = 18;
             this.numericUpDownOrderCost6.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost6.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4460,7 +4573,8 @@
             // numericUpDownOrderCount5
             // 
             this.numericUpDownOrderCount5.DecimalPlaces = 2;
-            this.numericUpDownOrderCount5.Location = new System.Drawing.Point(32, 143);
+            this.numericUpDownOrderCount5.Location = new System.Drawing.Point(43, 176);
+            this.numericUpDownOrderCount5.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount5.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4472,7 +4586,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount5.Name = "numericUpDownOrderCount5";
-            this.numericUpDownOrderCount5.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount5.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount5.TabIndex = 13;
             this.numericUpDownOrderCount5.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount5.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4481,7 +4595,8 @@
             // numericUpDownOrderECost5
             // 
             this.numericUpDownOrderECost5.DecimalPlaces = 2;
-            this.numericUpDownOrderECost5.Location = new System.Drawing.Point(868, 142);
+            this.numericUpDownOrderECost5.Location = new System.Drawing.Point(1157, 175);
+            this.numericUpDownOrderECost5.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost5.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4494,14 +4609,15 @@
             -2147483648});
             this.numericUpDownOrderECost5.Name = "numericUpDownOrderECost5";
             this.numericUpDownOrderECost5.ReadOnly = true;
-            this.numericUpDownOrderECost5.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost5.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost5.TabIndex = 177;
             this.numericUpDownOrderECost5.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost5
             // 
             this.numericUpDownOrderCost5.DecimalPlaces = 2;
-            this.numericUpDownOrderCost5.Location = new System.Drawing.Point(784, 142);
+            this.numericUpDownOrderCost5.Location = new System.Drawing.Point(1045, 175);
+            this.numericUpDownOrderCost5.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost5.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4513,7 +4629,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost5.Name = "numericUpDownOrderCost5";
-            this.numericUpDownOrderCost5.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost5.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost5.TabIndex = 15;
             this.numericUpDownOrderCost5.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost5.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4522,7 +4638,8 @@
             // numericUpDownOrderCount4
             // 
             this.numericUpDownOrderCount4.DecimalPlaces = 2;
-            this.numericUpDownOrderCount4.Location = new System.Drawing.Point(32, 122);
+            this.numericUpDownOrderCount4.Location = new System.Drawing.Point(43, 150);
+            this.numericUpDownOrderCount4.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount4.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4534,7 +4651,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount4.Name = "numericUpDownOrderCount4";
-            this.numericUpDownOrderCount4.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount4.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount4.TabIndex = 10;
             this.numericUpDownOrderCount4.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount4.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4543,7 +4660,8 @@
             // numericUpDownOrderECost4
             // 
             this.numericUpDownOrderECost4.DecimalPlaces = 2;
-            this.numericUpDownOrderECost4.Location = new System.Drawing.Point(868, 121);
+            this.numericUpDownOrderECost4.Location = new System.Drawing.Point(1157, 149);
+            this.numericUpDownOrderECost4.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost4.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4556,14 +4674,15 @@
             -2147483648});
             this.numericUpDownOrderECost4.Name = "numericUpDownOrderECost4";
             this.numericUpDownOrderECost4.ReadOnly = true;
-            this.numericUpDownOrderECost4.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost4.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost4.TabIndex = 174;
             this.numericUpDownOrderECost4.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost4
             // 
             this.numericUpDownOrderCost4.DecimalPlaces = 2;
-            this.numericUpDownOrderCost4.Location = new System.Drawing.Point(784, 121);
+            this.numericUpDownOrderCost4.Location = new System.Drawing.Point(1045, 149);
+            this.numericUpDownOrderCost4.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost4.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4575,7 +4694,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost4.Name = "numericUpDownOrderCost4";
-            this.numericUpDownOrderCost4.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost4.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost4.TabIndex = 12;
             this.numericUpDownOrderCost4.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost4.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4584,7 +4703,8 @@
             // numericUpDownOrderCount3
             // 
             this.numericUpDownOrderCount3.DecimalPlaces = 2;
-            this.numericUpDownOrderCount3.Location = new System.Drawing.Point(32, 101);
+            this.numericUpDownOrderCount3.Location = new System.Drawing.Point(43, 124);
+            this.numericUpDownOrderCount3.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount3.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4596,7 +4716,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount3.Name = "numericUpDownOrderCount3";
-            this.numericUpDownOrderCount3.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount3.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount3.TabIndex = 7;
             this.numericUpDownOrderCount3.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount3.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4605,7 +4725,8 @@
             // numericUpDownOrderECost3
             // 
             this.numericUpDownOrderECost3.DecimalPlaces = 2;
-            this.numericUpDownOrderECost3.Location = new System.Drawing.Point(868, 100);
+            this.numericUpDownOrderECost3.Location = new System.Drawing.Point(1157, 123);
+            this.numericUpDownOrderECost3.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost3.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4618,14 +4739,15 @@
             -2147483648});
             this.numericUpDownOrderECost3.Name = "numericUpDownOrderECost3";
             this.numericUpDownOrderECost3.ReadOnly = true;
-            this.numericUpDownOrderECost3.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost3.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost3.TabIndex = 171;
             this.numericUpDownOrderECost3.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost3
             // 
             this.numericUpDownOrderCost3.DecimalPlaces = 2;
-            this.numericUpDownOrderCost3.Location = new System.Drawing.Point(784, 100);
+            this.numericUpDownOrderCost3.Location = new System.Drawing.Point(1045, 123);
+            this.numericUpDownOrderCost3.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost3.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4637,7 +4759,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost3.Name = "numericUpDownOrderCost3";
-            this.numericUpDownOrderCost3.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost3.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost3.TabIndex = 9;
             this.numericUpDownOrderCost3.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost3.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4646,7 +4768,8 @@
             // numericUpDownOrderCount2
             // 
             this.numericUpDownOrderCount2.DecimalPlaces = 2;
-            this.numericUpDownOrderCount2.Location = new System.Drawing.Point(32, 80);
+            this.numericUpDownOrderCount2.Location = new System.Drawing.Point(43, 98);
+            this.numericUpDownOrderCount2.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount2.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4658,7 +4781,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount2.Name = "numericUpDownOrderCount2";
-            this.numericUpDownOrderCount2.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount2.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount2.TabIndex = 4;
             this.numericUpDownOrderCount2.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount2.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4667,7 +4790,8 @@
             // numericUpDownOrderECost2
             // 
             this.numericUpDownOrderECost2.DecimalPlaces = 2;
-            this.numericUpDownOrderECost2.Location = new System.Drawing.Point(868, 79);
+            this.numericUpDownOrderECost2.Location = new System.Drawing.Point(1157, 97);
+            this.numericUpDownOrderECost2.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost2.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4680,14 +4804,15 @@
             -2147483648});
             this.numericUpDownOrderECost2.Name = "numericUpDownOrderECost2";
             this.numericUpDownOrderECost2.ReadOnly = true;
-            this.numericUpDownOrderECost2.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost2.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost2.TabIndex = 168;
             this.numericUpDownOrderECost2.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost2
             // 
             this.numericUpDownOrderCost2.DecimalPlaces = 2;
-            this.numericUpDownOrderCost2.Location = new System.Drawing.Point(784, 79);
+            this.numericUpDownOrderCost2.Location = new System.Drawing.Point(1045, 97);
+            this.numericUpDownOrderCost2.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost2.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4699,7 +4824,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost2.Name = "numericUpDownOrderCost2";
-            this.numericUpDownOrderCost2.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost2.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost2.TabIndex = 6;
             this.numericUpDownOrderCost2.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost2.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4708,7 +4833,8 @@
             // numericUpDownOrderCount1
             // 
             this.numericUpDownOrderCount1.DecimalPlaces = 2;
-            this.numericUpDownOrderCount1.Location = new System.Drawing.Point(32, 59);
+            this.numericUpDownOrderCount1.Location = new System.Drawing.Point(43, 73);
+            this.numericUpDownOrderCount1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCount1.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4720,7 +4846,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCount1.Name = "numericUpDownOrderCount1";
-            this.numericUpDownOrderCount1.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownOrderCount1.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownOrderCount1.TabIndex = 1;
             this.numericUpDownOrderCount1.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCount1.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4729,7 +4855,8 @@
             // numericUpDownOrderECost1
             // 
             this.numericUpDownOrderECost1.DecimalPlaces = 2;
-            this.numericUpDownOrderECost1.Location = new System.Drawing.Point(868, 58);
+            this.numericUpDownOrderECost1.Location = new System.Drawing.Point(1157, 71);
+            this.numericUpDownOrderECost1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderECost1.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4742,14 +4869,15 @@
             -2147483648});
             this.numericUpDownOrderECost1.Name = "numericUpDownOrderECost1";
             this.numericUpDownOrderECost1.ReadOnly = true;
-            this.numericUpDownOrderECost1.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderECost1.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderECost1.TabIndex = 165;
             this.numericUpDownOrderECost1.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // numericUpDownOrderCost1
             // 
             this.numericUpDownOrderCost1.DecimalPlaces = 2;
-            this.numericUpDownOrderCost1.Location = new System.Drawing.Point(784, 58);
+            this.numericUpDownOrderCost1.Location = new System.Drawing.Point(1045, 71);
+            this.numericUpDownOrderCost1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownOrderCost1.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -4761,7 +4889,7 @@
             0,
             -2147483648});
             this.numericUpDownOrderCost1.Name = "numericUpDownOrderCost1";
-            this.numericUpDownOrderCost1.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownOrderCost1.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownOrderCost1.TabIndex = 3;
             this.numericUpDownOrderCost1.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownOrderCost1.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -4770,10 +4898,11 @@
             // textBoxOrderDescr23
             // 
             this.textBoxOrderDescr23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr23.Location = new System.Drawing.Point(84, 521);
+            this.textBoxOrderDescr23.Location = new System.Drawing.Point(112, 641);
+            this.textBoxOrderDescr23.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr23.MaxLength = 100;
             this.textBoxOrderDescr23.Name = "textBoxOrderDescr23";
-            this.textBoxOrderDescr23.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr23.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr23.TabIndex = 68;
             this.textBoxOrderDescr23.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr23.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4782,10 +4911,11 @@
             // textBoxOrderDescr22
             // 
             this.textBoxOrderDescr22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr22.Location = new System.Drawing.Point(84, 500);
+            this.textBoxOrderDescr22.Location = new System.Drawing.Point(112, 615);
+            this.textBoxOrderDescr22.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr22.MaxLength = 100;
             this.textBoxOrderDescr22.Name = "textBoxOrderDescr22";
-            this.textBoxOrderDescr22.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr22.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr22.TabIndex = 65;
             this.textBoxOrderDescr22.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr22.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4794,10 +4924,11 @@
             // textBoxOrderDescr21
             // 
             this.textBoxOrderDescr21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr21.Location = new System.Drawing.Point(84, 479);
+            this.textBoxOrderDescr21.Location = new System.Drawing.Point(112, 590);
+            this.textBoxOrderDescr21.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr21.MaxLength = 100;
             this.textBoxOrderDescr21.Name = "textBoxOrderDescr21";
-            this.textBoxOrderDescr21.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr21.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr21.TabIndex = 62;
             this.textBoxOrderDescr21.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr21.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4806,10 +4937,11 @@
             // textBoxOrderDescr20
             // 
             this.textBoxOrderDescr20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr20.Location = new System.Drawing.Point(84, 458);
+            this.textBoxOrderDescr20.Location = new System.Drawing.Point(112, 564);
+            this.textBoxOrderDescr20.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr20.MaxLength = 100;
             this.textBoxOrderDescr20.Name = "textBoxOrderDescr20";
-            this.textBoxOrderDescr20.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr20.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr20.TabIndex = 59;
             this.textBoxOrderDescr20.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr20.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4818,10 +4950,11 @@
             // textBoxOrderDescr19
             // 
             this.textBoxOrderDescr19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr19.Location = new System.Drawing.Point(84, 437);
+            this.textBoxOrderDescr19.Location = new System.Drawing.Point(112, 538);
+            this.textBoxOrderDescr19.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr19.MaxLength = 100;
             this.textBoxOrderDescr19.Name = "textBoxOrderDescr19";
-            this.textBoxOrderDescr19.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr19.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr19.TabIndex = 56;
             this.textBoxOrderDescr19.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr19.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4830,10 +4963,11 @@
             // textBoxOrderDescr18
             // 
             this.textBoxOrderDescr18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr18.Location = new System.Drawing.Point(84, 416);
+            this.textBoxOrderDescr18.Location = new System.Drawing.Point(112, 512);
+            this.textBoxOrderDescr18.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr18.MaxLength = 100;
             this.textBoxOrderDescr18.Name = "textBoxOrderDescr18";
-            this.textBoxOrderDescr18.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr18.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr18.TabIndex = 53;
             this.textBoxOrderDescr18.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr18.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4842,10 +4976,11 @@
             // textBoxOrderDescr17
             // 
             this.textBoxOrderDescr17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr17.Location = new System.Drawing.Point(84, 395);
+            this.textBoxOrderDescr17.Location = new System.Drawing.Point(112, 486);
+            this.textBoxOrderDescr17.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr17.MaxLength = 100;
             this.textBoxOrderDescr17.Name = "textBoxOrderDescr17";
-            this.textBoxOrderDescr17.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr17.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr17.TabIndex = 50;
             this.textBoxOrderDescr17.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr17.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4854,10 +4989,11 @@
             // textBoxOrderDescr16
             // 
             this.textBoxOrderDescr16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr16.Location = new System.Drawing.Point(84, 374);
+            this.textBoxOrderDescr16.Location = new System.Drawing.Point(112, 460);
+            this.textBoxOrderDescr16.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr16.MaxLength = 100;
             this.textBoxOrderDescr16.Name = "textBoxOrderDescr16";
-            this.textBoxOrderDescr16.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr16.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr16.TabIndex = 47;
             this.textBoxOrderDescr16.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr16.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4866,10 +5002,11 @@
             // textBoxOrderDescr15
             // 
             this.textBoxOrderDescr15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr15.Location = new System.Drawing.Point(84, 353);
+            this.textBoxOrderDescr15.Location = new System.Drawing.Point(112, 434);
+            this.textBoxOrderDescr15.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr15.MaxLength = 100;
             this.textBoxOrderDescr15.Name = "textBoxOrderDescr15";
-            this.textBoxOrderDescr15.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr15.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr15.TabIndex = 44;
             this.textBoxOrderDescr15.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr15.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4878,10 +5015,11 @@
             // textBoxOrderDescr14
             // 
             this.textBoxOrderDescr14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr14.Location = new System.Drawing.Point(84, 332);
+            this.textBoxOrderDescr14.Location = new System.Drawing.Point(112, 409);
+            this.textBoxOrderDescr14.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr14.MaxLength = 100;
             this.textBoxOrderDescr14.Name = "textBoxOrderDescr14";
-            this.textBoxOrderDescr14.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr14.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr14.TabIndex = 41;
             this.textBoxOrderDescr14.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr14.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4890,10 +5028,11 @@
             // textBoxOrderDescr13
             // 
             this.textBoxOrderDescr13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr13.Location = new System.Drawing.Point(84, 311);
+            this.textBoxOrderDescr13.Location = new System.Drawing.Point(112, 383);
+            this.textBoxOrderDescr13.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr13.MaxLength = 100;
             this.textBoxOrderDescr13.Name = "textBoxOrderDescr13";
-            this.textBoxOrderDescr13.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr13.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr13.TabIndex = 38;
             this.textBoxOrderDescr13.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr13.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4902,10 +5041,11 @@
             // textBoxOrderDescr12
             // 
             this.textBoxOrderDescr12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr12.Location = new System.Drawing.Point(84, 290);
+            this.textBoxOrderDescr12.Location = new System.Drawing.Point(112, 357);
+            this.textBoxOrderDescr12.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr12.MaxLength = 100;
             this.textBoxOrderDescr12.Name = "textBoxOrderDescr12";
-            this.textBoxOrderDescr12.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr12.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr12.TabIndex = 35;
             this.textBoxOrderDescr12.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr12.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4914,10 +5054,11 @@
             // textBoxOrderDescr11
             // 
             this.textBoxOrderDescr11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr11.Location = new System.Drawing.Point(84, 269);
+            this.textBoxOrderDescr11.Location = new System.Drawing.Point(112, 331);
+            this.textBoxOrderDescr11.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr11.MaxLength = 100;
             this.textBoxOrderDescr11.Name = "textBoxOrderDescr11";
-            this.textBoxOrderDescr11.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr11.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr11.TabIndex = 32;
             this.textBoxOrderDescr11.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr11.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4926,10 +5067,11 @@
             // textBoxOrderDescr10
             // 
             this.textBoxOrderDescr10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr10.Location = new System.Drawing.Point(84, 248);
+            this.textBoxOrderDescr10.Location = new System.Drawing.Point(112, 305);
+            this.textBoxOrderDescr10.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr10.MaxLength = 100;
             this.textBoxOrderDescr10.Name = "textBoxOrderDescr10";
-            this.textBoxOrderDescr10.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr10.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr10.TabIndex = 29;
             this.textBoxOrderDescr10.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr10.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4938,10 +5080,11 @@
             // textBoxOrderDescr9
             // 
             this.textBoxOrderDescr9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr9.Location = new System.Drawing.Point(84, 227);
+            this.textBoxOrderDescr9.Location = new System.Drawing.Point(112, 279);
+            this.textBoxOrderDescr9.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr9.MaxLength = 100;
             this.textBoxOrderDescr9.Name = "textBoxOrderDescr9";
-            this.textBoxOrderDescr9.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr9.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr9.TabIndex = 26;
             this.textBoxOrderDescr9.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr9.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4950,10 +5093,11 @@
             // textBoxOrderDescr8
             // 
             this.textBoxOrderDescr8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr8.Location = new System.Drawing.Point(84, 206);
+            this.textBoxOrderDescr8.Location = new System.Drawing.Point(112, 254);
+            this.textBoxOrderDescr8.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr8.MaxLength = 100;
             this.textBoxOrderDescr8.Name = "textBoxOrderDescr8";
-            this.textBoxOrderDescr8.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr8.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr8.TabIndex = 23;
             this.textBoxOrderDescr8.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr8.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4962,10 +5106,11 @@
             // textBoxOrderDescr7
             // 
             this.textBoxOrderDescr7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr7.Location = new System.Drawing.Point(84, 185);
+            this.textBoxOrderDescr7.Location = new System.Drawing.Point(112, 228);
+            this.textBoxOrderDescr7.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr7.MaxLength = 100;
             this.textBoxOrderDescr7.Name = "textBoxOrderDescr7";
-            this.textBoxOrderDescr7.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr7.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr7.TabIndex = 20;
             this.textBoxOrderDescr7.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr7.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4974,10 +5119,11 @@
             // textBoxOrderDescr6
             // 
             this.textBoxOrderDescr6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr6.Location = new System.Drawing.Point(84, 164);
+            this.textBoxOrderDescr6.Location = new System.Drawing.Point(112, 202);
+            this.textBoxOrderDescr6.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr6.MaxLength = 100;
             this.textBoxOrderDescr6.Name = "textBoxOrderDescr6";
-            this.textBoxOrderDescr6.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr6.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr6.TabIndex = 17;
             this.textBoxOrderDescr6.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4986,10 +5132,11 @@
             // textBoxOrderDescr5
             // 
             this.textBoxOrderDescr5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr5.Location = new System.Drawing.Point(84, 143);
+            this.textBoxOrderDescr5.Location = new System.Drawing.Point(112, 176);
+            this.textBoxOrderDescr5.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr5.MaxLength = 100;
             this.textBoxOrderDescr5.Name = "textBoxOrderDescr5";
-            this.textBoxOrderDescr5.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr5.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr5.TabIndex = 14;
             this.textBoxOrderDescr5.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -4998,10 +5145,11 @@
             // textBoxOrderDescr4
             // 
             this.textBoxOrderDescr4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr4.Location = new System.Drawing.Point(84, 122);
+            this.textBoxOrderDescr4.Location = new System.Drawing.Point(112, 150);
+            this.textBoxOrderDescr4.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr4.MaxLength = 100;
             this.textBoxOrderDescr4.Name = "textBoxOrderDescr4";
-            this.textBoxOrderDescr4.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr4.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr4.TabIndex = 11;
             this.textBoxOrderDescr4.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -5010,10 +5158,11 @@
             // textBoxOrderDescr3
             // 
             this.textBoxOrderDescr3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr3.Location = new System.Drawing.Point(84, 101);
+            this.textBoxOrderDescr3.Location = new System.Drawing.Point(112, 124);
+            this.textBoxOrderDescr3.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr3.MaxLength = 100;
             this.textBoxOrderDescr3.Name = "textBoxOrderDescr3";
-            this.textBoxOrderDescr3.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr3.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr3.TabIndex = 8;
             this.textBoxOrderDescr3.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -5022,10 +5171,11 @@
             // textBoxOrderDescr2
             // 
             this.textBoxOrderDescr2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr2.Location = new System.Drawing.Point(84, 80);
+            this.textBoxOrderDescr2.Location = new System.Drawing.Point(112, 98);
+            this.textBoxOrderDescr2.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr2.MaxLength = 100;
             this.textBoxOrderDescr2.Name = "textBoxOrderDescr2";
-            this.textBoxOrderDescr2.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr2.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr2.TabIndex = 5;
             this.textBoxOrderDescr2.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -5034,10 +5184,11 @@
             // textBoxOrderDescr1
             // 
             this.textBoxOrderDescr1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOrderDescr1.Location = new System.Drawing.Point(84, 58);
+            this.textBoxOrderDescr1.Location = new System.Drawing.Point(112, 71);
+            this.textBoxOrderDescr1.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOrderDescr1.MaxLength = 100;
             this.textBoxOrderDescr1.Name = "textBoxOrderDescr1";
-            this.textBoxOrderDescr1.Size = new System.Drawing.Size(694, 21);
+            this.textBoxOrderDescr1.Size = new System.Drawing.Size(924, 24);
             this.textBoxOrderDescr1.TabIndex = 2;
             this.textBoxOrderDescr1.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxOrderDescr1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -5046,19 +5197,21 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(15, 36);
+            this.label43.Location = new System.Drawing.Point(20, 44);
+            this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(63, 13);
+            this.label43.Size = new System.Drawing.Size(83, 17);
             this.label43.TabIndex = 48;
             this.label43.Text = "Description:";
             // 
             // textBoxDescription
             // 
             this.textBoxDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDescription.Location = new System.Drawing.Point(84, 33);
+            this.textBoxDescription.Location = new System.Drawing.Point(112, 41);
+            this.textBoxDescription.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxDescription.MaxLength = 120;
             this.textBoxDescription.Name = "textBoxDescription";
-            this.textBoxDescription.Size = new System.Drawing.Size(694, 21);
+            this.textBoxDescription.Size = new System.Drawing.Size(924, 24);
             this.textBoxDescription.TabIndex = 0;
             this.textBoxDescription.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxDescription.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -5067,72 +5220,80 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(713, 11);
+            this.label42.Location = new System.Drawing.Point(951, 14);
+            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(75, 13);
+            this.label42.Size = new System.Drawing.Size(103, 17);
             this.label42.TabIndex = 45;
             this.label42.Text = "Gross % Profit:";
             // 
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(564, 11);
+            this.label41.Location = new System.Drawing.Point(752, 14);
+            this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(61, 13);
+            this.label41.Size = new System.Drawing.Size(80, 17);
             this.label41.TabIndex = 43;
             this.label41.Text = "Shop Time:";
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(439, 11);
+            this.label40.Location = new System.Drawing.Point(585, 14);
+            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(42, 13);
+            this.label40.Size = new System.Drawing.Size(56, 17);
             this.label40.TabIndex = 41;
             this.label40.Text = "Freight:";
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(316, 11);
+            this.label39.Location = new System.Drawing.Point(421, 14);
+            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(37, 13);
+            this.label39.Size = new System.Drawing.Size(49, 17);
             this.label39.TabIndex = 39;
             this.label39.Text = "Credit:";
             // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(862, 11);
+            this.label38.Location = new System.Drawing.Point(1149, 14);
+            this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(34, 13);
+            this.label38.Size = new System.Drawing.Size(45, 17);
             this.label38.TabIndex = 37;
             this.label38.Text = "Profit:";
             // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(171, 11);
+            this.label37.Location = new System.Drawing.Point(228, 14);
+            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(58, 13);
+            this.label37.Size = new System.Drawing.Size(76, 17);
             this.label37.TabIndex = 35;
             this.label37.Text = "Total Cost:";
             // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(12, 11);
+            this.label36.Location = new System.Drawing.Point(16, 14);
+            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(66, 13);
+            this.label36.Size = new System.Drawing.Size(87, 17);
             this.label36.TabIndex = 33;
             this.label36.Text = "Quote Price:";
             // 
             // buttonLine23
             // 
             this.buttonLine23.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine23.Image")));
-            this.buttonLine23.Location = new System.Drawing.Point(6, 521);
+            this.buttonLine23.Location = new System.Drawing.Point(8, 641);
+            this.buttonLine23.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine23.Name = "buttonLine23";
-            this.buttonLine23.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine23.Size = new System.Drawing.Size(32, 25);
             this.buttonLine23.TabIndex = 92;
             this.buttonLine23.Tag = "23";
             this.buttonLine23.UseVisualStyleBackColor = true;
@@ -5141,9 +5302,10 @@
             // buttonLine22
             // 
             this.buttonLine22.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine22.Image")));
-            this.buttonLine22.Location = new System.Drawing.Point(6, 500);
+            this.buttonLine22.Location = new System.Drawing.Point(8, 615);
+            this.buttonLine22.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine22.Name = "buttonLine22";
-            this.buttonLine22.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine22.Size = new System.Drawing.Size(32, 25);
             this.buttonLine22.TabIndex = 91;
             this.buttonLine22.Tag = "22";
             this.buttonLine22.UseVisualStyleBackColor = true;
@@ -5152,9 +5314,10 @@
             // buttonLine21
             // 
             this.buttonLine21.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine21.Image")));
-            this.buttonLine21.Location = new System.Drawing.Point(6, 479);
+            this.buttonLine21.Location = new System.Drawing.Point(8, 590);
+            this.buttonLine21.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine21.Name = "buttonLine21";
-            this.buttonLine21.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine21.Size = new System.Drawing.Size(32, 25);
             this.buttonLine21.TabIndex = 90;
             this.buttonLine21.UseVisualStyleBackColor = true;
             this.buttonLine21.Click += new System.EventHandler(this.buttonLine1_Click);
@@ -5162,9 +5325,10 @@
             // buttonLine20
             // 
             this.buttonLine20.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine20.Image")));
-            this.buttonLine20.Location = new System.Drawing.Point(6, 458);
+            this.buttonLine20.Location = new System.Drawing.Point(8, 564);
+            this.buttonLine20.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine20.Name = "buttonLine20";
-            this.buttonLine20.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine20.Size = new System.Drawing.Size(32, 25);
             this.buttonLine20.TabIndex = 89;
             this.buttonLine20.Tag = "20";
             this.buttonLine20.UseVisualStyleBackColor = true;
@@ -5173,9 +5337,10 @@
             // buttonLine19
             // 
             this.buttonLine19.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine19.Image")));
-            this.buttonLine19.Location = new System.Drawing.Point(6, 437);
+            this.buttonLine19.Location = new System.Drawing.Point(8, 538);
+            this.buttonLine19.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine19.Name = "buttonLine19";
-            this.buttonLine19.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine19.Size = new System.Drawing.Size(32, 25);
             this.buttonLine19.TabIndex = 88;
             this.buttonLine19.Tag = "19";
             this.buttonLine19.UseVisualStyleBackColor = true;
@@ -5184,9 +5349,10 @@
             // buttonLine18
             // 
             this.buttonLine18.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine18.Image")));
-            this.buttonLine18.Location = new System.Drawing.Point(6, 416);
+            this.buttonLine18.Location = new System.Drawing.Point(8, 512);
+            this.buttonLine18.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine18.Name = "buttonLine18";
-            this.buttonLine18.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine18.Size = new System.Drawing.Size(32, 25);
             this.buttonLine18.TabIndex = 87;
             this.buttonLine18.Tag = "18";
             this.buttonLine18.UseVisualStyleBackColor = true;
@@ -5195,9 +5361,10 @@
             // buttonLine17
             // 
             this.buttonLine17.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine17.Image")));
-            this.buttonLine17.Location = new System.Drawing.Point(6, 395);
+            this.buttonLine17.Location = new System.Drawing.Point(8, 486);
+            this.buttonLine17.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine17.Name = "buttonLine17";
-            this.buttonLine17.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine17.Size = new System.Drawing.Size(32, 25);
             this.buttonLine17.TabIndex = 86;
             this.buttonLine17.Tag = "17";
             this.buttonLine17.UseVisualStyleBackColor = true;
@@ -5206,9 +5373,10 @@
             // buttonLine16
             // 
             this.buttonLine16.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine16.Image")));
-            this.buttonLine16.Location = new System.Drawing.Point(6, 374);
+            this.buttonLine16.Location = new System.Drawing.Point(8, 460);
+            this.buttonLine16.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine16.Name = "buttonLine16";
-            this.buttonLine16.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine16.Size = new System.Drawing.Size(32, 25);
             this.buttonLine16.TabIndex = 85;
             this.buttonLine16.Tag = "16";
             this.buttonLine16.UseVisualStyleBackColor = true;
@@ -5217,9 +5385,10 @@
             // buttonLine15
             // 
             this.buttonLine15.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine15.Image")));
-            this.buttonLine15.Location = new System.Drawing.Point(6, 353);
+            this.buttonLine15.Location = new System.Drawing.Point(8, 434);
+            this.buttonLine15.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine15.Name = "buttonLine15";
-            this.buttonLine15.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine15.Size = new System.Drawing.Size(32, 25);
             this.buttonLine15.TabIndex = 84;
             this.buttonLine15.Tag = "15";
             this.buttonLine15.UseVisualStyleBackColor = true;
@@ -5228,9 +5397,10 @@
             // buttonLine14
             // 
             this.buttonLine14.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine14.Image")));
-            this.buttonLine14.Location = new System.Drawing.Point(6, 332);
+            this.buttonLine14.Location = new System.Drawing.Point(8, 409);
+            this.buttonLine14.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine14.Name = "buttonLine14";
-            this.buttonLine14.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine14.Size = new System.Drawing.Size(32, 25);
             this.buttonLine14.TabIndex = 83;
             this.buttonLine14.Tag = "14";
             this.buttonLine14.UseVisualStyleBackColor = true;
@@ -5239,9 +5409,10 @@
             // buttonLine13
             // 
             this.buttonLine13.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine13.Image")));
-            this.buttonLine13.Location = new System.Drawing.Point(6, 311);
+            this.buttonLine13.Location = new System.Drawing.Point(8, 383);
+            this.buttonLine13.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine13.Name = "buttonLine13";
-            this.buttonLine13.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine13.Size = new System.Drawing.Size(32, 25);
             this.buttonLine13.TabIndex = 82;
             this.buttonLine13.Tag = "13";
             this.buttonLine13.UseVisualStyleBackColor = true;
@@ -5250,9 +5421,10 @@
             // buttonLine12
             // 
             this.buttonLine12.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine12.Image")));
-            this.buttonLine12.Location = new System.Drawing.Point(6, 290);
+            this.buttonLine12.Location = new System.Drawing.Point(8, 357);
+            this.buttonLine12.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine12.Name = "buttonLine12";
-            this.buttonLine12.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine12.Size = new System.Drawing.Size(32, 25);
             this.buttonLine12.TabIndex = 81;
             this.buttonLine12.Tag = "12";
             this.buttonLine12.UseVisualStyleBackColor = true;
@@ -5261,9 +5433,10 @@
             // buttonLine11
             // 
             this.buttonLine11.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine11.Image")));
-            this.buttonLine11.Location = new System.Drawing.Point(6, 269);
+            this.buttonLine11.Location = new System.Drawing.Point(8, 331);
+            this.buttonLine11.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine11.Name = "buttonLine11";
-            this.buttonLine11.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine11.Size = new System.Drawing.Size(32, 25);
             this.buttonLine11.TabIndex = 80;
             this.buttonLine11.Tag = "11";
             this.buttonLine11.UseVisualStyleBackColor = true;
@@ -5272,9 +5445,10 @@
             // buttonLine10
             // 
             this.buttonLine10.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine10.Image")));
-            this.buttonLine10.Location = new System.Drawing.Point(6, 248);
+            this.buttonLine10.Location = new System.Drawing.Point(8, 305);
+            this.buttonLine10.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine10.Name = "buttonLine10";
-            this.buttonLine10.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine10.Size = new System.Drawing.Size(32, 25);
             this.buttonLine10.TabIndex = 79;
             this.buttonLine10.Tag = "10";
             this.buttonLine10.UseVisualStyleBackColor = true;
@@ -5283,9 +5457,10 @@
             // buttonLine9
             // 
             this.buttonLine9.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine9.Image")));
-            this.buttonLine9.Location = new System.Drawing.Point(6, 227);
+            this.buttonLine9.Location = new System.Drawing.Point(8, 279);
+            this.buttonLine9.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine9.Name = "buttonLine9";
-            this.buttonLine9.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine9.Size = new System.Drawing.Size(32, 25);
             this.buttonLine9.TabIndex = 78;
             this.buttonLine9.Tag = "9";
             this.buttonLine9.UseVisualStyleBackColor = true;
@@ -5294,9 +5469,10 @@
             // buttonLine8
             // 
             this.buttonLine8.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine8.Image")));
-            this.buttonLine8.Location = new System.Drawing.Point(6, 206);
+            this.buttonLine8.Location = new System.Drawing.Point(8, 254);
+            this.buttonLine8.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine8.Name = "buttonLine8";
-            this.buttonLine8.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine8.Size = new System.Drawing.Size(32, 25);
             this.buttonLine8.TabIndex = 77;
             this.buttonLine8.Tag = "8";
             this.buttonLine8.UseVisualStyleBackColor = true;
@@ -5305,9 +5481,10 @@
             // buttonLine7
             // 
             this.buttonLine7.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine7.Image")));
-            this.buttonLine7.Location = new System.Drawing.Point(6, 185);
+            this.buttonLine7.Location = new System.Drawing.Point(8, 228);
+            this.buttonLine7.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine7.Name = "buttonLine7";
-            this.buttonLine7.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine7.Size = new System.Drawing.Size(32, 25);
             this.buttonLine7.TabIndex = 76;
             this.buttonLine7.Tag = "7";
             this.buttonLine7.UseVisualStyleBackColor = true;
@@ -5316,9 +5493,10 @@
             // buttonLine6
             // 
             this.buttonLine6.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine6.Image")));
-            this.buttonLine6.Location = new System.Drawing.Point(6, 164);
+            this.buttonLine6.Location = new System.Drawing.Point(8, 202);
+            this.buttonLine6.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine6.Name = "buttonLine6";
-            this.buttonLine6.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine6.Size = new System.Drawing.Size(32, 25);
             this.buttonLine6.TabIndex = 75;
             this.buttonLine6.Tag = "6";
             this.buttonLine6.UseVisualStyleBackColor = true;
@@ -5327,9 +5505,10 @@
             // buttonLine5
             // 
             this.buttonLine5.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine5.Image")));
-            this.buttonLine5.Location = new System.Drawing.Point(6, 143);
+            this.buttonLine5.Location = new System.Drawing.Point(8, 176);
+            this.buttonLine5.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine5.Name = "buttonLine5";
-            this.buttonLine5.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine5.Size = new System.Drawing.Size(32, 25);
             this.buttonLine5.TabIndex = 74;
             this.buttonLine5.Tag = "5";
             this.buttonLine5.UseVisualStyleBackColor = true;
@@ -5338,9 +5517,10 @@
             // buttonLine4
             // 
             this.buttonLine4.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine4.Image")));
-            this.buttonLine4.Location = new System.Drawing.Point(6, 122);
+            this.buttonLine4.Location = new System.Drawing.Point(8, 150);
+            this.buttonLine4.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine4.Name = "buttonLine4";
-            this.buttonLine4.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine4.Size = new System.Drawing.Size(32, 25);
             this.buttonLine4.TabIndex = 73;
             this.buttonLine4.Tag = "4";
             this.buttonLine4.UseVisualStyleBackColor = true;
@@ -5349,9 +5529,10 @@
             // buttonLine3
             // 
             this.buttonLine3.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine3.Image")));
-            this.buttonLine3.Location = new System.Drawing.Point(6, 101);
+            this.buttonLine3.Location = new System.Drawing.Point(8, 124);
+            this.buttonLine3.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine3.Name = "buttonLine3";
-            this.buttonLine3.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine3.Size = new System.Drawing.Size(32, 25);
             this.buttonLine3.TabIndex = 72;
             this.buttonLine3.Tag = "3";
             this.buttonLine3.UseVisualStyleBackColor = true;
@@ -5360,9 +5541,10 @@
             // buttonLine2
             // 
             this.buttonLine2.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine2.Image")));
-            this.buttonLine2.Location = new System.Drawing.Point(6, 80);
+            this.buttonLine2.Location = new System.Drawing.Point(8, 98);
+            this.buttonLine2.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine2.Name = "buttonLine2";
-            this.buttonLine2.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine2.Size = new System.Drawing.Size(32, 25);
             this.buttonLine2.TabIndex = 71;
             this.buttonLine2.Tag = "2";
             this.buttonLine2.UseVisualStyleBackColor = true;
@@ -5371,9 +5553,10 @@
             // buttonLine1
             // 
             this.buttonLine1.Image = ((System.Drawing.Image)(resources.GetObject("buttonLine1.Image")));
-            this.buttonLine1.Location = new System.Drawing.Point(6, 59);
+            this.buttonLine1.Location = new System.Drawing.Point(8, 73);
+            this.buttonLine1.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLine1.Name = "buttonLine1";
-            this.buttonLine1.Size = new System.Drawing.Size(24, 20);
+            this.buttonLine1.Size = new System.Drawing.Size(32, 25);
             this.buttonLine1.TabIndex = 70;
             this.buttonLine1.Tag = "1";
             this.buttonLine1.UseVisualStyleBackColor = true;
@@ -5403,9 +5586,10 @@
             this.tabPageAccounting.Controls.Add(this.richTextBoxInvoiceNotes);
             this.tabPageAccounting.Controls.Add(this.label44);
             this.tabPageAccounting.Controls.Add(this.richTextBoxInvoiceInstructions);
-            this.tabPageAccounting.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAccounting.Location = new System.Drawing.Point(4, 25);
+            this.tabPageAccounting.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageAccounting.Name = "tabPageAccounting";
-            this.tabPageAccounting.Size = new System.Drawing.Size(1026, 321);
+            this.tabPageAccounting.Size = new System.Drawing.Size(1373, 404);
             this.tabPageAccounting.TabIndex = 4;
             this.tabPageAccounting.Text = "Accounting";
             this.tabPageAccounting.UseVisualStyleBackColor = true;
@@ -5414,18 +5598,20 @@
             // 
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(766, 14);
+            this.label64.Location = new System.Drawing.Point(1021, 17);
+            this.label64.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(112, 13);
+            this.label64.Size = new System.Drawing.Size(140, 17);
             this.label64.TabIndex = 59;
             this.label64.Text = "Accounting Notes:";
             // 
             // richTextBoxAccNotes
             // 
             this.richTextBoxAccNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxAccNotes.Location = new System.Drawing.Point(769, 40);
+            this.richTextBoxAccNotes.Location = new System.Drawing.Point(1025, 49);
+            this.richTextBoxAccNotes.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxAccNotes.Name = "richTextBoxAccNotes";
-            this.richTextBoxAccNotes.Size = new System.Drawing.Size(242, 96);
+            this.richTextBoxAccNotes.Size = new System.Drawing.Size(321, 117);
             this.richTextBoxAccNotes.TabIndex = 58;
             this.richTextBoxAccNotes.Text = "";
             this.richTextBoxAccNotes.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
@@ -5434,9 +5620,10 @@
             // label65
             // 
             this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(599, 197);
+            this.label65.Location = new System.Drawing.Point(799, 242);
+            this.label65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(39, 13);
+            this.label65.Size = new System.Drawing.Size(51, 17);
             this.label65.TabIndex = 63;
             this.label65.Text = "Bill To:";
             // 
@@ -5444,9 +5631,10 @@
             // 
             this.label91.AutoSize = true;
             this.label91.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label91.Location = new System.Drawing.Point(519, 14);
+            this.label91.Location = new System.Drawing.Point(692, 17);
+            this.label91.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(88, 13);
+            this.label91.Size = new System.Drawing.Size(112, 17);
             this.label91.TabIndex = 57;
             this.label91.Text = "Vendor Notes:";
             // 
@@ -5459,18 +5647,20 @@
             "Customer",
             "SPX",
             "Customer & SPX"});
-            this.comboBoxBillTo.Location = new System.Drawing.Point(644, 192);
+            this.comboBoxBillTo.Location = new System.Drawing.Point(859, 236);
+            this.comboBoxBillTo.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxBillTo.Name = "comboBoxBillTo";
-            this.comboBoxBillTo.Size = new System.Drawing.Size(120, 21);
+            this.comboBoxBillTo.Size = new System.Drawing.Size(159, 24);
             this.comboBoxBillTo.TabIndex = 62;
             this.comboBoxBillTo.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // richTextBoxVendorNotes
             // 
             this.richTextBoxVendorNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxVendorNotes.Location = new System.Drawing.Point(522, 40);
+            this.richTextBoxVendorNotes.Location = new System.Drawing.Point(696, 49);
+            this.richTextBoxVendorNotes.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxVendorNotes.Name = "richTextBoxVendorNotes";
-            this.richTextBoxVendorNotes.Size = new System.Drawing.Size(242, 96);
+            this.richTextBoxVendorNotes.Size = new System.Drawing.Size(321, 117);
             this.richTextBoxVendorNotes.TabIndex = 56;
             this.richTextBoxVendorNotes.Text = "";
             this.richTextBoxVendorNotes.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
@@ -5479,9 +5669,10 @@
             // textBoxCheckDates
             // 
             this.textBoxCheckDates.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCheckDates.Location = new System.Drawing.Point(342, 244);
+            this.textBoxCheckDates.Location = new System.Drawing.Point(456, 300);
+            this.textBoxCheckDates.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCheckDates.Name = "textBoxCheckDates";
-            this.textBoxCheckDates.Size = new System.Drawing.Size(102, 21);
+            this.textBoxCheckDates.Size = new System.Drawing.Size(135, 24);
             this.textBoxCheckDates.TabIndex = 5;
             this.textBoxCheckDates.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxCheckDates.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -5491,18 +5682,20 @@
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(284, 247);
+            this.label51.Location = new System.Drawing.Point(379, 304);
+            this.label51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(33, 13);
+            this.label51.Size = new System.Drawing.Size(42, 17);
             this.label51.TabIndex = 55;
             this.label51.Text = "Date:";
             // 
             // textBoxCheckNumbers
             // 
             this.textBoxCheckNumbers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCheckNumbers.Location = new System.Drawing.Point(342, 218);
+            this.textBoxCheckNumbers.Location = new System.Drawing.Point(456, 268);
+            this.textBoxCheckNumbers.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCheckNumbers.Name = "textBoxCheckNumbers";
-            this.textBoxCheckNumbers.Size = new System.Drawing.Size(238, 21);
+            this.textBoxCheckNumbers.Size = new System.Drawing.Size(316, 24);
             this.textBoxCheckNumbers.TabIndex = 4;
             this.textBoxCheckNumbers.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxCheckNumbers.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -5511,9 +5704,10 @@
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(284, 221);
+            this.label52.Location = new System.Drawing.Point(379, 272);
+            this.label52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(51, 13);
+            this.label52.Size = new System.Drawing.Size(63, 17);
             this.label52.TabIndex = 53;
             this.label52.Text = "Check #:";
             // 
@@ -5526,27 +5720,30 @@
             "Not Paid",
             "Paid",
             "Partial"});
-            this.comboBoxStatus.Location = new System.Drawing.Point(342, 191);
+            this.comboBoxStatus.Location = new System.Drawing.Point(456, 235);
+            this.comboBoxStatus.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxStatus.Name = "comboBoxStatus";
-            this.comboBoxStatus.Size = new System.Drawing.Size(99, 21);
+            this.comboBoxStatus.Size = new System.Drawing.Size(131, 24);
             this.comboBoxStatus.TabIndex = 3;
             this.comboBoxStatus.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(284, 193);
+            this.label50.Location = new System.Drawing.Point(379, 238);
+            this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(40, 13);
+            this.label50.Size = new System.Drawing.Size(52, 17);
             this.label50.TabIndex = 51;
             this.label50.Text = "Status:";
             // 
             // textBoxInvoiceDate
             // 
             this.textBoxInvoiceDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxInvoiceDate.Location = new System.Drawing.Point(81, 244);
+            this.textBoxInvoiceDate.Location = new System.Drawing.Point(108, 300);
+            this.textBoxInvoiceDate.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxInvoiceDate.Name = "textBoxInvoiceDate";
-            this.textBoxInvoiceDate.Size = new System.Drawing.Size(102, 21);
+            this.textBoxInvoiceDate.Size = new System.Drawing.Size(135, 24);
             this.textBoxInvoiceDate.TabIndex = 2;
             this.textBoxInvoiceDate.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxInvoiceDate.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -5556,18 +5753,20 @@
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(23, 247);
+            this.label47.Location = new System.Drawing.Point(31, 304);
+            this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(33, 13);
+            this.label47.Size = new System.Drawing.Size(42, 17);
             this.label47.TabIndex = 49;
             this.label47.Text = "Date:";
             // 
             // textBoxInvoiceNumber
             // 
             this.textBoxInvoiceNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxInvoiceNumber.Location = new System.Drawing.Point(81, 218);
+            this.textBoxInvoiceNumber.Location = new System.Drawing.Point(108, 268);
+            this.textBoxInvoiceNumber.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxInvoiceNumber.Name = "textBoxInvoiceNumber";
-            this.textBoxInvoiceNumber.Size = new System.Drawing.Size(187, 21);
+            this.textBoxInvoiceNumber.Size = new System.Drawing.Size(248, 24);
             this.textBoxInvoiceNumber.TabIndex = 1;
             this.textBoxInvoiceNumber.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxInvoiceNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -5576,18 +5775,20 @@
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(23, 221);
+            this.label48.Location = new System.Drawing.Point(31, 272);
+            this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(55, 13);
+            this.label48.Size = new System.Drawing.Size(68, 17);
             this.label48.TabIndex = 47;
             this.label48.Text = "Invoice #:";
             // 
             // textBoxCrMemo
             // 
             this.textBoxCrMemo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCrMemo.Location = new System.Drawing.Point(81, 192);
+            this.textBoxCrMemo.Location = new System.Drawing.Point(108, 236);
+            this.textBoxCrMemo.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCrMemo.Name = "textBoxCrMemo";
-            this.textBoxCrMemo.Size = new System.Drawing.Size(187, 21);
+            this.textBoxCrMemo.Size = new System.Drawing.Size(248, 24);
             this.textBoxCrMemo.TabIndex = 0;
             this.textBoxCrMemo.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxCrMemo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -5596,9 +5797,10 @@
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(23, 195);
+            this.label49.Location = new System.Drawing.Point(31, 240);
+            this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(52, 13);
+            this.label49.Size = new System.Drawing.Size(68, 17);
             this.label49.TabIndex = 45;
             this.label49.Text = "Cr Memo:";
             // 
@@ -5606,18 +5808,20 @@
             // 
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(271, 14);
+            this.label45.Location = new System.Drawing.Point(361, 17);
+            this.label45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(229, 13);
+            this.label45.Size = new System.Drawing.Size(288, 17);
             this.label45.TabIndex = 32;
             this.label45.Text = "Invoice Notes will print on Price Sheet:";
             // 
             // richTextBoxInvoiceNotes
             // 
             this.richTextBoxInvoiceNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxInvoiceNotes.Location = new System.Drawing.Point(274, 40);
+            this.richTextBoxInvoiceNotes.Location = new System.Drawing.Point(365, 49);
+            this.richTextBoxInvoiceNotes.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxInvoiceNotes.Name = "richTextBoxInvoiceNotes";
-            this.richTextBoxInvoiceNotes.Size = new System.Drawing.Size(242, 96);
+            this.richTextBoxInvoiceNotes.Size = new System.Drawing.Size(321, 117);
             this.richTextBoxInvoiceNotes.TabIndex = 7;
             this.richTextBoxInvoiceNotes.Text = "";
             this.richTextBoxInvoiceNotes.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
@@ -5627,18 +5831,20 @@
             // 
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(23, 14);
+            this.label44.Location = new System.Drawing.Point(31, 17);
+            this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(123, 13);
+            this.label44.Size = new System.Drawing.Size(153, 17);
             this.label44.TabIndex = 30;
             this.label44.Text = "Invoice Instructions:";
             // 
             // richTextBoxInvoiceInstructions
             // 
             this.richTextBoxInvoiceInstructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxInvoiceInstructions.Location = new System.Drawing.Point(26, 40);
+            this.richTextBoxInvoiceInstructions.Location = new System.Drawing.Point(35, 49);
+            this.richTextBoxInvoiceInstructions.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxInvoiceInstructions.Name = "richTextBoxInvoiceInstructions";
-            this.richTextBoxInvoiceInstructions.Size = new System.Drawing.Size(242, 96);
+            this.richTextBoxInvoiceInstructions.Size = new System.Drawing.Size(321, 117);
             this.richTextBoxInvoiceInstructions.TabIndex = 6;
             this.richTextBoxInvoiceInstructions.Text = "";
             this.richTextBoxInvoiceInstructions.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
@@ -5668,9 +5874,10 @@
             this.tabPageMarley.Controls.Add(this.label54);
             this.tabPageMarley.Controls.Add(this.textBoxComDate1);
             this.tabPageMarley.Controls.Add(this.label53);
-            this.tabPageMarley.Location = new System.Drawing.Point(4, 22);
+            this.tabPageMarley.Location = new System.Drawing.Point(4, 25);
+            this.tabPageMarley.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageMarley.Name = "tabPageMarley";
-            this.tabPageMarley.Size = new System.Drawing.Size(1026, 321);
+            this.tabPageMarley.Size = new System.Drawing.Size(1373, 404);
             this.tabPageMarley.TabIndex = 5;
             this.tabPageMarley.Text = "Commision";
             this.tabPageMarley.UseVisualStyleBackColor = true;
@@ -5678,7 +5885,8 @@
             // numericUpDownComBalance
             // 
             this.numericUpDownComBalance.DecimalPlaces = 2;
-            this.numericUpDownComBalance.Location = new System.Drawing.Point(228, 45);
+            this.numericUpDownComBalance.Location = new System.Drawing.Point(304, 55);
+            this.numericUpDownComBalance.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownComBalance.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -5691,14 +5899,15 @@
             -2147483648});
             this.numericUpDownComBalance.Name = "numericUpDownComBalance";
             this.numericUpDownComBalance.ReadOnly = true;
-            this.numericUpDownComBalance.Size = new System.Drawing.Size(102, 20);
+            this.numericUpDownComBalance.Size = new System.Drawing.Size(136, 22);
             this.numericUpDownComBalance.TabIndex = 78;
             this.numericUpDownComBalance.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             // 
             // numericUpDownComAmount
             // 
             this.numericUpDownComAmount.DecimalPlaces = 2;
-            this.numericUpDownComAmount.Location = new System.Drawing.Point(228, 19);
+            this.numericUpDownComAmount.Location = new System.Drawing.Point(304, 23);
+            this.numericUpDownComAmount.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownComAmount.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -5710,7 +5919,7 @@
             0,
             -2147483648});
             this.numericUpDownComAmount.Name = "numericUpDownComAmount";
-            this.numericUpDownComAmount.Size = new System.Drawing.Size(102, 20);
+            this.numericUpDownComAmount.Size = new System.Drawing.Size(136, 22);
             this.numericUpDownComAmount.TabIndex = 77;
             this.numericUpDownComAmount.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownComAmount.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -5719,7 +5928,8 @@
             // numericUpDownPaid5
             // 
             this.numericUpDownPaid5.DecimalPlaces = 2;
-            this.numericUpDownPaid5.Location = new System.Drawing.Point(318, 204);
+            this.numericUpDownPaid5.Location = new System.Drawing.Point(424, 251);
+            this.numericUpDownPaid5.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownPaid5.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -5731,7 +5941,7 @@
             0,
             -2147483648});
             this.numericUpDownPaid5.Name = "numericUpDownPaid5";
-            this.numericUpDownPaid5.Size = new System.Drawing.Size(102, 20);
+            this.numericUpDownPaid5.Size = new System.Drawing.Size(136, 22);
             this.numericUpDownPaid5.TabIndex = 76;
             this.numericUpDownPaid5.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownPaid5.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -5740,7 +5950,8 @@
             // numericUpDownPaid4
             // 
             this.numericUpDownPaid4.DecimalPlaces = 2;
-            this.numericUpDownPaid4.Location = new System.Drawing.Point(318, 178);
+            this.numericUpDownPaid4.Location = new System.Drawing.Point(424, 219);
+            this.numericUpDownPaid4.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownPaid4.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -5752,7 +5963,7 @@
             0,
             -2147483648});
             this.numericUpDownPaid4.Name = "numericUpDownPaid4";
-            this.numericUpDownPaid4.Size = new System.Drawing.Size(102, 20);
+            this.numericUpDownPaid4.Size = new System.Drawing.Size(136, 22);
             this.numericUpDownPaid4.TabIndex = 75;
             this.numericUpDownPaid4.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownPaid4.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -5761,7 +5972,8 @@
             // numericUpDownPaid3
             // 
             this.numericUpDownPaid3.DecimalPlaces = 2;
-            this.numericUpDownPaid3.Location = new System.Drawing.Point(318, 152);
+            this.numericUpDownPaid3.Location = new System.Drawing.Point(424, 187);
+            this.numericUpDownPaid3.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownPaid3.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -5773,7 +5985,7 @@
             0,
             -2147483648});
             this.numericUpDownPaid3.Name = "numericUpDownPaid3";
-            this.numericUpDownPaid3.Size = new System.Drawing.Size(102, 20);
+            this.numericUpDownPaid3.Size = new System.Drawing.Size(136, 22);
             this.numericUpDownPaid3.TabIndex = 74;
             this.numericUpDownPaid3.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownPaid3.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -5782,7 +5994,8 @@
             // numericUpDownPaid2
             // 
             this.numericUpDownPaid2.DecimalPlaces = 2;
-            this.numericUpDownPaid2.Location = new System.Drawing.Point(318, 127);
+            this.numericUpDownPaid2.Location = new System.Drawing.Point(424, 156);
+            this.numericUpDownPaid2.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownPaid2.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -5794,7 +6007,7 @@
             0,
             -2147483648});
             this.numericUpDownPaid2.Name = "numericUpDownPaid2";
-            this.numericUpDownPaid2.Size = new System.Drawing.Size(102, 20);
+            this.numericUpDownPaid2.Size = new System.Drawing.Size(136, 22);
             this.numericUpDownPaid2.TabIndex = 73;
             this.numericUpDownPaid2.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownPaid2.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -5803,7 +6016,8 @@
             // numericUpDownPaid1
             // 
             this.numericUpDownPaid1.DecimalPlaces = 2;
-            this.numericUpDownPaid1.Location = new System.Drawing.Point(318, 100);
+            this.numericUpDownPaid1.Location = new System.Drawing.Point(424, 123);
+            this.numericUpDownPaid1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownPaid1.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -5815,7 +6029,7 @@
             0,
             -2147483648});
             this.numericUpDownPaid1.Name = "numericUpDownPaid1";
-            this.numericUpDownPaid1.Size = new System.Drawing.Size(102, 20);
+            this.numericUpDownPaid1.Size = new System.Drawing.Size(136, 22);
             this.numericUpDownPaid1.TabIndex = 61;
             this.numericUpDownPaid1.ValueChanged += new System.EventHandler(this.numericUpDownComAmount_ValueChanged);
             this.numericUpDownPaid1.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -5824,27 +6038,30 @@
             // label57
             // 
             this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(118, 47);
+            this.label57.Location = new System.Drawing.Point(157, 58);
+            this.label57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(107, 13);
+            this.label57.Size = new System.Drawing.Size(142, 17);
             this.label57.TabIndex = 70;
             this.label57.Text = "Commission Balance:";
             // 
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(118, 21);
+            this.label56.Location = new System.Drawing.Point(157, 26);
+            this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(104, 13);
+            this.label56.Size = new System.Drawing.Size(139, 17);
             this.label56.TabIndex = 69;
             this.label56.Text = "Commission Amount:";
             // 
             // textBoxCheckNumber5
             // 
             this.textBoxCheckNumber5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCheckNumber5.Location = new System.Drawing.Point(205, 204);
+            this.textBoxCheckNumber5.Location = new System.Drawing.Point(273, 251);
+            this.textBoxCheckNumber5.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCheckNumber5.Name = "textBoxCheckNumber5";
-            this.textBoxCheckNumber5.Size = new System.Drawing.Size(102, 21);
+            this.textBoxCheckNumber5.Size = new System.Drawing.Size(135, 24);
             this.textBoxCheckNumber5.TabIndex = 13;
             this.textBoxCheckNumber5.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxCheckNumber5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -5853,9 +6070,10 @@
             // textBoxComDate5
             // 
             this.textBoxComDate5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxComDate5.Location = new System.Drawing.Point(92, 204);
+            this.textBoxComDate5.Location = new System.Drawing.Point(123, 251);
+            this.textBoxComDate5.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxComDate5.Name = "textBoxComDate5";
-            this.textBoxComDate5.Size = new System.Drawing.Size(102, 21);
+            this.textBoxComDate5.Size = new System.Drawing.Size(135, 24);
             this.textBoxComDate5.TabIndex = 12;
             this.textBoxComDate5.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxComDate5.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -5865,9 +6083,10 @@
             // textBoxCheckNumber4
             // 
             this.textBoxCheckNumber4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCheckNumber4.Location = new System.Drawing.Point(205, 178);
+            this.textBoxCheckNumber4.Location = new System.Drawing.Point(273, 219);
+            this.textBoxCheckNumber4.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCheckNumber4.Name = "textBoxCheckNumber4";
-            this.textBoxCheckNumber4.Size = new System.Drawing.Size(102, 21);
+            this.textBoxCheckNumber4.Size = new System.Drawing.Size(135, 24);
             this.textBoxCheckNumber4.TabIndex = 10;
             this.textBoxCheckNumber4.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxCheckNumber4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -5876,9 +6095,10 @@
             // textBoxComDate4
             // 
             this.textBoxComDate4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxComDate4.Location = new System.Drawing.Point(92, 178);
+            this.textBoxComDate4.Location = new System.Drawing.Point(123, 219);
+            this.textBoxComDate4.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxComDate4.Name = "textBoxComDate4";
-            this.textBoxComDate4.Size = new System.Drawing.Size(102, 21);
+            this.textBoxComDate4.Size = new System.Drawing.Size(135, 24);
             this.textBoxComDate4.TabIndex = 9;
             this.textBoxComDate4.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxComDate4.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -5888,9 +6108,10 @@
             // textBoxCheckNumber3
             // 
             this.textBoxCheckNumber3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCheckNumber3.Location = new System.Drawing.Point(205, 152);
+            this.textBoxCheckNumber3.Location = new System.Drawing.Point(273, 187);
+            this.textBoxCheckNumber3.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCheckNumber3.Name = "textBoxCheckNumber3";
-            this.textBoxCheckNumber3.Size = new System.Drawing.Size(102, 21);
+            this.textBoxCheckNumber3.Size = new System.Drawing.Size(135, 24);
             this.textBoxCheckNumber3.TabIndex = 7;
             this.textBoxCheckNumber3.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxCheckNumber3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -5899,9 +6120,10 @@
             // textBoxComDate3
             // 
             this.textBoxComDate3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxComDate3.Location = new System.Drawing.Point(92, 152);
+            this.textBoxComDate3.Location = new System.Drawing.Point(123, 187);
+            this.textBoxComDate3.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxComDate3.Name = "textBoxComDate3";
-            this.textBoxComDate3.Size = new System.Drawing.Size(102, 21);
+            this.textBoxComDate3.Size = new System.Drawing.Size(135, 24);
             this.textBoxComDate3.TabIndex = 6;
             this.textBoxComDate3.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxComDate3.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -5911,9 +6133,10 @@
             // textBoxCheckNumber2
             // 
             this.textBoxCheckNumber2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCheckNumber2.Location = new System.Drawing.Point(205, 126);
+            this.textBoxCheckNumber2.Location = new System.Drawing.Point(273, 155);
+            this.textBoxCheckNumber2.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCheckNumber2.Name = "textBoxCheckNumber2";
-            this.textBoxCheckNumber2.Size = new System.Drawing.Size(102, 21);
+            this.textBoxCheckNumber2.Size = new System.Drawing.Size(135, 24);
             this.textBoxCheckNumber2.TabIndex = 4;
             this.textBoxCheckNumber2.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxCheckNumber2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -5922,9 +6145,10 @@
             // textBoxComDate2
             // 
             this.textBoxComDate2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxComDate2.Location = new System.Drawing.Point(92, 126);
+            this.textBoxComDate2.Location = new System.Drawing.Point(123, 155);
+            this.textBoxComDate2.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxComDate2.Name = "textBoxComDate2";
-            this.textBoxComDate2.Size = new System.Drawing.Size(102, 21);
+            this.textBoxComDate2.Size = new System.Drawing.Size(135, 24);
             this.textBoxComDate2.TabIndex = 3;
             this.textBoxComDate2.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxComDate2.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -5934,18 +6158,20 @@
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(315, 84);
+            this.label55.Location = new System.Drawing.Point(420, 103);
+            this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(70, 13);
+            this.label55.Size = new System.Drawing.Size(92, 17);
             this.label55.TabIndex = 55;
             this.label55.Text = "Amount Paid:";
             // 
             // textBoxCheckNumber1
             // 
             this.textBoxCheckNumber1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCheckNumber1.Location = new System.Drawing.Point(205, 100);
+            this.textBoxCheckNumber1.Location = new System.Drawing.Point(273, 123);
+            this.textBoxCheckNumber1.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCheckNumber1.Name = "textBoxCheckNumber1";
-            this.textBoxCheckNumber1.Size = new System.Drawing.Size(102, 21);
+            this.textBoxCheckNumber1.Size = new System.Drawing.Size(135, 24);
             this.textBoxCheckNumber1.TabIndex = 1;
             this.textBoxCheckNumber1.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxCheckNumber1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -5954,18 +6180,20 @@
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(202, 84);
+            this.label54.Location = new System.Drawing.Point(269, 103);
+            this.label54.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(81, 13);
+            this.label54.Size = new System.Drawing.Size(105, 17);
             this.label54.TabIndex = 53;
             this.label54.Text = "Check Number:";
             // 
             // textBoxComDate1
             // 
             this.textBoxComDate1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxComDate1.Location = new System.Drawing.Point(92, 100);
+            this.textBoxComDate1.Location = new System.Drawing.Point(123, 123);
+            this.textBoxComDate1.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxComDate1.Name = "textBoxComDate1";
-            this.textBoxComDate1.Size = new System.Drawing.Size(102, 21);
+            this.textBoxComDate1.Size = new System.Drawing.Size(135, 24);
             this.textBoxComDate1.TabIndex = 0;
             this.textBoxComDate1.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxComDate1.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -5975,9 +6203,10 @@
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(89, 84);
+            this.label53.Location = new System.Drawing.Point(119, 103);
+            this.label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(33, 13);
+            this.label53.Size = new System.Drawing.Size(42, 17);
             this.label53.TabIndex = 51;
             this.label53.Text = "Date:";
             // 
@@ -5987,9 +6216,10 @@
             this.tabPageNotes.Controls.Add(this.richTextBoxPONotes);
             this.tabPageNotes.Controls.Add(this.label59);
             this.tabPageNotes.Controls.Add(this.richTextBoxDeliveryNotes);
-            this.tabPageNotes.Location = new System.Drawing.Point(4, 22);
+            this.tabPageNotes.Location = new System.Drawing.Point(4, 25);
+            this.tabPageNotes.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageNotes.Name = "tabPageNotes";
-            this.tabPageNotes.Size = new System.Drawing.Size(1026, 321);
+            this.tabPageNotes.Size = new System.Drawing.Size(1373, 404);
             this.tabPageNotes.TabIndex = 6;
             this.tabPageNotes.Text = "Notes";
             this.tabPageNotes.UseVisualStyleBackColor = true;
@@ -5998,18 +6228,20 @@
             // 
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(21, 154);
+            this.label58.Location = new System.Drawing.Point(28, 190);
+            this.label58.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(226, 13);
+            this.label58.Size = new System.Drawing.Size(290, 17);
             this.label58.TabIndex = 36;
             this.label58.Text = "PO Notes will print on Purchase Order:";
             // 
             // richTextBoxPONotes
             // 
             this.richTextBoxPONotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxPONotes.Location = new System.Drawing.Point(24, 180);
+            this.richTextBoxPONotes.Location = new System.Drawing.Point(32, 222);
+            this.richTextBoxPONotes.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxPONotes.Name = "richTextBoxPONotes";
-            this.richTextBoxPONotes.Size = new System.Drawing.Size(736, 96);
+            this.richTextBoxPONotes.Size = new System.Drawing.Size(980, 117);
             this.richTextBoxPONotes.TabIndex = 35;
             this.richTextBoxPONotes.Text = "";
             this.richTextBoxPONotes.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
@@ -6019,18 +6251,20 @@
             // 
             this.label59.AutoSize = true;
             this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(21, 14);
+            this.label59.Location = new System.Drawing.Point(28, 17);
+            this.label59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(253, 13);
+            this.label59.Size = new System.Drawing.Size(320, 17);
             this.label59.TabIndex = 34;
             this.label59.Text = "Delivery Notes will print on Delivery Ticket:";
             // 
             // richTextBoxDeliveryNotes
             // 
             this.richTextBoxDeliveryNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxDeliveryNotes.Location = new System.Drawing.Point(24, 40);
+            this.richTextBoxDeliveryNotes.Location = new System.Drawing.Point(32, 49);
+            this.richTextBoxDeliveryNotes.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxDeliveryNotes.Name = "richTextBoxDeliveryNotes";
-            this.richTextBoxDeliveryNotes.Size = new System.Drawing.Size(736, 96);
+            this.richTextBoxDeliveryNotes.Size = new System.Drawing.Size(980, 117);
             this.richTextBoxDeliveryNotes.TabIndex = 33;
             this.richTextBoxDeliveryNotes.Text = "";
             this.richTextBoxDeliveryNotes.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
@@ -6065,18 +6299,21 @@
             this.groupBoxOrders.Controls.Add(this.textBoxVendorName);
             this.groupBoxOrders.Controls.Add(this.label7);
             this.groupBoxOrders.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBoxOrders.Location = new System.Drawing.Point(3, 3);
+            this.groupBoxOrders.Location = new System.Drawing.Point(4, 4);
+            this.groupBoxOrders.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxOrders.Name = "groupBoxOrders";
-            this.groupBoxOrders.Size = new System.Drawing.Size(1034, 128);
+            this.groupBoxOrders.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxOrders.Size = new System.Drawing.Size(1381, 158);
             this.groupBoxOrders.TabIndex = 56;
             this.groupBoxOrders.TabStop = false;
             // 
             // checkBoxPONeeded
             // 
             this.checkBoxPONeeded.AutoSize = true;
-            this.checkBoxPONeeded.Location = new System.Drawing.Point(494, 96);
+            this.checkBoxPONeeded.Location = new System.Drawing.Point(659, 118);
+            this.checkBoxPONeeded.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxPONeeded.Name = "checkBoxPONeeded";
-            this.checkBoxPONeeded.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxPONeeded.Size = new System.Drawing.Size(120, 21);
             this.checkBoxPONeeded.TabIndex = 66;
             this.checkBoxPONeeded.Text = "PO Required?";
             this.checkBoxPONeeded.UseVisualStyleBackColor = true;
@@ -6085,9 +6322,10 @@
             // label95
             // 
             this.label95.AutoSize = true;
-            this.label95.Location = new System.Drawing.Point(775, 99);
+            this.label95.Location = new System.Drawing.Point(1033, 122);
+            this.label95.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(40, 13);
+            this.label95.Size = new System.Drawing.Size(52, 17);
             this.label95.TabIndex = 65;
             this.label95.Text = "Status:";
             // 
@@ -6100,18 +6338,20 @@
             "Created",
             "In Progress",
             "Finialized"});
-            this.comboBoxBillStatus.Location = new System.Drawing.Point(820, 95);
+            this.comboBoxBillStatus.Location = new System.Drawing.Point(1093, 117);
+            this.comboBoxBillStatus.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxBillStatus.Name = "comboBoxBillStatus";
-            this.comboBoxBillStatus.Size = new System.Drawing.Size(120, 21);
+            this.comboBoxBillStatus.Size = new System.Drawing.Size(159, 24);
             this.comboBoxBillStatus.TabIndex = 64;
             this.comboBoxBillStatus.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // checkBoxOK
             // 
             this.checkBoxOK.AutoSize = true;
-            this.checkBoxOK.Location = new System.Drawing.Point(385, 97);
+            this.checkBoxOK.Location = new System.Drawing.Point(513, 119);
+            this.checkBoxOK.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxOK.Name = "checkBoxOK";
-            this.checkBoxOK.Size = new System.Drawing.Size(103, 17);
+            this.checkBoxOK.Size = new System.Drawing.Size(134, 21);
             this.checkBoxOK.TabIndex = 53;
             this.checkBoxOK.Text = "Cash Customer?";
             this.checkBoxOK.UseVisualStyleBackColor = true;
@@ -6121,81 +6361,90 @@
             // 
             this.comboBoxLetterControl.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxLetterControl.FormattingEnabled = true;
-            this.comboBoxLetterControl.Location = new System.Drawing.Point(180, 12);
+            this.comboBoxLetterControl.Location = new System.Drawing.Point(240, 15);
+            this.comboBoxLetterControl.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxLetterControl.Name = "comboBoxLetterControl";
-            this.comboBoxLetterControl.Size = new System.Drawing.Size(35, 21);
+            this.comboBoxLetterControl.Size = new System.Drawing.Size(45, 24);
             this.comboBoxLetterControl.TabIndex = 61;
             this.comboBoxLetterControl.SelectedIndexChanged += new System.EventHandler(this.comboBoxLetterControl_SelectedIndexChanged);
             // 
             // label92
             // 
             this.label92.AutoSize = true;
-            this.label92.Location = new System.Drawing.Point(388, 16);
+            this.label92.Location = new System.Drawing.Point(517, 20);
+            this.label92.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(47, 13);
+            this.label92.Size = new System.Drawing.Size(61, 17);
             this.label92.TabIndex = 60;
             this.label92.Text = "Sold To:";
             // 
             // textBoxSoldToReadOnly
             // 
             this.textBoxSoldToReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSoldToReadOnly.Location = new System.Drawing.Point(446, 13);
+            this.textBoxSoldToReadOnly.Location = new System.Drawing.Point(595, 16);
+            this.textBoxSoldToReadOnly.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSoldToReadOnly.Name = "textBoxSoldToReadOnly";
             this.textBoxSoldToReadOnly.ReadOnly = true;
-            this.textBoxSoldToReadOnly.Size = new System.Drawing.Size(275, 21);
+            this.textBoxSoldToReadOnly.Size = new System.Drawing.Size(365, 24);
             this.textBoxSoldToReadOnly.TabIndex = 59;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 16);
+            this.label1.Location = new System.Drawing.Point(20, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(44, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "PO #:";
             // 
             // textBoxPO
             // 
             this.textBoxPO.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPO.Location = new System.Drawing.Point(73, 13);
+            this.textBoxPO.Location = new System.Drawing.Point(97, 16);
+            this.textBoxPO.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPO.Name = "textBoxPO";
             this.textBoxPO.ReadOnly = true;
-            this.textBoxPO.Size = new System.Drawing.Size(101, 21);
+            this.textBoxPO.Size = new System.Drawing.Size(133, 24);
             this.textBoxPO.TabIndex = 2;
             // 
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.BackgroundImage = global::Tugwell.Properties.Resources.tps;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(953, 42);
+            this.pictureBoxLogo.Location = new System.Drawing.Point(1271, 52);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(79, 50);
+            this.pictureBoxLogo.Size = new System.Drawing.Size(105, 62);
             this.pictureBoxLogo.TabIndex = 55;
             this.pictureBoxLogo.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 42);
+            this.label2.Location = new System.Drawing.Point(20, 52);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.Size = new System.Drawing.Size(71, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "End User:";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(15, 97);
+            this.label26.Location = new System.Drawing.Point(20, 119);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(85, 13);
+            this.label26.Size = new System.Drawing.Size(112, 17);
             this.label26.TabIndex = 54;
             this.label26.Text = "Sales Associate:";
             // 
             // textBoxEndUser
             // 
             this.textBoxEndUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEndUser.Location = new System.Drawing.Point(73, 39);
+            this.textBoxEndUser.Location = new System.Drawing.Point(97, 48);
+            this.textBoxEndUser.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEndUser.Name = "textBoxEndUser";
-            this.textBoxEndUser.Size = new System.Drawing.Size(221, 21);
+            this.textBoxEndUser.Size = new System.Drawing.Size(293, 24);
             this.textBoxEndUser.TabIndex = 0;
             this.textBoxEndUser.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxEndUser.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -6214,27 +6463,30 @@
             "Bernice Williams",
             "Mark Gilmore",
             "Carl Hilgenberg"});
-            this.comboBoxSalesAss.Location = new System.Drawing.Point(106, 93);
+            this.comboBoxSalesAss.Location = new System.Drawing.Point(141, 114);
+            this.comboBoxSalesAss.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxSalesAss.Name = "comboBoxSalesAss";
-            this.comboBoxSalesAss.Size = new System.Drawing.Size(120, 21);
+            this.comboBoxSalesAss.Size = new System.Drawing.Size(159, 24);
             this.comboBoxSalesAss.TabIndex = 53;
             this.comboBoxSalesAss.SelectedIndexChanged += new System.EventHandler(this.comboBoxSalesAss_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 68);
+            this.label3.Location = new System.Drawing.Point(20, 84);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
+            this.label3.Size = new System.Drawing.Size(56, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Project:";
             // 
             // textBoxDate
             // 
             this.textBoxDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDate.Location = new System.Drawing.Point(262, 13);
+            this.textBoxDate.Location = new System.Drawing.Point(349, 16);
+            this.textBoxDate.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxDate.Name = "textBoxDate";
-            this.textBoxDate.Size = new System.Drawing.Size(120, 21);
+            this.textBoxDate.Size = new System.Drawing.Size(159, 24);
             this.textBoxDate.TabIndex = 2;
             this.textBoxDate.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxDate.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -6244,9 +6496,10 @@
             // textBoxJobName
             // 
             this.textBoxJobName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxJobName.Location = new System.Drawing.Point(73, 65);
+            this.textBoxJobName.Location = new System.Drawing.Point(97, 80);
+            this.textBoxJobName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxJobName.Name = "textBoxJobName";
-            this.textBoxJobName.Size = new System.Drawing.Size(221, 21);
+            this.textBoxJobName.Size = new System.Drawing.Size(293, 24);
             this.textBoxJobName.TabIndex = 1;
             this.textBoxJobName.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxJobName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -6255,27 +6508,30 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(300, 42);
+            this.label4.Location = new System.Drawing.Point(400, 52);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 13);
+            this.label4.Size = new System.Drawing.Size(79, 17);
             this.label4.TabIndex = 7;
             this.label4.Text = "Equipment:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(223, 16);
+            this.label8.Location = new System.Drawing.Point(297, 20);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(33, 13);
+            this.label8.Size = new System.Drawing.Size(42, 17);
             this.label8.TabIndex = 15;
             this.label8.Text = "Date:";
             // 
             // textBoxEquipment
             // 
             this.textBoxEquipment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEquipment.Location = new System.Drawing.Point(385, 39);
+            this.textBoxEquipment.Location = new System.Drawing.Point(513, 48);
+            this.textBoxEquipment.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEquipment.Name = "textBoxEquipment";
-            this.textBoxEquipment.Size = new System.Drawing.Size(336, 21);
+            this.textBoxEquipment.Size = new System.Drawing.Size(447, 24);
             this.textBoxEquipment.TabIndex = 3;
             this.textBoxEquipment.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxEquipment.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -6284,9 +6540,10 @@
             // textBoxVendorNumber
             // 
             this.textBoxVendorNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxVendorNumber.Location = new System.Drawing.Point(820, 69);
+            this.textBoxVendorNumber.Location = new System.Drawing.Point(1093, 85);
+            this.textBoxVendorNumber.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxVendorNumber.Name = "textBoxVendorNumber";
-            this.textBoxVendorNumber.Size = new System.Drawing.Size(120, 21);
+            this.textBoxVendorNumber.Size = new System.Drawing.Size(159, 24);
             this.textBoxVendorNumber.TabIndex = 6;
             this.textBoxVendorNumber.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxVendorNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -6295,27 +6552,30 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(300, 68);
+            this.label5.Location = new System.Drawing.Point(400, 84);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 13);
+            this.label5.Size = new System.Drawing.Size(104, 17);
             this.label5.TabIndex = 9;
             this.label5.Text = "Customer PO#:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(739, 72);
+            this.label6.Location = new System.Drawing.Point(985, 89);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 13);
+            this.label6.Size = new System.Drawing.Size(112, 17);
             this.label6.TabIndex = 13;
             this.label6.Text = "Vendor Number:";
             // 
             // textBoxCustomerPO
             // 
             this.textBoxCustomerPO.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCustomerPO.Location = new System.Drawing.Point(385, 65);
+            this.textBoxCustomerPO.Location = new System.Drawing.Point(513, 80);
+            this.textBoxCustomerPO.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCustomerPO.Name = "textBoxCustomerPO";
-            this.textBoxCustomerPO.Size = new System.Drawing.Size(336, 21);
+            this.textBoxCustomerPO.Size = new System.Drawing.Size(447, 24);
             this.textBoxCustomerPO.TabIndex = 4;
             this.textBoxCustomerPO.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxCustomerPO.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -6324,9 +6584,10 @@
             // textBoxVendorName
             // 
             this.textBoxVendorName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxVendorName.Location = new System.Drawing.Point(820, 43);
+            this.textBoxVendorName.Location = new System.Drawing.Point(1093, 53);
+            this.textBoxVendorName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxVendorName.Name = "textBoxVendorName";
-            this.textBoxVendorName.Size = new System.Drawing.Size(120, 21);
+            this.textBoxVendorName.Size = new System.Drawing.Size(159, 24);
             this.textBoxVendorName.TabIndex = 5;
             this.textBoxVendorName.TextChanged += new System.EventHandler(this.textBoxDate_TextChanged);
             this.textBoxVendorName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -6335,9 +6596,10 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(739, 46);
+            this.label7.Location = new System.Drawing.Point(985, 57);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 13);
+            this.label7.Size = new System.Drawing.Size(99, 17);
             this.label7.TabIndex = 11;
             this.label7.Text = "Vendor Name:";
             // 
@@ -6345,9 +6607,10 @@
             // 
             this.tabPageQuotes.Controls.Add(this.tabControlQuotesSub);
             this.tabPageQuotes.Controls.Add(this.groupBoxQuotes);
-            this.tabPageQuotes.Location = new System.Drawing.Point(4, 22);
+            this.tabPageQuotes.Location = new System.Drawing.Point(4, 25);
+            this.tabPageQuotes.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageQuotes.Name = "tabPageQuotes";
-            this.tabPageQuotes.Size = new System.Drawing.Size(1040, 481);
+            this.tabPageQuotes.Size = new System.Drawing.Size(1389, 599);
             this.tabPageQuotes.TabIndex = 1;
             this.tabPageQuotes.Text = "Quotes";
             this.tabPageQuotes.UseVisualStyleBackColor = true;
@@ -6358,10 +6621,11 @@
             this.tabControlQuotesSub.Controls.Add(this.tabPageQuoteWorksheet);
             this.tabControlQuotesSub.Controls.Add(this.tabPageQuoateNotes);
             this.tabControlQuotesSub.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControlQuotesSub.Location = new System.Drawing.Point(0, 128);
+            this.tabControlQuotesSub.Location = new System.Drawing.Point(0, 158);
+            this.tabControlQuotesSub.Margin = new System.Windows.Forms.Padding(4);
             this.tabControlQuotesSub.Name = "tabControlQuotesSub";
             this.tabControlQuotesSub.SelectedIndex = 0;
-            this.tabControlQuotesSub.Size = new System.Drawing.Size(1040, 353);
+            this.tabControlQuotesSub.Size = new System.Drawing.Size(1389, 441);
             this.tabControlQuotesSub.TabIndex = 58;
             // 
             // tabPageQuoteGeneral
@@ -6397,10 +6661,11 @@
             this.tabPageQuoteGeneral.Controls.Add(this.textBoxQStreet2);
             this.tabPageQuoteGeneral.Controls.Add(this.textBoxQCity);
             this.tabPageQuoteGeneral.Controls.Add(this.label89);
-            this.tabPageQuoteGeneral.Location = new System.Drawing.Point(4, 22);
+            this.tabPageQuoteGeneral.Location = new System.Drawing.Point(4, 25);
+            this.tabPageQuoteGeneral.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageQuoteGeneral.Name = "tabPageQuoteGeneral";
-            this.tabPageQuoteGeneral.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageQuoteGeneral.Size = new System.Drawing.Size(1032, 327);
+            this.tabPageQuoteGeneral.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPageQuoteGeneral.Size = new System.Drawing.Size(1381, 412);
             this.tabPageQuoteGeneral.TabIndex = 0;
             this.tabPageQuoteGeneral.Text = "General";
             this.tabPageQuoteGeneral.UseVisualStyleBackColor = true;
@@ -6408,9 +6673,10 @@
             // comboBoxFreightSelect
             // 
             this.comboBoxFreightSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxFreightSelect.Location = new System.Drawing.Point(432, 139);
+            this.comboBoxFreightSelect.Location = new System.Drawing.Point(576, 171);
+            this.comboBoxFreightSelect.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxFreightSelect.Name = "comboBoxFreightSelect";
-            this.comboBoxFreightSelect.Size = new System.Drawing.Size(521, 21);
+            this.comboBoxFreightSelect.Size = new System.Drawing.Size(693, 24);
             this.comboBoxFreightSelect.TabIndex = 95;
             this.comboBoxFreightSelect.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.comboBoxFreightSelect.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -6419,27 +6685,30 @@
             // label77
             // 
             this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(432, 169);
+            this.label77.Location = new System.Drawing.Point(576, 208);
+            this.label77.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(202, 13);
+            this.label77.Size = new System.Drawing.Size(271, 17);
             this.label77.TabIndex = 94;
             this.label77.Text = "(If blank, Quote price removed from print!)";
             // 
             // label62
             // 
             this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(345, 143);
+            this.label62.Location = new System.Drawing.Point(460, 176);
+            this.label62.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(75, 13);
+            this.label62.Size = new System.Drawing.Size(99, 17);
             this.label62.TabIndex = 93;
             this.label62.Text = "Freight Select:";
             // 
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(11, 38);
+            this.label46.Location = new System.Drawing.Point(15, 47);
+            this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(54, 13);
+            this.label46.Size = new System.Drawing.Size(71, 17);
             this.label46.TabIndex = 91;
             this.label46.Text = "Company:";
             // 
@@ -6452,9 +6721,10 @@
             "Towers",
             "Pumps",
             "Other"});
-            this.comboBoxQEquipCategory.Location = new System.Drawing.Point(98, 264);
+            this.comboBoxQEquipCategory.Location = new System.Drawing.Point(131, 325);
+            this.comboBoxQEquipCategory.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxQEquipCategory.Name = "comboBoxQEquipCategory";
-            this.comboBoxQEquipCategory.Size = new System.Drawing.Size(233, 21);
+            this.comboBoxQEquipCategory.Size = new System.Drawing.Size(309, 24);
             this.comboBoxQEquipCategory.TabIndex = 15;
             this.comboBoxQEquipCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
             this.comboBoxQEquipCategory.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
@@ -6462,9 +6732,10 @@
             // textBoxQCompany
             // 
             this.textBoxQCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQCompany.Location = new System.Drawing.Point(69, 35);
+            this.textBoxQCompany.Location = new System.Drawing.Point(92, 43);
+            this.textBoxQCompany.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQCompany.Name = "textBoxQCompany";
-            this.textBoxQCompany.Size = new System.Drawing.Size(262, 21);
+            this.textBoxQCompany.Size = new System.Drawing.Size(348, 24);
             this.textBoxQCompany.TabIndex = 0;
             this.textBoxQCompany.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQCompany.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -6473,9 +6744,10 @@
             // label83
             // 
             this.label83.AutoSize = true;
-            this.label83.Location = new System.Drawing.Point(345, 117);
+            this.label83.Location = new System.Drawing.Point(460, 144);
+            this.label83.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(39, 13);
+            this.label83.Size = new System.Drawing.Size(52, 17);
             this.label83.TabIndex = 87;
             this.label83.Text = "Terms:";
             // 
@@ -6491,9 +6763,10 @@
             "VISA",
             "Mastercard",
             "Upon Delivery"});
-            this.comboBoxQTerms.Location = new System.Drawing.Point(432, 114);
+            this.comboBoxQTerms.Location = new System.Drawing.Point(576, 140);
+            this.comboBoxQTerms.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxQTerms.Name = "comboBoxQTerms";
-            this.comboBoxQTerms.Size = new System.Drawing.Size(233, 21);
+            this.comboBoxQTerms.Size = new System.Drawing.Size(309, 24);
             this.comboBoxQTerms.TabIndex = 11;
             this.comboBoxQTerms.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
             this.comboBoxQTerms.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
@@ -6501,17 +6774,19 @@
             // label81
             // 
             this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(345, 90);
+            this.label81.Location = new System.Drawing.Point(460, 111);
+            this.label81.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(48, 13);
+            this.label81.Size = new System.Drawing.Size(63, 17);
             this.label81.TabIndex = 85;
             this.label81.Text = "Delivery:";
             // 
             // buttonSelectQCompany
             // 
-            this.buttonSelectQCompany.Location = new System.Drawing.Point(69, 6);
+            this.buttonSelectQCompany.Location = new System.Drawing.Point(92, 7);
+            this.buttonSelectQCompany.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSelectQCompany.Name = "buttonSelectQCompany";
-            this.buttonSelectQCompany.Size = new System.Drawing.Size(100, 23);
+            this.buttonSelectQCompany.Size = new System.Drawing.Size(133, 28);
             this.buttonSelectQCompany.TabIndex = 84;
             this.buttonSelectQCompany.Text = "Select Company";
             this.buttonSelectQCompany.UseVisualStyleBackColor = true;
@@ -6520,9 +6795,10 @@
             // label66
             // 
             this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(11, 267);
+            this.label66.Location = new System.Drawing.Point(15, 329);
+            this.label66.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(85, 13);
+            this.label66.Size = new System.Drawing.Size(113, 17);
             this.label66.TabIndex = 78;
             this.label66.Text = "Equip. Category:";
             // 
@@ -6539,9 +6815,10 @@
             "3-4 Weeks",
             "4-5 Weeks",
             "5-6 Weeks"});
-            this.comboBoxQDelivery.Location = new System.Drawing.Point(432, 87);
+            this.comboBoxQDelivery.Location = new System.Drawing.Point(576, 107);
+            this.comboBoxQDelivery.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxQDelivery.Name = "comboBoxQDelivery";
-            this.comboBoxQDelivery.Size = new System.Drawing.Size(233, 21);
+            this.comboBoxQDelivery.Size = new System.Drawing.Size(309, 24);
             this.comboBoxQDelivery.TabIndex = 10;
             this.comboBoxQDelivery.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
             this.comboBoxQDelivery.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
@@ -6549,9 +6826,10 @@
             // textBoxQEquipment
             // 
             this.textBoxQEquipment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQEquipment.Location = new System.Drawing.Point(69, 232);
+            this.textBoxQEquipment.Location = new System.Drawing.Point(92, 286);
+            this.textBoxQEquipment.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQEquipment.Name = "textBoxQEquipment";
-            this.textBoxQEquipment.Size = new System.Drawing.Size(596, 21);
+            this.textBoxQEquipment.Size = new System.Drawing.Size(793, 24);
             this.textBoxQEquipment.TabIndex = 14;
             this.textBoxQEquipment.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQEquipment.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -6560,27 +6838,30 @@
             // label78
             // 
             this.label78.AutoSize = true;
-            this.label78.Location = new System.Drawing.Point(345, 38);
+            this.label78.Location = new System.Drawing.Point(460, 47);
+            this.label78.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(75, 13);
+            this.label78.Size = new System.Drawing.Size(99, 17);
             this.label78.TabIndex = 63;
             this.label78.Text = "Vendor Name:";
             // 
             // label79
             // 
             this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(11, 235);
+            this.label79.Location = new System.Drawing.Point(15, 289);
+            this.label79.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(60, 13);
+            this.label79.Size = new System.Drawing.Size(79, 17);
             this.label79.TabIndex = 69;
             this.label79.Text = "Equipment:";
             // 
             // textBoxQLocation
             // 
             this.textBoxQLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQLocation.Location = new System.Drawing.Point(69, 206);
+            this.textBoxQLocation.Location = new System.Drawing.Point(92, 254);
+            this.textBoxQLocation.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQLocation.Name = "textBoxQLocation";
-            this.textBoxQLocation.Size = new System.Drawing.Size(596, 21);
+            this.textBoxQLocation.Size = new System.Drawing.Size(793, 24);
             this.textBoxQLocation.TabIndex = 13;
             this.textBoxQLocation.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQLocation.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -6589,18 +6870,20 @@
             // label80
             // 
             this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(11, 209);
+            this.label80.Location = new System.Drawing.Point(15, 257);
+            this.label80.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(51, 13);
+            this.label80.Size = new System.Drawing.Size(66, 17);
             this.label80.TabIndex = 64;
             this.label80.Text = "Location:";
             // 
             // textBoxQVendorName
             // 
             this.textBoxQVendorName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQVendorName.Location = new System.Drawing.Point(435, 35);
+            this.textBoxQVendorName.Location = new System.Drawing.Point(580, 43);
+            this.textBoxQVendorName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQVendorName.Name = "textBoxQVendorName";
-            this.textBoxQVendorName.Size = new System.Drawing.Size(230, 21);
+            this.textBoxQVendorName.Size = new System.Drawing.Size(305, 24);
             this.textBoxQVendorName.TabIndex = 8;
             this.textBoxQVendorName.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQVendorName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -6609,18 +6892,20 @@
             // label82
             // 
             this.label82.AutoSize = true;
-            this.label82.Location = new System.Drawing.Point(345, 64);
+            this.label82.Location = new System.Drawing.Point(460, 79);
+            this.label82.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(84, 13);
+            this.label82.Size = new System.Drawing.Size(112, 17);
             this.label82.TabIndex = 66;
             this.label82.Text = "Vendor Number:";
             // 
             // textBoxQVendorNumber
             // 
             this.textBoxQVendorNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQVendorNumber.Location = new System.Drawing.Point(435, 61);
+            this.textBoxQVendorNumber.Location = new System.Drawing.Point(580, 75);
+            this.textBoxQVendorNumber.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQVendorNumber.Name = "textBoxQVendorNumber";
-            this.textBoxQVendorNumber.Size = new System.Drawing.Size(230, 21);
+            this.textBoxQVendorNumber.Size = new System.Drawing.Size(305, 24);
             this.textBoxQVendorNumber.TabIndex = 9;
             this.textBoxQVendorNumber.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQVendorNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -6629,18 +6914,20 @@
             // label85
             // 
             this.label85.AutoSize = true;
-            this.label85.Location = new System.Drawing.Point(11, 64);
+            this.label85.Location = new System.Drawing.Point(15, 79);
+            this.label85.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(23, 13);
+            this.label85.Size = new System.Drawing.Size(29, 17);
             this.label85.TabIndex = 52;
             this.label85.Text = "To:";
             // 
             // textBoxQZip
             // 
             this.textBoxQZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQZip.Location = new System.Drawing.Point(173, 167);
+            this.textBoxQZip.Location = new System.Drawing.Point(231, 206);
+            this.textBoxQZip.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQZip.Name = "textBoxQZip";
-            this.textBoxQZip.Size = new System.Drawing.Size(158, 21);
+            this.textBoxQZip.Size = new System.Drawing.Size(209, 24);
             this.textBoxQZip.TabIndex = 7;
             this.textBoxQZip.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQZip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -6649,9 +6936,10 @@
             // textBoxQTo
             // 
             this.textBoxQTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQTo.Location = new System.Drawing.Point(69, 61);
+            this.textBoxQTo.Location = new System.Drawing.Point(92, 75);
+            this.textBoxQTo.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQTo.Name = "textBoxQTo";
-            this.textBoxQTo.Size = new System.Drawing.Size(262, 21);
+            this.textBoxQTo.Size = new System.Drawing.Size(348, 24);
             this.textBoxQTo.TabIndex = 1;
             this.textBoxQTo.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQTo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -6660,18 +6948,20 @@
             // label86
             // 
             this.label86.AutoSize = true;
-            this.label86.Location = new System.Drawing.Point(142, 169);
+            this.label86.Location = new System.Drawing.Point(189, 208);
+            this.label86.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(25, 13);
+            this.label86.Size = new System.Drawing.Size(32, 17);
             this.label86.TabIndex = 6;
             this.label86.Text = "Zip:";
             // 
             // label87
             // 
             this.label87.AutoSize = true;
-            this.label87.Location = new System.Drawing.Point(11, 90);
+            this.label87.Location = new System.Drawing.Point(15, 111);
+            this.label87.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(38, 13);
+            this.label87.Size = new System.Drawing.Size(50, 17);
             this.label87.TabIndex = 54;
             this.label87.Text = "Street:";
             // 
@@ -6681,70 +6971,28 @@
             this.comboBoxQState.FormattingEnabled = true;
             this.comboBoxQState.Items.AddRange(new object[] {
             "",
-            //"AK",
             "AL",
-            //"AR",
-            //"AZ",
-            //"CA",
-            //"CO",
-            //"CT",
-            //"DC",
-            //"DE",
             "FL",
             "GA",
-            //"HI",
-            //"IA",
-            //"ID",
-            //"IL",
-            //"IN",
-            //"KS",
             "KY",
             "LA",
-            //"MA",
-            //"MD",
-            //"ME",
-            //"MI",
-            //"MN",
-            //"MO",
             "MS",
-            //"MT",
             "NC",
-            //"ND",
-            //"NE",
-            //"NH",
-            //"NJ",
-            //"NM",
-            //"NV",
-            //"NY",
-            //"OH",
-            //"OK",
-            //"OR",
-            //"PA",
-            //"RI",
-            //"SC",
-            //"SD",
-            "TN",
-            //"TX",
-            //"UT",
-            //"VA",
-            //"VT",
-            //"WA",
-            //"WI",
-            //"WV",
-            //"WY"
-            });
-            this.comboBoxQState.Location = new System.Drawing.Point(69, 166);
+            "TN"});
+            this.comboBoxQState.Location = new System.Drawing.Point(92, 204);
+            this.comboBoxQState.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxQState.Name = "comboBoxQState";
-            this.comboBoxQState.Size = new System.Drawing.Size(59, 21);
+            this.comboBoxQState.Size = new System.Drawing.Size(77, 24);
             this.comboBoxQState.TabIndex = 5;
             this.comboBoxQState.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
             // 
             // textBoxQStreet1
             // 
             this.textBoxQStreet1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQStreet1.Location = new System.Drawing.Point(69, 87);
+            this.textBoxQStreet1.Location = new System.Drawing.Point(92, 107);
+            this.textBoxQStreet1.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQStreet1.Name = "textBoxQStreet1";
-            this.textBoxQStreet1.Size = new System.Drawing.Size(262, 21);
+            this.textBoxQStreet1.Size = new System.Drawing.Size(348, 24);
             this.textBoxQStreet1.TabIndex = 2;
             this.textBoxQStreet1.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQStreet1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -6753,18 +7001,20 @@
             // label88
             // 
             this.label88.AutoSize = true;
-            this.label88.Location = new System.Drawing.Point(11, 168);
+            this.label88.Location = new System.Drawing.Point(15, 207);
+            this.label88.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(35, 13);
+            this.label88.Size = new System.Drawing.Size(45, 17);
             this.label88.TabIndex = 59;
             this.label88.Text = "State:";
             // 
             // textBoxQStreet2
             // 
             this.textBoxQStreet2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQStreet2.Location = new System.Drawing.Point(69, 113);
+            this.textBoxQStreet2.Location = new System.Drawing.Point(92, 139);
+            this.textBoxQStreet2.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQStreet2.Name = "textBoxQStreet2";
-            this.textBoxQStreet2.Size = new System.Drawing.Size(262, 21);
+            this.textBoxQStreet2.Size = new System.Drawing.Size(348, 24);
             this.textBoxQStreet2.TabIndex = 3;
             this.textBoxQStreet2.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQStreet2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -6773,9 +7023,10 @@
             // textBoxQCity
             // 
             this.textBoxQCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQCity.Location = new System.Drawing.Point(69, 139);
+            this.textBoxQCity.Location = new System.Drawing.Point(92, 171);
+            this.textBoxQCity.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQCity.Name = "textBoxQCity";
-            this.textBoxQCity.Size = new System.Drawing.Size(262, 21);
+            this.textBoxQCity.Size = new System.Drawing.Size(348, 24);
             this.textBoxQCity.TabIndex = 4;
             this.textBoxQCity.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQCity.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -6784,9 +7035,10 @@
             // label89
             // 
             this.label89.AutoSize = true;
-            this.label89.Location = new System.Drawing.Point(11, 142);
+            this.label89.Location = new System.Drawing.Point(15, 175);
+            this.label89.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(27, 13);
+            this.label89.Size = new System.Drawing.Size(35, 17);
             this.label89.TabIndex = 57;
             this.label89.Text = "City:";
             // 
@@ -6950,10 +7202,11 @@
             this.tabPageQuoteWorksheet.Controls.Add(this.buttonQLine3);
             this.tabPageQuoteWorksheet.Controls.Add(this.buttonQLine2);
             this.tabPageQuoteWorksheet.Controls.Add(this.buttonQLine1);
-            this.tabPageQuoteWorksheet.Location = new System.Drawing.Point(4, 22);
+            this.tabPageQuoteWorksheet.Location = new System.Drawing.Point(4, 25);
+            this.tabPageQuoteWorksheet.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageQuoteWorksheet.Name = "tabPageQuoteWorksheet";
-            this.tabPageQuoteWorksheet.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageQuoteWorksheet.Size = new System.Drawing.Size(1032, 327);
+            this.tabPageQuoteWorksheet.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPageQuoteWorksheet.Size = new System.Drawing.Size(1381, 406);
             this.tabPageQuoteWorksheet.TabIndex = 1;
             this.tabPageQuoteWorksheet.Text = "Worksheet";
             this.tabPageQuoteWorksheet.UseVisualStyleBackColor = true;
@@ -6962,7 +7215,8 @@
             // 
             this.numericUpDownQCheat.BackColor = System.Drawing.Color.GreenYellow;
             this.numericUpDownQCheat.DecimalPlaces = 2;
-            this.numericUpDownQCheat.Location = new System.Drawing.Point(3, 9);
+            this.numericUpDownQCheat.Location = new System.Drawing.Point(4, 11);
+            this.numericUpDownQCheat.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCheat.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -6975,15 +7229,16 @@
             -2147483648});
             this.numericUpDownQCheat.Name = "numericUpDownQCheat";
             this.numericUpDownQCheat.ReadOnly = true;
-            this.numericUpDownQCheat.Size = new System.Drawing.Size(68, 20);
+            this.numericUpDownQCheat.Size = new System.Drawing.Size(91, 22);
             this.numericUpDownQCheat.TabIndex = 401;
             // 
             // checkBoxPManual
             // 
             this.checkBoxPManual.AutoSize = true;
-            this.checkBoxPManual.Location = new System.Drawing.Point(968, 37);
+            this.checkBoxPManual.Location = new System.Drawing.Point(1291, 46);
+            this.checkBoxPManual.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxPManual.Name = "checkBoxPManual";
-            this.checkBoxPManual.Size = new System.Drawing.Size(53, 17);
+            this.checkBoxPManual.Size = new System.Drawing.Size(65, 21);
             this.checkBoxPManual.TabIndex = 400;
             this.checkBoxPManual.Text = "Man?";
             this.checkBoxPManual.UseVisualStyleBackColor = true;
@@ -6992,9 +7247,10 @@
             // checkBoxQManual
             // 
             this.checkBoxQManual.AutoSize = true;
-            this.checkBoxQManual.Location = new System.Drawing.Point(10, 33);
+            this.checkBoxQManual.Location = new System.Drawing.Point(13, 41);
+            this.checkBoxQManual.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxQManual.Name = "checkBoxQManual";
-            this.checkBoxQManual.Size = new System.Drawing.Size(53, 17);
+            this.checkBoxQManual.Size = new System.Drawing.Size(65, 21);
             this.checkBoxQManual.TabIndex = 399;
             this.checkBoxQManual.Text = "Man?";
             this.checkBoxQManual.UseVisualStyleBackColor = true;
@@ -7003,16 +7259,18 @@
             // label94
             // 
             this.label94.AutoSize = true;
-            this.label94.Location = new System.Drawing.Point(177, 12);
+            this.label94.Location = new System.Drawing.Point(236, 15);
+            this.label94.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(15, 13);
+            this.label94.Size = new System.Drawing.Size(20, 17);
             this.label94.TabIndex = 398;
             this.label94.Text = "%";
             // 
             // numericUpDownQMarkUp
             // 
             this.numericUpDownQMarkUp.DecimalPlaces = 2;
-            this.numericUpDownQMarkUp.Location = new System.Drawing.Point(195, 8);
+            this.numericUpDownQMarkUp.Location = new System.Drawing.Point(260, 10);
+            this.numericUpDownQMarkUp.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMarkUp.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7024,7 +7282,7 @@
             0,
             -2147483648});
             this.numericUpDownQMarkUp.Name = "numericUpDownQMarkUp";
-            this.numericUpDownQMarkUp.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQMarkUp.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQMarkUp.TabIndex = 397;
             this.numericUpDownQMarkUp.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMarkUp.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7033,7 +7291,8 @@
             // numericUpDownQMCost23
             // 
             this.numericUpDownQMCost23.DecimalPlaces = 2;
-            this.numericUpDownQMCost23.Location = new System.Drawing.Point(948, 521);
+            this.numericUpDownQMCost23.Location = new System.Drawing.Point(1264, 641);
+            this.numericUpDownQMCost23.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost23.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7046,7 +7305,7 @@
             -2147483648});
             this.numericUpDownQMCost23.Name = "numericUpDownQMCost23";
             this.numericUpDownQMCost23.ReadOnly = true;
-            this.numericUpDownQMCost23.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost23.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost23.TabIndex = 395;
             this.numericUpDownQMCost23.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost23.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7055,7 +7314,8 @@
             // numericUpDownQMCost22
             // 
             this.numericUpDownQMCost22.DecimalPlaces = 2;
-            this.numericUpDownQMCost22.Location = new System.Drawing.Point(948, 500);
+            this.numericUpDownQMCost22.Location = new System.Drawing.Point(1264, 615);
+            this.numericUpDownQMCost22.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost22.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7068,7 +7328,7 @@
             -2147483648});
             this.numericUpDownQMCost22.Name = "numericUpDownQMCost22";
             this.numericUpDownQMCost22.ReadOnly = true;
-            this.numericUpDownQMCost22.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost22.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost22.TabIndex = 394;
             this.numericUpDownQMCost22.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost22.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7077,7 +7337,8 @@
             // numericUpDownQMCost21
             // 
             this.numericUpDownQMCost21.DecimalPlaces = 2;
-            this.numericUpDownQMCost21.Location = new System.Drawing.Point(948, 479);
+            this.numericUpDownQMCost21.Location = new System.Drawing.Point(1264, 590);
+            this.numericUpDownQMCost21.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost21.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7090,7 +7351,7 @@
             -2147483648});
             this.numericUpDownQMCost21.Name = "numericUpDownQMCost21";
             this.numericUpDownQMCost21.ReadOnly = true;
-            this.numericUpDownQMCost21.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost21.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost21.TabIndex = 393;
             this.numericUpDownQMCost21.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost21.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7099,7 +7360,8 @@
             // numericUpDownQMCost20
             // 
             this.numericUpDownQMCost20.DecimalPlaces = 2;
-            this.numericUpDownQMCost20.Location = new System.Drawing.Point(948, 458);
+            this.numericUpDownQMCost20.Location = new System.Drawing.Point(1264, 564);
+            this.numericUpDownQMCost20.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost20.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7112,7 +7374,7 @@
             -2147483648});
             this.numericUpDownQMCost20.Name = "numericUpDownQMCost20";
             this.numericUpDownQMCost20.ReadOnly = true;
-            this.numericUpDownQMCost20.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost20.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost20.TabIndex = 392;
             this.numericUpDownQMCost20.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost20.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7121,7 +7383,8 @@
             // numericUpDownQMCost19
             // 
             this.numericUpDownQMCost19.DecimalPlaces = 2;
-            this.numericUpDownQMCost19.Location = new System.Drawing.Point(948, 437);
+            this.numericUpDownQMCost19.Location = new System.Drawing.Point(1264, 538);
+            this.numericUpDownQMCost19.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost19.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7134,7 +7397,7 @@
             -2147483648});
             this.numericUpDownQMCost19.Name = "numericUpDownQMCost19";
             this.numericUpDownQMCost19.ReadOnly = true;
-            this.numericUpDownQMCost19.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost19.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost19.TabIndex = 391;
             this.numericUpDownQMCost19.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost19.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7143,7 +7406,8 @@
             // numericUpDownQMCost18
             // 
             this.numericUpDownQMCost18.DecimalPlaces = 2;
-            this.numericUpDownQMCost18.Location = new System.Drawing.Point(948, 416);
+            this.numericUpDownQMCost18.Location = new System.Drawing.Point(1264, 512);
+            this.numericUpDownQMCost18.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost18.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7156,7 +7420,7 @@
             -2147483648});
             this.numericUpDownQMCost18.Name = "numericUpDownQMCost18";
             this.numericUpDownQMCost18.ReadOnly = true;
-            this.numericUpDownQMCost18.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost18.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost18.TabIndex = 390;
             this.numericUpDownQMCost18.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost18.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7165,7 +7429,8 @@
             // numericUpDownQMCost17
             // 
             this.numericUpDownQMCost17.DecimalPlaces = 2;
-            this.numericUpDownQMCost17.Location = new System.Drawing.Point(948, 395);
+            this.numericUpDownQMCost17.Location = new System.Drawing.Point(1264, 486);
+            this.numericUpDownQMCost17.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost17.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7178,7 +7443,7 @@
             -2147483648});
             this.numericUpDownQMCost17.Name = "numericUpDownQMCost17";
             this.numericUpDownQMCost17.ReadOnly = true;
-            this.numericUpDownQMCost17.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost17.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost17.TabIndex = 389;
             this.numericUpDownQMCost17.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost17.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7187,7 +7452,8 @@
             // numericUpDownQMCost16
             // 
             this.numericUpDownQMCost16.DecimalPlaces = 2;
-            this.numericUpDownQMCost16.Location = new System.Drawing.Point(948, 374);
+            this.numericUpDownQMCost16.Location = new System.Drawing.Point(1264, 460);
+            this.numericUpDownQMCost16.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost16.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7200,7 +7466,7 @@
             -2147483648});
             this.numericUpDownQMCost16.Name = "numericUpDownQMCost16";
             this.numericUpDownQMCost16.ReadOnly = true;
-            this.numericUpDownQMCost16.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost16.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost16.TabIndex = 388;
             this.numericUpDownQMCost16.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost16.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7209,7 +7475,8 @@
             // numericUpDownQMCost15
             // 
             this.numericUpDownQMCost15.DecimalPlaces = 2;
-            this.numericUpDownQMCost15.Location = new System.Drawing.Point(948, 353);
+            this.numericUpDownQMCost15.Location = new System.Drawing.Point(1264, 434);
+            this.numericUpDownQMCost15.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost15.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7222,7 +7489,7 @@
             -2147483648});
             this.numericUpDownQMCost15.Name = "numericUpDownQMCost15";
             this.numericUpDownQMCost15.ReadOnly = true;
-            this.numericUpDownQMCost15.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost15.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost15.TabIndex = 387;
             this.numericUpDownQMCost15.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost15.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7231,7 +7498,8 @@
             // numericUpDownQMCost14
             // 
             this.numericUpDownQMCost14.DecimalPlaces = 2;
-            this.numericUpDownQMCost14.Location = new System.Drawing.Point(948, 332);
+            this.numericUpDownQMCost14.Location = new System.Drawing.Point(1264, 409);
+            this.numericUpDownQMCost14.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost14.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7244,7 +7512,7 @@
             -2147483648});
             this.numericUpDownQMCost14.Name = "numericUpDownQMCost14";
             this.numericUpDownQMCost14.ReadOnly = true;
-            this.numericUpDownQMCost14.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost14.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost14.TabIndex = 386;
             this.numericUpDownQMCost14.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost14.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7253,7 +7521,8 @@
             // numericUpDownQMCost13
             // 
             this.numericUpDownQMCost13.DecimalPlaces = 2;
-            this.numericUpDownQMCost13.Location = new System.Drawing.Point(948, 311);
+            this.numericUpDownQMCost13.Location = new System.Drawing.Point(1264, 383);
+            this.numericUpDownQMCost13.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost13.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7266,7 +7535,7 @@
             -2147483648});
             this.numericUpDownQMCost13.Name = "numericUpDownQMCost13";
             this.numericUpDownQMCost13.ReadOnly = true;
-            this.numericUpDownQMCost13.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost13.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost13.TabIndex = 385;
             this.numericUpDownQMCost13.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost13.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7275,7 +7544,8 @@
             // numericUpDownQMCost12
             // 
             this.numericUpDownQMCost12.DecimalPlaces = 2;
-            this.numericUpDownQMCost12.Location = new System.Drawing.Point(948, 290);
+            this.numericUpDownQMCost12.Location = new System.Drawing.Point(1264, 357);
+            this.numericUpDownQMCost12.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost12.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7288,7 +7558,7 @@
             -2147483648});
             this.numericUpDownQMCost12.Name = "numericUpDownQMCost12";
             this.numericUpDownQMCost12.ReadOnly = true;
-            this.numericUpDownQMCost12.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost12.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost12.TabIndex = 384;
             this.numericUpDownQMCost12.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost12.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7297,7 +7567,8 @@
             // numericUpDownQMCost11
             // 
             this.numericUpDownQMCost11.DecimalPlaces = 2;
-            this.numericUpDownQMCost11.Location = new System.Drawing.Point(948, 269);
+            this.numericUpDownQMCost11.Location = new System.Drawing.Point(1264, 331);
+            this.numericUpDownQMCost11.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost11.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7310,7 +7581,7 @@
             -2147483648});
             this.numericUpDownQMCost11.Name = "numericUpDownQMCost11";
             this.numericUpDownQMCost11.ReadOnly = true;
-            this.numericUpDownQMCost11.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost11.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost11.TabIndex = 383;
             this.numericUpDownQMCost11.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost11.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7319,7 +7590,8 @@
             // numericUpDownQMCost10
             // 
             this.numericUpDownQMCost10.DecimalPlaces = 2;
-            this.numericUpDownQMCost10.Location = new System.Drawing.Point(948, 248);
+            this.numericUpDownQMCost10.Location = new System.Drawing.Point(1264, 305);
+            this.numericUpDownQMCost10.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost10.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7332,7 +7604,7 @@
             -2147483648});
             this.numericUpDownQMCost10.Name = "numericUpDownQMCost10";
             this.numericUpDownQMCost10.ReadOnly = true;
-            this.numericUpDownQMCost10.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost10.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost10.TabIndex = 382;
             this.numericUpDownQMCost10.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost10.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7341,7 +7613,8 @@
             // numericUpDownQMCost9
             // 
             this.numericUpDownQMCost9.DecimalPlaces = 2;
-            this.numericUpDownQMCost9.Location = new System.Drawing.Point(948, 227);
+            this.numericUpDownQMCost9.Location = new System.Drawing.Point(1264, 279);
+            this.numericUpDownQMCost9.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost9.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7354,7 +7627,7 @@
             -2147483648});
             this.numericUpDownQMCost9.Name = "numericUpDownQMCost9";
             this.numericUpDownQMCost9.ReadOnly = true;
-            this.numericUpDownQMCost9.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost9.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost9.TabIndex = 381;
             this.numericUpDownQMCost9.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost9.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7363,7 +7636,8 @@
             // numericUpDownQMCost8
             // 
             this.numericUpDownQMCost8.DecimalPlaces = 2;
-            this.numericUpDownQMCost8.Location = new System.Drawing.Point(948, 206);
+            this.numericUpDownQMCost8.Location = new System.Drawing.Point(1264, 254);
+            this.numericUpDownQMCost8.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost8.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7376,7 +7650,7 @@
             -2147483648});
             this.numericUpDownQMCost8.Name = "numericUpDownQMCost8";
             this.numericUpDownQMCost8.ReadOnly = true;
-            this.numericUpDownQMCost8.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost8.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost8.TabIndex = 380;
             this.numericUpDownQMCost8.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost8.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7385,7 +7659,8 @@
             // numericUpDownQMCost7
             // 
             this.numericUpDownQMCost7.DecimalPlaces = 2;
-            this.numericUpDownQMCost7.Location = new System.Drawing.Point(948, 185);
+            this.numericUpDownQMCost7.Location = new System.Drawing.Point(1264, 228);
+            this.numericUpDownQMCost7.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost7.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7398,7 +7673,7 @@
             -2147483648});
             this.numericUpDownQMCost7.Name = "numericUpDownQMCost7";
             this.numericUpDownQMCost7.ReadOnly = true;
-            this.numericUpDownQMCost7.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost7.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost7.TabIndex = 379;
             this.numericUpDownQMCost7.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost7.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7407,7 +7682,8 @@
             // numericUpDownQMCost6
             // 
             this.numericUpDownQMCost6.DecimalPlaces = 2;
-            this.numericUpDownQMCost6.Location = new System.Drawing.Point(948, 164);
+            this.numericUpDownQMCost6.Location = new System.Drawing.Point(1264, 202);
+            this.numericUpDownQMCost6.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost6.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7420,7 +7696,7 @@
             -2147483648});
             this.numericUpDownQMCost6.Name = "numericUpDownQMCost6";
             this.numericUpDownQMCost6.ReadOnly = true;
-            this.numericUpDownQMCost6.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost6.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost6.TabIndex = 378;
             this.numericUpDownQMCost6.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost6.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7429,7 +7705,8 @@
             // numericUpDownQMCost5
             // 
             this.numericUpDownQMCost5.DecimalPlaces = 2;
-            this.numericUpDownQMCost5.Location = new System.Drawing.Point(948, 143);
+            this.numericUpDownQMCost5.Location = new System.Drawing.Point(1264, 176);
+            this.numericUpDownQMCost5.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost5.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7442,7 +7719,7 @@
             -2147483648});
             this.numericUpDownQMCost5.Name = "numericUpDownQMCost5";
             this.numericUpDownQMCost5.ReadOnly = true;
-            this.numericUpDownQMCost5.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost5.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost5.TabIndex = 377;
             this.numericUpDownQMCost5.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost5.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7451,7 +7728,8 @@
             // numericUpDownQMCost4
             // 
             this.numericUpDownQMCost4.DecimalPlaces = 2;
-            this.numericUpDownQMCost4.Location = new System.Drawing.Point(948, 122);
+            this.numericUpDownQMCost4.Location = new System.Drawing.Point(1264, 150);
+            this.numericUpDownQMCost4.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost4.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7464,7 +7742,7 @@
             -2147483648});
             this.numericUpDownQMCost4.Name = "numericUpDownQMCost4";
             this.numericUpDownQMCost4.ReadOnly = true;
-            this.numericUpDownQMCost4.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost4.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost4.TabIndex = 376;
             this.numericUpDownQMCost4.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost4.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7473,7 +7751,8 @@
             // numericUpDownQMCost3
             // 
             this.numericUpDownQMCost3.DecimalPlaces = 2;
-            this.numericUpDownQMCost3.Location = new System.Drawing.Point(948, 101);
+            this.numericUpDownQMCost3.Location = new System.Drawing.Point(1264, 124);
+            this.numericUpDownQMCost3.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost3.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7486,7 +7765,7 @@
             -2147483648});
             this.numericUpDownQMCost3.Name = "numericUpDownQMCost3";
             this.numericUpDownQMCost3.ReadOnly = true;
-            this.numericUpDownQMCost3.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost3.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost3.TabIndex = 375;
             this.numericUpDownQMCost3.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost3.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7495,7 +7774,8 @@
             // numericUpDownQMCost2
             // 
             this.numericUpDownQMCost2.DecimalPlaces = 2;
-            this.numericUpDownQMCost2.Location = new System.Drawing.Point(948, 80);
+            this.numericUpDownQMCost2.Location = new System.Drawing.Point(1264, 98);
+            this.numericUpDownQMCost2.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost2.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7508,7 +7788,7 @@
             -2147483648});
             this.numericUpDownQMCost2.Name = "numericUpDownQMCost2";
             this.numericUpDownQMCost2.ReadOnly = true;
-            this.numericUpDownQMCost2.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost2.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost2.TabIndex = 374;
             this.numericUpDownQMCost2.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost2.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7517,7 +7797,8 @@
             // numericUpDownQMCost1
             // 
             this.numericUpDownQMCost1.DecimalPlaces = 2;
-            this.numericUpDownQMCost1.Location = new System.Drawing.Point(948, 59);
+            this.numericUpDownQMCost1.Location = new System.Drawing.Point(1264, 73);
+            this.numericUpDownQMCost1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQMCost1.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7530,7 +7811,7 @@
             -2147483648});
             this.numericUpDownQMCost1.Name = "numericUpDownQMCost1";
             this.numericUpDownQMCost1.ReadOnly = true;
-            this.numericUpDownQMCost1.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQMCost1.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQMCost1.TabIndex = 373;
             this.numericUpDownQMCost1.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQMCost1.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7539,7 +7820,8 @@
             // numericUpDownQQuotePrice
             // 
             this.numericUpDownQQuotePrice.DecimalPlaces = 2;
-            this.numericUpDownQQuotePrice.Location = new System.Drawing.Point(104, 9);
+            this.numericUpDownQQuotePrice.Location = new System.Drawing.Point(139, 11);
+            this.numericUpDownQQuotePrice.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuotePrice.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7552,7 +7834,7 @@
             -2147483648});
             this.numericUpDownQQuotePrice.Name = "numericUpDownQQuotePrice";
             this.numericUpDownQQuotePrice.ReadOnly = true;
-            this.numericUpDownQQuotePrice.Size = new System.Drawing.Size(71, 20);
+            this.numericUpDownQQuotePrice.Size = new System.Drawing.Size(95, 22);
             this.numericUpDownQQuotePrice.TabIndex = 372;
             this.numericUpDownQQuotePrice.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuotePrice.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7561,7 +7843,8 @@
             // numericUpDownQShopTime
             // 
             this.numericUpDownQShopTime.DecimalPlaces = 2;
-            this.numericUpDownQShopTime.Location = new System.Drawing.Point(690, 8);
+            this.numericUpDownQShopTime.Location = new System.Drawing.Point(920, 10);
+            this.numericUpDownQShopTime.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQShopTime.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7573,7 +7856,7 @@
             0,
             -2147483648});
             this.numericUpDownQShopTime.Name = "numericUpDownQShopTime";
-            this.numericUpDownQShopTime.Size = new System.Drawing.Size(71, 20);
+            this.numericUpDownQShopTime.Size = new System.Drawing.Size(95, 22);
             this.numericUpDownQShopTime.TabIndex = 371;
             this.numericUpDownQShopTime.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQShopTime.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7582,7 +7865,8 @@
             // numericUpDownQFreight
             // 
             this.numericUpDownQFreight.DecimalPlaces = 2;
-            this.numericUpDownQFreight.Location = new System.Drawing.Point(550, 8);
+            this.numericUpDownQFreight.Location = new System.Drawing.Point(733, 10);
+            this.numericUpDownQFreight.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQFreight.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7594,7 +7878,7 @@
             0,
             -2147483648});
             this.numericUpDownQFreight.Name = "numericUpDownQFreight";
-            this.numericUpDownQFreight.Size = new System.Drawing.Size(71, 20);
+            this.numericUpDownQFreight.Size = new System.Drawing.Size(95, 22);
             this.numericUpDownQFreight.TabIndex = 370;
             this.numericUpDownQFreight.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQFreight.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7603,7 +7887,8 @@
             // numericUpDownQCredit
             // 
             this.numericUpDownQCredit.DecimalPlaces = 2;
-            this.numericUpDownQCredit.Location = new System.Drawing.Point(429, 8);
+            this.numericUpDownQCredit.Location = new System.Drawing.Point(572, 10);
+            this.numericUpDownQCredit.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCredit.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7615,7 +7900,7 @@
             0,
             -2147483648});
             this.numericUpDownQCredit.Name = "numericUpDownQCredit";
-            this.numericUpDownQCredit.Size = new System.Drawing.Size(71, 20);
+            this.numericUpDownQCredit.Size = new System.Drawing.Size(95, 22);
             this.numericUpDownQCredit.TabIndex = 369;
             this.numericUpDownQCredit.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCredit.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7624,7 +7909,8 @@
             // numericUpDownQTotalCost
             // 
             this.numericUpDownQTotalCost.DecimalPlaces = 2;
-            this.numericUpDownQTotalCost.Location = new System.Drawing.Point(311, 8);
+            this.numericUpDownQTotalCost.Location = new System.Drawing.Point(415, 10);
+            this.numericUpDownQTotalCost.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQTotalCost.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7637,13 +7923,14 @@
             -2147483648});
             this.numericUpDownQTotalCost.Name = "numericUpDownQTotalCost";
             this.numericUpDownQTotalCost.ReadOnly = true;
-            this.numericUpDownQTotalCost.Size = new System.Drawing.Size(71, 20);
+            this.numericUpDownQTotalCost.Size = new System.Drawing.Size(95, 22);
             this.numericUpDownQTotalCost.TabIndex = 368;
             // 
             // numericUpDownQGrossProfit
             // 
             this.numericUpDownQGrossProfit.DecimalPlaces = 2;
-            this.numericUpDownQGrossProfit.Location = new System.Drawing.Point(837, 9);
+            this.numericUpDownQGrossProfit.Location = new System.Drawing.Point(1116, 11);
+            this.numericUpDownQGrossProfit.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQGrossProfit.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7656,13 +7943,14 @@
             -2147483648});
             this.numericUpDownQGrossProfit.Name = "numericUpDownQGrossProfit";
             this.numericUpDownQGrossProfit.ReadOnly = true;
-            this.numericUpDownQGrossProfit.Size = new System.Drawing.Size(71, 20);
+            this.numericUpDownQGrossProfit.Size = new System.Drawing.Size(95, 22);
             this.numericUpDownQGrossProfit.TabIndex = 367;
             // 
             // numericUpDownQProfit
             // 
             this.numericUpDownQProfit.DecimalPlaces = 2;
-            this.numericUpDownQProfit.Location = new System.Drawing.Point(950, 9);
+            this.numericUpDownQProfit.Location = new System.Drawing.Point(1267, 11);
+            this.numericUpDownQProfit.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQProfit.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7675,13 +7963,14 @@
             -2147483648});
             this.numericUpDownQProfit.Name = "numericUpDownQProfit";
             this.numericUpDownQProfit.ReadOnly = true;
-            this.numericUpDownQProfit.Size = new System.Drawing.Size(71, 20);
+            this.numericUpDownQProfit.Size = new System.Drawing.Size(95, 22);
             this.numericUpDownQProfit.TabIndex = 366;
             // 
             // numericUpDownQECost23
             // 
             this.numericUpDownQECost23.DecimalPlaces = 2;
-            this.numericUpDownQECost23.Location = new System.Drawing.Point(867, 521);
+            this.numericUpDownQECost23.Location = new System.Drawing.Point(1156, 641);
+            this.numericUpDownQECost23.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost23.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7694,7 +7983,7 @@
             -2147483648});
             this.numericUpDownQECost23.Name = "numericUpDownQECost23";
             this.numericUpDownQECost23.ReadOnly = true;
-            this.numericUpDownQECost23.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost23.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost23.TabIndex = 364;
             this.numericUpDownQECost23.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost23.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -7702,7 +7991,8 @@
             // numericUpDownQCost23
             // 
             this.numericUpDownQCost23.DecimalPlaces = 2;
-            this.numericUpDownQCost23.Location = new System.Drawing.Point(783, 521);
+            this.numericUpDownQCost23.Location = new System.Drawing.Point(1044, 641);
+            this.numericUpDownQCost23.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost23.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7714,7 +8004,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost23.Name = "numericUpDownQCost23";
-            this.numericUpDownQCost23.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost23.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost23.TabIndex = 69;
             this.numericUpDownQCost23.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost23.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7723,7 +8013,8 @@
             // numericUpDownQQuan23
             // 
             this.numericUpDownQQuan23.DecimalPlaces = 2;
-            this.numericUpDownQQuan23.Location = new System.Drawing.Point(31, 522);
+            this.numericUpDownQQuan23.Location = new System.Drawing.Point(41, 642);
+            this.numericUpDownQQuan23.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan23.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7735,7 +8026,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan23.Name = "numericUpDownQQuan23";
-            this.numericUpDownQQuan23.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan23.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan23.TabIndex = 67;
             this.numericUpDownQQuan23.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan23.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7744,7 +8035,8 @@
             // numericUpDownQECost22
             // 
             this.numericUpDownQECost22.DecimalPlaces = 2;
-            this.numericUpDownQECost22.Location = new System.Drawing.Point(867, 500);
+            this.numericUpDownQECost22.Location = new System.Drawing.Point(1156, 615);
+            this.numericUpDownQECost22.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost22.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7757,7 +8049,7 @@
             -2147483648});
             this.numericUpDownQECost22.Name = "numericUpDownQECost22";
             this.numericUpDownQECost22.ReadOnly = true;
-            this.numericUpDownQECost22.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost22.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost22.TabIndex = 361;
             this.numericUpDownQECost22.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost22.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -7765,7 +8057,8 @@
             // numericUpDownQCost22
             // 
             this.numericUpDownQCost22.DecimalPlaces = 2;
-            this.numericUpDownQCost22.Location = new System.Drawing.Point(783, 500);
+            this.numericUpDownQCost22.Location = new System.Drawing.Point(1044, 615);
+            this.numericUpDownQCost22.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost22.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7777,7 +8070,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost22.Name = "numericUpDownQCost22";
-            this.numericUpDownQCost22.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost22.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost22.TabIndex = 66;
             this.numericUpDownQCost22.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost22.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7786,7 +8079,8 @@
             // numericUpDownQECost21
             // 
             this.numericUpDownQECost21.DecimalPlaces = 2;
-            this.numericUpDownQECost21.Location = new System.Drawing.Point(867, 479);
+            this.numericUpDownQECost21.Location = new System.Drawing.Point(1156, 590);
+            this.numericUpDownQECost21.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost21.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7799,7 +8093,7 @@
             -2147483648});
             this.numericUpDownQECost21.Name = "numericUpDownQECost21";
             this.numericUpDownQECost21.ReadOnly = true;
-            this.numericUpDownQECost21.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost21.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost21.TabIndex = 359;
             this.numericUpDownQECost21.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost21.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -7807,7 +8101,8 @@
             // numericUpDownQCost21
             // 
             this.numericUpDownQCost21.DecimalPlaces = 2;
-            this.numericUpDownQCost21.Location = new System.Drawing.Point(783, 479);
+            this.numericUpDownQCost21.Location = new System.Drawing.Point(1044, 590);
+            this.numericUpDownQCost21.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost21.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7819,7 +8114,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost21.Name = "numericUpDownQCost21";
-            this.numericUpDownQCost21.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost21.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost21.TabIndex = 63;
             this.numericUpDownQCost21.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost21.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7828,7 +8123,8 @@
             // numericUpDownQECost20
             // 
             this.numericUpDownQECost20.DecimalPlaces = 2;
-            this.numericUpDownQECost20.Location = new System.Drawing.Point(867, 458);
+            this.numericUpDownQECost20.Location = new System.Drawing.Point(1156, 564);
+            this.numericUpDownQECost20.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost20.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7841,7 +8137,7 @@
             -2147483648});
             this.numericUpDownQECost20.Name = "numericUpDownQECost20";
             this.numericUpDownQECost20.ReadOnly = true;
-            this.numericUpDownQECost20.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost20.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost20.TabIndex = 357;
             this.numericUpDownQECost20.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost20.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -7849,7 +8145,8 @@
             // numericUpDownQCost20
             // 
             this.numericUpDownQCost20.DecimalPlaces = 2;
-            this.numericUpDownQCost20.Location = new System.Drawing.Point(783, 458);
+            this.numericUpDownQCost20.Location = new System.Drawing.Point(1044, 564);
+            this.numericUpDownQCost20.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost20.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7861,7 +8158,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost20.Name = "numericUpDownQCost20";
-            this.numericUpDownQCost20.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost20.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost20.TabIndex = 60;
             this.numericUpDownQCost20.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost20.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7870,7 +8167,8 @@
             // numericUpDownQECost19
             // 
             this.numericUpDownQECost19.DecimalPlaces = 2;
-            this.numericUpDownQECost19.Location = new System.Drawing.Point(867, 437);
+            this.numericUpDownQECost19.Location = new System.Drawing.Point(1156, 538);
+            this.numericUpDownQECost19.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost19.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7883,7 +8181,7 @@
             -2147483648});
             this.numericUpDownQECost19.Name = "numericUpDownQECost19";
             this.numericUpDownQECost19.ReadOnly = true;
-            this.numericUpDownQECost19.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost19.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost19.TabIndex = 355;
             this.numericUpDownQECost19.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost19.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -7891,7 +8189,8 @@
             // numericUpDownQCost19
             // 
             this.numericUpDownQCost19.DecimalPlaces = 2;
-            this.numericUpDownQCost19.Location = new System.Drawing.Point(783, 437);
+            this.numericUpDownQCost19.Location = new System.Drawing.Point(1044, 538);
+            this.numericUpDownQCost19.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost19.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7903,7 +8202,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost19.Name = "numericUpDownQCost19";
-            this.numericUpDownQCost19.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost19.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost19.TabIndex = 57;
             this.numericUpDownQCost19.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost19.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7912,7 +8211,8 @@
             // numericUpDownQECost18
             // 
             this.numericUpDownQECost18.DecimalPlaces = 2;
-            this.numericUpDownQECost18.Location = new System.Drawing.Point(867, 416);
+            this.numericUpDownQECost18.Location = new System.Drawing.Point(1156, 512);
+            this.numericUpDownQECost18.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost18.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7925,7 +8225,7 @@
             -2147483648});
             this.numericUpDownQECost18.Name = "numericUpDownQECost18";
             this.numericUpDownQECost18.ReadOnly = true;
-            this.numericUpDownQECost18.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost18.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost18.TabIndex = 353;
             this.numericUpDownQECost18.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost18.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -7933,7 +8233,8 @@
             // numericUpDownQCost18
             // 
             this.numericUpDownQCost18.DecimalPlaces = 2;
-            this.numericUpDownQCost18.Location = new System.Drawing.Point(783, 416);
+            this.numericUpDownQCost18.Location = new System.Drawing.Point(1044, 512);
+            this.numericUpDownQCost18.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost18.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7945,7 +8246,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost18.Name = "numericUpDownQCost18";
-            this.numericUpDownQCost18.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost18.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost18.TabIndex = 54;
             this.numericUpDownQCost18.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost18.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7954,7 +8255,8 @@
             // numericUpDownQECost17
             // 
             this.numericUpDownQECost17.DecimalPlaces = 2;
-            this.numericUpDownQECost17.Location = new System.Drawing.Point(867, 395);
+            this.numericUpDownQECost17.Location = new System.Drawing.Point(1156, 486);
+            this.numericUpDownQECost17.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost17.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7967,7 +8269,7 @@
             -2147483648});
             this.numericUpDownQECost17.Name = "numericUpDownQECost17";
             this.numericUpDownQECost17.ReadOnly = true;
-            this.numericUpDownQECost17.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost17.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost17.TabIndex = 351;
             this.numericUpDownQECost17.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost17.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -7975,7 +8277,8 @@
             // numericUpDownQCost17
             // 
             this.numericUpDownQCost17.DecimalPlaces = 2;
-            this.numericUpDownQCost17.Location = new System.Drawing.Point(783, 395);
+            this.numericUpDownQCost17.Location = new System.Drawing.Point(1044, 486);
+            this.numericUpDownQCost17.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost17.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -7987,7 +8290,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost17.Name = "numericUpDownQCost17";
-            this.numericUpDownQCost17.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost17.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost17.TabIndex = 51;
             this.numericUpDownQCost17.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost17.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -7996,7 +8299,8 @@
             // numericUpDownQECost16
             // 
             this.numericUpDownQECost16.DecimalPlaces = 2;
-            this.numericUpDownQECost16.Location = new System.Drawing.Point(867, 374);
+            this.numericUpDownQECost16.Location = new System.Drawing.Point(1156, 460);
+            this.numericUpDownQECost16.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost16.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8009,7 +8313,7 @@
             -2147483648});
             this.numericUpDownQECost16.Name = "numericUpDownQECost16";
             this.numericUpDownQECost16.ReadOnly = true;
-            this.numericUpDownQECost16.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost16.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost16.TabIndex = 349;
             this.numericUpDownQECost16.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost16.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -8017,7 +8321,8 @@
             // numericUpDownQCost16
             // 
             this.numericUpDownQCost16.DecimalPlaces = 2;
-            this.numericUpDownQCost16.Location = new System.Drawing.Point(783, 374);
+            this.numericUpDownQCost16.Location = new System.Drawing.Point(1044, 460);
+            this.numericUpDownQCost16.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost16.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8029,7 +8334,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost16.Name = "numericUpDownQCost16";
-            this.numericUpDownQCost16.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost16.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost16.TabIndex = 48;
             this.numericUpDownQCost16.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost16.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8038,7 +8343,8 @@
             // numericUpDownQECost15
             // 
             this.numericUpDownQECost15.DecimalPlaces = 2;
-            this.numericUpDownQECost15.Location = new System.Drawing.Point(867, 353);
+            this.numericUpDownQECost15.Location = new System.Drawing.Point(1156, 434);
+            this.numericUpDownQECost15.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost15.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8051,7 +8357,7 @@
             -2147483648});
             this.numericUpDownQECost15.Name = "numericUpDownQECost15";
             this.numericUpDownQECost15.ReadOnly = true;
-            this.numericUpDownQECost15.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost15.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost15.TabIndex = 347;
             this.numericUpDownQECost15.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost15.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -8059,7 +8365,8 @@
             // numericUpDownQCost15
             // 
             this.numericUpDownQCost15.DecimalPlaces = 2;
-            this.numericUpDownQCost15.Location = new System.Drawing.Point(783, 353);
+            this.numericUpDownQCost15.Location = new System.Drawing.Point(1044, 434);
+            this.numericUpDownQCost15.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost15.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8071,7 +8378,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost15.Name = "numericUpDownQCost15";
-            this.numericUpDownQCost15.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost15.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost15.TabIndex = 45;
             this.numericUpDownQCost15.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost15.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8080,7 +8387,8 @@
             // numericUpDownQECost14
             // 
             this.numericUpDownQECost14.DecimalPlaces = 2;
-            this.numericUpDownQECost14.Location = new System.Drawing.Point(867, 332);
+            this.numericUpDownQECost14.Location = new System.Drawing.Point(1156, 409);
+            this.numericUpDownQECost14.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost14.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8093,7 +8401,7 @@
             -2147483648});
             this.numericUpDownQECost14.Name = "numericUpDownQECost14";
             this.numericUpDownQECost14.ReadOnly = true;
-            this.numericUpDownQECost14.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost14.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost14.TabIndex = 345;
             this.numericUpDownQECost14.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost14.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -8101,7 +8409,8 @@
             // numericUpDownQCost14
             // 
             this.numericUpDownQCost14.DecimalPlaces = 2;
-            this.numericUpDownQCost14.Location = new System.Drawing.Point(783, 332);
+            this.numericUpDownQCost14.Location = new System.Drawing.Point(1044, 409);
+            this.numericUpDownQCost14.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost14.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8113,7 +8422,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost14.Name = "numericUpDownQCost14";
-            this.numericUpDownQCost14.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost14.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost14.TabIndex = 42;
             this.numericUpDownQCost14.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost14.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8122,7 +8431,8 @@
             // numericUpDownQECost13
             // 
             this.numericUpDownQECost13.DecimalPlaces = 2;
-            this.numericUpDownQECost13.Location = new System.Drawing.Point(867, 311);
+            this.numericUpDownQECost13.Location = new System.Drawing.Point(1156, 383);
+            this.numericUpDownQECost13.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost13.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8135,7 +8445,7 @@
             -2147483648});
             this.numericUpDownQECost13.Name = "numericUpDownQECost13";
             this.numericUpDownQECost13.ReadOnly = true;
-            this.numericUpDownQECost13.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost13.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost13.TabIndex = 343;
             this.numericUpDownQECost13.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost13.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -8143,7 +8453,8 @@
             // numericUpDownQCost13
             // 
             this.numericUpDownQCost13.DecimalPlaces = 2;
-            this.numericUpDownQCost13.Location = new System.Drawing.Point(783, 311);
+            this.numericUpDownQCost13.Location = new System.Drawing.Point(1044, 383);
+            this.numericUpDownQCost13.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost13.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8155,7 +8466,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost13.Name = "numericUpDownQCost13";
-            this.numericUpDownQCost13.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost13.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost13.TabIndex = 39;
             this.numericUpDownQCost13.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost13.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8164,7 +8475,8 @@
             // numericUpDownQECost12
             // 
             this.numericUpDownQECost12.DecimalPlaces = 2;
-            this.numericUpDownQECost12.Location = new System.Drawing.Point(867, 290);
+            this.numericUpDownQECost12.Location = new System.Drawing.Point(1156, 357);
+            this.numericUpDownQECost12.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost12.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8177,7 +8489,7 @@
             -2147483648});
             this.numericUpDownQECost12.Name = "numericUpDownQECost12";
             this.numericUpDownQECost12.ReadOnly = true;
-            this.numericUpDownQECost12.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost12.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost12.TabIndex = 341;
             this.numericUpDownQECost12.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost12.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -8185,7 +8497,8 @@
             // numericUpDownQCost12
             // 
             this.numericUpDownQCost12.DecimalPlaces = 2;
-            this.numericUpDownQCost12.Location = new System.Drawing.Point(783, 290);
+            this.numericUpDownQCost12.Location = new System.Drawing.Point(1044, 357);
+            this.numericUpDownQCost12.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost12.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8197,7 +8510,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost12.Name = "numericUpDownQCost12";
-            this.numericUpDownQCost12.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost12.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost12.TabIndex = 36;
             this.numericUpDownQCost12.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost12.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8206,7 +8519,8 @@
             // numericUpDownQQuan22
             // 
             this.numericUpDownQQuan22.DecimalPlaces = 2;
-            this.numericUpDownQQuan22.Location = new System.Drawing.Point(31, 501);
+            this.numericUpDownQQuan22.Location = new System.Drawing.Point(41, 617);
+            this.numericUpDownQQuan22.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan22.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8218,7 +8532,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan22.Name = "numericUpDownQQuan22";
-            this.numericUpDownQQuan22.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan22.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan22.TabIndex = 64;
             this.numericUpDownQQuan22.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan22.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8227,7 +8541,8 @@
             // numericUpDownQQuan21
             // 
             this.numericUpDownQQuan21.DecimalPlaces = 2;
-            this.numericUpDownQQuan21.Location = new System.Drawing.Point(31, 480);
+            this.numericUpDownQQuan21.Location = new System.Drawing.Point(41, 591);
+            this.numericUpDownQQuan21.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan21.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8239,7 +8554,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan21.Name = "numericUpDownQQuan21";
-            this.numericUpDownQQuan21.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan21.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan21.TabIndex = 61;
             this.numericUpDownQQuan21.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan21.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8248,7 +8563,8 @@
             // numericUpDownQQuan20
             // 
             this.numericUpDownQQuan20.DecimalPlaces = 2;
-            this.numericUpDownQQuan20.Location = new System.Drawing.Point(31, 459);
+            this.numericUpDownQQuan20.Location = new System.Drawing.Point(41, 565);
+            this.numericUpDownQQuan20.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan20.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8260,7 +8576,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan20.Name = "numericUpDownQQuan20";
-            this.numericUpDownQQuan20.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan20.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan20.TabIndex = 58;
             this.numericUpDownQQuan20.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan20.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8269,7 +8585,8 @@
             // numericUpDownQQuan19
             // 
             this.numericUpDownQQuan19.DecimalPlaces = 2;
-            this.numericUpDownQQuan19.Location = new System.Drawing.Point(31, 438);
+            this.numericUpDownQQuan19.Location = new System.Drawing.Point(41, 539);
+            this.numericUpDownQQuan19.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan19.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8281,7 +8598,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan19.Name = "numericUpDownQQuan19";
-            this.numericUpDownQQuan19.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan19.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan19.TabIndex = 55;
             this.numericUpDownQQuan19.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan19.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8290,7 +8607,8 @@
             // numericUpDownQQuan18
             // 
             this.numericUpDownQQuan18.DecimalPlaces = 2;
-            this.numericUpDownQQuan18.Location = new System.Drawing.Point(31, 417);
+            this.numericUpDownQQuan18.Location = new System.Drawing.Point(41, 513);
+            this.numericUpDownQQuan18.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan18.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8302,7 +8620,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan18.Name = "numericUpDownQQuan18";
-            this.numericUpDownQQuan18.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan18.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan18.TabIndex = 52;
             this.numericUpDownQQuan18.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan18.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8311,7 +8629,8 @@
             // numericUpDownQQuan17
             // 
             this.numericUpDownQQuan17.DecimalPlaces = 2;
-            this.numericUpDownQQuan17.Location = new System.Drawing.Point(31, 396);
+            this.numericUpDownQQuan17.Location = new System.Drawing.Point(41, 487);
+            this.numericUpDownQQuan17.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan17.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8323,7 +8642,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan17.Name = "numericUpDownQQuan17";
-            this.numericUpDownQQuan17.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan17.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan17.TabIndex = 49;
             this.numericUpDownQQuan17.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan17.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8332,7 +8651,8 @@
             // numericUpDownQQuan16
             // 
             this.numericUpDownQQuan16.DecimalPlaces = 2;
-            this.numericUpDownQQuan16.Location = new System.Drawing.Point(31, 375);
+            this.numericUpDownQQuan16.Location = new System.Drawing.Point(41, 462);
+            this.numericUpDownQQuan16.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan16.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8344,7 +8664,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan16.Name = "numericUpDownQQuan16";
-            this.numericUpDownQQuan16.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan16.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan16.TabIndex = 46;
             this.numericUpDownQQuan16.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan16.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8353,7 +8673,8 @@
             // numericUpDownQQuan15
             // 
             this.numericUpDownQQuan15.DecimalPlaces = 2;
-            this.numericUpDownQQuan15.Location = new System.Drawing.Point(31, 354);
+            this.numericUpDownQQuan15.Location = new System.Drawing.Point(41, 436);
+            this.numericUpDownQQuan15.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan15.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8365,7 +8686,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan15.Name = "numericUpDownQQuan15";
-            this.numericUpDownQQuan15.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan15.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan15.TabIndex = 43;
             this.numericUpDownQQuan15.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan15.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8374,7 +8695,8 @@
             // numericUpDownQQuan14
             // 
             this.numericUpDownQQuan14.DecimalPlaces = 2;
-            this.numericUpDownQQuan14.Location = new System.Drawing.Point(31, 333);
+            this.numericUpDownQQuan14.Location = new System.Drawing.Point(41, 410);
+            this.numericUpDownQQuan14.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan14.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8386,7 +8708,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan14.Name = "numericUpDownQQuan14";
-            this.numericUpDownQQuan14.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan14.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan14.TabIndex = 40;
             this.numericUpDownQQuan14.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan14.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8395,7 +8717,8 @@
             // numericUpDownQQuan13
             // 
             this.numericUpDownQQuan13.DecimalPlaces = 2;
-            this.numericUpDownQQuan13.Location = new System.Drawing.Point(31, 312);
+            this.numericUpDownQQuan13.Location = new System.Drawing.Point(41, 384);
+            this.numericUpDownQQuan13.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan13.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8407,7 +8730,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan13.Name = "numericUpDownQQuan13";
-            this.numericUpDownQQuan13.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan13.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan13.TabIndex = 37;
             this.numericUpDownQQuan13.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan13.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8416,7 +8739,8 @@
             // numericUpDownQQuan12
             // 
             this.numericUpDownQQuan12.DecimalPlaces = 2;
-            this.numericUpDownQQuan12.Location = new System.Drawing.Point(31, 291);
+            this.numericUpDownQQuan12.Location = new System.Drawing.Point(41, 358);
+            this.numericUpDownQQuan12.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan12.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8428,7 +8752,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan12.Name = "numericUpDownQQuan12";
-            this.numericUpDownQQuan12.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan12.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan12.TabIndex = 34;
             this.numericUpDownQQuan12.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan12.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8437,7 +8761,8 @@
             // numericUpDownQQuan11
             // 
             this.numericUpDownQQuan11.DecimalPlaces = 2;
-            this.numericUpDownQQuan11.Location = new System.Drawing.Point(31, 270);
+            this.numericUpDownQQuan11.Location = new System.Drawing.Point(41, 332);
+            this.numericUpDownQQuan11.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan11.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8449,7 +8774,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan11.Name = "numericUpDownQQuan11";
-            this.numericUpDownQQuan11.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan11.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan11.TabIndex = 31;
             this.numericUpDownQQuan11.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan11.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8458,7 +8783,8 @@
             // numericUpDownQECost11
             // 
             this.numericUpDownQECost11.DecimalPlaces = 2;
-            this.numericUpDownQECost11.Location = new System.Drawing.Point(867, 269);
+            this.numericUpDownQECost11.Location = new System.Drawing.Point(1156, 331);
+            this.numericUpDownQECost11.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost11.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8471,7 +8797,7 @@
             -2147483648});
             this.numericUpDownQECost11.Name = "numericUpDownQECost11";
             this.numericUpDownQECost11.ReadOnly = true;
-            this.numericUpDownQECost11.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost11.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost11.TabIndex = 327;
             this.numericUpDownQECost11.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost11.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -8479,7 +8805,8 @@
             // numericUpDownQCost11
             // 
             this.numericUpDownQCost11.DecimalPlaces = 2;
-            this.numericUpDownQCost11.Location = new System.Drawing.Point(783, 269);
+            this.numericUpDownQCost11.Location = new System.Drawing.Point(1044, 331);
+            this.numericUpDownQCost11.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost11.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8491,7 +8818,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost11.Name = "numericUpDownQCost11";
-            this.numericUpDownQCost11.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost11.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost11.TabIndex = 33;
             this.numericUpDownQCost11.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost11.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8500,7 +8827,8 @@
             // numericUpDownQQuan10
             // 
             this.numericUpDownQQuan10.DecimalPlaces = 2;
-            this.numericUpDownQQuan10.Location = new System.Drawing.Point(31, 249);
+            this.numericUpDownQQuan10.Location = new System.Drawing.Point(41, 306);
+            this.numericUpDownQQuan10.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan10.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8512,7 +8840,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan10.Name = "numericUpDownQQuan10";
-            this.numericUpDownQQuan10.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan10.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan10.TabIndex = 28;
             this.numericUpDownQQuan10.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan10.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8521,7 +8849,8 @@
             // numericUpDownQECost10
             // 
             this.numericUpDownQECost10.DecimalPlaces = 2;
-            this.numericUpDownQECost10.Location = new System.Drawing.Point(867, 248);
+            this.numericUpDownQECost10.Location = new System.Drawing.Point(1156, 305);
+            this.numericUpDownQECost10.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost10.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8534,7 +8863,7 @@
             -2147483648});
             this.numericUpDownQECost10.Name = "numericUpDownQECost10";
             this.numericUpDownQECost10.ReadOnly = true;
-            this.numericUpDownQECost10.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost10.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost10.TabIndex = 324;
             this.numericUpDownQECost10.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost10.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -8542,7 +8871,8 @@
             // numericUpDownQCost10
             // 
             this.numericUpDownQCost10.DecimalPlaces = 2;
-            this.numericUpDownQCost10.Location = new System.Drawing.Point(783, 248);
+            this.numericUpDownQCost10.Location = new System.Drawing.Point(1044, 305);
+            this.numericUpDownQCost10.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost10.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8554,7 +8884,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost10.Name = "numericUpDownQCost10";
-            this.numericUpDownQCost10.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost10.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost10.TabIndex = 30;
             this.numericUpDownQCost10.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost10.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8563,7 +8893,8 @@
             // numericUpDownQQuan9
             // 
             this.numericUpDownQQuan9.DecimalPlaces = 2;
-            this.numericUpDownQQuan9.Location = new System.Drawing.Point(31, 228);
+            this.numericUpDownQQuan9.Location = new System.Drawing.Point(41, 281);
+            this.numericUpDownQQuan9.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan9.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8575,7 +8906,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan9.Name = "numericUpDownQQuan9";
-            this.numericUpDownQQuan9.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan9.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan9.TabIndex = 25;
             this.numericUpDownQQuan9.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan9.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8584,7 +8915,8 @@
             // numericUpDownQECost9
             // 
             this.numericUpDownQECost9.DecimalPlaces = 2;
-            this.numericUpDownQECost9.Location = new System.Drawing.Point(867, 227);
+            this.numericUpDownQECost9.Location = new System.Drawing.Point(1156, 279);
+            this.numericUpDownQECost9.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost9.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8597,7 +8929,7 @@
             -2147483648});
             this.numericUpDownQECost9.Name = "numericUpDownQECost9";
             this.numericUpDownQECost9.ReadOnly = true;
-            this.numericUpDownQECost9.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost9.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost9.TabIndex = 321;
             this.numericUpDownQECost9.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost9.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -8605,7 +8937,8 @@
             // numericUpDownQCost9
             // 
             this.numericUpDownQCost9.DecimalPlaces = 2;
-            this.numericUpDownQCost9.Location = new System.Drawing.Point(783, 227);
+            this.numericUpDownQCost9.Location = new System.Drawing.Point(1044, 279);
+            this.numericUpDownQCost9.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost9.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8617,7 +8950,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost9.Name = "numericUpDownQCost9";
-            this.numericUpDownQCost9.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost9.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost9.TabIndex = 27;
             this.numericUpDownQCost9.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost9.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8626,7 +8959,8 @@
             // numericUpDownQQuan8
             // 
             this.numericUpDownQQuan8.DecimalPlaces = 2;
-            this.numericUpDownQQuan8.Location = new System.Drawing.Point(31, 207);
+            this.numericUpDownQQuan8.Location = new System.Drawing.Point(41, 255);
+            this.numericUpDownQQuan8.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan8.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8638,7 +8972,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan8.Name = "numericUpDownQQuan8";
-            this.numericUpDownQQuan8.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan8.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan8.TabIndex = 22;
             this.numericUpDownQQuan8.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan8.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8647,7 +8981,8 @@
             // numericUpDownQECost8
             // 
             this.numericUpDownQECost8.DecimalPlaces = 2;
-            this.numericUpDownQECost8.Location = new System.Drawing.Point(867, 206);
+            this.numericUpDownQECost8.Location = new System.Drawing.Point(1156, 254);
+            this.numericUpDownQECost8.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost8.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8660,7 +8995,7 @@
             -2147483648});
             this.numericUpDownQECost8.Name = "numericUpDownQECost8";
             this.numericUpDownQECost8.ReadOnly = true;
-            this.numericUpDownQECost8.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost8.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost8.TabIndex = 318;
             this.numericUpDownQECost8.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost8.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -8668,7 +9003,8 @@
             // numericUpDownQCost8
             // 
             this.numericUpDownQCost8.DecimalPlaces = 2;
-            this.numericUpDownQCost8.Location = new System.Drawing.Point(783, 206);
+            this.numericUpDownQCost8.Location = new System.Drawing.Point(1044, 254);
+            this.numericUpDownQCost8.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost8.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8680,7 +9016,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost8.Name = "numericUpDownQCost8";
-            this.numericUpDownQCost8.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost8.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost8.TabIndex = 24;
             this.numericUpDownQCost8.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost8.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8689,7 +9025,8 @@
             // numericUpDownQQuan7
             // 
             this.numericUpDownQQuan7.DecimalPlaces = 2;
-            this.numericUpDownQQuan7.Location = new System.Drawing.Point(31, 186);
+            this.numericUpDownQQuan7.Location = new System.Drawing.Point(41, 229);
+            this.numericUpDownQQuan7.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan7.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8701,7 +9038,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan7.Name = "numericUpDownQQuan7";
-            this.numericUpDownQQuan7.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan7.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan7.TabIndex = 19;
             this.numericUpDownQQuan7.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan7.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8710,7 +9047,8 @@
             // numericUpDownQECost7
             // 
             this.numericUpDownQECost7.DecimalPlaces = 2;
-            this.numericUpDownQECost7.Location = new System.Drawing.Point(867, 185);
+            this.numericUpDownQECost7.Location = new System.Drawing.Point(1156, 228);
+            this.numericUpDownQECost7.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost7.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8723,7 +9061,7 @@
             -2147483648});
             this.numericUpDownQECost7.Name = "numericUpDownQECost7";
             this.numericUpDownQECost7.ReadOnly = true;
-            this.numericUpDownQECost7.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost7.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost7.TabIndex = 315;
             this.numericUpDownQECost7.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost7.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -8731,7 +9069,8 @@
             // numericUpDownQCost7
             // 
             this.numericUpDownQCost7.DecimalPlaces = 2;
-            this.numericUpDownQCost7.Location = new System.Drawing.Point(783, 185);
+            this.numericUpDownQCost7.Location = new System.Drawing.Point(1044, 228);
+            this.numericUpDownQCost7.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost7.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8743,7 +9082,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost7.Name = "numericUpDownQCost7";
-            this.numericUpDownQCost7.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost7.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost7.TabIndex = 21;
             this.numericUpDownQCost7.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost7.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8752,7 +9091,8 @@
             // numericUpDownQQuan6
             // 
             this.numericUpDownQQuan6.DecimalPlaces = 2;
-            this.numericUpDownQQuan6.Location = new System.Drawing.Point(31, 165);
+            this.numericUpDownQQuan6.Location = new System.Drawing.Point(41, 203);
+            this.numericUpDownQQuan6.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan6.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8764,7 +9104,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan6.Name = "numericUpDownQQuan6";
-            this.numericUpDownQQuan6.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan6.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan6.TabIndex = 16;
             this.numericUpDownQQuan6.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan6.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8773,7 +9113,8 @@
             // numericUpDownQECost6
             // 
             this.numericUpDownQECost6.DecimalPlaces = 2;
-            this.numericUpDownQECost6.Location = new System.Drawing.Point(867, 164);
+            this.numericUpDownQECost6.Location = new System.Drawing.Point(1156, 202);
+            this.numericUpDownQECost6.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost6.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8786,7 +9127,7 @@
             -2147483648});
             this.numericUpDownQECost6.Name = "numericUpDownQECost6";
             this.numericUpDownQECost6.ReadOnly = true;
-            this.numericUpDownQECost6.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost6.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost6.TabIndex = 312;
             this.numericUpDownQECost6.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -8794,7 +9135,8 @@
             // numericUpDownQCost6
             // 
             this.numericUpDownQCost6.DecimalPlaces = 2;
-            this.numericUpDownQCost6.Location = new System.Drawing.Point(783, 164);
+            this.numericUpDownQCost6.Location = new System.Drawing.Point(1044, 202);
+            this.numericUpDownQCost6.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost6.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8806,7 +9148,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost6.Name = "numericUpDownQCost6";
-            this.numericUpDownQCost6.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost6.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost6.TabIndex = 18;
             this.numericUpDownQCost6.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost6.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8815,7 +9157,8 @@
             // numericUpDownQQuan5
             // 
             this.numericUpDownQQuan5.DecimalPlaces = 2;
-            this.numericUpDownQQuan5.Location = new System.Drawing.Point(31, 144);
+            this.numericUpDownQQuan5.Location = new System.Drawing.Point(41, 177);
+            this.numericUpDownQQuan5.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan5.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8827,7 +9170,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan5.Name = "numericUpDownQQuan5";
-            this.numericUpDownQQuan5.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan5.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan5.TabIndex = 13;
             this.numericUpDownQQuan5.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan5.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8836,7 +9179,8 @@
             // numericUpDownQECost5
             // 
             this.numericUpDownQECost5.DecimalPlaces = 2;
-            this.numericUpDownQECost5.Location = new System.Drawing.Point(867, 143);
+            this.numericUpDownQECost5.Location = new System.Drawing.Point(1156, 176);
+            this.numericUpDownQECost5.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost5.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8849,7 +9193,7 @@
             -2147483648});
             this.numericUpDownQECost5.Name = "numericUpDownQECost5";
             this.numericUpDownQECost5.ReadOnly = true;
-            this.numericUpDownQECost5.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost5.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost5.TabIndex = 309;
             this.numericUpDownQECost5.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -8857,7 +9201,8 @@
             // numericUpDownQCost5
             // 
             this.numericUpDownQCost5.DecimalPlaces = 2;
-            this.numericUpDownQCost5.Location = new System.Drawing.Point(783, 143);
+            this.numericUpDownQCost5.Location = new System.Drawing.Point(1044, 176);
+            this.numericUpDownQCost5.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost5.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8869,7 +9214,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost5.Name = "numericUpDownQCost5";
-            this.numericUpDownQCost5.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost5.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost5.TabIndex = 15;
             this.numericUpDownQCost5.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost5.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8878,7 +9223,8 @@
             // numericUpDownQQuan4
             // 
             this.numericUpDownQQuan4.DecimalPlaces = 2;
-            this.numericUpDownQQuan4.Location = new System.Drawing.Point(31, 123);
+            this.numericUpDownQQuan4.Location = new System.Drawing.Point(41, 151);
+            this.numericUpDownQQuan4.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan4.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8890,7 +9236,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan4.Name = "numericUpDownQQuan4";
-            this.numericUpDownQQuan4.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan4.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan4.TabIndex = 10;
             this.numericUpDownQQuan4.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan4.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8899,7 +9245,8 @@
             // numericUpDownQECost4
             // 
             this.numericUpDownQECost4.DecimalPlaces = 2;
-            this.numericUpDownQECost4.Location = new System.Drawing.Point(867, 122);
+            this.numericUpDownQECost4.Location = new System.Drawing.Point(1156, 150);
+            this.numericUpDownQECost4.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost4.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8912,7 +9259,7 @@
             -2147483648});
             this.numericUpDownQECost4.Name = "numericUpDownQECost4";
             this.numericUpDownQECost4.ReadOnly = true;
-            this.numericUpDownQECost4.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost4.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost4.TabIndex = 306;
             this.numericUpDownQECost4.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -8920,7 +9267,8 @@
             // numericUpDownQCost4
             // 
             this.numericUpDownQCost4.DecimalPlaces = 2;
-            this.numericUpDownQCost4.Location = new System.Drawing.Point(783, 122);
+            this.numericUpDownQCost4.Location = new System.Drawing.Point(1044, 150);
+            this.numericUpDownQCost4.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost4.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8932,7 +9280,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost4.Name = "numericUpDownQCost4";
-            this.numericUpDownQCost4.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost4.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost4.TabIndex = 12;
             this.numericUpDownQCost4.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost4.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8941,7 +9289,8 @@
             // numericUpDownQQuan3
             // 
             this.numericUpDownQQuan3.DecimalPlaces = 2;
-            this.numericUpDownQQuan3.Location = new System.Drawing.Point(31, 102);
+            this.numericUpDownQQuan3.Location = new System.Drawing.Point(41, 126);
+            this.numericUpDownQQuan3.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan3.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8953,7 +9302,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan3.Name = "numericUpDownQQuan3";
-            this.numericUpDownQQuan3.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan3.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan3.TabIndex = 7;
             this.numericUpDownQQuan3.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan3.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -8962,7 +9311,8 @@
             // numericUpDownQECost3
             // 
             this.numericUpDownQECost3.DecimalPlaces = 2;
-            this.numericUpDownQECost3.Location = new System.Drawing.Point(867, 101);
+            this.numericUpDownQECost3.Location = new System.Drawing.Point(1156, 124);
+            this.numericUpDownQECost3.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost3.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8975,7 +9325,7 @@
             -2147483648});
             this.numericUpDownQECost3.Name = "numericUpDownQECost3";
             this.numericUpDownQECost3.ReadOnly = true;
-            this.numericUpDownQECost3.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost3.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost3.TabIndex = 303;
             this.numericUpDownQECost3.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -8983,7 +9333,8 @@
             // numericUpDownQCost3
             // 
             this.numericUpDownQCost3.DecimalPlaces = 2;
-            this.numericUpDownQCost3.Location = new System.Drawing.Point(783, 101);
+            this.numericUpDownQCost3.Location = new System.Drawing.Point(1044, 124);
+            this.numericUpDownQCost3.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost3.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -8995,7 +9346,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost3.Name = "numericUpDownQCost3";
-            this.numericUpDownQCost3.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost3.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost3.TabIndex = 9;
             this.numericUpDownQCost3.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost3.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -9004,7 +9355,8 @@
             // numericUpDownQQuan2
             // 
             this.numericUpDownQQuan2.DecimalPlaces = 2;
-            this.numericUpDownQQuan2.Location = new System.Drawing.Point(31, 81);
+            this.numericUpDownQQuan2.Location = new System.Drawing.Point(41, 100);
+            this.numericUpDownQQuan2.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan2.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -9016,7 +9368,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan2.Name = "numericUpDownQQuan2";
-            this.numericUpDownQQuan2.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan2.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan2.TabIndex = 4;
             this.numericUpDownQQuan2.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan2.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -9025,7 +9377,8 @@
             // numericUpDownQECost2
             // 
             this.numericUpDownQECost2.DecimalPlaces = 2;
-            this.numericUpDownQECost2.Location = new System.Drawing.Point(867, 80);
+            this.numericUpDownQECost2.Location = new System.Drawing.Point(1156, 98);
+            this.numericUpDownQECost2.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost2.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -9038,7 +9391,7 @@
             -2147483648});
             this.numericUpDownQECost2.Name = "numericUpDownQECost2";
             this.numericUpDownQECost2.ReadOnly = true;
-            this.numericUpDownQECost2.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost2.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost2.TabIndex = 300;
             this.numericUpDownQECost2.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9046,7 +9399,8 @@
             // numericUpDownQCost2
             // 
             this.numericUpDownQCost2.DecimalPlaces = 2;
-            this.numericUpDownQCost2.Location = new System.Drawing.Point(783, 80);
+            this.numericUpDownQCost2.Location = new System.Drawing.Point(1044, 98);
+            this.numericUpDownQCost2.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost2.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -9058,7 +9412,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost2.Name = "numericUpDownQCost2";
-            this.numericUpDownQCost2.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost2.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost2.TabIndex = 6;
             this.numericUpDownQCost2.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost2.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -9067,7 +9421,8 @@
             // numericUpDownQQuan1
             // 
             this.numericUpDownQQuan1.DecimalPlaces = 2;
-            this.numericUpDownQQuan1.Location = new System.Drawing.Point(31, 60);
+            this.numericUpDownQQuan1.Location = new System.Drawing.Point(41, 74);
+            this.numericUpDownQQuan1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQQuan1.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -9079,7 +9434,7 @@
             0,
             -2147483648});
             this.numericUpDownQQuan1.Name = "numericUpDownQQuan1";
-            this.numericUpDownQQuan1.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDownQQuan1.Size = new System.Drawing.Size(67, 22);
             this.numericUpDownQQuan1.TabIndex = 1;
             this.numericUpDownQQuan1.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQQuan1.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -9088,7 +9443,8 @@
             // numericUpDownQECost1
             // 
             this.numericUpDownQECost1.DecimalPlaces = 2;
-            this.numericUpDownQECost1.Location = new System.Drawing.Point(867, 59);
+            this.numericUpDownQECost1.Location = new System.Drawing.Point(1156, 73);
+            this.numericUpDownQECost1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQECost1.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -9101,7 +9457,7 @@
             -2147483648});
             this.numericUpDownQECost1.Name = "numericUpDownQECost1";
             this.numericUpDownQECost1.ReadOnly = true;
-            this.numericUpDownQECost1.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQECost1.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQECost1.TabIndex = 297;
             this.numericUpDownQECost1.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             this.numericUpDownQECost1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9109,7 +9465,8 @@
             // numericUpDownQCost1
             // 
             this.numericUpDownQCost1.DecimalPlaces = 2;
-            this.numericUpDownQCost1.Location = new System.Drawing.Point(783, 59);
+            this.numericUpDownQCost1.Location = new System.Drawing.Point(1044, 73);
+            this.numericUpDownQCost1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownQCost1.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -9121,7 +9478,7 @@
             0,
             -2147483648});
             this.numericUpDownQCost1.Name = "numericUpDownQCost1";
-            this.numericUpDownQCost1.Size = new System.Drawing.Size(78, 20);
+            this.numericUpDownQCost1.Size = new System.Drawing.Size(104, 22);
             this.numericUpDownQCost1.TabIndex = 3;
             this.numericUpDownQCost1.ValueChanged += new System.EventHandler(this.numericUpDownQuote_ValueChanged);
             this.numericUpDownQCost1.Enter += new System.EventHandler(this.NumericUpDown_Enter);
@@ -9130,10 +9487,11 @@
             // textBoxQDescription23
             // 
             this.textBoxQDescription23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription23.Location = new System.Drawing.Point(83, 522);
+            this.textBoxQDescription23.Location = new System.Drawing.Point(111, 642);
+            this.textBoxQDescription23.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription23.MaxLength = 120;
             this.textBoxQDescription23.Name = "textBoxQDescription23";
-            this.textBoxQDescription23.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription23.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription23.TabIndex = 68;
             this.textBoxQDescription23.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription23.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9142,10 +9500,11 @@
             // textBoxQDescription22
             // 
             this.textBoxQDescription22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription22.Location = new System.Drawing.Point(83, 501);
+            this.textBoxQDescription22.Location = new System.Drawing.Point(111, 617);
+            this.textBoxQDescription22.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription22.MaxLength = 120;
             this.textBoxQDescription22.Name = "textBoxQDescription22";
-            this.textBoxQDescription22.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription22.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription22.TabIndex = 65;
             this.textBoxQDescription22.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription22.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9154,10 +9513,11 @@
             // textBoxQDescription21
             // 
             this.textBoxQDescription21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription21.Location = new System.Drawing.Point(83, 480);
+            this.textBoxQDescription21.Location = new System.Drawing.Point(111, 591);
+            this.textBoxQDescription21.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription21.MaxLength = 120;
             this.textBoxQDescription21.Name = "textBoxQDescription21";
-            this.textBoxQDescription21.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription21.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription21.TabIndex = 62;
             this.textBoxQDescription21.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription21.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9166,10 +9526,11 @@
             // textBoxQDescription20
             // 
             this.textBoxQDescription20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription20.Location = new System.Drawing.Point(83, 459);
+            this.textBoxQDescription20.Location = new System.Drawing.Point(111, 565);
+            this.textBoxQDescription20.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription20.MaxLength = 120;
             this.textBoxQDescription20.Name = "textBoxQDescription20";
-            this.textBoxQDescription20.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription20.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription20.TabIndex = 59;
             this.textBoxQDescription20.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription20.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9178,10 +9539,11 @@
             // textBoxQDescription19
             // 
             this.textBoxQDescription19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription19.Location = new System.Drawing.Point(83, 438);
+            this.textBoxQDescription19.Location = new System.Drawing.Point(111, 539);
+            this.textBoxQDescription19.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription19.MaxLength = 120;
             this.textBoxQDescription19.Name = "textBoxQDescription19";
-            this.textBoxQDescription19.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription19.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription19.TabIndex = 56;
             this.textBoxQDescription19.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription19.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9190,10 +9552,11 @@
             // textBoxQDescription18
             // 
             this.textBoxQDescription18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription18.Location = new System.Drawing.Point(83, 417);
+            this.textBoxQDescription18.Location = new System.Drawing.Point(111, 513);
+            this.textBoxQDescription18.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription18.MaxLength = 120;
             this.textBoxQDescription18.Name = "textBoxQDescription18";
-            this.textBoxQDescription18.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription18.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription18.TabIndex = 53;
             this.textBoxQDescription18.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription18.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9202,10 +9565,11 @@
             // textBoxQDescription17
             // 
             this.textBoxQDescription17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription17.Location = new System.Drawing.Point(83, 396);
+            this.textBoxQDescription17.Location = new System.Drawing.Point(111, 487);
+            this.textBoxQDescription17.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription17.MaxLength = 120;
             this.textBoxQDescription17.Name = "textBoxQDescription17";
-            this.textBoxQDescription17.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription17.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription17.TabIndex = 50;
             this.textBoxQDescription17.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription17.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9214,10 +9578,11 @@
             // textBoxQDescription16
             // 
             this.textBoxQDescription16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription16.Location = new System.Drawing.Point(83, 375);
+            this.textBoxQDescription16.Location = new System.Drawing.Point(111, 462);
+            this.textBoxQDescription16.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription16.MaxLength = 120;
             this.textBoxQDescription16.Name = "textBoxQDescription16";
-            this.textBoxQDescription16.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription16.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription16.TabIndex = 47;
             this.textBoxQDescription16.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription16.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9226,10 +9591,11 @@
             // textBoxQDescription15
             // 
             this.textBoxQDescription15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription15.Location = new System.Drawing.Point(83, 354);
+            this.textBoxQDescription15.Location = new System.Drawing.Point(111, 436);
+            this.textBoxQDescription15.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription15.MaxLength = 120;
             this.textBoxQDescription15.Name = "textBoxQDescription15";
-            this.textBoxQDescription15.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription15.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription15.TabIndex = 44;
             this.textBoxQDescription15.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription15.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9238,10 +9604,11 @@
             // textBoxQDescription14
             // 
             this.textBoxQDescription14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription14.Location = new System.Drawing.Point(83, 333);
+            this.textBoxQDescription14.Location = new System.Drawing.Point(111, 410);
+            this.textBoxQDescription14.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription14.MaxLength = 120;
             this.textBoxQDescription14.Name = "textBoxQDescription14";
-            this.textBoxQDescription14.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription14.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription14.TabIndex = 41;
             this.textBoxQDescription14.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription14.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9250,10 +9617,11 @@
             // textBoxQDescription13
             // 
             this.textBoxQDescription13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription13.Location = new System.Drawing.Point(83, 312);
+            this.textBoxQDescription13.Location = new System.Drawing.Point(111, 384);
+            this.textBoxQDescription13.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription13.MaxLength = 120;
             this.textBoxQDescription13.Name = "textBoxQDescription13";
-            this.textBoxQDescription13.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription13.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription13.TabIndex = 38;
             this.textBoxQDescription13.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription13.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9262,10 +9630,11 @@
             // textBoxQDescription12
             // 
             this.textBoxQDescription12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription12.Location = new System.Drawing.Point(83, 291);
+            this.textBoxQDescription12.Location = new System.Drawing.Point(111, 358);
+            this.textBoxQDescription12.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription12.MaxLength = 120;
             this.textBoxQDescription12.Name = "textBoxQDescription12";
-            this.textBoxQDescription12.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription12.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription12.TabIndex = 35;
             this.textBoxQDescription12.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription12.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9274,10 +9643,11 @@
             // textBoxQDescription11
             // 
             this.textBoxQDescription11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription11.Location = new System.Drawing.Point(83, 270);
+            this.textBoxQDescription11.Location = new System.Drawing.Point(111, 332);
+            this.textBoxQDescription11.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription11.MaxLength = 120;
             this.textBoxQDescription11.Name = "textBoxQDescription11";
-            this.textBoxQDescription11.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription11.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription11.TabIndex = 32;
             this.textBoxQDescription11.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription11.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9286,10 +9656,11 @@
             // textBoxQDescription10
             // 
             this.textBoxQDescription10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription10.Location = new System.Drawing.Point(83, 249);
+            this.textBoxQDescription10.Location = new System.Drawing.Point(111, 306);
+            this.textBoxQDescription10.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription10.MaxLength = 120;
             this.textBoxQDescription10.Name = "textBoxQDescription10";
-            this.textBoxQDescription10.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription10.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription10.TabIndex = 29;
             this.textBoxQDescription10.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription10.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9298,10 +9669,11 @@
             // textBoxQDescription9
             // 
             this.textBoxQDescription9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription9.Location = new System.Drawing.Point(83, 228);
+            this.textBoxQDescription9.Location = new System.Drawing.Point(111, 281);
+            this.textBoxQDescription9.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription9.MaxLength = 120;
             this.textBoxQDescription9.Name = "textBoxQDescription9";
-            this.textBoxQDescription9.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription9.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription9.TabIndex = 26;
             this.textBoxQDescription9.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription9.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9310,10 +9682,11 @@
             // textBoxQDescription8
             // 
             this.textBoxQDescription8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription8.Location = new System.Drawing.Point(83, 207);
+            this.textBoxQDescription8.Location = new System.Drawing.Point(111, 255);
+            this.textBoxQDescription8.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription8.MaxLength = 120;
             this.textBoxQDescription8.Name = "textBoxQDescription8";
-            this.textBoxQDescription8.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription8.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription8.TabIndex = 23;
             this.textBoxQDescription8.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription8.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9322,10 +9695,11 @@
             // textBoxQDescription7
             // 
             this.textBoxQDescription7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription7.Location = new System.Drawing.Point(83, 186);
+            this.textBoxQDescription7.Location = new System.Drawing.Point(111, 229);
+            this.textBoxQDescription7.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription7.MaxLength = 120;
             this.textBoxQDescription7.Name = "textBoxQDescription7";
-            this.textBoxQDescription7.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription7.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription7.TabIndex = 20;
             this.textBoxQDescription7.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription7.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9334,10 +9708,11 @@
             // textBoxQDescription6
             // 
             this.textBoxQDescription6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription6.Location = new System.Drawing.Point(83, 165);
+            this.textBoxQDescription6.Location = new System.Drawing.Point(111, 203);
+            this.textBoxQDescription6.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription6.MaxLength = 120;
             this.textBoxQDescription6.Name = "textBoxQDescription6";
-            this.textBoxQDescription6.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription6.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription6.TabIndex = 17;
             this.textBoxQDescription6.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9346,10 +9721,11 @@
             // textBoxQDescription5
             // 
             this.textBoxQDescription5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription5.Location = new System.Drawing.Point(83, 144);
+            this.textBoxQDescription5.Location = new System.Drawing.Point(111, 177);
+            this.textBoxQDescription5.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription5.MaxLength = 120;
             this.textBoxQDescription5.Name = "textBoxQDescription5";
-            this.textBoxQDescription5.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription5.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription5.TabIndex = 14;
             this.textBoxQDescription5.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9358,10 +9734,11 @@
             // textBoxQDescription4
             // 
             this.textBoxQDescription4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription4.Location = new System.Drawing.Point(83, 123);
+            this.textBoxQDescription4.Location = new System.Drawing.Point(111, 151);
+            this.textBoxQDescription4.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription4.MaxLength = 120;
             this.textBoxQDescription4.Name = "textBoxQDescription4";
-            this.textBoxQDescription4.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription4.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription4.TabIndex = 11;
             this.textBoxQDescription4.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9370,10 +9747,11 @@
             // textBoxQDescription3
             // 
             this.textBoxQDescription3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription3.Location = new System.Drawing.Point(83, 102);
+            this.textBoxQDescription3.Location = new System.Drawing.Point(111, 126);
+            this.textBoxQDescription3.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription3.MaxLength = 120;
             this.textBoxQDescription3.Name = "textBoxQDescription3";
-            this.textBoxQDescription3.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription3.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription3.TabIndex = 8;
             this.textBoxQDescription3.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9382,10 +9760,11 @@
             // textBoxQDescription2
             // 
             this.textBoxQDescription2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription2.Location = new System.Drawing.Point(83, 81);
+            this.textBoxQDescription2.Location = new System.Drawing.Point(111, 100);
+            this.textBoxQDescription2.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription2.MaxLength = 120;
             this.textBoxQDescription2.Name = "textBoxQDescription2";
-            this.textBoxQDescription2.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription2.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription2.TabIndex = 5;
             this.textBoxQDescription2.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9394,10 +9773,11 @@
             // textBoxQDescription1
             // 
             this.textBoxQDescription1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDescription1.Location = new System.Drawing.Point(83, 59);
+            this.textBoxQDescription1.Location = new System.Drawing.Point(111, 73);
+            this.textBoxQDescription1.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDescription1.MaxLength = 120;
             this.textBoxQDescription1.Name = "textBoxQDescription1";
-            this.textBoxQDescription1.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQDescription1.Size = new System.Drawing.Size(924, 24);
             this.textBoxQDescription1.TabIndex = 2;
             this.textBoxQDescription1.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDescription1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9406,10 +9786,11 @@
             // textBoxQHeader
             // 
             this.textBoxQHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQHeader.Location = new System.Drawing.Point(83, 34);
+            this.textBoxQHeader.Location = new System.Drawing.Point(111, 42);
+            this.textBoxQHeader.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQHeader.MaxLength = 120;
             this.textBoxQHeader.Name = "textBoxQHeader";
-            this.textBoxQHeader.Size = new System.Drawing.Size(694, 21);
+            this.textBoxQHeader.Size = new System.Drawing.Size(924, 24);
             this.textBoxQHeader.TabIndex = 0;
             this.textBoxQHeader.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQHeader.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9418,72 +9799,80 @@
             // label70
             // 
             this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(763, 11);
+            this.label70.Location = new System.Drawing.Point(1017, 14);
+            this.label70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(75, 13);
+            this.label70.Size = new System.Drawing.Size(103, 17);
             this.label70.TabIndex = 263;
             this.label70.Text = "Gross % Profit:";
             // 
             // label71
             // 
             this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(625, 11);
+            this.label71.Location = new System.Drawing.Point(833, 14);
+            this.label71.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(61, 13);
+            this.label71.Size = new System.Drawing.Size(80, 17);
             this.label71.TabIndex = 261;
             this.label71.Text = "Shop Time:";
             // 
             // label72
             // 
             this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(505, 11);
+            this.label72.Location = new System.Drawing.Point(673, 14);
+            this.label72.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(42, 13);
+            this.label72.Size = new System.Drawing.Size(56, 17);
             this.label72.TabIndex = 260;
             this.label72.Text = "Freight:";
             // 
             // label73
             // 
             this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(387, 11);
+            this.label73.Location = new System.Drawing.Point(516, 14);
+            this.label73.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(37, 13);
+            this.label73.Size = new System.Drawing.Size(49, 17);
             this.label73.TabIndex = 258;
             this.label73.Text = "Credit:";
             // 
             // label74
             // 
             this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(914, 11);
+            this.label74.Location = new System.Drawing.Point(1219, 14);
+            this.label74.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(34, 13);
+            this.label74.Size = new System.Drawing.Size(45, 17);
             this.label74.TabIndex = 256;
             this.label74.Text = "Profit:";
             // 
             // label75
             // 
             this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(248, 11);
+            this.label75.Location = new System.Drawing.Point(331, 14);
+            this.label75.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(58, 13);
+            this.label75.Size = new System.Drawing.Size(76, 17);
             this.label75.TabIndex = 255;
             this.label75.Text = "Total Cost:";
             // 
             // label76
             // 
             this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(76, 12);
+            this.label76.Location = new System.Drawing.Point(101, 15);
+            this.label76.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(28, 13);
+            this.label76.Size = new System.Drawing.Size(37, 17);
             this.label76.TabIndex = 253;
             this.label76.Text = "QPr:";
             // 
             // buttonQLine23
             // 
             this.buttonQLine23.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine23.Image")));
-            this.buttonQLine23.Location = new System.Drawing.Point(5, 522);
+            this.buttonQLine23.Location = new System.Drawing.Point(7, 642);
+            this.buttonQLine23.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine23.Name = "buttonQLine23";
-            this.buttonQLine23.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine23.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine23.TabIndex = 295;
             this.buttonQLine23.Tag = "23";
             this.buttonQLine23.UseVisualStyleBackColor = true;
@@ -9492,9 +9881,10 @@
             // buttonQLine22
             // 
             this.buttonQLine22.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine22.Image")));
-            this.buttonQLine22.Location = new System.Drawing.Point(5, 501);
+            this.buttonQLine22.Location = new System.Drawing.Point(7, 617);
+            this.buttonQLine22.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine22.Name = "buttonQLine22";
-            this.buttonQLine22.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine22.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine22.TabIndex = 294;
             this.buttonQLine22.Tag = "22";
             this.buttonQLine22.UseVisualStyleBackColor = true;
@@ -9503,9 +9893,10 @@
             // buttonQLine21
             // 
             this.buttonQLine21.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine21.Image")));
-            this.buttonQLine21.Location = new System.Drawing.Point(5, 480);
+            this.buttonQLine21.Location = new System.Drawing.Point(7, 591);
+            this.buttonQLine21.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine21.Name = "buttonQLine21";
-            this.buttonQLine21.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine21.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine21.TabIndex = 293;
             this.buttonQLine21.UseVisualStyleBackColor = true;
             this.buttonQLine21.Click += new System.EventHandler(this.buttonQLine1_Click);
@@ -9513,9 +9904,10 @@
             // buttonQLine20
             // 
             this.buttonQLine20.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine20.Image")));
-            this.buttonQLine20.Location = new System.Drawing.Point(5, 459);
+            this.buttonQLine20.Location = new System.Drawing.Point(7, 565);
+            this.buttonQLine20.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine20.Name = "buttonQLine20";
-            this.buttonQLine20.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine20.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine20.TabIndex = 292;
             this.buttonQLine20.Tag = "20";
             this.buttonQLine20.UseVisualStyleBackColor = true;
@@ -9524,9 +9916,10 @@
             // buttonQLine19
             // 
             this.buttonQLine19.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine19.Image")));
-            this.buttonQLine19.Location = new System.Drawing.Point(5, 438);
+            this.buttonQLine19.Location = new System.Drawing.Point(7, 539);
+            this.buttonQLine19.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine19.Name = "buttonQLine19";
-            this.buttonQLine19.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine19.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine19.TabIndex = 291;
             this.buttonQLine19.Tag = "19";
             this.buttonQLine19.UseVisualStyleBackColor = true;
@@ -9535,9 +9928,10 @@
             // buttonQLine18
             // 
             this.buttonQLine18.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine18.Image")));
-            this.buttonQLine18.Location = new System.Drawing.Point(5, 417);
+            this.buttonQLine18.Location = new System.Drawing.Point(7, 513);
+            this.buttonQLine18.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine18.Name = "buttonQLine18";
-            this.buttonQLine18.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine18.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine18.TabIndex = 290;
             this.buttonQLine18.Tag = "18";
             this.buttonQLine18.UseVisualStyleBackColor = true;
@@ -9546,9 +9940,10 @@
             // buttonQLine17
             // 
             this.buttonQLine17.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine17.Image")));
-            this.buttonQLine17.Location = new System.Drawing.Point(5, 396);
+            this.buttonQLine17.Location = new System.Drawing.Point(7, 487);
+            this.buttonQLine17.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine17.Name = "buttonQLine17";
-            this.buttonQLine17.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine17.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine17.TabIndex = 289;
             this.buttonQLine17.Tag = "17";
             this.buttonQLine17.UseVisualStyleBackColor = true;
@@ -9557,9 +9952,10 @@
             // buttonQLine16
             // 
             this.buttonQLine16.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine16.Image")));
-            this.buttonQLine16.Location = new System.Drawing.Point(5, 375);
+            this.buttonQLine16.Location = new System.Drawing.Point(7, 462);
+            this.buttonQLine16.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine16.Name = "buttonQLine16";
-            this.buttonQLine16.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine16.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine16.TabIndex = 288;
             this.buttonQLine16.Tag = "16";
             this.buttonQLine16.UseVisualStyleBackColor = true;
@@ -9568,9 +9964,10 @@
             // buttonQLine15
             // 
             this.buttonQLine15.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine15.Image")));
-            this.buttonQLine15.Location = new System.Drawing.Point(5, 354);
+            this.buttonQLine15.Location = new System.Drawing.Point(7, 436);
+            this.buttonQLine15.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine15.Name = "buttonQLine15";
-            this.buttonQLine15.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine15.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine15.TabIndex = 287;
             this.buttonQLine15.Tag = "15";
             this.buttonQLine15.UseVisualStyleBackColor = true;
@@ -9579,9 +9976,10 @@
             // buttonQLine14
             // 
             this.buttonQLine14.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine14.Image")));
-            this.buttonQLine14.Location = new System.Drawing.Point(5, 333);
+            this.buttonQLine14.Location = new System.Drawing.Point(7, 410);
+            this.buttonQLine14.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine14.Name = "buttonQLine14";
-            this.buttonQLine14.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine14.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine14.TabIndex = 286;
             this.buttonQLine14.Tag = "14";
             this.buttonQLine14.UseVisualStyleBackColor = true;
@@ -9590,9 +9988,10 @@
             // buttonQLine13
             // 
             this.buttonQLine13.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine13.Image")));
-            this.buttonQLine13.Location = new System.Drawing.Point(5, 312);
+            this.buttonQLine13.Location = new System.Drawing.Point(7, 384);
+            this.buttonQLine13.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine13.Name = "buttonQLine13";
-            this.buttonQLine13.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine13.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine13.TabIndex = 285;
             this.buttonQLine13.Tag = "13";
             this.buttonQLine13.UseVisualStyleBackColor = true;
@@ -9601,9 +10000,10 @@
             // buttonQLine12
             // 
             this.buttonQLine12.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine12.Image")));
-            this.buttonQLine12.Location = new System.Drawing.Point(5, 291);
+            this.buttonQLine12.Location = new System.Drawing.Point(7, 358);
+            this.buttonQLine12.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine12.Name = "buttonQLine12";
-            this.buttonQLine12.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine12.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine12.TabIndex = 284;
             this.buttonQLine12.Tag = "12";
             this.buttonQLine12.UseVisualStyleBackColor = true;
@@ -9612,9 +10012,10 @@
             // buttonQLine11
             // 
             this.buttonQLine11.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine11.Image")));
-            this.buttonQLine11.Location = new System.Drawing.Point(5, 270);
+            this.buttonQLine11.Location = new System.Drawing.Point(7, 332);
+            this.buttonQLine11.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine11.Name = "buttonQLine11";
-            this.buttonQLine11.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine11.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine11.TabIndex = 283;
             this.buttonQLine11.Tag = "11";
             this.buttonQLine11.UseVisualStyleBackColor = true;
@@ -9623,9 +10024,10 @@
             // buttonQLine10
             // 
             this.buttonQLine10.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine10.Image")));
-            this.buttonQLine10.Location = new System.Drawing.Point(5, 249);
+            this.buttonQLine10.Location = new System.Drawing.Point(7, 306);
+            this.buttonQLine10.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine10.Name = "buttonQLine10";
-            this.buttonQLine10.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine10.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine10.TabIndex = 282;
             this.buttonQLine10.Tag = "10";
             this.buttonQLine10.UseVisualStyleBackColor = true;
@@ -9634,9 +10036,10 @@
             // buttonQLine9
             // 
             this.buttonQLine9.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine9.Image")));
-            this.buttonQLine9.Location = new System.Drawing.Point(5, 228);
+            this.buttonQLine9.Location = new System.Drawing.Point(7, 281);
+            this.buttonQLine9.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine9.Name = "buttonQLine9";
-            this.buttonQLine9.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine9.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine9.TabIndex = 281;
             this.buttonQLine9.Tag = "9";
             this.buttonQLine9.UseVisualStyleBackColor = true;
@@ -9645,9 +10048,10 @@
             // buttonQLine8
             // 
             this.buttonQLine8.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine8.Image")));
-            this.buttonQLine8.Location = new System.Drawing.Point(5, 207);
+            this.buttonQLine8.Location = new System.Drawing.Point(7, 255);
+            this.buttonQLine8.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine8.Name = "buttonQLine8";
-            this.buttonQLine8.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine8.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine8.TabIndex = 280;
             this.buttonQLine8.Tag = "8";
             this.buttonQLine8.UseVisualStyleBackColor = true;
@@ -9656,9 +10060,10 @@
             // buttonQLine7
             // 
             this.buttonQLine7.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine7.Image")));
-            this.buttonQLine7.Location = new System.Drawing.Point(5, 186);
+            this.buttonQLine7.Location = new System.Drawing.Point(7, 229);
+            this.buttonQLine7.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine7.Name = "buttonQLine7";
-            this.buttonQLine7.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine7.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine7.TabIndex = 279;
             this.buttonQLine7.Tag = "7";
             this.buttonQLine7.UseVisualStyleBackColor = true;
@@ -9667,9 +10072,10 @@
             // buttonQLine6
             // 
             this.buttonQLine6.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine6.Image")));
-            this.buttonQLine6.Location = new System.Drawing.Point(5, 165);
+            this.buttonQLine6.Location = new System.Drawing.Point(7, 203);
+            this.buttonQLine6.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine6.Name = "buttonQLine6";
-            this.buttonQLine6.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine6.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine6.TabIndex = 278;
             this.buttonQLine6.Tag = "6";
             this.buttonQLine6.UseVisualStyleBackColor = true;
@@ -9678,9 +10084,10 @@
             // buttonQLine5
             // 
             this.buttonQLine5.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine5.Image")));
-            this.buttonQLine5.Location = new System.Drawing.Point(5, 144);
+            this.buttonQLine5.Location = new System.Drawing.Point(7, 177);
+            this.buttonQLine5.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine5.Name = "buttonQLine5";
-            this.buttonQLine5.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine5.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine5.TabIndex = 277;
             this.buttonQLine5.Tag = "5";
             this.buttonQLine5.UseVisualStyleBackColor = true;
@@ -9689,9 +10096,10 @@
             // buttonQLine4
             // 
             this.buttonQLine4.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine4.Image")));
-            this.buttonQLine4.Location = new System.Drawing.Point(5, 123);
+            this.buttonQLine4.Location = new System.Drawing.Point(7, 151);
+            this.buttonQLine4.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine4.Name = "buttonQLine4";
-            this.buttonQLine4.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine4.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine4.TabIndex = 275;
             this.buttonQLine4.Tag = "4";
             this.buttonQLine4.UseVisualStyleBackColor = true;
@@ -9700,9 +10108,10 @@
             // buttonQLine3
             // 
             this.buttonQLine3.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine3.Image")));
-            this.buttonQLine3.Location = new System.Drawing.Point(5, 102);
+            this.buttonQLine3.Location = new System.Drawing.Point(7, 126);
+            this.buttonQLine3.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine3.Name = "buttonQLine3";
-            this.buttonQLine3.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine3.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine3.TabIndex = 272;
             this.buttonQLine3.Tag = "3";
             this.buttonQLine3.UseVisualStyleBackColor = true;
@@ -9711,9 +10120,10 @@
             // buttonQLine2
             // 
             this.buttonQLine2.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine2.Image")));
-            this.buttonQLine2.Location = new System.Drawing.Point(5, 81);
+            this.buttonQLine2.Location = new System.Drawing.Point(7, 100);
+            this.buttonQLine2.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine2.Name = "buttonQLine2";
-            this.buttonQLine2.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine2.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine2.TabIndex = 270;
             this.buttonQLine2.Tag = "2";
             this.buttonQLine2.UseVisualStyleBackColor = true;
@@ -9722,9 +10132,10 @@
             // buttonQLine1
             // 
             this.buttonQLine1.Image = ((System.Drawing.Image)(resources.GetObject("buttonQLine1.Image")));
-            this.buttonQLine1.Location = new System.Drawing.Point(5, 60);
+            this.buttonQLine1.Location = new System.Drawing.Point(7, 74);
+            this.buttonQLine1.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQLine1.Name = "buttonQLine1";
-            this.buttonQLine1.Size = new System.Drawing.Size(24, 20);
+            this.buttonQLine1.Size = new System.Drawing.Size(32, 25);
             this.buttonQLine1.TabIndex = 267;
             this.buttonQLine1.Tag = "1";
             this.buttonQLine1.UseVisualStyleBackColor = true;
@@ -9738,9 +10149,10 @@
             this.tabPageQuoateNotes.Controls.Add(this.richTextBoxQQuoteNotes);
             this.tabPageQuoateNotes.Controls.Add(this.label68);
             this.tabPageQuoateNotes.Controls.Add(this.richTextBoxQInvoicingNotes);
-            this.tabPageQuoateNotes.Location = new System.Drawing.Point(4, 22);
+            this.tabPageQuoateNotes.Location = new System.Drawing.Point(4, 25);
+            this.tabPageQuoateNotes.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageQuoateNotes.Name = "tabPageQuoateNotes";
-            this.tabPageQuoateNotes.Size = new System.Drawing.Size(1032, 327);
+            this.tabPageQuoateNotes.Size = new System.Drawing.Size(1381, 406);
             this.tabPageQuoateNotes.TabIndex = 2;
             this.tabPageQuoateNotes.Text = "Notes";
             this.tabPageQuoateNotes.UseVisualStyleBackColor = true;
@@ -9749,18 +10161,20 @@
             // 
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(381, 17);
+            this.label69.Location = new System.Drawing.Point(508, 21);
+            this.label69.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(94, 13);
+            this.label69.Size = new System.Drawing.Size(119, 17);
             this.label69.TabIndex = 42;
             this.label69.Text = "Delivery Notes:";
             // 
             // richTextBoxQDeliveryNotes
             // 
             this.richTextBoxQDeliveryNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxQDeliveryNotes.Location = new System.Drawing.Point(384, 43);
+            this.richTextBoxQDeliveryNotes.Location = new System.Drawing.Point(512, 53);
+            this.richTextBoxQDeliveryNotes.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxQDeliveryNotes.Name = "richTextBoxQDeliveryNotes";
-            this.richTextBoxQDeliveryNotes.Size = new System.Drawing.Size(364, 96);
+            this.richTextBoxQDeliveryNotes.Size = new System.Drawing.Size(484, 117);
             this.richTextBoxQDeliveryNotes.TabIndex = 41;
             this.richTextBoxQDeliveryNotes.Text = "";
             this.richTextBoxQDeliveryNotes.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
@@ -9770,18 +10184,20 @@
             // 
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(11, 157);
+            this.label67.Location = new System.Drawing.Point(15, 193);
+            this.label67.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(82, 13);
+            this.label67.Size = new System.Drawing.Size(104, 17);
             this.label67.TabIndex = 40;
             this.label67.Text = "Quote Notes:";
             // 
             // richTextBoxQQuoteNotes
             // 
             this.richTextBoxQQuoteNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxQQuoteNotes.Location = new System.Drawing.Point(14, 183);
+            this.richTextBoxQQuoteNotes.Location = new System.Drawing.Point(19, 225);
+            this.richTextBoxQQuoteNotes.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxQQuoteNotes.Name = "richTextBoxQQuoteNotes";
-            this.richTextBoxQQuoteNotes.Size = new System.Drawing.Size(736, 96);
+            this.richTextBoxQQuoteNotes.Size = new System.Drawing.Size(980, 117);
             this.richTextBoxQQuoteNotes.TabIndex = 39;
             this.richTextBoxQQuoteNotes.Text = "";
             this.richTextBoxQQuoteNotes.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
@@ -9791,18 +10207,20 @@
             // 
             this.label68.AutoSize = true;
             this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(11, 17);
+            this.label68.Location = new System.Drawing.Point(15, 21);
+            this.label68.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(100, 13);
+            this.label68.Size = new System.Drawing.Size(124, 17);
             this.label68.TabIndex = 38;
             this.label68.Text = "Invoicing Notes:";
             // 
             // richTextBoxQInvoicingNotes
             // 
             this.richTextBoxQInvoicingNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxQInvoicingNotes.Location = new System.Drawing.Point(14, 43);
+            this.richTextBoxQInvoicingNotes.Location = new System.Drawing.Point(19, 53);
+            this.richTextBoxQInvoicingNotes.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxQInvoicingNotes.Name = "richTextBoxQInvoicingNotes";
-            this.richTextBoxQInvoicingNotes.Size = new System.Drawing.Size(364, 96);
+            this.richTextBoxQInvoicingNotes.Size = new System.Drawing.Size(484, 117);
             this.richTextBoxQInvoicingNotes.TabIndex = 37;
             this.richTextBoxQInvoicingNotes.Text = "";
             this.richTextBoxQInvoicingNotes.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
@@ -9829,54 +10247,61 @@
             this.groupBoxQuotes.Controls.Add(this.label63);
             this.groupBoxQuotes.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBoxQuotes.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxQuotes.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxQuotes.Name = "groupBoxQuotes";
-            this.groupBoxQuotes.Size = new System.Drawing.Size(1040, 128);
+            this.groupBoxQuotes.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxQuotes.Size = new System.Drawing.Size(1389, 158);
             this.groupBoxQuotes.TabIndex = 57;
             this.groupBoxQuotes.TabStop = false;
             // 
             // textBoxQQuotedPriceReadOnly
             // 
             this.textBoxQQuotedPriceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQQuotedPriceReadOnly.Location = new System.Drawing.Point(374, 65);
+            this.textBoxQQuotedPriceReadOnly.Location = new System.Drawing.Point(499, 80);
+            this.textBoxQQuotedPriceReadOnly.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQQuotedPriceReadOnly.Name = "textBoxQQuotedPriceReadOnly";
             this.textBoxQQuotedPriceReadOnly.ReadOnly = true;
-            this.textBoxQQuotedPriceReadOnly.Size = new System.Drawing.Size(121, 21);
+            this.textBoxQQuotedPriceReadOnly.Size = new System.Drawing.Size(160, 24);
             this.textBoxQQuotedPriceReadOnly.TabIndex = 92;
             // 
             // label93
             // 
             this.label93.AutoSize = true;
-            this.label93.Location = new System.Drawing.Point(302, 68);
+            this.label93.Location = new System.Drawing.Point(403, 84);
+            this.label93.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(72, 13);
+            this.label93.Size = new System.Drawing.Size(95, 17);
             this.label93.TabIndex = 91;
             this.label93.Text = "Quoted Price:";
             // 
             // label90
             // 
             this.label90.AutoSize = true;
-            this.label90.Location = new System.Drawing.Point(314, 42);
+            this.label90.Location = new System.Drawing.Point(419, 52);
+            this.label90.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(54, 13);
+            this.label90.Size = new System.Drawing.Size(71, 17);
             this.label90.TabIndex = 89;
             this.label90.Text = "Company:";
             // 
             // label84
             // 
             this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(397, 17);
+            this.label84.Location = new System.Drawing.Point(529, 21);
+            this.label84.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(40, 13);
+            this.label84.Size = new System.Drawing.Size(52, 17);
             this.label84.TabIndex = 57;
             this.label84.Text = "Status:";
             // 
             // textBoxQCompanyReadOnly
             // 
             this.textBoxQCompanyReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQCompanyReadOnly.Location = new System.Drawing.Point(374, 39);
+            this.textBoxQCompanyReadOnly.Location = new System.Drawing.Point(499, 48);
+            this.textBoxQCompanyReadOnly.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQCompanyReadOnly.Name = "textBoxQCompanyReadOnly";
             this.textBoxQCompanyReadOnly.ReadOnly = true;
-            this.textBoxQCompanyReadOnly.Size = new System.Drawing.Size(260, 21);
+            this.textBoxQCompanyReadOnly.Size = new System.Drawing.Size(345, 24);
             this.textBoxQCompanyReadOnly.TabIndex = 90;
             // 
             // comboBoxQStatus
@@ -9889,63 +10314,70 @@
             "Submittal",
             "Order",
             "Invoice"});
-            this.comboBoxQStatus.Location = new System.Drawing.Point(439, 12);
+            this.comboBoxQStatus.Location = new System.Drawing.Point(585, 15);
+            this.comboBoxQStatus.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxQStatus.Name = "comboBoxQStatus";
-            this.comboBoxQStatus.Size = new System.Drawing.Size(120, 21);
+            this.comboBoxQStatus.Size = new System.Drawing.Size(159, 24);
             this.comboBoxQStatus.TabIndex = 56;
             this.comboBoxQStatus.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(15, 16);
+            this.label21.Location = new System.Drawing.Point(20, 20);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(49, 13);
+            this.label21.Size = new System.Drawing.Size(63, 17);
             this.label21.TabIndex = 1;
             this.label21.Text = "Quote #:";
             // 
             // textBoxQPO
             // 
             this.textBoxQPO.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQPO.Location = new System.Drawing.Point(75, 13);
+            this.textBoxQPO.Location = new System.Drawing.Point(100, 16);
+            this.textBoxQPO.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQPO.Name = "textBoxQPO";
             this.textBoxQPO.ReadOnly = true;
-            this.textBoxQPO.Size = new System.Drawing.Size(120, 21);
+            this.textBoxQPO.Size = new System.Drawing.Size(159, 24);
             this.textBoxQPO.TabIndex = 2;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::Tugwell.Properties.Resources.tug;
-            this.pictureBox2.Location = new System.Drawing.Point(953, 42);
+            this.pictureBox2.Location = new System.Drawing.Point(1271, 52);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(79, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(105, 62);
             this.pictureBox2.TabIndex = 55;
             this.pictureBox2.TabStop = false;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(15, 42);
+            this.label23.Location = new System.Drawing.Point(20, 52);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(59, 13);
+            this.label23.Size = new System.Drawing.Size(76, 17);
             this.label23.TabIndex = 3;
             this.label23.Text = "Cust. PO#:";
             // 
             // label60
             // 
             this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(15, 97);
+            this.label60.Location = new System.Drawing.Point(20, 119);
+            this.label60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(85, 13);
+            this.label60.Size = new System.Drawing.Size(112, 17);
             this.label60.TabIndex = 54;
             this.label60.Text = "Sales Associate:";
             // 
             // textBoxQCustomerPO
             // 
             this.textBoxQCustomerPO.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQCustomerPO.Location = new System.Drawing.Point(75, 39);
+            this.textBoxQCustomerPO.Location = new System.Drawing.Point(100, 48);
+            this.textBoxQCustomerPO.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQCustomerPO.Name = "textBoxQCustomerPO";
-            this.textBoxQCustomerPO.Size = new System.Drawing.Size(221, 21);
+            this.textBoxQCustomerPO.Size = new System.Drawing.Size(293, 24);
             this.textBoxQCustomerPO.TabIndex = 4;
             this.textBoxQCustomerPO.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQCustomerPO.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -9964,27 +10396,30 @@
             "Bernice Williams",
             "Mark Gilmore",
             "Carl Hilgenberg"});
-            this.comboBoxQSalesAss.Location = new System.Drawing.Point(106, 93);
+            this.comboBoxQSalesAss.Location = new System.Drawing.Point(141, 114);
+            this.comboBoxQSalesAss.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxQSalesAss.Name = "comboBoxQSalesAss";
-            this.comboBoxQSalesAss.Size = new System.Drawing.Size(120, 21);
+            this.comboBoxQSalesAss.Size = new System.Drawing.Size(159, 24);
             this.comboBoxQSalesAss.TabIndex = 53;
             this.comboBoxQSalesAss.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuote_SelectedIndexChanged);
             // 
             // label61
             // 
             this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(15, 68);
+            this.label61.Location = new System.Drawing.Point(20, 84);
+            this.label61.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(43, 13);
+            this.label61.Size = new System.Drawing.Size(56, 17);
             this.label61.TabIndex = 5;
             this.label61.Text = "Project:";
             // 
             // textBoxQDate
             // 
             this.textBoxQDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQDate.Location = new System.Drawing.Point(262, 13);
+            this.textBoxQDate.Location = new System.Drawing.Point(349, 16);
+            this.textBoxQDate.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQDate.Name = "textBoxQDate";
-            this.textBoxQDate.Size = new System.Drawing.Size(112, 21);
+            this.textBoxQDate.Size = new System.Drawing.Size(148, 24);
             this.textBoxQDate.TabIndex = 53;
             this.textBoxQDate.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQDate.DoubleClick += new System.EventHandler(this.textBoxDate_DoubleClick);
@@ -9994,9 +10429,10 @@
             // textBoxQJobName
             // 
             this.textBoxQJobName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQJobName.Location = new System.Drawing.Point(75, 65);
+            this.textBoxQJobName.Location = new System.Drawing.Point(100, 80);
+            this.textBoxQJobName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQJobName.Name = "textBoxQJobName";
-            this.textBoxQJobName.Size = new System.Drawing.Size(221, 21);
+            this.textBoxQJobName.Size = new System.Drawing.Size(293, 24);
             this.textBoxQJobName.TabIndex = 6;
             this.textBoxQJobName.TextChanged += new System.EventHandler(this.textBoxQuote_TextChanged);
             this.textBoxQJobName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEnter2Tab_KeyDown);
@@ -10005,9 +10441,10 @@
             // label63
             // 
             this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(223, 16);
+            this.label63.Location = new System.Drawing.Point(297, 20);
+            this.label63.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(33, 13);
+            this.label63.Size = new System.Drawing.Size(42, 17);
             this.label63.TabIndex = 15;
             this.label63.Text = "Date:";
             // 
@@ -10017,29 +10454,31 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 550);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 679);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1054, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1405, 25);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel
             // 
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(52, 20);
             this.toolStripStatusLabel.Text = "Status:";
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(42, 17);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(52, 20);
             this.toolStripStatusLabel2.Text = "Status:";
             // 
             // buttonRecordTop
             // 
-            this.buttonRecordTop.Location = new System.Drawing.Point(4, 13);
+            this.buttonRecordTop.Location = new System.Drawing.Point(5, 16);
+            this.buttonRecordTop.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRecordTop.Name = "buttonRecordTop";
-            this.buttonRecordTop.Size = new System.Drawing.Size(31, 23);
+            this.buttonRecordTop.Size = new System.Drawing.Size(41, 28);
             this.buttonRecordTop.TabIndex = 3;
             this.buttonRecordTop.Text = "<<";
             this.buttonRecordTop.UseVisualStyleBackColor = true;
@@ -10047,9 +10486,10 @@
             // 
             // buttonRecordGo1Less
             // 
-            this.buttonRecordGo1Less.Location = new System.Drawing.Point(37, 13);
+            this.buttonRecordGo1Less.Location = new System.Drawing.Point(49, 16);
+            this.buttonRecordGo1Less.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRecordGo1Less.Name = "buttonRecordGo1Less";
-            this.buttonRecordGo1Less.Size = new System.Drawing.Size(31, 23);
+            this.buttonRecordGo1Less.Size = new System.Drawing.Size(41, 28);
             this.buttonRecordGo1Less.TabIndex = 4;
             this.buttonRecordGo1Less.Text = "<";
             this.buttonRecordGo1Less.UseVisualStyleBackColor = true;
@@ -10057,9 +10497,10 @@
             // 
             // buttonRecordGo1More
             // 
-            this.buttonRecordGo1More.Location = new System.Drawing.Point(165, 14);
+            this.buttonRecordGo1More.Location = new System.Drawing.Point(220, 17);
+            this.buttonRecordGo1More.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRecordGo1More.Name = "buttonRecordGo1More";
-            this.buttonRecordGo1More.Size = new System.Drawing.Size(31, 23);
+            this.buttonRecordGo1More.Size = new System.Drawing.Size(41, 28);
             this.buttonRecordGo1More.TabIndex = 5;
             this.buttonRecordGo1More.Text = ">";
             this.buttonRecordGo1More.UseVisualStyleBackColor = true;
@@ -10067,9 +10508,10 @@
             // 
             // buttonRecordBottom
             // 
-            this.buttonRecordBottom.Location = new System.Drawing.Point(199, 14);
+            this.buttonRecordBottom.Location = new System.Drawing.Point(265, 17);
+            this.buttonRecordBottom.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRecordBottom.Name = "buttonRecordBottom";
-            this.buttonRecordBottom.Size = new System.Drawing.Size(31, 23);
+            this.buttonRecordBottom.Size = new System.Drawing.Size(41, 28);
             this.buttonRecordBottom.TabIndex = 6;
             this.buttonRecordBottom.Text = ">>";
             this.buttonRecordBottom.UseVisualStyleBackColor = true;
@@ -10077,9 +10519,10 @@
             // 
             // textBoxRecordNo
             // 
-            this.textBoxRecordNo.Location = new System.Drawing.Point(69, 16);
+            this.textBoxRecordNo.Location = new System.Drawing.Point(92, 20);
+            this.textBoxRecordNo.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxRecordNo.Name = "textBoxRecordNo";
-            this.textBoxRecordNo.Size = new System.Drawing.Size(38, 20);
+            this.textBoxRecordNo.Size = new System.Drawing.Size(49, 22);
             this.textBoxRecordNo.TabIndex = 35;
             this.textBoxRecordNo.Text = "1";
             this.textBoxRecordNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxRecordNo_KeyPress);
@@ -10094,9 +10537,11 @@
             this.groupBox3.Controls.Add(this.buttonRecordBottom);
             this.groupBox3.Controls.Add(this.buttonRecordGo1Less);
             this.groupBox3.Controls.Add(this.buttonRecordGo1More);
-            this.groupBox3.Location = new System.Drawing.Point(526, 0);
+            this.groupBox3.Location = new System.Drawing.Point(701, 0);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(338, 41);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(451, 50);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Record Control";
@@ -10107,42 +10552,63 @@
             this.comboBoxYearControl.FormattingEnabled = true;
             this.comboBoxYearControl.Items.AddRange(new object[] {
             "Older",
-            "2018"});
-            this.comboBoxYearControl.Location = new System.Drawing.Point(274, 15);
+            "2019"});
+            this.comboBoxYearControl.Location = new System.Drawing.Point(365, 18);
+            this.comboBoxYearControl.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxYearControl.Name = "comboBoxYearControl";
-            this.comboBoxYearControl.Size = new System.Drawing.Size(58, 21);
+            this.comboBoxYearControl.Size = new System.Drawing.Size(76, 24);
             this.comboBoxYearControl.TabIndex = 38;
             // 
             // buttonSave
             // 
             this.buttonSave.Image = global::Tugwell.Properties.Resources.save;
-            this.buttonSave.Location = new System.Drawing.Point(236, 14);
+            this.buttonSave.Location = new System.Drawing.Point(315, 17);
+            this.buttonSave.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(31, 23);
+            this.buttonSave.Size = new System.Drawing.Size(41, 28);
             this.buttonSave.TabIndex = 37;
             this.buttonSave.UseVisualStyleBackColor = true;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // textBoxRecordOf
             // 
-            this.textBoxRecordOf.Location = new System.Drawing.Point(109, 16);
+            this.textBoxRecordOf.Location = new System.Drawing.Point(145, 20);
+            this.textBoxRecordOf.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxRecordOf.Name = "textBoxRecordOf";
             this.textBoxRecordOf.ReadOnly = true;
-            this.textBoxRecordOf.Size = new System.Drawing.Size(52, 20);
+            this.textBoxRecordOf.Size = new System.Drawing.Size(68, 22);
             this.textBoxRecordOf.TabIndex = 36;
             this.textBoxRecordOf.Text = "of 1";
             // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(238, 6);
+            // 
+            // toolStripSeparator11
+            // 
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
+            this.toolStripSeparator11.Size = new System.Drawing.Size(238, 6);
+            // 
+            // allStatesListedToolStripMenuItem
+            // 
+            this.allStatesListedToolStripMenuItem.Name = "allStatesListedToolStripMenuItem";
+            this.allStatesListedToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
+            this.allStatesListedToolStripMenuItem.Text = "All States Listed";
+            this.allStatesListedToolStripMenuItem.Click += new System.EventHandler(this.allStatesListedToolStripMenuItem_Click);
+            // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1054, 572);
+            this.ClientSize = new System.Drawing.Size(1405, 704);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.statusStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";
             this.Text = "Tugwell V";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
@@ -10992,6 +11458,9 @@
         private System.Windows.Forms.CheckBox checkBoxPONeeded;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
         private System.Windows.Forms.ToolStripMenuItem duplicateCurrentQuoteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
+        private System.Windows.Forms.ToolStripMenuItem allStatesListedToolStripMenuItem;
     }
 }
 

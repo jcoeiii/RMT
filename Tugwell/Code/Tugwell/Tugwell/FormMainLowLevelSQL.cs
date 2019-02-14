@@ -45,6 +45,13 @@ namespace Tugwell
                     CheckBox cb = (CheckBox)c;
                     cb.Checked = isStringTrue(guis[i]);
                 }
+                else if (name.EndsWith("State"))
+                {
+                    ComboBox cbox = (ComboBox)c;
+                    if (!cbox.Items.Contains(guis[i]))
+                        cbox.Items.Add(guis[i]);
+                    c.Text = guis[i];
+                }
                 else
                 {
                     c.Text = guis[i];
@@ -117,6 +124,13 @@ namespace Tugwell
                 {
                     CheckBox cb = (CheckBox)c;
                     cb.Checked = isStringTrue(guis[i]);
+                }
+                else if (name.EndsWith("State"))
+                {
+                    ComboBox cbox = (ComboBox)c;
+                    if (!cbox.Items.Contains(guis[i]))
+                        cbox.Items.Add(guis[i]);
+                    c.Text = guis[i];
                 }
                 else
                 {
